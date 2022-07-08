@@ -8,20 +8,8 @@
 [Summary](#summary)  
 [Limitations](#limitations)  
   
-## Project Overview  
->"The U.S. cannabis industry is expected to reach $32 Billion in annual sales in 2022
-Every year, analysts predict what the cannabis industry is worth. And every year that number exceeds expectations.
-
->Last year, annual cannabis sales reached $26.5 billion, and are expected to reach $32 billion in 2022.
-
->New Frontier Data calculated the compound annual growth rate (CAGR) of the legal cannabis industry to be 11% between 2020 and 2030, ultimately putting the industry’s worth at more than $57 Billion by 2030.
-
->Wall Street suspects the industry will be worth substantially more by 2030, projecting its value to reach $100 Billion. With increasing consumer demand and new legal markets opening up every year, that’s certainly possible."  
-
-<div style="text-align: right" ><a href="https://flowhub.com/cannabis-industry-statistics">flowhub.com</a></div>  
-<br>
-<br>  
-
+# Project Overview
+[![flowhub article clip](pics/news.gif)](https://flowhub.com/cannabis-industry-statistics)
 ## Recent surveys suggest significant proportion of consumers started growing their own cannabis for personal consumption or gifting.  
 <br>
 <br>  
@@ -208,15 +196,15 @@ The user will be automatically directed to a page after showing all their select
 
 The user is now taken back to the **myGrow** page where a list of all their grows exist. With the option to add a new one.  
 
-## Resources  
+# Resources  
 - **Software:** VS Code   
 - **Languages:** Java Script, JQuery, CSS, and HTML  
 - **Data Source:** [ALL_data.csv](https://raw.githubusercontent.com/Shannon-Goddard/grow_data/main/Resources/csv/ALL_data.csv)    
 
-## Objectives  
+# Objectives  
 - Create an app that updates each day as a daily guide in the users personalized cannabis grow.   
 
-## Summary
+# Summary
 **Check-out this interactive website of the Search page [here](https://shannon-goddard.github.io/grow_search/)**  
 **Check-out this interactive website of the Filter page [here](https://shannon-goddard.github.io/grow_filter/)**   
 
@@ -225,7 +213,7 @@ The user is now taken back to the **myGrow** page where a list of all their grow
 
 ![](/pics/gif.gif)  
 
-## Limitations  
+# Limitations  
 [MIT License](https://github.com/Shannon-Goddard/grow_search/blob/main/LICENSE)  
 [Copyright Act, Section 107](/resources/copyrightact.md)  
 [Permissions](/resources/permission.png) 
