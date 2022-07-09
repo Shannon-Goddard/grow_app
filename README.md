@@ -9,7 +9,7 @@
 [Limitations](#limitations)  
   
 # Project Overview
-[![flowhub article clip](pics/news.gif)](https://flowhub.com/cannabis-industry-statistics)
+![flowhub article clip](pics/news.gif) Full article can be found at [flowhub.com](https://flowhub.com/cannabis-industry-statistics)
 ## Recent surveys suggest significant proportion of consumers started growing their own cannabis for personal consumption or gifting.  
 <br>
 <br>  
@@ -143,36 +143,50 @@
 
 # About Grow app
 
-[THIS]() grow app is designed to build a table that will convert to a day by day guide for the grower based on the users answers to prompted questions:  
+[THIS]() grow app is designed to build a table that will convert to a day by day guide for the grower based on the users answers to prompted questions.  
 
 ## Home  
 **Home** is the first window the user will see on open. It will show today()'s guided task  
 
 ## myGrow 
 
-**myGrow** page is where a list of all the users grows exist. With the option to add a new one. Upon selecting + add a new grow the user will be directed to answer multiple questions.
+**myGrow** page is where a list of all the users grows exist. With the option to add a new one. Upon selecting **+ add a new grow** the user will be directed to answer multiple questions.
 
 <details>
 <summary><b>What strain are you growing?</b></summary>
 <!--more info-->
 
 **Search** page | **Filter** page  
-The User will be taken to a search page that allows them to filter search through a list of 2,792 strains and select their strain. If the user is uncertain of what they want to grow, there is a filter search available to allow them to sort by Indica, Sativa, or Hybrid. This filter table, also, allows the user to sort accending and/or decending order on each header: Strain, THC, CBD, Indica, Sativa, Hybrid.   
-</details> 
+The User will be taken to a search page that allows them to filter search by typing through a list of 2,792 strains and select their strain. If the user is uncertain of what they want to grow, there is a filter search available to allow them to sort by Indica, Sativa, or Hybrid. This filter table, also, allows the user to sort accending and/or decending order on each header: Strain, THC, CBD, Indica, Sativa, Hybrid.    
 
 The day by day table will start being built in the background based on the users strain selection. Each strain is linked to their average flowering weeks. In which, will be converted to days.  
-
+</details>
 <details>
 <summary><b>How tall do you want your plant to be?</b></summary>
 <!--more info-->
 
 **Tall** page  
-The user will be automatically directed to this page after secting their strain. A drop box with multiple choice will allow the user to select from 1-12 feet tall.  
-</details> 
+The user will be automatically directed to this page after secting their strain. A drop box with multiple choice will allow the user to select from:  
+    
+    - 1 foot tall
+    - 2 feet tall
+    - 3 feet tall
+    - 4 feet tall
+    - 5 feet tall
+    - 6 feet tall
+    - 7 feet tall
+    - 8 feet tall
+    - 9 feet tall
+    - 10 feet tall    
 
 The day by day table will continue being built in the background based on the users selection. Each plants height option is linked to their avaerage vegetative weeks needed to grow that height. In which, will be converted to days.  
+</details>
+<details>
+<summary><b>What nutrients will you be using?</b></summary>
+<!--more info-->  
 
-- **What nutrients will you be using?** The user will be automatically directed to this page after secting their plant height. A drop box with multiple choice will allow the user to select from:  
+The user will be automatically directed to this page after secting their plant height. A drop box with multiple choice will allow the user to select from:  
+
     - Mammoth 
     - Grow 4-3-3 
     - TechnaFlora Recipe For Success Nutrient Bundle  
@@ -180,21 +194,39 @@ The day by day table will continue being built in the background based on the us
     - FoxFarm FX14049 Liquid Nutrient Trio Soil Formula  
     - Advanced Nutrients 2320-14 Bud Candy Fertilizer  
 
-- with additions:  
+with additions:  
+
     - Dyna-Gro Liquid Grow 3-12-6  
     - Advanced Nutrients Big Bud Liquid Fertilizer 
     - Humboldts Secret Golden Tree
     - Botanicare PURE BLEND PRO Grow  
-
-- **What MAX wattage light will you be using?** The user will be automatically directed to this page after secting their nutrients. A drop box with multiple choice will allow the user to select from:  
+</details>  
+<details>
+<summary><b>What MAX wattage light will you be using?</b></summary>
+<!--more info-->   
+- The user will be automatically directed to this page after secting their nutrients. A drop box with multiple choice will allow the user to select from:  
 
     - 600 watts
     - 750 watts
     - 1000 watts  
+</details> 
+The user will be automatically directed to a page after showing all their selection selected in drop boxes and give them their anticipated amount of days of growing.  
 
-The user will be automatically directed to a page after showing all their selection selected in drop boxes and give them their anticipated amount of days of growing. Each drop box will allow the user to edit and update the days of growing. A calandar box will allow the user to select their start date, the name field will allow the user to name this grow, and a button will submit the guide.  
+- Each drop box will allow the user to edit and update the days of growing 
+- A calandar box will allow the user to select their start date
+- The name field will allow the user to name this grow  
+- A button will submit the guide.  
 
 The user is now taken back to the **myGrow** page where a list of all their grows exist. With the option to add a new one.  
+
+## Tools  
+A page that will answer or direct the user to websites to help troubleshoot grow problems.  
+
+## Diary  
+Allow the user to upload photos and place notes throughout their grow.  
+
+## Shop  
+A page that will have links to items a grower needs
 
 # Resources  
 - **Software:** VS Code   
@@ -202,7 +234,7 @@ The user is now taken back to the **myGrow** page where a list of all their grow
 - **Data Source:** [ALL_data.csv](https://raw.githubusercontent.com/Shannon-Goddard/grow_data/main/Resources/csv/ALL_data.csv)    
 
 # Objectives  
-- Create an app that updates each day as a daily guide in the users personalized cannabis grow.   
+- Create an app that automatically updates each day as a daily guide for the user's personalized cannabis grow.   
 
 # Summary
 **Check-out this interactive website of the Search page [here](https://shannon-goddard.github.io/grow_search/)**  
