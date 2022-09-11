@@ -240,8 +240,8 @@ A page that will have links to items a grower needs
 **Check-out this interactive website of the Search page [here](https://shannon-goddard.github.io/grow_search/)**  
 **Check-out this interactive website of the Filter page [here](https://shannon-goddard.github.io/grow_filter/)**   
 
-*Coming soon...*  
-**Check-out the app this project was used with [here]()**
+*still working on it, but take a look...*  
+**Check-out the app this project was used with [here](https://shannon-goddard.github.io/grow_app/)**
 
 ![](/pics/gif.gif)  
 
