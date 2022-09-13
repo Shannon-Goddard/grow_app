@@ -1,6 +1,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html, body {width: auto!important; overflow-x: hidden!important
+} 
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -233,18 +235,6 @@ h6 {
   font-family: "Poppins", sans-serif;
   color: #151515;
 }
-
-@media (min-width: 1024px) {
-  #home {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #home {
-    height: auto;
-  }
-
 /*--------------------------------------------------------------
 # grow
 --------------------------------------------------------------*/
@@ -280,17 +270,6 @@ h6 {
   background-size: cover;
   min-height: 400px;
 }
-
-@media (min-width: 1024px) {
-  #grow {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #grow {
-    height: auto;
-  }
 /*--------------------------------------------------------------
 # diary
 --------------------------------------------------------------*/
@@ -351,17 +330,6 @@ h6 {
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
 }
-
-@media (min-width: 1024px) {
-  #diary {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #diary {
-    height: auto;
-  }
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -562,17 +530,6 @@ h6 {
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
-
-@media (min-width: 1024px) {
-  #portfolio {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #portfolio {
-    height: auto;
-  }
 /*--------------------------------------------------------------
 # shop Details
 --------------------------------------------------------------*/
@@ -703,23 +660,6 @@ h6 {
   background-size: cover;
   min-height: 400px;
 }
-
-@media (max-width: 991px) {
-  .counts .image {
-    text-align: center;
-  }
-
-  .counts .image img {
-    max-width: 80%;
-  }
-}
-
-@media (max-width: 667px) {
-  .counts .image img {
-    max-width: 100%;
-  }
-}
-
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -805,17 +745,6 @@ h6 {
   opacity: 1;
   bottom: 15px;
 }
-
-@media (min-width: 1024px) {
-  #team {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #team {
-    height: auto;
-  }
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
