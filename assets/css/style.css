@@ -234,6 +234,17 @@ h6 {
   color: #151515;
 }
 
+@media (min-width: 1024px) {
+  #home {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    height: auto;
+  }
+
 /*--------------------------------------------------------------
 # grow
 --------------------------------------------------------------*/
@@ -270,6 +281,16 @@ h6 {
   min-height: 400px;
 }
 
+@media (min-width: 1024px) {
+  #grow {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #grow {
+    height: auto;
+  }
 /*--------------------------------------------------------------
 # diary
 --------------------------------------------------------------*/
@@ -331,6 +352,16 @@ h6 {
   transform: translateY(-10px);
 }
 
+@media (min-width: 1024px) {
+  #diary {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #diary {
+    height: auto;
+  }
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -532,6 +563,16 @@ h6 {
   opacity: 1;
 }
 
+@media (min-width: 1024px) {
+  #portfolio {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #portfolio {
+    height: auto;
+  }
 /*--------------------------------------------------------------
 # shop Details
 --------------------------------------------------------------*/
@@ -765,6 +806,16 @@ h6 {
   bottom: 15px;
 }
 
+@media (min-width: 1024px) {
+  #team {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #team {
+    height: auto;
+  }
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
