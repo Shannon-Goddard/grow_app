@@ -58,6 +58,7 @@ $("li").on("click" , "a" , function(){
     $("#more_info").text(d[Index].more_info);
     document.getElementById("myInput").value = "";
     document.getElementById("myUL").style.display = "none";
+    $("#taskButton").show();
   }
 });
 //Toggle between adding and removing the "responsive" class to the navbar when the user clicks on the icon//
@@ -69,3 +70,21 @@ function navFunction() {
     x.className = "navbar";
   }
 }
+////////////////////////
+$("#taskButton").click(function() {
+
+  var node = document.getElementById('strain'),
+  //htmlContent = node.innerHTML,
+  textContent = node.textContent;
+  /////Store Plant Height
+  localStorage.plantStrain = textContent;
+  console.log(localStorage.plantStrain)
+  /////Retrieve Plant Height
+  document.getElementById('flowering').innerHTML = localStorage.plantStrain;
+
+});
+
+
+
+
+
