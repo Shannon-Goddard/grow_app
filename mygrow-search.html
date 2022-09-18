@@ -37,21 +37,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 
 </head>
 
-<body>
+<body class="customBody">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Loyal<span style="color:white">9</span></a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Loyal<span>9</span></a></h1>
 
     </div>
   </header><!-- End Header -->
-        <div id="wrapper">
-            <img src="assets\mygrow-search-images\logo.jpg" alt="loyal" class="search-logo center">
-            <div class="container-fluid">
-                <h1 style="color: darkslategrey">Look up your favorite strain <br> <small>or find a new favorite</small></h1>
-                <div class="search-content">
+
+  <!-- ======= Search Section ======= -->
+   <div class="pt-5 container-fluid">
+                <h1 style="color: #04AA6D;"><strong>Look up your favorite strain</strong><br><small>or find a new favorite</small></h1>
+                <div class="search-content" data-aos="fade-up">
                     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for strains..">
                     <ul id="myUL">
                         <li><a id="0"><img src="assets\mygrow-search-images\Green_Crack.jpg" width="40" height="40" > Green Crack</a></li>                                     
@@ -2849,25 +2849,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                         <li><a id="2792"><img src="assets\mygrow-search-images\Cement_Shoes.jpg" width="40" height="40" > Cement Shoes</a></li>assets\mygrow-search-images\'88_G13_Hashplant.jpg
                     </li>
                 </ul>
-            </div>
-        </div>
+
         <div class="row justify-content-center">
-          <a href="#"><button id="taskButton" class="btn btn-primary btn-lg" type="button" value="">select this strain</button></a>
+          <a href="#"><button id="taskButton" type="button" value="">select this strain</button></a>
         </div>
+      
         <div class="post-container">
-            <div id="box" >
+            <div id="box">
                 <div class="image"><img id="image" src="" style="width:45%;" alt=""></div>
-                <h1 class="post-title" style="color: black;"><div id="strain"></div></h1>
-                <h2><div id="THC" style="color: black;"></div></h2>
-                <h2><div id="CBD" style="color: black;"></div></h2>
-                <h3><div id="Sativa" style="color: black;"></div><div id="Indica" style="color: black;"></div><div id="Hybrid" style="color: black;"></div></h3>
-                <h4><div id="Grow" style="color: black;"></div></h4>
+                <h1 class="post-title" style="color: #FFFFFF;"><div id="strain"></div></h1>
+                <h2><div id="THC" style="color: #FFFFFF;"></div></h2>
+                <h2><div id="CBD" style="color: #FFFFFF;"></div></h2>
+                <h3><div id="Sativa" style="color: #FFFFFF;"></div><div id="Indica" style="color: #FFFFFF;"></div><div id="Hybrid" style="color: #FFFFFF;"></div></h3>
+                <h4><div id="Grow" style="color: #FFFFFF;"></div></h4>
                 <br>
-                <div id="info" style="color: black;"></div>
+                <div id="info" style="color: #FFFFFF;"></div>
                 <br>
-                <div id="more_info" style="color: black;"></div>
+                <div id="more_info" style="color: #FFFFFF;"></div>
             </div>
         </div>
+
+      </div>
+    </div>
    <!-- ======= .navbar ======= -->
    <div id="preloader"></div>
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fas fa-angle-up"></i></a>

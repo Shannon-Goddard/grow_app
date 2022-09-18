@@ -1118,45 +1118,44 @@ h6 {
 /*--------------------------------------------------------------
 # Search Page
 --------------------------------------------------------------*/
-.search-logo {
-  max-width: 25%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+.customBody {
+  background-color:#000;
+  }
 /* Container holding the search image and the text */
 .container-fluid {
   width: 100%;
-  inline-size: 100%;
-  position: relative;
+  height: 100vh;
+  background: url("../img/hero-bg.jpg") top center;
+  background-size: cover;
   text-align: left;
   color: black;
 }
 #myInput {
-  box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.2);
+  background: transparent;
+  box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.8);
   width: 100%; /* Full-width */
   font-size: 2.0vw; /* Increase font-size */
   padding: 1.0vw 1.0vw 1.0vw 1.0vw; /* Add some padding */
-  border: 0.1vw solid #ddd; /* Add a grey border */
+  border: 0.1vw solid #04AA6D; /* Add a green border */
   margin-bottom: 1.0vw; /* Add some space below the input */
+  color: #FFFFFF;
+  text-shadow: 1px 1px #000;
 }
 #myUL {
   /* Remove default list styling */
   display: none;
-  box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.2);
+  box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.8);
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 #myUL li a {
-  border: 0.1vw solid #ddd; /* Add a border to all links */
   margin-top: -1.0vw; /* Prevent double borders */
-  background-color: white; /* White background color */
   padding: 1.0vw; /* Add some padding */
   text-decoration: none; /* Remove default text underline */
   font-size: 2.0vw; /* Increase the font-size */
-  color: black; /* Add a black text color */
+  color: #FFFFFF; /* Add a white text color */
+  text-shadow: 1px 1px #000;
   display: block; /* Make it into a block element to fill the whole list */
 }
 #myUL li a:hover:not(.header) {
@@ -1175,49 +1174,51 @@ h6 {
   float: left;
   display: none;
   margin: 1.0vmin 2.0vmin 0.0vmin 0.0vmin;
-  -webkit-filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 0.2));
-  filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 0.2));
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 0.8));
+  filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 0.8));
 }
-.info {
+#info {
   inline-size: 100%;
   overflow-wrap: break-word;
   font-weight: bold;
+  text-shadow: 1px 1px #000;
 }
-.more_info {
+#more_info {
   inline-size: 100%;
   overflow-wrap: break-word;
   font-weight: bold;
+  text-shadow: 1px 1px #000;
 }
 .post-title {
   inline-size: 100%;
   overflow-wrap: break-word;
   font-weight: bold;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.2);
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
   margin-bottom: 0.0vh;
 }
 #THC {
   font-weight: 900;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.2);
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
 #CBD {
   font-weight: 900;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.2);
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
 #Sativa {
   font-weight: bold;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.2);
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
 #Indica {
   font-weight: bold;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.2);
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
 #Hybrid {
   font-weight: bold;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.2);
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
 #Grow {
   font-weight: bold;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.2);
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
 .post-IorS {
   font-weight: bold;
@@ -1227,8 +1228,27 @@ h6 {
 --------------------------------------------------------------*/
 #taskButton {
   display: none;
-  background-color: #04AA6D;
-  cursor: pointer;
+  background: transparent;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  border: 2px solid #04AA6D;
+  color: #343a40; 
+  font-weight: bold;
+}
+
+#taskButton:hover {
+  background: #04AA6D; 
+  color: #343a40;
+}
+
+@media (max-width: 992px) {
+  #taskButton {
+    padding: 7px 20px 8px 20px;
+    margin-right: 15px;
+  }
 }
 /*--------------------------------------------------------------
 # myGrow plant size 
