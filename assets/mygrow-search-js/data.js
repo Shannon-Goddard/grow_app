@@ -10,7 +10,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Green_Crack.jpg"
+    logo: "../assets/mygrow-search-images/Green_Crack.jpg"
   },
   {
     index: "1",
@@ -23,7 +23,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Dream.jpg"
   },
   {
     index: "2",
@@ -36,7 +36,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Diesel.jpg"
   },
   {
     index: "3",
@@ -49,7 +49,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Gorilla_Glue_4.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Glue_4.jpg"
   },
   {
     index: "4",
@@ -62,7 +62,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hindu_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Hindu_Kush.jpg"
   },
   {
     index: "5",
@@ -75,7 +75,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gorilla_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Glue.jpg"
   },
   {
     index: "6",
@@ -88,7 +88,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Skywalker_OG.jpg"
+    logo: "../assets/mygrow-search-images/Skywalker_OG.jpg"
   },
   {
     index: "7",
@@ -101,7 +101,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Girl_Scout_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Girl_Scout_Cookies.jpg"
   },
   {
     index: "8",
@@ -114,7 +114,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Northern_Lights.jpg"
+    logo: "../assets/mygrow-search-images/Northern_Lights.jpg"
   },
   {
     index: "9",
@@ -127,7 +127,7 @@ var data = [
     Hybrid:"",
     Sativa: "55% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jack_Herer.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Herer.jpg"
   },
   {
     index: "10",
@@ -140,7 +140,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Wedding_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Wedding_Cake.jpg"
   },
   {
     index: "11",
@@ -153,7 +153,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Durban_Poison.jpg"
+    logo: "../assets/mygrow-search-images/Durban_Poison.jpg"
   },
   {
     index: "12",
@@ -166,7 +166,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Pineapple_Express.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Express.jpg"
   },
   {
     index: "13",
@@ -179,7 +179,7 @@ var data = [
     Hybrid:"",
     Sativa: "55% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OG_Kush.jpg"
+    logo: "../assets/mygrow-search-images/OG_Kush.jpg"
   },
   {
     index: "14",
@@ -192,7 +192,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Granddaddy_Purple.jpg"
+    logo: "../assets/mygrow-search-images/Granddaddy_Purple.jpg"
   },
   {
     index: "15",
@@ -205,7 +205,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gelato.jpg"
+    logo: "../assets/mygrow-search-images/Gelato.jpg"
   },
   {
     index: "16",
@@ -218,7 +218,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Widow.jpg"
+    logo: "../assets/mygrow-search-images/White_Widow.jpg"
   },
   {
     index: "17",
@@ -231,7 +231,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Forbidden_Fruit.jpg"
+    logo: "../assets/mygrow-search-images/Forbidden_Fruit.jpg"
   },
   {
     index: "18",
@@ -244,7 +244,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/GMO_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/GMO_Cookies.jpg"
   },
   {
     index: "19",
@@ -257,7 +257,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Fruity_Pebbles.jpg"
+    logo: "../assets/mygrow-search-images/Fruity_Pebbles.jpg"
   },
   {
     index: "20",
@@ -270,7 +270,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/NYC_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/NYC_Diesel.jpg"
   },
   {
     index: "21",
@@ -283,7 +283,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Trump_OG.jpg"
+    logo: "../assets/mygrow-search-images/Trump_OG.jpg"
   },
   {
     index: "22",
@@ -296,7 +296,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Skywalker.jpg"
+    logo: "../assets/mygrow-search-images/Skywalker.jpg"
   },
   {
     index: "23",
@@ -309,7 +309,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Stardawg.jpg"
+    logo: "../assets/mygrow-search-images/Stardawg.jpg"
   },
   {
     index: "24",
@@ -322,7 +322,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tahoe_OG.jpg"
+    logo: "../assets/mygrow-search-images/Tahoe_OG.jpg"
   },
   {
     index: "25",
@@ -335,7 +335,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry.jpg"
   },
   {
     index: "26",
@@ -348,7 +348,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/AK-47.jpg"
+    logo: "../assets/mygrow-search-images/AK-47.jpg"
   },
   {
     index: "27",
@@ -361,7 +361,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Do-Si-Dos.jpg"
+    logo: "../assets/mygrow-search-images/Do-Si-Dos.jpg"
   },
   {
     index: "28",
@@ -374,7 +374,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Jager.jpg"
+    logo: "../assets/mygrow-search-images/Jager.jpg"
   },
   {
     index: "29",
@@ -387,7 +387,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Haze.jpg"
   },
   {
     index: "30",
@@ -400,7 +400,7 @@ var data = [
     Hybrid:"55% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chemdawg.jpg"
+    logo: "../assets/mygrow-search-images/Chemdawg.jpg"
   },
   {
     index: "31",
@@ -413,7 +413,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Afghan_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Afghan_Kush.jpg"
   },
   {
     index: "32",
@@ -426,7 +426,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Amnesia_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Amnesia_Haze.jpg"
   },
   {
     index: "33",
@@ -439,7 +439,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Pie.jpg"
   },
   {
     index: "34",
@@ -452,7 +452,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Acapulco_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Acapulco_Gold.jpg"
   },
   {
     index: "35",
@@ -465,7 +465,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Grape_Ape.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Ape.jpg"
   },
   {
     index: "36",
@@ -478,7 +478,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blue_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Cheese.jpg"
   },
   {
     index: "37",
@@ -491,7 +491,7 @@ var data = [
     Hybrid:"",
     Sativa: "95% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lamb's_Bread.jpg"
+    logo: "../assets/mygrow-search-images/Lamb's_Bread.jpg"
   },
   {
     index: "38",
@@ -504,7 +504,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "15",
-    logo: "assets/mygrow-search-images/Orange_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Bud.jpg"
   },
   {
     index: "39",
@@ -517,7 +517,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Kush.jpg"
   },
   {
     index: "40",
@@ -530,7 +530,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Death_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/Death_Bubba.jpg"
   },
   {
     index: "41",
@@ -543,7 +543,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Punch.jpg"
   },
   {
     index: "42",
@@ -556,7 +556,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Trainwreck.jpg"
+    logo: "../assets/mygrow-search-images/Trainwreck.jpg"
   },
   {
     index: "43",
@@ -569,7 +569,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Runtz.jpg"
+    logo: "../assets/mygrow-search-images/Runtz.jpg"
   },
   {
     index: "44",
@@ -582,7 +582,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Cough.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Cough.jpg"
   },
   {
     index: "45",
@@ -595,7 +595,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Zkittlez.jpg"
+    logo: "../assets/mygrow-search-images/Zkittlez.jpg"
   },
   {
     index: "46",
@@ -608,7 +608,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alaskan_Thunderfuck.jpg"
+    logo: "../assets/mygrow-search-images/Alaskan_Thunderfuck.jpg"
   },
   {
     index: "47",
@@ -621,7 +621,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Banana_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Banana_Kush.jpg"
   },
   {
     index: "48",
@@ -634,7 +634,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/9_Pound_Hammer.jpg"
+    logo: "../assets/mygrow-search-images/9_Pound_Hammer.jpg"
   },
   {
     index: "49",
@@ -647,7 +647,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Mimosa.jpg"
+    logo: "../assets/mygrow-search-images/Mimosa.jpg"
   },
   {
     index: "50",
@@ -660,7 +660,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Apple_Fritter.jpg"
+    logo: "../assets/mygrow-search-images/Apple_Fritter.jpg"
   },
   {
     index: "51",
@@ -673,7 +673,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Berry_White.jpg"
+    logo: "../assets/mygrow-search-images/Berry_White.jpg"
   },
   {
     index: "52",
@@ -686,7 +686,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/LSD.jpg"
+    logo: "../assets/mygrow-search-images/LSD.jpg"
   },
   {
     index: "53",
@@ -699,7 +699,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Cookies.jpg"
   },
   {
     index: "54",
@@ -712,7 +712,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ghost_Train_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Ghost_Train_Haze.jpg"
   },
   {
     index: "55",
@@ -725,7 +725,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Candyland.jpg"
+    logo: "../assets/mygrow-search-images/Candyland.jpg"
   },
   {
     index: "56",
@@ -738,7 +738,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/King_Louis_XIII.jpg"
+    logo: "../assets/mygrow-search-images/King_Louis_XIII.jpg"
   },
   {
     index: "57",
@@ -750,7 +750,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alien_OG.jpg"
+    logo: "../assets/mygrow-search-images/Alien_OG.jpg"
   },
   {
     index: "58",
@@ -763,7 +763,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sunset_Sherbet.jpg"
+    logo: "../assets/mygrow-search-images/Sunset_Sherbet.jpg"
   },
   {
     index: "59",
@@ -776,7 +776,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Kosher_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Kosher_Kush.jpg"
   },
   {
     index: "60",
@@ -789,7 +789,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Super_Silver_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Super_Silver_Haze.jpg"
   },
   {
     index: "61",
@@ -802,7 +802,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Haze.jpg"
   },
   {
     index: "62",
@@ -815,7 +815,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Banana.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Banana.jpg"
   },
   {
     index: "63",
@@ -828,7 +828,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Diamond.jpg"
+    logo: "../assets/mygrow-search-images/Black_Diamond.jpg"
   },
   {
     index: "64",
@@ -841,7 +841,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Skunk.jpg"
   },
   {
     index: "65",
@@ -854,7 +854,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Maui_Waui.jpg"
+    logo: "../assets/mygrow-search-images/Maui_Waui.jpg"
   },
   {
     index: "66",
@@ -867,7 +867,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Moby_Dick.jpg"
+    logo: "../assets/mygrow-search-images/Moby_Dick.jpg"
   },
   {
     index: "67",
@@ -880,7 +880,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Bruce_Banner.jpg"
+    logo: "../assets/mygrow-search-images/Bruce_Banner.jpg"
   },
   {
     index: "68",
@@ -893,7 +893,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Fire_OG_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Fire_OG_Kush.jpg"
   },
   {
     index: "69",
@@ -906,7 +906,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sensi_Star.jpg"
+    logo: "../assets/mygrow-search-images/Sensi_Star.jpg"
   },
   {
     index: "70",
@@ -919,7 +919,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Death_Star.jpg"
+    logo: "../assets/mygrow-search-images/Death_Star.jpg"
   },
   {
     index: "71",
@@ -932,7 +932,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ghost_OG.jpg"
+    logo: "../assets/mygrow-search-images/Ghost_OG.jpg"
   },
   {
     index: "72",
@@ -945,7 +945,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Super_Lemon_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Super_Lemon_Haze.jpg"
   },
   {
     index: "73",
@@ -958,7 +958,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/LA_Confidential.jpg"
+    logo: "../assets/mygrow-search-images/LA_Confidential.jpg"
   },
   {
     index: "74",
@@ -971,7 +971,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mango_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Mango_Kush.jpg"
   },
   {
     index: "75",
@@ -984,7 +984,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Thin_Mint_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Thin_Mint_Cookies.jpg"
   },
   {
     index: "76",
@@ -997,7 +997,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Golden_Goat.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Goat.jpg"
   },
   {
     index: "77",
@@ -1010,7 +1010,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Timewarp.jpg"
+    logo: "../assets/mygrow-search-images/Timewarp.jpg"
   },
   {
     index: "78",
@@ -1023,7 +1023,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Pink_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Kush.jpg"
   },
   {
     index: "79",
@@ -1036,7 +1036,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chernobyl.jpg"
+    logo: "../assets/mygrow-search-images/Chernobyl.jpg"
   },
   {
     index: "80",
@@ -1049,7 +1049,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ice_Cream_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Ice_Cream_Cake.jpg"
   },
   {
     index: "81",
@@ -1062,7 +1062,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/ACDC.jpg"
+    logo: "../assets/mygrow-search-images/ACDC.jpg"
   },
   {
     index: "82",
@@ -1075,7 +1075,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bubba_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Bubba_Kush.jpg"
   },
   {
     index: "83",
@@ -1088,7 +1088,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Critical_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Kush.jpg"
   },
   {
     index: "84",
@@ -1101,7 +1101,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blueberry_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Kush.jpg"
   },
   {
     index: "85",
@@ -1114,7 +1114,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Urkle.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Urkle.jpg"
   },
   {
     index: "86",
@@ -1127,7 +1127,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Headband.jpg"
+    logo: "../assets/mygrow-search-images/Headband.jpg"
   },
   {
     index: "87",
@@ -1140,7 +1140,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/White_Fire_OG.jpg"
+    logo: "../assets/mygrow-search-images/White_Fire_OG.jpg"
   },
   {
     index: "88",
@@ -1153,7 +1153,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blackberry_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Kush.jpg"
   },
   {
     index: "89",
@@ -1166,7 +1166,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grease_Monkey.jpg"
+    logo: "../assets/mygrow-search-images/Grease_Monkey.jpg"
   },
   {
     index: "90",
@@ -1179,7 +1179,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Peanut_Butter_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Peanut_Butter_Breath.jpg"
   },
   {
     index: "91",
@@ -1192,7 +1192,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Khalifa_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Khalifa_Kush.jpg"
   },
   {
     index: "92",
@@ -1205,7 +1205,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/SFV_OG_Kush.jpg"
+    logo: "../assets/mygrow-search-images/SFV_OG_Kush.jpg"
   },
   {
     index: "93",
@@ -1218,7 +1218,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Jack_the_Ripper.jpg"
+    logo: "../assets/mygrow-search-images/Jack_the_Ripper.jpg"
   },
   {
     index: "94",
@@ -1231,7 +1231,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jack_Frost.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Frost.jpg"
   },
   {
     index: "95",
@@ -1244,7 +1244,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cookies_and_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Cookies_and_Cream.jpg"
   },
   {
     index: "96",
@@ -1257,7 +1257,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cat_Piss.jpg"
+    logo: "../assets/mygrow-search-images/Cat_Piss.jpg"
   },
   {
     index: "97",
@@ -1270,7 +1270,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_OG.jpg"
+    logo: "../assets/mygrow-search-images/Sour_OG.jpg"
   },
   {
     index: "98",
@@ -1283,7 +1283,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/G-13.jpg"
+    logo: "../assets/mygrow-search-images/G-13.jpg"
   },
   {
     index: "99",
@@ -1296,7 +1296,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Holy_Grail_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Holy_Grail_Kush.jpg"
   },
   {
     index: "100",
@@ -1309,7 +1309,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Island_Sweet_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Island_Sweet_Skunk.jpg"
   },
   {
     index: "101",
@@ -1322,7 +1322,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mendo_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Mendo_Breath.jpg"
   },
   {
     index: "102",
@@ -1335,7 +1335,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jillybean.jpg"
+    logo: "../assets/mygrow-search-images/Jillybean.jpg"
   },
   {
     index: "103",
@@ -1348,7 +1348,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Kush.jpg"
   },
   {
     index: "104",
@@ -1361,7 +1361,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Crush.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Crush.jpg"
   },
   {
     index: "105",
@@ -1374,7 +1374,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mendocino_Purps.jpg"
+    logo: "../assets/mygrow-search-images/Mendocino_Purps.jpg"
   },
   {
     index: "106",
@@ -1387,7 +1387,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Platinum_OG.jpg"
+    logo: "../assets/mygrow-search-images/Platinum_OG.jpg"
   },
   {
     index: "107",
@@ -1400,7 +1400,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Master_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Master_Kush.jpg"
   },
   {
     index: "108",
@@ -1413,7 +1413,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ice_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Ice_Cream.jpg"
   },
   {
     index: "109",
@@ -1426,7 +1426,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/MAC_1.jpg"
+    logo: "../assets/mygrow-search-images/MAC_1.jpg"
   },
   {
     index: "110",
@@ -1439,7 +1439,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sundae_Driver.jpg"
+    logo: "../assets/mygrow-search-images/Sundae_Driver.jpg"
   },
   {
     index: "111",
@@ -1452,7 +1452,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Bio_Jesus.jpg"
+    logo: "../assets/mygrow-search-images/Bio_Jesus.jpg"
   },
   {
     index: "112",
@@ -1465,7 +1465,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Brownie_Scout.jpg"
+    logo: "../assets/mygrow-search-images/Brownie_Scout.jpg"
   },
   {
     index: "113",
@@ -1478,7 +1478,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Obama_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Obama_Kush.jpg"
   },
   {
     index: "114",
@@ -1491,7 +1491,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Goji_OG.jpg"
+    logo: "../assets/mygrow-search-images/Goji_OG.jpg"
   },
   {
     index: "115",
@@ -1504,7 +1504,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Larry_OG.jpg"
+    logo: "../assets/mygrow-search-images/Larry_OG.jpg"
   },
   {
     index: "116",
@@ -1517,7 +1517,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Black_Widow.jpg"
   },
   {
     index: "117",
@@ -1530,7 +1530,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Papaya.jpg"
+    logo: "../assets/mygrow-search-images/Papaya.jpg"
   },
   {
     index: "118",
@@ -1543,7 +1543,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nerds.jpg"
+    logo: "../assets/mygrow-search-images/Nerds.jpg"
   },
   {
     index: "119",
@@ -1556,7 +1556,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jet_Fuel.jpg"
+    logo: "../assets/mygrow-search-images/Jet_Fuel.jpg"
   },
   {
     index: "120",
@@ -1569,7 +1569,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bubblegum.jpg"
+    logo: "../assets/mygrow-search-images/Bubblegum.jpg"
   },
   {
     index: "121",
@@ -1582,7 +1582,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/MK_Ultra.jpg"
+    logo: "../assets/mygrow-search-images/MK_Ultra.jpg"
   },
   {
     index: "122",
@@ -1595,7 +1595,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Rhino.jpg"
+    logo: "../assets/mygrow-search-images/White_Rhino.jpg"
   },
   {
     index: "123",
@@ -1608,7 +1608,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Violator_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Violator_Kush.jpg"
   },
   {
     index: "124",
@@ -1621,7 +1621,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Colombian_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Colombian_Gold.jpg"
   },
   {
     index: "125",
@@ -1634,7 +1634,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Trinity.jpg"
+    logo: "../assets/mygrow-search-images/Trinity.jpg"
   },
   {
     index: "126",
@@ -1647,7 +1647,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Animal_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Animal_Cookies.jpg"
   },
   {
     index: "127",
@@ -1660,7 +1660,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Slurricane.jpg"
+    logo: "../assets/mygrow-search-images/Slurricane.jpg"
   },
   {
     index: "128",
@@ -1673,7 +1673,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Gorilla_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Cookies.jpg"
   },
   {
     index: "129",
@@ -1686,7 +1686,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lavender.jpg"
+    logo: "../assets/mygrow-search-images/Lavender.jpg"
   },
   {
     index: "130",
@@ -1699,7 +1699,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Flo.jpg"
+    logo: "../assets/mygrow-search-images/Flo.jpg"
   },
   {
     index: "131",
@@ -1712,7 +1712,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cannatonic.jpg"
+    logo: "../assets/mygrow-search-images/Cannatonic.jpg"
   },
   {
     index: "132",
@@ -1725,7 +1725,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Querkle.jpg"
+    logo: "../assets/mygrow-search-images/Querkle.jpg"
   },
   {
     index: "133",
@@ -1738,7 +1738,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Grapefruit.jpg"
+    logo: "../assets/mygrow-search-images/Grapefruit.jpg"
   },
   {
     index: "134",
@@ -1751,7 +1751,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/God's_Gift.jpg"
+    logo: "../assets/mygrow-search-images/God's_Gift.jpg"
   },
   {
     index: "135",
@@ -1764,7 +1764,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Clementine.jpg"
+    logo: "../assets/mygrow-search-images/Clementine.jpg"
   },
   {
     index: "136",
@@ -1777,7 +1777,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pre-98_Bubba_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Pre-98_Bubba_Kush.jpg"
   },
   {
     index: "137",
@@ -1790,7 +1790,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Monster_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Monster_Cookies.jpg"
   },
   {
     index: "138",
@@ -1803,7 +1803,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Apollo_13.jpg"
+    logo: "../assets/mygrow-search-images/Apollo_13.jpg"
   },
   {
     index: "139",
@@ -1816,7 +1816,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Black_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Black_Jack.jpg"
   },
   {
     index: "140",
@@ -1829,7 +1829,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Mystic.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Mystic.jpg"
   },
   {
     index: "141",
@@ -1842,7 +1842,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "6",
-    logo: "assets/mygrow-search-images/Hash_Plant.jpg"
+    logo: "../assets/mygrow-search-images/Hash_Plant.jpg"
   },
   {
     index: "142",
@@ -1855,7 +1855,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Lodi_Dodi.jpg"
+    logo: "../assets/mygrow-search-images/Lodi_Dodi.jpg"
   },
   {
     index: "143",
@@ -1868,7 +1868,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Agent_Orange.jpg"
+    logo: "../assets/mygrow-search-images/Agent_Orange.jpg"
   },
   {
     index: "144",
@@ -1881,7 +1881,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Cheese.jpg"
   },
   {
     index: "145",
@@ -1894,7 +1894,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Super_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Super_Skunk.jpg"
   },
   {
     index: "146",
@@ -1907,7 +1907,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Red_Dragon.jpg"
+    logo: "../assets/mygrow-search-images/Red_Dragon.jpg"
   },
   {
     index: "147",
@@ -1920,7 +1920,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Platinum_Girl_Scout_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Platinum_Girl_Scout_Cookies.jpg"
   },
   {
     index: "148",
@@ -1933,7 +1933,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Casey_Jones.jpg"
+    logo: "../assets/mygrow-search-images/Casey_Jones.jpg"
   },
   {
     index: "149",
@@ -1946,7 +1946,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tangie.jpg"
+    logo: "../assets/mygrow-search-images/Tangie.jpg"
   },
   {
     index: "150",
@@ -1959,7 +1959,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Rosetta_Stone.jpg"
+    logo: "../assets/mygrow-search-images/Rosetta_Stone.jpg"
   },
   {
     index: "151",
@@ -1972,7 +1972,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Grandpa's_Stash.jpg"
+    logo: "../assets/mygrow-search-images/Grandpa's_Stash.jpg"
   },
   {
     index: "152",
@@ -1985,7 +1985,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Kandy_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Kandy_Kush.jpg"
   },
   {
     index: "153",
@@ -1998,7 +1998,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pennywise.jpg"
+    logo: "../assets/mygrow-search-images/Pennywise.jpg"
   },
   {
     index: "154",
@@ -2011,7 +2011,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Star_Killer.jpg"
+    logo: "../assets/mygrow-search-images/Star_Killer.jpg"
   },
   {
     index: "155",
@@ -2024,7 +2024,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/White_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/White_Cookies.jpg"
   },
   {
     index: "156",
@@ -2037,7 +2037,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Harlequin.jpg"
+    logo: "../assets/mygrow-search-images/Harlequin.jpg"
   },
   {
     index: "157",
@@ -2050,7 +2050,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alien_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Dawg.jpg"
   },
   {
     index: "158",
@@ -2063,7 +2063,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Green_Line_OG.jpg"
+    logo: "../assets/mygrow-search-images/Green_Line_OG.jpg"
   },
   {
     index: "159",
@@ -2076,7 +2076,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Kush_Mint.jpg"
+    logo: "../assets/mygrow-search-images/Kush_Mint.jpg"
   },
   {
     index: "160",
@@ -2089,7 +2089,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Private_Reserve.jpg"
+    logo: "../assets/mygrow-search-images/Private_Reserve.jpg"
   },
   {
     index: "161",
@@ -2102,7 +2102,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Lemon_G.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_G.jpg"
   },
   {
     index: "162",
@@ -2115,7 +2115,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Recon.jpg"
+    logo: "../assets/mygrow-search-images/Recon.jpg"
   },
   {
     index: "163",
@@ -2128,7 +2128,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Phantom_OG.jpg"
+    logo: "../assets/mygrow-search-images/Phantom_OG.jpg"
   },
   {
     index: "164",
@@ -2141,7 +2141,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Kush.jpg"
   },
   {
     index: "165",
@@ -2154,7 +2154,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Diesel.jpg"
   },
   {
     index: "166",
@@ -2167,7 +2167,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Champagne_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Champagne_Kush.jpg"
   },
   {
     index: "167",
@@ -2180,7 +2180,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chocolope.jpg"
+    logo: "../assets/mygrow-search-images/Chocolope.jpg"
   },
   {
     index: "168",
@@ -2193,7 +2193,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/The_White.jpg"
+    logo: "../assets/mygrow-search-images/The_White.jpg"
   },
   {
     index: "169",
@@ -2206,7 +2206,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Super_Sour_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Super_Sour_Diesel.jpg"
   },
   {
     index: "170",
@@ -2219,7 +2219,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Critical_Mass.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Mass.jpg"
   },
   {
     index: "171",
@@ -2232,7 +2232,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Key_Lime_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Key_Lime_Pie.jpg"
   },
   {
     index: "172",
@@ -2245,7 +2245,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Banana_OG.jpg"
+    logo: "../assets/mygrow-search-images/Banana_OG.jpg"
   },
   {
     index: "173",
@@ -2258,7 +2258,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Kush.jpg"
   },
   {
     index: "174",
@@ -2271,7 +2271,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bubblegum_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Bubblegum_Kush.jpg"
   },
   {
     index: "175",
@@ -2284,7 +2284,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dutch_Treat.jpg"
+    logo: "../assets/mygrow-search-images/Dutch_Treat.jpg"
   },
   {
     index: "176",
@@ -2297,7 +2297,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Great_White_Shark.jpg"
+    logo: "../assets/mygrow-search-images/Great_White_Shark.jpg"
   },
   {
     index: "177",
@@ -2310,7 +2310,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Sherbert.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Sherbert.jpg"
   },
   {
     index: "178",
@@ -2323,7 +2323,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Shishkaberry.jpg"
+    logo: "../assets/mygrow-search-images/Shishkaberry.jpg"
   },
   {
     index: "179",
@@ -2336,7 +2336,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Panama_Red.jpg"
+    logo: "../assets/mygrow-search-images/Panama_Red.jpg"
   },
   {
     index: "180",
@@ -2349,7 +2349,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bordello.jpg"
+    logo: "../assets/mygrow-search-images/Bordello.jpg"
   },
   {
     index: "181",
@@ -2362,7 +2362,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Cinderella_99.jpg"
+    logo: "../assets/mygrow-search-images/Cinderella_99.jpg"
   },
   {
     index: "182",
@@ -2375,7 +2375,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Laughing_Buddha.jpg"
+    logo: "../assets/mygrow-search-images/Laughing_Buddha.jpg"
   },
   {
     index: "183",
@@ -2388,7 +2388,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Watermelon.jpg"
+    logo: "../assets/mygrow-search-images/Watermelon.jpg"
   },
   {
     index: "184",
@@ -2401,7 +2401,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Greek_Kalamata.jpg"
+    logo: "../assets/mygrow-search-images/Greek_Kalamata.jpg"
   },
   {
     index: "185",
@@ -2414,7 +2414,7 @@ var data = [
     Hybrid:"",
     Sativa: "55% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Space_Queen.jpg"
+    logo: "../assets/mygrow-search-images/Space_Queen.jpg"
   },
   {
     index: "186",
@@ -2427,7 +2427,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Super_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Super_Glue.jpg"
   },
   {
     index: "187",
@@ -2440,7 +2440,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Snoop's_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Snoop's_Dream.jpg"
   },
   {
     index: "188",
@@ -2453,7 +2453,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Big_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Big_Bud.jpg"
   },
   {
     index: "189",
@@ -2466,7 +2466,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chaos_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Chaos_Kush.jpg"
   },
   {
     index: "190",
@@ -2479,7 +2479,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/White_Buffalo.jpg"
+    logo: "../assets/mygrow-search-images/White_Buffalo.jpg"
   },
   {
     index: "191",
@@ -2492,7 +2492,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tiger's_Milk.jpg"
+    logo: "../assets/mygrow-search-images/Tiger's_Milk.jpg"
   },
   {
     index: "192",
@@ -2505,7 +2505,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Vanilla_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Vanilla_Kush.jpg"
   },
   {
     index: "193",
@@ -2518,7 +2518,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Banana_Split.jpg"
+    logo: "../assets/mygrow-search-images/Banana_Split.jpg"
   },
   {
     index: "194",
@@ -2531,7 +2531,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Runtz.jpg"
+    logo: "../assets/mygrow-search-images/White_Runtz.jpg"
   },
   {
     index: "195",
@@ -2544,7 +2544,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Amnesia.jpg"
+    logo: "../assets/mygrow-search-images/Amnesia.jpg"
   },
   {
     index: "196",
@@ -2557,7 +2557,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ice_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Ice_Wreck.jpg"
   },
   {
     index: "197",
@@ -2570,7 +2570,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jean_Guy.jpg"
+    logo: "../assets/mygrow-search-images/Jean_Guy.jpg"
   },
   {
     index: "198",
@@ -2583,7 +2583,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alaskan_Ice.jpg"
+    logo: "../assets/mygrow-search-images/Alaskan_Ice.jpg"
   },
   {
     index: "199",
@@ -2596,7 +2596,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Romulan.jpg"
+    logo: "../assets/mygrow-search-images/Romulan.jpg"
   },
   {
     index: "200",
@@ -2609,7 +2609,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Crystal_Coma.jpg"
+    logo: "../assets/mygrow-search-images/Crystal_Coma.jpg"
   },
   {
     index: "201",
@@ -2622,7 +2622,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/RudeBoi_OG.jpg"
+    logo: "../assets/mygrow-search-images/RudeBoi_OG.jpg"
   },
   {
     index: "202",
@@ -2635,7 +2635,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/London_Pound_Cake.jpg"
+    logo: "../assets/mygrow-search-images/London_Pound_Cake.jpg"
   },
   {
     index: "203",
@@ -2648,7 +2648,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Gold.jpg"
+    logo: "../assets/mygrow-search-images/White_Gold.jpg"
   },
   {
     index: "204",
@@ -2661,7 +2661,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Afgooey.jpg"
+    logo: "../assets/mygrow-search-images/Afgooey.jpg"
   },
   {
     index: "205",
@@ -2674,7 +2674,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tangerine.jpg"
+    logo: "../assets/mygrow-search-images/Tangerine.jpg"
   },
   {
     index: "206",
@@ -2687,7 +2687,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Herojuana.jpg"
+    logo: "../assets/mygrow-search-images/Herojuana.jpg"
   },
   {
     index: "207",
@@ -2700,7 +2700,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chronic.jpg"
+    logo: "../assets/mygrow-search-images/Chronic.jpg"
   },
   {
     index: "208",
@@ -2713,7 +2713,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lavender_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Lavender_Haze.jpg"
   },
   {
     index: "209",
@@ -2726,7 +2726,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_OG.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_OG.jpg"
   },
   {
     index: "210",
@@ -2739,7 +2739,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Hawaiian_Snow.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Snow.jpg"
   },
   {
     index: "211",
@@ -2752,7 +2752,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Diesel.jpg"
   },
   {
     index: "212",
@@ -2765,7 +2765,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Lucid_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Lucid_Blue.jpg"
   },
   {
     index: "213",
@@ -2778,7 +2778,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bakerstreet.jpg"
+    logo: "../assets/mygrow-search-images/Bakerstreet.jpg"
   },
   {
     index: "214",
@@ -2791,7 +2791,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/God's_Green_Crack.jpg"
+    logo: "../assets/mygrow-search-images/God's_Green_Crack.jpg"
   },
   {
     index: "215",
@@ -2804,7 +2804,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cherry_Bomb.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Bomb.jpg"
   },
   {
     index: "216",
@@ -2817,7 +2817,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Jack.jpg"
   },
   {
     index: "217",
@@ -2830,7 +2830,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/God_Bud.jpg"
+    logo: "../assets/mygrow-search-images/God_Bud.jpg"
   },
   {
     index: "218",
@@ -2843,7 +2843,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Cake.jpg"
   },
   {
     index: "219",
@@ -2856,7 +2856,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/THC_Bomb.jpg"
+    logo: "../assets/mygrow-search-images/THC_Bomb.jpg"
   },
   {
     index: "220",
@@ -2869,7 +2869,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry_Headband.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Headband.jpg"
   },
   {
     index: "221",
@@ -2882,7 +2882,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Zombie_OG.jpg"
+    logo: "../assets/mygrow-search-images/Zombie_OG.jpg"
   },
   {
     index: "222",
@@ -2895,7 +2895,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Headbanger.jpg"
+    logo: "../assets/mygrow-search-images/Headbanger.jpg"
   },
   {
     index: "223",
@@ -2908,7 +2908,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Diesel.jpg"
   },
   {
     index: "224",
@@ -2921,7 +2921,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Chocolate_Thai.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Thai.jpg"
   },
   {
     index: "225",
@@ -2934,7 +2934,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ogre_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Ogre_Kush.jpg"
   },
   {
     index: "226",
@@ -2947,7 +2947,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tangerine_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Tangerine_Dream.jpg"
   },
   {
     index: "227",
@@ -2960,7 +2960,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Triangle_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Triangle_Kush.jpg"
   },
   {
     index: "228",
@@ -2973,7 +2973,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Afghani.jpg"
+    logo: "../assets/mygrow-search-images/Afghani.jpg"
   },
   {
     index: "229",
@@ -2986,7 +2986,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cereal_Milk.jpg"
+    logo: "../assets/mygrow-search-images/Cereal_Milk.jpg"
   },
   {
     index: "230",
@@ -2999,7 +2999,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Cold_Creek_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Cold_Creek_Kush.jpg"
   },
   {
     index: "231",
@@ -3012,7 +3012,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/XJ-13.jpg"
+    logo: "../assets/mygrow-search-images/XJ-13.jpg"
   },
   {
     index: "232",
@@ -3025,7 +3025,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Crescendo.jpg"
+    logo: "../assets/mygrow-search-images/Crescendo.jpg"
   },
   {
     index: "233",
@@ -3038,7 +3038,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nebula.jpg"
+    logo: "../assets/mygrow-search-images/Nebula.jpg"
   },
   {
     index: "234",
@@ -3051,7 +3051,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Venom_OG.jpg"
+    logo: "../assets/mygrow-search-images/Venom_OG.jpg"
   },
   {
     index: "235",
@@ -3064,7 +3064,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Black_Mamba.jpg"
+    logo: "../assets/mygrow-search-images/Black_Mamba.jpg"
   },
   {
     index: "236",
@@ -3077,7 +3077,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Citrus_Sap.jpg"
+    logo: "../assets/mygrow-search-images/Citrus_Sap.jpg"
   },
   {
     index: "237",
@@ -3090,7 +3090,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% INDICA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sunshine_Daydream.jpg"
+    logo: "../assets/mygrow-search-images/Sunshine_Daydream.jpg"
   },
   {
     index: "238",
@@ -3103,7 +3103,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pineapple_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Kush.jpg"
   },
   {
     index: "239",
@@ -3116,7 +3116,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/UBC_Chemo.jpg"
+    logo: "../assets/mygrow-search-images/UBC_Chemo.jpg"
   },
   {
     index: "240",
@@ -3129,7 +3129,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Paris_OG.jpg"
+    logo: "../assets/mygrow-search-images/Paris_OG.jpg"
   },
   {
     index: "241",
@@ -3142,7 +3142,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sweet_Tooth.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Tooth.jpg"
   },
   {
     index: "242",
@@ -3155,7 +3155,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/707_Headband.jpg"
+    logo: "../assets/mygrow-search-images/707_Headband.jpg"
   },
   {
     index: "243",
@@ -3168,7 +3168,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Duke_Nukem.jpg"
+    logo: "../assets/mygrow-search-images/Duke_Nukem.jpg"
   },
   {
     index: "244",
@@ -3181,7 +3181,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Kush.jpg"
   },
   {
     index: "245",
@@ -3194,7 +3194,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Magic.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Magic.jpg"
   },
   {
     index: "246",
@@ -3207,7 +3207,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Wonder_Woman.jpg"
+    logo: "../assets/mygrow-search-images/Wonder_Woman.jpg"
   },
   {
     index: "247",
@@ -3220,7 +3220,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Dreamcatcher.jpg"
+    logo: "../assets/mygrow-search-images/Dreamcatcher.jpg"
   },
   {
     index: "248",
@@ -3233,7 +3233,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Mako_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Mako_Haze.jpg"
   },
   {
     index: "249",
@@ -3246,7 +3246,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Deadhead_OG.jpg"
+    logo: "../assets/mygrow-search-images/Deadhead_OG.jpg"
   },
   {
     index: "250",
@@ -3259,7 +3259,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Vortex.jpg"
+    logo: "../assets/mygrow-search-images/Vortex.jpg"
   },
   {
     index: "251",
@@ -3272,7 +3272,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pure_OG.jpg"
+    logo: "../assets/mygrow-search-images/Pure_OG.jpg"
   },
   {
     index: "252",
@@ -3285,7 +3285,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Hellfire_OG.jpg"
+    logo: "../assets/mygrow-search-images/Hellfire_OG.jpg"
   },
   {
     index: "253",
@@ -3298,7 +3298,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lava_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Lava_Cake.jpg"
   },
   {
     index: "254",
@@ -3311,7 +3311,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tropicana.jpg"
+    logo: "../assets/mygrow-search-images/Tropicana.jpg"
   },
   {
     index: "255",
@@ -3324,7 +3324,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Amnesia.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Amnesia.jpg"
   },
   {
     index: "256",
@@ -3337,7 +3337,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dutch_Dragon.jpg"
+    logo: "../assets/mygrow-search-images/Dutch_Dragon.jpg"
   },
   {
     index: "257",
@@ -3350,7 +3350,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Loud.jpg"
+    logo: "../assets/mygrow-search-images/Loud.jpg"
   },
   {
     index: "258",
@@ -3363,7 +3363,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Wine.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Wine.jpg"
   },
   {
     index: "259",
@@ -3376,7 +3376,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Creamsicle.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Creamsicle.jpg"
   },
   {
     index: "260",
@@ -3389,7 +3389,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tahoe_Alien.jpg"
+    logo: "../assets/mygrow-search-images/Tahoe_Alien.jpg"
   },
   {
     index: "261",
@@ -3402,7 +3402,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/LA_Kush.jpg"
+    logo: "../assets/mygrow-search-images/LA_Kush.jpg"
   },
   {
     index: "262",
@@ -3415,7 +3415,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gorilla_Glue_5.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Glue_5.jpg"
   },
   {
     index: "263",
@@ -3428,7 +3428,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/True_OG.jpg"
+    logo: "../assets/mygrow-search-images/True_OG.jpg"
   },
   {
     index: "264",
@@ -3441,7 +3441,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Enemy_of_the_State.jpg"
+    logo: "../assets/mygrow-search-images/Enemy_of_the_State.jpg"
   },
   {
     index: "265",
@@ -3454,7 +3454,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Yoda_OG.jpg"
+    logo: "../assets/mygrow-search-images/Yoda_OG.jpg"
   },
   {
     index: "266",
@@ -3467,7 +3467,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Shark_Shock.jpg"
+    logo: "../assets/mygrow-search-images/Shark_Shock.jpg"
   },
   {
     index: "267",
@@ -3480,7 +3480,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Where's_My_Bike.jpg"
+    logo: "../assets/mygrow-search-images/Where's_My_Bike.jpg"
   },
   {
     index: "268",
@@ -3493,7 +3493,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Wild_Thailand.jpg"
+    logo: "../assets/mygrow-search-images/Wild_Thailand.jpg"
   },
   {
     index: "269",
@@ -3506,7 +3506,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Grapefruit_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Grapefruit_Kush.jpg"
   },
   {
     index: "270",
@@ -3519,7 +3519,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hardcore_OG.jpg"
+    logo: "../assets/mygrow-search-images/Hardcore_OG.jpg"
   },
   {
     index: "271",
@@ -3532,7 +3532,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry_Space_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Space_Cake.jpg"
   },
   {
     index: "272",
@@ -3545,7 +3545,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Sunset.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Sunset.jpg"
   },
   {
     index: "273",
@@ -3558,7 +3558,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Money_Maker.jpg"
+    logo: "../assets/mygrow-search-images/Money_Maker.jpg"
   },
   {
     index: "274",
@@ -3571,7 +3571,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Diesel.jpg"
   },
   {
     index: "275",
@@ -3584,7 +3584,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Jamaican_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Jamaican_Dream.jpg"
   },
   {
     index: "276",
@@ -3597,7 +3597,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Nightmare.jpg"
+    logo: "../assets/mygrow-search-images/White_Nightmare.jpg"
   },
   {
     index: "277",
@@ -3610,7 +3610,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Big_Smooth.jpg"
+    logo: "../assets/mygrow-search-images/Big_Smooth.jpg"
   },
   {
     index: "278",
@@ -3623,7 +3623,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Black_Cherry_Soda.jpg"
+    logo: "../assets/mygrow-search-images/Black_Cherry_Soda.jpg"
   },
   {
     index: "279",
@@ -3635,7 +3635,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Platinum_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Platinum_Kush.jpg"
   },
   {
     index: "280",
@@ -3648,7 +3648,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Jesus_OG.jpg"
+    logo: "../assets/mygrow-search-images/Jesus_OG.jpg"
   },
   {
     index: "281",
@@ -3661,7 +3661,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cookie_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Cookie_Wreck.jpg"
   },
   {
     index: "282",
@@ -3674,7 +3674,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Peaches_and_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Peaches_and_Cream.jpg"
   },
   {
     index: "283",
@@ -3687,7 +3687,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Critical_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Haze.jpg"
   },
   {
     index: "284",
@@ -3700,7 +3700,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Banjo.jpg"
+    logo: "../assets/mygrow-search-images/Banjo.jpg"
   },
   {
     index: "285",
@@ -3713,7 +3713,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Night_Nurse.jpg"
+    logo: "../assets/mygrow-search-images/Night_Nurse.jpg"
   },
   {
     index: "286",
@@ -3726,7 +3726,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Tyson.jpg"
+    logo: "../assets/mygrow-search-images/Tyson.jpg"
   },
   {
     index: "287",
@@ -3739,7 +3739,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tangerine_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Tangerine_Kush.jpg"
   },
   {
     index: "288",
@@ -3752,7 +3752,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Melonade.jpg"
+    logo: "../assets/mygrow-search-images/Melonade.jpg"
   },
   {
     index: "289",
@@ -3765,7 +3765,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Midnight.jpg"
+    logo: "../assets/mygrow-search-images/Midnight.jpg"
   },
   {
     index: "290",
@@ -3778,7 +3778,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Outer_Space.jpg"
+    logo: "../assets/mygrow-search-images/Outer_Space.jpg"
   },
   {
     index: "291",
@@ -3791,7 +3791,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Incredible_Hulk.jpg"
+    logo: "../assets/mygrow-search-images/Incredible_Hulk.jpg"
   },
   {
     index: "292",
@@ -3804,7 +3804,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Snow_White.jpg"
+    logo: "../assets/mygrow-search-images/Snow_White.jpg"
   },
   {
     index: "293",
@@ -3817,7 +3817,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Kali_Mist.jpg"
+    logo: "../assets/mygrow-search-images/Kali_Mist.jpg"
   },
   {
     index: "294",
@@ -3830,7 +3830,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Scooby_Snacks.jpg"
+    logo: "../assets/mygrow-search-images/Scooby_Snacks.jpg"
   },
   {
     index: "295",
@@ -3843,7 +3843,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Super_Lemon_OG.jpg"
+    logo: "../assets/mygrow-search-images/Super_Lemon_OG.jpg"
   },
   {
     index: "296",
@@ -3856,7 +3856,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Voodoo.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Voodoo.jpg"
   },
   {
     index: "297",
@@ -3869,7 +3869,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cornbread.jpg"
+    logo: "../assets/mygrow-search-images/Cornbread.jpg"
   },
   {
     index: "298",
@@ -3882,7 +3882,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Grape_Stomper.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Stomper.jpg"
   },
   {
     index: "299",
@@ -3895,7 +3895,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blue_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Widow.jpg"
   },
   {
     index: "300",
@@ -3908,7 +3908,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pineapple_Chunk.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Chunk.jpg"
   },
   {
     index: "301",
@@ -3921,7 +3921,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/White_Gushers.jpg"
+    logo: "../assets/mygrow-search-images/White_Gushers.jpg"
   },
   {
     index: "302",
@@ -3934,7 +3934,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Magoo.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Magoo.jpg"
   },
   {
     index: "303",
@@ -3947,7 +3947,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Liberty_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Liberty_Haze.jpg"
   },
   {
     index: "304",
@@ -3960,7 +3960,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/K2.jpg"
+    logo: "../assets/mygrow-search-images/K2.jpg"
   },
   {
     index: "305",
@@ -3973,7 +3973,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/XXX_OG.jpg"
+    logo: "../assets/mygrow-search-images/XXX_OG.jpg"
   },
   {
     index: "306",
@@ -3986,7 +3986,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blood_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Blood_Kush.jpg"
   },
   {
     index: "307",
@@ -3999,7 +3999,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pandora's_Box.jpg"
+    logo: "../assets/mygrow-search-images/Pandora's_Box.jpg"
   },
   {
     index: "308",
@@ -4012,7 +4012,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Skunk_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Skunk_Haze.jpg"
   },
   {
     index: "309",
@@ -4025,7 +4025,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Catfish.jpg"
+    logo: "../assets/mygrow-search-images/Catfish.jpg"
   },
   {
     index: "310",
@@ -4038,7 +4038,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Kush.jpg"
   },
   {
     index: "311",
@@ -4051,7 +4051,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "20",
-    logo: "assets/mygrow-search-images/Thai_Sticks.jpg"
+    logo: "../assets/mygrow-search-images/Thai_Sticks.jpg"
   },
   {
     index: "312",
@@ -4064,7 +4064,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/East_Coast_Sour_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/East_Coast_Sour_Diesel.jpg"
   },
   {
     index: "313",
@@ -4077,7 +4077,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Black_Cheese.jpg"
   },
   {
     index: "314",
@@ -4090,7 +4090,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Diablo_OG.jpg"
+    logo: "../assets/mygrow-search-images/Diablo_OG.jpg"
   },
   {
     index: "315",
@@ -4103,7 +4103,7 @@ var data = [
     Hybrid:"",
     Sativa: "55% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Critical_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Jack.jpg"
   },
   {
     index: "316",
@@ -4116,7 +4116,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Larry_Bird_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Larry_Bird_Kush.jpg"
   },
   {
     index: "317",
@@ -4129,7 +4129,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Meringue.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Meringue.jpg"
   },
   {
     index: "318",
@@ -4142,7 +4142,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Thai.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Thai.jpg"
   },
   {
     index: "319",
@@ -4155,7 +4155,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Peyote_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Peyote_Cookies.jpg"
   },
   {
     index: "320",
@@ -4168,7 +4168,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Guava_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Guava_Kush.jpg"
   },
   {
     index: "321",
@@ -4181,7 +4181,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Guava_Gelato.jpg"
+    logo: "../assets/mygrow-search-images/Guava_Gelato.jpg"
   },
   {
     index: "322",
@@ -4194,7 +4194,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Mag_Landrace.jpg"
+    logo: "../assets/mygrow-search-images/Mag_Landrace.jpg"
   },
   {
     index: "323",
@@ -4207,7 +4207,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Queen_Mother_Goji.jpg"
+    logo: "../assets/mygrow-search-images/Queen_Mother_Goji.jpg"
   },
   {
     index: "324",
@@ -4220,7 +4220,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cotton_Candy_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Cotton_Candy_Kush.jpg"
   },
   {
     index: "325",
@@ -4233,7 +4233,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Platinum_Bubba_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Platinum_Bubba_Kush.jpg"
   },
   {
     index: "326",
@@ -4246,7 +4246,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cinex.jpg"
+    logo: "../assets/mygrow-search-images/Cinex.jpg"
   },
   {
     index: "327",
@@ -4259,7 +4259,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pez.jpg"
+    logo: "../assets/mygrow-search-images/Pez.jpg"
   },
   {
     index: "328",
@@ -4272,7 +4272,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Black_Domina.jpg"
+    logo: "../assets/mygrow-search-images/Black_Domina.jpg"
   },
   {
     index: "329",
@@ -4285,7 +4285,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cherry_OG.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_OG.jpg"
   },
   {
     index: "330",
@@ -4298,7 +4298,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Jolly_Rancher.jpg"
+    logo: "../assets/mygrow-search-images/Jolly_Rancher.jpg"
   },
   {
     index: "331",
@@ -4311,7 +4311,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Meat_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Meat_Breath.jpg"
   },
   {
     index: "332",
@@ -4324,7 +4324,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Jack's_Cleaner.jpg"
+    logo: "../assets/mygrow-search-images/Jack's_Cleaner.jpg"
   },
   {
     index: "333",
@@ -4337,7 +4337,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Apple.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Apple.jpg"
   },
   {
     index: "334",
@@ -4350,7 +4350,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/The_White_Angel.jpg"
+    logo: "../assets/mygrow-search-images/The_White_Angel.jpg"
   },
   {
     index: "335",
@@ -4363,7 +4363,7 @@ var data = [
     Hybrid:"",
     Sativa: "55% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Juicy_Fruit.jpg"
+    logo: "../assets/mygrow-search-images/Juicy_Fruit.jpg"
   },
   {
     index: "336",
@@ -4376,7 +4376,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Black_Tuna.jpg"
+    logo: "../assets/mygrow-search-images/Black_Tuna.jpg"
   },
   {
     index: "337",
@@ -4389,7 +4389,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lucky_Charms.jpg"
+    logo: "../assets/mygrow-search-images/Lucky_Charms.jpg"
   },
   {
     index: "338",
@@ -4402,7 +4402,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cookie_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Cookie_Breath.jpg"
   },
   {
     index: "339",
@@ -4415,7 +4415,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bonkers.jpg"
+    logo: "../assets/mygrow-search-images/Bonkers.jpg"
   },
   {
     index: "340",
@@ -4428,7 +4428,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pink_Lemonade.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Lemonade.jpg"
   },
   {
     index: "341",
@@ -4441,7 +4441,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/ZaZa.jpg"
+    logo: "../assets/mygrow-search-images/ZaZa.jpg"
   },
   {
     index: "342",
@@ -4454,7 +4454,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mandarin_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Mandarin_Cookies.jpg"
   },
   {
     index: "343",
@@ -4467,7 +4467,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Motorbreath.jpg"
+    logo: "../assets/mygrow-search-images/Motorbreath.jpg"
   },
   {
     index: "344",
@@ -4480,7 +4480,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Haze.jpg"
+    logo: "../assets/mygrow-search-images/Haze.jpg"
   },
   {
     index: "345",
@@ -4493,7 +4493,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Super_Critical.jpg"
+    logo: "../assets/mygrow-search-images/Super_Critical.jpg"
   },
   {
     index: "346",
@@ -4506,7 +4506,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Biscotti.jpg"
+    logo: "../assets/mygrow-search-images/Biscotti.jpg"
   },
   {
     index: "347",
@@ -4519,7 +4519,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sage_N_Sour.jpg"
+    logo: "../assets/mygrow-search-images/Sage_N_Sour.jpg"
   },
   {
     index: "348",
@@ -4532,7 +4532,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/The_Black.jpg"
+    logo: "../assets/mygrow-search-images/The_Black.jpg"
   },
   {
     index: "349",
@@ -4545,7 +4545,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Grape.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Grape.jpg"
   },
   {
     index: "350",
@@ -4558,7 +4558,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ecto_Cooler.jpg"
+    logo: "../assets/mygrow-search-images/Ecto_Cooler.jpg"
   },
   {
     index: "351",
@@ -4571,7 +4571,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Charlotte's_Web.jpg"
+    logo: "../assets/mygrow-search-images/Charlotte's_Web.jpg"
   },
   {
     index: "352",
@@ -4584,7 +4584,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Red_Poison.jpg"
+    logo: "../assets/mygrow-search-images/Red_Poison.jpg"
   },
   {
     index: "353",
@@ -4597,7 +4597,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Balmoral.jpg"
+    logo: "../assets/mygrow-search-images/Balmoral.jpg"
   },
   {
     index: "354",
@@ -4610,7 +4610,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Animal_Mint.jpg"
+    logo: "../assets/mygrow-search-images/Animal_Mint.jpg"
   },
   {
     index: "355",
@@ -4623,7 +4623,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Golden_Pineapple.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Pineapple.jpg"
   },
   {
     index: "356",
@@ -4636,7 +4636,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Strawberry_Cheesecake.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Cheesecake.jpg"
   },
   {
     index: "357",
@@ -4649,7 +4649,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alien_Rift.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Rift.jpg"
   },
   {
     index: "358",
@@ -4662,7 +4662,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ringo's_Gift.jpg"
+    logo: "../assets/mygrow-search-images/Ringo's_Gift.jpg"
   },
   {
     index: "359",
@@ -4675,7 +4675,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Melon_Gum.jpg"
+    logo: "../assets/mygrow-search-images/Melon_Gum.jpg"
   },
   {
     index: "360",
@@ -4688,7 +4688,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Mob_Boss.jpg"
+    logo: "../assets/mygrow-search-images/Mob_Boss.jpg"
   },
   {
     index: "361",
@@ -4701,7 +4701,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Darth_Vader_OG.jpg"
+    logo: "../assets/mygrow-search-images/Darth_Vader_OG.jpg"
   },
   {
     index: "362",
@@ -4714,7 +4714,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Cream_caramel.jpg"
+    logo: "../assets/mygrow-search-images/Cream_caramel.jpg"
   },
   {
     index: "363",
@@ -4727,7 +4727,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grape_Inferno.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Inferno.jpg"
   },
   {
     index: "364",
@@ -4740,7 +4740,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Dream.jpg"
   },
   {
     index: "365",
@@ -4753,7 +4753,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Remedy.jpg"
+    logo: "../assets/mygrow-search-images/Remedy.jpg"
   },
   {
     index: "366",
@@ -4766,7 +4766,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Legend_OG.jpg"
+    logo: "../assets/mygrow-search-images/Legend_OG.jpg"
   },
   {
     index: "367",
@@ -4779,7 +4779,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Billy_Kimber_OG.jpg"
+    logo: "../assets/mygrow-search-images/Billy_Kimber_OG.jpg"
   },
   {
     index: "368",
@@ -4792,7 +4792,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Zookies.jpg"
+    logo: "../assets/mygrow-search-images/Zookies.jpg"
   },
   {
     index: "369",
@@ -4805,7 +4805,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Gorilla_Glue_12.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Glue_12.jpg"
   },
   {
     index: "370",
@@ -4818,7 +4818,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Bud.jpg"
   },
   {
     index: "371",
@@ -4831,7 +4831,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Molokai_Frost.jpg"
+    logo: "../assets/mygrow-search-images/Molokai_Frost.jpg"
   },
   {
     index: "372",
@@ -4844,7 +4844,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nepalese_Jam.jpg"
+    logo: "../assets/mygrow-search-images/Nepalese_Jam.jpg"
   },
   {
     index: "373",
@@ -4857,7 +4857,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Bear_Dance.jpg"
+    logo: "../assets/mygrow-search-images/Bear_Dance.jpg"
   },
   {
     index: "374",
@@ -4870,7 +4870,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Lemon_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Pie.jpg"
   },
   {
     index: "375",
@@ -4883,7 +4883,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blueberry_Muffins.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Muffins.jpg"
   },
   {
     index: "376",
@@ -4896,7 +4896,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gooberry.jpg"
+    logo: "../assets/mygrow-search-images/Gooberry.jpg"
   },
   {
     index: "377",
@@ -4909,7 +4909,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Honey_Bananas.jpg"
+    logo: "../assets/mygrow-search-images/Honey_Bananas.jpg"
   },
   {
     index: "378",
@@ -4922,7 +4922,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/SAGE.jpg"
+    logo: "../assets/mygrow-search-images/SAGE.jpg"
   },
   {
     index: "379",
@@ -4935,7 +4935,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Kimbo_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Kimbo_Kush.jpg"
   },
   {
     index: "380",
@@ -4948,7 +4948,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Wappa.jpg"
+    logo: "../assets/mygrow-search-images/Wappa.jpg"
   },
   {
     index: "381",
@@ -4961,7 +4961,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mango.jpg"
+    logo: "../assets/mygrow-search-images/Mango.jpg"
   },
   {
     index: "382",
@@ -4974,7 +4974,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Original_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Original_Glue.jpg"
   },
   {
     index: "383",
@@ -4987,7 +4987,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Snowland.jpg"
+    logo: "../assets/mygrow-search-images/Snowland.jpg"
   },
   {
     index: "384",
@@ -5000,7 +5000,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OGKB.jpg"
+    logo: "../assets/mygrow-search-images/OGKB.jpg"
   },
   {
     index: "385",
@@ -5013,7 +5013,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Nirvana_Special.jpg"
+    logo: "../assets/mygrow-search-images/Nirvana_Special.jpg"
   },
   {
     index: "386",
@@ -5026,7 +5026,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Apple_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Apple_Jack.jpg"
   },
   {
     index: "387",
@@ -5039,7 +5039,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Dominator.jpg"
+    logo: "../assets/mygrow-search-images/Dominator.jpg"
   },
   {
     index: "388",
@@ -5052,7 +5052,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cookies_Gary_Payton.jpg"
+    logo: "../assets/mygrow-search-images/Cookies_Gary_Payton.jpg"
   },
   {
     index: "389",
@@ -5065,7 +5065,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Vader_OG.jpg"
+    logo: "../assets/mygrow-search-images/Vader_OG.jpg"
   },
   {
     index: "390",
@@ -5078,7 +5078,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Tahoe_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/White_Tahoe_Cookies.jpg"
   },
   {
     index: "391",
@@ -5091,7 +5091,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lilac_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Lilac_Diesel.jpg"
   },
   {
     index: "392",
@@ -5104,7 +5104,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Triple_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Triple_Cheese.jpg"
   },
   {
     index: "393",
@@ -5117,7 +5117,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_99.jpg"
+    logo: "../assets/mygrow-search-images/White_99.jpg"
   },
   {
     index: "394",
@@ -5130,7 +5130,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Carl_Sagan.jpg"
+    logo: "../assets/mygrow-search-images/Carl_Sagan.jpg"
   },
   {
     index: "395",
@@ -5143,7 +5143,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Old_Toby.jpg"
+    logo: "../assets/mygrow-search-images/Old_Toby.jpg"
   },
   {
     index: "396",
@@ -5156,7 +5156,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Love_Potion_9.jpg"
+    logo: "../assets/mygrow-search-images/Love_Potion_9.jpg"
   },
   {
     index: "397",
@@ -5169,7 +5169,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Bubba_Fett.jpg"
+    logo: "../assets/mygrow-search-images/Bubba_Fett.jpg"
   },
   {
     index: "398",
@@ -5182,7 +5182,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Wedding_Crasher.jpg"
+    logo: "../assets/mygrow-search-images/Wedding_Crasher.jpg"
   },
   {
     index: "399",
@@ -5195,7 +5195,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mars_OG.jpg"
+    logo: "../assets/mygrow-search-images/Mars_OG.jpg"
   },
   {
     index: "400",
@@ -5208,7 +5208,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Nuken.jpg"
+    logo: "../assets/mygrow-search-images/Nuken.jpg"
   },
   {
     index: "401",
@@ -5221,7 +5221,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Pineapple_Upside_Down_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Upside_Down_Cake.jpg"
   },
   {
     index: "402",
@@ -5234,7 +5234,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Big_Buddha_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Big_Buddha_Cheese.jpg"
   },
   {
     index: "403",
@@ -5247,7 +5247,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/French_Toast.jpg"
+    logo: "../assets/mygrow-search-images/French_Toast.jpg"
   },
   {
     index: "404",
@@ -5260,7 +5260,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Blue_God.jpg"
+    logo: "../assets/mygrow-search-images/Blue_God.jpg"
   },
   {
     index: "405",
@@ -5273,7 +5273,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Haze.jpg"
   },
   {
     index: "406",
@@ -5286,7 +5286,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OG_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/OG_Skunk.jpg"
   },
   {
     index: "407",
@@ -5299,7 +5299,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Super_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Super_Jack.jpg"
   },
   {
     index: "408",
@@ -5312,7 +5312,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/White_Castle.jpg"
+    logo: "../assets/mygrow-search-images/White_Castle.jpg"
   },
   {
     index: "409",
@@ -5325,7 +5325,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Somango.jpg"
+    logo: "../assets/mygrow-search-images/Somango.jpg"
   },
   {
     index: "410",
@@ -5338,7 +5338,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Apple_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Apple_Kush.jpg"
   },
   {
     index: "411",
@@ -5351,7 +5351,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/C._Banana.jpg"
+    logo: "../assets/mygrow-search-images/C._Banana.jpg"
   },
   {
     index: "412",
@@ -5364,7 +5364,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Kola.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Kola.jpg"
   },
   {
     index: "413",
@@ -5377,7 +5377,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pink_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Cookies.jpg"
   },
   {
     index: "414",
@@ -5390,7 +5390,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hawaiian_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Punch.jpg"
   },
   {
     index: "415",
@@ -5403,7 +5403,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cataract_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Cataract_Kush.jpg"
   },
   {
     index: "416",
@@ -5416,7 +5416,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mango_Tango.jpg"
+    logo: "../assets/mygrow-search-images/Mango_Tango.jpg"
   },
   {
     index: "417",
@@ -5429,7 +5429,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Super_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Super_Kush.jpg"
   },
   {
     index: "418",
@@ -5442,7 +5442,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/CBD_Dancehall.jpg"
+    logo: "../assets/mygrow-search-images/CBD_Dancehall.jpg"
   },
   {
     index: "419",
@@ -5455,7 +5455,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Donkey_Butter.jpg"
+    logo: "../assets/mygrow-search-images/Donkey_Butter.jpg"
   },
   {
     index: "420",
@@ -5468,7 +5468,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alien_Technology.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Technology.jpg"
   },
   {
     index: "421",
@@ -5481,7 +5481,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/White_Walker_OG.jpg"
+    logo: "../assets/mygrow-search-images/White_Walker_OG.jpg"
   },
   {
     index: "422",
@@ -5494,7 +5494,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Captain_America_OG.jpg"
+    logo: "../assets/mygrow-search-images/Captain_America_OG.jpg"
   },
   {
     index: "423",
@@ -5507,7 +5507,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Snoop_Dogg_OG.jpg"
+    logo: "../assets/mygrow-search-images/Snoop_Dogg_OG.jpg"
   },
   {
     index: "424",
@@ -5520,7 +5520,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hollands_Hope.jpg"
+    logo: "../assets/mygrow-search-images/Hollands_Hope.jpg"
   },
   {
     index: "425",
@@ -5533,7 +5533,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Walter_White.jpg"
+    logo: "../assets/mygrow-search-images/Walter_White.jpg"
   },
   {
     index: "426",
@@ -5546,7 +5546,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Skunkberry.jpg"
+    logo: "../assets/mygrow-search-images/Skunkberry.jpg"
   },
   {
     index: "427",
@@ -5559,7 +5559,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Moon_Rocks.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Moon_Rocks.jpg"
   },
   {
     index: "428",
@@ -5572,7 +5572,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Black_Lime_Special_Reserve.jpg"
+    logo: "../assets/mygrow-search-images/Black_Lime_Special_Reserve.jpg"
   },
   {
     index: "429",
@@ -5585,7 +5585,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Green_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Green_Dream.jpg"
   },
   {
     index: "430",
@@ -5598,7 +5598,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OG_Shark.jpg"
+    logo: "../assets/mygrow-search-images/OG_Shark.jpg"
   },
   {
     index: "431",
@@ -5611,7 +5611,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Banana_Cream_OG.jpg"
+    logo: "../assets/mygrow-search-images/Banana_Cream_OG.jpg"
   },
   {
     index: "432",
@@ -5624,7 +5624,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blue_Zkittlez.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Zkittlez.jpg"
   },
   {
     index: "433",
@@ -5637,7 +5637,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chocolate_Fondue.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Fondue.jpg"
   },
   {
     index: "434",
@@ -5650,7 +5650,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OG_18.jpg"
+    logo: "../assets/mygrow-search-images/OG_18.jpg"
   },
   {
     index: "435",
@@ -5663,7 +5663,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Purple_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Wreck.jpg"
   },
   {
     index: "436",
@@ -5676,7 +5676,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Garlic_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Garlic_Bud.jpg"
   },
   {
     index: "437",
@@ -5689,7 +5689,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pineapple_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Skunk.jpg"
   },
   {
     index: "438",
@@ -5702,7 +5702,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Exodus_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Exodus_Cheese.jpg"
   },
   {
     index: "439",
@@ -5715,7 +5715,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Cheese.jpg"
   },
   {
     index: "440",
@@ -5728,7 +5728,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Lemon_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Jack.jpg"
   },
   {
     index: "441",
@@ -5741,7 +5741,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Extreme_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Extreme_Cream.jpg"
   },
   {
     index: "442",
@@ -5754,7 +5754,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Hippie_Crippler.jpg"
+    logo: "../assets/mygrow-search-images/Hippie_Crippler.jpg"
   },
   {
     index: "443",
@@ -5767,7 +5767,7 @@ var data = [
     Hybrid:"100% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Willie_Cheesie.jpg"
+    logo: "../assets/mygrow-search-images/Willie_Cheesie.jpg"
   },
   {
     index: "444",
@@ -5780,7 +5780,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alpha_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Alpha_Blue.jpg"
   },
   {
     index: "445",
@@ -5793,7 +5793,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Little_Dragon.jpg"
+    logo: "../assets/mygrow-search-images/Little_Dragon.jpg"
   },
   {
     index: "446",
@@ -5806,7 +5806,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alien_Fire.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Fire.jpg"
   },
   {
     index: "447",
@@ -5819,7 +5819,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Houndstooth.jpg"
+    logo: "../assets/mygrow-search-images/Houndstooth.jpg"
   },
   {
     index: "448",
@@ -5832,7 +5832,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Bio_Chem.jpg"
+    logo: "../assets/mygrow-search-images/Bio_Chem.jpg"
   },
   {
     index: "449",
@@ -5845,7 +5845,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Aceh.jpg"
+    logo: "../assets/mygrow-search-images/Aceh.jpg"
   },
   {
     index: "450",
@@ -5858,7 +5858,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Maple_Leaf_Indica.jpg"
+    logo: "../assets/mygrow-search-images/Maple_Leaf_Indica.jpg"
   },
   {
     index: "451",
@@ -5871,7 +5871,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Yummy.jpg"
+    logo: "../assets/mygrow-search-images/Yummy.jpg"
   },
   {
     index: "452",
@@ -5884,7 +5884,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Aurora.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Aurora.jpg"
   },
   {
     index: "453",
@@ -5897,7 +5897,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Tsunami.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Tsunami.jpg"
   },
   {
     index: "454",
@@ -5910,7 +5910,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Reggie.jpg"
+    logo: "../assets/mygrow-search-images/Reggie.jpg"
   },
   {
     index: "455",
@@ -5923,7 +5923,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Love_Potion_1.jpg"
+    logo: "../assets/mygrow-search-images/Love_Potion_1.jpg"
   },
   {
     index: "456",
@@ -5936,7 +5936,7 @@ var data = [
     Hybrid:"",
     Sativa: "95% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/West_Coast_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/West_Coast_Diesel.jpg"
   },
   {
     index: "457",
@@ -5949,7 +5949,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "21",
-    logo: "assets/mygrow-search-images/Jamaican.jpg"
+    logo: "../assets/mygrow-search-images/Jamaican.jpg"
   },
   {
     index: "458",
@@ -5962,7 +5962,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Golden_Ticket.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Ticket.jpg"
   },
   {
     index: "459",
@@ -5975,7 +5975,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Mango.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Mango.jpg"
   },
   {
     index: "460",
@@ -5988,7 +5988,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/24K_Gold.jpg"
+    logo: "../assets/mygrow-search-images/24K_Gold.jpg"
   },
   {
     index: "461",
@@ -6001,7 +6001,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blue_Diamond.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Diamond.jpg"
   },
   {
     index: "462",
@@ -6014,7 +6014,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Royal_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Royal_Kush.jpg"
   },
   {
     index: "463",
@@ -6027,7 +6027,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/LA_OG.jpg"
+    logo: "../assets/mygrow-search-images/LA_OG.jpg"
   },
   {
     index: "464",
@@ -6040,7 +6040,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Black_Russian.jpg"
+    logo: "../assets/mygrow-search-images/Black_Russian.jpg"
   },
   {
     index: "465",
@@ -6053,7 +6053,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Diesel.jpg"
   },
   {
     index: "466",
@@ -6066,7 +6066,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Medusa.jpg"
+    logo: "../assets/mygrow-search-images/Medusa.jpg"
   },
   {
     index: "467",
@@ -6079,7 +6079,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Hawaiian_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Haze.jpg"
   },
   {
     index: "468",
@@ -6092,7 +6092,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Syrup_OG.jpg"
+    logo: "../assets/mygrow-search-images/Syrup_OG.jpg"
   },
   {
     index: "469",
@@ -6105,7 +6105,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Thai.jpg"
+    logo: "../assets/mygrow-search-images/Thai.jpg"
   },
   {
     index: "470",
@@ -6118,7 +6118,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/U_Pink_Kush.jpg"
+    logo: "../assets/mygrow-search-images/U_Pink_Kush.jpg"
   },
   {
     index: "471",
@@ -6131,7 +6131,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nepali_OG.jpg"
+    logo: "../assets/mygrow-search-images/Nepali_OG.jpg"
   },
   {
     index: "472",
@@ -6144,7 +6144,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tres_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Tres_Dawg.jpg"
   },
   {
     index: "473",
@@ -6157,7 +6157,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Painkiller.jpg"
+    logo: "../assets/mygrow-search-images/Painkiller.jpg"
   },
   {
     index: "474",
@@ -6170,7 +6170,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blueberry_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Pie.jpg"
   },
   {
     index: "475",
@@ -6183,7 +6183,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Chemdawg_4.jpg"
+    logo: "../assets/mygrow-search-images/Chemdawg_4.jpg"
   },
   {
     index: "476",
@@ -6196,7 +6196,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Banana_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Banana_Punch.jpg"
   },
   {
     index: "477",
@@ -6209,7 +6209,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Star_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Star_Berry.jpg"
   },
   {
     index: "478",
@@ -6222,7 +6222,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Black_Cherry_Gelato.jpg"
+    logo: "../assets/mygrow-search-images/Black_Cherry_Gelato.jpg"
   },
   {
     index: "479",
@@ -6235,7 +6235,7 @@ var data = [
     Hybrid:"60% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Gelato.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Gelato.jpg"
   },
   {
     index: "480",
@@ -6248,7 +6248,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Sonoma_Coma.jpg"
+    logo: "../assets/mygrow-search-images/Sonoma_Coma.jpg"
   },
   {
     index: "481",
@@ -6261,7 +6261,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Licorice.jpg"
+    logo: "../assets/mygrow-search-images/Black_Licorice.jpg"
   },
   {
     index: "482",
@@ -6274,7 +6274,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Russian.jpg"
+    logo: "../assets/mygrow-search-images/White_Russian.jpg"
   },
   {
     index: "483",
@@ -6287,7 +6287,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mr._Nice.jpg"
+    logo: "../assets/mygrow-search-images/Mr._Nice.jpg"
   },
   {
     index: "484",
@@ -6300,7 +6300,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Skunk.jpg"
   },
   {
     index: "485",
@@ -6313,7 +6313,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Critical_Orange_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Orange_Punch.jpg"
   },
   {
     index: "486",
@@ -6326,7 +6326,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blackwater.jpg"
+    logo: "../assets/mygrow-search-images/Blackwater.jpg"
   },
   {
     index: "487",
@@ -6339,7 +6339,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/El_Nino.jpg"
+    logo: "../assets/mygrow-search-images/El_Nino.jpg"
   },
   {
     index: "488",
@@ -6352,7 +6352,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Arcata_Trainwreck.jpg"
+    logo: "../assets/mygrow-search-images/Arcata_Trainwreck.jpg"
   },
   {
     index: "489",
@@ -6365,7 +6365,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grape_Soda.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Soda.jpg"
   },
   {
     index: "490",
@@ -6378,7 +6378,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Josh_D_OG.jpg"
+    logo: "../assets/mygrow-search-images/Josh_D_OG.jpg"
   },
   {
     index: "491",
@@ -6391,7 +6391,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Medicine_Man.jpg"
+    logo: "../assets/mygrow-search-images/Medicine_Man.jpg"
   },
   {
     index: "492",
@@ -6404,7 +6404,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/I-95.jpg"
+    logo: "../assets/mygrow-search-images/I-95.jpg"
   },
   {
     index: "493",
@@ -6417,7 +6417,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/White_Dream.jpg"
+    logo: "../assets/mygrow-search-images/White_Dream.jpg"
   },
   {
     index: "494",
@@ -6430,7 +6430,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Monster.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Monster.jpg"
   },
   {
     index: "495",
@@ -6443,7 +6443,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alaska.jpg"
+    logo: "../assets/mygrow-search-images/Alaska.jpg"
   },
   {
     index: "496",
@@ -6456,7 +6456,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Scott's_OG.jpg"
+    logo: "../assets/mygrow-search-images/Scott's_OG.jpg"
   },
   {
     index: "497",
@@ -6469,7 +6469,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Strawberry_Fields.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Fields.jpg"
   },
   {
     index: "498",
@@ -6482,7 +6482,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Pebbles.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Pebbles.jpg"
   },
   {
     index: "499",
@@ -6495,7 +6495,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nicole_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Nicole_Kush.jpg"
   },
   {
     index: "500",
@@ -6508,7 +6508,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Strawberry.jpg"
+    logo: "../assets/mygrow-search-images/White_Strawberry.jpg"
   },
   {
     index: "501",
@@ -6521,7 +6521,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Purple_Thai.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Thai.jpg"
   },
   {
     index: "502",
@@ -6534,7 +6534,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Green_Dragon.jpg"
+    logo: "../assets/mygrow-search-images/Green_Dragon.jpg"
   },
   {
     index: "503",
@@ -6547,7 +6547,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Purple_Passion.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Passion.jpg"
   },
   {
     index: "504",
@@ -6560,7 +6560,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Diamond_OG.jpg"
+    logo: "../assets/mygrow-search-images/Diamond_OG.jpg"
   },
   {
     index: "505",
@@ -6573,7 +6573,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Joker.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Joker.jpg"
   },
   {
     index: "506",
@@ -6586,7 +6586,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_Sativa.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Sativa.jpg"
   },
   {
     index: "507",
@@ -6599,7 +6599,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Eldorado.jpg"
+    logo: "../assets/mygrow-search-images/Eldorado.jpg"
   },
   {
     index: "508",
@@ -6612,7 +6612,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Crack.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Crack.jpg"
   },
   {
     index: "509",
@@ -6625,7 +6625,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Matanuska_Thunder_Fuck.jpg"
+    logo: "../assets/mygrow-search-images/Matanuska_Thunder_Fuck.jpg"
   },
   {
     index: "510",
@@ -6638,7 +6638,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Tangie.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Tangie.jpg"
   },
   {
     index: "511",
@@ -6651,7 +6651,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alaskan_Purple.jpg"
+    logo: "../assets/mygrow-search-images/Alaskan_Purple.jpg"
   },
   {
     index: "512",
@@ -6664,7 +6664,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nordle.jpg"
+    logo: "../assets/mygrow-search-images/Nordle.jpg"
   },
   {
     index: "513",
@@ -6677,7 +6677,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemonberry.jpg"
+    logo: "../assets/mygrow-search-images/Lemonberry.jpg"
   },
   {
     index: "514",
@@ -6690,7 +6690,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Citrus_Sunshine_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Citrus_Sunshine_Haze.jpg"
   },
   {
     index: "515",
@@ -6703,7 +6703,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Zero_Gravity.jpg"
+    logo: "../assets/mygrow-search-images/Zero_Gravity.jpg"
   },
   {
     index: "516",
@@ -6716,7 +6716,7 @@ var data = [
     Hybrid:"60% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Gelato_33.jpg"
+    logo: "../assets/mygrow-search-images/Gelato_33.jpg"
   },
   {
     index: "517",
@@ -6729,7 +6729,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chocolate_OG.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_OG.jpg"
   },
   {
     index: "518",
@@ -6742,7 +6742,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Kashmir_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Kashmir_Kush.jpg"
   },
   {
     index: "519",
@@ -6755,7 +6755,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tuna_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Tuna_Kush.jpg"
   },
   {
     index: "520",
@@ -6768,7 +6768,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cookie_Monster.jpg"
+    logo: "../assets/mygrow-search-images/Cookie_Monster.jpg"
   },
   {
     index: "521",
@@ -6781,7 +6781,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grape_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Kush.jpg"
   },
   {
     index: "522",
@@ -6794,7 +6794,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Golden_Lemon.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Lemon.jpg"
   },
   {
     index: "523",
@@ -6807,7 +6807,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nurse_Jackie.jpg"
+    logo: "../assets/mygrow-search-images/Nurse_Jackie.jpg"
   },
   {
     index: "524",
@@ -6820,7 +6820,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Yeti_OG.jpg"
+    logo: "../assets/mygrow-search-images/Yeti_OG.jpg"
   },
   {
     index: "525",
@@ -6833,7 +6833,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Double_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Double_Dream.jpg"
   },
   {
     index: "526",
@@ -6846,7 +6846,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ill_OG.jpg"
+    logo: "../assets/mygrow-search-images/Ill_OG.jpg"
   },
   {
     index: "527",
@@ -6859,7 +6859,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Oreoz.jpg"
+    logo: "../assets/mygrow-search-images/Oreoz.jpg"
   },
   {
     index: "528",
@@ -6872,7 +6872,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Berry_Bomb.jpg"
+    logo: "../assets/mygrow-search-images/Berry_Bomb.jpg"
   },
   {
     index: "529",
@@ -6885,7 +6885,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/White_Lightening.jpg"
+    logo: "../assets/mygrow-search-images/White_Lightening.jpg"
   },
   {
     index: "530",
@@ -6898,7 +6898,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Butter_OG.jpg"
+    logo: "../assets/mygrow-search-images/Butter_OG.jpg"
   },
   {
     index: "531",
@@ -6911,7 +6911,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Banana_Sherbet.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Banana_Sherbet.jpg"
   },
   {
     index: "532",
@@ -6924,7 +6924,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cheesequake.jpg"
+    logo: "../assets/mygrow-search-images/Cheesequake.jpg"
   },
   {
     index: "533",
@@ -6937,7 +6937,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/NYPD.jpg"
+    logo: "../assets/mygrow-search-images/NYPD.jpg"
   },
   {
     index: "534",
@@ -6950,7 +6950,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Peach_Ringz.jpg"
+    logo: "../assets/mygrow-search-images/Peach_Ringz.jpg"
   },
   {
     index: "535",
@@ -6963,7 +6963,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Green_Candy.jpg"
+    logo: "../assets/mygrow-search-images/Green_Candy.jpg"
   },
   {
     index: "536",
@@ -6976,7 +6976,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Balla_Berries.jpg"
+    logo: "../assets/mygrow-search-images/Balla_Berries.jpg"
   },
   {
     index: "537",
@@ -6989,7 +6989,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Cookies.jpg"
   },
   {
     index: "538",
@@ -7002,7 +7002,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tangie_Biscotti.jpg"
+    logo: "../assets/mygrow-search-images/Tangie_Biscotti.jpg"
   },
   {
     index: "539",
@@ -7015,7 +7015,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jack's_Girl.jpg"
+    logo: "../assets/mygrow-search-images/Jack's_Girl.jpg"
   },
   {
     index: "540",
@@ -7028,7 +7028,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Starry_Night.jpg"
+    logo: "../assets/mygrow-search-images/Starry_Night.jpg"
   },
   {
     index: "541",
@@ -7041,7 +7041,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Captain's_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Captain's_Cake.jpg"
   },
   {
     index: "542",
@@ -7054,7 +7054,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Champagne.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Champagne.jpg"
   },
   {
     index: "543",
@@ -7067,7 +7067,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dr._Who.jpg"
+    logo: "../assets/mygrow-search-images/Dr._Who.jpg"
   },
   {
     index: "544",
@@ -7080,7 +7080,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cookie_Dough.jpg"
+    logo: "../assets/mygrow-search-images/Cookie_Dough.jpg"
   },
   {
     index: "545",
@@ -7093,7 +7093,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Widow.jpg"
   },
   {
     index: "546",
@@ -7106,7 +7106,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grandpa's_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Grandpa's_Breath.jpg"
   },
   {
     index: "547",
@@ -7119,7 +7119,7 @@ var data = [
     Hybrid:"",
     Sativa: "50% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Mochi.jpg"
+    logo: "../assets/mygrow-search-images/Mochi.jpg"
   },
   {
     index: "548",
@@ -7132,7 +7132,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Iron_Triangle.jpg"
+    logo: "../assets/mygrow-search-images/Iron_Triangle.jpg"
   },
   {
     index: "549",
@@ -7145,7 +7145,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Brian_Berry_Cough.jpg"
+    logo: "../assets/mygrow-search-images/Brian_Berry_Cough.jpg"
   },
   {
     index: "550",
@@ -7158,7 +7158,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Four_way.jpg"
+    logo: "../assets/mygrow-search-images/Four_way.jpg"
   },
   {
     index: "551",
@@ -7171,7 +7171,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chocolate_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Kush.jpg"
   },
   {
     index: "552",
@@ -7184,7 +7184,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Silver_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Kush.jpg"
   },
   {
     index: "553",
@@ -7197,7 +7197,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Diesel.jpg"
   },
   {
     index: "554",
@@ -7210,7 +7210,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Peyton_Manning.jpg"
+    logo: "../assets/mygrow-search-images/Peyton_Manning.jpg"
   },
   {
     index: "555",
@@ -7223,7 +7223,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Lights.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Lights.jpg"
   },
   {
     index: "556",
@@ -7236,7 +7236,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sugar_Cookie.jpg"
+    logo: "../assets/mygrow-search-images/Sugar_Cookie.jpg"
   },
   {
     index: "557",
@@ -7249,7 +7249,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Axilla.jpg"
+    logo: "../assets/mygrow-search-images/Axilla.jpg"
   },
   {
     index: "558",
@@ -7262,7 +7262,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bediol.jpg"
+    logo: "../assets/mygrow-search-images/Bediol.jpg"
   },
   {
     index: "559",
@@ -7275,7 +7275,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kings_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Kings_Kush.jpg"
   },
   {
     index: "560",
@@ -7288,7 +7288,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Jelly_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Jelly_Breath.jpg"
   },
   {
     index: "561",
@@ -7301,7 +7301,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Queso.jpg"
+    logo: "../assets/mygrow-search-images/Queso.jpg"
   },
   {
     index: "562",
@@ -7314,7 +7314,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Cream.jpg"
   },
   {
     index: "563",
@@ -7327,7 +7327,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gelato_41.jpg"
+    logo: "../assets/mygrow-search-images/Gelato_41.jpg"
   },
   {
     index: "564",
@@ -7340,7 +7340,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Haze.jpg"
   },
   {
     index: "565",
@@ -7353,7 +7353,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cookies_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Cookies_Kush.jpg"
   },
   {
     index: "566",
@@ -7366,7 +7366,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Permafrost.jpg"
+    logo: "../assets/mygrow-search-images/Permafrost.jpg"
   },
   {
     index: "567",
@@ -7379,7 +7379,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Zushi.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Zushi.jpg"
   },
   {
     index: "568",
@@ -7392,7 +7392,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Power_Plant.jpg"
+    logo: "../assets/mygrow-search-images/Power_Plant.jpg"
   },
   {
     index: "569",
@@ -7405,7 +7405,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dream_Queen.jpg"
+    logo: "../assets/mygrow-search-images/Dream_Queen.jpg"
   },
   {
     index: "570",
@@ -7418,7 +7418,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Green_Goblin.jpg"
+    logo: "../assets/mygrow-search-images/Green_Goblin.jpg"
   },
   {
     index: "571",
@@ -7431,7 +7431,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/White_Diesel.jpg"
   },
   {
     index: "572",
@@ -7444,7 +7444,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Aspen_OG.jpg"
+    logo: "../assets/mygrow-search-images/Aspen_OG.jpg"
   },
   {
     index: "573",
@@ -7457,7 +7457,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/King_Tut.jpg"
+    logo: "../assets/mygrow-search-images/King_Tut.jpg"
   },
   {
     index: "574",
@@ -7470,7 +7470,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Citradelic_Sunset.jpg"
+    logo: "../assets/mygrow-search-images/Citradelic_Sunset.jpg"
   },
   {
     index: "575",
@@ -7483,7 +7483,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/William's_Wonder.jpg"
+    logo: "../assets/mygrow-search-images/William's_Wonder.jpg"
   },
   {
     index: "576",
@@ -7496,7 +7496,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Mazar.jpg"
+    logo: "../assets/mygrow-search-images/Mazar.jpg"
   },
   {
     index: "577",
@@ -7509,7 +7509,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Gorilla_Bomb.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Bomb.jpg"
   },
   {
     index: "578",
@@ -7522,7 +7522,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Raspberry_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Raspberry_Kush.jpg"
   },
   {
     index: "579",
@@ -7535,7 +7535,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Acid_Dough.jpg"
+    logo: "../assets/mygrow-search-images/Acid_Dough.jpg"
   },
   {
     index: "580",
@@ -7548,7 +7548,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Alien_Rock_Candy.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Rock_Candy.jpg"
   },
   {
     index: "581",
@@ -7561,7 +7561,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Commerce_City_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Commerce_City_Kush.jpg"
   },
   {
     index: "582",
@@ -7574,7 +7574,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Cherry_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Black_Cherry_Pie.jpg"
   },
   {
     index: "583",
@@ -7587,7 +7587,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sunburn.jpg"
+    logo: "../assets/mygrow-search-images/Sunburn.jpg"
   },
   {
     index: "584",
@@ -7600,7 +7600,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Buddha.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Buddha.jpg"
   },
   {
     index: "585",
@@ -7613,7 +7613,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Hell's_Angel_OG.jpg"
+    logo: "../assets/mygrow-search-images/Hell's_Angel_OG.jpg"
   },
   {
     index: "586",
@@ -7626,7 +7626,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Neville's_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Neville's_Haze.jpg"
   },
   {
     index: "587",
@@ -7639,7 +7639,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Bianca.jpg"
+    logo: "../assets/mygrow-search-images/Bianca.jpg"
   },
   {
     index: "588",
@@ -7652,7 +7652,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Face_Off_OG.jpg"
+    logo: "../assets/mygrow-search-images/Face_Off_OG.jpg"
   },
   {
     index: "589",
@@ -7665,7 +7665,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pancake_Ice.jpg"
+    logo: "../assets/mygrow-search-images/Pancake_Ice.jpg"
   },
   {
     index: "590",
@@ -7678,7 +7678,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_43.jpg"
+    logo: "../assets/mygrow-search-images/Orange_43.jpg"
   },
   {
     index: "591",
@@ -7691,7 +7691,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Holy_Roller.jpg"
+    logo: "../assets/mygrow-search-images/Holy_Roller.jpg"
   },
   {
     index: "592",
@@ -7704,7 +7704,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Northern_Hashplant.jpg"
+    logo: "../assets/mygrow-search-images/Northern_Hashplant.jpg"
   },
   {
     index: "593",
@@ -7717,7 +7717,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Galactic_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Galactic_Jack.jpg"
   },
   {
     index: "594",
@@ -7730,7 +7730,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Peach_Cobbler.jpg"
+    logo: "../assets/mygrow-search-images/Peach_Cobbler.jpg"
   },
   {
     index: "595",
@@ -7743,7 +7743,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Warlock.jpg"
+    logo: "../assets/mygrow-search-images/Warlock.jpg"
   },
   {
     index: "596",
@@ -7756,7 +7756,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/DJ_Short_Blueberry.jpg"
+    logo: "../assets/mygrow-search-images/DJ_Short_Blueberry.jpg"
   },
   {
     index: "597",
@@ -7769,7 +7769,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cinderella's_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Cinderella's_Dream.jpg"
   },
   {
     index: "598",
@@ -7782,7 +7782,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Skunk_1.jpg"
+    logo: "../assets/mygrow-search-images/Skunk_1.jpg"
   },
   {
     index: "599",
@@ -7795,7 +7795,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grape_Jelly.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Jelly.jpg"
   },
   {
     index: "600",
@@ -7808,7 +7808,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gypsy_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Gypsy_Kush.jpg"
   },
   {
     index: "601",
@@ -7821,7 +7821,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grape_Valley_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Valley_Kush.jpg"
   },
   {
     index: "602",
@@ -7834,7 +7834,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ice.jpg"
+    logo: "../assets/mygrow-search-images/Ice.jpg"
   },
   {
     index: "603",
@@ -7847,7 +7847,7 @@ var data = [
     Hybrid:"100% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Omega.jpg"
+    logo: "../assets/mygrow-search-images/Omega.jpg"
   },
   {
     index: "604",
@@ -7860,7 +7860,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Killer_Queen.jpg"
+    logo: "../assets/mygrow-search-images/Killer_Queen.jpg"
   },
   {
     index: "605",
@@ -7873,7 +7873,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Green_Poison.jpg"
+    logo: "../assets/mygrow-search-images/Green_Poison.jpg"
   },
   {
     index: "606",
@@ -7886,7 +7886,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry.jpg"
   },
   {
     index: "607",
@@ -7899,7 +7899,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hashberry.jpg"
+    logo: "../assets/mygrow-search-images/Hashberry.jpg"
   },
   {
     index: "608",
@@ -7912,7 +7912,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Green_Ribbon.jpg"
+    logo: "../assets/mygrow-search-images/Green_Ribbon.jpg"
   },
   {
     index: "609",
@@ -7925,7 +7925,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alpha_Omega_OG.jpg"
+    logo: "../assets/mygrow-search-images/Alpha_Omega_OG.jpg"
   },
   {
     index: "610",
@@ -7938,7 +7938,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cadillac_Purple.jpg"
+    logo: "../assets/mygrow-search-images/Cadillac_Purple.jpg"
   },
   {
     index: "611",
@@ -7951,7 +7951,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Goo.jpg"
+    logo: "../assets/mygrow-search-images/Goo.jpg"
   },
   {
     index: "612",
@@ -7964,7 +7964,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Euphoria.jpg"
+    logo: "../assets/mygrow-search-images/Euphoria.jpg"
   },
   {
     index: "613",
@@ -7977,7 +7977,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Cookies.jpg"
   },
   {
     index: "614",
@@ -7990,7 +7990,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rolls_Choice.jpg"
+    logo: "../assets/mygrow-search-images/Rolls_Choice.jpg"
   },
   {
     index: "615",
@@ -8003,7 +8003,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Woody_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Woody_Kush.jpg"
   },
   {
     index: "616",
@@ -8016,7 +8016,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Berry.jpg"
   },
   {
     index: "617",
@@ -8029,7 +8029,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rozé.jpg"
+    logo: "../assets/mygrow-search-images/Rozé.jpg"
   },
   {
     index: "618",
@@ -8042,7 +8042,7 @@ var data = [
     Hybrid:"55% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Head_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Head_Cheese.jpg"
   },
   {
     index: "619",
@@ -8055,7 +8055,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Game_Changer.jpg"
+    logo: "../assets/mygrow-search-images/Game_Changer.jpg"
   },
   {
     index: "620",
@@ -8068,7 +8068,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Elvis.jpg"
+    logo: "../assets/mygrow-search-images/Elvis.jpg"
   },
   {
     index: "621",
@@ -8081,7 +8081,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Critical_Bilbo.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Bilbo.jpg"
   },
   {
     index: "622",
@@ -8094,7 +8094,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/U.K._Cheese.jpg"
+    logo: "../assets/mygrow-search-images/U.K._Cheese.jpg"
   },
   {
     index: "623",
@@ -8107,7 +8107,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ms_Universe.jpg"
+    logo: "../assets/mygrow-search-images/Ms_Universe.jpg"
   },
   {
     index: "624",
@@ -8120,7 +8120,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Candy.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Candy.jpg"
   },
   {
     index: "625",
@@ -8133,7 +8133,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Juliet.jpg"
+    logo: "../assets/mygrow-search-images/Juliet.jpg"
   },
   {
     index: "626",
@@ -8146,7 +8146,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Erez.jpg"
+    logo: "../assets/mygrow-search-images/Erez.jpg"
   },
   {
     index: "627",
@@ -8159,7 +8159,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "6",
-    logo: "assets/mygrow-search-images/Gigabud.jpg"
+    logo: "../assets/mygrow-search-images/Gigabud.jpg"
   },
   {
     index: "628",
@@ -8172,7 +8172,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ghostbreath.jpg"
+    logo: "../assets/mygrow-search-images/Ghostbreath.jpg"
   },
   {
     index: "629",
@@ -8185,7 +8185,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lavender_Jones.jpg"
+    logo: "../assets/mygrow-search-images/Lavender_Jones.jpg"
   },
   {
     index: "630",
@@ -8198,7 +8198,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chemdawg_91.jpg"
+    logo: "../assets/mygrow-search-images/Chemdawg_91.jpg"
   },
   {
     index: "631",
@@ -8211,7 +8211,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sherblato.jpg"
+    logo: "../assets/mygrow-search-images/Sherblato.jpg"
   },
   {
     index: "632",
@@ -8224,7 +8224,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Mendo_Queen.jpg"
+    logo: "../assets/mygrow-search-images/Mendo_Queen.jpg"
   },
   {
     index: "633",
@@ -8237,7 +8237,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hibiscus_Sunrise.jpg"
+    logo: "../assets/mygrow-search-images/Hibiscus_Sunrise.jpg"
   },
   {
     index: "634",
@@ -8250,7 +8250,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Scout's_Honor.jpg"
+    logo: "../assets/mygrow-search-images/Scout's_Honor.jpg"
   },
   {
     index: "635",
@@ -8263,7 +8263,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Trix.jpg"
+    logo: "../assets/mygrow-search-images/Trix.jpg"
   },
   {
     index: "636",
@@ -8276,7 +8276,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/F.O.G..jpg"
+    logo: "../assets/mygrow-search-images/F.O.G..jpg"
   },
   {
     index: "637",
@@ -8289,7 +8289,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ultraviolet.jpg"
+    logo: "../assets/mygrow-search-images/Ultraviolet.jpg"
   },
   {
     index: "638",
@@ -8302,7 +8302,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Limeade.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Limeade.jpg"
   },
   {
     index: "639",
@@ -8315,7 +8315,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Silver_Bubble.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Bubble.jpg"
   },
   {
     index: "640",
@@ -8328,7 +8328,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Armageddon.jpg"
+    logo: "../assets/mygrow-search-images/Armageddon.jpg"
   },
   {
     index: "641",
@@ -8341,7 +8341,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Jolly_Rancher.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Jolly_Rancher.jpg"
   },
   {
     index: "642",
@@ -8354,7 +8354,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Key_Lime_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Key_Lime_Haze.jpg"
   },
   {
     index: "643",
@@ -8367,7 +8367,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tangilope.jpg"
+    logo: "../assets/mygrow-search-images/Tangilope.jpg"
   },
   {
     index: "644",
@@ -8380,7 +8380,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Allen_Wrench.jpg"
+    logo: "../assets/mygrow-search-images/Allen_Wrench.jpg"
   },
   {
     index: "645",
@@ -8393,7 +8393,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Air_Jordan_OG.jpg"
+    logo: "../assets/mygrow-search-images/Air_Jordan_OG.jpg"
   },
   {
     index: "646",
@@ -8406,7 +8406,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Supermax_OG.jpg"
+    logo: "../assets/mygrow-search-images/Supermax_OG.jpg"
   },
   {
     index: "647",
@@ -8419,7 +8419,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Redd_Cross.jpg"
+    logo: "../assets/mygrow-search-images/Redd_Cross.jpg"
   },
   {
     index: "648",
@@ -8432,7 +8432,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Rosaberry.jpg"
+    logo: "../assets/mygrow-search-images/Rosaberry.jpg"
   },
   {
     index: "649",
@@ -8445,7 +8445,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Monster_OG.jpg"
+    logo: "../assets/mygrow-search-images/Monster_OG.jpg"
   },
   {
     index: "650",
@@ -8458,7 +8458,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Label.jpg"
+    logo: "../assets/mygrow-search-images/Black_Label.jpg"
   },
   {
     index: "651",
@@ -8471,7 +8471,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Legendary_Lemon.jpg"
+    logo: "../assets/mygrow-search-images/Legendary_Lemon.jpg"
   },
   {
     index: "652",
@@ -8484,7 +8484,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Galactica_OG.jpg"
+    logo: "../assets/mygrow-search-images/Galactica_OG.jpg"
   },
   {
     index: "653",
@@ -8497,7 +8497,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/California_Orange_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/California_Orange_Cheese.jpg"
   },
   {
     index: "654",
@@ -8510,7 +8510,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alpine_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Alpine_Blue.jpg"
   },
   {
     index: "655",
@@ -8523,7 +8523,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/98_White_Widow.jpg"
+    logo: "../assets/mygrow-search-images/98_White_Widow.jpg"
   },
   {
     index: "656",
@@ -8536,7 +8536,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Chem_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Chem_Cookies.jpg"
   },
   {
     index: "657",
@@ -8549,7 +8549,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chocolate_Cheesecake.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Cheesecake.jpg"
   },
   {
     index: "658",
@@ -8562,7 +8562,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/999.jpg"
+    logo: "../assets/mygrow-search-images/999.jpg"
   },
   {
     index: "659",
@@ -8575,7 +8575,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sister_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Sister_Glue.jpg"
   },
   {
     index: "660",
@@ -8588,7 +8588,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Ivy.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Ivy.jpg"
   },
   {
     index: "661",
@@ -8601,7 +8601,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Irene_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Irene_Kush.jpg"
   },
   {
     index: "662",
@@ -8614,7 +8614,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Fast_Eddy.jpg"
+    logo: "../assets/mygrow-search-images/Fast_Eddy.jpg"
   },
   {
     index: "663",
@@ -8627,7 +8627,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Fruit_Crusher.jpg"
+    logo: "../assets/mygrow-search-images/Fruit_Crusher.jpg"
   },
   {
     index: "664",
@@ -8640,7 +8640,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Animal_Gas.jpg"
+    logo: "../assets/mygrow-search-images/Animal_Gas.jpg"
   },
   {
     index: "665",
@@ -8653,7 +8653,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Plushberry.jpg"
+    logo: "../assets/mygrow-search-images/Plushberry.jpg"
   },
   {
     index: "666",
@@ -8666,7 +8666,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mataro_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Mataro_Blue.jpg"
   },
   {
     index: "667",
@@ -8679,7 +8679,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Memory_Loss.jpg"
+    logo: "../assets/mygrow-search-images/Memory_Loss.jpg"
   },
   {
     index: "668",
@@ -8692,7 +8692,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Lemon.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Lemon.jpg"
   },
   {
     index: "669",
@@ -8705,7 +8705,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Fire_Alien_Master.jpg"
+    logo: "../assets/mygrow-search-images/Fire_Alien_Master.jpg"
   },
   {
     index: "670",
@@ -8718,7 +8718,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Wet_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Wet_Dream.jpg"
   },
   {
     index: "671",
@@ -8731,7 +8731,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sugar_Black_Rose.jpg"
+    logo: "../assets/mygrow-search-images/Sugar_Black_Rose.jpg"
   },
   {
     index: "672",
@@ -8744,7 +8744,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Animal_Face.jpg"
+    logo: "../assets/mygrow-search-images/Animal_Face.jpg"
   },
   {
     index: "673",
@@ -8757,7 +8757,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pineapple_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Jack.jpg"
   },
   {
     index: "674",
@@ -8770,7 +8770,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Thunderstruck.jpg"
+    logo: "../assets/mygrow-search-images/Thunderstruck.jpg"
   },
   {
     index: "675",
@@ -8783,7 +8783,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/White_Berry.jpg"
+    logo: "../assets/mygrow-search-images/White_Berry.jpg"
   },
   {
     index: "676",
@@ -8796,7 +8796,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Godberry.jpg"
+    logo: "../assets/mygrow-search-images/Godberry.jpg"
   },
   {
     index: "677",
@@ -8809,7 +8809,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/False_Teeth.jpg"
+    logo: "../assets/mygrow-search-images/False_Teeth.jpg"
   },
   {
     index: "678",
@@ -8822,7 +8822,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Polar_Dog.jpg"
+    logo: "../assets/mygrow-search-images/Polar_Dog.jpg"
   },
   {
     index: "679",
@@ -8835,7 +8835,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gelato_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Gelato_Cake.jpg"
   },
   {
     index: "680",
@@ -8848,7 +8848,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Now_N_Later.jpg"
+    logo: "../assets/mygrow-search-images/Now_N_Later.jpg"
   },
   {
     index: "681",
@@ -8861,7 +8861,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Beyond_the_Brain.jpg"
+    logo: "../assets/mygrow-search-images/Beyond_the_Brain.jpg"
   },
   {
     index: "682",
@@ -8874,7 +8874,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Gorilla.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Gorilla.jpg"
   },
   {
     index: "683",
@@ -8887,7 +8887,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Garanimals.jpg"
+    logo: "../assets/mygrow-search-images/Garanimals.jpg"
   },
   {
     index: "684",
@@ -8900,7 +8900,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tillamook_Strawberry.jpg"
+    logo: "../assets/mygrow-search-images/Tillamook_Strawberry.jpg"
   },
   {
     index: "685",
@@ -8913,7 +8913,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ultra_Sour.jpg"
+    logo: "../assets/mygrow-search-images/Ultra_Sour.jpg"
   },
   {
     index: "686",
@@ -8926,7 +8926,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tuna_OG.jpg"
+    logo: "../assets/mygrow-search-images/Tuna_OG.jpg"
   },
   {
     index: "687",
@@ -8939,7 +8939,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Versace.jpg"
+    logo: "../assets/mygrow-search-images/Versace.jpg"
   },
   {
     index: "688",
@@ -8952,7 +8952,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Washing_Machine.jpg"
+    logo: "../assets/mygrow-search-images/Washing_Machine.jpg"
   },
   {
     index: "689",
@@ -8965,7 +8965,7 @@ var data = [
     Hybrid:"",
     Sativa: "50% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Wakanda_OG.jpg"
+    logo: "../assets/mygrow-search-images/Wakanda_OG.jpg"
   },
   {
     index: "690",
@@ -8978,7 +8978,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ace_of_Spades.jpg"
+    logo: "../assets/mygrow-search-images/Ace_of_Spades.jpg"
   },
   {
     index: "691",
@@ -8991,7 +8991,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/The_Brotherhood.jpg"
+    logo: "../assets/mygrow-search-images/The_Brotherhood.jpg"
   },
   {
     index: "692",
@@ -9004,7 +9004,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dr._Grinspoon.jpg"
+    logo: "../assets/mygrow-search-images/Dr._Grinspoon.jpg"
   },
   {
     index: "693",
@@ -9017,7 +9017,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Firewalker_OG.jpg"
+    logo: "../assets/mygrow-search-images/Firewalker_OG.jpg"
   },
   {
     index: "694",
@@ -9030,7 +9030,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Corleone_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Corleone_Kush.jpg"
   },
   {
     index: "695",
@@ -9043,7 +9043,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Doc_OG.jpg"
+    logo: "../assets/mygrow-search-images/Doc_OG.jpg"
   },
   {
     index: "696",
@@ -9056,7 +9056,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pine_Tar_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Pine_Tar_Kush.jpg"
   },
   {
     index: "697",
@@ -9069,7 +9069,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Jack.jpg"
   },
   {
     index: "698",
@@ -9082,7 +9082,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Monkey_Balls.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Monkey_Balls.jpg"
   },
   {
     index: "699",
@@ -9095,7 +9095,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Redwood_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Redwood_Kush.jpg"
   },
   {
     index: "700",
@@ -9108,7 +9108,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Cheddar.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Cheddar.jpg"
   },
   {
     index: "701",
@@ -9121,7 +9121,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Purple_Tangie.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Tangie.jpg"
   },
   {
     index: "702",
@@ -9134,7 +9134,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Red_Congolese.jpg"
+    logo: "../assets/mygrow-search-images/Red_Congolese.jpg"
   },
   {
     index: "703",
@@ -9147,7 +9147,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Label_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Black_Label_Kush.jpg"
   },
   {
     index: "704",
@@ -9160,7 +9160,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alien_Hallucination.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Hallucination.jpg"
   },
   {
     index: "705",
@@ -9173,7 +9173,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Primus.jpg"
+    logo: "../assets/mygrow-search-images/Primus.jpg"
   },
   {
     index: "706",
@@ -9186,7 +9186,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Buddha's_Sister.jpg"
+    logo: "../assets/mygrow-search-images/Buddha's_Sister.jpg"
   },
   {
     index: "707",
@@ -9199,7 +9199,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Crimea_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Crimea_Blue.jpg"
   },
   {
     index: "708",
@@ -9212,7 +9212,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Buddha's_Hand.jpg"
+    logo: "../assets/mygrow-search-images/Buddha's_Hand.jpg"
   },
   {
     index: "709",
@@ -9225,7 +9225,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Godfather_OG.jpg"
+    logo: "../assets/mygrow-search-images/Godfather_OG.jpg"
   },
   {
     index: "710",
@@ -9238,7 +9238,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pop_Rox.jpg"
+    logo: "../assets/mygrow-search-images/Pop_Rox.jpg"
   },
   {
     index: "711",
@@ -9251,7 +9251,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Colorado_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/Colorado_Bubba.jpg"
   },
   {
     index: "712",
@@ -9264,7 +9264,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Pineapple_Thai.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Thai.jpg"
   },
   {
     index: "713",
@@ -9277,7 +9277,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bubba_OG.jpg"
+    logo: "../assets/mygrow-search-images/Bubba_OG.jpg"
   },
   {
     index: "714",
@@ -9290,7 +9290,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Tonic.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Tonic.jpg"
   },
   {
     index: "715",
@@ -9303,7 +9303,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alien_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Bubba.jpg"
   },
   {
     index: "716",
@@ -9316,7 +9316,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blueberry_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Jack.jpg"
   },
   {
     index: "717",
@@ -9329,7 +9329,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Crack.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Crack.jpg"
   },
   {
     index: "718",
@@ -9342,7 +9342,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blackberry_x_Blueberry.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_x_Blueberry.jpg"
   },
   {
     index: "719",
@@ -9355,7 +9355,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Platinum_Purple_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Platinum_Purple_Kush.jpg"
   },
   {
     index: "720",
@@ -9368,7 +9368,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hercules.jpg"
+    logo: "../assets/mygrow-search-images/Hercules.jpg"
   },
   {
     index: "721",
@@ -9381,7 +9381,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Juice.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Juice.jpg"
   },
   {
     index: "722",
@@ -9394,7 +9394,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hindu_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Hindu_Skunk.jpg"
   },
   {
     index: "723",
@@ -9407,7 +9407,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Steel.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Steel.jpg"
   },
   {
     index: "724",
@@ -9420,7 +9420,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Citrus_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Citrus_Punch.jpg"
   },
   {
     index: "725",
@@ -9433,7 +9433,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jack_47.jpg"
+    logo: "../assets/mygrow-search-images/Jack_47.jpg"
   },
   {
     index: "726",
@@ -9446,7 +9446,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Quebec_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Quebec_Gold.jpg"
   },
   {
     index: "727",
@@ -9459,7 +9459,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Optimus_Prime.jpg"
+    logo: "../assets/mygrow-search-images/Optimus_Prime.jpg"
   },
   {
     index: "728",
@@ -9472,7 +9472,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Johnny_Blaze.jpg"
+    logo: "../assets/mygrow-search-images/Johnny_Blaze.jpg"
   },
   {
     index: "729",
@@ -9485,7 +9485,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "16",
-    logo: "assets/mygrow-search-images/Ethiopian.jpg"
+    logo: "../assets/mygrow-search-images/Ethiopian.jpg"
   },
   {
     index: "730",
@@ -9498,7 +9498,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/White_Gorilla.jpg"
+    logo: "../assets/mygrow-search-images/White_Gorilla.jpg"
   },
   {
     index: "731",
@@ -9511,7 +9511,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "6",
-    logo: "assets/mygrow-search-images/G1000.jpg"
+    logo: "../assets/mygrow-search-images/G1000.jpg"
   },
   {
     index: "732",
@@ -9524,7 +9524,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Alien_OG.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Alien_OG.jpg"
   },
   {
     index: "733",
@@ -9537,7 +9537,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Afghan.jpg"
+    logo: "../assets/mygrow-search-images/Black_Afghan.jpg"
   },
   {
     index: "734",
@@ -9550,7 +9550,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Birds_of_Paradise.jpg"
+    logo: "../assets/mygrow-search-images/Birds_of_Paradise.jpg"
   },
   {
     index: "735",
@@ -9563,7 +9563,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Valley_Girl.jpg"
+    logo: "../assets/mygrow-search-images/Valley_Girl.jpg"
   },
   {
     index: "736",
@@ -9576,7 +9576,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chiesel.jpg"
+    logo: "../assets/mygrow-search-images/Chiesel.jpg"
   },
   {
     index: "737",
@@ -9589,7 +9589,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Pineapple_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Haze.jpg"
   },
   {
     index: "738",
@@ -9602,7 +9602,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Loud_Scout.jpg"
+    logo: "../assets/mygrow-search-images/Loud_Scout.jpg"
   },
   {
     index: "739",
@@ -9615,7 +9615,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Heron.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Heron.jpg"
   },
   {
     index: "740",
@@ -9628,7 +9628,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ghetto_Bird.jpg"
+    logo: "../assets/mygrow-search-images/Ghetto_Bird.jpg"
   },
   {
     index: "741",
@@ -9641,7 +9641,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Big_Bull.jpg"
+    logo: "../assets/mygrow-search-images/Big_Bull.jpg"
   },
   {
     index: "742",
@@ -9654,7 +9654,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/White_Kush.jpg"
+    logo: "../assets/mygrow-search-images/White_Kush.jpg"
   },
   {
     index: "743",
@@ -9667,7 +9667,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Ice.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Ice.jpg"
   },
   {
     index: "744",
@@ -9680,7 +9680,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Fortune_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Fortune_Cookies.jpg"
   },
   {
     index: "745",
@@ -9693,7 +9693,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bright_Fire.jpg"
+    logo: "../assets/mygrow-search-images/Bright_Fire.jpg"
   },
   {
     index: "746",
@@ -9706,7 +9706,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Big_Mac.jpg"
+    logo: "../assets/mygrow-search-images/Big_Mac.jpg"
   },
   {
     index: "747",
@@ -9719,7 +9719,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sugar_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Sugar_Kush.jpg"
   },
   {
     index: "748",
@@ -9732,7 +9732,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/White_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/White_Dawg.jpg"
   },
   {
     index: "749",
@@ -9745,7 +9745,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Bell_Ringer.jpg"
+    logo: "../assets/mygrow-search-images/Bell_Ringer.jpg"
   },
   {
     index: "750",
@@ -9758,7 +9758,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tropical_Tang.jpg"
+    logo: "../assets/mygrow-search-images/Tropical_Tang.jpg"
   },
   {
     index: "751",
@@ -9771,7 +9771,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/King_Kush.jpg"
+    logo: "../assets/mygrow-search-images/King_Kush.jpg"
   },
   {
     index: "752",
@@ -9784,7 +9784,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Raspberry_Cough.jpg"
+    logo: "../assets/mygrow-search-images/Raspberry_Cough.jpg"
   },
   {
     index: "753",
@@ -9797,7 +9797,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pink_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Bubba.jpg"
   },
   {
     index: "754",
@@ -9810,7 +9810,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/OG_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/OG_Cheese.jpg"
   },
   {
     index: "755",
@@ -9823,7 +9823,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/California_Hash_Plant.jpg"
+    logo: "../assets/mygrow-search-images/California_Hash_Plant.jpg"
   },
   {
     index: "756",
@@ -9836,7 +9836,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bright_Moments.jpg"
+    logo: "../assets/mygrow-search-images/Bright_Moments.jpg"
   },
   {
     index: "757",
@@ -9849,7 +9849,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Early_Miss.jpg"
+    logo: "../assets/mygrow-search-images/Early_Miss.jpg"
   },
   {
     index: "758",
@@ -9862,7 +9862,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Or.jpg"
+    logo: "../assets/mygrow-search-images/Or.jpg"
   },
   {
     index: "759",
@@ -9875,7 +9875,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Atomic_Bomb.jpg"
+    logo: "../assets/mygrow-search-images/Atomic_Bomb.jpg"
   },
   {
     index: "760",
@@ -9888,7 +9888,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Big_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Big_Kush.jpg"
   },
   {
     index: "761",
@@ -9901,7 +9901,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Black_Cherry_OG.jpg"
+    logo: "../assets/mygrow-search-images/Black_Cherry_OG.jpg"
   },
   {
     index: "762",
@@ -9914,7 +9914,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OG_Chem.jpg"
+    logo: "../assets/mygrow-search-images/OG_Chem.jpg"
   },
   {
     index: "763",
@@ -9927,7 +9927,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gas_Mask.jpg"
+    logo: "../assets/mygrow-search-images/Gas_Mask.jpg"
   },
   {
     index: "764",
@@ -9940,7 +9940,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Chocolate_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Diesel.jpg"
   },
   {
     index: "765",
@@ -9953,7 +9953,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ghost_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Ghost_Cookies.jpg"
   },
   {
     index: "766",
@@ -9966,7 +9966,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sweet_Black_Angel.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Black_Angel.jpg"
   },
   {
     index: "767",
@@ -9979,7 +9979,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/C3PO.jpg"
+    logo: "../assets/mygrow-search-images/C3PO.jpg"
   },
   {
     index: "768",
@@ -9992,7 +9992,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Rocket_Fuel.jpg"
+    logo: "../assets/mygrow-search-images/Rocket_Fuel.jpg"
   },
   {
     index: "769",
@@ -10005,7 +10005,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/La_Blanca.jpg"
+    logo: "../assets/mygrow-search-images/La_Blanca.jpg"
   },
   {
     index: "770",
@@ -10018,7 +10018,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dr._Bubbles.jpg"
+    logo: "../assets/mygrow-search-images/Dr._Bubbles.jpg"
   },
   {
     index: "771",
@@ -10031,7 +10031,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "14",
-    logo: "assets/mygrow-search-images/Red_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Red_Haze.jpg"
   },
   {
     index: "772",
@@ -10044,7 +10044,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Dragon_OG.jpg"
+    logo: "../assets/mygrow-search-images/Dragon_OG.jpg"
   },
   {
     index: "773",
@@ -10057,7 +10057,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Lemonade.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Lemonade.jpg"
   },
   {
     index: "774",
@@ -10070,7 +10070,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Aurora_Indica.jpg"
+    logo: "../assets/mygrow-search-images/Aurora_Indica.jpg"
   },
   {
     index: "775",
@@ -10083,7 +10083,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Royal_Highness.jpg"
+    logo: "../assets/mygrow-search-images/Royal_Highness.jpg"
   },
   {
     index: "776",
@@ -10096,7 +10096,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/El_Jefe.jpg"
+    logo: "../assets/mygrow-search-images/El_Jefe.jpg"
   },
   {
     index: "777",
@@ -10109,7 +10109,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Golden_Nugget.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Nugget.jpg"
   },
   {
     index: "778",
@@ -10122,7 +10122,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Elmer's_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Elmer's_Glue.jpg"
   },
   {
     index: "779",
@@ -10135,7 +10135,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mother's_Helper.jpg"
+    logo: "../assets/mygrow-search-images/Mother's_Helper.jpg"
   },
   {
     index: "780",
@@ -10148,7 +10148,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Northern_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Northern_Wreck.jpg"
   },
   {
     index: "781",
@@ -10161,7 +10161,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chocolate_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Haze.jpg"
   },
   {
     index: "782",
@@ -10174,7 +10174,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/American_Pie.jpg"
+    logo: "../assets/mygrow-search-images/American_Pie.jpg"
   },
   {
     index: "783",
@@ -10187,7 +10187,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Suicide.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Suicide.jpg"
   },
   {
     index: "784",
@@ -10200,7 +10200,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Foul_Mouth.jpg"
+    logo: "../assets/mygrow-search-images/Foul_Mouth.jpg"
   },
   {
     index: "785",
@@ -10213,7 +10213,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Jack_Flash.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Flash.jpg"
   },
   {
     index: "786",
@@ -10226,7 +10226,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Soul_Shine.jpg"
+    logo: "../assets/mygrow-search-images/Soul_Shine.jpg"
   },
   {
     index: "787",
@@ -10239,7 +10239,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Lightning.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Lightning.jpg"
   },
   {
     index: "788",
@@ -10252,7 +10252,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Punky_Lion.jpg"
+    logo: "../assets/mygrow-search-images/Punky_Lion.jpg"
   },
   {
     index: "789",
@@ -10265,7 +10265,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Super_Snow_Dog.jpg"
+    logo: "../assets/mygrow-search-images/Super_Snow_Dog.jpg"
   },
   {
     index: "790",
@@ -10278,7 +10278,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "14",
-    logo: "assets/mygrow-search-images/Madagascar.jpg"
+    logo: "../assets/mygrow-search-images/Madagascar.jpg"
   },
   {
     index: "791",
@@ -10291,7 +10291,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pearl_Scout_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Pearl_Scout_Cookies.jpg"
   },
   {
     index: "792",
@@ -10304,7 +10304,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Cali_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Cali_Kush.jpg"
   },
   {
     index: "793",
@@ -10317,7 +10317,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Jelly_Roll.jpg"
+    logo: "../assets/mygrow-search-images/Jelly_Roll.jpg"
   },
   {
     index: "794",
@@ -10330,7 +10330,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_Bubble.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Bubble.jpg"
   },
   {
     index: "795",
@@ -10343,7 +10343,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lake_of_Fire.jpg"
+    logo: "../assets/mygrow-search-images/Lake_of_Fire.jpg"
   },
   {
     index: "796",
@@ -10356,7 +10356,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Green_Avenger.jpg"
+    logo: "../assets/mygrow-search-images/Green_Avenger.jpg"
   },
   {
     index: "797",
@@ -10369,7 +10369,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tweed_CBD.jpg"
+    logo: "../assets/mygrow-search-images/Tweed_CBD.jpg"
   },
   {
     index: "798",
@@ -10382,7 +10382,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/God's_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/God's_Bubba.jpg"
   },
   {
     index: "799",
@@ -10395,7 +10395,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Django.jpg"
+    logo: "../assets/mygrow-search-images/Django.jpg"
   },
   {
     index: "800",
@@ -10408,7 +10408,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Nina.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Nina.jpg"
   },
   {
     index: "801",
@@ -10421,7 +10421,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Critical_47.jpg"
+    logo: "../assets/mygrow-search-images/Critical_47.jpg"
   },
   {
     index: "802",
@@ -10434,7 +10434,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Devil_Fruit.jpg"
+    logo: "../assets/mygrow-search-images/Devil_Fruit.jpg"
   },
   {
     index: "803",
@@ -10447,7 +10447,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Megalodon.jpg"
+    logo: "../assets/mygrow-search-images/Megalodon.jpg"
   },
   {
     index: "804",
@@ -10460,7 +10460,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Electric_Kool-Aid.jpg"
+    logo: "../assets/mygrow-search-images/Electric_Kool-Aid.jpg"
   },
   {
     index: "805",
@@ -10473,7 +10473,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cactus_Cooler.jpg"
+    logo: "../assets/mygrow-search-images/Cactus_Cooler.jpg"
   },
   {
     index: "806",
@@ -10486,7 +10486,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Endless_Sky.jpg"
+    logo: "../assets/mygrow-search-images/Endless_Sky.jpg"
   },
   {
     index: "807",
@@ -10499,7 +10499,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Fire_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Fire_Haze.jpg"
   },
   {
     index: "808",
@@ -10512,7 +10512,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Edelweiss.jpg"
+    logo: "../assets/mygrow-search-images/Edelweiss.jpg"
   },
   {
     index: "809",
@@ -10525,7 +10525,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sweet_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Kush.jpg"
   },
   {
     index: "810",
@@ -10538,7 +10538,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ayahuasca_Purple.jpg"
+    logo: "../assets/mygrow-search-images/Ayahuasca_Purple.jpg"
   },
   {
     index: "811",
@@ -10551,7 +10551,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Rare_Darkness.jpg"
+    logo: "../assets/mygrow-search-images/Rare_Darkness.jpg"
   },
   {
     index: "812",
@@ -10564,7 +10564,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Anonymous_OG.jpg"
+    logo: "../assets/mygrow-search-images/Anonymous_OG.jpg"
   },
   {
     index: "813",
@@ -10577,7 +10577,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Koolato.jpg"
+    logo: "../assets/mygrow-search-images/Koolato.jpg"
   },
   {
     index: "814",
@@ -10590,7 +10590,7 @@ var data = [
     Hybrid:"70% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Nightmare.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Nightmare.jpg"
   },
   {
     index: "815",
@@ -10603,7 +10603,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Spliffs_Strawberry.jpg"
+    logo: "../assets/mygrow-search-images/Spliffs_Strawberry.jpg"
   },
   {
     index: "816",
@@ -10616,7 +10616,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Millennium.jpg"
+    logo: "../assets/mygrow-search-images/Millennium.jpg"
   },
   {
     index: "817",
@@ -10629,7 +10629,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Outlaw.jpg"
+    logo: "../assets/mygrow-search-images/Outlaw.jpg"
   },
   {
     index: "818",
@@ -10642,7 +10642,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/G13_Haze.jpg"
+    logo: "../assets/mygrow-search-images/G13_Haze.jpg"
   },
   {
     index: "819",
@@ -10655,7 +10655,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "4",
-    logo: "assets/mygrow-search-images/Oracle.jpg"
+    logo: "../assets/mygrow-search-images/Oracle.jpg"
   },
   {
     index: "820",
@@ -10668,7 +10668,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/White_Sangria.jpg"
+    logo: "../assets/mygrow-search-images/White_Sangria.jpg"
   },
   {
     index: "821",
@@ -10681,7 +10681,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/DarkStar.jpg"
+    logo: "../assets/mygrow-search-images/DarkStar.jpg"
   },
   {
     index: "822",
@@ -10694,7 +10694,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Boysenberry.jpg"
+    logo: "../assets/mygrow-search-images/Boysenberry.jpg"
   },
   {
     index: "823",
@@ -10707,7 +10707,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Moonwalker_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Moonwalker_Kush.jpg"
   },
   {
     index: "824",
@@ -10720,7 +10720,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cali_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Cali_Gold.jpg"
   },
   {
     index: "825",
@@ -10733,7 +10733,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Blue_Alien.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Alien.jpg"
   },
   {
     index: "826",
@@ -10746,7 +10746,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ghost_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/Ghost_Bubba.jpg"
   },
   {
     index: "827",
@@ -10759,7 +10759,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Zeus_OG.jpg"
+    logo: "../assets/mygrow-search-images/Zeus_OG.jpg"
   },
   {
     index: "828",
@@ -10772,7 +10772,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Berry_OG.jpg"
+    logo: "../assets/mygrow-search-images/Berry_OG.jpg"
   },
   {
     index: "829",
@@ -10785,7 +10785,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Milky_Way.jpg"
+    logo: "../assets/mygrow-search-images/Milky_Way.jpg"
   },
   {
     index: "830",
@@ -10798,7 +10798,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Quasar.jpg"
+    logo: "../assets/mygrow-search-images/Quasar.jpg"
   },
   {
     index: "831",
@@ -10811,7 +10811,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Irish_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Irish_Cream.jpg"
   },
   {
     index: "832",
@@ -10824,7 +10824,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Stephen_Hawking_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Stephen_Hawking_Kush.jpg"
   },
   {
     index: "833",
@@ -10837,7 +10837,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Bubblicious.jpg"
+    logo: "../assets/mygrow-search-images/Bubblicious.jpg"
   },
   {
     index: "834",
@@ -10850,7 +10850,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/White_Knight.jpg"
+    logo: "../assets/mygrow-search-images/White_Knight.jpg"
   },
   {
     index: "835",
@@ -10863,7 +10863,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Raindance.jpg"
+    logo: "../assets/mygrow-search-images/Raindance.jpg"
   },
   {
     index: "836",
@@ -10876,7 +10876,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Alf.jpg"
+    logo: "../assets/mygrow-search-images/Alf.jpg"
   },
   {
     index: "837",
@@ -10889,7 +10889,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/BB_King.jpg"
+    logo: "../assets/mygrow-search-images/BB_King.jpg"
   },
   {
     index: "838",
@@ -10902,7 +10902,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tutti_Frutti.jpg"
+    logo: "../assets/mygrow-search-images/Tutti_Frutti.jpg"
   },
   {
     index: "839",
@@ -10915,7 +10915,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lucid_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Lucid_Dream.jpg"
   },
   {
     index: "840",
@@ -10928,7 +10928,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Webster.jpg"
+    logo: "../assets/mygrow-search-images/Webster.jpg"
   },
   {
     index: "841",
@@ -10941,7 +10941,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lucy.jpg"
+    logo: "../assets/mygrow-search-images/Lucy.jpg"
   },
   {
     index: "842",
@@ -10954,7 +10954,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_OG.jpg"
+    logo: "../assets/mygrow-search-images/White_OG.jpg"
   },
   {
     index: "843",
@@ -10967,7 +10967,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/King_Kong.jpg"
+    logo: "../assets/mygrow-search-images/King_Kong.jpg"
   },
   {
     index: "844",
@@ -10980,7 +10980,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/B-52.jpg"
+    logo: "../assets/mygrow-search-images/B-52.jpg"
   },
   {
     index: "845",
@@ -10993,7 +10993,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Goo.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Goo.jpg"
   },
   {
     index: "846",
@@ -11006,7 +11006,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gucci_OG.jpg"
+    logo: "../assets/mygrow-search-images/Gucci_OG.jpg"
   },
   {
     index: "847",
@@ -11019,7 +11019,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/P-91.jpg"
+    logo: "../assets/mygrow-search-images/P-91.jpg"
   },
   {
     index: "848",
@@ -11032,7 +11032,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dizzy_OG.jpg"
+    logo: "../assets/mygrow-search-images/Dizzy_OG.jpg"
   },
   {
     index: "849",
@@ -11045,7 +11045,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry_Cheesecake.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Cheesecake.jpg"
   },
   {
     index: "850",
@@ -11058,7 +11058,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Charlie_Sheen.jpg"
+    logo: "../assets/mygrow-search-images/Charlie_Sheen.jpg"
   },
   {
     index: "851",
@@ -11071,7 +11071,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pink_Champagne.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Champagne.jpg"
   },
   {
     index: "852",
@@ -11084,7 +11084,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Hawaiian.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Hawaiian.jpg"
   },
   {
     index: "853",
@@ -11097,7 +11097,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Huckleberry.jpg"
+    logo: "../assets/mygrow-search-images/Huckleberry.jpg"
   },
   {
     index: "854",
@@ -11110,7 +11110,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gobbstopper.jpg"
+    logo: "../assets/mygrow-search-images/Gobbstopper.jpg"
   },
   {
     index: "855",
@@ -11123,7 +11123,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Emerald_OG.jpg"
+    logo: "../assets/mygrow-search-images/Emerald_OG.jpg"
   },
   {
     index: "856",
@@ -11136,7 +11136,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grape_God.jpg"
+    logo: "../assets/mygrow-search-images/Grape_God.jpg"
   },
   {
     index: "857",
@@ -11149,7 +11149,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Boy_Scout_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Boy_Scout_Cookies.jpg"
   },
   {
     index: "858",
@@ -11162,7 +11162,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Presidential_OG.jpg"
+    logo: "../assets/mygrow-search-images/Presidential_OG.jpg"
   },
   {
     index: "859",
@@ -11175,7 +11175,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Fruit_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Fruit_Punch.jpg"
   },
   {
     index: "860",
@@ -11188,7 +11188,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tesla_Tower.jpg"
+    logo: "../assets/mygrow-search-images/Tesla_Tower.jpg"
   },
   {
     index: "861",
@@ -11201,7 +11201,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Dog_Shit.jpg"
+    logo: "../assets/mygrow-search-images/Dog_Shit.jpg"
   },
   {
     index: "862",
@@ -11214,7 +11214,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Dot.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Dot.jpg"
   },
   {
     index: "863",
@@ -11227,7 +11227,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Jedi_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Jedi_Kush.jpg"
   },
   {
     index: "864",
@@ -11240,7 +11240,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pure_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Pure_Kush.jpg"
   },
   {
     index: "865",
@@ -11253,7 +11253,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Abusive_OG.jpg"
+    logo: "../assets/mygrow-search-images/Abusive_OG.jpg"
   },
   {
     index: "866",
@@ -11266,7 +11266,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Night_Train.jpg"
+    logo: "../assets/mygrow-search-images/Night_Train.jpg"
   },
   {
     index: "867",
@@ -11279,7 +11279,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/CBD_Kush.jpg"
+    logo: "../assets/mygrow-search-images/CBD_Kush.jpg"
   },
   {
     index: "868",
@@ -11292,7 +11292,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blue_Venom.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Venom.jpg"
   },
   {
     index: "869",
@@ -11305,7 +11305,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chocolate_Hashberry.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Hashberry.jpg"
   },
   {
     index: "870",
@@ -11318,7 +11318,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Conspiracy_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Conspiracy_Kush.jpg"
   },
   {
     index: "871",
@@ -11331,7 +11331,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Mango_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Mango_Haze.jpg"
   },
   {
     index: "872",
@@ -11344,7 +11344,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Deep_Chunk.jpg"
+    logo: "../assets/mygrow-search-images/Deep_Chunk.jpg"
   },
   {
     index: "873",
@@ -11357,7 +11357,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Kong.jpg"
+    logo: "../assets/mygrow-search-images/Kong.jpg"
   },
   {
     index: "874",
@@ -11370,7 +11370,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pie_Face.jpg"
+    logo: "../assets/mygrow-search-images/Pie_Face.jpg"
   },
   {
     index: "875",
@@ -11383,7 +11383,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Knight.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Knight.jpg"
   },
   {
     index: "876",
@@ -11396,7 +11396,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Cheese_Candy.jpg"
+    logo: "../assets/mygrow-search-images/Cheese_Candy.jpg"
   },
   {
     index: "877",
@@ -11409,7 +11409,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Boss_Hogg.jpg"
+    logo: "../assets/mygrow-search-images/Boss_Hogg.jpg"
   },
   {
     index: "878",
@@ -11422,7 +11422,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Ice.jpg"
+    logo: "../assets/mygrow-search-images/Black_Ice.jpg"
   },
   {
     index: "879",
@@ -11435,7 +11435,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Monkey_Paw.jpg"
+    logo: "../assets/mygrow-search-images/Monkey_Paw.jpg"
   },
   {
     index: "880",
@@ -11448,7 +11448,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Red_Headed_Stranger.jpg"
+    logo: "../assets/mygrow-search-images/Red_Headed_Stranger.jpg"
   },
   {
     index: "881",
@@ -11461,7 +11461,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/UW.jpg"
+    logo: "../assets/mygrow-search-images/UW.jpg"
   },
   {
     index: "882",
@@ -11474,7 +11474,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ice_Queen.jpg"
+    logo: "../assets/mygrow-search-images/Ice_Queen.jpg"
   },
   {
     index: "883",
@@ -11487,7 +11487,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/California_Orange.jpg"
+    logo: "../assets/mygrow-search-images/California_Orange.jpg"
   },
   {
     index: "884",
@@ -11500,7 +11500,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Las_Vegas_Purple_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Las_Vegas_Purple_Kush.jpg"
   },
   {
     index: "885",
@@ -11513,7 +11513,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mega_Wellness_OG.jpg"
+    logo: "../assets/mygrow-search-images/Mega_Wellness_OG.jpg"
   },
   {
     index: "886",
@@ -11526,7 +11526,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Blueberry_Blast.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Blast.jpg"
   },
   {
     index: "887",
@@ -11539,7 +11539,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Elephant.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Elephant.jpg"
   },
   {
     index: "888",
@@ -11552,7 +11552,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/C4.jpg"
+    logo: "../assets/mygrow-search-images/C4.jpg"
   },
   {
     index: "889",
@@ -11565,7 +11565,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Presidential_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Presidential_Kush.jpg"
   },
   {
     index: "890",
@@ -11578,7 +11578,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Candy_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Candy_Jack.jpg"
   },
   {
     index: "891",
@@ -11591,7 +11591,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/$100_OG_Kush.jpg"
+    logo: "../assets/mygrow-search-images/$100_OG_Kush.jpg"
   },
   {
     index: "892",
@@ -11604,7 +11604,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Happy_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Happy_Kush.jpg"
   },
   {
     index: "893",
@@ -11617,7 +11617,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Purple_Power.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Power.jpg"
   },
   {
     index: "894",
@@ -11630,7 +11630,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Herijuana.jpg"
+    logo: "../assets/mygrow-search-images/Herijuana.jpg"
   },
   {
     index: "895",
@@ -11643,7 +11643,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Gandalf_OG.jpg"
+    logo: "../assets/mygrow-search-images/Gandalf_OG.jpg"
   },
   {
     index: "896",
@@ -11656,7 +11656,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Urkle.jpg"
+    logo: "../assets/mygrow-search-images/White_Urkle.jpg"
   },
   {
     index: "897",
@@ -11669,7 +11669,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alien_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Kush.jpg"
   },
   {
     index: "898",
@@ -11682,7 +11682,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Purple_Trainwreck.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Trainwreck.jpg"
   },
   {
     index: "899",
@@ -11695,7 +11695,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ginger_Ale.jpg"
+    logo: "../assets/mygrow-search-images/Ginger_Ale.jpg"
   },
   {
     index: "900",
@@ -11708,7 +11708,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Little_Devil.jpg"
+    logo: "../assets/mygrow-search-images/Little_Devil.jpg"
   },
   {
     index: "901",
@@ -11721,7 +11721,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Canna-Tsu.jpg"
+    logo: "../assets/mygrow-search-images/Canna-Tsu.jpg"
   },
   {
     index: "902",
@@ -11734,7 +11734,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Ambrosia.jpg"
+    logo: "../assets/mygrow-search-images/Ambrosia.jpg"
   },
   {
     index: "903",
@@ -11747,7 +11747,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Wedding_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Wedding_Pie.jpg"
   },
   {
     index: "904",
@@ -11760,7 +11760,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Big_Bang.jpg"
+    logo: "../assets/mygrow-search-images/Big_Bang.jpg"
   },
   {
     index: "905",
@@ -11773,7 +11773,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "15",
-    logo: "assets/mygrow-search-images/Swazi_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Swazi_Gold.jpg"
   },
   {
     index: "906",
@@ -11786,7 +11786,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Carnival.jpg"
+    logo: "../assets/mygrow-search-images/Carnival.jpg"
   },
   {
     index: "907",
@@ -11799,7 +11799,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/The_Original_Lemonnade.jpg"
+    logo: "../assets/mygrow-search-images/The_Original_Lemonnade.jpg"
   },
   {
     index: "908",
@@ -11812,7 +11812,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Kryptonite.jpg"
+    logo: "../assets/mygrow-search-images/Kryptonite.jpg"
   },
   {
     index: "909",
@@ -11825,7 +11825,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "18",
-    logo: "assets/mygrow-search-images/Highlands.jpg"
+    logo: "../assets/mygrow-search-images/Highlands.jpg"
   },
   {
     index: "910",
@@ -11838,7 +11838,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Kilimanjaro.jpg"
+    logo: "../assets/mygrow-search-images/Kilimanjaro.jpg"
   },
   {
     index: "911",
@@ -11851,7 +11851,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ninja_Fruit.jpg"
+    logo: "../assets/mygrow-search-images/Ninja_Fruit.jpg"
   },
   {
     index: "912",
@@ -11864,7 +11864,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Laughing_Gas.jpg"
+    logo: "../assets/mygrow-search-images/Laughing_Gas.jpg"
   },
   {
     index: "913",
@@ -11877,7 +11877,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Custard_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Custard_Cream.jpg"
   },
   {
     index: "914",
@@ -11890,7 +11890,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Green_Queen.jpg"
+    logo: "../assets/mygrow-search-images/Green_Queen.jpg"
   },
   {
     index: "915",
@@ -11903,7 +11903,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pure_Power.jpg"
+    logo: "../assets/mygrow-search-images/Pure_Power.jpg"
   },
   {
     index: "916",
@@ -11916,7 +11916,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pot_of_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Pot_of_Gold.jpg"
   },
   {
     index: "917",
@@ -11929,7 +11929,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Baklava.jpg"
+    logo: "../assets/mygrow-search-images/Baklava.jpg"
   },
   {
     index: "918",
@@ -11942,7 +11942,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cowboy_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Cowboy_Kush.jpg"
   },
   {
     index: "919",
@@ -11955,7 +11955,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Orange_Blossom.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Blossom.jpg"
   },
   {
     index: "920",
@@ -11968,7 +11968,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gorilla_Snacks.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Snacks.jpg"
   },
   {
     index: "921",
@@ -11981,7 +11981,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Space_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Space_Cream.jpg"
   },
   {
     index: "922",
@@ -11994,7 +11994,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Krishna_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Krishna_Kush.jpg"
   },
   {
     index: "923",
@@ -12007,7 +12007,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Rhino.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Rhino.jpg"
   },
   {
     index: "924",
@@ -12020,7 +12020,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/DJ_Andy_Williams.jpg"
+    logo: "../assets/mygrow-search-images/DJ_Andy_Williams.jpg"
   },
   {
     index: "925",
@@ -12033,7 +12033,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sherbacio.jpg"
+    logo: "../assets/mygrow-search-images/Sherbacio.jpg"
   },
   {
     index: "926",
@@ -12046,7 +12046,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hulkberry.jpg"
+    logo: "../assets/mygrow-search-images/Hulkberry.jpg"
   },
   {
     index: "927",
@@ -12059,7 +12059,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Peppermint_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Peppermint_Cookies.jpg"
   },
   {
     index: "928",
@@ -12072,7 +12072,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Caramelo.jpg"
+    logo: "../assets/mygrow-search-images/Caramelo.jpg"
   },
   {
     index: "929",
@@ -12085,7 +12085,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Malawi.jpg"
+    logo: "../assets/mygrow-search-images/Malawi.jpg"
   },
   {
     index: "930",
@@ -12098,7 +12098,7 @@ var data = [
     Hybrid:"",
     Sativa: "55% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Middlefork.jpg"
+    logo: "../assets/mygrow-search-images/Middlefork.jpg"
   },
   {
     index: "931",
@@ -12111,7 +12111,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jack's_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Jack's_Dream.jpg"
   },
   {
     index: "932",
@@ -12124,7 +12124,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tropicali.jpg"
+    logo: "../assets/mygrow-search-images/Tropicali.jpg"
   },
   {
     index: "933",
@@ -12137,7 +12137,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Frankenstein.jpg"
+    logo: "../assets/mygrow-search-images/Frankenstein.jpg"
   },
   {
     index: "934",
@@ -12150,7 +12150,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gummy_Bears.jpg"
+    logo: "../assets/mygrow-search-images/Gummy_Bears.jpg"
   },
   {
     index: "935",
@@ -12163,7 +12163,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/French_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/French_Cookies.jpg"
   },
   {
     index: "936",
@@ -12176,7 +12176,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dream_Lotus.jpg"
+    logo: "../assets/mygrow-search-images/Dream_Lotus.jpg"
   },
   {
     index: "937",
@@ -12189,7 +12189,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Megatron.jpg"
+    logo: "../assets/mygrow-search-images/Megatron.jpg"
   },
   {
     index: "938",
@@ -12202,7 +12202,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hammerhead.jpg"
+    logo: "../assets/mygrow-search-images/Hammerhead.jpg"
   },
   {
     index: "939",
@@ -12215,7 +12215,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Hawaiian.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian.jpg"
   },
   {
     index: "940",
@@ -12228,7 +12228,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/K1.jpg"
+    logo: "../assets/mygrow-search-images/K1.jpg"
   },
   {
     index: "941",
@@ -12241,7 +12241,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Sour_Chocolate.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Chocolate.jpg"
   },
   {
     index: "942",
@@ -12254,7 +12254,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ace_Killer_OG.jpg"
+    logo: "../assets/mygrow-search-images/Ace_Killer_OG.jpg"
   },
   {
     index: "943",
@@ -12267,7 +12267,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Pipe_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Pipe_Dream.jpg"
   },
   {
     index: "944",
@@ -12280,7 +12280,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Green_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Green_Kush.jpg"
   },
   {
     index: "945",
@@ -12293,7 +12293,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Agent_Tangie.jpg"
+    logo: "../assets/mygrow-search-images/Agent_Tangie.jpg"
   },
   {
     index: "946",
@@ -12306,7 +12306,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Green_Love_Potion.jpg"
+    logo: "../assets/mygrow-search-images/Green_Love_Potion.jpg"
   },
   {
     index: "947",
@@ -12319,7 +12319,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Asian_Fantasy.jpg"
+    logo: "../assets/mygrow-search-images/Asian_Fantasy.jpg"
   },
   {
     index: "948",
@@ -12332,7 +12332,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Obsession.jpg"
+    logo: "../assets/mygrow-search-images/Obsession.jpg"
   },
   {
     index: "949",
@@ -12345,7 +12345,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Cannalope_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Cannalope_Kush.jpg"
   },
   {
     index: "950",
@@ -12358,7 +12358,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Jorge's_Diamonds_1.jpg"
+    logo: "../assets/mygrow-search-images/Jorge's_Diamonds_1.jpg"
   },
   {
     index: "951",
@@ -12371,7 +12371,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Selene.jpg"
+    logo: "../assets/mygrow-search-images/Selene.jpg"
   },
   {
     index: "952",
@@ -12384,7 +12384,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sirius_Black.jpg"
+    logo: "../assets/mygrow-search-images/Sirius_Black.jpg"
   },
   {
     index: "953",
@@ -12397,7 +12397,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Bubba.jpg"
   },
   {
     index: "954",
@@ -12410,7 +12410,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "14",
-    logo: "assets/mygrow-search-images/Full_Moon.jpg"
+    logo: "../assets/mygrow-search-images/Full_Moon.jpg"
   },
   {
     index: "955",
@@ -12423,7 +12423,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Area_51.jpg"
+    logo: "../assets/mygrow-search-images/Area_51.jpg"
   },
   {
     index: "956",
@@ -12436,7 +12436,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/In_The_Pines.jpg"
+    logo: "../assets/mygrow-search-images/In_The_Pines.jpg"
   },
   {
     index: "957",
@@ -12449,7 +12449,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Pineapple_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Diesel.jpg"
   },
   {
     index: "958",
@@ -12462,7 +12462,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Salmon_River_OG.jpg"
+    logo: "../assets/mygrow-search-images/Salmon_River_OG.jpg"
   },
   {
     index: "959",
@@ -12475,7 +12475,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Grape_Crush.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Crush.jpg"
   },
   {
     index: "960",
@@ -12488,7 +12488,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Suzy_Q.jpg"
+    logo: "../assets/mygrow-search-images/Suzy_Q.jpg"
   },
   {
     index: "961",
@@ -12501,7 +12501,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hemlock.jpg"
+    logo: "../assets/mygrow-search-images/Hemlock.jpg"
   },
   {
     index: "962",
@@ -12514,7 +12514,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Tora_Bora.jpg"
+    logo: "../assets/mygrow-search-images/Tora_Bora.jpg"
   },
   {
     index: "963",
@@ -12527,7 +12527,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Moonshine_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Moonshine_Haze.jpg"
   },
   {
     index: "964",
@@ -12540,7 +12540,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lee_Roy.jpg"
+    logo: "../assets/mygrow-search-images/Lee_Roy.jpg"
   },
   {
     index: "965",
@@ -12553,7 +12553,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Orange_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Dream.jpg"
   },
   {
     index: "966",
@@ -12566,7 +12566,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Queen.jpg"
+    logo: "../assets/mygrow-search-images/White_Queen.jpg"
   },
   {
     index: "967",
@@ -12579,7 +12579,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pink_Panties.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Panties.jpg"
   },
   {
     index: "968",
@@ -12592,7 +12592,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Honey_Boo_Boo.jpg"
+    logo: "../assets/mygrow-search-images/Honey_Boo_Boo.jpg"
   },
   {
     index: "969",
@@ -12605,7 +12605,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Twisted_Citrus.jpg"
+    logo: "../assets/mygrow-search-images/Twisted_Citrus.jpg"
   },
   {
     index: "970",
@@ -12618,7 +12618,7 @@ var data = [
     Hybrid:"70% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Red_Cherry_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Red_Cherry_Berry.jpg"
   },
   {
     index: "971",
@@ -12631,7 +12631,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/White_Durban.jpg"
+    logo: "../assets/mygrow-search-images/White_Durban.jpg"
   },
   {
     index: "972",
@@ -12644,7 +12644,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Papa's_OG.jpg"
+    logo: "../assets/mygrow-search-images/Papa's_OG.jpg"
   },
   {
     index: "973",
@@ -12657,7 +12657,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Frosty_Jesus.jpg"
+    logo: "../assets/mygrow-search-images/Frosty_Jesus.jpg"
   },
   {
     index: "974",
@@ -12670,7 +12670,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Oaxacan_Highland.jpg"
+    logo: "../assets/mygrow-search-images/Oaxacan_Highland.jpg"
   },
   {
     index: "975",
@@ -12683,7 +12683,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/BC_Big_Bud.jpg"
+    logo: "../assets/mygrow-search-images/BC_Big_Bud.jpg"
   },
   {
     index: "976",
@@ -12696,7 +12696,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Bubba's_Gift.jpg"
+    logo: "../assets/mygrow-search-images/Bubba's_Gift.jpg"
   },
   {
     index: "977",
@@ -12709,7 +12709,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pineapple_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Cookies.jpg"
   },
   {
     index: "978",
@@ -12722,7 +12722,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_AK-47.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_AK-47.jpg"
   },
   {
     index: "979",
@@ -12735,7 +12735,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Super_Blue_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Super_Blue_Dream.jpg"
   },
   {
     index: "980",
@@ -12748,7 +12748,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Dirty_Girl.jpg"
+    logo: "../assets/mygrow-search-images/Dirty_Girl.jpg"
   },
   {
     index: "981",
@@ -12761,7 +12761,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Power_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Power_Kush.jpg"
   },
   {
     index: "982",
@@ -12774,7 +12774,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sour_Candy.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Candy.jpg"
   },
   {
     index: "983",
@@ -12787,7 +12787,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Purple_Princess.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Princess.jpg"
   },
   {
     index: "984",
@@ -12800,7 +12800,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Skunk.jpg"
   },
   {
     index: "985",
@@ -12813,7 +12813,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Oregon_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Oregon_Diesel.jpg"
   },
   {
     index: "986",
@@ -12826,7 +12826,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Master_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Master_Skunk.jpg"
   },
   {
     index: "987",
@@ -12839,7 +12839,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Mango_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Mango_Dream.jpg"
   },
   {
     index: "988",
@@ -12852,7 +12852,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/The_Cough.jpg"
+    logo: "../assets/mygrow-search-images/The_Cough.jpg"
   },
   {
     index: "989",
@@ -12865,7 +12865,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grape_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Skunk.jpg"
   },
   {
     index: "990",
@@ -12878,7 +12878,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Violet_Delight.jpg"
+    logo: "../assets/mygrow-search-images/Violet_Delight.jpg"
   },
   {
     index: "991",
@@ -12891,7 +12891,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Frostbite.jpg"
+    logo: "../assets/mygrow-search-images/Frostbite.jpg"
   },
   {
     index: "992",
@@ -12904,7 +12904,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hogs_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Hogs_Breath.jpg"
   },
   {
     index: "993",
@@ -12917,7 +12917,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kolossus.jpg"
+    logo: "../assets/mygrow-search-images/Kolossus.jpg"
   },
   {
     index: "994",
@@ -12930,7 +12930,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/White_Dragon.jpg"
+    logo: "../assets/mygrow-search-images/White_Dragon.jpg"
   },
   {
     index: "995",
@@ -12943,7 +12943,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alien_Sour_Apple.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Sour_Apple.jpg"
   },
   {
     index: "996",
@@ -12956,7 +12956,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Critical_Sensi_Star.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Sensi_Star.jpg"
   },
   {
     index: "997",
@@ -12969,7 +12969,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rob_Ford_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Rob_Ford_Kush.jpg"
   },
   {
     index: "998",
@@ -12982,7 +12982,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Marionberry_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Marionberry_Kush.jpg"
   },
   {
     index: "999",
@@ -12995,7 +12995,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Monkey_Bread_1.jpg"
+    logo: "../assets/mygrow-search-images/Monkey_Bread_1.jpg"
   },
   {
     index: "1000",
@@ -13008,7 +13008,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Glueberry_OG.jpg"
+    logo: "../assets/mygrow-search-images/Glueberry_OG.jpg"
   },
   {
     index: "1001",
@@ -13021,7 +13021,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Cluster_Bomb.jpg"
+    logo: "../assets/mygrow-search-images/Cluster_Bomb.jpg"
   },
   {
     index: "1002",
@@ -13034,7 +13034,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/NightFire_OG.jpg"
+    logo: "../assets/mygrow-search-images/NightFire_OG.jpg"
   },
   {
     index: "1003",
@@ -13047,7 +13047,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Longbottom_Leaf.jpg"
+    logo: "../assets/mygrow-search-images/Longbottom_Leaf.jpg"
   },
   {
     index: "1004",
@@ -13060,7 +13060,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Fucking_Incredible.jpg"
+    logo: "../assets/mygrow-search-images/Fucking_Incredible.jpg"
   },
   {
     index: "1005",
@@ -13073,7 +13073,7 @@ var data = [
     Hybrid:"",
     Sativa: "20% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Easy_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Easy_Bud.jpg"
   },
   {
     index: "1006",
@@ -13086,7 +13086,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Church_OG.jpg"
+    logo: "../assets/mygrow-search-images/Church_OG.jpg"
   },
   {
     index: "1007",
@@ -13099,7 +13099,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Blackberry_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Haze.jpg"
   },
   {
     index: "1008",
@@ -13112,7 +13112,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/American_Dream.jpg"
+    logo: "../assets/mygrow-search-images/American_Dream.jpg"
   },
   {
     index: "1009",
@@ -13125,7 +13125,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Qush.jpg"
+    logo: "../assets/mygrow-search-images/Qush.jpg"
   },
   {
     index: "1010",
@@ -13138,7 +13138,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dr._Feelgood.jpg"
+    logo: "../assets/mygrow-search-images/Dr._Feelgood.jpg"
   },
   {
     index: "1011",
@@ -13151,7 +13151,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Lemon_Ice.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Ice.jpg"
   },
   {
     index: "1012",
@@ -13164,7 +13164,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sour_Amnesia.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Amnesia.jpg"
   },
   {
     index: "1013",
@@ -13177,7 +13177,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Double_Barrel_OG.jpg"
+    logo: "../assets/mygrow-search-images/Double_Barrel_OG.jpg"
   },
   {
     index: "1014",
@@ -13190,7 +13190,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Locktite.jpg"
+    logo: "../assets/mygrow-search-images/Locktite.jpg"
   },
   {
     index: "1015",
@@ -13203,7 +13203,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Earthquake.jpg"
+    logo: "../assets/mygrow-search-images/Earthquake.jpg"
   },
   {
     index: "1016",
@@ -13216,7 +13216,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Cream_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Cream_Pie.jpg"
   },
   {
     index: "1017",
@@ -13229,7 +13229,7 @@ var data = [
     Hybrid:"",
     Sativa: "50% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mint_Chocolate_Chip.jpg"
+    logo: "../assets/mygrow-search-images/Mint_Chocolate_Chip.jpg"
   },
   {
     index: "1018",
@@ -13242,7 +13242,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Jilly.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Jilly.jpg"
   },
   {
     index: "1019",
@@ -13255,7 +13255,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Kaboom.jpg"
+    logo: "../assets/mygrow-search-images/Kaboom.jpg"
   },
   {
     index: "1020",
@@ -13268,7 +13268,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Katsu_Bubba_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Katsu_Bubba_Kush.jpg"
   },
   {
     index: "1021",
@@ -13281,7 +13281,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Crème_Brulee.jpg"
+    logo: "../assets/mygrow-search-images/Crème_Brulee.jpg"
   },
   {
     index: "1022",
@@ -13294,7 +13294,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Quantum_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Quantum_Kush.jpg"
   },
   {
     index: "1023",
@@ -13307,7 +13307,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Extreme_OG.jpg"
+    logo: "../assets/mygrow-search-images/Extreme_OG.jpg"
   },
   {
     index: "1024",
@@ -13320,7 +13320,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bay_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Bay_Dream.jpg"
   },
   {
     index: "1025",
@@ -13333,7 +13333,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dark_Side_of_the_Moon.jpg"
+    logo: "../assets/mygrow-search-images/Dark_Side_of_the_Moon.jpg"
   },
   {
     index: "1026",
@@ -13346,7 +13346,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gelatti.jpg"
+    logo: "../assets/mygrow-search-images/Gelatti.jpg"
   },
   {
     index: "1027",
@@ -13359,7 +13359,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Sorbet_3.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Sorbet_3.jpg"
   },
   {
     index: "1028",
@@ -13372,7 +13372,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gelato_45.jpg"
+    logo: "../assets/mygrow-search-images/Gelato_45.jpg"
   },
   {
     index: "1029",
@@ -13385,7 +13385,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Silver_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Haze.jpg"
   },
   {
     index: "1030",
@@ -13398,7 +13398,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/White_Girl.jpg"
+    logo: "../assets/mygrow-search-images/White_Girl.jpg"
   },
   {
     index: "1031",
@@ -13411,7 +13411,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Martian_Candy.jpg"
+    logo: "../assets/mygrow-search-images/Martian_Candy.jpg"
   },
   {
     index: "1032",
@@ -13424,7 +13424,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Kush_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Kush_Cake.jpg"
   },
   {
     index: "1033",
@@ -13437,7 +13437,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/RockStar.jpg"
+    logo: "../assets/mygrow-search-images/RockStar.jpg"
   },
   {
     index: "1034",
@@ -13450,7 +13450,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Shock_Tart.jpg"
+    logo: "../assets/mygrow-search-images/Shock_Tart.jpg"
   },
   {
     index: "1035",
@@ -13463,7 +13463,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/GMO.jpg"
+    logo: "../assets/mygrow-search-images/GMO.jpg"
   },
   {
     index: "1036",
@@ -13476,7 +13476,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Magic_Melon.jpg"
+    logo: "../assets/mygrow-search-images/Magic_Melon.jpg"
   },
   {
     index: "1037",
@@ -13489,7 +13489,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pamelina.jpg"
+    logo: "../assets/mygrow-search-images/Pamelina.jpg"
   },
   {
     index: "1038",
@@ -13502,7 +13502,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pink_Starburst.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Starburst.jpg"
   },
   {
     index: "1039",
@@ -13515,7 +13515,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Papaya_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Papaya_Punch.jpg"
   },
   {
     index: "1040",
@@ -13528,7 +13528,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Platinum_Sour_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Platinum_Sour_Diesel.jpg"
   },
   {
     index: "1041",
@@ -13541,7 +13541,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Star.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Star.jpg"
   },
   {
     index: "1042",
@@ -13554,7 +13554,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ghost_Rider_OG.jpg"
+    logo: "../assets/mygrow-search-images/Ghost_Rider_OG.jpg"
   },
   {
     index: "1043",
@@ -13567,7 +13567,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Fatso_OG.jpg"
+    logo: "../assets/mygrow-search-images/Fatso_OG.jpg"
   },
   {
     index: "1044",
@@ -13580,7 +13580,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gorilla_Girl.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Girl.jpg"
   },
   {
     index: "1045",
@@ -13593,7 +13593,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Cookies.jpg"
   },
   {
     index: "1046",
@@ -13606,7 +13606,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Incredible_Bulk.jpg"
+    logo: "../assets/mygrow-search-images/Incredible_Bulk.jpg"
   },
   {
     index: "1047",
@@ -13619,7 +13619,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Stinky_Pete.jpg"
+    logo: "../assets/mygrow-search-images/Stinky_Pete.jpg"
   },
   {
     index: "1048",
@@ -13632,7 +13632,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Baker's_Delight.jpg"
+    logo: "../assets/mygrow-search-images/Baker's_Delight.jpg"
   },
   {
     index: "1049",
@@ -13645,7 +13645,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blowfish.jpg"
+    logo: "../assets/mygrow-search-images/Blowfish.jpg"
   },
   {
     index: "1050",
@@ -13658,7 +13658,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Frisian_Dew.jpg"
+    logo: "../assets/mygrow-search-images/Frisian_Dew.jpg"
   },
   {
     index: "1051",
@@ -13671,7 +13671,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Betty.jpg"
+    logo: "../assets/mygrow-search-images/Black_Betty.jpg"
   },
   {
     index: "1052",
@@ -13684,7 +13684,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Shangri-La.jpg" 
+    logo: "../assets/mygrow-search-images/Shangri-La.jpg" 
   },
   {
     index: "1053",
@@ -13697,7 +13697,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Rhino.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Rhino.jpg"
   },
   {
     index: "1054",
@@ -13710,7 +13710,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Professor_Chaos.jpg"
+    logo: "../assets/mygrow-search-images/Professor_Chaos.jpg"
   },
   {
     index: "1055",
@@ -13723,7 +13723,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/More_Cowbell.jpg"
+    logo: "../assets/mygrow-search-images/More_Cowbell.jpg"
   },
   {
     index: "1056",
@@ -13736,7 +13736,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dutch_Hawaiian.jpg"
+    logo: "../assets/mygrow-search-images/Dutch_Hawaiian.jpg"
   },
   {
     index: "1057",
@@ -13749,7 +13749,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Northernberry.jpg"
+    logo: "../assets/mygrow-search-images/Northernberry.jpg"
   },
   {
     index: "1058",
@@ -13762,7 +13762,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Cream.jpg"
   },
   {
     index: "1059",
@@ -13775,7 +13775,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/King_Cake.jpg"
+    logo: "../assets/mygrow-search-images/King_Cake.jpg"
   },
   {
     index: "1060",
@@ -13788,7 +13788,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Slymer.jpg"
+    logo: "../assets/mygrow-search-images/Slymer.jpg"
   },
   {
     index: "1061",
@@ -13801,7 +13801,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Glass_Apple.jpg"
+    logo: "../assets/mygrow-search-images/Glass_Apple.jpg"
   },
   {
     index: "1062",
@@ -13814,7 +13814,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Burkle.jpg"
+    logo: "../assets/mygrow-search-images/Burkle.jpg"
   },
   {
     index: "1063",
@@ -13827,7 +13827,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Ingrid.jpg"
+    logo: "../assets/mygrow-search-images/Ingrid.jpg"
   },
   {
     index: "1064",
@@ -13840,7 +13840,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Moose_And_Lobsta.jpg"
+    logo: "../assets/mygrow-search-images/Moose_And_Lobsta.jpg"
   },
   {
     index: "1065",
@@ -13853,7 +13853,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Aloha.jpg"
+    logo: "../assets/mygrow-search-images/Aloha.jpg"
   },
   {
     index: "1066",
@@ -13866,7 +13866,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blissful_Wizard.jpg"
+    logo: "../assets/mygrow-search-images/Blissful_Wizard.jpg"
   },
   {
     index: "1067",
@@ -13879,7 +13879,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dosi_Face.jpg"
+    logo: "../assets/mygrow-search-images/Dosi_Face.jpg"
   },
   {
     index: "1068",
@@ -13892,7 +13892,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Six_Shooter.jpg"
+    logo: "../assets/mygrow-search-images/Six_Shooter.jpg"
   },
   {
     index: "1069",
@@ -13905,7 +13905,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Crunch_Berry_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Crunch_Berry_Kush.jpg"
   },
   {
     index: "1070",
@@ -13918,7 +13918,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Patti_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Patti_Cake.jpg"
   },
   {
     index: "1071",
@@ -13931,7 +13931,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Voodoo.jpg"
+    logo: "../assets/mygrow-search-images/Voodoo.jpg"
   },
   {
     index: "1072",
@@ -13944,7 +13944,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dogwalker_OG.jpg"
+    logo: "../assets/mygrow-search-images/Dogwalker_OG.jpg"
   },
   {
     index: "1073",
@@ -13957,7 +13957,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_OG_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Purple_OG_Kush.jpg"
   },
   {
     index: "1074",
@@ -13970,7 +13970,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sunshine.jpg"
+    logo: "../assets/mygrow-search-images/Sunshine.jpg"
   },
   {
     index: "1075",
@@ -13983,7 +13983,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jenny_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Jenny_Kush.jpg"
   },
   {
     index: "1076",
@@ -13996,7 +13996,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Jamaican_Pearl.jpg"
+    logo: "../assets/mygrow-search-images/Jamaican_Pearl.jpg"
   },
   {
     index: "1077",
@@ -14009,7 +14009,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pineapple_Fields.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Fields.jpg"
   },
   {
     index: "1078",
@@ -14022,7 +14022,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Galactic_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Galactic_Glue.jpg"
   },
   {
     index: "1079",
@@ -14035,7 +14035,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Animal_Blues.jpg"
+    logo: "../assets/mygrow-search-images/Animal_Blues.jpg"
   },
   {
     index: "1080",
@@ -14048,7 +14048,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Albert_Walker.jpg"
+    logo: "../assets/mygrow-search-images/Albert_Walker.jpg"
   },
   {
     index: "1081",
@@ -14061,7 +14061,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sapphire_Scout.jpg"
+    logo: "../assets/mygrow-search-images/Sapphire_Scout.jpg"
   },
   {
     index: "1082",
@@ -14074,7 +14074,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pineapple_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Punch.jpg"
   },
   {
     index: "1083",
@@ -14087,7 +14087,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawnana.jpg"
+    logo: "../assets/mygrow-search-images/Strawnana.jpg"
   },
   {
     index: "1084",
@@ -14100,7 +14100,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sweet_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Dream.jpg"
   },
   {
     index: "1085",
@@ -14113,7 +14113,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tangie_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Tangie_Dream.jpg"
   },
   {
     index: "1086",
@@ -14126,7 +14126,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Cherry_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Black_Cherry_Punch.jpg"
   },
   {
     index: "1087",
@@ -14139,7 +14139,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tokyo_OG.jpg"
+    logo: "../assets/mygrow-search-images/Tokyo_OG.jpg"
   },
   {
     index: "1088",
@@ -14152,7 +14152,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tropical_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Tropical_Cookies.jpg"
   },
   {
     index: "1089",
@@ -14165,7 +14165,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Blue.jpg"
   },
   {
     index: "1090",
@@ -14178,7 +14178,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Gushers.jpg"
+    logo: "../assets/mygrow-search-images/Gushers.jpg"
   },
   {
     index: "1091",
@@ -14191,7 +14191,7 @@ var data = [
     Hybrid:"60% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Georgia_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Georgia_Pie.jpg"
   },
   {
     index: "1092",
@@ -14204,7 +14204,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Mother_of_Berries.jpg"
+    logo: "../assets/mygrow-search-images/Mother_of_Berries.jpg"
   },
   {
     index: "1093",
@@ -14217,7 +14217,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Gas.jpg"
+    logo: "../assets/mygrow-search-images/Gas.jpg"
   },
   {
     index: "1094",
@@ -14230,7 +14230,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mandarin_Sunset.jpg"
+    logo: "../assets/mygrow-search-images/Mandarin_Sunset.jpg"
   },
   {
     index: "1095",
@@ -14243,7 +14243,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Sour_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Berry.jpg"
   },
   {
     index: "1096",
@@ -14256,7 +14256,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Garlic_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Garlic_Breath.jpg"
   },
   {
     index: "1097",
@@ -14269,7 +14269,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mystery_Jazz.jpg"
+    logo: "../assets/mygrow-search-images/Mystery_Jazz.jpg"
   },
   {
     index: "1098",
@@ -14282,7 +14282,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Race_Fuel_OG.jpg"
+    logo: "../assets/mygrow-search-images/Race_Fuel_OG.jpg"
   },
   {
     index: "1099",
@@ -14295,7 +14295,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dragon's_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Dragon's_Breath.jpg"
   },
   {
     index: "1100",
@@ -14308,7 +14308,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Eran_Almog.jpg"
+    logo: "../assets/mygrow-search-images/Eran_Almog.jpg"
   },
   {
     index: "1101",
@@ -14321,7 +14321,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tahoe_Purps.jpg"
+    logo: "../assets/mygrow-search-images/Tahoe_Purps.jpg"
   },
   {
     index: "1102",
@@ -14334,7 +14334,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Citral_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Citral_Glue.jpg"
   },
   {
     index: "1103",
@@ -14347,7 +14347,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hawaiian_Duckfoot.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Duckfoot.jpg"
   },
   {
     index: "1104",
@@ -14360,7 +14360,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chocolate_Mint_OG.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Mint_OG.jpg"
   },
   {
     index: "1105",
@@ -14373,7 +14373,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Duct_Tape.jpg"
+    logo: "../assets/mygrow-search-images/Duct_Tape.jpg"
   },
   {
     index: "1106",
@@ -14386,7 +14386,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Face_on_Fire.jpg"
+    logo: "../assets/mygrow-search-images/Face_on_Fire.jpg"
   },
   {
     index: "1107",
@@ -14399,7 +14399,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Giesel.jpg"
+    logo: "../assets/mygrow-search-images/Giesel.jpg"
   },
   {
     index: "1108",
@@ -14412,7 +14412,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gruntz.jpg"
+    logo: "../assets/mygrow-search-images/Gruntz.jpg"
   },
   {
     index: "1109",
@@ -14425,7 +14425,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/LA_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/LA_Cheese.jpg"
   },
   {
     index: "1110",
@@ -14438,7 +14438,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon.jpg"
+    logo: "../assets/mygrow-search-images/Lemon.jpg"
   },
   {
     index: "1111",
@@ -14451,7 +14451,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_Cheesecake.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Cheesecake.jpg"
   },
   {
     index: "1112",
@@ -14464,7 +14464,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_Tangie.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Tangie.jpg"
   },
   {
     index: "1113",
@@ -14477,7 +14477,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Miss_USA.jpg"
+    logo: "../assets/mygrow-search-images/Miss_USA.jpg"
   },
   {
     index: "1114",
@@ -14490,7 +14490,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Member_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Member_Berry.jpg"
   },
   {
     index: "1115",
@@ -14503,7 +14503,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lambs_in_Space.jpg"
+    logo: "../assets/mygrow-search-images/Lambs_in_Space.jpg"
   },
   {
     index: "1116",
@@ -14516,7 +14516,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dank_Commander.jpg"
+    logo: "../assets/mygrow-search-images/Dank_Commander.jpg"
   },
   {
     index: "1117",
@@ -14529,7 +14529,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Carmalicious.jpg"
+    logo: "../assets/mygrow-search-images/Carmalicious.jpg"
   },
   {
     index: "1118",
@@ -14542,7 +14542,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rainmaker.jpg"
+    logo: "../assets/mygrow-search-images/Rainmaker.jpg"
   },
   {
     index: "1119",
@@ -14555,7 +14555,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Rollex_OG_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Rollex_OG_Kush.jpg"
   },
   {
     index: "1120",
@@ -14568,7 +14568,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Blueberry.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Blueberry.jpg"
   },
   {
     index: "1121",
@@ -14581,7 +14581,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sour_Space_Candy.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Space_Candy.jpg"
   },
   {
     index: "1122",
@@ -14594,7 +14594,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Chocolate_Chunk.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Chunk.jpg"
   },
   {
     index: "1123",
@@ -14607,7 +14607,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sweet_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Cheese.jpg"
   },
   {
     index: "1124",
@@ -14620,7 +14620,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_OG.jpg"
+    logo: "../assets/mygrow-search-images/Blue_OG.jpg"
   },
   {
     index: "1125",
@@ -14633,7 +14633,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cracker_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Cracker_Jack.jpg"
   },
   {
     index: "1126",
@@ -14646,7 +14646,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Damn_Sour.jpg"
+    logo: "../assets/mygrow-search-images/Damn_Sour.jpg"
   },
   {
     index: "1127",
@@ -14659,7 +14659,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mother’s_Milk.jpg"
+    logo: "../assets/mygrow-search-images/Mother’s_Milk.jpg"
   },
   {
     index: "1128",
@@ -14672,7 +14672,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dolato.jpg"
+    logo: "../assets/mygrow-search-images/Dolato.jpg"
   },
   {
     index: "1129",
@@ -14685,7 +14685,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Swamp_Thing.jpg"
+    logo: "../assets/mygrow-search-images/Swamp_Thing.jpg"
   },
   {
     index: "1130",
@@ -14698,7 +14698,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tangerine_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Tangerine_Haze.jpg"
   },
   {
     index: "1131",
@@ -14711,7 +14711,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Mace_Windu.jpg"
+    logo: "../assets/mygrow-search-images/Mace_Windu.jpg"
   },
   {
     index: "1132",
@@ -14724,7 +14724,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Mercury_OG.jpg"
+    logo: "../assets/mygrow-search-images/Mercury_OG.jpg"
   },
   {
     index: "1133",
@@ -14737,7 +14737,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Montana_Silvertip.jpg"
+    logo: "../assets/mygrow-search-images/Montana_Silvertip.jpg"
   },
   {
     index: "1134",
@@ -14750,7 +14750,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Lemon_Marmalade.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Marmalade.jpg"
   },
   {
     index: "1135",
@@ -14763,7 +14763,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Fire_Alien_Strawberry.jpg"
+    logo: "../assets/mygrow-search-images/Fire_Alien_Strawberry.jpg"
   },
   {
     index: "1136",
@@ -14776,7 +14776,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dutch_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Dutch_Kush.jpg"
   },
   {
     index: "1137",
@@ -14789,7 +14789,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pineapple_Trainwreck.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Trainwreck.jpg"
   },
   {
     index: "1138",
@@ -14802,7 +14802,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Zelly's_Gift.jpg"
+    logo: "../assets/mygrow-search-images/Zelly's_Gift.jpg"
   },
   {
     index: "1139",
@@ -14815,7 +14815,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Fifth_Element.jpg"
+    logo: "../assets/mygrow-search-images/Fifth_Element.jpg"
   },
   {
     index: "1140",
@@ -14828,7 +14828,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Strawberry_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Glue.jpg"
   },
   {
     index: "1141",
@@ -14841,7 +14841,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Cosmic_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Cosmic_Glue.jpg"
   },
   {
     index: "1142",
@@ -14854,7 +14854,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Heatwave.jpg"
+    logo: "../assets/mygrow-search-images/Heatwave.jpg"
   },
   {
     index: "1143",
@@ -14867,7 +14867,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Magnum.jpg"
+    logo: "../assets/mygrow-search-images/Magnum.jpg"
   },
   {
     index: "1144",
@@ -14880,7 +14880,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Rogue_Thunder.jpg"
+    logo: "../assets/mygrow-search-images/Rogue_Thunder.jpg"
   },
   {
     index: "1145",
@@ -14893,7 +14893,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hitman_OG.jpg"
+    logo: "../assets/mygrow-search-images/Hitman_OG.jpg"
   },
   {
     index: "1146",
@@ -14906,7 +14906,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_Kush_Headband.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Kush_Headband.jpg"
   },
   {
     index: "1147",
@@ -14919,7 +14919,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blueberry_Gushers.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Gushers.jpg"
   },
   {
     index: "1148",
@@ -14932,7 +14932,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Safety_Meeting.jpg"
+    logo: "../assets/mygrow-search-images/Safety_Meeting.jpg"
   },
   {
     index: "1149",
@@ -14945,7 +14945,7 @@ var data = [
     Hybrid:"",
     Sativa: "14% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pineapple_OG.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_OG.jpg"
   },
   {
     index: "1150",
@@ -14958,7 +14958,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rise_'n'_Shine.jpg"
+    logo: "../assets/mygrow-search-images/Rise_'n'_Shine.jpg"
   },
   {
     index: "1151",
@@ -14971,7 +14971,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dirty_Taxi.jpg"
+    logo: "../assets/mygrow-search-images/Dirty_Taxi.jpg"
   },
   {
     index: "1152",
@@ -14984,7 +14984,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Golden_Strawberry.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Strawberry.jpg"
   },
   {
     index: "1153",
@@ -14997,7 +14997,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/J1.jpg"
+    logo: "../assets/mygrow-search-images/J1.jpg"
   },
   {
     index: "1154",
@@ -15010,7 +15010,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sour_Alien.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Alien.jpg"
   },
   {
     index: "1155",
@@ -15023,7 +15023,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Strawberry_Bliss.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Bliss.jpg"
   },
   {
     index: "1156",
@@ -15036,7 +15036,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pakistani_Chitral_Kush_(PCK).jpg"
+    logo: "../assets/mygrow-search-images/Pakistani_Chitral_Kush_(PCK).jpg"
   },
   {
     index: "1157",
@@ -15049,7 +15049,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tangie_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Tangie_Cookies.jpg"
   },
   {
     index: "1158",
@@ -15062,7 +15062,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Space_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Space_Cake.jpg"
   },
   {
     index: "1159",
@@ -15075,7 +15075,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Marathon_OG.jpg"
+    logo: "../assets/mygrow-search-images/Marathon_OG.jpg"
   },
   {
     index: "1160",
@@ -15088,7 +15088,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Royal_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Royal_Cheese.jpg"
   },
   {
     index: "1161",
@@ -15101,7 +15101,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dread_Bread.jpg"
+    logo: "../assets/mygrow-search-images/Dread_Bread.jpg"
   },
   {
     index: "1162",
@@ -15114,7 +15114,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Mango_Sapphire.jpg"
+    logo: "../assets/mygrow-search-images/Mango_Sapphire.jpg"
   },
   {
     index: "1163",
@@ -15127,7 +15127,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Watermelon_Zkittlez.jpg"
+    logo: "../assets/mygrow-search-images/Watermelon_Zkittlez.jpg"
   },
   {
     index: "1164",
@@ -15140,7 +15140,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "14",
-    logo: "assets/mygrow-search-images/Willie_Nelson.jpg"
+    logo: "../assets/mygrow-search-images/Willie_Nelson.jpg"
   },
   {
     index: "1165",
@@ -15153,7 +15153,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Cherry_Gelato.jpg"
+    logo: "../assets/mygrow-search-images/White_Cherry_Gelato.jpg"
   },
   {
     index: "1166",
@@ -15166,7 +15166,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pura_Vida.jpg"
+    logo: "../assets/mygrow-search-images/Pura_Vida.jpg"
   },
   {
     index: "1167",
@@ -15179,7 +15179,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Shortcake.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Shortcake.jpg"
   },
   {
     index: "1168",
@@ -15192,7 +15192,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/The_Bling.jpg"
+    logo: "../assets/mygrow-search-images/The_Bling.jpg"
   },
   {
     index: "1169",
@@ -15205,7 +15205,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tropicana_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Tropicana_Cookies.jpg"
   },
   {
     index: "1170",
@@ -15218,7 +15218,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Headband.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Headband.jpg"
   },
   {
     index: "1171",
@@ -15231,7 +15231,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Green_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Green_Cheese.jpg"
   },
   {
     index: "1172",
@@ -15244,7 +15244,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Gorilla_Grips.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Grips.jpg"
   },
   {
     index: "1173",
@@ -15257,7 +15257,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Green_Mango.jpg"
+    logo: "../assets/mygrow-search-images/Green_Mango.jpg"
   },
   {
     index: "1174",
@@ -15270,7 +15270,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hades_OG.jpg"
+    logo: "../assets/mygrow-search-images/Hades_OG.jpg"
   },
   {
     index: "1175",
@@ -15283,7 +15283,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Harley_Twin.jpg"
+    logo: "../assets/mygrow-search-images/Harley_Twin.jpg"
   },
   {
     index: "1176",
@@ -15296,7 +15296,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Viper.jpg"
+    logo: "../assets/mygrow-search-images/Viper.jpg"
   },
   {
     index: "1177",
@@ -15309,7 +15309,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Government_Mule.jpg"
+    logo: "../assets/mygrow-search-images/Government_Mule.jpg"
   },
   {
     index: "1178",
@@ -15322,7 +15322,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Honey_Lemon_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Honey_Lemon_Cheese.jpg"
   },
   {
     index: "1179",
@@ -15335,7 +15335,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/OGiesel.jpg"
+    logo: "../assets/mygrow-search-images/OGiesel.jpg"
   },
   {
     index: "1180",
@@ -15348,7 +15348,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Clockwork_Orange.jpg"
+    logo: "../assets/mygrow-search-images/Clockwork_Orange.jpg"
   },
   {
     index: "1181",
@@ -15361,7 +15361,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Bubble.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Bubble.jpg"
   },
   {
     index: "1182",
@@ -15374,7 +15374,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Nepal.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Nepal.jpg"
   },
   {
     index: "1183",
@@ -15387,7 +15387,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blizzard_Bush.jpg"
+    logo: "../assets/mygrow-search-images/Blizzard_Bush.jpg"
   },
   {
     index: "1184",
@@ -15400,7 +15400,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Anunnaki.jpg"
+    logo: "../assets/mygrow-search-images/Anunnaki.jpg"
   },
   {
     index: "1185",
@@ -15413,7 +15413,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Carmel_Cough.jpg"
+    logo: "../assets/mygrow-search-images/Carmel_Cough.jpg"
   },
   {
     index: "1186",
@@ -15426,7 +15426,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Humboldt_Sour_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Humboldt_Sour_Diesel.jpg"
   },
   {
     index: "1187",
@@ -15439,7 +15439,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Harmonia.jpg"
+    logo: "../assets/mygrow-search-images/Harmonia.jpg"
   },
   {
     index: "1188",
@@ -15452,7 +15452,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Jack_Burton.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Burton.jpg"
   },
   {
     index: "1189",
@@ -15465,7 +15465,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jack's_Dragon_Girl_7.jpg"
+    logo: "../assets/mygrow-search-images/Jack's_Dragon_Girl_7.jpg"
   },
   {
     index: "1190",
@@ -15478,7 +15478,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Kushadelic.jpg"
+    logo: "../assets/mygrow-search-images/Kushadelic.jpg"
   },
   {
     index: "1191",
@@ -15491,7 +15491,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chocolate_Meringue.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Meringue.jpg"
   },
   {
     index: "1192",
@@ -15504,7 +15504,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chemmy_Jones.jpg"
+    logo: "../assets/mygrow-search-images/Chemmy_Jones.jpg"
   },
   {
     index: "1193",
@@ -15517,7 +15517,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Boss_OG.jpg"
+    logo: "../assets/mygrow-search-images/Boss_OG.jpg"
   },
   {
     index: "1194",
@@ -15530,7 +15530,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cannadential.jpg"
+    logo: "../assets/mygrow-search-images/Cannadential.jpg"
   },
   {
     index: "1195",
@@ -15543,7 +15543,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Caramel_Candy_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Caramel_Candy_Kush.jpg"
   },
   {
     index: "1196",
@@ -15556,7 +15556,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/CBD_Critical_Cure.jpg"
+    logo: "../assets/mygrow-search-images/CBD_Critical_Cure.jpg"
   },
   {
     index: "1197",
@@ -15569,7 +15569,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cheeseburger.jpg"
+    logo: "../assets/mygrow-search-images/Cheeseburger.jpg"
   },
   {
     index: "1198",
@@ -15582,7 +15582,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chem_Scout.jpg"
+    logo: "../assets/mygrow-search-images/Chem_Scout.jpg"
   },
   {
     index: "1199",
@@ -15595,7 +15595,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rocky_Dennis.jpg"
+    logo: "../assets/mygrow-search-images/Rocky_Dennis.jpg"
   },
   {
     index: "1200",
@@ -15608,7 +15608,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Banana_Bread.jpg"
+    logo: "../assets/mygrow-search-images/Banana_Bread.jpg"
   },
   {
     index: "1201",
@@ -15621,7 +15621,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Early_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Early_Skunk.jpg"
   },
   {
     index: "1202",
@@ -15634,7 +15634,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Rose_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Rose_Bud.jpg"
   },
   {
     index: "1203",
@@ -15647,7 +15647,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/WSU.jpg"
+    logo: "../assets/mygrow-search-images/WSU.jpg"
   },
   {
     index: "1204",
@@ -15660,7 +15660,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Chemwreck.jpg"
+    logo: "../assets/mygrow-search-images/Chemwreck.jpg"
   },
   {
     index: "1205",
@@ -15673,7 +15673,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chupacabra.jpg"
+    logo: "../assets/mygrow-search-images/Chupacabra.jpg"
   },
   {
     index: "1206",
@@ -15686,7 +15686,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Russian_Doll.jpg"
+    logo: "../assets/mygrow-search-images/Russian_Doll.jpg"
   },
   {
     index: "1207",
@@ -15699,7 +15699,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jungle_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Jungle_Cake.jpg"
   },
   {
     index: "1208",
@@ -15712,7 +15712,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Cheetah_Piss.jpg"
+    logo: "../assets/mygrow-search-images/Cheetah_Piss.jpg"
   },
   {
     index: "1209",
@@ -15725,7 +15725,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/A-Train.jpg"
+    logo: "../assets/mygrow-search-images/A-Train.jpg"
   },
   {
     index: "1210",
@@ -15738,7 +15738,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Santa_Sativa.jpg"
+    logo: "../assets/mygrow-search-images/Santa_Sativa.jpg"
   },
   {
     index: "1211",
@@ -15751,7 +15751,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cuvee.jpg"
+    logo: "../assets/mygrow-search-images/Cuvee.jpg"
   },
   {
     index: "1212",
@@ -15764,7 +15764,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dank_Schrader.jpg"
+    logo: "../assets/mygrow-search-images/Dank_Schrader.jpg"
   },
   {
     index: "1213",
@@ -15777,7 +15777,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Dawg's_Waltz.jpg"
+    logo: "../assets/mygrow-search-images/Dawg's_Waltz.jpg"
   },
   {
     index: "1214",
@@ -15790,7 +15790,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Flaming_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Flaming_Cookies.jpg"
   },
   {
     index: "1215",
@@ -15803,7 +15803,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Frosted_Freak.jpg"
+    logo: "../assets/mygrow-search-images/Frosted_Freak.jpg"
   },
   {
     index: "1216",
@@ -15816,7 +15816,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Funfetti.jpg"
+    logo: "../assets/mygrow-search-images/Funfetti.jpg"
   },
   {
     index: "1217",
@@ -15829,7 +15829,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Funky_Monkey.jpg"
+    logo: "../assets/mygrow-search-images/Funky_Monkey.jpg"
   },
   {
     index: "1218",
@@ -15842,7 +15842,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Goldberry.jpg"
+    logo: "../assets/mygrow-search-images/Goldberry.jpg"
   },
   {
     index: "1219",
@@ -15855,7 +15855,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grape_OX.jpg"
+    logo: "../assets/mygrow-search-images/Grape_OX.jpg"
   },
   {
     index: "1220",
@@ -15868,7 +15868,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Hawaiian_Fire.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Fire.jpg"
   },
   {
     index: "1221",
@@ -15881,7 +15881,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hawaiian_Purple_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Purple_Kush.jpg"
   },
   {
     index: "1222",
@@ -15894,7 +15894,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Haze_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Haze_Wreck.jpg"
   },
   {
     index: "1223",
@@ -15907,7 +15907,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Zerbert.jpg"
+    logo: "../assets/mygrow-search-images/Zerbert.jpg"
   },
   {
     index: "1224",
@@ -15920,7 +15920,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Heisenberg_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Heisenberg_Kush.jpg"
   },
   {
     index: "1225",
@@ -15933,7 +15933,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Raine.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Raine.jpg"
   },
   {
     index: "1226",
@@ -15946,7 +15946,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hell_Raiser_OG.jpg"
+    logo: "../assets/mygrow-search-images/Hell_Raiser_OG.jpg"
   },
   {
     index: "1227",
@@ -15959,7 +15959,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Divorce_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Divorce_Cake.jpg"
   },
   {
     index: "1228",
@@ -15972,7 +15972,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Martian_Mean_Green.jpg"
+    logo: "../assets/mygrow-search-images/Martian_Mean_Green.jpg"
   },
   {
     index: "1229",
@@ -15985,7 +15985,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Highwayman.jpg"
+    logo: "../assets/mygrow-search-images/Highwayman.jpg"
   },
   {
     index: "1230",
@@ -15998,7 +15998,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hurkle.jpg"
+    logo: "../assets/mygrow-search-images/Hurkle.jpg"
   },
   {
     index: "1231",
@@ -16011,7 +16011,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Biohazard.jpg"
+    logo: "../assets/mygrow-search-images/Biohazard.jpg"
   },
   {
     index: "1232",
@@ -16024,7 +16024,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/East_Coast_Alien.jpg"
+    logo: "../assets/mygrow-search-images/East_Coast_Alien.jpg"
   },
   {
     index: "1233",
@@ -16037,7 +16037,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Madness.jpg"
+    logo: "../assets/mygrow-search-images/Madness.jpg"
   },
   {
     index: "1234",
@@ -16050,7 +16050,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Zeitgeist.jpg"
+    logo: "../assets/mygrow-search-images/Zeitgeist.jpg"
   },
   {
     index: "1235",
@@ -16063,7 +16063,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mojito.jpg"
+    logo: "../assets/mygrow-search-images/Mojito.jpg"
   },
   {
     index: "1236",
@@ -16076,7 +16076,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Satsuma.jpg"
+    logo: "../assets/mygrow-search-images/Satsuma.jpg"
   },
   {
     index: "1237",
@@ -16089,7 +16089,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Deep_Purple.jpg"
+    logo: "../assets/mygrow-search-images/Deep_Purple.jpg"
   },
   {
     index: "1238",
@@ -16102,7 +16102,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "15",
-    logo: "assets/mygrow-search-images/North_Indian.jpg"
+    logo: "../assets/mygrow-search-images/North_Indian.jpg"
   },
   {
     index: "1239",
@@ -16115,7 +16115,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ken's_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Ken's_Kush.jpg"
   },
   {
     index: "1240",
@@ -16128,7 +16128,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Kerala_Krush.jpg"
+    logo: "../assets/mygrow-search-images/Kerala_Krush.jpg"
   },
   {
     index: "1241",
@@ -16141,7 +16141,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Karma_Bitch.jpg"
+    logo: "../assets/mygrow-search-images/Karma_Bitch.jpg"
   },
   {
     index: "1242",
@@ -16154,7 +16154,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Katsu_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Katsu_Kush.jpg"
   },
   {
     index: "1243",
@@ -16167,7 +16167,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/X_Files.jpg"
+    logo: "../assets/mygrow-search-images/X_Files.jpg"
   },
   {
     index: "1244",
@@ -16180,7 +16180,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Killer_Grape.jpg"
+    logo: "../assets/mygrow-search-images/Killer_Grape.jpg"
   },
   {
     index: "1245",
@@ -16193,7 +16193,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kobain_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Kobain_Kush.jpg"
   },
   {
     index: "1246",
@@ -16206,7 +16206,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kraken.jpg"
+    logo: "../assets/mygrow-search-images/Kraken.jpg"
   },
   {
     index: "1247",
@@ -16219,7 +16219,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Stardawg_Guava.jpg"
+    logo: "../assets/mygrow-search-images/Stardawg_Guava.jpg"
   },
   {
     index: "1248",
@@ -16232,7 +16232,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Puff.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Puff.jpg"
   },
   {
     index: "1249",
@@ -16245,7 +16245,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bubble_Bomb.jpg"
+    logo: "../assets/mygrow-search-images/Bubble_Bomb.jpg"
   },
   {
     index: "1250",
@@ -16258,7 +16258,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Serious_Happiness.jpg"
+    logo: "../assets/mygrow-search-images/Serious_Happiness.jpg"
   },
   {
     index: "1251",
@@ -16271,7 +16271,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Shining_Silver_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Shining_Silver_Haze.jpg"
   },
   {
     index: "1252",
@@ -16284,7 +16284,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/The_Wife.jpg"
+    logo: "../assets/mygrow-search-images/The_Wife.jpg"
   },
   {
     index: "1253",
@@ -16297,7 +16297,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Satori.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Satori.jpg"
   },
   {
     index: "1254",
@@ -16310,7 +16310,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tahoe_Hydro_OG.jpg"
+    logo: "../assets/mygrow-search-images/Tahoe_Hydro_OG.jpg"
   },
   {
     index: "1255",
@@ -16323,7 +16323,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/The_Grunk.jpg"
+    logo: "../assets/mygrow-search-images/The_Grunk.jpg"
   },
   {
     index: "1256",
@@ -16336,7 +16336,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/El_Perro.jpg"
+    logo: "../assets/mygrow-search-images/El_Perro.jpg"
   },
   {
     index: "1257",
@@ -16349,7 +16349,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Thelonious_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Thelonious_Skunk.jpg"
   },
   {
     index: "1258",
@@ -16362,7 +16362,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Keystone_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Keystone_Kush.jpg"
   },
   {
     index: "1259",
@@ -16375,7 +16375,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grapefruit_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Grapefruit_Haze.jpg"
   },
   {
     index: "1260",
@@ -16388,7 +16388,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/TJ's_CBD.jpg"
+    logo: "../assets/mygrow-search-images/TJ's_CBD.jpg"
   },
   {
     index: "1261",
@@ -16401,7 +16401,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/ICED_Grapefruit.jpg"
+    logo: "../assets/mygrow-search-images/ICED_Grapefruit.jpg"
   },
   {
     index: "1262",
@@ -16414,7 +16414,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Animal_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Animal_Cookies.jpg"
   },
   {
     index: "1263",
@@ -16427,7 +16427,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Raspberry.jpg"
+    logo: "../assets/mygrow-search-images/Black_Raspberry.jpg"
   },
   {
     index: "1264",
@@ -16440,7 +16440,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Blue_Fire.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Fire.jpg"
   },
   {
     index: "1265",
@@ -16453,7 +16453,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Fruity_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Fruity_Widow.jpg"
   },
   {
     index: "1266",
@@ -16466,7 +16466,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Burning_Desire.jpg"
+    logo: "../assets/mygrow-search-images/Burning_Desire.jpg"
   },
   {
     index: "1267",
@@ -16479,7 +16479,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cadillac_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Cadillac_Cookies.jpg"
   },
   {
     index: "1268",
@@ -16492,7 +16492,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cali_Dragon.jpg"
+    logo: "../assets/mygrow-search-images/Cali_Dragon.jpg"
   },
   {
     index: "1269",
@@ -16505,7 +16505,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/KT_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/KT_Dawg.jpg"
   },
   {
     index: "1270",
@@ -16518,7 +16518,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Candy_Apple.jpg"
+    logo: "../assets/mygrow-search-images/Candy_Apple.jpg"
   },
   {
     index: "1271",
@@ -16531,7 +16531,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chardonnay.jpg"
+    logo: "../assets/mygrow-search-images/Chardonnay.jpg"
   },
   {
     index: "1272",
@@ -16544,7 +16544,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Caramel_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Caramel_Cake.jpg"
   },
   {
     index: "1273",
@@ -16557,7 +16557,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cheese_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Cheese_Dawg.jpg"
   },
   {
     index: "1274",
@@ -16570,7 +16570,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chem_Berry_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Chem_Berry_Diesel.jpg"
   },
   {
     index: "1275",
@@ -16583,7 +16583,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Skunk+.jpg"
+    logo: "../assets/mygrow-search-images/Skunk+.jpg"
   },
   {
     index: "1276",
@@ -16596,7 +16596,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sky_Lotus.jpg"
+    logo: "../assets/mygrow-search-images/Sky_Lotus.jpg"
   },
   {
     index: "1277",
@@ -16609,7 +16609,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sky_Master.jpg"
+    logo: "../assets/mygrow-search-images/Sky_Master.jpg"
   },
   {
     index: "1278",
@@ -16622,7 +16622,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cherry_Fuel.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Fuel.jpg"
   },
   {
     index: "1279",
@@ -16635,7 +16635,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Slice_of_Heaven.jpg"
+    logo: "../assets/mygrow-search-images/Slice_of_Heaven.jpg"
   },
   {
     index: "1280",
@@ -16648,7 +16648,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sidetracked.jpg"
+    logo: "../assets/mygrow-search-images/Sidetracked.jpg"
   },
   {
     index: "1281",
@@ -16661,7 +16661,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Super_Chronic.jpg"
+    logo: "../assets/mygrow-search-images/Super_Chronic.jpg"
   },
   {
     index: "1282",
@@ -16674,7 +16674,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Concord_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Concord_Cream.jpg"
   },
   {
     index: "1283",
@@ -16687,7 +16687,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Comfortably_Dumb.jpg"
+    logo: "../assets/mygrow-search-images/Comfortably_Dumb.jpg"
   },
   {
     index: "1284",
@@ -16700,7 +16700,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Moon_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Moon_Pie.jpg"
   },
   {
     index: "1285",
@@ -16713,7 +16713,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Snow_Goddess.jpg"
+    logo: "../assets/mygrow-search-images/Snow_Goddess.jpg"
   },
   {
     index: "1286",
@@ -16726,7 +16726,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mandala_1.jpg"
+    logo: "../assets/mygrow-search-images/Mandala_1.jpg"
   },
   {
     index: "1287",
@@ -16739,7 +16739,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cookies_and_Cream_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Cookies_and_Cream_Cheese.jpg"
   },
   {
     index: "1288",
@@ -16752,7 +16752,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Cookies_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Cookies_Haze.jpg"
   },
   {
     index: "1289",
@@ -16765,7 +16765,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Lennon.jpg"
+    logo: "../assets/mygrow-search-images/Lennon.jpg"
   },
   {
     index: "1290",
@@ -16778,7 +16778,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Silver_Calyx.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Calyx.jpg"
   },
   {
     index: "1291",
@@ -16791,7 +16791,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cougar_Milk.jpg"
+    logo: "../assets/mygrow-search-images/Cougar_Milk.jpg"
   },
   {
     index: "1292",
@@ -16804,7 +16804,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pine_Cone.jpg"
+    logo: "../assets/mygrow-search-images/Pine_Cone.jpg"
   },
   {
     index: "1293",
@@ -16817,7 +16817,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Popcorn_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Popcorn_Kush.jpg"
   },
   {
     index: "1294",
@@ -16830,7 +16830,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Red_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Red_Diesel.jpg"
   },
   {
     index: "1295",
@@ -16843,7 +16843,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Raskal_OG.jpg"
+    logo: "../assets/mygrow-search-images/Raskal_OG.jpg"
   },
   {
     index: "1296",
@@ -16856,7 +16856,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Wonka's_Bubblicious.jpg"
+    logo: "../assets/mygrow-search-images/Wonka's_Bubblicious.jpg"
   },
   {
     index: "1297",
@@ -16869,7 +16869,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Coyote_Art.jpg"
+    logo: "../assets/mygrow-search-images/Coyote_Art.jpg"
   },
   {
     index: "1298",
@@ -16882,7 +16882,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Critical_Purple_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Purple_Kush.jpg"
   },
   {
     index: "1299",
@@ -16895,7 +16895,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Critical_Soma.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Soma.jpg"
   },
   {
     index: "1300",
@@ -16908,7 +16908,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sour_Chunk.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Chunk.jpg"
   },
   {
     index: "1301",
@@ -16921,7 +16921,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Coconut_Oil.jpg"
+    logo: "../assets/mygrow-search-images/Coconut_Oil.jpg"
   },
   {
     index: "1302",
@@ -16934,7 +16934,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sorcerer's_Apprentice.jpg"
+    logo: "../assets/mygrow-search-images/Sorcerer's_Apprentice.jpg"
   },
   {
     index: "1303",
@@ -16947,7 +16947,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sonic_Screwdriver.jpg"
+    logo: "../assets/mygrow-search-images/Sonic_Screwdriver.jpg"
   },
   {
     index: "1304",
@@ -16960,7 +16960,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Russian_Assassin.jpg"
+    logo: "../assets/mygrow-search-images/Russian_Assassin.jpg"
   },
   {
     index: "1305",
@@ -16973,7 +16973,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Sensi_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Sensi_Skunk.jpg"
   },
   {
     index: "1306",
@@ -16986,7 +16986,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/LA_Kookies.jpg"
+    logo: "../assets/mygrow-search-images/LA_Kookies.jpg"
   },
   {
     index: "1307",
@@ -16999,7 +16999,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Magic_Beans_OG.jpg"
+    logo: "../assets/mygrow-search-images/Magic_Beans_OG.jpg"
   },
   {
     index: "1308",
@@ -17012,7 +17012,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemonhead_OG.jpg"
+    logo: "../assets/mygrow-search-images/Lemonhead_OG.jpg"
   },
   {
     index: "1309",
@@ -17025,7 +17025,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Magellan.jpg"
+    logo: "../assets/mygrow-search-images/Magellan.jpg"
   },
   {
     index: "1310",
@@ -17038,7 +17038,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Phone_Home.jpg"
+    logo: "../assets/mygrow-search-images/Phone_Home.jpg"
   },
   {
     index: "1311",
@@ -17051,7 +17051,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Flowerbomb_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Flowerbomb_Kush.jpg"
   },
   {
     index: "1312",
@@ -17064,7 +17064,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Desert_Star.jpg"
+    logo: "../assets/mygrow-search-images/Desert_Star.jpg"
   },
   {
     index: "1313",
@@ -17077,7 +17077,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Shark_Attack.jpg"
+    logo: "../assets/mygrow-search-images/Shark_Attack.jpg"
   },
   {
     index: "1314",
@@ -17090,7 +17090,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Doctor_Doctor.jpg"
+    logo: "../assets/mygrow-search-images/Doctor_Doctor.jpg"
   },
   {
     index: "1315",
@@ -17103,7 +17103,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/The_Wills.jpg"
+    logo: "../assets/mygrow-search-images/The_Wills.jpg"
   },
   {
     index: "1316",
@@ -17116,7 +17116,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Seattle_Summer.jpg"
+    logo: "../assets/mygrow-search-images/Seattle_Summer.jpg"
   },
   {
     index: "1317",
@@ -17129,7 +17129,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/XXX_420.jpg"
+    logo: "../assets/mygrow-search-images/XXX_420.jpg"
   },
   {
     index: "1318",
@@ -17142,7 +17142,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Breath.jpg"
   },
   {
     index: "1319",
@@ -17155,7 +17155,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Northern_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Northern_Skunk.jpg"
   },
   {
     index: "1320",
@@ -17168,7 +17168,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Haze_Heaven.jpg"
+    logo: "../assets/mygrow-search-images/Haze_Heaven.jpg"
   },
   {
     index: "1321",
@@ -17181,7 +17181,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Opium.jpg"
+    logo: "../assets/mygrow-search-images/Opium.jpg"
   },
   {
     index: "1322",
@@ -17194,7 +17194,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Thai_Lights.jpg"
+    logo: "../assets/mygrow-search-images/Thai_Lights.jpg"
   },
   {
     index: "1323",
@@ -17207,7 +17207,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Star_Head.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Star_Head.jpg"
   },
   {
     index: "1324",
@@ -17220,7 +17220,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Space_Bomb.jpg"
+    logo: "../assets/mygrow-search-images/Space_Bomb.jpg"
   },
   {
     index: "1325",
@@ -17233,7 +17233,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nukeheads.jpg"
+    logo: "../assets/mygrow-search-images/Nukeheads.jpg"
   },
   {
     index: "1326",
@@ -17246,7 +17246,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/OCA_Gold.jpg"
+    logo: "../assets/mygrow-search-images/OCA_Gold.jpg"
   },
   {
     index: "1327",
@@ -17259,7 +17259,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/OG_1_Kenobi.jpg"
+    logo: "../assets/mygrow-search-images/OG_1_Kenobi.jpg"
   },
   {
     index: "1328",
@@ -17272,7 +17272,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OG_Glue_Sniffer.jpg"
+    logo: "../assets/mygrow-search-images/OG_Glue_Sniffer.jpg"
   },
   {
     index: "1329",
@@ -17285,7 +17285,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "14",
-    logo: "assets/mygrow-search-images/Sugar_Pine.jpg"
+    logo: "../assets/mygrow-search-images/Sugar_Pine.jpg"
   },
   {
     index: "1330",
@@ -17298,7 +17298,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Bio_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Bio_Diesel.jpg"
   },
   {
     index: "1331",
@@ -17311,7 +17311,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Aliens_on_Moonshine.jpg"
+    logo: "../assets/mygrow-search-images/Aliens_on_Moonshine.jpg"
   },
   {
     index: "1332",
@@ -17324,7 +17324,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Star_Pupil.jpg"
+    logo: "../assets/mygrow-search-images/Star_Pupil.jpg"
   },
   {
     index: "1333",
@@ -17337,7 +17337,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/La_Nina.jpg"
+    logo: "../assets/mygrow-search-images/La_Nina.jpg"
   },
   {
     index: "1334",
@@ -17350,7 +17350,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Headband.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Headband.jpg"
   },
   {
     index: "1335",
@@ -17363,7 +17363,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Northern_Cross.jpg"
+    logo: "../assets/mygrow-search-images/Northern_Cross.jpg"
   },
   {
     index: "1336",
@@ -17376,7 +17376,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Strawberry_Blondie.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Blondie.jpg"
   },
   {
     index: "1337",
@@ -17389,7 +17389,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Kaua'i_Electric.jpg"
+    logo: "../assets/mygrow-search-images/Kaua'i_Electric.jpg"
   },
   {
     index: "1338",
@@ -17402,7 +17402,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Big_Tooth.jpg"
+    logo: "../assets/mygrow-search-images/Big_Tooth.jpg"
   },
   {
     index: "1339",
@@ -17415,7 +17415,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Thunderbird_Rose.jpg"
+    logo: "../assets/mygrow-search-images/Thunderbird_Rose.jpg"
   },
   {
     index: "1340",
@@ -17428,7 +17428,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Strawberry_Alien_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Alien_Kush.jpg"
   },
   {
     index: "1341",
@@ -17441,7 +17441,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Straight_A's_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Straight_A's_Haze.jpg"
   },
   {
     index: "1342",
@@ -17454,7 +17454,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Starman.jpg"
+    logo: "../assets/mygrow-search-images/Starman.jpg"
   },
   {
     index: "1343",
@@ -17467,7 +17467,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Urkle_Train_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Urkle_Train_Haze.jpg"
   },
   {
     index: "1344",
@@ -17480,7 +17480,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Strawberry_Snow_Cone.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Snow_Cone.jpg"
   },
   {
     index: "1345",
@@ -17493,7 +17493,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Supergirl.jpg"
+    logo: "../assets/mygrow-search-images/Supergirl.jpg"
   },
   {
     index: "1346",
@@ -17506,7 +17506,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bacio_Gelato.jpg"
+    logo: "../assets/mygrow-search-images/Bacio_Gelato.jpg"
   },
   {
     index: "1347",
@@ -17519,7 +17519,7 @@ var data = [
     Hybrid:"",
     Sativa: "40% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/OG_Sour_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/OG_Sour_Diesel.jpg"
   },
   {
     index: "1348",
@@ -17532,7 +17532,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Kush_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Kush_Breath.jpg"
   },
   {
     index: "1349",
@@ -17545,7 +17545,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sweet_Baby_Jane.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Baby_Jane.jpg"
   },
   {
     index: "1350",
@@ -17558,7 +17558,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sweet_Amnesia_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Amnesia_Haze.jpg"
   },
   {
     index: "1351",
@@ -17571,7 +17571,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Smooth_Operator.jpg"
+    logo: "../assets/mygrow-search-images/Smooth_Operator.jpg"
   },
   {
     index: "1352",
@@ -17584,7 +17584,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Hawaiian_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Cookies.jpg"
   },
   {
     index: "1353",
@@ -17597,7 +17597,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Caviar_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Caviar_Gold.jpg"
   },
   {
     index: "1354",
@@ -17610,7 +17610,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Best_Friend_OG.jpg"
+    logo: "../assets/mygrow-search-images/Best_Friend_OG.jpg"
   },
   {
     index: "1355",
@@ -17623,7 +17623,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Frost.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Frost.jpg"
   },
   {
     index: "1356",
@@ -17636,7 +17636,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Orient_Express.jpg"
+    logo: "../assets/mygrow-search-images/Orient_Express.jpg"
   },
   {
     index: "1357",
@@ -17649,7 +17649,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Suicide_Girl.jpg"
+    logo: "../assets/mygrow-search-images/Suicide_Girl.jpg"
   },
   {
     index: "1358",
@@ -17662,7 +17662,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cake_Batter.jpg"
+    logo: "../assets/mygrow-search-images/Cake_Batter.jpg"
   },
   {
     index: "1359",
@@ -17675,7 +17675,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blackberry_Trainwreck.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Trainwreck.jpg"
   },
   {
     index: "1360",
@@ -17688,7 +17688,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Satori.jpg"
+    logo: "../assets/mygrow-search-images/Satori.jpg"
   },
   {
     index: "1361",
@@ -17701,7 +17701,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Puna_Budder.jpg"
+    logo: "../assets/mygrow-search-images/Puna_Budder.jpg"
   },
   {
     index: "1362",
@@ -17714,7 +17714,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dutch_Queen.jpg"
+    logo: "../assets/mygrow-search-images/Dutch_Queen.jpg"
   },
   {
     index: "1363",
@@ -17727,7 +17727,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Golden_Soda.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Soda.jpg"
   },
   {
     index: "1364",
@@ -17740,7 +17740,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "14",
-    logo: "assets/mygrow-search-images/Oil_Spill.jpg"
+    logo: "../assets/mygrow-search-images/Oil_Spill.jpg"
   },
   {
     index: "1365",
@@ -17753,7 +17753,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Kill_Bill.jpg"
+    logo: "../assets/mygrow-search-images/Kill_Bill.jpg"
   },
   {
     index: "1366",
@@ -17766,7 +17766,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Penelope.jpg"
+    logo: "../assets/mygrow-search-images/Penelope.jpg"
   },
   {
     index: "1367",
@@ -17779,7 +17779,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sunset.jpg"
+    logo: "../assets/mygrow-search-images/Sunset.jpg"
   },
   {
     index: "1368",
@@ -17792,7 +17792,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Super_Silver_Lights.jpg"
+    logo: "../assets/mygrow-search-images/Super_Silver_Lights.jpg"
   },
   {
     index: "1369",
@@ -17805,7 +17805,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/The_Real_McCoy.jpg"
+    logo: "../assets/mygrow-search-images/The_Real_McCoy.jpg"
   },
   {
     index: "1370",
@@ -17818,7 +17818,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sexxpot.jpg"
+    logo: "../assets/mygrow-search-images/Sexxpot.jpg"
   },
   {
     index: "1371",
@@ -17831,7 +17831,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Exile.jpg"
+    logo: "../assets/mygrow-search-images/Exile.jpg"
   },
   {
     index: "1372",
@@ -17844,7 +17844,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sumo's_OG_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Sumo's_OG_Kush.jpg"
   },
   {
     index: "1373",
@@ -17857,7 +17857,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Summer_Breeze.jpg"
+    logo: "../assets/mygrow-search-images/Summer_Breeze.jpg"
   },
   {
     index: "1374",
@@ -17870,7 +17870,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sweet_Pure_CBD.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Pure_CBD.jpg"
   },
   {
     index: "1375",
@@ -17883,7 +17883,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sweet_Harlem_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Harlem_Diesel.jpg"
   },
   {
     index: "1376",
@@ -17896,7 +17896,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Diamond_Socks.jpg"
+    logo: "../assets/mygrow-search-images/Diamond_Socks.jpg"
   },
   {
     index: "1377",
@@ -17909,7 +17909,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Honey_Buns.jpg"
+    logo: "../assets/mygrow-search-images/Honey_Buns.jpg"
   },
   {
     index: "1378",
@@ -17922,7 +17922,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Boy.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Boy.jpg"
   },
   {
     index: "1379",
@@ -17935,7 +17935,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sweet_Jesus.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Jesus.jpg"
   },
   {
     index: "1380",
@@ -17948,7 +17948,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sun_Ra.jpg"
+    logo: "../assets/mygrow-search-images/Sun_Ra.jpg"
   },
   {
     index: "1381",
@@ -17961,7 +17961,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Snowball.jpg"
+    logo: "../assets/mygrow-search-images/Snowball.jpg"
   },
   {
     index: "1382",
@@ -17974,7 +17974,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Destroyer.jpg"
+    logo: "../assets/mygrow-search-images/Destroyer.jpg"
   },
   {
     index: "1383",
@@ -17987,7 +17987,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tardis.jpg"
+    logo: "../assets/mygrow-search-images/Tardis.jpg"
   },
   {
     index: "1384",
@@ -18000,7 +18000,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Money_Pug.jpg"
+    logo: "../assets/mygrow-search-images/Money_Pug.jpg"
   },
   {
     index: "1385",
@@ -18013,7 +18013,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Willie.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Willie.jpg"
   },
   {
     index: "1386",
@@ -18026,7 +18026,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Emperor_Cookie_Dough.jpg"
+    logo: "../assets/mygrow-search-images/Emperor_Cookie_Dough.jpg"
   },
   {
     index: "1387",
@@ -18039,7 +18039,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Super_G.jpg"
+    logo: "../assets/mygrow-search-images/Super_G.jpg"
   },
   {
     index: "1388",
@@ -18052,7 +18052,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Zeta_Sage.jpg"
+    logo: "../assets/mygrow-search-images/Zeta_Sage.jpg"
   },
   {
     index: "1389",
@@ -18065,7 +18065,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gorilla_Zkittlez.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Zkittlez.jpg"
   },
   {
     index: "1390",
@@ -18078,7 +18078,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Super_Sour_Lemon.jpg"
+    logo: "../assets/mygrow-search-images/Super_Sour_Lemon.jpg"
   },
   {
     index: "1391",
@@ -18091,7 +18091,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Astral_Works.jpg"
+    logo: "../assets/mygrow-search-images/Astral_Works.jpg"
   },
   {
     index: "1392",
@@ -18104,7 +18104,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Strawberry_Blonde.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Blonde.jpg"
   },
   {
     index: "1393",
@@ -18117,7 +18117,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Heavy_Duty_Fruity.jpg"
+    logo: "../assets/mygrow-search-images/Heavy_Duty_Fruity.jpg"
   },
   {
     index: "1394",
@@ -18130,7 +18130,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Spyder_Mon.jpg"
+    logo: "../assets/mygrow-search-images/Spyder_Mon.jpg"
   },
   {
     index: "1395",
@@ -18143,7 +18143,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/The_Vision.jpg"
+    logo: "../assets/mygrow-search-images/The_Vision.jpg"
   },
   {
     index: "1396",
@@ -18156,7 +18156,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Captain_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Captain_Jack.jpg"
   },
   {
     index: "1397",
@@ -18169,7 +18169,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Green_Gelato.jpg"
+    logo: "../assets/mygrow-search-images/Green_Gelato.jpg"
   },
   {
     index: "1398",
@@ -18182,7 +18182,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Spyder.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Spyder.jpg"
   },
   {
     index: "1399",
@@ -18195,7 +18195,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Kiss.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Kiss.jpg"
   },
   {
     index: "1400",
@@ -18208,7 +18208,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Tar_Monster.jpg"
+    logo: "../assets/mygrow-search-images/Tar_Monster.jpg"
   },
   {
     index: "1401",
@@ -18221,7 +18221,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Grapefruit_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Grapefruit_Diesel.jpg"
   },
   {
     index: "1402",
@@ -18234,7 +18234,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Thai_Fantasy.jpg"
+    logo: "../assets/mygrow-search-images/Thai_Fantasy.jpg"
   },
   {
     index: "1403",
@@ -18247,7 +18247,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/The_Big_Dirty.jpg"
+    logo: "../assets/mygrow-search-images/The_Big_Dirty.jpg"
   },
   {
     index: "1404",
@@ -18260,7 +18260,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/The_Boss.jpg"
+    logo: "../assets/mygrow-search-images/The_Boss.jpg"
   },
   {
     index: "1405",
@@ -18273,7 +18273,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/The_Gift.jpg"
+    logo: "../assets/mygrow-search-images/The_Gift.jpg"
   },
   {
     index: "1406",
@@ -18286,7 +18286,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/The_Lime.jpg"
+    logo: "../assets/mygrow-search-images/The_Lime.jpg"
   },
   {
     index: "1407",
@@ -18299,7 +18299,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/The_Loops.jpg"
+    logo: "../assets/mygrow-search-images/The_Loops.jpg"
   },
   {
     index: "1408",
@@ -18312,7 +18312,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tina.jpg"
+    logo: "../assets/mygrow-search-images/Tina.jpg"
   },
   {
     index: "1409",
@@ -18325,7 +18325,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tonics_Web.jpg"
+    logo: "../assets/mygrow-search-images/Tonics_Web.jpg"
   },
   {
     index: "1410",
@@ -18338,7 +18338,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Berry_Sanders.jpg"
+    logo: "../assets/mygrow-search-images/Berry_Sanders.jpg"
   },
   {
     index: "1411",
@@ -18351,7 +18351,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Trap_Star.jpg"
+    logo: "../assets/mygrow-search-images/Trap_Star.jpg"
   },
   {
     index: "1412",
@@ -18364,7 +18364,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Treasure_Island.jpg"
+    logo: "../assets/mygrow-search-images/Treasure_Island.jpg"
   },
   {
     index: "1413",
@@ -18377,7 +18377,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Head_Trip.jpg"
+    logo: "../assets/mygrow-search-images/Head_Trip.jpg"
   },
   {
     index: "1414",
@@ -18390,7 +18390,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/KC_36.jpg"
+    logo: "../assets/mygrow-search-images/KC_36.jpg"
   },
   {
     index: "1415",
@@ -18403,7 +18403,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tropic_Thunder.jpg"
+    logo: "../assets/mygrow-search-images/Tropic_Thunder.jpg"
   },
   {
     index: "1416",
@@ -18416,7 +18416,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/True_Face.jpg"
+    logo: "../assets/mygrow-search-images/True_Face.jpg"
   },
   {
     index: "1417",
@@ -18429,7 +18429,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/True_X.jpg"
+    logo: "../assets/mygrow-search-images/True_X.jpg"
   },
   {
     index: "1418",
@@ -18442,7 +18442,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Truffle_Butter.jpg"
+    logo: "../assets/mygrow-search-images/Truffle_Butter.jpg"
   },
   {
     index: "1419",
@@ -18455,7 +18455,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ultra_Banana.jpg"
+    logo: "../assets/mygrow-search-images/Ultra_Banana.jpg"
   },
   {
     index: "1420",
@@ -18468,7 +18468,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Vietnamese_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/Vietnamese_Bubba.jpg"
   },
   {
     index: "1421",
@@ -18481,7 +18481,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Violeta.jpg"
+    logo: "../assets/mygrow-search-images/Violeta.jpg"
   },
   {
     index: "1422",
@@ -18494,7 +18494,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Wembley.jpg"
+    logo: "../assets/mygrow-search-images/Wembley.jpg"
   },
   {
     index: "1423",
@@ -18507,7 +18507,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sweet_and_Sour_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_and_Sour_Widow.jpg"
   },
   {
     index: "1424",
@@ -18520,7 +18520,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Bastard.jpg"
+    logo: "../assets/mygrow-search-images/White_Bastard.jpg"
   },
   {
     index: "1425",
@@ -18533,7 +18533,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tangerine_Sunrise.jpg"
+    logo: "../assets/mygrow-search-images/Tangerine_Sunrise.jpg"
   },
   {
     index: "1426",
@@ -18546,7 +18546,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Bubblegum.jpg"
+    logo: "../assets/mygrow-search-images/White_Bubblegum.jpg"
   },
   {
     index: "1427",
@@ -18559,7 +18559,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cheesewreck.jpg"
+    logo: "../assets/mygrow-search-images/Cheesewreck.jpg"
   },
   {
     index: "1428",
@@ -18572,7 +18572,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Caramel_Cookie.jpg"
+    logo: "../assets/mygrow-search-images/White_Caramel_Cookie.jpg"
   },
   {
     index: "1429",
@@ -18585,7 +18585,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Coco.jpg"
+    logo: "../assets/mygrow-search-images/White_Coco.jpg"
   },
   {
     index: "1430",
@@ -18598,7 +18598,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/White_Domina.jpg"
+    logo: "../assets/mygrow-search-images/White_Domina.jpg"
   },
   {
     index: "1431",
@@ -18611,7 +18611,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bubblegum_Rainbow_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Bubblegum_Rainbow_Kush.jpg"
   },
   {
     index: "1432",
@@ -18624,7 +18624,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blackberry_Bubble.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Bubble.jpg"
   },
   {
     index: "1433",
@@ -18637,7 +18637,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/The_Fork.jpg"
+    logo: "../assets/mygrow-search-images/The_Fork.jpg"
   },
   {
     index: "1434",
@@ -18650,7 +18650,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Throwback_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Throwback_Kush.jpg"
   },
   {
     index: "1435",
@@ -18663,7 +18663,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kushberry.jpg"
+    logo: "../assets/mygrow-search-images/Kushberry.jpg"
   },
   {
     index: "1436",
@@ -18676,7 +18676,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Qrazy_Train.jpg"
+    logo: "../assets/mygrow-search-images/Qrazy_Train.jpg"
   },
   {
     index: "1437",
@@ -18689,7 +18689,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/WMD.jpg"
+    logo: "../assets/mygrow-search-images/WMD.jpg"
   },
   {
     index: "1438",
@@ -18702,7 +18702,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Wonder_Kid.jpg"
+    logo: "../assets/mygrow-search-images/Wonder_Kid.jpg"
   },
   {
     index: "1439",
@@ -18715,7 +18715,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Wookie.jpg"
+    logo: "../assets/mygrow-search-images/Wookie.jpg"
   },
   {
     index: "1440",
@@ -18728,7 +18728,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Sinai.jpg"
+    logo: "../assets/mygrow-search-images/Sinai.jpg"
   },
   {
     index: "1441",
@@ -18741,7 +18741,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/WTF.jpg"
+    logo: "../assets/mygrow-search-images/WTF.jpg"
   },
   {
     index: "1442",
@@ -18754,7 +18754,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Yoda's_Brain.jpg"
+    logo: "../assets/mygrow-search-images/Yoda's_Brain.jpg"
   },
   {
     index: "1443",
@@ -18767,7 +18767,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Zelda.jpg"
+    logo: "../assets/mygrow-search-images/Zelda.jpg"
   },
   {
     index: "1444",
@@ -18780,7 +18780,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mai_Tai_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Mai_Tai_Cookies.jpg"
   },
   {
     index: "1445",
@@ -18793,7 +18793,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sour_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Cheese.jpg"
   },
   {
     index: "1446",
@@ -18806,7 +18806,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sugar_Shack.jpg"
+    logo: "../assets/mygrow-search-images/Sugar_Shack.jpg"
   },
   {
     index: "1447",
@@ -18819,7 +18819,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tahoe_Hydro_Champagne.jpg"
+    logo: "../assets/mygrow-search-images/Tahoe_Hydro_Champagne.jpg"
   },
   {
     index: "1448",
@@ -18832,7 +18832,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Nuclear_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Nuclear_Cookies.jpg"
   },
   {
     index: "1449",
@@ -18845,7 +18845,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pineapple_Purps.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Purps.jpg"
   },
   {
     index: "1450",
@@ -18858,7 +18858,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Headstash.jpg"
+    logo: "../assets/mygrow-search-images/Headstash.jpg"
   },
   {
     index: "1451",
@@ -18871,7 +18871,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Ryder.jpg"
+    logo: "../assets/mygrow-search-images/White_Ryder.jpg"
   },
   {
     index: "1452",
@@ -18884,7 +18884,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gelonade.jpg"
+    logo: "../assets/mygrow-search-images/Gelonade.jpg"
   },
   {
     index: "1453",
@@ -18897,7 +18897,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Guava_Chem.jpg"
+    logo: "../assets/mygrow-search-images/Guava_Chem.jpg"
   },
   {
     index: "1454",
@@ -18910,7 +18910,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Fat_Banana.jpg"
+    logo: "../assets/mygrow-search-images/Fat_Banana.jpg"
   },
   {
     index: "1455",
@@ -18923,7 +18923,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "14",
-    logo: "assets/mygrow-search-images/Golden_Tiger.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Tiger.jpg"
   },
   {
     index: "1456",
@@ -18936,7 +18936,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hempstar.jpg"
+    logo: "../assets/mygrow-search-images/Hempstar.jpg"
   },
   {
     index: "1457",
@@ -18949,7 +18949,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Madman_OG.jpg"
+    logo: "../assets/mygrow-search-images/Madman_OG.jpg"
   },
   {
     index: "1458",
@@ -18962,7 +18962,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Doug's_Varin.jpg"
+    logo: "../assets/mygrow-search-images/Doug's_Varin.jpg"
   },
   {
     index: "1459",
@@ -18975,7 +18975,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Hill_Special.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Hill_Special.jpg"
   },
   {
     index: "1460",
@@ -18988,7 +18988,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Opal_OG_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Opal_OG_Kush.jpg"
   },
   {
     index: "1461",
@@ -19001,7 +19001,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Chemdawg.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Chemdawg.jpg"
   },
   {
     index: "1462",
@@ -19014,7 +19014,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Romulan_Grapefruit.jpg"
+    logo: "../assets/mygrow-search-images/Romulan_Grapefruit.jpg"
   },
   {
     index: "1463",
@@ -19027,7 +19027,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Shiva_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Shiva_Skunk.jpg"
   },
   {
     index: "1464",
@@ -19040,7 +19040,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pineapple.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple.jpg"
   },
   {
     index: "1465",
@@ -19053,7 +19053,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Urkle.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Urkle.jpg"
   },
   {
     index: "1466",
@@ -19066,7 +19066,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cheesy_Dick.jpg"
+    logo: "../assets/mygrow-search-images/Cheesy_Dick.jpg"
   },
   {
     index: "1467",
@@ -19079,7 +19079,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/VCDC.jpg"
+    logo: "../assets/mygrow-search-images/VCDC.jpg"
   },
   {
     index: "1468",
@@ -19092,7 +19092,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/White_Romulan.jpg"
+    logo: "../assets/mygrow-search-images/White_Romulan.jpg"
   },
   {
     index: "1469",
@@ -19105,7 +19105,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/3D_CBD.jpg"
+    logo: "../assets/mygrow-search-images/3D_CBD.jpg"
   },
   {
     index: "1470",
@@ -19118,7 +19118,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/501st_OG.jpg"
+    logo: "../assets/mygrow-search-images/501st_OG.jpg"
   },
   {
     index: "1471",
@@ -19131,7 +19131,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/AK-48.jpg"
+    logo: "../assets/mygrow-search-images/AK-48.jpg"
   },
   {
     index: "1472",
@@ -19144,7 +19144,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Skunk_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Skunk_Dawg.jpg"
   },
   {
     index: "1473",
@@ -19157,7 +19157,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Atomical_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Atomical_Haze.jpg"
   },
   {
     index: "1474",
@@ -19170,7 +19170,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Avidekel.jpg"
+    logo: "../assets/mygrow-search-images/Avidekel.jpg"
   },
   {
     index: "1475",
@@ -19183,7 +19183,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Sunset_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Sunset_Haze.jpg"
   },
   {
     index: "1476",
@@ -19196,7 +19196,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pokie.jpg"
+    logo: "../assets/mygrow-search-images/Pokie.jpg"
   },
   {
     index: "1477",
@@ -19209,7 +19209,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Brooklyn_Mango.jpg"
+    logo: "../assets/mygrow-search-images/Brooklyn_Mango.jpg"
   },
   {
     index: "1478",
@@ -19222,7 +19222,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bubble_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Bubble_Cheese.jpg"
   },
   {
     index: "1479",
@@ -19235,7 +19235,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Buddha_Tahoe.jpg"
+    logo: "../assets/mygrow-search-images/Buddha_Tahoe.jpg"
   },
   {
     index: "1480",
@@ -19248,7 +19248,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Amnesia_Lemon.jpg"
+    logo: "../assets/mygrow-search-images/Amnesia_Lemon.jpg"
   },
   {
     index: "1481",
@@ -19261,7 +19261,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Snow_Mountain.jpg"
+    logo: "../assets/mygrow-search-images/Snow_Mountain.jpg"
   },
   {
     index: "1482",
@@ -19274,7 +19274,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Predator_Pink.jpg"
+    logo: "../assets/mygrow-search-images/Predator_Pink.jpg"
   },
   {
     index: "1483",
@@ -19287,7 +19287,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Sage.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Sage.jpg"
   },
   {
     index: "1484",
@@ -19300,7 +19300,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Sticky_Buns.jpg"
+    logo: "../assets/mygrow-search-images/Sticky_Buns.jpg"
   },
   {
     index: "1485",
@@ -19313,7 +19313,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blackberry_Chem_OG.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Chem_OG.jpg"
   },
   {
     index: "1486",
@@ -19326,7 +19326,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blackberry_Rhino.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Rhino.jpg"
   },
   {
     index: "1487",
@@ -19339,7 +19339,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Blue_Dynamite.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Dynamite.jpg"
   },
   {
     index: "1488",
@@ -19352,7 +19352,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bloo's_Kloos.jpg"
+    logo: "../assets/mygrow-search-images/Bloo's_Kloos.jpg"
   },
   {
     index: "1489",
@@ -19365,7 +19365,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Afghani.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Afghani.jpg"
   },
   {
     index: "1490",
@@ -19378,7 +19378,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry_AK.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_AK.jpg"
   },
   {
     index: "1491",
@@ -19391,7 +19391,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry_Essence.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Essence.jpg"
   },
   {
     index: "1492",
@@ -19404,7 +19404,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry_Lambsbread.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Lambsbread.jpg"
   },
   {
     index: "1493",
@@ -19417,7 +19417,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Flower.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Flower.jpg"
   },
   {
     index: "1494",
@@ -19430,7 +19430,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Booger.jpg"
+    logo: "../assets/mygrow-search-images/Booger.jpg"
   },
   {
     index: "1495",
@@ -19443,7 +19443,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Brainstorm_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Brainstorm_Haze.jpg"
   },
   {
     index: "1496",
@@ -19456,7 +19456,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry_Pancakes.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Pancakes.jpg"
   },
   {
     index: "1497",
@@ -19469,7 +19469,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Confidential_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Confidential_Cheese.jpg"
   },
   {
     index: "1498",
@@ -19482,7 +19482,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gorilla_OG.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_OG.jpg"
   },
   {
     index: "1499",
@@ -19495,7 +19495,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pink_Sunset.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Sunset.jpg"
   },
   {
     index: "1500",
@@ -19508,7 +19508,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pestilence.jpg"
+    logo: "../assets/mygrow-search-images/Pestilence.jpg"
   },
   {
     index: "1501",
@@ -19521,7 +19521,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Bugatti_OG.jpg"
+    logo: "../assets/mygrow-search-images/Bugatti_OG.jpg"
   },
   {
     index: "1502",
@@ -19534,7 +19534,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Crater_Lake.jpg"
+    logo: "../assets/mygrow-search-images/Crater_Lake.jpg"
   },
   {
     index: "1503",
@@ -19547,7 +19547,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pink_Mango.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Mango.jpg"
   },
   {
     index: "1504",
@@ -19560,7 +19560,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Silver_Cindy.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Cindy.jpg"
   },
   {
     index: "1505",
@@ -19573,7 +19573,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Snow_Leopard.jpg"
+    logo: "../assets/mygrow-search-images/Snow_Leopard.jpg"
   },
   {
     index: "1506",
@@ -19586,7 +19586,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Panama_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Panama_Punch.jpg"
   },
   {
     index: "1507",
@@ -19599,7 +19599,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Snowcap.jpg"
+    logo: "../assets/mygrow-search-images/Snowcap.jpg"
   },
   {
     index: "1508",
@@ -19612,7 +19612,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/P-51.jpg"
+    logo: "../assets/mygrow-search-images/P-51.jpg"
   },
   {
     index: "1509",
@@ -19625,7 +19625,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/840.jpg"
+    logo: "../assets/mygrow-search-images/840.jpg"
   },
   {
     index: "1510",
@@ -19638,7 +19638,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Double_Tap.jpg"
+    logo: "../assets/mygrow-search-images/Double_Tap.jpg"
   },
   {
     index: "1511",
@@ -19651,7 +19651,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Swiss_Sativa.jpg"
+    logo: "../assets/mygrow-search-images/Swiss_Sativa.jpg"
   },
   {
     index: "1512",
@@ -19664,7 +19664,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Paris_XXX.jpg"
+    logo: "../assets/mygrow-search-images/Paris_XXX.jpg"
   },
   {
     index: "1513",
@@ -19677,7 +19677,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Moonshine.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Moonshine.jpg"
   },
   {
     index: "1514",
@@ -19690,7 +19690,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Thunder_Fuck.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Thunder_Fuck.jpg"
   },
   {
     index: "1515",
@@ -19703,7 +19703,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Brain_Candy.jpg"
+    logo: "../assets/mygrow-search-images/Brain_Candy.jpg"
   },
   {
     index: "1516",
@@ -19716,7 +19716,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jenni.jpg"
+    logo: "../assets/mygrow-search-images/Jenni.jpg"
   },
   {
     index: "1517",
@@ -19729,7 +19729,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/California_Limes.jpg"
+    logo: "../assets/mygrow-search-images/California_Limes.jpg"
   },
   {
     index: "1518",
@@ -19742,7 +19742,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Grand_Poobah.jpg"
+    logo: "../assets/mygrow-search-images/Grand_Poobah.jpg"
   },
   {
     index: "1519",
@@ -19755,7 +19755,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Bubba_Fresh.jpg"
+    logo: "../assets/mygrow-search-images/Bubba_Fresh.jpg"
   },
   {
     index: "1520",
@@ -19768,7 +19768,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Shark_Bite.jpg"
+    logo: "../assets/mygrow-search-images/Shark_Bite.jpg"
   },
   {
     index: "1521",
@@ -19781,7 +19781,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Harmony.jpg"
+    logo: "../assets/mygrow-search-images/Harmony.jpg"
   },
   {
     index: "1522",
@@ -19794,7 +19794,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Supernova.jpg"
+    logo: "../assets/mygrow-search-images/Supernova.jpg"
   },
   {
     index: "1523",
@@ -19807,7 +19807,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Rebel_Berry_OG.jpg"
+    logo: "../assets/mygrow-search-images/Rebel_Berry_OG.jpg"
   },
   {
     index: "1524",
@@ -19820,7 +19820,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Bananas.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Bananas.jpg"
   },
   {
     index: "1525",
@@ -19833,7 +19833,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/White_Walker_Kush.jpg"
+    logo: "../assets/mygrow-search-images/White_Walker_Kush.jpg"
   },
   {
     index: "1526",
@@ -19846,7 +19846,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cindy_White.jpg"
+    logo: "../assets/mygrow-search-images/Cindy_White.jpg"
   },
   {
     index: "1527",
@@ -19859,7 +19859,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Green_Monster.jpg"
+    logo: "../assets/mygrow-search-images/Green_Monster.jpg"
   },
   {
     index: "1528",
@@ -19872,7 +19872,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Strawberry_OG.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_OG.jpg"
   },
   {
     index: "1529",
@@ -19885,7 +19885,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Buddha_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Buddha_Haze.jpg"
   },
   {
     index: "1530",
@@ -19898,7 +19898,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hollywood_OG.jpg"
+    logo: "../assets/mygrow-search-images/Hollywood_OG.jpg"
   },
   {
     index: "1531",
@@ -19911,7 +19911,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Sour_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Dream.jpg"
   },
   {
     index: "1532",
@@ -19924,7 +19924,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Nepalese_Dragon.jpg"
+    logo: "../assets/mygrow-search-images/Nepalese_Dragon.jpg"
   },
   {
     index: "1533",
@@ -19937,7 +19937,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Timewreck.jpg"
+    logo: "../assets/mygrow-search-images/Timewreck.jpg"
   },
   {
     index: "1534",
@@ -19950,7 +19950,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Fallen_Angel.jpg"
+    logo: "../assets/mygrow-search-images/Fallen_Angel.jpg"
   },
   {
     index: "1535",
@@ -19963,7 +19963,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pluto_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Pluto_Kush.jpg"
   },
   {
     index: "1536",
@@ -19976,7 +19976,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Velvet_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Velvet_Bud.jpg"
   },
   {
     index: "1537",
@@ -19989,7 +19989,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Double_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Double_Diesel.jpg"
   },
   {
     index: "1538",
@@ -20002,7 +20002,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/Black_Bubba.jpg"
   },
   {
     index: "1539",
@@ -20015,7 +20015,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Red_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Red_Widow.jpg"
   },
   {
     index: "1540",
@@ -20028,7 +20028,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Rock_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Rock_Bud.jpg"
   },
   {
     index: "1541",
@@ -20041,7 +20041,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Apricot_Jelly.jpg"
+    logo: "../assets/mygrow-search-images/Apricot_Jelly.jpg"
   },
   {
     index: "1542",
@@ -20054,7 +20054,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blackberry_Snow_Cone.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Snow_Cone.jpg"
   },
   {
     index: "1543",
@@ -20067,7 +20067,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Lotus.jpg"
+    logo: "../assets/mygrow-search-images/Black_Lotus.jpg"
   },
   {
     index: "1544",
@@ -20080,7 +20080,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Loud_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Loud_Dream.jpg"
   },
   {
     index: "1545",
@@ -20093,7 +20093,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pink_Death_Star.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Death_Star.jpg"
   },
   {
     index: "1546",
@@ -20106,7 +20106,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Alice_In_Wonderland.jpg"
+    logo: "../assets/mygrow-search-images/Alice_In_Wonderland.jpg"
   },
   {
     index: "1547",
@@ -20119,7 +20119,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Shooting_Star.jpg"
+    logo: "../assets/mygrow-search-images/Shooting_Star.jpg"
   },
   {
     index: "1548",
@@ -20132,7 +20132,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "24",
-    logo: "assets/mygrow-search-images/Old_Mother_Sativa.jpg"
+    logo: "../assets/mygrow-search-images/Old_Mother_Sativa.jpg"
   },
   {
     index: "1549",
@@ -20145,7 +20145,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Belladonna.jpg"
+    logo: "../assets/mygrow-search-images/Belladonna.jpg"
   },
   {
     index: "1550",
@@ -20158,7 +20158,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/African.jpg"
+    logo: "../assets/mygrow-search-images/African.jpg"
   },
   {
     index: "1551",
@@ -20171,7 +20171,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OG_Diesel_Kush.jpg"
+    logo: "../assets/mygrow-search-images/OG_Diesel_Kush.jpg"
   },
   {
     index: "1552",
@@ -20184,7 +20184,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dream_Star.jpg"
+    logo: "../assets/mygrow-search-images/Dream_Star.jpg"
   },
   {
     index: "1553",
@@ -20197,7 +20197,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "14",
-    logo: "assets/mygrow-search-images/Lemon_Pepper.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Pepper.jpg"
   },
   {
     index: "1554",
@@ -20210,7 +20210,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Magic.jpg"
+    logo: "../assets/mygrow-search-images/Black_Magic.jpg"
   },
   {
     index: "1555",
@@ -20223,7 +20223,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/GDP_Electric.jpg"
+    logo: "../assets/mygrow-search-images/GDP_Electric.jpg"
   },
   {
     index: "1556",
@@ -20236,7 +20236,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Deep_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Deep_Breath.jpg"
   },
   {
     index: "1557",
@@ -20249,7 +20249,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grandma's_Batch.jpg"
+    logo: "../assets/mygrow-search-images/Grandma's_Batch.jpg"
   },
   {
     index: "1558",
@@ -20262,7 +20262,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Wolf.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Wolf.jpg"
   },
   {
     index: "1559",
@@ -20275,7 +20275,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Blush.jpg"
+    logo: "../assets/mygrow-search-images/Blush.jpg"
   },
   {
     index: "1560",
@@ -20288,7 +20288,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Siberian.jpg"
+    logo: "../assets/mygrow-search-images/White_Siberian.jpg"
   },
   {
     index: "1561",
@@ -20301,7 +20301,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Lost_Sierra_Night_Nurse.jpg"
+    logo: "../assets/mygrow-search-images/Lost_Sierra_Night_Nurse.jpg"
   },
   {
     index: "1562",
@@ -20314,7 +20314,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cobbler.jpg"
+    logo: "../assets/mygrow-search-images/Cobbler.jpg"
   },
   {
     index: "1563",
@@ -20327,7 +20327,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Black_D.O.G..jpg"
+    logo: "../assets/mygrow-search-images/Black_D.O.G..jpg"
   },
   {
     index: "1564",
@@ -20340,7 +20340,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Project_Blue_Book.jpg"
+    logo: "../assets/mygrow-search-images/Project_Blue_Book.jpg"
   },
   {
     index: "1565",
@@ -20353,7 +20353,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Julius_Caesar.jpg"
+    logo: "../assets/mygrow-search-images/Julius_Caesar.jpg"
   },
   {
     index: "1566",
@@ -20366,7 +20366,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/White_Lavender.jpg"
+    logo: "../assets/mygrow-search-images/White_Lavender.jpg"
   },
   {
     index: "1567",
@@ -20379,7 +20379,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Golden_Panda.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Panda.jpg"
   },
   {
     index: "1568",
@@ -20392,7 +20392,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Cali_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Cali_Jack.jpg"
   },
   {
     index: "1569",
@@ -20405,7 +20405,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Power.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Power.jpg"
   },
   {
     index: "1570",
@@ -20418,7 +20418,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Berry_Larry.jpg"
+    logo: "../assets/mygrow-search-images/Berry_Larry.jpg"
   },
   {
     index: "1571",
@@ -20431,7 +20431,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Burnt_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Burnt_Cookies.jpg"
   },
   {
     index: "1572",
@@ -20444,7 +20444,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Barbara_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Barbara_Bud.jpg"
   },
   {
     index: "1573",
@@ -20457,7 +20457,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Future.jpg"
+    logo: "../assets/mygrow-search-images/Future.jpg"
   },
   {
     index: "1574",
@@ -20470,7 +20470,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Buddha's_Tooth.jpg"
+    logo: "../assets/mygrow-search-images/Buddha's_Tooth.jpg"
   },
   {
     index: "1575",
@@ -20483,7 +20483,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Bazooka_Joe.jpg"
+    logo: "../assets/mygrow-search-images/Bazooka_Joe.jpg"
   },
   {
     index: "1576",
@@ -20496,7 +20496,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Higher_Power.jpg"
+    logo: "../assets/mygrow-search-images/Higher_Power.jpg"
   },
   {
     index: "1577",
@@ -20509,7 +20509,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Carpet_Tape.jpg"
+    logo: "../assets/mygrow-search-images/Carpet_Tape.jpg"
   },
   {
     index: "1578",
@@ -20522,7 +20522,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/California_Love_OG.jpg"
+    logo: "../assets/mygrow-search-images/California_Love_OG.jpg"
   },
   {
     index: "1579",
@@ -20535,7 +20535,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Chuck_OG.jpg"
+    logo: "../assets/mygrow-search-images/Chuck_OG.jpg"
   },
   {
     index: "1580",
@@ -20548,7 +20548,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Sour_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Sour_Diesel.jpg"
   },
   {
     index: "1581",
@@ -20561,7 +20561,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Skunk.jpg"
   },
   {
     index: "1582",
@@ -20574,7 +20574,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Arrow.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Arrow.jpg"
   },
   {
     index: "1583",
@@ -20587,7 +20587,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Gold_King's_Thai.jpg"
+    logo: "../assets/mygrow-search-images/Gold_King's_Thai.jpg"
   },
   {
     index: "1584",
@@ -20600,7 +20600,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Brazil_Amazonia.jpg"
+    logo: "../assets/mygrow-search-images/Brazil_Amazonia.jpg"
   },
   {
     index: "1585",
@@ -20613,7 +20613,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/CBD_Shark.jpg"
+    logo: "../assets/mygrow-search-images/CBD_Shark.jpg"
   },
   {
     index: "1586",
@@ -20626,7 +20626,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "14",
-    logo: "assets/mygrow-search-images/Black_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Black_Haze.jpg"
   },
   {
     index: "1587",
@@ -20639,7 +20639,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/LA_Chocolat.jpg"
+    logo: "../assets/mygrow-search-images/LA_Chocolat.jpg"
   },
   {
     index: "1588",
@@ -20652,7 +20652,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bedford_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Bedford_Glue.jpg"
   },
   {
     index: "1589",
@@ -20665,7 +20665,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blackberry_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Dream.jpg"
   },
   {
     index: "1590",
@@ -20678,7 +20678,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mad_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Mad_Dawg.jpg"
   },
   {
     index: "1591",
@@ -20691,7 +20691,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Golden_State_Banana.jpg"
+    logo: "../assets/mygrow-search-images/Golden_State_Banana.jpg"
   },
   {
     index: "1592",
@@ -20704,7 +20704,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Delahaze.jpg"
+    logo: "../assets/mygrow-search-images/Delahaze.jpg"
   },
   {
     index: "1593",
@@ -20717,7 +20717,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Old_School_OG.jpg"
+    logo: "../assets/mygrow-search-images/Old_School_OG.jpg"
   },
   {
     index: "1594",
@@ -20730,7 +20730,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Powderhound.jpg"
+    logo: "../assets/mygrow-search-images/Powderhound.jpg"
   },
   {
     index: "1595",
@@ -20743,7 +20743,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Cole_Train.jpg"
+    logo: "../assets/mygrow-search-images/Cole_Train.jpg"
   },
   {
     index: "1596",
@@ -20756,7 +20756,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Electric_Lemonade.jpg"
+    logo: "../assets/mygrow-search-images/Electric_Lemonade.jpg"
   },
   {
     index: "1597",
@@ -20769,7 +20769,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cit·Rix.jpg"
+    logo: "../assets/mygrow-search-images/Cit·Rix.jpg"
   },
   {
     index: "1598",
@@ -20782,7 +20782,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Casper_OG.jpg"
+    logo: "../assets/mygrow-search-images/Casper_OG.jpg"
   },
   {
     index: "1599",
@@ -20795,7 +20795,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/OG_Poison.jpg"
+    logo: "../assets/mygrow-search-images/OG_Poison.jpg"
   },
   {
     index: "1600",
@@ -20808,7 +20808,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Doctor_Jamaica.jpg"
+    logo: "../assets/mygrow-search-images/Doctor_Jamaica.jpg"
   },
   {
     index: "1601",
@@ -20821,7 +20821,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/One_To_One.jpg"
+    logo: "../assets/mygrow-search-images/One_To_One.jpg"
   },
   {
     index: "1602",
@@ -20834,7 +20834,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/First_48.jpg"
+    logo: "../assets/mygrow-search-images/First_48.jpg"
   },
   {
     index: "1603",
@@ -20847,7 +20847,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Slimer_OG.jpg"
+    logo: "../assets/mygrow-search-images/Slimer_OG.jpg"
   },
   {
     index: "1604",
@@ -20860,7 +20860,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Romulan_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Romulan_Haze.jpg"
   },
   {
     index: "1605",
@@ -20873,7 +20873,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Red_Dwarf.jpg"
+    logo: "../assets/mygrow-search-images/Red_Dwarf.jpg"
   },
   {
     index: "1606",
@@ -20886,7 +20886,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Scroopy_Noopers.jpg"
+    logo: "../assets/mygrow-search-images/Scroopy_Noopers.jpg"
   },
   {
     index: "1607",
@@ -20899,7 +20899,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Double_Mint.jpg"
+    logo: "../assets/mygrow-search-images/Double_Mint.jpg"
   },
   {
     index: "1608",
@@ -20912,7 +20912,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Medical_49.jpg"
+    logo: "../assets/mygrow-search-images/Medical_49.jpg"
   },
   {
     index: "1609",
@@ -20925,7 +20925,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "6",
-    logo: "assets/mygrow-search-images/Afwreck.jpg"
+    logo: "../assets/mygrow-search-images/Afwreck.jpg"
   },
   {
     index: "1610",
@@ -20938,7 +20938,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Princess's_Tiara.jpg"
+    logo: "../assets/mygrow-search-images/Princess's_Tiara.jpg"
   },
   {
     index: "1611",
@@ -20951,7 +20951,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sequoia_Strawberry.jpg"
+    logo: "../assets/mygrow-search-images/Sequoia_Strawberry.jpg"
   },
   {
     index: "1612",
@@ -20964,7 +20964,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Paralysis.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Paralysis.jpg"
   },
   {
     index: "1613",
@@ -20977,7 +20977,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Slazerbeam.jpg"
+    logo: "../assets/mygrow-search-images/Slazerbeam.jpg"
   },
   {
     index: "1614",
@@ -20990,7 +20990,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Champagne_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Champagne_Diesel.jpg"
   },
   {
     index: "1615",
@@ -21003,7 +21003,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Chem_Beyond_Diesel_CBD.jpg"
+    logo: "../assets/mygrow-search-images/Chem_Beyond_Diesel_CBD.jpg"
   },
   {
     index: "1616",
@@ -21016,7 +21016,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Congo.jpg"
+    logo: "../assets/mygrow-search-images/Congo.jpg"
   },
   {
     index: "1617",
@@ -21029,7 +21029,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mr_Tusk.jpg"
+    logo: "../assets/mygrow-search-images/Mr_Tusk.jpg"
   },
   {
     index: "1618",
@@ -21042,7 +21042,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mother_Tongue.jpg"
+    logo: "../assets/mygrow-search-images/Mother_Tongue.jpg"
   },
   {
     index: "1619",
@@ -21055,7 +21055,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/PVC_OG.jpg"
+    logo: "../assets/mygrow-search-images/PVC_OG.jpg"
   },
   {
     index: "1620",
@@ -21068,7 +21068,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/City_of_God.jpg"
+    logo: "../assets/mygrow-search-images/City_of_God.jpg"
   },
   {
     index: "1621",
@@ -21081,7 +21081,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gemstone.jpg"
+    logo: "../assets/mygrow-search-images/Gemstone.jpg"
   },
   {
     index: "1622",
@@ -21094,7 +21094,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Dutch_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Dutch_Haze.jpg"
   },
   {
     index: "1623",
@@ -21107,7 +21107,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dr._Quantum.jpg"
+    logo: "../assets/mygrow-search-images/Dr._Quantum.jpg"
   },
   {
     index: "1624",
@@ -21120,7 +21120,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Mission_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Mission_Kush.jpg"
   },
   {
     index: "1625",
@@ -21133,7 +21133,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Waldo.jpg"
+    logo: "../assets/mygrow-search-images/Waldo.jpg"
   },
   {
     index: "1626",
@@ -21146,7 +21146,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Red_Velvet_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Red_Velvet_Pie.jpg"
   },
   {
     index: "1627",
@@ -21159,7 +21159,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rocky_Mountain_High.jpg"
+    logo: "../assets/mygrow-search-images/Rocky_Mountain_High.jpg"
   },
   {
     index: "1628",
@@ -21172,7 +21172,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Pinecone.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Pinecone.jpg"
   },
   {
     index: "1629",
@@ -21185,7 +21185,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Robert_Plant.jpg"
+    logo: "../assets/mygrow-search-images/Robert_Plant.jpg"
   },
   {
     index: "1630",
@@ -21198,7 +21198,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/River_Song.jpg"
+    logo: "../assets/mygrow-search-images/River_Song.jpg"
   },
   {
     index: "1631",
@@ -21211,7 +21211,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Lightstorm.jpg"
+    logo: "../assets/mygrow-search-images/Lightstorm.jpg"
   },
   {
     index: "1632",
@@ -21224,7 +21224,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Humboldt.jpg"
+    logo: "../assets/mygrow-search-images/Humboldt.jpg"
   },
   {
     index: "1633",
@@ -21237,7 +21237,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Frosty.jpg"
+    logo: "../assets/mygrow-search-images/Frosty.jpg"
   },
   {
     index: "1634",
@@ -21250,7 +21250,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Red_Eye_OG.jpg"
+    logo: "../assets/mygrow-search-images/Red_Eye_OG.jpg"
   },
   {
     index: "1635",
@@ -21263,7 +21263,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Jacky_White.jpg"
+    logo: "../assets/mygrow-search-images/Jacky_White.jpg"
   },
   {
     index: "1636",
@@ -21276,7 +21276,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sugar_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Sugar_Punch.jpg"
   },
   {
     index: "1637",
@@ -21289,7 +21289,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Starbud.jpg"
+    logo: "../assets/mygrow-search-images/Starbud.jpg"
   },
   {
     index: "1638",
@@ -21302,7 +21302,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/G_Force.jpg"
+    logo: "../assets/mygrow-search-images/G_Force.jpg"
   },
   {
     index: "1639",
@@ -21315,7 +21315,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tangerine_Power.jpg"
+    logo: "../assets/mygrow-search-images/Tangerine_Power.jpg"
   },
   {
     index: "1640",
@@ -21328,7 +21328,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/8_Ball_Kush.jpg"
+    logo: "../assets/mygrow-search-images/8_Ball_Kush.jpg"
   },
   {
     index: "1641",
@@ -21341,7 +21341,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Ox.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Ox.jpg"
   },
   {
     index: "1642",
@@ -21354,7 +21354,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blackberry_Fire.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Fire.jpg"
   },
   {
     index: "1643",
@@ -21367,7 +21367,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Big_Bomb.jpg"
+    logo: "../assets/mygrow-search-images/Big_Bomb.jpg"
   },
   {
     index: "1644",
@@ -21380,7 +21380,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Satellite_OG.jpg"
+    logo: "../assets/mygrow-search-images/Satellite_OG.jpg"
   },
   {
     index: "1645",
@@ -21393,7 +21393,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Oregon_Pineapple.jpg"
+    logo: "../assets/mygrow-search-images/Oregon_Pineapple.jpg"
   },
   {
     index: "1646",
@@ -21406,7 +21406,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Superman_OG.jpg"
+    logo: "../assets/mygrow-search-images/Superman_OG.jpg"
   },
   {
     index: "1647",
@@ -21419,7 +21419,7 @@ var data = [
     Hybrid:"",
     Sativa: "50% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ginger_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Ginger_Punch.jpg"
   },
   {
     index: "1648",
@@ -21432,7 +21432,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Misty_Morning.jpg"
+    logo: "../assets/mygrow-search-images/Misty_Morning.jpg"
   },
   {
     index: "1649",
@@ -21445,7 +21445,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Golden_Gage.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Gage.jpg"
   },
   {
     index: "1650",
@@ -21458,7 +21458,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Electric_Black_Mamba.jpg"
+    logo: "../assets/mygrow-search-images/Electric_Black_Mamba.jpg"
   },
   {
     index: "1651",
@@ -21471,7 +21471,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Goat_Head.jpg"
+    logo: "../assets/mygrow-search-images/Goat_Head.jpg"
   },
   {
     index: "1652",
@@ -21484,7 +21484,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Gilz_Nilz.jpg"
+    logo: "../assets/mygrow-search-images/Gilz_Nilz.jpg"
   },
   {
     index: "1653",
@@ -21497,7 +21497,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chloe.jpg"
+    logo: "../assets/mygrow-search-images/Chloe.jpg"
   },
   {
     index: "1654",
@@ -21510,7 +21510,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Dog_Shit.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Dog_Shit.jpg"
   },
   {
     index: "1655",
@@ -21523,7 +21523,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Krystalica.jpg"
+    logo: "../assets/mygrow-search-images/Krystalica.jpg"
   },
   {
     index: "1656",
@@ -21536,7 +21536,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Critical_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Cheese.jpg"
   },
   {
     index: "1657",
@@ -21549,7 +21549,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Mother's_Finest.jpg"
+    logo: "../assets/mygrow-search-images/Mother's_Finest.jpg"
   },
   {
     index: "1658",
@@ -21562,7 +21562,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Rebel_God_Smoke.jpg"
+    logo: "../assets/mygrow-search-images/Rebel_God_Smoke.jpg"
   },
   {
     index: "1659",
@@ -21575,7 +21575,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/The_Third_Dimension.jpg"
+    logo: "../assets/mygrow-search-images/The_Third_Dimension.jpg"
   },
   {
     index: "1660",
@@ -21588,7 +21588,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Eagle_Bill.jpg"
+    logo: "../assets/mygrow-search-images/Eagle_Bill.jpg"
   },
   {
     index: "1661",
@@ -21601,7 +21601,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Nexus_OG.jpg"
+    logo: "../assets/mygrow-search-images/Nexus_OG.jpg"
   },
   {
     index: "1662",
@@ -21614,7 +21614,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Easy_Peezy.jpg"
+    logo: "../assets/mygrow-search-images/Easy_Peezy.jpg"
   },
   {
     index: "1663",
@@ -21627,7 +21627,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ridge_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Ridge_Berry.jpg"
   },
   {
     index: "1664",
@@ -21640,7 +21640,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/X_Wing.jpg"
+    logo: "../assets/mygrow-search-images/X_Wing.jpg"
   },
   {
     index: "1665",
@@ -21653,7 +21653,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alien_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Breath.jpg"
   },
   {
     index: "1666",
@@ -21666,7 +21666,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Argyle.jpg"
+    logo: "../assets/mygrow-search-images/Argyle.jpg"
   },
   {
     index: "1667",
@@ -21679,7 +21679,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/NY_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/NY_Cheese.jpg"
   },
   {
     index: "1668",
@@ -21692,7 +21692,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Godzilla_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Godzilla_Glue.jpg"
   },
   {
     index: "1669",
@@ -21705,7 +21705,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dinachem.jpg"
+    logo: "../assets/mygrow-search-images/Dinachem.jpg"
   },
   {
     index: "1670",
@@ -21718,7 +21718,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dakini_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Dakini_Kush.jpg"
   },
   {
     index: "1671",
@@ -21731,7 +21731,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Critical_Plus_2.0.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Plus_2.0.jpg"
   },
   {
     index: "1672",
@@ -21744,7 +21744,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/American_Beauty.jpg"
+    logo: "../assets/mygrow-search-images/American_Beauty.jpg"
   },
   {
     index: "1673",
@@ -21757,7 +21757,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Bubba.jpg"
   },
   {
     index: "1674",
@@ -21770,7 +21770,7 @@ var data = [
     Hybrid:"",
     Sativa: "55% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Ice.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Ice.jpg"
   },
   {
     index: "1675",
@@ -21783,7 +21783,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Bush.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Bush.jpg"
   },
   {
     index: "1676",
@@ -21796,7 +21796,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Phantom_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Phantom_Cookies.jpg"
   },
   {
     index: "1677",
@@ -21809,7 +21809,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Snow_Ryder.jpg"
+    logo: "../assets/mygrow-search-images/Snow_Ryder.jpg"
   },
   {
     index: "1678",
@@ -21822,7 +21822,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/AK-49.jpg"
+    logo: "../assets/mygrow-search-images/AK-49.jpg"
   },
   {
     index: "1679",
@@ -21835,7 +21835,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/South_Central_LA.jpg"
+    logo: "../assets/mygrow-search-images/South_Central_LA.jpg"
   },
   {
     index: "1680",
@@ -21848,7 +21848,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grilled_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Grilled_Cheese.jpg"
   },
   {
     index: "1681",
@@ -21861,7 +21861,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Purple_AK-47.jpg"
+    logo: "../assets/mygrow-search-images/Purple_AK-47.jpg"
   },
   {
     index: "1682",
@@ -21874,7 +21874,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Fat_Purple.jpg"
+    logo: "../assets/mygrow-search-images/Fat_Purple.jpg"
   },
   {
     index: "1683",
@@ -21887,7 +21887,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Jamba_Juice.jpg"
+    logo: "../assets/mygrow-search-images/Jamba_Juice.jpg"
   },
   {
     index: "1684",
@@ -21900,7 +21900,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/South_Asian_Sativa.jpg"
+    logo: "../assets/mygrow-search-images/South_Asian_Sativa.jpg"
   },
   {
     index: "1685",
@@ -21913,7 +21913,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tundra.jpg"
+    logo: "../assets/mygrow-search-images/Tundra.jpg"
   },
   {
     index: "1686",
@@ -21926,7 +21926,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Snow_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Snow_Diesel.jpg"
   },
   {
     index: "1687",
@@ -21939,7 +21939,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_LSD.jpg"
+    logo: "../assets/mygrow-search-images/Sour_LSD.jpg"
   },
   {
     index: "1688",
@@ -21952,7 +21952,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sour_Ape.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Ape.jpg"
   },
   {
     index: "1689",
@@ -21965,7 +21965,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/South_Asian.jpg"
+    logo: "../assets/mygrow-search-images/South_Asian.jpg"
   },
   {
     index: "1690",
@@ -21978,7 +21978,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Sunlight_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Sunlight_Skunk.jpg"
   },
   {
     index: "1691",
@@ -21991,7 +21991,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Chem_Valley_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Chem_Valley_Kush.jpg"
   },
   {
     index: "1692",
@@ -22004,7 +22004,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Special_Kush_1.jpg"
+    logo: "../assets/mygrow-search-images/Special_Kush_1.jpg"
   },
   {
     index: "1693",
@@ -22017,7 +22017,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sumo_Grande.jpg"
+    logo: "../assets/mygrow-search-images/Sumo_Grande.jpg"
   },
   {
     index: "1694",
@@ -22030,7 +22030,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Cotton_Candy.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Cotton_Candy.jpg"
   },
   {
     index: "1695",
@@ -22043,7 +22043,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Superstar.jpg"
+    logo: "../assets/mygrow-search-images/Superstar.jpg"
   },
   {
     index: "1696",
@@ -22056,7 +22056,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Buddha.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Buddha.jpg"
   },
   {
     index: "1697",
@@ -22069,7 +22069,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Turbo_Mind_Warp.jpg"
+    logo: "../assets/mygrow-search-images/Turbo_Mind_Warp.jpg"
   },
   {
     index: "1698",
@@ -22082,7 +22082,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Snow_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Snow_Bud.jpg"
   },
   {
     index: "1699",
@@ -22095,7 +22095,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Biddy_Early.jpg"
+    logo: "../assets/mygrow-search-images/Biddy_Early.jpg"
   },
   {
     index: "1700",
@@ -22108,7 +22108,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Secret_Garden_OG.jpg"
+    logo: "../assets/mygrow-search-images/Secret_Garden_OG.jpg"
   },
   {
     index: "1701",
@@ -22121,7 +22121,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Silver_Train.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Train.jpg"
   },
   {
     index: "1702",
@@ -22134,7 +22134,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/South_Indian.jpg"
+    logo: "../assets/mygrow-search-images/South_Indian.jpg"
   },
   {
     index: "1703",
@@ -22147,7 +22147,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Faded_Glory.jpg"
+    logo: "../assets/mygrow-search-images/Faded_Glory.jpg"
   },
   {
     index: "1704",
@@ -22160,7 +22160,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/King_Henry_VIII.jpg"
+    logo: "../assets/mygrow-search-images/King_Henry_VIII.jpg"
   },
   {
     index: "1705",
@@ -22173,7 +22173,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sierra_Mist.jpg"
+    logo: "../assets/mygrow-search-images/Sierra_Mist.jpg"
   },
   {
     index: "1706",
@@ -22186,7 +22186,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/South_American.jpg"
+    logo: "../assets/mygrow-search-images/South_American.jpg"
   },
   {
     index: "1707",
@@ -22199,7 +22199,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Shipwreck.jpg"
+    logo: "../assets/mygrow-search-images/Shipwreck.jpg"
   },
   {
     index: "1708",
@@ -22212,7 +22212,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Skins_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Skins_Skunk.jpg"
   },
   {
     index: "1709",
@@ -22225,7 +22225,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Purple_Cow.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Cow.jpg"
   },
   {
     index: "1710",
@@ -22238,7 +22238,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Snow_Monster.jpg"
+    logo: "../assets/mygrow-search-images/Snow_Monster.jpg"
   },
   {
     index: "1711",
@@ -22251,7 +22251,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Poison_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Poison_Haze.jpg"
   },
   {
     index: "1712",
@@ -22264,7 +22264,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Poison.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Poison.jpg"
   },
   {
     index: "1713",
@@ -22277,7 +22277,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alien_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Cookies.jpg"
   },
   {
     index: "1714",
@@ -22290,7 +22290,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Q3.jpg"
+    logo: "../assets/mygrow-search-images/Q3.jpg"
   },
   {
     index: "1715",
@@ -22303,7 +22303,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Terminator_OG.jpg"
+    logo: "../assets/mygrow-search-images/Terminator_OG.jpg"
   },
   {
     index: "1716",
@@ -22316,7 +22316,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/The_Sister.jpg"
+    logo: "../assets/mygrow-search-images/The_Sister.jpg"
   },
   {
     index: "1717",
@@ -22329,7 +22329,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Maui.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Maui.jpg"
   },
   {
     index: "1718",
@@ -22342,7 +22342,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Chem's_Sister.jpg"
+    logo: "../assets/mygrow-search-images/Chem's_Sister.jpg"
   },
   {
     index: "1719",
@@ -22355,7 +22355,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Russian_Rocket_Fuel.jpg"
+    logo: "../assets/mygrow-search-images/Russian_Rocket_Fuel.jpg"
   },
   {
     index: "1720",
@@ -22368,7 +22368,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Summertime_Squeeze.jpg"
+    logo: "../assets/mygrow-search-images/Summertime_Squeeze.jpg"
   },
   {
     index: "1721",
@@ -22381,7 +22381,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Dragon.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Dragon.jpg"
   },
   {
     index: "1722",
@@ -22394,7 +22394,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Connie_Chung.jpg"
+    logo: "../assets/mygrow-search-images/Connie_Chung.jpg"
   },
   {
     index: "1723",
@@ -22407,7 +22407,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Four_Cups.jpg"
+    logo: "../assets/mygrow-search-images/Four_Cups.jpg"
   },
   {
     index: "1724",
@@ -22420,7 +22420,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sunshine_4.jpg"
+    logo: "../assets/mygrow-search-images/Sunshine_4.jpg"
   },
   {
     index: "1725",
@@ -22433,7 +22433,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Four_Star_General.jpg"
+    logo: "../assets/mygrow-search-images/Four_Star_General.jpg"
   },
   {
     index: "1726",
@@ -22446,7 +22446,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Organic_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Organic_Diesel.jpg"
   },
   {
     index: "1727",
@@ -22459,7 +22459,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Neil_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Neil_Haze.jpg"
   },
   {
     index: "1728",
@@ -22472,7 +22472,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/3_Bears_OG.jpg"
+    logo: "../assets/mygrow-search-images/3_Bears_OG.jpg"
   },
   {
     index: "1729",
@@ -22485,7 +22485,7 @@ var data = [
     Hybrid:"",
     Sativa: "14% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/1024.jpg"
+    logo: "../assets/mygrow-search-images/1024.jpg"
   },
   {
     index: "1730",
@@ -22498,7 +22498,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Tina_Danza.jpg"
+    logo: "../assets/mygrow-search-images/Tina_Danza.jpg"
   },
   {
     index: "1731",
@@ -22511,7 +22511,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ultimate_Trainwreck.jpg"
+    logo: "../assets/mygrow-search-images/Ultimate_Trainwreck.jpg"
   },
   {
     index: "1732",
@@ -22524,7 +22524,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/X_Tra_Chz.jpg"
+    logo: "../assets/mygrow-search-images/X_Tra_Chz.jpg"
   },
   {
     index: "1733",
@@ -22537,7 +22537,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/California_Dream.jpg"
+    logo: "../assets/mygrow-search-images/California_Dream.jpg"
   },
   {
     index: "1734",
@@ -22550,7 +22550,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/X-Kush_1.jpg"
+    logo: "../assets/mygrow-search-images/X-Kush_1.jpg"
   },
   {
     index: "1735",
@@ -22563,7 +22563,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Fighting_Buddha.jpg"
+    logo: "../assets/mygrow-search-images/Fighting_Buddha.jpg"
   },
   {
     index: "1736",
@@ -22576,7 +22576,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Euphoria_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Euphoria_Cookies.jpg"
   },
   {
     index: "1737",
@@ -22589,7 +22589,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Silver_Nina.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Nina.jpg"
   },
   {
     index: "1738",
@@ -22602,7 +22602,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sin_City_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Sin_City_Kush.jpg"
   },
   {
     index: "1739",
@@ -22615,7 +22615,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sin_Valley_OG.jpg"
+    logo: "../assets/mygrow-search-images/Sin_Valley_OG.jpg"
   },
   {
     index: "1740",
@@ -22628,7 +22628,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Royal_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Royal_Haze.jpg"
   },
   {
     index: "1741",
@@ -22641,7 +22641,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Seattle_Cough.jpg"
+    logo: "../assets/mygrow-search-images/Seattle_Cough.jpg"
   },
   {
     index: "1742",
@@ -22654,7 +22654,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Romping_Goddess.jpg"
+    logo: "../assets/mygrow-search-images/Romping_Goddess.jpg"
   },
   {
     index: "1743",
@@ -22667,7 +22667,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Green_Python.jpg"
+    logo: "../assets/mygrow-search-images/Green_Python.jpg"
   },
   {
     index: "1744",
@@ -22680,7 +22680,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Frost.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Frost.jpg"
   },
   {
     index: "1745",
@@ -22693,7 +22693,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Top_44.jpg"
+    logo: "../assets/mygrow-search-images/Top_44.jpg"
   },
   {
     index: "1746",
@@ -22706,7 +22706,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lime_Purple_Mist.jpg"
+    logo: "../assets/mygrow-search-images/Lime_Purple_Mist.jpg"
   },
   {
     index: "1747",
@@ -22719,7 +22719,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Lady_Liberty.jpg"
+    logo: "../assets/mygrow-search-images/Lady_Liberty.jpg"
   },
   {
     index: "1748",
@@ -22732,7 +22732,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Root_Beer_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Root_Beer_Kush.jpg"
   },
   {
     index: "1749",
@@ -22745,7 +22745,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/MILF.jpg"
+    logo: "../assets/mygrow-search-images/MILF.jpg"
   },
   {
     index: "1750",
@@ -22758,7 +22758,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Road_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Road_Dawg.jpg"
   },
   {
     index: "1751",
@@ -22771,7 +22771,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/The_Void.jpg"
+    logo: "../assets/mygrow-search-images/The_Void.jpg"
   },
   {
     index: "1752",
@@ -22784,7 +22784,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/iPot.jpg"
+    logo: "../assets/mygrow-search-images/iPot.jpg"
   },
   {
     index: "1753",
@@ -22797,7 +22797,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Logic_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Logic_Diesel.jpg"
   },
   {
     index: "1754",
@@ -22810,7 +22810,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pagoda.jpg"
+    logo: "../assets/mygrow-search-images/Pagoda.jpg"
   },
   {
     index: "1755",
@@ -22823,7 +22823,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pure_Love.jpg"
+    logo: "../assets/mygrow-search-images/Pure_Love.jpg"
   },
   {
     index: "1756",
@@ -22836,7 +22836,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Jack_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Widow.jpg"
   },
   {
     index: "1757",
@@ -22849,7 +22849,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Industrial_Plant.jpg"
+    logo: "../assets/mygrow-search-images/Industrial_Plant.jpg"
   },
   {
     index: "1758",
@@ -22862,7 +22862,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Negra_44.jpg"
+    logo: "../assets/mygrow-search-images/Negra_44.jpg"
   },
   {
     index: "1759",
@@ -22875,7 +22875,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jack_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Kush.jpg"
   },
   {
     index: "1760",
@@ -22888,7 +22888,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Majestic_12.jpg"
+    logo: "../assets/mygrow-search-images/Majestic_12.jpg"
   },
   {
     index: "1761",
@@ -22901,7 +22901,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Manitoba_Poison.jpg"
+    logo: "../assets/mygrow-search-images/Manitoba_Poison.jpg"
   },
   {
     index: "1762",
@@ -22914,7 +22914,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Maui_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Maui_Berry.jpg"
   },
   {
     index: "1763",
@@ -22927,7 +22927,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pomelo_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Pomelo_Cookies.jpg"
   },
   {
     index: "1764",
@@ -22940,7 +22940,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Maui_Bubble_Gift.jpg"
+    logo: "../assets/mygrow-search-images/Maui_Bubble_Gift.jpg"
   },
   {
     index: "1765",
@@ -22953,7 +22953,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kelly_Hill_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Kelly_Hill_Gold.jpg"
   },
   {
     index: "1766",
@@ -22966,7 +22966,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mau-Mau.jpg"
+    logo: "../assets/mygrow-search-images/Mau-Mau.jpg"
   },
   {
     index: "1767",
@@ -22979,7 +22979,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/LA_Jack.jpg"
+    logo: "../assets/mygrow-search-images/LA_Jack.jpg"
   },
   {
     index: "1768",
@@ -22992,7 +22992,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/LA_Ultra.jpg"
+    logo: "../assets/mygrow-search-images/LA_Ultra.jpg"
   },
   {
     index: "1769",
@@ -23005,7 +23005,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lethal_Purple.jpg"
+    logo: "../assets/mygrow-search-images/Lethal_Purple.jpg"
   },
   {
     index: "1770",
@@ -23018,7 +23018,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Travel_Joint.jpg"
+    logo: "../assets/mygrow-search-images/Travel_Joint.jpg"
   },
   {
     index: "1771",
@@ -23031,7 +23031,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Loyalty.jpg"
+    logo: "../assets/mygrow-search-images/Loyalty.jpg"
   },
   {
     index: "1772",
@@ -23044,7 +23044,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Lemon_Daddy.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Daddy.jpg"
   },
   {
     index: "1773",
@@ -23057,7 +23057,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/KC_33.jpg"
+    logo: "../assets/mygrow-search-images/KC_33.jpg"
   },
   {
     index: "1774",
@@ -23070,7 +23070,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hobbit.jpg"
+    logo: "../assets/mygrow-search-images/Hobbit.jpg"
   },
   {
     index: "1775",
@@ -23083,7 +23083,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kali_47.jpg"
+    logo: "../assets/mygrow-search-images/Kali_47.jpg"
   },
   {
     index: "1776",
@@ -23096,7 +23096,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/J-27.jpg"
+    logo: "../assets/mygrow-search-images/J-27.jpg"
   },
   {
     index: "1777",
@@ -23109,7 +23109,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blue_Kiss.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Kiss.jpg"
   },
   {
     index: "1778",
@@ -23122,7 +23122,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/White_Moonshine.jpg"
+    logo: "../assets/mygrow-search-images/White_Moonshine.jpg"
   },
   {
     index: "1779",
@@ -23135,7 +23135,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Jazz.jpg"
+    logo: "../assets/mygrow-search-images/Jazz.jpg"
   },
   {
     index: "1780",
@@ -23148,7 +23148,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/North_American.jpg"
+    logo: "../assets/mygrow-search-images/North_American.jpg"
   },
   {
     index: "1781",
@@ -23161,7 +23161,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Limon.jpg"
+    logo: "../assets/mygrow-search-images/Limon.jpg"
   },
   {
     index: "1782",
@@ -23174,7 +23174,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/818_OG.jpg"
+    logo: "../assets/mygrow-search-images/818_OG.jpg"
   },
   {
     index: "1783",
@@ -23187,7 +23187,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Double_D.jpg"
+    logo: "../assets/mygrow-search-images/Double_D.jpg"
   },
   {
     index: "1784",
@@ -23200,7 +23200,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/LA_Sunshine.jpg"
+    logo: "../assets/mygrow-search-images/LA_Sunshine.jpg"
   },
   {
     index: "1785",
@@ -23213,7 +23213,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Jane_Doe.jpg"
+    logo: "../assets/mygrow-search-images/Jane_Doe.jpg"
   },
   {
     index: "1786",
@@ -23226,7 +23226,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Herringbone.jpg"
+    logo: "../assets/mygrow-search-images/Herringbone.jpg"
   },
   {
     index: "1787",
@@ -23239,7 +23239,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Boaty_McBoatface.jpg"
+    logo: "../assets/mygrow-search-images/Boaty_McBoatface.jpg"
   },
   {
     index: "1788",
@@ -23252,7 +23252,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Magic_Jordan.jpg"
+    logo: "../assets/mygrow-search-images/Magic_Jordan.jpg"
   },
   {
     index: "1789",
@@ -23265,7 +23265,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blue_Zombie.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Zombie.jpg"
   },
   {
     index: "1790",
@@ -23278,7 +23278,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/GI001.jpg"
+    logo: "../assets/mygrow-search-images/GI001.jpg"
   },
   {
     index: "1791",
@@ -23291,7 +23291,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Donna_OG.jpg"
+    logo: "../assets/mygrow-search-images/Donna_OG.jpg"
   },
   {
     index: "1792",
@@ -23304,7 +23304,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Eastern_European.jpg"
+    logo: "../assets/mygrow-search-images/Eastern_European.jpg"
   },
   {
     index: "1793",
@@ -23317,7 +23317,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Good_Medicine.jpg"
+    logo: "../assets/mygrow-search-images/Good_Medicine.jpg"
   },
   {
     index: "1794",
@@ -23330,7 +23330,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Georgia_Pine.jpg"
+    logo: "../assets/mygrow-search-images/Georgia_Pine.jpg"
   },
   {
     index: "1795",
@@ -23343,7 +23343,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kid_N_Kookies.jpg"
+    logo: "../assets/mygrow-search-images/Kid_N_Kookies.jpg"
   },
   {
     index: "1796",
@@ -23356,7 +23356,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Yogi_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Yogi_Diesel.jpg"
   },
   {
     index: "1797",
@@ -23369,7 +23369,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Donegal.jpg"
+    logo: "../assets/mygrow-search-images/Donegal.jpg"
   },
   {
     index: "1798",
@@ -23382,7 +23382,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Big_Holy_Nina.jpg"
+    logo: "../assets/mygrow-search-images/Big_Holy_Nina.jpg"
   },
   {
     index: "1799",
@@ -23395,7 +23395,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/StarRyder.jpg"
+    logo: "../assets/mygrow-search-images/StarRyder.jpg"
   },
   {
     index: "1800",
@@ -23408,7 +23408,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gravity.jpg"
+    logo: "../assets/mygrow-search-images/Gravity.jpg"
   },
   {
     index: "1801",
@@ -23421,7 +23421,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chocolope_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Chocolope_Kush.jpg"
   },
   {
     index: "1802",
@@ -23434,7 +23434,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "20",
-    logo: "assets/mygrow-search-images/Green_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Green_Haze.jpg"
   },
   {
     index: "1803",
@@ -23447,7 +23447,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Isla_OG.jpg"
+    logo: "../assets/mygrow-search-images/Isla_OG.jpg"
   },
   {
     index: "1804",
@@ -23460,7 +23460,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Ghost_Ship.jpg"
+    logo: "../assets/mygrow-search-images/Ghost_Ship.jpg"
   },
   {
     index: "1805",
@@ -23473,7 +23473,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Fire_Alien_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Fire_Alien_Kush.jpg"
   },
   {
     index: "1806",
@@ -23486,7 +23486,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dream_Beaver.jpg"
+    logo: "../assets/mygrow-search-images/Dream_Beaver.jpg"
   },
   {
     index: "1807",
@@ -23499,7 +23499,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Pineapple_Super_Silver_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Super_Silver_Haze.jpg"
   },
   {
     index: "1808",
@@ -23512,7 +23512,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ancient_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Ancient_Kush.jpg"
   },
   {
     index: "1809",
@@ -23525,7 +23525,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Xanadu.jpg"
+    logo: "../assets/mygrow-search-images/Xanadu.jpg"
   },
   {
     index: "1810",
@@ -23538,7 +23538,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Buckeye_Purple.jpg"
+    logo: "../assets/mygrow-search-images/Buckeye_Purple.jpg"
   },
   {
     index: "1811",
@@ -23551,7 +23551,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Bubba_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Bubba_Berry.jpg"
   },
   {
     index: "1812",
@@ -23564,7 +23564,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pacific_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Pacific_Blue.jpg"
   },
   {
     index: "1813",
@@ -23577,7 +23577,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Frida.jpg"
+    logo: "../assets/mygrow-search-images/Frida.jpg"
   },
   {
     index: "1814",
@@ -23590,7 +23590,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Bastard.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Bastard.jpg"
   },
   {
     index: "1815",
@@ -23603,7 +23603,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Titanium.jpg"
+    logo: "../assets/mygrow-search-images/Titanium.jpg"
   },
   {
     index: "1816",
@@ -23616,7 +23616,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dreadlock.jpg"
+    logo: "../assets/mygrow-search-images/Dreadlock.jpg"
   },
   {
     index: "1817",
@@ -23629,7 +23629,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Fat_Nelson.jpg"
+    logo: "../assets/mygrow-search-images/Fat_Nelson.jpg"
   },
   {
     index: "1818",
@@ -23642,7 +23642,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/God's_Treat.jpg"
+    logo: "../assets/mygrow-search-images/God's_Treat.jpg"
   },
   {
     index: "1819",
@@ -23655,7 +23655,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grand_Hustle.jpg"
+    logo: "../assets/mygrow-search-images/Grand_Hustle.jpg"
   },
   {
     index: "1820",
@@ -23668,7 +23668,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Galaxy.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Galaxy.jpg"
   },
   {
     index: "1821",
@@ -23681,7 +23681,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Glad_Max.jpg"
+    logo: "../assets/mygrow-search-images/Glad_Max.jpg"
   },
   {
     index: "1822",
@@ -23694,7 +23694,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cotton_Purple_Chem.jpg"
+    logo: "../assets/mygrow-search-images/Cotton_Purple_Chem.jpg"
   },
   {
     index: "1823",
@@ -23707,7 +23707,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Mountain_Fire.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Mountain_Fire.jpg"
   },
   {
     index: "1824",
@@ -23720,7 +23720,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Disney_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Disney_Blue.jpg"
   },
   {
     index: "1825",
@@ -23733,7 +23733,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/California_Sour.jpg"
+    logo: "../assets/mygrow-search-images/California_Sour.jpg"
   },
   {
     index: "1826",
@@ -23746,7 +23746,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Critical_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Skunk.jpg"
   },
   {
     index: "1827",
@@ -23759,7 +23759,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Grapefruit.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Grapefruit.jpg"
   },
   {
     index: "1828",
@@ -23772,7 +23772,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/DJ_Smoke.jpg"
+    logo: "../assets/mygrow-search-images/DJ_Smoke.jpg"
   },
   {
     index: "1829",
@@ -23785,7 +23785,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Eugene_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Eugene_Cream.jpg"
   },
   {
     index: "1830",
@@ -23798,7 +23798,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Brainwreck.jpg"
+    logo: "../assets/mygrow-search-images/Brainwreck.jpg"
   },
   {
     index: "1831",
@@ -23811,7 +23811,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Sherbet.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Sherbet.jpg"
   },
   {
     index: "1832",
@@ -23824,7 +23824,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/BOG_Bubble.jpg"
+    logo: "../assets/mygrow-search-images/BOG_Bubble.jpg"
   },
   {
     index: "1833",
@@ -23837,7 +23837,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mazar_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Mazar_Kush.jpg"
   },
   {
     index: "1834",
@@ -23850,7 +23850,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kahuna.jpg"
+    logo: "../assets/mygrow-search-images/Kahuna.jpg"
   },
   {
     index: "1835",
@@ -23863,7 +23863,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Denver_Maple.jpg"
+    logo: "../assets/mygrow-search-images/Denver_Maple.jpg"
   },
   {
     index: "1836",
@@ -23876,7 +23876,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Copper_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Copper_Kush.jpg"
   },
   {
     index: "1837",
@@ -23889,7 +23889,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Durban_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Durban_Cheese.jpg"
   },
   {
     index: "1838",
@@ -23902,7 +23902,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Chem_Crush.jpg"
+    logo: "../assets/mygrow-search-images/Chem_Crush.jpg"
   },
   {
     index: "1839",
@@ -23915,7 +23915,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chong_Star.jpg"
+    logo: "../assets/mygrow-search-images/Chong_Star.jpg"
   },
   {
     index: "1840",
@@ -23928,7 +23928,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Sweet_Jane.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Jane.jpg"
   },
   {
     index: "1841",
@@ -23941,7 +23941,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sweet_Lafayette.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Lafayette.jpg"
   },
   {
     index: "1842",
@@ -23954,7 +23954,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ape_Shit.jpg"
+    logo: "../assets/mygrow-search-images/Ape_Shit.jpg"
   },
   {
     index: "1843",
@@ -23967,7 +23967,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Biker_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Biker_Kush.jpg"
   },
   {
     index: "1844",
@@ -23980,7 +23980,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Critical_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Widow.jpg"
   },
   {
     index: "1845",
@@ -23993,7 +23993,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ebola_7.jpg"
+    logo: "../assets/mygrow-search-images/Ebola_7.jpg"
   },
   {
     index: "1846",
@@ -24006,7 +24006,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sweet_Nina.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Nina.jpg"
   },
   {
     index: "1847",
@@ -24019,7 +24019,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blood_Orange_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Blood_Orange_Kush.jpg"
   },
   {
     index: "1848",
@@ -24032,7 +24032,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Rafael.jpg"
+    logo: "../assets/mygrow-search-images/Rafael.jpg"
   },
   {
     index: "1849",
@@ -24045,7 +24045,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Bogart.jpg"
+    logo: "../assets/mygrow-search-images/Bogart.jpg"
   },
   {
     index: "1850",
@@ -24058,7 +24058,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Buffalo_Bill.jpg"
+    logo: "../assets/mygrow-search-images/Buffalo_Bill.jpg"
   },
   {
     index: "1851",
@@ -24071,7 +24071,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Avi.jpg"
+    logo: "../assets/mygrow-search-images/Avi.jpg"
   },
   {
     index: "1852",
@@ -24084,7 +24084,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Fat_Albert.jpg"
+    logo: "../assets/mygrow-search-images/Fat_Albert.jpg"
   },
   {
     index: "1853",
@@ -24097,7 +24097,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Star_Tonic.jpg"
+    logo: "../assets/mygrow-search-images/Star_Tonic.jpg"
   },
   {
     index: "1854",
@@ -24110,7 +24110,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Black_Dahlia.jpg"
+    logo: "../assets/mygrow-search-images/Black_Dahlia.jpg"
   },
   {
     index: "1855",
@@ -24123,7 +24123,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/BSC.jpg"
+    logo: "../assets/mygrow-search-images/BSC.jpg"
   },
   {
     index: "1856",
@@ -24136,7 +24136,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/El-Na.jpg"
+    logo: "../assets/mygrow-search-images/El-Na.jpg"
   },
   {
     index: "1857",
@@ -24149,7 +24149,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blue_Treat.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Treat.jpg"
   },
   {
     index: "1858",
@@ -24162,7 +24162,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Diesel_Duff.jpg"
+    logo: "../assets/mygrow-search-images/Diesel_Duff.jpg"
   },
   {
     index: "1859",
@@ -24175,7 +24175,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Wally_OG.jpg"
+    logo: "../assets/mygrow-search-images/Wally_OG.jpg"
   },
   {
     index: "1860",
@@ -24188,7 +24188,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Domino.jpg"
+    logo: "../assets/mygrow-search-images/Domino.jpg"
   },
   {
     index: "1861",
@@ -24201,7 +24201,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/BIgfoot_Glue.jpg"
+    logo: "../assets/mygrow-search-images/BIgfoot_Glue.jpg"
   },
   {
     index: "1862",
@@ -24214,7 +24214,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dr._Funk.jpg"
+    logo: "../assets/mygrow-search-images/Dr._Funk.jpg"
   },
   {
     index: "1863",
@@ -24227,7 +24227,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dream_Police.jpg"
+    logo: "../assets/mygrow-search-images/Dream_Police.jpg"
   },
   {
     index: "1864",
@@ -24240,7 +24240,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/303_OG.jpg"
+    logo: "../assets/mygrow-search-images/303_OG.jpg"
   },
   {
     index: "1865",
@@ -24253,7 +24253,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Bloodhound.jpg"
+    logo: "../assets/mygrow-search-images/Bloodhound.jpg"
   },
   {
     index: "1866",
@@ -24266,7 +24266,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Space_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Space_Dawg.jpg"
   },
   {
     index: "1867",
@@ -24279,7 +24279,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Maqui.jpg"
+    logo: "../assets/mygrow-search-images/Maqui.jpg"
   },
   {
     index: "1868",
@@ -24292,7 +24292,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/13_Dawgs.jpg"
+    logo: "../assets/mygrow-search-images/13_Dawgs.jpg"
   },
   {
     index: "1869",
@@ -24305,7 +24305,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Allkush.jpg"
+    logo: "../assets/mygrow-search-images/Allkush.jpg"
   },
   {
     index: "1870",
@@ -24318,7 +24318,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Venice_OG.jpg"
+    logo: "../assets/mygrow-search-images/Venice_OG.jpg"
   },
   {
     index: "1871",
@@ -24331,7 +24331,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Persuasion.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Persuasion.jpg"
   },
   {
     index: "1872",
@@ -24344,7 +24344,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/LAPD.jpg"
+    logo: "../assets/mygrow-search-images/LAPD.jpg"
   },
   {
     index: "1873",
@@ -24357,7 +24357,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Whiteout.jpg"
+    logo: "../assets/mygrow-search-images/Whiteout.jpg"
   },
   {
     index: "1874",
@@ -24370,7 +24370,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Twista.jpg"
+    logo: "../assets/mygrow-search-images/Twista.jpg"
   },
   {
     index: "1875",
@@ -24383,7 +24383,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Arctic_Sun.jpg"
+    logo: "../assets/mygrow-search-images/Arctic_Sun.jpg"
   },
   {
     index: "1876",
@@ -24396,7 +24396,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Keester_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Keester_Kush.jpg"
   },
   {
     index: "1877",
@@ -24409,7 +24409,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Legalized_OG.jpg"
+    logo: "../assets/mygrow-search-images/Legalized_OG.jpg"
   },
   {
     index: "1878",
@@ -24422,7 +24422,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Deadwood.jpg"
+    logo: "../assets/mygrow-search-images/Deadwood.jpg"
   },
   {
     index: "1879",
@@ -24435,7 +24435,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Guice.jpg"
+    logo: "../assets/mygrow-search-images/Guice.jpg"
   },
   {
     index: "1880",
@@ -24448,7 +24448,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Super_Sweet.jpg"
+    logo: "../assets/mygrow-search-images/Super_Sweet.jpg"
   },
   {
     index: "1881",
@@ -24461,7 +24461,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Walrus.jpg"
+    logo: "../assets/mygrow-search-images/White_Walrus.jpg"
   },
   {
     index: "1882",
@@ -24474,7 +24474,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sleestack.jpg"
+    logo: "../assets/mygrow-search-images/Sleestack.jpg"
   },
   {
     index: "1883",
@@ -24487,7 +24487,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blucifer.jpg"
+    logo: "../assets/mygrow-search-images/Blucifer.jpg"
   },
   {
     index: "1884",
@@ -24500,7 +24500,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/White_Smurf.jpg"
+    logo: "../assets/mygrow-search-images/White_Smurf.jpg"
   },
   {
     index: "1885",
@@ -24513,7 +24513,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Avalon.jpg"
+    logo: "../assets/mygrow-search-images/Avalon.jpg"
   },
   {
     index: "1886",
@@ -24526,7 +24526,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Star_47.jpg"
+    logo: "../assets/mygrow-search-images/Star_47.jpg"
   },
   {
     index: "1887",
@@ -24539,7 +24539,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Poochie_Love.jpg"
+    logo: "../assets/mygrow-search-images/Poochie_Love.jpg"
   },
   {
     index: "1888",
@@ -24552,7 +24552,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sputnik.jpg"
+    logo: "../assets/mygrow-search-images/Sputnik.jpg"
   },
   {
     index: "1889",
@@ -24565,7 +24565,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Thor's_Hammer.jpg"
+    logo: "../assets/mygrow-search-images/Thor's_Hammer.jpg"
   },
   {
     index: "1890",
@@ -24578,7 +24578,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Verde_Electric.jpg"
+    logo: "../assets/mygrow-search-images/Verde_Electric.jpg"
   },
   {
     index: "1891",
@@ -24591,7 +24591,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Platinum_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Platinum_Wreck.jpg"
   },
   {
     index: "1892",
@@ -24604,7 +24604,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cyclops.jpg"
+    logo: "../assets/mygrow-search-images/Cyclops.jpg"
   },
   {
     index: "1893",
@@ -24617,7 +24617,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Space_Monster.jpg"
+    logo: "../assets/mygrow-search-images/Space_Monster.jpg"
   },
   {
     index: "1894",
@@ -24630,7 +24630,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Afghani.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Afghani.jpg"
   },
   {
     index: "1895",
@@ -24643,7 +24643,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/B4.jpg"
+    logo: "../assets/mygrow-search-images/B4.jpg"
   },
   {
     index: "1896",
@@ -24656,7 +24656,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Afghan_Cow.jpg"
+    logo: "../assets/mygrow-search-images/Afghan_Cow.jpg"
   },
   {
     index: "1897",
@@ -24669,7 +24669,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Jack_Skellington.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Skellington.jpg"
   },
   {
     index: "1898",
@@ -24682,7 +24682,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Super_Sour_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Super_Sour_Widow.jpg"
   },
   {
     index: "1899",
@@ -24695,7 +24695,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Thai_Girl.jpg"
+    logo: "../assets/mygrow-search-images/Thai_Girl.jpg"
   },
   {
     index: "1900",
@@ -24708,7 +24708,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Strawberry_Mango_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Mango_Haze.jpg"
   },
   {
     index: "1901",
@@ -24721,7 +24721,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Khufu.jpg"
+    logo: "../assets/mygrow-search-images/Khufu.jpg"
   },
   {
     index: "1902",
@@ -24734,7 +24734,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Elderberry.jpg"
+    logo: "../assets/mygrow-search-images/Elderberry.jpg"
   },
   {
     index: "1903",
@@ -24747,7 +24747,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tree_of_Life.jpg"
+    logo: "../assets/mygrow-search-images/Tree_of_Life.jpg"
   },
   {
     index: "1904",
@@ -24760,7 +24760,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Valentine_X.jpg"
+    logo: "../assets/mygrow-search-images/Valentine_X.jpg"
   },
   {
     index: "1905",
@@ -24773,7 +24773,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Stella_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Stella_Blue.jpg"
   },
   {
     index: "1906",
@@ -24786,7 +24786,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/The_Ox.jpg"
+    logo: "../assets/mygrow-search-images/The_Ox.jpg"
   },
   {
     index: "1907",
@@ -24799,7 +24799,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Aloha_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Aloha_Berry.jpg"
   },
   {
     index: "1908",
@@ -24812,7 +24812,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sweet_Deep_Grapefruit.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Deep_Grapefruit.jpg"
   },
   {
     index: "1909",
@@ -24825,7 +24825,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Empress.jpg"
+    logo: "../assets/mygrow-search-images/White_Empress.jpg"
   },
   {
     index: "1910",
@@ -24838,7 +24838,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Fire_Alien_OG.jpg"
+    logo: "../assets/mygrow-search-images/White_Fire_Alien_OG.jpg"
   },
   {
     index: "1911",
@@ -24851,7 +24851,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Irish_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Irish_Kush.jpg"
   },
   {
     index: "1912",
@@ -24864,7 +24864,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/California_Grapefruit.jpg"
+    logo: "../assets/mygrow-search-images/California_Grapefruit.jpg"
   },
   {
     index: "1913",
@@ -24877,7 +24877,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Omega_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Omega_Dawg.jpg"
   },
   {
     index: "1914",
@@ -24890,7 +24890,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Capers.jpg"
+    logo: "../assets/mygrow-search-images/Capers.jpg"
   },
   {
     index: "1915",
@@ -24903,7 +24903,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Raspberry_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Raspberry_Cookies.jpg"
   },
   {
     index: "1916",
@@ -24916,7 +24916,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Stevie_Wonder.jpg"
+    logo: "../assets/mygrow-search-images/Stevie_Wonder.jpg"
   },
   {
     index: "1917",
@@ -24929,7 +24929,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/C3.jpg"
+    logo: "../assets/mygrow-search-images/C3.jpg"
   },
   {
     index: "1918",
@@ -24942,7 +24942,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Frank's_Gift.jpg"
+    logo: "../assets/mygrow-search-images/Frank's_Gift.jpg"
   },
   {
     index: "1919",
@@ -24955,7 +24955,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Secret_Recipe.jpg"
+    logo: "../assets/mygrow-search-images/Secret_Recipe.jpg"
   },
   {
     index: "1920",
@@ -24968,7 +24968,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Thai_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Thai_Haze.jpg"
   },
   {
     index: "1921",
@@ -24981,7 +24981,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/The_Ooze.jpg"
+    logo: "../assets/mygrow-search-images/The_Ooze.jpg"
   },
   {
     index: "1922",
@@ -24994,7 +24994,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sweet_Pebbles.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Pebbles.jpg"
   },
   {
     index: "1923",
@@ -25007,7 +25007,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ice_Princess.jpg"
+    logo: "../assets/mygrow-search-images/Ice_Princess.jpg"
   },
   {
     index: "1924",
@@ -25020,7 +25020,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cocoa_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Cocoa_Kush.jpg"
   },
   {
     index: "1925",
@@ -25033,7 +25033,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/C13_Haze.jpg"
+    logo: "../assets/mygrow-search-images/C13_Haze.jpg"
   },
   {
     index: "1926",
@@ -25046,7 +25046,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Bayou.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Bayou.jpg"
   },
   {
     index: "1927",
@@ -25059,7 +25059,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blackberry_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Diesel.jpg"
   },
   {
     index: "1928",
@@ -25072,7 +25072,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Brand_X.jpg"
+    logo: "../assets/mygrow-search-images/Brand_X.jpg"
   },
   {
     index: "1929",
@@ -25085,7 +25085,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cobra_Lips.jpg"
+    logo: "../assets/mygrow-search-images/Cobra_Lips.jpg"
   },
   {
     index: "1930",
@@ -25098,7 +25098,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Citral_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Citral_Skunk.jpg"
   },
   {
     index: "1931",
@@ -25111,7 +25111,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Banana_Peel.jpg"
+    logo: "../assets/mygrow-search-images/Banana_Peel.jpg"
   },
   {
     index: "1932",
@@ -25124,7 +25124,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Atmosphere.jpg"
+    logo: "../assets/mygrow-search-images/Atmosphere.jpg"
   },
   {
     index: "1933",
@@ -25137,7 +25137,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Beast_Mode_OG.jpg"
+    logo: "../assets/mygrow-search-images/Beast_Mode_OG.jpg"
   },
   {
     index: "1934",
@@ -25150,7 +25150,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Brains_Damage.jpg"
+    logo: "../assets/mygrow-search-images/Brains_Damage.jpg"
   },
   {
     index: "1935",
@@ -25163,7 +25163,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Anesthesia.jpg"
+    logo: "../assets/mygrow-search-images/Anesthesia.jpg"
   },
   {
     index: "1936",
@@ -25176,7 +25176,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Fraggle_Rock.jpg"
+    logo: "../assets/mygrow-search-images/Fraggle_Rock.jpg"
   },
   {
     index: "1937",
@@ -25189,7 +25189,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Wonder.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Wonder.jpg"
   },
   {
     index: "1938",
@@ -25202,7 +25202,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Lions_Gate.jpg"
+    logo: "../assets/mygrow-search-images/Lions_Gate.jpg"
   },
   {
     index: "1939",
@@ -25215,7 +25215,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bettie_Page.jpg"
+    logo: "../assets/mygrow-search-images/Bettie_Page.jpg"
   },
   {
     index: "1940",
@@ -25228,7 +25228,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tiger_Woods.jpg"
+    logo: "../assets/mygrow-search-images/Tiger_Woods.jpg"
   },
   {
     index: "1941",
@@ -25241,7 +25241,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blue_Velvet.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Velvet.jpg"
   },
   {
     index: "1942",
@@ -25254,7 +25254,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bob_Barker.jpg"
+    logo: "../assets/mygrow-search-images/Bob_Barker.jpg"
   },
   {
     index: "1943",
@@ -25267,7 +25267,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Randy_Savage.jpg"
+    logo: "../assets/mygrow-search-images/Randy_Savage.jpg"
   },
   {
     index: "1944",
@@ -25280,7 +25280,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/BC_Sweet_Tooth.jpg"
+    logo: "../assets/mygrow-search-images/BC_Sweet_Tooth.jpg"
   },
   {
     index: "1945",
@@ -25293,7 +25293,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Happy_Nightmare.jpg"
+    logo: "../assets/mygrow-search-images/Happy_Nightmare.jpg"
   },
   {
     index: "1946",
@@ -25306,7 +25306,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Americano.jpg"
+    logo: "../assets/mygrow-search-images/Americano.jpg"
   },
   {
     index: "1947",
@@ -25319,7 +25319,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Big_White.jpg"
+    logo: "../assets/mygrow-search-images/Big_White.jpg"
   },
   {
     index: "1948",
@@ -25332,7 +25332,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Swiss_Bliss.jpg"
+    logo: "../assets/mygrow-search-images/Swiss_Bliss.jpg"
   },
   {
     index: "1949",
@@ -25345,7 +25345,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Acid.jpg"
+    logo: "../assets/mygrow-search-images/Acid.jpg"
   },
   {
     index: "1950",
@@ -25358,7 +25358,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Kriss_Kross.jpg"
+    logo: "../assets/mygrow-search-images/Kriss_Kross.jpg"
   },
   {
     index: "1951",
@@ -25371,7 +25371,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Blood.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Blood.jpg"
   },
   {
     index: "1952",
@@ -25384,7 +25384,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Crypt.jpg"
+    logo: "../assets/mygrow-search-images/Crypt.jpg"
   },
   {
     index: "1953",
@@ -25397,7 +25397,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Venus_OG.jpg"
+    logo: "../assets/mygrow-search-images/Venus_OG.jpg"
   },
   {
     index: "1954",
@@ -25410,7 +25410,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tommy’s_Home_Grown.jpg"
+    logo: "../assets/mygrow-search-images/Tommy’s_Home_Grown.jpg"
   },
   {
     index: "1955",
@@ -25423,7 +25423,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Odyssey.jpg"
+    logo: "../assets/mygrow-search-images/Odyssey.jpg"
   },
   {
     index: "1956",
@@ -25436,7 +25436,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alpha_Express.jpg"
+    logo: "../assets/mygrow-search-images/Alpha_Express.jpg"
   },
   {
     index: "1957",
@@ -25449,7 +25449,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alpine_Star.jpg"
+    logo: "../assets/mygrow-search-images/Alpine_Star.jpg"
   },
   {
     index: "1958",
@@ -25462,7 +25462,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Spirit_of_76.jpg"
+    logo: "../assets/mygrow-search-images/Spirit_of_76.jpg"
   },
   {
     index: "1959",
@@ -25475,7 +25475,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/American_Kush.jpg"
+    logo: "../assets/mygrow-search-images/American_Kush.jpg"
   },
   {
     index: "1960",
@@ -25488,7 +25488,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ash.jpg"
+    logo: "../assets/mygrow-search-images/Ash.jpg"
   },
   {
     index: "1961",
@@ -25501,7 +25501,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Zen.jpg"
+    logo: "../assets/mygrow-search-images/Zen.jpg"
   },
   {
     index: "1962",
@@ -25514,7 +25514,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Bandana.jpg"
+    logo: "../assets/mygrow-search-images/Bandana.jpg"
   },
   {
     index: "1963",
@@ -25527,7 +25527,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Astroboy.jpg"
+    logo: "../assets/mygrow-search-images/Astroboy.jpg"
   },
   {
     index: "1964",
@@ -25540,7 +25540,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Ortega.jpg"
+    logo: "../assets/mygrow-search-images/Ortega.jpg"
   },
   {
     index: "1965",
@@ -25553,7 +25553,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Trash.jpg"
+    logo: "../assets/mygrow-search-images/Trash.jpg"
   },
   {
     index: "1966",
@@ -25566,7 +25566,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/The_One.jpg"
+    logo: "../assets/mygrow-search-images/The_One.jpg"
   },
   {
     index: "1967",
@@ -25579,7 +25579,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tesla.jpg"
+    logo: "../assets/mygrow-search-images/Tesla.jpg"
   },
   {
     index: "1968",
@@ -25592,7 +25592,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alien_Inferno.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Inferno.jpg"
   },
   {
     index: "1969",
@@ -25605,7 +25605,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Berry_Noir.jpg"
+    logo: "../assets/mygrow-search-images/Berry_Noir.jpg"
   },
   {
     index: "1970",
@@ -25618,7 +25618,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Batgirl.jpg"
+    logo: "../assets/mygrow-search-images/Batgirl.jpg"
   },
   {
     index: "1971",
@@ -25631,7 +25631,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Zoom_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Zoom_Pie.jpg"
   },
   {
     index: "1972",
@@ -25644,7 +25644,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nova.jpg"
+    logo: "../assets/mygrow-search-images/Nova.jpg"
   },
   {
     index: "1973",
@@ -25657,7 +25657,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Amethyst.jpg"
+    logo: "../assets/mygrow-search-images/Amethyst.jpg"
   },
   {
     index: "1974",
@@ -25670,7 +25670,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Maui.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Maui.jpg"
   },
   {
     index: "1975",
@@ -25683,7 +25683,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "4",
-    logo: "assets/mygrow-search-images/Berkley.jpg"
+    logo: "../assets/mygrow-search-images/Berkley.jpg"
   },
   {
     index: "1976",
@@ -25696,7 +25696,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Skunk_47.jpg"
+    logo: "../assets/mygrow-search-images/Skunk_47.jpg"
   },
   {
     index: "1977",
@@ -25709,7 +25709,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Haze.jpg"
+    logo: "../assets/mygrow-search-images/White_Haze.jpg"
   },
   {
     index: "1978",
@@ -25722,7 +25722,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Early_Girl.jpg"
+    logo: "../assets/mygrow-search-images/Early_Girl.jpg"
   },
   {
     index: "1979",
@@ -25735,7 +25735,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Haole.jpg"
+    logo: "../assets/mygrow-search-images/Haole.jpg"
   },
   {
     index: "1980",
@@ -25748,7 +25748,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Lifesaver.jpg"
+    logo: "../assets/mygrow-search-images/Lifesaver.jpg"
   },
   {
     index: "1981",
@@ -25761,7 +25761,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blueberry_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Haze.jpg"
   },
   {
     index: "1982",
@@ -25774,7 +25774,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/West_OG.jpg"
+    logo: "../assets/mygrow-search-images/West_OG.jpg"
   },
   {
     index: "1983",
@@ -25787,7 +25787,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Zombie.jpg"
+    logo: "../assets/mygrow-search-images/White_Zombie.jpg"
   },
   {
     index: "1984",
@@ -25800,7 +25800,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/The_Blood.jpg"
+    logo: "../assets/mygrow-search-images/The_Blood.jpg"
   },
   {
     index: "1985",
@@ -25813,7 +25813,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Trident.jpg"
+    logo: "../assets/mygrow-search-images/Trident.jpg"
   },
   {
     index: "1986",
@@ -25826,7 +25826,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Atomic_Goat.jpg"
+    logo: "../assets/mygrow-search-images/Atomic_Goat.jpg"
   },
   {
     index: "1987",
@@ -25839,7 +25839,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sweet_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Diesel.jpg"
   },
   {
     index: "1988",
@@ -25852,7 +25852,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Truth_Serum.jpg"
+    logo: "../assets/mygrow-search-images/Truth_Serum.jpg"
   },
   {
     index: "1989",
@@ -25865,7 +25865,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Big_Sky_OG.jpg"
+    logo: "../assets/mygrow-search-images/Big_Sky_OG.jpg"
   },
   {
     index: "1990",
@@ -25878,7 +25878,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/The_Sheriff.jpg"
+    logo: "../assets/mygrow-search-images/The_Sheriff.jpg"
   },
   {
     index: "1991",
@@ -25891,7 +25891,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Blaze.jpg"
+    logo: "../assets/mygrow-search-images/Blaze.jpg"
   },
   {
     index: "1992",
@@ -25904,7 +25904,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alien_Reunion.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Reunion.jpg"
   },
   {
     index: "1993",
@@ -25917,7 +25917,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Afghan_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Afghan_Skunk.jpg"
   },
   {
     index: "1994",
@@ -25930,7 +25930,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blockhead.jpg"
+    logo: "../assets/mygrow-search-images/Blockhead.jpg"
   },
   {
     index: "1995",
@@ -25943,7 +25943,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/White_Fire_43.jpg"
+    logo: "../assets/mygrow-search-images/White_Fire_43.jpg"
   },
   {
     index: "1996",
@@ -25956,7 +25956,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Aberdeen.jpg"
+    logo: "../assets/mygrow-search-images/Aberdeen.jpg"
   },
   {
     index: "1997",
@@ -25969,7 +25969,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Supernatural.jpg"
+    logo: "../assets/mygrow-search-images/Supernatural.jpg"
   },
   {
     index: "1998",
@@ -25982,7 +25982,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Alpha_Cow.jpg"
+    logo: "../assets/mygrow-search-images/Alpha_Cow.jpg"
   },
   {
     index: "1999",
@@ -25995,7 +25995,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Big_Sur_Holy_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Big_Sur_Holy_Bud.jpg"
   },
   {
     index: "2000",
@@ -26008,7 +26008,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_Cherry_Cheesecake.jpg"
+    logo: "../assets/mygrow-search-images/Black_Cherry_Cheesecake.jpg"
   },
   {
     index: "2001",
@@ -26021,7 +26021,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hong_Kong.jpg"
+    logo: "../assets/mygrow-search-images/Hong_Kong.jpg"
   },
   {
     index: "2002",
@@ -26034,7 +26034,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Royal_Dutch.jpg"
+    logo: "../assets/mygrow-search-images/Royal_Dutch.jpg"
   },
   {
     index: "2003",
@@ -26047,7 +26047,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Mega_Jackpot.jpg"
+    logo: "../assets/mygrow-search-images/Mega_Jackpot.jpg"
   },
   {
     index: "2004",
@@ -26060,7 +26060,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Triple_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Triple_Diesel.jpg"
   },
   {
     index: "2005",
@@ -26073,7 +26073,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Wonder_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Wonder_Haze.jpg"
   },
   {
     index: "2006",
@@ -26086,7 +26086,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sublime.jpg"
+    logo: "../assets/mygrow-search-images/Sublime.jpg"
   },
   {
     index: "2007",
@@ -26099,7 +26099,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Swiss_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Swiss_Gold.jpg"
   },
   {
     index: "2008",
@@ -26112,7 +26112,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Crown_OG.jpg"
+    logo: "../assets/mygrow-search-images/Crown_OG.jpg"
   },
   {
     index: "2009",
@@ -26125,7 +26125,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Green_Goddess.jpg"
+    logo: "../assets/mygrow-search-images/Green_Goddess.jpg"
   },
   {
     index: "2010",
@@ -26138,7 +26138,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/The_Doctor.jpg"
+    logo: "../assets/mygrow-search-images/The_Doctor.jpg"
   },
   {
     index: "2011",
@@ -26151,7 +26151,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sour_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Haze.jpg"
   },
   {
     index: "2012",
@@ -26164,7 +26164,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Whitaker_Blues.jpg"
+    logo: "../assets/mygrow-search-images/Whitaker_Blues.jpg"
   },
   {
     index: "2013",
@@ -26177,7 +26177,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Power.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Power.jpg"
   },
   {
     index: "2014",
@@ -26190,7 +26190,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cannasutra.jpg"
+    logo: "../assets/mygrow-search-images/Cannasutra.jpg"
   },
   {
     index: "2015",
@@ -26203,7 +26203,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Jay_Way.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Jay_Way.jpg"
   },
   {
     index: "2016",
@@ -26216,7 +26216,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Twilight.jpg"
+    logo: "../assets/mygrow-search-images/Twilight.jpg"
   },
   {
     index: "2017",
@@ -26229,7 +26229,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mad_Scientist.jpg"
+    logo: "../assets/mygrow-search-images/Mad_Scientist.jpg"
   },
   {
     index: "2018",
@@ -26242,7 +26242,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Kona_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Kona_Gold.jpg"
   },
   {
     index: "2019",
@@ -26255,7 +26255,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Space_Needle.jpg"
+    logo: "../assets/mygrow-search-images/Space_Needle.jpg"
   },
   {
     index: "2020",
@@ -26268,7 +26268,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Bay_11.jpg"
+    logo: "../assets/mygrow-search-images/Bay_11.jpg"
   },
   {
     index: "2021",
@@ -26281,7 +26281,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Atomic_Northern_Lights.jpg"
+    logo: "../assets/mygrow-search-images/Atomic_Northern_Lights.jpg"
   },
   {
     index: "2022",
@@ -26294,7 +26294,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Narnia.jpg"
+    logo: "../assets/mygrow-search-images/Narnia.jpg"
   },
   {
     index: "2023",
@@ -26307,7 +26307,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/3x_Crazy.jpg"
+    logo: "../assets/mygrow-search-images/3x_Crazy.jpg"
   },
   {
     index: "2024",
@@ -26320,7 +26320,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Lemon_Drop.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Drop.jpg"
   },
   {
     index: "2025",
@@ -26333,7 +26333,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Snow_Lotus.jpg"
+    logo: "../assets/mygrow-search-images/Snow_Lotus.jpg"
   },
   {
     index: "2026",
@@ -26346,7 +26346,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Candy_Cane.jpg"
+    logo: "../assets/mygrow-search-images/Candy_Cane.jpg"
   },
   {
     index: "2027",
@@ -26359,7 +26359,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Locomotion.jpg"
+    logo: "../assets/mygrow-search-images/Locomotion.jpg"
   },
   {
     index: "2028",
@@ -26372,7 +26372,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blue_Thai.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Thai.jpg"
   },
   {
     index: "2029",
@@ -26385,7 +26385,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Haze_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Haze_Berry.jpg"
   },
   {
     index: "2030",
@@ -26398,7 +26398,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Emerald_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Emerald_Jack.jpg"
   },
   {
     index: "2031",
@@ -26411,7 +26411,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Chem_Willie.jpg"
+    logo: "../assets/mygrow-search-images/Chem_Willie.jpg"
   },
   {
     index: "2032",
@@ -26424,7 +26424,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_People_Eater.jpg"
+    logo: "../assets/mygrow-search-images/Purple_People_Eater.jpg"
   },
   {
     index: "2033",
@@ -26437,7 +26437,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Mexican.jpg"
+    logo: "../assets/mygrow-search-images/Mexican.jpg"
   },
   {
     index: "2034",
@@ -26450,7 +26450,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Shark's_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Shark's_Breath.jpg"
   },
   {
     index: "2035",
@@ -26463,7 +26463,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blackberry_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Pie.jpg"
   },
   {
     index: "2036",
@@ -26476,7 +26476,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mt_Rainier.jpg"
+    logo: "../assets/mygrow-search-images/Mt_Rainier.jpg"
   },
   {
     index: "2037",
@@ -26489,7 +26489,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Deep_Sleep.jpg"
+    logo: "../assets/mygrow-search-images/Deep_Sleep.jpg"
   },
   {
     index: "2038",
@@ -26502,7 +26502,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Neptune_OG.jpg"
+    logo: "../assets/mygrow-search-images/Neptune_OG.jpg"
   },
   {
     index: "2039",
@@ -26515,7 +26515,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blueberry_Yum_Yum.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Yum_Yum.jpg"
   },
   {
     index: "2040",
@@ -26528,7 +26528,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Big_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Big_Wreck.jpg"
   },
   {
     index: "2041",
@@ -26541,7 +26541,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Dutch_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Dutch_Berry.jpg"
   },
   {
     index: "2042",
@@ -26554,7 +26554,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Shoreline.jpg"
+    logo: "../assets/mygrow-search-images/Shoreline.jpg"
   },
   {
     index: "2043",
@@ -26567,7 +26567,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Maui.jpg"
+    logo: "../assets/mygrow-search-images/Maui.jpg"
   },
   {
     index: "2044",
@@ -26580,7 +26580,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Morning_Star.jpg"
+    logo: "../assets/mygrow-search-images/Morning_Star.jpg"
   },
   {
     index: "2045",
@@ -26593,7 +26593,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mt_Cook.jpg"
+    logo: "../assets/mygrow-search-images/Mt_Cook.jpg"
   },
   {
     index: "2046",
@@ -26606,7 +26606,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Mammoth.jpg"
+    logo: "../assets/mygrow-search-images/Mammoth.jpg"
   },
   {
     index: "2047",
@@ -26619,7 +26619,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Willy_Wonka.jpg"
+    logo: "../assets/mygrow-search-images/Willy_Wonka.jpg"
   },
   {
     index: "2048",
@@ -26632,7 +26632,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Hog.jpg"
+    logo: "../assets/mygrow-search-images/Hog.jpg"
   },
   {
     index: "2049",
@@ -26645,7 +26645,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Skunk.jpg"
   },
   {
     index: "2050",
@@ -26658,7 +26658,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Appalachia.jpg"
+    logo: "../assets/mygrow-search-images/Appalachia.jpg"
   },
   {
     index: "2051",
@@ -26671,7 +26671,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/LA_Woman.jpg"
+    logo: "../assets/mygrow-search-images/LA_Woman.jpg"
   },
   {
     index: "2052",
@@ -26684,7 +26684,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "6",
-    logo: "assets/mygrow-search-images/Sugar_Plum.jpg"
+    logo: "../assets/mygrow-search-images/Sugar_Plum.jpg"
   },
   {
     index: "2053",
@@ -26697,7 +26697,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Sky.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Sky.jpg"
   },
   {
     index: "2054",
@@ -26710,7 +26710,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Earth_OG.jpg"
+    logo: "../assets/mygrow-search-images/Earth_OG.jpg"
   },
   {
     index: "2055",
@@ -26723,7 +26723,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Blue_Frost.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Frost.jpg"
   },
   {
     index: "2056",
@@ -26736,7 +26736,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Killing_Fields.jpg"
+    logo: "../assets/mygrow-search-images/Killing_Fields.jpg"
   },
   {
     index: "2057",
@@ -26749,7 +26749,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Green_Lantern.jpg"
+    logo: "../assets/mygrow-search-images/Green_Lantern.jpg"
   },
   {
     index: "2058",
@@ -26762,7 +26762,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Godzilla.jpg"
+    logo: "../assets/mygrow-search-images/Godzilla.jpg"
   },
   {
     index: "2059",
@@ -26775,7 +26775,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Dairy_Queen.jpg"
+    logo: "../assets/mygrow-search-images/Dairy_Queen.jpg"
   },
   {
     index: "2060",
@@ -26788,7 +26788,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mountain_Girl.jpg"
+    logo: "../assets/mygrow-search-images/Mountain_Girl.jpg"
   },
   {
     index: "2061",
@@ -26801,7 +26801,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Silver_Surfer.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Surfer.jpg"
   },
   {
     index: "2062",
@@ -26814,7 +26814,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Transformer.jpg"
+    logo: "../assets/mygrow-search-images/Transformer.jpg"
   },
   {
     index: "2063",
@@ -26827,7 +26827,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Bubbleberry.jpg"
+    logo: "../assets/mygrow-search-images/Bubbleberry.jpg"
   },
   {
     index: "2064",
@@ -26840,7 +26840,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Euforia.jpg"
+    logo: "../assets/mygrow-search-images/Euforia.jpg"
   },
   {
     index: "2065",
@@ -26853,7 +26853,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Pitbull.jpg"
+    logo: "../assets/mygrow-search-images/Pitbull.jpg"
   },
   {
     index: "2066",
@@ -26866,7 +26866,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherries_Jubilee.jpg"
+    logo: "../assets/mygrow-search-images/Cherries_Jubilee.jpg"
   },
   {
     index: "2067",
@@ -26879,7 +26879,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Grape_Royale.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Royale.jpg"
   },
   {
     index: "2068",
@@ -26892,7 +26892,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Blurple.jpg"
+    logo: "../assets/mygrow-search-images/Blurple.jpg"
   },
   {
     index: "2069",
@@ -26905,7 +26905,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Harambe's_Ghost.jpg"
+    logo: "../assets/mygrow-search-images/Harambe's_Ghost.jpg"
   },
   {
     index: "2070",
@@ -26918,7 +26918,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lost_Coast_OG.jpg"
+    logo: "../assets/mygrow-search-images/Lost_Coast_OG.jpg"
   },
   {
     index: "2071",
@@ -26931,7 +26931,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Purple_Jems.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Jems.jpg"
   },
   {
     index: "2072",
@@ -26944,7 +26944,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Placenta.jpg"
+    logo: "../assets/mygrow-search-images/Placenta.jpg"
   },
   {
     index: "2073",
@@ -26957,7 +26957,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Moonrocks.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Moonrocks.jpg"
   },
   {
     index: "2074",
@@ -26970,7 +26970,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rainbow_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Rainbow_Kush.jpg"
   },
   {
     index: "2075",
@@ -26983,7 +26983,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Chemdawg_Sour_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Chemdawg_Sour_Diesel.jpg"
   },
   {
     index: "2076",
@@ -26996,7 +26996,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Raw_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Raw_Diesel.jpg"
   },
   {
     index: "2077",
@@ -27009,7 +27009,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Fruit_Loops.jpg"
+    logo: "../assets/mygrow-search-images/Fruit_Loops.jpg"
   },
   {
     index: "2078",
@@ -27022,7 +27022,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/New_Glue.jpg"
+    logo: "../assets/mygrow-search-images/New_Glue.jpg"
   },
   {
     index: "2079",
@@ -27035,7 +27035,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Critical_Plus.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Plus.jpg"
   },
   {
     index: "2080",
@@ -27048,7 +27048,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/B._Lee.jpg"
+    logo: "../assets/mygrow-search-images/B._Lee.jpg"
   },
   {
     index: "2081",
@@ -27061,7 +27061,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "15",
-    logo: "assets/mygrow-search-images/Big_Skunk_Korean.jpg"
+    logo: "../assets/mygrow-search-images/Big_Skunk_Korean.jpg"
   },
   {
     index: "2082",
@@ -27074,7 +27074,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Hawaiian_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Skunk.jpg"
   },
   {
     index: "2083",
@@ -27087,7 +27087,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Flying_Dragon.jpg"
+    logo: "../assets/mygrow-search-images/Flying_Dragon.jpg"
   },
   {
     index: "2084",
@@ -27100,7 +27100,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Medicine_Woman.jpg"
+    logo: "../assets/mygrow-search-images/Medicine_Woman.jpg"
   },
   {
     index: "2085",
@@ -27113,7 +27113,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hurricane.jpg"
+    logo: "../assets/mygrow-search-images/Hurricane.jpg"
   },
   {
     index: "2086",
@@ -27126,7 +27126,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Early_Pearl.jpg"
+    logo: "../assets/mygrow-search-images/Early_Pearl.jpg"
   },
   {
     index: "2087",
@@ -27139,7 +27139,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nightmare_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Nightmare_Cookies.jpg"
   },
   {
     index: "2088",
@@ -27152,7 +27152,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Rx.jpg"
+    logo: "../assets/mygrow-search-images/Rx.jpg"
   },
   {
     index: "2089",
@@ -27165,7 +27165,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Diamond.jpg"
+    logo: "../assets/mygrow-search-images/White_Diamond.jpg"
   },
   {
     index: "2090",
@@ -27178,7 +27178,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/A-10.jpg"
+    logo: "../assets/mygrow-search-images/A-10.jpg"
   },
   {
     index: "2091",
@@ -27191,7 +27191,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Triple_OG.jpg"
+    logo: "../assets/mygrow-search-images/Triple_OG.jpg"
   },
   {
     index: "2092",
@@ -27204,7 +27204,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mike_Larry.jpg"
+    logo: "../assets/mygrow-search-images/Mike_Larry.jpg"
   },
   {
     index: "2093",
@@ -27217,7 +27217,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Dragon.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Dragon.jpg"
   },
   {
     index: "2094",
@@ -27230,7 +27230,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Linda.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Linda.jpg"
   },
   {
     index: "2095",
@@ -27243,7 +27243,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Betty_Boo.jpg"
+    logo: "../assets/mygrow-search-images/Betty_Boo.jpg"
   },
   {
     index: "2096",
@@ -27256,7 +27256,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Champagne.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Champagne.jpg"
   },
   {
     index: "2097",
@@ -27269,7 +27269,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Glass_Slipper.jpg"
+    logo: "../assets/mygrow-search-images/Glass_Slipper.jpg"
   },
   {
     index: "2098",
@@ -27282,7 +27282,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Appleberry.jpg"
+    logo: "../assets/mygrow-search-images/Appleberry.jpg"
   },
   {
     index: "2099",
@@ -27295,7 +27295,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Goblin.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Goblin.jpg"
   },
   {
     index: "2100",
@@ -27308,7 +27308,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/AJ_Sour_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/AJ_Sour_Diesel.jpg"
   },
   {
     index: "2101",
@@ -27321,7 +27321,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Master_Jedi.jpg"
+    logo: "../assets/mygrow-search-images/Master_Jedi.jpg"
   },
   {
     index: "2102",
@@ -27334,7 +27334,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Lowryder.jpg"
+    logo: "../assets/mygrow-search-images/Lowryder.jpg"
   },
   {
     index: "2103",
@@ -27347,7 +27347,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Apollo_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Apollo_Haze.jpg"
   },
   {
     index: "2104",
@@ -27360,7 +27360,7 @@ var data = [
     Hybrid:"",
     Sativa: "95% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cannalope_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Cannalope_Haze.jpg"
   },
   {
     index: "2105",
@@ -27373,7 +27373,7 @@ var data = [
     Hybrid:"70% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Tide.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Tide.jpg"
   },
   {
     index: "2106",
@@ -27386,7 +27386,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Captain_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Captain_Kush.jpg"
   },
   {
     index: "2107",
@@ -27399,7 +27399,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Y_Griega.jpg"
+    logo: "../assets/mygrow-search-images/Y_Griega.jpg"
   },
   {
     index: "2108",
@@ -27412,7 +27412,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/BC_Roadkill.jpg"
+    logo: "../assets/mygrow-search-images/BC_Roadkill.jpg"
   },
   {
     index: "2109",
@@ -27425,7 +27425,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chem_de_la_Chem.jpg"
+    logo: "../assets/mygrow-search-images/Chem_de_la_Chem.jpg"
   },
   {
     index: "2110",
@@ -27438,7 +27438,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sand_Storm.jpg"
+    logo: "../assets/mygrow-search-images/Sand_Storm.jpg"
   },
   {
     index: "2111",
@@ -27451,7 +27451,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Banana_Candy.jpg"
+    logo: "../assets/mygrow-search-images/Banana_Candy.jpg"
   },
   {
     index: "2112",
@@ -27464,7 +27464,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Kuchi.jpg"
+    logo: "../assets/mygrow-search-images/Kuchi.jpg"
   },
   {
     index: "2113",
@@ -27477,7 +27477,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kurple_Fantasy.jpg"
+    logo: "../assets/mygrow-search-images/Kurple_Fantasy.jpg"
   },
   {
     index: "2114",
@@ -27490,7 +27490,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Trojan.jpg"
+    logo: "../assets/mygrow-search-images/Trojan.jpg"
   },
   {
     index: "2115",
@@ -27503,7 +27503,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Flash_Back.jpg"
+    logo: "../assets/mygrow-search-images/Flash_Back.jpg"
   },
   {
     index: "2116",
@@ -27516,7 +27516,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Lazy_Train.jpg"
+    logo: "../assets/mygrow-search-images/Lazy_Train.jpg"
   },
   {
     index: "2117",
@@ -27529,7 +27529,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Northwest_Pineapple.jpg"
+    logo: "../assets/mygrow-search-images/Northwest_Pineapple.jpg"
   },
   {
     index: "2118",
@@ -27542,7 +27542,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OG_Los_Angeles_Kush.jpg"
+    logo: "../assets/mygrow-search-images/OG_Los_Angeles_Kush.jpg"
   },
   {
     index: "2119",
@@ -27555,7 +27555,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Pound_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Pound_Cake.jpg"
   },
   {
     index: "2120",
@@ -27568,7 +27568,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lavender_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Lavender_Kush.jpg"
   },
   {
     index: "2121",
@@ -27581,7 +27581,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Little_Angel.jpg"
+    logo: "../assets/mygrow-search-images/Little_Angel.jpg"
   },
   {
     index: "2122",
@@ -27594,7 +27594,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dark_Blue_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Dark_Blue_Dream.jpg"
   },
   {
     index: "2123",
@@ -27607,7 +27607,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blueberry_Afgoo.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Afgoo.jpg"
   },
   {
     index: "2124",
@@ -27620,7 +27620,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/White_Dwarf.jpg"
+    logo: "../assets/mygrow-search-images/White_Dwarf.jpg"
   },
   {
     index: "2125",
@@ -27633,7 +27633,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Dynamite.jpg"
+    logo: "../assets/mygrow-search-images/Dynamite.jpg"
   },
   {
     index: "2126",
@@ -27646,7 +27646,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Yumboldt.jpg"
+    logo: "../assets/mygrow-search-images/Yumboldt.jpg"
   },
   {
     index: "2127",
@@ -27659,7 +27659,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pine_Queen_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Pine_Queen_Dream.jpg"
   },
   {
     index: "2128",
@@ -27672,7 +27672,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Michigan_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Michigan_Skunk.jpg"
   },
   {
     index: "2129",
@@ -27685,7 +27685,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Kush.jpg"
   },
   {
     index: "2130",
@@ -27698,7 +27698,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Qleaner.jpg"
+    logo: "../assets/mygrow-search-images/Qleaner.jpg"
   },
   {
     index: "2131",
@@ -27711,7 +27711,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Wreckage.jpg"
+    logo: "../assets/mygrow-search-images/Wreckage.jpg"
   },
   {
     index: "2132",
@@ -27724,7 +27724,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Think_Different.jpg"
+    logo: "../assets/mygrow-search-images/Think_Different.jpg"
   },
   {
     index: "2133",
@@ -27737,7 +27737,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Taiga.jpg"
+    logo: "../assets/mygrow-search-images/Taiga.jpg"
   },
   {
     index: "2134",
@@ -27750,7 +27750,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Barney.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Barney.jpg"
   },
   {
     index: "2135",
@@ -27763,7 +27763,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/King's_Bread.jpg"
+    logo: "../assets/mygrow-search-images/King's_Bread.jpg"
   },
   {
     index: "2136",
@@ -27776,7 +27776,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Death_By_Cake_OG.jpg"
+    logo: "../assets/mygrow-search-images/Death_By_Cake_OG.jpg"
   },
   {
     index: "2137",
@@ -27789,7 +27789,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Rubicon.jpg"
+    logo: "../assets/mygrow-search-images/Rubicon.jpg"
   },
   {
     index: "2138",
@@ -27802,7 +27802,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blueberry_Gum.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Gum.jpg"
   },
   {
     index: "2139",
@@ -27815,7 +27815,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Venomberry.jpg"
+    logo: "../assets/mygrow-search-images/Venomberry.jpg"
   },
   {
     index: "2140",
@@ -27828,7 +27828,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Vaniluna.jpg"
+    logo: "../assets/mygrow-search-images/Vaniluna.jpg"
   },
   {
     index: "2141",
@@ -27841,7 +27841,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Liquid_Butter.jpg"
+    logo: "../assets/mygrow-search-images/Liquid_Butter.jpg"
   },
   {
     index: "2142",
@@ -27854,7 +27854,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OG_Purple_Fire_Thai.jpg"
+    logo: "../assets/mygrow-search-images/OG_Purple_Fire_Thai.jpg"
   },
   {
     index: "2143",
@@ -27867,7 +27867,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hawaii_78.jpg"
+    logo: "../assets/mygrow-search-images/Hawaii_78.jpg"
   },
   {
     index: "2144",
@@ -27880,7 +27880,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Tears.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Tears.jpg"
   },
   {
     index: "2145",
@@ -27893,7 +27893,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Heaven_Scent.jpg"
+    logo: "../assets/mygrow-search-images/Heaven_Scent.jpg"
   },
   {
     index: "2146",
@@ -27906,7 +27906,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dark_Shadow_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Dark_Shadow_Haze.jpg"
   },
   {
     index: "2147",
@@ -27919,7 +27919,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Crockett's_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Crockett's_Haze.jpg"
   },
   {
     index: "2148",
@@ -27932,7 +27932,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Swiss.jpg"
+    logo: "../assets/mygrow-search-images/Swiss.jpg"
   },
   {
     index: "2149",
@@ -27945,7 +27945,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dark_Matter.jpg"
+    logo: "../assets/mygrow-search-images/Dark_Matter.jpg"
   },
   {
     index: "2150",
@@ -27958,7 +27958,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Lotus.jpg"
+    logo: "../assets/mygrow-search-images/White_Lotus.jpg"
   },
   {
     index: "2151",
@@ -27971,7 +27971,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Arabian_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Arabian_Gold.jpg"
   },
   {
     index: "2152",
@@ -27984,7 +27984,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Green_Hornet.jpg"
+    logo: "../assets/mygrow-search-images/Green_Hornet.jpg"
   },
   {
     index: "2153",
@@ -27997,7 +27997,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Double_Dutch.jpg"
+    logo: "../assets/mygrow-search-images/Double_Dutch.jpg"
   },
   {
     index: "2154",
@@ -28010,7 +28010,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Afghan_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Afghan_Haze.jpg"
   },
   {
     index: "2155",
@@ -28023,7 +28023,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Starfighter.jpg"
+    logo: "../assets/mygrow-search-images/Starfighter.jpg"
   },
   {
     index: "2156",
@@ -28036,7 +28036,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Diesel_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Diesel_Glue.jpg"
   },
   {
     index: "2157",
@@ -28049,7 +28049,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Dirty_Old_Bastard.jpg"
+    logo: "../assets/mygrow-search-images/Dirty_Old_Bastard.jpg"
   },
   {
     index: "2158",
@@ -28062,7 +28062,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dirty_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Dirty_Widow.jpg"
   },
   {
     index: "2159",
@@ -28075,7 +28075,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ed_Rosenthal_Super_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Ed_Rosenthal_Super_Bud.jpg"
   },
   {
     index: "2160",
@@ -28088,7 +28088,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grateful_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Grateful_Breath.jpg"
   },
   {
     index: "2161",
@@ -28101,7 +28101,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chocolate_Thunder.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Thunder.jpg"
   },
   {
     index: "2162",
@@ -28114,7 +28114,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Alien_Apparition.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Apparition.jpg"
   },
   {
     index: "2163",
@@ -28127,7 +28127,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Crosswalker.jpg"
+    logo: "../assets/mygrow-search-images/Crosswalker.jpg"
   },
   {
     index: "2164",
@@ -28140,7 +28140,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Kali_Dog.jpg"
+    logo: "../assets/mygrow-search-images/Kali_Dog.jpg"
   },
   {
     index: "2165",
@@ -28153,7 +28153,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Green_Magic.jpg"
+    logo: "../assets/mygrow-search-images/Green_Magic.jpg"
   },
   {
     index: "2166",
@@ -28166,7 +28166,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/White_Elephant.jpg"
+    logo: "../assets/mygrow-search-images/White_Elephant.jpg"
   },
   {
     index: "2167",
@@ -28179,7 +28179,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Satellite.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Satellite.jpg"
   },
   {
     index: "2168",
@@ -28192,7 +28192,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Train.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Train.jpg"
   },
   {
     index: "2169",
@@ -28205,7 +28205,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sour_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Cream.jpg"
   },
   {
     index: "2170",
@@ -28218,7 +28218,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Wreck.jpg"
   },
   {
     index: "2171",
@@ -28231,7 +28231,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lime_Tart.jpg"
+    logo: "../assets/mygrow-search-images/Lime_Tart.jpg"
   },
   {
     index: "2172",
@@ -28244,7 +28244,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cookie_Jar.jpg"
+    logo: "../assets/mygrow-search-images/Cookie_Jar.jpg"
   },
   {
     index: "2173",
@@ -28257,7 +28257,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "18",
-    logo: "assets/mygrow-search-images/Honduras.jpg"
+    logo: "../assets/mygrow-search-images/Honduras.jpg"
   },
   {
     index: "2174",
@@ -28270,7 +28270,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/GTO.jpg"
+    logo: "../assets/mygrow-search-images/GTO.jpg"
   },
   {
     index: "2175",
@@ -28283,7 +28283,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Karma_OG.jpg"
+    logo: "../assets/mygrow-search-images/Karma_OG.jpg"
   },
   {
     index: "2176",
@@ -28296,7 +28296,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Inzane_in_the_Membrane.jpg"
+    logo: "../assets/mygrow-search-images/Inzane_in_the_Membrane.jpg"
   },
   {
     index: "2177",
@@ -28309,7 +28309,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grape_Drink.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Drink.jpg"
   },
   {
     index: "2178",
@@ -28322,7 +28322,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Serious_6.jpg"
+    logo: "../assets/mygrow-search-images/Serious_6.jpg"
   },
   {
     index: "2179",
@@ -28335,7 +28335,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Pink_Pez.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Pez.jpg"
   },
   {
     index: "2180",
@@ -28348,7 +28348,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Jamaican_Lion.jpg"
+    logo: "../assets/mygrow-search-images/Jamaican_Lion.jpg"
   },
   {
     index: "2181",
@@ -28361,7 +28361,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hades_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Hades_Haze.jpg"
   },
   {
     index: "2182",
@@ -28374,7 +28374,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Rene.jpg"
+    logo: "../assets/mygrow-search-images/Rene.jpg"
   },
   {
     index: "2183",
@@ -28387,7 +28387,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Jimi_Hendrix.jpg"
+    logo: "../assets/mygrow-search-images/Jimi_Hendrix.jpg"
   },
   {
     index: "2184",
@@ -28400,7 +28400,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Light_Saber.jpg"
+    logo: "../assets/mygrow-search-images/Light_Saber.jpg"
   },
   {
     index: "2185",
@@ -28413,7 +28413,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Crown_Royale.jpg"
+    logo: "../assets/mygrow-search-images/Crown_Royale.jpg"
   },
   {
     index: "2186",
@@ -28426,7 +28426,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hawaiian_Delight.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Delight.jpg"
   },
   {
     index: "2187",
@@ -28439,7 +28439,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Holy_Ghost.jpg"
+    logo: "../assets/mygrow-search-images/Holy_Ghost.jpg"
   },
   {
     index: "2188",
@@ -28452,7 +28452,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Colorado_Chem.jpg"
+    logo: "../assets/mygrow-search-images/Colorado_Chem.jpg"
   },
   {
     index: "2189",
@@ -28465,7 +28465,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grape_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Cookies.jpg"
   },
   {
     index: "2190",
@@ -28478,7 +28478,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Hawaiian_Mayan_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Mayan_Gold.jpg"
   },
   {
     index: "2191",
@@ -28491,7 +28491,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hammershark.jpg"
+    logo: "../assets/mygrow-search-images/Hammershark.jpg"
   },
   {
     index: "2192",
@@ -28504,7 +28504,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Harley_Storm.jpg"
+    logo: "../assets/mygrow-search-images/Harley_Storm.jpg"
   },
   {
     index: "2193",
@@ -28517,7 +28517,7 @@ var data = [
     Hybrid:"75% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Juicy_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Juicy_Jack.jpg"
   },
   {
     index: "2194",
@@ -28530,7 +28530,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sugar_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Sugar_Breath.jpg"
   },
   {
     index: "2195",
@@ -28543,7 +28543,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Deep_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Deep_Cheese.jpg"
   },
   {
     index: "2196",
@@ -28556,7 +28556,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Horace.jpg"
+    logo: "../assets/mygrow-search-images/Horace.jpg"
   },
   {
     index: "2197",
@@ -28569,7 +28569,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ray_Charles.jpg"
+    logo: "../assets/mygrow-search-images/Ray_Charles.jpg"
   },
   {
     index: "2198",
@@ -28582,7 +28582,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/K-Train.jpg"
+    logo: "../assets/mygrow-search-images/K-Train.jpg"
   },
   {
     index: "2199",
@@ -28595,7 +28595,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Honey_Rock.jpg"
+    logo: "../assets/mygrow-search-images/Honey_Rock.jpg"
   },
   {
     index: "2200",
@@ -28608,7 +28608,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cherry_Durban_Poison.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Durban_Poison.jpg"
   },
   {
     index: "2201",
@@ -28621,7 +28621,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sugar_Mama.jpg"
+    logo: "../assets/mygrow-search-images/Sugar_Mama.jpg"
   },
   {
     index: "2202",
@@ -28634,7 +28634,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/White_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/White_Cheese.jpg"
   },
   {
     index: "2203",
@@ -28647,7 +28647,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rainbow_Jones.jpg"
+    logo: "../assets/mygrow-search-images/Rainbow_Jones.jpg"
   },
   {
     index: "2204",
@@ -28660,7 +28660,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pirate_Radio.jpg"
+    logo: "../assets/mygrow-search-images/Pirate_Radio.jpg"
   },
   {
     index: "2205",
@@ -28673,7 +28673,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blackberry_Cream.jpg"
+    logo: "../assets/mygrow-search-images/Blackberry_Cream.jpg"
   },
   {
     index: "2206",
@@ -28686,7 +28686,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ether.jpg"
+    logo: "../assets/mygrow-search-images/Ether.jpg"
   },
   {
     index: "2207",
@@ -28699,7 +28699,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/G.O.A.T..jpg"
+    logo: "../assets/mygrow-search-images/G.O.A.T..jpg"
   },
   {
     index: "2208",
@@ -28712,7 +28712,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lost_Coast_Ghost.jpg"
+    logo: "../assets/mygrow-search-images/Lost_Coast_Ghost.jpg"
   },
   {
     index: "2209",
@@ -28725,7 +28725,7 @@ var data = [
     Hybrid:"",
     Sativa: "50% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mean_Misty.jpg"
+    logo: "../assets/mygrow-search-images/Mean_Misty.jpg"
   },
   {
     index: "2210",
@@ -28738,7 +28738,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Mango_Habanero.jpg"
+    logo: "../assets/mygrow-search-images/Mango_Habanero.jpg"
   },
   {
     index: "2211",
@@ -28751,7 +28751,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Seattle_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Seattle_Blue.jpg"
   },
   {
     index: "2212",
@@ -28764,7 +28764,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Lucifer_OG.jpg"
+    logo: "../assets/mygrow-search-images/Lucifer_OG.jpg"
   },
   {
     index: "2213",
@@ -28777,7 +28777,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Viper_City_OG.jpg"
+    logo: "../assets/mygrow-search-images/Viper_City_OG.jpg"
   },
   {
     index: "2214",
@@ -28790,7 +28790,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Birds_Eye.jpg"
+    logo: "../assets/mygrow-search-images/Birds_Eye.jpg"
   },
   {
     index: "2215",
@@ -28803,7 +28803,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Enigma.jpg"
+    logo: "../assets/mygrow-search-images/Enigma.jpg"
   },
   {
     index: "2216",
@@ -28816,7 +28816,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Black_Velvet.jpg"
+    logo: "../assets/mygrow-search-images/Black_Velvet.jpg"
   },
   {
     index: "2217",
@@ -28829,7 +28829,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bermuda_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Bermuda_Punch.jpg"
   },
   {
     index: "2218",
@@ -28842,7 +28842,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Chocolate_Tonic.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Tonic.jpg"
   },
   {
     index: "2219",
@@ -28855,7 +28855,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Double_OG.jpg"
+    logo: "../assets/mygrow-search-images/Double_OG.jpg"
   },
   {
     index: "2220",
@@ -28868,11 +28868,11 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Jack_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Haze.jpg"
   },
   {
     index: "2221",
-    strain: "'88 G13 Hashplant",
+    strain: "88 G13 Hashplant",
     info: "If ever there was a list of mysterious and legendary strains, ‘88 G13 Hashplant just might be at the very top. Created in 1988 by crossing G13 and Hashplant, NDNguy gave birth to an Grow-dominant bud that has since been on everyone’s “must try” wishlist. Distributed by Hazeman Seeds, not much is known about this gal even though she’s often in high demand.",
     more_info: "Given her reported set of effects, it’s likely that ‘88 G13 Hashplant is pretty potent, although no one can peg down an exact THC potency. Classic in both flavor and appearance, each nug is small and round with thin orange pistils and small white trichomes. Spicy earth, herbs, and pine dance along your palate as you smoke with just a touch of sweetness on the exhale, allowing fans of this strain to start their experience off on the right foot.",
     THC: "0",
@@ -28881,7 +28881,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/'88_G13_Hashplant.jpg"
+    logo: "../assets/mygrow-search-images/88_G13_Hashplant.jpg"
   },
   {
     index: "2222",
@@ -28894,7 +28894,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Hippie_Chicken.jpg"
+    logo: "../assets/mygrow-search-images/Hippie_Chicken.jpg"
   },
   {
     index: "2223",
@@ -28907,7 +28907,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/The_Sauce.jpg"
+    logo: "../assets/mygrow-search-images/The_Sauce.jpg"
   },
   {
     index: "2224",
@@ -28920,7 +28920,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cabbage_Patch.jpg"
+    logo: "../assets/mygrow-search-images/Cabbage_Patch.jpg"
   },
   {
     index: "2225",
@@ -28933,7 +28933,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Harry_Potter.jpg"
+    logo: "../assets/mygrow-search-images/Harry_Potter.jpg"
   },
   {
     index: "2226",
@@ -28946,7 +28946,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Azure_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Azure_Haze.jpg"
   },
   {
     index: "2227",
@@ -28959,7 +28959,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Snow.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Snow.jpg"
   },
   {
     index: "2228",
@@ -28972,7 +28972,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rug_Burn_OG.jpg"
+    logo: "../assets/mygrow-search-images/Rug_Burn_OG.jpg"
   },
   {
     index: "2229",
@@ -28985,7 +28985,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Dream_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Dream_Berry.jpg"
   },
   {
     index: "2230",
@@ -28998,7 +28998,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Light_of_Jah.jpg"
+    logo: "../assets/mygrow-search-images/Light_of_Jah.jpg"
   },
   {
     index: "2231",
@@ -29011,7 +29011,7 @@ var data = [
     Hybrid:"",
     Sativa: "50% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Dreamer's_Glass.jpg"
+    logo: "../assets/mygrow-search-images/Dreamer's_Glass.jpg"
   },
   {
     index: "2232",
@@ -29024,7 +29024,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Panda_OG.jpg"
+    logo: "../assets/mygrow-search-images/Panda_OG.jpg"
   },
   {
     index: "2233",
@@ -29037,7 +29037,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chronic_Thunder.jpg"
+    logo: "../assets/mygrow-search-images/Chronic_Thunder.jpg"
   },
   {
     index: "2234",
@@ -29050,7 +29050,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dream_Machine.jpg"
+    logo: "../assets/mygrow-search-images/Dream_Machine.jpg"
   },
   {
     index: "2235",
@@ -29063,7 +29063,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blue_Hash.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Hash.jpg"
   },
   {
     index: "2236",
@@ -29076,7 +29076,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Secret_Weapon.jpg"
+    logo: "../assets/mygrow-search-images/Secret_Weapon.jpg"
   },
   {
     index: "2237",
@@ -29089,7 +29089,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Red_Rhino.jpg"
+    logo: "../assets/mygrow-search-images/Red_Rhino.jpg"
   },
   {
     index: "2238",
@@ -29102,7 +29102,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Orange_Velvet.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Velvet.jpg"
   },
   {
     index: "2239",
@@ -29115,7 +29115,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Black_Banana_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Black_Banana_Cookies.jpg"
   },
   {
     index: "2240",
@@ -29128,7 +29128,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Cookies_and_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Cookies_and_Dream.jpg"
   },
   {
     index: "2241",
@@ -29141,7 +29141,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Stardust.jpg"
+    logo: "../assets/mygrow-search-images/Stardust.jpg"
   },
   {
     index: "2242",
@@ -29154,7 +29154,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sapphire_Star.jpg"
+    logo: "../assets/mygrow-search-images/Sapphire_Star.jpg"
   },
   {
     index: "2243",
@@ -29167,7 +29167,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Shaman.jpg"
+    logo: "../assets/mygrow-search-images/Shaman.jpg"
   },
   {
     index: "2244",
@@ -29180,7 +29180,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "5",
-    logo: "assets/mygrow-search-images/Walker_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Walker_Kush.jpg"
   },
   {
     index: "2245",
@@ -29193,7 +29193,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alpha_OG.jpg"
+    logo: "../assets/mygrow-search-images/Alpha_OG.jpg"
   },
   {
     index: "2246",
@@ -29206,7 +29206,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Batman_OG.jpg"
+    logo: "../assets/mygrow-search-images/Batman_OG.jpg"
   },
   {
     index: "2247",
@@ -29219,7 +29219,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Glue_Tech.jpg"
+    logo: "../assets/mygrow-search-images/Glue_Tech.jpg"
   },
   {
     index: "2248",
@@ -29232,7 +29232,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Glookies.jpg"
+    logo: "../assets/mygrow-search-images/Glookies.jpg"
   },
   {
     index: "2249",
@@ -29245,7 +29245,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Urban_Poison.jpg"
+    logo: "../assets/mygrow-search-images/Urban_Poison.jpg"
   },
   {
     index: "2250",
@@ -29258,7 +29258,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jack_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Diesel.jpg"
   },
   {
     index: "2251",
@@ -29271,7 +29271,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Space_Candy.jpg"
+    logo: "../assets/mygrow-search-images/Space_Candy.jpg"
   },
   {
     index: "2252",
@@ -29284,7 +29284,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Mickey_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Mickey_Kush.jpg"
   },
   {
     index: "2253",
@@ -29297,7 +29297,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blues.jpg"
+    logo: "../assets/mygrow-search-images/Blues.jpg"
   },
   {
     index: "2254",
@@ -29310,7 +29310,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Titan_OG.jpg"
+    logo: "../assets/mygrow-search-images/Titan_OG.jpg"
   },
   {
     index: "2255",
@@ -29323,7 +29323,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Electric_Lemon_G.jpg"
+    logo: "../assets/mygrow-search-images/Electric_Lemon_G.jpg"
   },
   {
     index: "2256",
@@ -29336,7 +29336,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Butterscotch.jpg"
+    logo: "../assets/mygrow-search-images/Butterscotch.jpg"
   },
   {
     index: "2257",
@@ -29349,7 +29349,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nepalese.jpg"
+    logo: "../assets/mygrow-search-images/Nepalese.jpg"
   },
   {
     index: "2258",
@@ -29362,7 +29362,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Mr._Nice.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Mr._Nice.jpg"
   },
   {
     index: "2259",
@@ -29375,7 +29375,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alien_Abduction.jpg"
+    logo: "../assets/mygrow-search-images/Alien_Abduction.jpg"
   },
   {
     index: "2260",
@@ -29388,7 +29388,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Super_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Super_Bud.jpg"
   },
   {
     index: "2261",
@@ -29401,7 +29401,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Turbo.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Turbo.jpg"
   },
   {
     index: "2262",
@@ -29414,7 +29414,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Super_Sour_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Super_Sour_Skunk.jpg"
   },
   {
     index: "2263",
@@ -29427,7 +29427,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rainbow_Chip.jpg"
+    logo: "../assets/mygrow-search-images/Rainbow_Chip.jpg"
   },
   {
     index: "2264",
@@ -29440,7 +29440,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Santa_Maria.jpg"
+    logo: "../assets/mygrow-search-images/Santa_Maria.jpg"
   },
   {
     index: "2265",
@@ -29453,7 +29453,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Don_Carlos.jpg"
+    logo: "../assets/mygrow-search-images/Don_Carlos.jpg"
   },
   {
     index: "2266",
@@ -29466,7 +29466,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "6",
-    logo: "assets/mygrow-search-images/Silver_Pearl.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Pearl.jpg"
   },
   {
     index: "2267",
@@ -29479,7 +29479,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cambodian.jpg"
+    logo: "../assets/mygrow-search-images/Cambodian.jpg"
   },
   {
     index: "2268",
@@ -29492,7 +29492,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Wreck.jpg"
   },
   {
     index: "2269",
@@ -29505,7 +29505,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Guava.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Guava.jpg"
   },
   {
     index: "2270",
@@ -29518,7 +29518,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lime_Green_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Lime_Green_Skunk.jpg"
   },
   {
     index: "2271",
@@ -29531,7 +29531,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Master_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/Master_Bubba.jpg"
   },
   {
     index: "2272",
@@ -29544,7 +29544,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/White_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/White_Skunk.jpg"
   },
   {
     index: "2273",
@@ -29557,7 +29557,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/The_Truth.jpg"
+    logo: "../assets/mygrow-search-images/The_Truth.jpg"
   },
   {
     index: "2274",
@@ -29570,7 +29570,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawberry_Milkshake.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Milkshake.jpg"
   },
   {
     index: "2275",
@@ -29583,7 +29583,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/The_Flav.jpg"
+    logo: "../assets/mygrow-search-images/The_Flav.jpg"
   },
   {
     index: "2276",
@@ -29596,7 +29596,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Collins_Ave.jpg"
+    logo: "../assets/mygrow-search-images/Collins_Ave.jpg"
   },
   {
     index: "2277",
@@ -29609,7 +29609,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/A-Dub.jpg"
+    logo: "../assets/mygrow-search-images/A-Dub.jpg"
   },
   {
     index: "2278",
@@ -29622,7 +29622,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Very_Berry_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Very_Berry_Haze.jpg"
   },
   {
     index: "2279",
@@ -29635,7 +29635,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Grandpa_Larry_OG.jpg"
+    logo: "../assets/mygrow-search-images/Grandpa_Larry_OG.jpg"
   },
   {
     index: "2280",
@@ -29648,7 +29648,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_Fire.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Fire.jpg"
   },
   {
     index: "2281",
@@ -29661,7 +29661,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Goo.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Goo.jpg"
   },
   {
     index: "2282",
@@ -29674,7 +29674,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Master_Yoda.jpg"
+    logo: "../assets/mygrow-search-images/Master_Yoda.jpg"
   },
   {
     index: "2283",
@@ -29687,7 +29687,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Runtz.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Runtz.jpg"
   },
   {
     index: "2284",
@@ -29700,7 +29700,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Pink_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Berry.jpg"
   },
   {
     index: "2285",
@@ -29713,7 +29713,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Cactus.jpg"
+    logo: "../assets/mygrow-search-images/Cactus.jpg"
   },
   {
     index: "2286",
@@ -29726,7 +29726,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Super_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Super_Cheese.jpg"
   },
   {
     index: "2287",
@@ -29739,7 +29739,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blueberry_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Dream.jpg"
   },
   {
     index: "2288",
@@ -29752,7 +29752,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ancient_OG.jpg"
+    logo: "../assets/mygrow-search-images/Ancient_OG.jpg"
   },
   {
     index: "2289",
@@ -29765,7 +29765,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/10th_Planet.jpg"
+    logo: "../assets/mygrow-search-images/10th_Planet.jpg"
   },
   {
     index: "2290",
@@ -29778,7 +29778,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Chocolate_Lava.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Lava.jpg"
   },
   {
     index: "2291",
@@ -29791,7 +29791,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Burmese_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Burmese_Kush.jpg"
   },
   {
     index: "2292",
@@ -29804,7 +29804,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Diesel.jpg"
   },
   {
     index: "2293",
@@ -29817,7 +29817,7 @@ var data = [
     Hybrid:"",
     Sativa: "50% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OCD.jpg"
+    logo: "../assets/mygrow-search-images/OCD.jpg"
   },
   {
     index: "2294",
@@ -29830,7 +29830,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Oregon_Pinot_Noir.jpg"
+    logo: "../assets/mygrow-search-images/Oregon_Pinot_Noir.jpg"
   },
   {
     index: "2295",
@@ -29843,7 +29843,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Nice_Cherry.jpg"
+    logo: "../assets/mygrow-search-images/Nice_Cherry.jpg"
   },
   {
     index: "2296",
@@ -29856,7 +29856,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/South_Indian_Indica.jpg"
+    logo: "../assets/mygrow-search-images/South_Indian_Indica.jpg"
   },
   {
     index: "2297",
@@ -29869,7 +29869,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alchemy.jpg"
+    logo: "../assets/mygrow-search-images/Alchemy.jpg"
   },
   {
     index: "2298",
@@ -29882,7 +29882,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Royal_Chemdawg.jpg"
+    logo: "../assets/mygrow-search-images/Royal_Chemdawg.jpg"
   },
   {
     index: "2299",
@@ -29895,7 +29895,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Medibud.jpg"
+    logo: "../assets/mygrow-search-images/Medibud.jpg"
   },
   {
     index: "2300",
@@ -29908,7 +29908,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grand_Hindu.jpg"
+    logo: "../assets/mygrow-search-images/Grand_Hindu.jpg"
   },
   {
     index: "2301",
@@ -29921,7 +29921,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Critical_Hog.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Hog.jpg"
   },
   {
     index: "2302",
@@ -29934,7 +29934,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cherry_Pie_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Pie_Kush.jpg"
   },
   {
     index: "2303",
@@ -29947,7 +29947,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Afternoon_Delight.jpg"
+    logo: "../assets/mygrow-search-images/Afternoon_Delight.jpg"
   },
   {
     index: "2304",
@@ -29960,7 +29960,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Lemonade.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Lemonade.jpg"
   },
   {
     index: "2305",
@@ -29973,7 +29973,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Schrom.jpg"
+    logo: "../assets/mygrow-search-images/Schrom.jpg"
   },
   {
     index: "2306",
@@ -29986,7 +29986,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/SinMint_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/SinMint_Cookies.jpg"
   },
   {
     index: "2307",
@@ -29999,7 +29999,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rockstar_Master_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Rockstar_Master_Kush.jpg"
   },
   {
     index: "2308",
@@ -30012,7 +30012,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pineapple_Dog_Shit.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Dog_Shit.jpg"
   },
   {
     index: "2309",
@@ -30025,7 +30025,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mt_Hood_Magic.jpg"
+    logo: "../assets/mygrow-search-images/Mt_Hood_Magic.jpg"
   },
   {
     index: "2310",
@@ -30038,7 +30038,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Rocky_Mountain_Blueberry.jpg"
+    logo: "../assets/mygrow-search-images/Rocky_Mountain_Blueberry.jpg"
   },
   {
     index: "2311",
@@ -30051,7 +30051,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ogre_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Ogre_Berry.jpg"
   },
   {
     index: "2312",
@@ -30064,7 +30064,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Magnum_PI.jpg"
+    logo: "../assets/mygrow-search-images/Magnum_PI.jpg"
   },
   {
     index: "2313",
@@ -30077,7 +30077,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Candy_OG.jpg"
+    logo: "../assets/mygrow-search-images/Candy_OG.jpg"
   },
   {
     index: "2314",
@@ -30090,7 +30090,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hawaiian_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Diesel.jpg"
   },
   {
     index: "2315",
@@ -30103,7 +30103,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/OG_LA_Affie.jpg"
+    logo: "../assets/mygrow-search-images/OG_LA_Affie.jpg"
   },
   {
     index: "2316",
@@ -30116,7 +30116,7 @@ var data = [
     Hybrid:"",
     Sativa: "50% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Monkey_Thunder.jpg"
+    logo: "../assets/mygrow-search-images/Monkey_Thunder.jpg"
   },
   {
     index: "2317",
@@ -30129,7 +30129,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Critical_Kali_Mist.jpg"
+    logo: "../assets/mygrow-search-images/Critical_Kali_Mist.jpg"
   },
   {
     index: "2318",
@@ -30142,7 +30142,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Rocklock.jpg"
+    logo: "../assets/mygrow-search-images/Rocklock.jpg"
   },
   {
     index: "2319",
@@ -30155,7 +30155,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Fruit_Spirit.jpg"
+    logo: "../assets/mygrow-search-images/Fruit_Spirit.jpg"
   },
   {
     index: "2320",
@@ -30168,7 +30168,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Moon_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Moon_Cookies.jpg"
   },
   {
     index: "2321",
@@ -30181,7 +30181,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Maui_Mango_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Maui_Mango_Diesel.jpg"
   },
   {
     index: "2322",
@@ -30194,7 +30194,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/MediHaze.jpg"
+    logo: "../assets/mygrow-search-images/MediHaze.jpg"
   },
   {
     index: "2323",
@@ -30207,7 +30207,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Misty_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Misty_Kush.jpg"
   },
   {
     index: "2324",
@@ -30220,7 +30220,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nebula_II_CBD.jpg"
+    logo: "../assets/mygrow-search-images/Nebula_II_CBD.jpg"
   },
   {
     index: "2325",
@@ -30233,7 +30233,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Orange_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Wreck.jpg"
   },
   {
     index: "2326",
@@ -30246,7 +30246,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Strawberry_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Dream.jpg"
   },
   {
     index: "2327",
@@ -30259,7 +30259,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Green_Crack_Extreme.jpg"
+    logo: "../assets/mygrow-search-images/Green_Crack_Extreme.jpg"
   },
   {
     index: "2328",
@@ -30272,7 +30272,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Go_Time.jpg"
+    logo: "../assets/mygrow-search-images/Go_Time.jpg"
   },
   {
     index: "2329",
@@ -30285,7 +30285,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/McLovin.jpg"
+    logo: "../assets/mygrow-search-images/McLovin.jpg"
   },
   {
     index: "2330",
@@ -30298,7 +30298,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Super_Cat_Piss.jpg"
+    logo: "../assets/mygrow-search-images/Super_Cat_Piss.jpg"
   },
   {
     index: "2331",
@@ -30311,7 +30311,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/8_Miles_High.jpg"
+    logo: "../assets/mygrow-search-images/8_Miles_High.jpg"
   },
   {
     index: "2332",
@@ -30324,7 +30324,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Orange_Durban.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Durban.jpg"
   },
   {
     index: "2333",
@@ -30337,7 +30337,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Lemon_OG_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_OG_Haze.jpg"
   },
   {
     index: "2334",
@@ -30350,7 +30350,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ultra_Sonja.jpg"
+    logo: "../assets/mygrow-search-images/Ultra_Sonja.jpg"
   },
   {
     index: "2335",
@@ -30363,7 +30363,7 @@ var data = [
     Hybrid:"",
     Sativa: "14% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Southern_Lights.jpg"
+    logo: "../assets/mygrow-search-images/Southern_Lights.jpg"
   },
   {
     index: "2336",
@@ -30376,7 +30376,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Alien_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Alien_Dawg.jpg"
   },
   {
     index: "2337",
@@ -30389,7 +30389,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Orange_Snow_Cone.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Snow_Cone.jpg"
   },
   {
     index: "2338",
@@ -30402,7 +30402,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pan_Jam.jpg"
+    logo: "../assets/mygrow-search-images/Pan_Jam.jpg"
   },
   {
     index: "2339",
@@ -30415,7 +30415,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Peachy_Mack.jpg"
+    logo: "../assets/mygrow-search-images/Peachy_Mack.jpg"
   },
   {
     index: "2340",
@@ -30428,7 +30428,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Silver_Back.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Back.jpg"
   },
   {
     index: "2341",
@@ -30441,7 +30441,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_Tree.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Tree.jpg"
   },
   {
     index: "2342",
@@ -30454,7 +30454,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Ocean_View.jpg"
+    logo: "../assets/mygrow-search-images/Ocean_View.jpg"
   },
   {
     index: "2343",
@@ -30467,7 +30467,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/High_School_Sweetheart.jpg"
+    logo: "../assets/mygrow-search-images/High_School_Sweetheart.jpg"
   },
   {
     index: "2344",
@@ -30480,7 +30480,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Kush_Cleaner.jpg"
+    logo: "../assets/mygrow-search-images/Kush_Cleaner.jpg"
   },
   {
     index: "2345",
@@ -30493,7 +30493,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/OG_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/OG_Wreck.jpg"
   },
   {
     index: "2346",
@@ -30506,7 +30506,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ripped_Bubba.jpg"
+    logo: "../assets/mygrow-search-images/Ripped_Bubba.jpg"
   },
   {
     index: "2347",
@@ -30519,7 +30519,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Humble_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Humble_Pie.jpg"
   },
   {
     index: "2348",
@@ -30532,7 +30532,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Flavor_Crystals.jpg"
+    logo: "../assets/mygrow-search-images/Flavor_Crystals.jpg"
   },
   {
     index: "2349",
@@ -30545,7 +30545,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/OG's_Pearl.jpg"
+    logo: "../assets/mygrow-search-images/OG's_Pearl.jpg"
   },
   {
     index: "2350",
@@ -30558,7 +30558,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Palm_Tree_CBD.jpg"
+    logo: "../assets/mygrow-search-images/Palm_Tree_CBD.jpg"
   },
   {
     index: "2351",
@@ -30571,7 +30571,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Perfect_Purple.jpg"
+    logo: "../assets/mygrow-search-images/Perfect_Purple.jpg"
   },
   {
     index: "2352",
@@ -30584,7 +30584,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sweet_Tea.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Tea.jpg"
   },
   {
     index: "2353",
@@ -30597,7 +30597,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Aurora_Borealis.jpg"
+    logo: "../assets/mygrow-search-images/Aurora_Borealis.jpg"
   },
   {
     index: "2354",
@@ -30610,7 +30610,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Black_84.jpg"
+    logo: "../assets/mygrow-search-images/Black_84.jpg"
   },
   {
     index: "2355",
@@ -30623,7 +30623,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Phantom_Arrow.jpg"
+    logo: "../assets/mygrow-search-images/Phantom_Arrow.jpg"
   },
   {
     index: "2356",
@@ -30636,7 +30636,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dream_Girl.jpg"
+    logo: "../assets/mygrow-search-images/Dream_Girl.jpg"
   },
   {
     index: "2357",
@@ -30649,7 +30649,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Clusterfunk.jpg"
+    logo: "../assets/mygrow-search-images/Clusterfunk.jpg"
   },
   {
     index: "2358",
@@ -30662,7 +30662,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Princess.jpg"
+    logo: "../assets/mygrow-search-images/Princess.jpg"
   },
   {
     index: "2359",
@@ -30675,7 +30675,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Brandywine.jpg"
+    logo: "../assets/mygrow-search-images/Brandywine.jpg"
   },
   {
     index: "2360",
@@ -30688,7 +30688,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Crazy_Miss_Hyde.jpg"
+    logo: "../assets/mygrow-search-images/Crazy_Miss_Hyde.jpg"
   },
   {
     index: "2361",
@@ -30701,7 +30701,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/White_Slipper.jpg"
+    logo: "../assets/mygrow-search-images/White_Slipper.jpg"
   },
   {
     index: "2362",
@@ -30714,7 +30714,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Waferz.jpg"
+    logo: "../assets/mygrow-search-images/Waferz.jpg"
   },
   {
     index: "2363",
@@ -30727,7 +30727,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Island_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Island_Haze.jpg"
   },
   {
     index: "2364",
@@ -30740,7 +30740,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sweet_Dreams.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Dreams.jpg"
   },
   {
     index: "2365",
@@ -30753,7 +30753,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Special_K.jpg"
+    logo: "../assets/mygrow-search-images/Special_K.jpg"
   },
   {
     index: "2366",
@@ -30766,7 +30766,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/2_Scoops.jpg"
+    logo: "../assets/mygrow-search-images/2_Scoops.jpg"
   },
   {
     index: "2367",
@@ -30779,7 +30779,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/CBD_OG.jpg"
+    logo: "../assets/mygrow-search-images/CBD_OG.jpg"
   },
   {
     index: "2368",
@@ -30792,7 +30792,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Afghan_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Afghan_Diesel.jpg"
   },
   {
     index: "2369",
@@ -30805,7 +30805,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Fire.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Fire.jpg"
   },
   {
     index: "2370",
@@ -30818,7 +30818,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chem_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Chem_Jack.jpg"
   },
   {
     index: "2371",
@@ -30831,7 +30831,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "6",
-    logo: "assets/mygrow-search-images/Quick_One.jpg"
+    logo: "../assets/mygrow-search-images/Quick_One.jpg"
   },
   {
     index: "2372",
@@ -30844,7 +30844,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jack_Smack.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Smack.jpg"
   },
   {
     index: "2373",
@@ -30857,7 +30857,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Lambo_OG.jpg"
+    logo: "../assets/mygrow-search-images/Lambo_OG.jpg"
   },
   {
     index: "2374",
@@ -30870,7 +30870,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Agape.jpg"
+    logo: "../assets/mygrow-search-images/Agape.jpg"
   },
   {
     index: "2375",
@@ -30883,7 +30883,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/CBD_Rich_Blessing.jpg"
+    logo: "../assets/mygrow-search-images/CBD_Rich_Blessing.jpg"
   },
   {
     index: "2376",
@@ -30896,7 +30896,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Confidential_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Confidential_Cookies.jpg"
   },
   {
     index: "2377",
@@ -30909,7 +30909,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Acai_Berry_Gelato.jpg"
+    logo: "../assets/mygrow-search-images/Acai_Berry_Gelato.jpg"
   },
   {
     index: "2378",
@@ -30922,7 +30922,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Karamelo.jpg"
+    logo: "../assets/mygrow-search-images/Karamelo.jpg"
   },
   {
     index: "2379",
@@ -30935,7 +30935,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Soul_Assassin_OG.jpg"
+    logo: "../assets/mygrow-search-images/Soul_Assassin_OG.jpg"
   },
   {
     index: "2380",
@@ -30948,7 +30948,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pure_Afghan.jpg"
+    logo: "../assets/mygrow-search-images/Pure_Afghan.jpg"
   },
   {
     index: "2381",
@@ -30961,7 +30961,7 @@ var data = [
     Hybrid:"60% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Royal_Dwarf.jpg"
+    logo: "../assets/mygrow-search-images/Royal_Dwarf.jpg"
   },
   {
     index: "2382",
@@ -30974,7 +30974,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mandarin_Temple.jpg"
+    logo: "../assets/mygrow-search-images/Mandarin_Temple.jpg"
   },
   {
     index: "2383",
@@ -30987,7 +30987,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mighty_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Mighty_Glue.jpg"
   },
   {
     index: "2384",
@@ -31000,7 +31000,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chocolate_Rain.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Rain.jpg"
   },
   {
     index: "2385",
@@ -31013,7 +31013,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Richie_Rich.jpg"
+    logo: "../assets/mygrow-search-images/Richie_Rich.jpg"
   },
   {
     index: "2386",
@@ -31026,7 +31026,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Sourlope.jpg"
+    logo: "../assets/mygrow-search-images/Sourlope.jpg"
   },
   {
     index: "2387",
@@ -31039,7 +31039,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/SleeSkunk.jpg"
+    logo: "../assets/mygrow-search-images/SleeSkunk.jpg"
   },
   {
     index: "2388",
@@ -31052,7 +31052,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Thai_Tanic.jpg"
+    logo: "../assets/mygrow-search-images/Thai_Tanic.jpg"
   },
   {
     index: "2389",
@@ -31065,7 +31065,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Blueberry_Cough.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Cough.jpg"
   },
   {
     index: "2390",
@@ -31078,7 +31078,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Skunky_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Skunky_Diesel.jpg"
   },
   {
     index: "2391",
@@ -31091,7 +31091,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Club_69.jpg"
+    logo: "../assets/mygrow-search-images/Club_69.jpg"
   },
   {
     index: "2392",
@@ -31104,7 +31104,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cherry_Vanilla_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Vanilla_Cookies.jpg"
   },
   {
     index: "2393",
@@ -31117,7 +31117,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chocolate_Drop.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Drop.jpg"
   },
   {
     index: "2394",
@@ -31130,7 +31130,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Chocolate_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Skunk.jpg"
   },
   {
     index: "2395",
@@ -31143,7 +31143,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Skywalker_Alien.jpg"
+    logo: "../assets/mygrow-search-images/Skywalker_Alien.jpg"
   },
   {
     index: "2396",
@@ -31156,7 +31156,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chocolate_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Glue.jpg"
   },
   {
     index: "2397",
@@ -31169,7 +31169,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Sauce.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Sauce.jpg"
   },
   {
     index: "2398",
@@ -31182,7 +31182,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Jah_Goo.jpg"
+    logo: "../assets/mygrow-search-images/Jah_Goo.jpg"
   },
   {
     index: "2399",
@@ -31195,7 +31195,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Joliet_Jake.jpg"
+    logo: "../assets/mygrow-search-images/Joliet_Jake.jpg"
   },
   {
     index: "2400",
@@ -31208,7 +31208,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Jawa_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Jawa_Pie.jpg"
   },
   {
     index: "2401",
@@ -31221,7 +31221,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mountain_Thunder.jpg"
+    logo: "../assets/mygrow-search-images/Mountain_Thunder.jpg"
   },
   {
     index: "2402",
@@ -31234,7 +31234,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Mud_Bite.jpg"
+    logo: "../assets/mygrow-search-images/Mud_Bite.jpg"
   },
   {
     index: "2403",
@@ -31247,7 +31247,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pinot_Green.jpg"
+    logo: "../assets/mygrow-search-images/Pinot_Green.jpg"
   },
   {
     index: "2404",
@@ -31260,7 +31260,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Guava_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Guava_Cake.jpg"
   },
   {
     index: "2405",
@@ -31273,7 +31273,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Tangerine_Man.jpg"
+    logo: "../assets/mygrow-search-images/Tangerine_Man.jpg"
   },
   {
     index: "2406",
@@ -31286,7 +31286,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kubbie_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Kubbie_Kush.jpg"
   },
   {
     index: "2407",
@@ -31299,7 +31299,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Martian_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Martian_Kush.jpg"
   },
   {
     index: "2408",
@@ -31312,7 +31312,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Morning_Glory.jpg"
+    logo: "../assets/mygrow-search-images/Morning_Glory.jpg"
   },
   {
     index: "2409",
@@ -31325,7 +31325,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sticky_Icky.jpg"
+    logo: "../assets/mygrow-search-images/Sticky_Icky.jpg"
   },
   {
     index: "2410",
@@ -31338,7 +31338,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Inferno_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Inferno_Haze.jpg"
   },
   {
     index: "2411",
@@ -31351,7 +31351,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Motavation.jpg"
+    logo: "../assets/mygrow-search-images/Motavation.jpg"
   },
   {
     index: "2412",
@@ -31364,7 +31364,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Cronuts.jpg"
+    logo: "../assets/mygrow-search-images/Cronuts.jpg"
   },
   {
     index: "2413",
@@ -31377,7 +31377,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Moonbeam.jpg"
+    logo: "../assets/mygrow-search-images/Moonbeam.jpg"
   },
   {
     index: "2414",
@@ -31390,7 +31390,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sweet_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Sweet_Berry.jpg"
   },
   {
     index: "2415",
@@ -31403,7 +31403,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Goat.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Goat.jpg"
   },
   {
     index: "2416",
@@ -31416,7 +31416,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Toxic_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Toxic_Punch.jpg"
   },
   {
     index: "2417",
@@ -31429,7 +31429,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Cream_Saverz.jpg"
+    logo: "../assets/mygrow-search-images/Cream_Saverz.jpg"
   },
   {
     index: "2418",
@@ -31442,7 +31442,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Birthday_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Birthday_Cake.jpg"
   },
   {
     index: "2419",
@@ -31455,7 +31455,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Confidential_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Confidential_Wreck.jpg"
   },
   {
     index: "2420",
@@ -31468,7 +31468,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mother_of_All_Cherries.jpg"
+    logo: "../assets/mygrow-search-images/Mother_of_All_Cherries.jpg"
   },
   {
     index: "2421",
@@ -31481,7 +31481,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sugar_Klingon.jpg"
+    logo: "../assets/mygrow-search-images/Sugar_Klingon.jpg"
   },
   {
     index: "2422",
@@ -31494,7 +31494,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/ArcticBlue.jpg"
+    logo: "../assets/mygrow-search-images/ArcticBlue.jpg"
   },
   {
     index: "2423",
@@ -31507,7 +31507,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bubblegum_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Bubblegum_Cookies.jpg"
   },
   {
     index: "2424",
@@ -31520,7 +31520,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Oriental_Express.jpg"
+    logo: "../assets/mygrow-search-images/Oriental_Express.jpg"
   },
   {
     index: "2425",
@@ -31533,7 +31533,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Happy_Rancher.jpg"
+    logo: "../assets/mygrow-search-images/Happy_Rancher.jpg"
   },
   {
     index: "2426",
@@ -31546,7 +31546,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Harlequin_GDP.jpg"
+    logo: "../assets/mygrow-search-images/Harlequin_GDP.jpg"
   },
   {
     index: "2427",
@@ -31559,7 +31559,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Hashplant.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Hashplant.jpg"
   },
   {
     index: "2428",
@@ -31572,7 +31572,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_Zest.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Zest.jpg"
   },
   {
     index: "2429",
@@ -31585,7 +31585,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Dance_World.jpg"
+    logo: "../assets/mygrow-search-images/Dance_World.jpg"
   },
   {
     index: "2430",
@@ -31598,7 +31598,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Pineapple_Sage.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Sage.jpg"
   },
   {
     index: "2431",
@@ -31611,7 +31611,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Mystery_98.jpg"
+    logo: "../assets/mygrow-search-images/Mystery_98.jpg"
   },
   {
     index: "2432",
@@ -31624,7 +31624,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Chocolate_Sap.jpg"
+    logo: "../assets/mygrow-search-images/Chocolate_Sap.jpg"
   },
   {
     index: "2433",
@@ -31637,7 +31637,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pink_Picasso.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Picasso.jpg"
   },
   {
     index: "2434",
@@ -31650,7 +31650,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pink_Hawaiian.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Hawaiian.jpg"
   },
   {
     index: "2435",
@@ -31663,7 +31663,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Limoncello.jpg"
+    logo: "../assets/mygrow-search-images/Limoncello.jpg"
   },
   {
     index: "2436",
@@ -31676,7 +31676,7 @@ var data = [
     Hybrid:"60% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cosmic_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Cosmic_Cookies.jpg"
   },
   {
     index: "2437",
@@ -31689,7 +31689,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Alien.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Alien.jpg"
   },
   {
     index: "2438",
@@ -31702,7 +31702,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_OZ.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_OZ.jpg"
   },
   {
     index: "2439",
@@ -31715,7 +31715,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "4",
-    logo: "assets/mygrow-search-images/60_Day_Wonder.jpg"
+    logo: "../assets/mygrow-search-images/60_Day_Wonder.jpg"
   },
   {
     index: "2440",
@@ -31728,7 +31728,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tally_Mon.jpg"
+    logo: "../assets/mygrow-search-images/Tally_Mon.jpg"
   },
   {
     index: "2441",
@@ -31741,7 +31741,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pakistan_Valley_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Pakistan_Valley_Kush.jpg"
   },
   {
     index: "2442",
@@ -31754,7 +31754,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Pinkman_Goo.jpg"
+    logo: "../assets/mygrow-search-images/Pinkman_Goo.jpg"
   },
   {
     index: "2443",
@@ -31767,7 +31767,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Platinum_Huckleberry_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Platinum_Huckleberry_Cookies.jpg"
   },
   {
     index: "2444",
@@ -31780,7 +31780,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Punxsy_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Punxsy_Punch.jpg"
   },
   {
     index: "2445",
@@ -31793,7 +31793,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/SFV_Dog.jpg"
+    logo: "../assets/mygrow-search-images/SFV_Dog.jpg"
   },
   {
     index: "2446",
@@ -31806,7 +31806,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Banana_Hammock.jpg"
+    logo: "../assets/mygrow-search-images/Banana_Hammock.jpg"
   },
   {
     index: "2447",
@@ -31819,7 +31819,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Oh!_Zone.jpg"
+    logo: "../assets/mygrow-search-images/Oh!_Zone.jpg"
   },
   {
     index: "2448",
@@ -31832,7 +31832,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Layer_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Layer_Cake.jpg"
   },
   {
     index: "2449",
@@ -31845,7 +31845,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Orange_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Haze.jpg"
   },
   {
     index: "2450",
@@ -31858,7 +31858,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Diesel_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Diesel_Dawg.jpg"
   },
   {
     index: "2451",
@@ -31871,7 +31871,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Triple_G.jpg"
+    logo: "../assets/mygrow-search-images/Triple_G.jpg"
   },
   {
     index: "2452",
@@ -31884,7 +31884,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Afghanica.jpg"
+    logo: "../assets/mygrow-search-images/Afghanica.jpg"
   },
   {
     index: "2453",
@@ -31897,7 +31897,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cherry_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Punch.jpg"
   },
   {
     index: "2454",
@@ -31910,7 +31910,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mango_Brulee.jpg"
+    logo: "../assets/mygrow-search-images/Mango_Brulee.jpg"
   },
   {
     index: "2455",
@@ -31923,7 +31923,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/OZ_Kush.jpg"
+    logo: "../assets/mygrow-search-images/OZ_Kush.jpg"
   },
   {
     index: "2456",
@@ -31936,7 +31936,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Saturn_OG.jpg"
+    logo: "../assets/mygrow-search-images/Saturn_OG.jpg"
   },
   {
     index: "2457",
@@ -31949,7 +31949,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Orange_Peel.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Peel.jpg"
   },
   {
     index: "2458",
@@ -31962,7 +31962,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Maui_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Maui_Haze.jpg"
   },
   {
     index: "2459",
@@ -31975,7 +31975,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Jah_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Jah_Kush.jpg"
   },
   {
     index: "2460",
@@ -31988,7 +31988,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Tasty_Waves.jpg"
+    logo: "../assets/mygrow-search-images/Tasty_Waves.jpg"
   },
   {
     index: "2461",
@@ -32001,7 +32001,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Han_Solo_Burger.jpg"
+    logo: "../assets/mygrow-search-images/Han_Solo_Burger.jpg"
   },
   {
     index: "2462",
@@ -32014,7 +32014,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Legend_of_Nigeria.jpg"
+    logo: "../assets/mygrow-search-images/Legend_of_Nigeria.jpg"
   },
   {
     index: "2463",
@@ -32027,7 +32027,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Candy_Rain.jpg"
+    logo: "../assets/mygrow-search-images/Candy_Rain.jpg"
   },
   {
     index: "2464",
@@ -32040,7 +32040,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Kronocaine.jpg"
+    logo: "../assets/mygrow-search-images/Kronocaine.jpg"
   },
   {
     index: "2465",
@@ -32053,7 +32053,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Temple_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Temple_Kush.jpg"
   },
   {
     index: "2466",
@@ -32066,7 +32066,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Black_Runtz.jpg"
+    logo: "../assets/mygrow-search-images/Black_Runtz.jpg"
   },
   {
     index: "2467",
@@ -32079,7 +32079,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Banana_Pudding.jpg"
+    logo: "../assets/mygrow-search-images/Banana_Pudding.jpg"
   },
   {
     index: "2468",
@@ -32092,7 +32092,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Black_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Black_Diesel.jpg"
   },
   {
     index: "2469",
@@ -32105,7 +32105,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Mama_Mia.jpg"
+    logo: "../assets/mygrow-search-images/Mama_Mia.jpg"
   },
   {
     index: "2470",
@@ -32118,7 +32118,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Tranquil_Elephantizer_Remix.jpg"
+    logo: "../assets/mygrow-search-images/Tranquil_Elephantizer_Remix.jpg"
   },
   {
     index: "2471",
@@ -32131,7 +32131,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/OGKZ.jpg"
+    logo: "../assets/mygrow-search-images/OGKZ.jpg"
   },
   {
     index: "2472",
@@ -32144,7 +32144,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "15",
-    logo: "assets/mygrow-search-images/Super_A5.jpg"
+    logo: "../assets/mygrow-search-images/Super_A5.jpg"
   },
   {
     index: "2473",
@@ -32157,7 +32157,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Glue.jpg"
   },
   {
     index: "2474",
@@ -32170,7 +32170,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cream_Soda.jpg"
+    logo: "../assets/mygrow-search-images/Cream_Soda.jpg"
   },
   {
     index: "2475",
@@ -32183,7 +32183,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Moolah.jpg"
+    logo: "../assets/mygrow-search-images/Moolah.jpg"
   },
   {
     index: "2476",
@@ -32196,7 +32196,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Tropicana_Jet_Fuel.jpg"
+    logo: "../assets/mygrow-search-images/Tropicana_Jet_Fuel.jpg"
   },
   {
     index: "2477",
@@ -32209,7 +32209,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Papaya_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Papaya_Cake.jpg"
   },
   {
     index: "2478",
@@ -32222,7 +32222,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Orange_Sunshine.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Sunshine.jpg"
   },
   {
     index: "2479",
@@ -32235,7 +32235,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lemon_Grenade.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Grenade.jpg"
   },
   {
     index: "2480",
@@ -32248,7 +32248,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Strawberry_Nightmare.jpg"
+    logo: "../assets/mygrow-search-images/Strawberry_Nightmare.jpg"
   },
   {
     index: "2481",
@@ -32261,7 +32261,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kush_Sorbet.jpg"
+    logo: "../assets/mygrow-search-images/Kush_Sorbet.jpg"
   },
   {
     index: "2482",
@@ -32274,7 +32274,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jetlato.jpg"
+    logo: "../assets/mygrow-search-images/Jetlato.jpg"
   },
   {
     index: "2483",
@@ -32287,7 +32287,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cookie_Puss.jpg"
+    logo: "../assets/mygrow-search-images/Cookie_Puss.jpg"
   },
   {
     index: "2484",
@@ -32300,7 +32300,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Swiss_Tsunami.jpg"
+    logo: "../assets/mygrow-search-images/Swiss_Tsunami.jpg"
   },
   {
     index: "2485",
@@ -32313,7 +32313,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gelato_31.jpg"
+    logo: "../assets/mygrow-search-images/Gelato_31.jpg"
   },
   {
     index: "2486",
@@ -32326,7 +32326,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Banana_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Banana_Diesel.jpg"
   },
   {
     index: "2487",
@@ -32339,7 +32339,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Fruity_Chronic_Juice.jpg"
+    logo: "../assets/mygrow-search-images/Fruity_Chronic_Juice.jpg"
   },
   {
     index: "2488",
@@ -32352,7 +32352,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Forum_Cut_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Forum_Cut_Cookies.jpg"
   },
   {
     index: "2489",
@@ -32365,7 +32365,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/White_Ice.jpg"
+    logo: "../assets/mygrow-search-images/White_Ice.jpg"
   },
   {
     index: "2490",
@@ -32378,7 +32378,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Chewbacca.jpg"
+    logo: "../assets/mygrow-search-images/Chewbacca.jpg"
   },
   {
     index: "2491",
@@ -32391,7 +32391,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Fruitylicious.jpg"
+    logo: "../assets/mygrow-search-images/Fruitylicious.jpg"
   },
   {
     index: "2492",
@@ -32404,7 +32404,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Whip_It.jpg"
+    logo: "../assets/mygrow-search-images/Whip_It.jpg"
   },
   {
     index: "2493",
@@ -32417,7 +32417,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/North_American_Sativa.jpg"
+    logo: "../assets/mygrow-search-images/North_American_Sativa.jpg"
   },
   {
     index: "2494",
@@ -32430,7 +32430,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Watermelon_Runtz.jpg"
+    logo: "../assets/mygrow-search-images/Watermelon_Runtz.jpg"
   },
   {
     index: "2495",
@@ -32443,7 +32443,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Shape_Shifter.jpg"
+    logo: "../assets/mygrow-search-images/Shape_Shifter.jpg"
   },
   {
     index: "2496",
@@ -32456,7 +32456,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Glueball.jpg"
+    logo: "../assets/mygrow-search-images/Glueball.jpg"
   },
   {
     index: "2497",
@@ -32469,7 +32469,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Maui.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Maui.jpg"
   },
   {
     index: "2498",
@@ -32482,7 +32482,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Citrus_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Citrus_Kush.jpg"
   },
   {
     index: "2499",
@@ -32495,7 +32495,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Flo_Walker.jpg"
+    logo: "../assets/mygrow-search-images/Flo_Walker.jpg"
   },
   {
     index: "2500",
@@ -32508,7 +32508,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hashbar_OG.jpg"
+    logo: "../assets/mygrow-search-images/Hashbar_OG.jpg"
   },
   {
     index: "2501",
@@ -32521,7 +32521,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Boax.jpg"
+    logo: "../assets/mygrow-search-images/Boax.jpg"
   },
   {
     index: "2502",
@@ -32534,7 +32534,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/M-39.jpg"
+    logo: "../assets/mygrow-search-images/M-39.jpg"
   },
   {
     index: "2503",
@@ -32547,7 +32547,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Malibu_OG.jpg"
+    logo: "../assets/mygrow-search-images/Malibu_OG.jpg"
   },
   {
     index: "2504",
@@ -32560,7 +32560,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Wildberry.jpg"
+    logo: "../assets/mygrow-search-images/Wildberry.jpg"
   },
   {
     index: "2505",
@@ -32573,7 +32573,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Hi-Octane.jpg"
+    logo: "../assets/mygrow-search-images/Hi-Octane.jpg"
   },
   {
     index: "2506",
@@ -32586,7 +32586,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Mango.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Mango.jpg"
   },
   {
     index: "2507",
@@ -32599,7 +32599,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Witches_Weed.jpg"
+    logo: "../assets/mygrow-search-images/Witches_Weed.jpg"
   },
   {
     index: "2508",
@@ -32612,7 +32612,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Royal_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Royal_Cookies.jpg"
   },
   {
     index: "2509",
@@ -32625,7 +32625,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Central_American.jpg"
+    logo: "../assets/mygrow-search-images/Central_American.jpg"
   },
   {
     index: "2510",
@@ -32638,7 +32638,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pootie_Tang.jpg"
+    logo: "../assets/mygrow-search-images/Pootie_Tang.jpg"
   },
   {
     index: "2511",
@@ -32651,7 +32651,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mojo.jpg"
+    logo: "../assets/mygrow-search-images/Mojo.jpg"
   },
   {
     index: "2512",
@@ -32664,7 +32664,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Super_Sour_OG.jpg"
+    logo: "../assets/mygrow-search-images/Super_Sour_OG.jpg"
   },
   {
     index: "2513",
@@ -32677,7 +32677,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Swish.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Swish.jpg"
   },
   {
     index: "2514",
@@ -32690,7 +32690,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Big_City_Lights.jpg"
+    logo: "../assets/mygrow-search-images/Big_City_Lights.jpg"
   },
   {
     index: "2515",
@@ -32703,7 +32703,7 @@ var data = [
     Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Cookies.jpg"
   },
   {
     index: "2516",
@@ -32716,7 +32716,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Guava.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Guava.jpg"
   },
   {
     index: "2517",
@@ -32729,7 +32729,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Sugar_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Sugar_Cookies.jpg"
   },
   {
     index: "2518",
@@ -32742,7 +32742,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Bob_Saget.jpg"
+    logo: "../assets/mygrow-search-images/Bob_Saget.jpg"
   },
   {
     index: "2519",
@@ -32755,7 +32755,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/The_REM.jpg"
+    logo: "../assets/mygrow-search-images/The_REM.jpg"
   },
   {
     index: "2520",
@@ -32768,7 +32768,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Asteroid_OG.jpg"
+    logo: "../assets/mygrow-search-images/Asteroid_OG.jpg"
   },
   {
     index: "2521",
@@ -32781,7 +32781,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Bubonic_Chronic.jpg"
+    logo: "../assets/mygrow-search-images/Bubonic_Chronic.jpg"
   },
   {
     index: "2522",
@@ -32794,7 +32794,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Yolo_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Yolo_Berry.jpg"
   },
   {
     index: "2523",
@@ -32807,7 +32807,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Frozen_Grapes.jpg"
+    logo: "../assets/mygrow-search-images/Frozen_Grapes.jpg"
   },
   {
     index: "2524",
@@ -32820,7 +32820,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Night_Terror_OG.jpg"
+    logo: "../assets/mygrow-search-images/Night_Terror_OG.jpg"
   },
   {
     index: "2525",
@@ -32833,7 +32833,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dosalito.jpg"
+    logo: "../assets/mygrow-search-images/Dosalito.jpg"
   },
   {
     index: "2526",
@@ -32846,7 +32846,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/King_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/King_Cookies.jpg"
   },
   {
     index: "2527",
@@ -32859,7 +32859,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Dank_Sinatra.jpg"
+    logo: "../assets/mygrow-search-images/Dank_Sinatra.jpg"
   },
   {
     index: "2528",
@@ -32872,7 +32872,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Nf1.jpg"
+    logo: "../assets/mygrow-search-images/Nf1.jpg"
   },
   {
     index: "2529",
@@ -32885,7 +32885,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Joker's_Grin.jpg"
+    logo: "../assets/mygrow-search-images/Joker's_Grin.jpg"
   },
   {
     index: "2530",
@@ -32898,7 +32898,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lucinda_Williams.jpg"
+    logo: "../assets/mygrow-search-images/Lucinda_Williams.jpg"
   },
   {
     index: "2531",
@@ -32911,7 +32911,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Facewreck.jpg"
+    logo: "../assets/mygrow-search-images/Facewreck.jpg"
   },
   {
     index: "2532",
@@ -32924,7 +32924,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Item_9.jpg"
+    logo: "../assets/mygrow-search-images/Item_9.jpg"
   },
   {
     index: "2533",
@@ -32937,7 +32937,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Bloody_Skunk.jpg"
+    logo: "../assets/mygrow-search-images/Bloody_Skunk.jpg"
   },
   {
     index: "2534",
@@ -32950,7 +32950,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cherry_Garcia.jpg"
+    logo: "../assets/mygrow-search-images/Cherry_Garcia.jpg"
   },
   {
     index: "2535",
@@ -32963,7 +32963,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Don_Mega.jpg"
+    logo: "../assets/mygrow-search-images/Don_Mega.jpg"
   },
   {
     index: "2536",
@@ -32976,7 +32976,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ethos_Apex.jpg"
+    logo: "../assets/mygrow-search-images/Ethos_Apex.jpg"
   },
   {
     index: "2537",
@@ -32989,7 +32989,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tiramisu.jpg"
+    logo: "../assets/mygrow-search-images/Tiramisu.jpg"
   },
   {
     index: "2538",
@@ -33002,7 +33002,7 @@ var data = [
     Hybrid:"",
     Sativa: "90% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Dopium.jpg"
+    logo: "../assets/mygrow-search-images/Dopium.jpg"
   },
   {
     index: "2539",
@@ -33015,7 +33015,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Double_Tangie_Banana.jpg"
+    logo: "../assets/mygrow-search-images/Double_Tangie_Banana.jpg"
   },
   {
     index: "2540",
@@ -33028,7 +33028,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Durban_Berry.jpg"
+    logo: "../assets/mygrow-search-images/Durban_Berry.jpg"
   },
   {
     index: "2541",
@@ -33041,7 +33041,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Daquiri.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Daquiri.jpg"
   },
   {
     index: "2542",
@@ -33054,7 +33054,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Durban_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Durban_Diesel.jpg"
   },
   {
     index: "2543",
@@ -33067,7 +33067,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Durban_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Durban_Cookies.jpg"
   },
   {
     index: "2544",
@@ -33080,7 +33080,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/El_Chapo_OG.jpg"
+    logo: "../assets/mygrow-search-images/El_Chapo_OG.jpg"
   },
   {
     index: "2545",
@@ -33093,7 +33093,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Point_Break.jpg"
+    logo: "../assets/mygrow-search-images/Point_Break.jpg"
   },
   {
     index: "2546",
@@ -33106,7 +33106,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Brightberry_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Brightberry_Cookies.jpg"
   },
   {
     index: "2547",
@@ -33119,7 +33119,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grimace.jpg"
+    logo: "../assets/mygrow-search-images/Grimace.jpg"
   },
   {
     index: "2548",
@@ -33132,7 +33132,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Guard_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Guard_Dawg.jpg"
   },
   {
     index: "2549",
@@ -33145,7 +33145,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gutbuster.jpg"
+    logo: "../assets/mygrow-search-images/Gutbuster.jpg"
   },
   {
     index: "2550",
@@ -33158,7 +33158,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Gumbo.jpg"
+    logo: "../assets/mygrow-search-images/Gumbo.jpg"
   },
   {
     index: "2551",
@@ -33171,7 +33171,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Guptilla.jpg"
+    logo: "../assets/mygrow-search-images/Guptilla.jpg"
   },
   {
     index: "2552",
@@ -33184,7 +33184,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Blue_Monkey.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Monkey.jpg"
   },
   {
     index: "2553",
@@ -33197,7 +33197,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Haleigh's_Hope.jpg"
+    logo: "../assets/mygrow-search-images/Haleigh's_Hope.jpg"
   },
   {
     index: "2554",
@@ -33210,7 +33210,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Haoma.jpg"
+    logo: "../assets/mygrow-search-images/Haoma.jpg"
   },
   {
     index: "2555",
@@ -33223,7 +33223,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Harle-Tsu.jpg"
+    logo: "../assets/mygrow-search-images/Harle-Tsu.jpg"
   },
   {
     index: "2556",
@@ -33236,7 +33236,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Hashplant_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Hashplant_Haze.jpg"
   },
   {
     index: "2557",
@@ -33249,7 +33249,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Hustler_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Hustler_Kush.jpg"
   },
   {
     index: "2558",
@@ -33262,7 +33262,7 @@ var data = [
     Hybrid:"60% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Double_Grape.jpg"
+    logo: "../assets/mygrow-search-images/Double_Grape.jpg"
   },
   {
     index: "2559",
@@ -33275,7 +33275,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Iced_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Iced_Widow.jpg"
   },
   {
     index: "2560",
@@ -33288,7 +33288,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Illuminati_OG.jpg"
+    logo: "../assets/mygrow-search-images/Illuminati_OG.jpg"
   },
   {
     index: "2561",
@@ -33301,7 +33301,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jack_Wreck.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Wreck.jpg"
   },
   {
     index: "2562",
@@ -33314,7 +33314,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Jackalope.jpg"
+    logo: "../assets/mygrow-search-images/Jackalope.jpg"
   },
   {
     index: "2563",
@@ -33327,7 +33327,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jacked_Up.jpg"
+    logo: "../assets/mygrow-search-images/Jacked_Up.jpg"
   },
   {
     index: "2564",
@@ -33340,7 +33340,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sugar_Cone.jpg"
+    logo: "../assets/mygrow-search-images/Sugar_Cone.jpg"
   },
   {
     index: "2565",
@@ -33353,7 +33353,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Jasmine.jpg"
+    logo: "../assets/mygrow-search-images/Jasmine.jpg"
   },
   {
     index: "2566",
@@ -33366,7 +33366,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/JR.jpg"
+    logo: "../assets/mygrow-search-images/JR.jpg"
   },
   {
     index: "2567",
@@ -33379,7 +33379,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Jupiter_OG.jpg"
+    logo: "../assets/mygrow-search-images/Jupiter_OG.jpg"
   },
   {
     index: "2568",
@@ -33392,7 +33392,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Cherry_Sherbert.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Cherry_Sherbert.jpg"
   },
   {
     index: "2569",
@@ -33405,7 +33405,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Tangie_Ghost_Train.jpg"
+    logo: "../assets/mygrow-search-images/Tangie_Ghost_Train.jpg"
   },
   {
     index: "2570",
@@ -33418,7 +33418,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Trueberry.jpg"
+    logo: "../assets/mygrow-search-images/Trueberry.jpg"
   },
   {
     index: "2571",
@@ -33431,7 +33431,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Velvet_Purps.jpg"
+    logo: "../assets/mygrow-search-images/Velvet_Purps.jpg"
   },
   {
     index: "2572",
@@ -33444,7 +33444,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Wabanaki.jpg"
+    logo: "../assets/mygrow-search-images/Wabanaki.jpg"
   },
   {
     index: "2573",
@@ -33457,7 +33457,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Wookies.jpg"
+    logo: "../assets/mygrow-search-images/Wookies.jpg"
   },
   {
     index: "2574",
@@ -33470,7 +33470,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Crockett's_Sour_Tangie.jpg"
+    logo: "../assets/mygrow-search-images/Crockett's_Sour_Tangie.jpg"
   },
   {
     index: "2575",
@@ -33483,7 +33483,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Crumbled_Lime.jpg"
+    logo: "../assets/mygrow-search-images/Crumbled_Lime.jpg"
   },
   {
     index: "2576",
@@ -33496,7 +33496,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Cypress_OG.jpg"
+    logo: "../assets/mygrow-search-images/Cypress_OG.jpg"
   },
   {
     index: "2577",
@@ -33509,7 +33509,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Desert_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Desert_Diesel.jpg"
   },
   {
     index: "2578",
@@ -33522,7 +33522,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Designer_OG.jpg"
+    logo: "../assets/mygrow-search-images/Designer_OG.jpg"
   },
   {
     index: "2579",
@@ -33535,7 +33535,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Devil.jpg"
+    logo: "../assets/mygrow-search-images/Devil.jpg"
   },
   {
     index: "2580",
@@ -33548,7 +33548,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Diesel_Dough.jpg"
+    logo: "../assets/mygrow-search-images/Diesel_Dough.jpg"
   },
   {
     index: "2581",
@@ -33561,7 +33561,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dirt_Nap.jpg"
+    logo: "../assets/mygrow-search-images/Dirt_Nap.jpg"
   },
   {
     index: "2582",
@@ -33574,7 +33574,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Doc_Holliday.jpg"
+    logo: "../assets/mygrow-search-images/Doc_Holliday.jpg"
   },
   {
     index: "2583",
@@ -33587,7 +33587,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Maui_Apple_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Maui_Apple_Diesel.jpg"
   },
   {
     index: "2584",
@@ -33600,7 +33600,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Don's_Ghost.jpg"
+    logo: "../assets/mygrow-search-images/Don's_Ghost.jpg"
   },
   {
     index: "2585",
@@ -33613,7 +33613,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dr.Greenthumb's_Em-Dog.jpg"
+    logo: "../assets/mygrow-search-images/Dr.Greenthumb's_Em-Dog.jpg"
   },
   {
     index: "2586",
@@ -33626,7 +33626,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dragon_Fruit.jpg"
+    logo: "../assets/mygrow-search-images/Dragon_Fruit.jpg"
   },
   {
     index: "2587",
@@ -33639,7 +33639,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kosher_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Kosher_Dawg.jpg"
   },
   {
     index: "2588",
@@ -33652,7 +33652,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Durian.jpg"
+    logo: "../assets/mygrow-search-images/Durian.jpg"
   },
   {
     index: "2589",
@@ -33665,7 +33665,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Elektra.jpg"
+    logo: "../assets/mygrow-search-images/Elektra.jpg"
   },
   {
     index: "2590",
@@ -33678,7 +33678,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Exodus_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Exodus_Kush.jpg"
   },
   {
     index: "2591",
@@ -33691,7 +33691,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Turtle_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Turtle_Pie.jpg"
   },
   {
     index: "2592",
@@ -33704,7 +33704,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Fall_'97.jpg"
+    logo: "../assets/mygrow-search-images/Fall_'97.jpg"
   },
   {
     index: "2593",
@@ -33717,7 +33717,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bubba_Thunder_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Bubba_Thunder_Kush.jpg"
   },
   {
     index: "2594",
@@ -33730,7 +33730,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Frosted_Cherry_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Frosted_Cherry_Cookies.jpg"
   },
   {
     index: "2595",
@@ -33743,7 +33743,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Frozen_Tangerines.jpg"
+    logo: "../assets/mygrow-search-images/Frozen_Tangerines.jpg"
   },
   {
     index: "2596",
@@ -33756,7 +33756,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Kosher_Tangie_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Kosher_Tangie_Kush.jpg"
   },
   {
     index: "2597",
@@ -33769,7 +33769,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Apex.jpg"
+    logo: "../assets/mygrow-search-images/Apex.jpg"
   },
   {
     index: "2598",
@@ -33782,7 +33782,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/GlueChee.jpg"
+    logo: "../assets/mygrow-search-images/GlueChee.jpg"
   },
   {
     index: "2599",
@@ -33795,7 +33795,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Gorilla_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Blue.jpg"
   },
   {
     index: "2600",
@@ -33808,7 +33808,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Gorilla_Breath.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Breath.jpg"
   },
   {
     index: "2601",
@@ -33821,7 +33821,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Gorilla_Grapes.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Grapes.jpg"
   },
   {
     index: "2602",
@@ -33834,7 +33834,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Granola_Funk.jpg"
+    logo: "../assets/mygrow-search-images/Granola_Funk.jpg"
   },
   {
     index: "2603",
@@ -33847,7 +33847,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Grape_God_Bud.jpg"
+    logo: "../assets/mygrow-search-images/Grape_God_Bud.jpg"
   },
   {
     index: "2604",
@@ -33860,7 +33860,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/MAC.jpg"
+    logo: "../assets/mygrow-search-images/MAC.jpg"
   },
   {
     index: "2605",
@@ -33873,7 +33873,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Eleven_Roses.jpg"
+    logo: "../assets/mygrow-search-images/Eleven_Roses.jpg"
   },
   {
     index: "2606",
@@ -33886,7 +33886,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Huckleberry_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Huckleberry_Diesel.jpg"
   },
   {
     index: "2607",
@@ -33899,7 +33899,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Jackpot.jpg"
+    logo: "../assets/mygrow-search-images/Jackpot.jpg"
   },
   {
     index: "2608",
@@ -33912,7 +33912,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Atomic_Apple.jpg"
+    logo: "../assets/mygrow-search-images/Atomic_Apple.jpg"
   },
   {
     index: "2609",
@@ -33925,7 +33925,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Horchata.jpg"
+    logo: "../assets/mygrow-search-images/Horchata.jpg"
   },
   {
     index: "2610",
@@ -33938,7 +33938,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Spec_Ops.jpg"
+    logo: "../assets/mygrow-search-images/Spec_Ops.jpg"
   },
   {
     index: "2611",
@@ -33951,7 +33951,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lifter.jpg"
+    logo: "../assets/mygrow-search-images/Lifter.jpg"
   },
   {
     index: "2612",
@@ -33964,7 +33964,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Loopy_Fruit.jpg"
+    logo: "../assets/mygrow-search-images/Loopy_Fruit.jpg"
   },
   {
     index: "2613",
@@ -33977,7 +33977,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Love_Boat.jpg"
+    logo: "../assets/mygrow-search-images/Love_Boat.jpg"
   },
   {
     index: "2614",
@@ -33990,7 +33990,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Love_Triangle.jpg"
+    logo: "../assets/mygrow-search-images/Love_Triangle.jpg"
   },
   {
     index: "2615",
@@ -34003,7 +34003,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Mag_91.jpg"
+    logo: "../assets/mygrow-search-images/Mag_91.jpg"
   },
   {
     index: "2616",
@@ -34016,7 +34016,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Magnificent_Mile.jpg"
+    logo: "../assets/mygrow-search-images/Magnificent_Mile.jpg"
   },
   {
     index: "2617",
@@ -34029,7 +34029,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Magnum_Opus.jpg"
+    logo: "../assets/mygrow-search-images/Magnum_Opus.jpg"
   },
   {
     index: "2618",
@@ -34042,7 +34042,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Beast_Mode_2.0.jpg"
+    logo: "../assets/mygrow-search-images/Beast_Mode_2.0.jpg"
   },
   {
     index: "2619",
@@ -34055,7 +34055,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemongrass.jpg"
+    logo: "../assets/mygrow-search-images/Lemongrass.jpg"
   },
   {
     index: "2620",
@@ -34068,7 +34068,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Himalayan_Gold.jpg"
+    logo: "../assets/mygrow-search-images/Himalayan_Gold.jpg"
   },
   {
     index: "2621",
@@ -34081,7 +34081,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mandarin_Dreams.jpg"
+    logo: "../assets/mygrow-search-images/Mandarin_Dreams.jpg"
   },
   {
     index: "2622",
@@ -34094,7 +34094,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Mandarin_Jack.jpg"
+    logo: "../assets/mygrow-search-images/Mandarin_Jack.jpg"
   },
   {
     index: "2623",
@@ -34107,7 +34107,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Brulee.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Brulee.jpg"
   },
   {
     index: "2624",
@@ -34120,7 +34120,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Moon_Drops.jpg"
+    logo: "../assets/mygrow-search-images/Moon_Drops.jpg"
   },
   {
     index: "2625",
@@ -34133,7 +34133,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "18",
-    logo: "assets/mygrow-search-images/Kerala.jpg"
+    logo: "../assets/mygrow-search-images/Kerala.jpg"
   },
   {
     index: "2626",
@@ -34146,7 +34146,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Kreamy_Karamel.jpg"
+    logo: "../assets/mygrow-search-images/Kreamy_Karamel.jpg"
   },
   {
     index: "2627",
@@ -34159,7 +34159,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Kush-N-Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Kush-N-Cheese.jpg"
   },
   {
     index: "2628",
@@ -34172,7 +34172,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/LA_Cake.jpg"
+    logo: "../assets/mygrow-search-images/LA_Cake.jpg"
   },
   {
     index: "2629",
@@ -34185,7 +34185,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Morning_Flight.jpg"
+    logo: "../assets/mygrow-search-images/Morning_Flight.jpg"
   },
   {
     index: "2630",
@@ -34198,7 +34198,7 @@ var data = [
     Hybrid:"",
     Sativa: "85% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Mountain_Temple.jpg"
+    logo: "../assets/mygrow-search-images/Mountain_Temple.jpg"
   },
   {
     index: "2631",
@@ -34211,7 +34211,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Neroli_91.jpg"
+    logo: "../assets/mygrow-search-images/Neroli_91.jpg"
   },
   {
     index: "2632",
@@ -34224,7 +34224,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Newberry.jpg"
+    logo: "../assets/mygrow-search-images/Newberry.jpg"
   },
   {
     index: "2633",
@@ -34237,7 +34237,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Nightmare_OG.jpg"
+    logo: "../assets/mygrow-search-images/Nightmare_OG.jpg"
   },
   {
     index: "2634",
@@ -34250,7 +34250,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/NorCal_Purps.jpg"
+    logo: "../assets/mygrow-search-images/NorCal_Purps.jpg"
   },
   {
     index: "2635",
@@ -34263,7 +34263,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ocean_Grown_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Ocean_Grown_Cookies.jpg"
   },
   {
     index: "2636",
@@ -34276,7 +34276,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/OG_Lime_Killer.jpg"
+    logo: "../assets/mygrow-search-images/OG_Lime_Killer.jpg"
   },
   {
     index: "2637",
@@ -34289,7 +34289,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Ol'Betsy.jpg"
+    logo: "../assets/mygrow-search-images/Ol'Betsy.jpg"
   },
   {
     index: "2638",
@@ -34302,7 +34302,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Orange_Fanta.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Fanta.jpg"
   },
   {
     index: "2639",
@@ -34315,7 +34315,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Harambe.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Harambe.jpg"
   },
   {
     index: "2640",
@@ -34328,7 +34328,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Oregon_Lemons.jpg"
+    logo: "../assets/mygrow-search-images/Oregon_Lemons.jpg"
   },
   {
     index: "2641",
@@ -34341,7 +34341,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ozma.jpg"
+    logo: "../assets/mygrow-search-images/Ozma.jpg"
   },
   {
     index: "2642",
@@ -34354,7 +34354,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pacific_Frost.jpg"
+    logo: "../assets/mygrow-search-images/Pacific_Frost.jpg"
   },
   {
     index: "2643",
@@ -34367,7 +34367,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Paradise_Waits.jpg"
+    logo: "../assets/mygrow-search-images/Paradise_Waits.jpg"
   },
   {
     index: "2644",
@@ -34380,7 +34380,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/PB_Soufflé.jpg"
+    logo: "../assets/mygrow-search-images/PB_Soufflé.jpg"
   },
   {
     index: "2645",
@@ -34393,7 +34393,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Dark_Plasma.jpg"
+    logo: "../assets/mygrow-search-images/Dark_Plasma.jpg"
   },
   {
     index: "2646",
@@ -34406,7 +34406,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Pie_Hoe.jpg"
+    logo: "../assets/mygrow-search-images/Pie_Hoe.jpg"
   },
   {
     index: "2647",
@@ -34419,7 +34419,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Plum_Dawg_Millionaire.jpg"
+    logo: "../assets/mygrow-search-images/Plum_Dawg_Millionaire.jpg"
   },
   {
     index: "2648",
@@ -34432,7 +34432,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Powernap.jpg"
+    logo: "../assets/mygrow-search-images/Powernap.jpg"
   },
   {
     index: "2649",
@@ -34445,7 +34445,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Puck_Yeah.jpg"
+    logo: "../assets/mygrow-search-images/Puck_Yeah.jpg"
   },
   {
     index: "2650",
@@ -34458,7 +34458,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Inner_Chi.jpg"
+    logo: "../assets/mygrow-search-images/Inner_Chi.jpg"
   },
   {
     index: "2651",
@@ -34471,7 +34471,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Grape_Crinkle.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Crinkle.jpg"
   },
   {
     index: "2652",
@@ -34484,7 +34484,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Gummy.jpg"
+    logo: "../assets/mygrow-search-images/White_Gummy.jpg"
   },
   {
     index: "2653",
@@ -34497,7 +34497,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Purple_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Glue.jpg"
   },
   {
     index: "2654",
@@ -34510,7 +34510,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Killer.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Killer.jpg"
   },
   {
     index: "2655",
@@ -34523,7 +34523,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Moby_Dick.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Moby_Dick.jpg"
   },
   {
     index: "2656",
@@ -34536,7 +34536,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Green_Spirit.jpg"
+    logo: "../assets/mygrow-search-images/Green_Spirit.jpg"
   },
   {
     index: "2657",
@@ -34549,7 +34549,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Kitchen_Sink.jpg"
+    logo: "../assets/mygrow-search-images/Kitchen_Sink.jpg"
   },
   {
     index: "2658",
@@ -34562,7 +34562,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Pie.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Pie.jpg"
   },
   {
     index: "2659",
@@ -34575,7 +34575,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Purple_Unicorn.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Unicorn.jpg"
   },
   {
     index: "2660",
@@ -34588,7 +34588,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Quad_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Quad_Dawg.jpg"
   },
   {
     index: "2661",
@@ -34601,7 +34601,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Raspberry_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/Raspberry_Diesel.jpg"
   },
   {
     index: "2662",
@@ -34614,7 +34614,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Raspberry_Tart.jpg"
+    logo: "../assets/mygrow-search-images/Raspberry_Tart.jpg"
   },
   {
     index: "2663",
@@ -34627,7 +34627,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Royal_Salute.jpg"
+    logo: "../assets/mygrow-search-images/Royal_Salute.jpg"
   },
   {
     index: "2664",
@@ -34640,7 +34640,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ruby_Rose.jpg"
+    logo: "../assets/mygrow-search-images/Ruby_Rose.jpg"
   },
   {
     index: "2665",
@@ -34653,7 +34653,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Russian_Roulette.jpg"
+    logo: "../assets/mygrow-search-images/Russian_Roulette.jpg"
   },
   {
     index: "2666",
@@ -34666,7 +34666,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Merlot_OG.jpg"
+    logo: "../assets/mygrow-search-images/Merlot_OG.jpg"
   },
   {
     index: "2667",
@@ -34679,7 +34679,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Stomper.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Stomper.jpg"
   },
   {
     index: "2668",
@@ -34692,7 +34692,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Samoa_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Samoa_Kush.jpg"
   },
   {
     index: "2669",
@@ -34705,7 +34705,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Serious_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Serious_Kush.jpg"
   },
   {
     index: "2670",
@@ -34718,7 +34718,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Shaman's_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Shaman's_Dream.jpg"
   },
   {
     index: "2671",
@@ -34731,7 +34731,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Shark_Widow.jpg"
+    logo: "../assets/mygrow-search-images/Shark_Widow.jpg"
   },
   {
     index: "2672",
@@ -34744,7 +34744,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Short_and_Sweet.jpg"
+    logo: "../assets/mygrow-search-images/Short_and_Sweet.jpg"
   },
   {
     index: "2673",
@@ -34757,7 +34757,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Silver_Cheese.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Cheese.jpg"
   },
   {
     index: "2674",
@@ -34770,7 +34770,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Silver_Mountain.jpg"
+    logo: "../assets/mygrow-search-images/Silver_Mountain.jpg"
   },
   {
     index: "2675",
@@ -34783,7 +34783,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sorbet_Dreams.jpg"
+    logo: "../assets/mygrow-search-images/Sorbet_Dreams.jpg"
   },
   {
     index: "2676",
@@ -34796,7 +34796,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sour_Kosher.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Kosher.jpg"
   },
   {
     index: "2677",
@@ -34809,7 +34809,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sour_Lemons.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Lemons.jpg"
   },
   {
     index: "2678",
@@ -34822,7 +34822,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Indigo.jpg"
+    logo: "../assets/mygrow-search-images/Indigo.jpg"
   },
   {
     index: "2679",
@@ -34835,7 +34835,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Strawberry.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Strawberry.jpg"
   },
   {
     index: "2680",
@@ -34848,7 +34848,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Peanut_Butter_Crunch.jpg"
+    logo: "../assets/mygrow-search-images/Peanut_Butter_Crunch.jpg"
   },
   {
     index: "2681",
@@ -34861,7 +34861,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "16",
-    logo: "assets/mygrow-search-images/Space_Poison.jpg"
+    logo: "../assets/mygrow-search-images/Space_Poison.jpg"
   },
   {
     index: "2682",
@@ -34874,7 +34874,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pineapple_Runtz.jpg"
+    logo: "../assets/mygrow-search-images/Pineapple_Runtz.jpg"
   },
   {
     index: "2683",
@@ -34887,7 +34887,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Sour_Lifesaver.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Lifesaver.jpg"
   },
   {
     index: "2684",
@@ -34900,7 +34900,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Mango_Puff.jpg"
+    logo: "../assets/mygrow-search-images/Mango_Puff.jpg"
   },
   {
     index: "2685",
@@ -34913,7 +34913,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Smoothie.jpg"
+    logo: "../assets/mygrow-search-images/Smoothie.jpg"
   },
   {
     index: "2686",
@@ -34926,7 +34926,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Sour_Lemon_OG.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Lemon_OG.jpg"
   },
   {
     index: "2687",
@@ -34939,7 +34939,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sorbetto.jpg"
+    logo: "../assets/mygrow-search-images/Sorbetto.jpg"
   },
   {
     index: "2688",
@@ -34952,7 +34952,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Scarface_OG.jpg"
+    logo: "../assets/mygrow-search-images/Scarface_OG.jpg"
   },
   {
     index: "2689",
@@ -34965,7 +34965,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Afghan_Express.jpg"
+    logo: "../assets/mygrow-search-images/Afghan_Express.jpg"
   },
   {
     index: "2690",
@@ -34978,7 +34978,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Banana_MAC.jpg"
+    logo: "../assets/mygrow-search-images/Banana_MAC.jpg"
   },
   {
     index: "2691",
@@ -34991,7 +34991,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Jock_Horror.jpg"
+    logo: "../assets/mygrow-search-images/Jock_Horror.jpg"
   },
   {
     index: "2692",
@@ -35004,7 +35004,7 @@ var data = [
     Hybrid:"60% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Pineapple_Express.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Pineapple_Express.jpg"
   },
   {
     index: "2693",
@@ -35017,7 +35017,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Abracadabra.jpg"
+    logo: "../assets/mygrow-search-images/Abracadabra.jpg"
   },
   {
     index: "2694",
@@ -35030,7 +35030,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Grape_Puff.jpg"
+    logo: "../assets/mygrow-search-images/Grape_Puff.jpg"
   },
   {
     index: "2695",
@@ -35043,7 +35043,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Scoops.jpg"
+    logo: "../assets/mygrow-search-images/Scoops.jpg"
   },
   {
     index: "2696",
@@ -35056,7 +35056,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Underdog_OG.jpg"
+    logo: "../assets/mygrow-search-images/Underdog_OG.jpg"
   },
   {
     index: "2697",
@@ -35069,7 +35069,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/El_Chapo.jpg"
+    logo: "../assets/mygrow-search-images/El_Chapo.jpg"
   },
   {
     index: "2698",
@@ -35082,7 +35082,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Thunder_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Thunder_Cookies.jpg"
   },
   {
     index: "2699",
@@ -35095,7 +35095,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/BTY_OG.jpg"
+    logo: "../assets/mygrow-search-images/BTY_OG.jpg"
   },
   {
     index: "2700",
@@ -35108,7 +35108,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "12",
-    logo: "assets/mygrow-search-images/Grapefruit_Sour_Dream.jpg"
+    logo: "../assets/mygrow-search-images/Grapefruit_Sour_Dream.jpg"
   },
   {
     index: "2701",
@@ -35121,7 +35121,7 @@ var data = [
     Hybrid:"",
     Sativa: "75% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Jack_Plant.jpg"
+    logo: "../assets/mygrow-search-images/Jack_Plant.jpg"
   },
   {
     index: "2702",
@@ -35134,7 +35134,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Honey_Badger_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Honey_Badger_Haze.jpg"
   },
   {
     index: "2703",
@@ -35147,7 +35147,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Blue_Suede_Shoes.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Suede_Shoes.jpg"
   },
   {
     index: "2704",
@@ -35160,7 +35160,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Colin_OG.jpg"
+    logo: "../assets/mygrow-search-images/Colin_OG.jpg"
   },
   {
     index: "2705",
@@ -35173,7 +35173,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Quattro_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Quattro_Kush.jpg"
   },
   {
     index: "2706",
@@ -35186,7 +35186,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Palpatine.jpg"
+    logo: "../assets/mygrow-search-images/Palpatine.jpg"
   },
   {
     index: "2707",
@@ -35199,7 +35199,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lilac_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Lilac_Cookies.jpg"
   },
   {
     index: "2708",
@@ -35212,7 +35212,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Golden_Gate_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Gate_Kush.jpg"
   },
   {
     index: "2709",
@@ -35225,7 +35225,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/After_Burner.jpg"
+    logo: "../assets/mygrow-search-images/After_Burner.jpg"
   },
   {
     index: "2710",
@@ -35238,7 +35238,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Training_Day.jpg"
+    logo: "../assets/mygrow-search-images/Training_Day.jpg"
   },
   {
     index: "2711",
@@ -35251,7 +35251,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Natural_Born_Killer.jpg"
+    logo: "../assets/mygrow-search-images/Natural_Born_Killer.jpg"
   },
   {
     index: "2712",
@@ -35264,7 +35264,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Dubb.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Dubb.jpg"
   },
   {
     index: "2713",
@@ -35277,7 +35277,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Modified_Banana.jpg"
+    logo: "../assets/mygrow-search-images/Modified_Banana.jpg"
   },
   {
     index: "2714",
@@ -35290,7 +35290,7 @@ var data = [
     Hybrid:"",
     Sativa: "100% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Watermelon_Zum_Zum.jpg"
+    logo: "../assets/mygrow-search-images/Watermelon_Zum_Zum.jpg"
   },
   {
     index: "2715",
@@ -35303,7 +35303,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Sweeties.jpg"
+    logo: "../assets/mygrow-search-images/Sweeties.jpg"
   },
   {
     index: "2716",
@@ -35316,7 +35316,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Purple_Mayhem.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Mayhem.jpg"
   },
   {
     index: "2717",
@@ -35329,7 +35329,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Alpha_Dawg.jpg"
+    logo: "../assets/mygrow-search-images/Alpha_Dawg.jpg"
   },
   {
     index: "2718",
@@ -35342,7 +35342,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Bubble_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Bubble_Kush.jpg"
   },
   {
     index: "2719",
@@ -35355,7 +35355,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Crackleberry.jpg"
+    logo: "../assets/mygrow-search-images/Crackleberry.jpg"
   },
   {
     index: "2720",
@@ -35368,7 +35368,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cookie_Punch.jpg"
+    logo: "../assets/mygrow-search-images/Cookie_Punch.jpg"
   },
   {
     index: "2721",
@@ -35381,7 +35381,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Clifford.jpg"
+    logo: "../assets/mygrow-search-images/Clifford.jpg"
   },
   {
     index: "2722",
@@ -35394,7 +35394,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Pine_Sol.jpg"
+    logo: "../assets/mygrow-search-images/Pine_Sol.jpg"
   },
   {
     index: "2723",
@@ -35407,7 +35407,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/CB_Diesel.jpg"
+    logo: "../assets/mygrow-search-images/CB_Diesel.jpg"
   },
   {
     index: "2724",
@@ -35420,7 +35420,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Ewok.jpg"
+    logo: "../assets/mygrow-search-images/Ewok.jpg"
   },
   {
     index: "2725",
@@ -35433,7 +35433,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Trinidad_OG.jpg"
+    logo: "../assets/mygrow-search-images/Trinidad_OG.jpg"
   },
   {
     index: "2726",
@@ -35446,7 +35446,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Mendo_Montage.jpg"
+    logo: "../assets/mygrow-search-images/Mendo_Montage.jpg"
   },
   {
     index: "2727",
@@ -35459,7 +35459,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Killa_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Killa_Kush.jpg"
   },
   {
     index: "2728",
@@ -35472,7 +35472,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/KGB.jpg"
+    logo: "../assets/mygrow-search-images/KGB.jpg"
   },
   {
     index: "2729",
@@ -35485,7 +35485,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Glucifer.jpg"
+    logo: "../assets/mygrow-search-images/Glucifer.jpg"
   },
   {
     index: "2730",
@@ -35498,7 +35498,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/White_Lemon.jpg"
+    logo: "../assets/mygrow-search-images/White_Lemon.jpg"
   },
   {
     index: "2731",
@@ -35511,7 +35511,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Golden_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Haze.jpg"
   },
   {
     index: "2732",
@@ -35524,7 +35524,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Arjan's_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Arjan's_Haze.jpg"
   },
   {
     index: "2733",
@@ -35537,7 +35537,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Poison.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Poison.jpg"
   },
   {
     index: "2734",
@@ -35550,7 +35550,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Betty_Hayes.jpg"
+    logo: "../assets/mygrow-search-images/Betty_Hayes.jpg"
   },
   {
     index: "2735",
@@ -35563,7 +35563,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Panchamama.jpg"
+    logo: "../assets/mygrow-search-images/Panchamama.jpg"
   },
   {
     index: "2736",
@@ -35576,7 +35576,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Powder_Keg.jpg"
+    logo: "../assets/mygrow-search-images/Powder_Keg.jpg"
   },
   {
     index: "2737",
@@ -35589,7 +35589,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tangieland.jpg"
+    logo: "../assets/mygrow-search-images/Tangieland.jpg"
   },
   {
     index: "2738",
@@ -35602,7 +35602,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Snowman_OG.jpg"
+    logo: "../assets/mygrow-search-images/Snowman_OG.jpg"
   },
   {
     index: "2739",
@@ -35615,7 +35615,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Sour_Pineapple.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Pineapple.jpg"
   },
   {
     index: "2740",
@@ -35628,7 +35628,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Shrieker.jpg"
+    logo: "../assets/mygrow-search-images/Shrieker.jpg"
   },
   {
     index: "2741",
@@ -35641,7 +35641,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Front_Boss.jpg"
+    logo: "../assets/mygrow-search-images/Front_Boss.jpg"
   },
   {
     index: "2742",
@@ -35654,7 +35654,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Dr._Shakalu.jpg"
+    logo: "../assets/mygrow-search-images/Dr._Shakalu.jpg"
   },
   {
     index: "2743",
@@ -35667,7 +35667,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cake_Frosting.jpg"
+    logo: "../assets/mygrow-search-images/Cake_Frosting.jpg"
   },
   {
     index: "2744",
@@ -35680,7 +35680,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Arise.jpg"
+    logo: "../assets/mygrow-search-images/Arise.jpg"
   },
   {
     index: "2745",
@@ -35693,7 +35693,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Grenadine.jpg"
+    logo: "../assets/mygrow-search-images/Grenadine.jpg"
   },
   {
     index: "2746",
@@ -35706,7 +35706,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Christmas_Tree.jpg"
+    logo: "../assets/mygrow-search-images/Christmas_Tree.jpg"
   },
   {
     index: "2747",
@@ -35719,7 +35719,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Helen_Back.jpg"
+    logo: "../assets/mygrow-search-images/Helen_Back.jpg"
   },
   {
     index: "2748",
@@ -35732,7 +35732,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Long_Peak_Blue.jpg"
+    logo: "../assets/mygrow-search-images/Long_Peak_Blue.jpg"
   },
   {
     index: "2749",
@@ -35745,7 +35745,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Orange_Ghost.jpg"
+    logo: "../assets/mygrow-search-images/Orange_Ghost.jpg"
   },
   {
     index: "2750",
@@ -35758,7 +35758,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Lime_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Lime_Kush.jpg"
   },
   {
     index: "2751",
@@ -35771,7 +35771,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Truth_Band.jpg"
+    logo: "../assets/mygrow-search-images/Truth_Band.jpg"
   },
   {
     index: "2752",
@@ -35784,7 +35784,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Very_Berry_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Very_Berry_Kush.jpg"
   },
   {
     index: "2753",
@@ -35797,7 +35797,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Spray_Tan.jpg"
+    logo: "../assets/mygrow-search-images/Spray_Tan.jpg"
   },
   {
     index: "2754",
@@ -35810,7 +35810,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Sour_Crack.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Crack.jpg"
   },
   {
     index: "2755",
@@ -35823,7 +35823,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pink_Tuna.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Tuna.jpg"
   },
   {
     index: "2756",
@@ -35836,7 +35836,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pop_Tarts.jpg"
+    logo: "../assets/mygrow-search-images/Pop_Tarts.jpg"
   },
   {
     index: "2757",
@@ -35849,7 +35849,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Ripley's_OG.jpg"
+    logo: "../assets/mygrow-search-images/Ripley's_OG.jpg"
   },
   {
     index: "2758",
@@ -35862,7 +35862,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Wedding_Gelato.jpg"
+    logo: "../assets/mygrow-search-images/Wedding_Gelato.jpg"
   },
   {
     index: "2759",
@@ -35875,7 +35875,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Tropical_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Tropical_Kush.jpg"
   },
   {
     index: "2760",
@@ -35888,7 +35888,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/413.jpg"
+    logo: "../assets/mygrow-search-images/413.jpg"
   },
   {
     index: "2761",
@@ -35901,7 +35901,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Power_Africa.jpg"
+    logo: "../assets/mygrow-search-images/Power_Africa.jpg"
   },
   {
     index: "2762",
@@ -35914,7 +35914,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Special_Occasion.jpg"
+    logo: "../assets/mygrow-search-images/Special_Occasion.jpg"
   },
   {
     index: "2763",
@@ -35927,7 +35927,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Purple_Sunset.jpg"
+    logo: "../assets/mygrow-search-images/Purple_Sunset.jpg"
   },
   {
     index: "2764",
@@ -35940,7 +35940,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Obama_Runtz.jpg"
+    logo: "../assets/mygrow-search-images/Obama_Runtz.jpg"
   },
   {
     index: "2765",
@@ -35953,7 +35953,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pumpkin_Kush.jpg"
+    logo: "../assets/mygrow-search-images/Pumpkin_Kush.jpg"
   },
   {
     index: "2766",
@@ -35966,7 +35966,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Biscotti_Gushers.jpg"
+    logo: "../assets/mygrow-search-images/Biscotti_Gushers.jpg"
   },
   {
     index: "2767",
@@ -35979,7 +35979,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Runtz_OG.jpg"
+    logo: "../assets/mygrow-search-images/Runtz_OG.jpg"
   },
   {
     index: "2768",
@@ -35992,7 +35992,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "13",
-    logo: "assets/mygrow-search-images/Blue_Tara.jpg"
+    logo: "../assets/mygrow-search-images/Blue_Tara.jpg"
   },
   {
     index: "2769",
@@ -36005,7 +36005,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Sour_Blue_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Sour_Blue_Glue.jpg"
   },
   {
     index: "2770",
@@ -36018,7 +36018,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Bazookies.jpg"
+    logo: "../assets/mygrow-search-images/Bazookies.jpg"
   },
   {
     index: "2771",
@@ -36031,7 +36031,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Glue_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Glue_Cookies.jpg"
   },
   {
     index: "2772",
@@ -36044,7 +36044,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pink_Runtz.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Runtz.jpg"
   },
   {
     index: "2773",
@@ -36057,7 +36057,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Blueberry_Bubblegum.jpg"
+    logo: "../assets/mygrow-search-images/Blueberry_Bubblegum.jpg"
   },
   {
     index: "2774",
@@ -36070,7 +36070,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "8",
-    logo: "assets/mygrow-search-images/Boonana.jpg"
+    logo: "../assets/mygrow-search-images/Boonana.jpg"
   },
   {
     index: "2775",
@@ -36083,7 +36083,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Strawpicanna.jpg"
+    logo: "../assets/mygrow-search-images/Strawpicanna.jpg"
   },
   {
     index: "2776",
@@ -36096,7 +36096,7 @@ var data = [
     Hybrid:"",
     Sativa: "0% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Cinderella_OG.jpg"
+    logo: "../assets/mygrow-search-images/Cinderella_OG.jpg"
   },
   {
     index: "2777",
@@ -36109,7 +36109,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Bubba_Jones.jpg"
+    logo: "../assets/mygrow-search-images/Bubba_Jones.jpg"
   },
   {
     index: "2778",
@@ -36122,7 +36122,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Raspberry_Cheesecake.jpg"
+    logo: "../assets/mygrow-search-images/Raspberry_Cheesecake.jpg"
   },
   {
     index: "2779",
@@ -36135,7 +36135,7 @@ var data = [
     Hybrid:"0% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Christmas_Cookies.jpg"
+    logo: "../assets/mygrow-search-images/Christmas_Cookies.jpg"
   },
   {
     index: "2780",
@@ -36148,7 +36148,7 @@ var data = [
     Hybrid:"",
     Sativa: "65% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Candy_Glue.jpg"
+    logo: "../assets/mygrow-search-images/Candy_Glue.jpg"
   },
   {
     index: "2781",
@@ -36161,7 +36161,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Apple_Sherbet.jpg"
+    logo: "../assets/mygrow-search-images/Apple_Sherbet.jpg"
   },
   {
     index: "2782",
@@ -36174,7 +36174,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Captain_Crunch.jpg"
+    logo: "../assets/mygrow-search-images/Captain_Crunch.jpg"
   },
   {
     index: "2783",
@@ -36187,7 +36187,7 @@ var data = [
     Hybrid:"60% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Garlotti.jpg"
+    logo: "../assets/mygrow-search-images/Garlotti.jpg"
   },
   {
     index: "2784",
@@ -36200,7 +36200,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Lemon_Cherry_Gelato.jpg"
+    logo: "../assets/mygrow-search-images/Lemon_Cherry_Gelato.jpg"
   },
   {
     index: "2785",
@@ -36213,7 +36213,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pink_Rozay.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Rozay.jpg"
   },
   {
     index: "2786",
@@ -36226,7 +36226,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "9",
-    logo: "assets/mygrow-search-images/Pink_Gorilla.jpg"
+    logo: "../assets/mygrow-search-images/Pink_Gorilla.jpg"
   },
   {
     index: "2787",
@@ -36239,7 +36239,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Princess_Haze.jpg"
+    logo: "../assets/mygrow-search-images/Princess_Haze.jpg"
   },
   {
     index: "2788",
@@ -36252,7 +36252,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "7",
-    logo: "assets/mygrow-search-images/Gorilla_Cake.jpg"
+    logo: "../assets/mygrow-search-images/Gorilla_Cake.jpg"
   },
   {
     index: "2789",
@@ -36265,7 +36265,7 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Dragon's_Fire.jpg"
+    logo: "../assets/mygrow-search-images/Dragon's_Fire.jpg"
   },
   {
     index: "2790",
@@ -36278,7 +36278,7 @@ var data = [
     Hybrid:"",
     Sativa: "60% SATIVA",
     Grow: "11",
-    logo: "assets/mygrow-search-images/Hawaiian_Runtz.jpg"
+    logo: "../assets/mygrow-search-images/Hawaiian_Runtz.jpg"
   },
   {
     index: "2791",
@@ -36291,7 +36291,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "7",
-    logo: "assets/mygrow-search-images/3_Kings.jpg"
+    logo: "../assets/mygrow-search-images/3_Kings.jpg"
   },
   {
     index: "2792",
@@ -36304,6 +36304,6 @@ var data = [
     Hybrid:"",
     Sativa: "",
     Grow: "10",
-    logo: "assets/mygrow-search-images/Cement_Shoes.jpg"
+    logo: "../assets/mygrow-search-images/Cement_Shoes.jpg"
   }
 ];
