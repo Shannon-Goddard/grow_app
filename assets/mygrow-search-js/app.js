@@ -73,16 +73,24 @@ function navFunction() {
 ////////////////////////
 $("#taskButton").click(function() {
 
-  var node = document.getElementById('strain'),
-  //htmlContent = node.innerHTML,
-  textContent = node.textContent;
-  /////Store Plant Height
-  localStorage.plantStrain = textContent;
-  console.log(localStorage.plantStrain)
-  /////Retrieve Plant Height
-  document.getElementById('flowering').innerHTML = localStorage.plantStrain;
+  var node, node1;
 
+  node = document.getElementById('strain'),
+ 
+  
+  textContent = node.textContent;
+
+  /////Store strain
+  localStorage.plantStrain = textContent;
+
+ 
 });
+  /////Retrieve strain
+  document.getElementById("flowering").innerHTML = localStorage.plantStrain;
+
+
+
+
 
 
 
