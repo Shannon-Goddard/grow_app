@@ -1121,9 +1121,8 @@ h6 {
 --------------------------------------------------------------*/
 .customBody {
   background-color:#000;
-  min-height: 100vh!important; 
-  width: 100%!important; 
-  overflow-x: hidden!important
+  width: auto!important; 
+  overflow-x: hidden!important;
   }
 /* Container holding the search image and the text */
 .container-fluid {
