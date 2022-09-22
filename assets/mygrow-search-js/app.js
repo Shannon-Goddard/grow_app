@@ -61,38 +61,17 @@ $("li").on("click" , "a" , function(){
     $("#taskButton").show();
   }
 });
-//Toggle between adding and removing the "responsive" class to the navbar when the user clicks on the icon//
-function navFunction() {
-  var x = document.getElementById("myNavbar");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
-  }
-}
-////////////////////////
+
+////////function to store users selection onto mygrow-saved.html///
 $("#taskButton").click(function() {
-
-  var node, node1;
-
-  node = document.getElementById('strain'),
- 
   
+  var node = document.getElementById('strain'),
+  
+  //htmlContent = node.innerHTML,
   textContent = node.textContent;
-
-  /////Store strain
+  
+  /////Store Plant Height
   localStorage.plantStrain = textContent;
-
- 
+  
 });
-  /////Retrieve strain
-  document.getElementById("flowering").innerHTML = localStorage.plantStrain;
-
-
-
-
-
-
-
-
 
