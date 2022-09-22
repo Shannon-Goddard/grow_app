@@ -1161,7 +1161,7 @@ h6 {
   text-justify: inter-word;
   width:100%;
   inline-size: 100%;
-  position: absolute;
+  position: relative;
   padding: 2.0vmin 2.0vmin calc(20px + 10.0vmin) 2.0vmin;
  }
 #image {
@@ -1214,7 +1214,6 @@ h6 {
   font-weight: bold;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
-
 /*--------------------------------------------------------------
 # taskButton
 --------------------------------------------------------------*/
