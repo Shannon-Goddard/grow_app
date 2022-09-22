@@ -1123,16 +1123,6 @@ h6 {
   background-color:#000;
   width: auto!important; 
   overflow-x: hidden!important;
-  position: absolute;
-  }
-/* Container holding the search image and the text */
-.container-fluid {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
-  text-align: left;
-  color: black;
 }
 #myInput {
   background: transparent;
@@ -1171,7 +1161,7 @@ h6 {
   text-justify: inter-word;
   width:100%;
   inline-size: 100%;
-  position: relative;
+  position: absolute;
   padding: 2.0vmin 2.0vmin calc(20px + 10.0vmin) 2.0vmin;
  }
 #image {
@@ -1224,9 +1214,7 @@ h6 {
   font-weight: bold;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
-.post-IorS {
-  font-weight: bold;
-}
+
 /*--------------------------------------------------------------
 # taskButton
 --------------------------------------------------------------*/
