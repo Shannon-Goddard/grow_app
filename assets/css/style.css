@@ -1165,11 +1165,7 @@ h6 {
   padding: 2.0vmin 2.0vmin calc(20px + 10.0vmin) 2.0vmin;
  }
 #image {
-  float: left;
-  display: none;
-  margin: 1.0vmin 2.0vmin 0.0vmin 0.0vmin;
-  -webkit-filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 0.8));
-  filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 0.8));
+  width: 100%;
 }
 #box {
   overflow:hidden;
