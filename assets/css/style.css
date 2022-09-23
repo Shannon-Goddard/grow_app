@@ -1171,47 +1171,43 @@ h6 {
   -webkit-filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 0.8));
   filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 0.8));
 }
-#info {
-  inline-size: 100%;
+#box {
+  overflow:hidden;
   overflow-wrap: break-word;
-  font-weight: bold;
-  text-shadow: 1px 1px #000;
-}
-#more_info {
-  inline-size: 100%;
-  overflow-wrap: break-word;
-  font-weight: bold;
-  text-shadow: 1px 1px #000;
-}
-.post-title {
-  inline-size: 100%;
-  overflow-wrap: break-word;
-  font-weight: bold;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
-  margin-bottom: 0.0vh;
-}
-#THC {
-  font-weight: 900;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 200;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
-#CBD {
-  font-weight: 900;
+#box h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
-#Sativa {
-  font-weight: bold;
+#box h2 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
-#Indica {
-  font-weight: bold;
+#box h3 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
-#Hybrid {
-  font-weight: bold;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
-}
-#Grow {
-  font-weight: bold;
+#box h4 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
 /*--------------------------------------------------------------
