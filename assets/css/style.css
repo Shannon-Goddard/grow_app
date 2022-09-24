@@ -6,6 +6,8 @@ html, body {width: auto!important; overflow-x: hidden!important
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  margin: 0px;
+  height: 100%;
 }
 
 a {
@@ -372,27 +374,27 @@ h6 {
 /*--------------------------------------------------------------
 # promo
 --------------------------------------------------------------*/
-.promo {
+.clients {
   padding-top: 20px;
 }
 
-.promo .swiper-slide img {
+.clients .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
   filter: grayscale(100);
 }
 
-.promo .swiper-slide img:hover {
+.clients .swiper-slide img:hover {
   filter: none;
   opacity: 1;
 }
 
-.promo .swiper-pagination {
+.clients .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.promo .swiper-pagination .swiper-pagination-bullet {
+.clients .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -400,9 +402,10 @@ h6 {
   background-color: #ddd;
 }
 
-.promo .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #04AA6D; 
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #04AA6D;
 }
+
 
 /*--------------------------------------------------------------
 # shop
@@ -1169,6 +1172,7 @@ h6 {
   flex-basis: 40%;
 }
 #box {
+  height: 100%;
   overflow:hidden;
   word-wrap: break-word;
   margin: 0;
