@@ -1215,6 +1215,35 @@ h6 {
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
+@media (min-width: 1024px) {
+  #box {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #box {
+    height: auto;
+  }
+
+  #box h1 {
+    font-size: 28px;
+    line-height: 0.5;
+  }
+
+  #box h2 {
+    font-size: 20px;
+    line-height: 0.5x;
+  }
+  #box h3 {
+    font-size: 15px;
+    line-height: 0.5;
+  }
+  #box h4 {
+    font-size: 10px;
+    line-height: 0.5;
+  }
+}
 /*--------------------------------------------------------------
 # taskButton
 --------------------------------------------------------------*/
