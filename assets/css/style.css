@@ -1177,7 +1177,7 @@ h6 {
   color: #fff;
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
-  padding-left: 20px;
+ 
 }
 #box h1 {
   margin: 0;
@@ -1233,7 +1233,7 @@ h6 {
 
   #box h2 {
     font-size: 20px;
-    line-height: 0.5x;
+    line-height: 0.5;
   }
   #box h3 {
     font-size: 15px;
