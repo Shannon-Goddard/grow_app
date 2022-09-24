@@ -1180,6 +1180,7 @@ h6 {
 #box h1 {
   margin: 0;
   font-size: 56px;
+  line-height: 1.0;
   font-weight: 700;
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -1189,6 +1190,7 @@ h6 {
   color: rgba(255, 255, 255, 0.9);
   margin: 10px 0 0 0;
   font-size: 40px;
+  line-height: 1.0;
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
@@ -1196,6 +1198,7 @@ h6 {
   color: rgba(255, 255, 255, 0.9);
   margin: 10px 0 0 0;
   font-size: 30px;
+  line-height: 1.0;
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
@@ -1203,8 +1206,15 @@ h6 {
   color: rgba(255, 255, 255, 0.9);
   margin: 10px 0 0 0;
   font-size: 20px;
+  line-height: 1.0;
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+}
+#info {
+  text-align: left;
+}
+#more_info {
+  text-align: left;
 }
 /*--------------------------------------------------------------
 # taskButton
