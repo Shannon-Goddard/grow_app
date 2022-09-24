@@ -1165,26 +1165,31 @@ h6 {
   padding: 2.0vmin 2.0vmin calc(20px + 10.0vmin) 2.0vmin;
  }
 #image {
-  width: 100%;
+  max-width: 100%;
+  flex-basis: 40%;
 }
 #box {
   overflow:hidden;
-  overflow-wrap: break-word;
+  word-wrap: break-word;
   margin: 0;
   font-size: 16px;
   font-weight: 200;
   color: #fff;
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+  padding-left: 20px;
 }
 #box h1 {
   margin: 0;
   font-size: 56px;
-  line-height: 1.0;
   font-weight: 700;
+  line-height: 64px;
   color: #fff;
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #box h2 {
   color: rgba(255, 255, 255, 0.9);
@@ -1209,12 +1214,6 @@ h6 {
   line-height: 1.0;
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
-}
-#info {
-  text-align: left;
-}
-#more_info {
-  text-align: left;
 }
 /*--------------------------------------------------------------
 # taskButton
