@@ -1131,7 +1131,7 @@ h6 {
   background: transparent;
   box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.8);
   width: 100%; /* Full-width */
-  font-size: 2.0vmax; /* Increase font-size */
+  font-size: 24px; /* Increase font-size */
   padding: 1.0vw 1.0vw 1.0vw 1.0vw; /* Add some padding */
   border: 0.1vw solid #04AA6D; /* Add a green border */
   margin-bottom: 1.0vw; /* Add some space below the input */
@@ -1150,7 +1150,7 @@ h6 {
   margin-top: -1.0vw; /* Prevent double borders */
   padding: 1.0vw; /* Add some padding */
   text-decoration: none; /* Remove default text underline */
-  font-size: 2.0vw; /* Increase the font-size */
+  font-size: 24px; /* Increase the font-size */
   color: #FFFFFF; /* Add a white text color */
   text-shadow: 1px 1px #000;
   display: block; /* Make it into a block element to fill the whole list */
