@@ -148,7 +148,8 @@ h6 {
 #hero .icon-box i {
   font-size: 32px;
   line-height: 1;
-  color: #04AA6D; 
+  color: #fff;
+  transition: ease-in-out 0.3s; 
 }
 
 #hero .icon-box h3 {
@@ -160,17 +161,22 @@ h6 {
   line-height: 26px;
 }
 
-#hero .icon-box h3 a {
+#hero .icon-box h3 {
   color: #fff;
   transition: ease-in-out 0.3s;
 }
 
-#hero .icon-box h3 a:hover {
-  color: #04AA6D; 
+#hero .icon-box i {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+#hero .icon-box:hover h3, #hero .icon-box:hover i {
+  color: #04AA6D;
 }
 
 #hero .icon-box:hover {
-  border-color: #04AA6D; 
+  border-color: #04AA6D;
 }
 
 @media (min-width: 1024px) {
@@ -195,6 +201,10 @@ h6 {
   }
 }
 
+#hero small {
+  font-family: Arial;
+  font-size: 10px;
+ }
 /*--------------------------------------------------------------
 # Home
 --------------------------------------------------------------*/
@@ -1187,7 +1197,6 @@ h6 {
   margin: 0;
   font-size: 56px;
   font-weight: 700;
-  line-height: 64px;
   color: #fff;
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
@@ -1232,7 +1241,7 @@ h6 {
 
   #box h1 {
     font-size: 28px;
-    line-height: 0.5;
+    line-height: 1.0;
   }
 
   #box h2 {
