@@ -416,7 +416,9 @@ h6 {
   background-color: #04AA6D;
 }
 
-
+.clients .swiper-slide img {
+  transition-duration: 0ms !important;
+}
 /*--------------------------------------------------------------
 # shop
 --------------------------------------------------------------*/
