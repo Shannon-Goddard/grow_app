@@ -22,15 +22,18 @@ $("a").click(function() {
   const d = data;
   //Change logo, strain, Grow, Sativa, THC, CBD, info, and more_info on user selection of search drop
   for (let value of d.values()) {
-    var height, gif, info, Index;
+    var name, pic, info, more_info, web, Index;
     
-    height = value.height;
+    name = value.name;
     info = value.info;
-    gif = value.gif;
+    more_info = value.more_info;
+    pic = value.pic;
+    web = value.web;
     Index = this.id;
     
-    $("#image").attr("src" , d[Index].gif).show();
-    $("#height").text(d[Index].height);
+    $("#image").attr("src" , d[Index].pic).show();
+    $("#web").attr("href" , d[Index].web).show();
+    $("#name").text(d[Index].name);
     $("#info").text(d[Index].info);
     $("#more_info").show();
     $("#taskButton").show();
@@ -40,11 +43,11 @@ $("a").click(function() {
 
 $("#taskButton").click(function() {
 
-  var node = document.getElementById('height'),
+  var node = document.getElementById('name'),
   //htmlContent = node.innerHTML,
   textContent = node.textContent;
-/////Store Plant Height
-  localStorage.plantHeight = textContent;
+/////Store Plant name
+  localStorage.plantname = textContent;
 })
-/////Retrieve Plant Height
-document.getElementById("size").innerHTML = localStorage.plantHeight;
+/////Retrieve Plant name
+document.getElementById("size").innerHTML = localStorage.plantname;

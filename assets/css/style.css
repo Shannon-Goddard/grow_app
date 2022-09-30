@@ -1310,6 +1310,9 @@ h6 {
 #more_info {
   display: none;
 }
+#web {
+  display: none;
+}
 /*drop menu */
 /* Dropdown Button */
 #dropbtn {
@@ -1318,7 +1321,7 @@ h6 {
   padding: 7px 25px 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 20px;
   border: 2px solid #04AA6D;
   color: #FFFFFF; 
   font-weight: bold;
@@ -1356,7 +1359,7 @@ h6 {
   margin-top: -1.0vw; /* Prevent double borders */
   padding: 1.0vw; /* Add some padding */
   text-decoration: none; /* Remove default text underline */
-  font-size: 2.0vw; /* Increase the font-size */
+  font-size: 20px; /* Increase the font-size */
 
   display: block; /* Make it into a block element to fill the whole list */
 }
