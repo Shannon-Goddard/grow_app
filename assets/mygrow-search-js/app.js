@@ -48,7 +48,7 @@ $("li").on("click" , "a" , function(){
     
     $("#image").attr("src" , d[Index].logo).show();
     $("#strain").text(d[Index].strain);
-    $("#Grow").text(d[Index].Grow+' weeks of flowering');
+    $("#Grow").text(d[Index].Grow);
     $("#Sativa").text(d[Index].Sativa);
     $("#Indica").text(d[Index].Indica);
     $("#Hybrid").text(d[Index].Hybrid);
@@ -59,6 +59,7 @@ $("li").on("click" , "a" , function(){
     document.getElementById("myInput").value = "";
     document.getElementById("myUL").style.display = "none";
     $("#taskButton").show();
+    $("#weeks").show();
   }
 });
 
@@ -69,19 +70,19 @@ $("#taskButton").click(function() {
   
   node = document.getElementById('strain'),
   logoNode = document.getElementById('image'),
-  growNode = document.getElementById('Grow').value,
-  console.log(growNode)
+  growNode = document.getElementById('Grow'),
+
   ////image src
   logoSrc = logoNode.src;
   ////Strain text 
   textContent = node.textContent;
   ////Grow value
-  growContent = growNode;
-  console.log(growContent)
+  growContent = growNode.textContent;
+
   /////Store Plant Height
   localStorage.plantStrain = textContent;
   localStorage.plantLogo = logoSrc;
   localStorage.plantGrow = growContent;
-console.log(growContent)
+console.log(growContent);
 });
 

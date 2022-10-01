@@ -1230,6 +1230,9 @@ h6 {
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
 }
+#weeks {
+  display: none;
+}
 @media (min-width: 1024px) {
   #box {
     background-attachment: fixed;
