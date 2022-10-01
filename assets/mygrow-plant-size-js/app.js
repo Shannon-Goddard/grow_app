@@ -46,5 +46,4 @@ $("#taskButton").click(function() {
 /////Store Plant Height
   localStorage.plantHeight = textContent;
 })
-/////Retrieve Plant Height
-document.getElementById("size").innerHTML = localStorage.plantHeight;
+

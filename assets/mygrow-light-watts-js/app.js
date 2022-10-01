@@ -48,5 +48,4 @@ $("#taskButton").click(function() {
 /////Store Plant watts
   localStorage.plantwatts = textContent;
 })
-/////Retrieve Plant watts
-document.getElementById("size").innerHTML = localStorage.plantwatts;
+

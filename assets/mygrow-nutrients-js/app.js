@@ -49,5 +49,4 @@ $("#taskButton").click(function() {
 /////Store Plant name
   localStorage.plantname = textContent;
 })
-/////Retrieve Plant name
-document.getElementById("size").innerHTML = localStorage.plantname;
+

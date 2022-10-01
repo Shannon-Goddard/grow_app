@@ -65,13 +65,23 @@ $("li").on("click" , "a" , function(){
 ////////function to store users selection onto mygrow-saved.html///
 $("#taskButton").click(function() {
   
-  var node = document.getElementById('strain'),
+  var node, logoNode, growNode;
   
-  //htmlContent = node.innerHTML,
+  node = document.getElementById('strain'),
+  logoNode = document.getElementById('image'),
+  growNode = document.getElementById('Grow').value,
+  console.log(growNode)
+  ////image src
+  logoSrc = logoNode.src;
+  ////Strain text 
   textContent = node.textContent;
-  
+  ////Grow value
+  growContent = growNode;
+  console.log(growContent)
   /////Store Plant Height
   localStorage.plantStrain = textContent;
-  
+  localStorage.plantLogo = logoSrc;
+  localStorage.plantGrow = growContent;
+console.log(growContent)
 });
 
