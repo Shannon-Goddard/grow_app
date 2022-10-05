@@ -8,11 +8,12 @@ function getValues() {
   document.getElementById("mywatts").innerHTML = localStorage.plantwatts;
   /////Retrieve Plant Nutrients
   document.getElementById("mynutes").innerHTML = localStorage.plantname;
-  /////Retrieve Flowering Time
-  document.getElementById("flowering").innerHTML = localStorage.plantGrow;
   /////Retrieve Plant Logo
   var plantLogo = localStorage.getItem('plantLogo');
   $("#mylogo").attr("src" , plantLogo);
+  /////Retrieve Grow Time
+  document.getElementById("flowering").innerHTML = localStorage.plantGrow;
+
 };
   window.onload = getValues;
 

@@ -43,7 +43,9 @@ $("#taskButton").click(function() {
   var node = document.getElementById('height'),
   //htmlContent = node.innerHTML,
   textContent = node.textContent;
-/////Store Plant Height
+
+  /////Store Plant Height
   localStorage.plantHeight = textContent;
+  
 })
 
