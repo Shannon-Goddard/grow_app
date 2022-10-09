@@ -1397,3 +1397,40 @@ h6 {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 
 .show {display:block;}
+
+/*--------------------------------------------------------------
+# myGrow filter table 
+--------------------------------------------------------------*/
+
+
+#floranova_grow_head {
+  display: none;
+}
+
+#floranova_bloom_head {
+  display: none;
+}
+
+#foxfarms_head {
+  display: none;
+}
+
+#mamoth_head {
+  display: none;
+}
+
+.floranova_grow {
+  display: none;
+}
+
+.floranova_bloom {
+  display: none;
+}
+
+.foxfarms {
+  display: none;
+}
+
+.mamoth {
+  display: none;
+}
