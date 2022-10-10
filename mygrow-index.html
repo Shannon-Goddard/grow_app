@@ -44,6 +44,8 @@
 
       <h1 class="logo me-auto me-lg-0"><a href="index.html">Loyal<span>9</span></a></h1>
 
+      <a href="#task" class="get-started-btn scrollto">MyTask</a>
+
     </div>
   </header><!-- End Header -->
 
@@ -53,7 +55,7 @@
 
       <div class="row gy-4 my-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
 
-        <div class="col-xl-2 col-md-4">
+        <div id="MyGrowAdd" class="col-xl-2 col-md-4">
           <div class="icon-box">
             <a href="mygrow/mygrow-search.html">
               <i class="fa fa-plus"></i>
@@ -62,32 +64,16 @@
           </div>
         </div>
        
-        <div class="col-xl-2 col-md-4">
+        <div id="MyGrowText" class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <a>
-              <i class="fa fa-plus"></i>
-              <h3>AddGrow</h3>
+            <a href="mygrow/mygrow-filter-table.html">
+              <img id="mylogo" src="" class="img-fluid" alt="Responsive image">
+              <h3>MyGrow</h3>
             </a>
           </div>
         </div>
 
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <a>
-              <i class="fa fa-plus"></i>
-              <h3>AddGrow</h3>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <a>
-              <i class="fa fa-plus"></i>
-              <h3>AddGrow</h3>
-            </a>
-          </div>
-        </div>
+        <button id="DeleteButton" class="btn btn-secondary btn-sm" type="button" value=""><i class="fa fa-trash-can"></i> DELETE MyGrow</button>
 
       </div>
 
@@ -120,6 +106,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/mygrow-js/app.js"></script>
 
 </body>
 
