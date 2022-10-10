@@ -46,3 +46,6 @@ $(function(){
   console.log(arr);
 });
 
+
+/////////////using for editing code, NEED TO ERASE WHEN DONE!
+//localStorage.clear();

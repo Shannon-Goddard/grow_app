@@ -86,3 +86,5 @@ $("#taskButton").click(function() {
 console.log(growContent);
 });
 
+/////////////using for editing code, NEED TO ERASE WHEN DONE!
+//localStorage.clear();

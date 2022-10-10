@@ -72,161 +72,164 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 
     <!-- ======= Search Section ======= -->
     <div id="container">
-
-      <div id="checkbox_div">
-       <p>Nutrients</p>
-       <li><input type="checkbox" value="hide" id="floranova_grow" onchange="hide_show_table(this.id);">FloraNova Grow</li>
-       <li><input type="checkbox" value="hide" id="floranova_bloom" onchange="hide_show_table(this.id);">FloraNova Bloom</li>
-       <li><input type="checkbox" value="hide" id="foxfarms" onchange="hide_show_table(this.id);">Fox Farms</li>
-       <li><input type="checkbox" value="hide" id="mamoth" onchange="hide_show_table(this.id);">Mamoth</li>
-       <a href="#"><button id="taskButton" class="btn btn-primary btn-lg" type="button" value="">select these nutrients</button></a>
-      </div>
-      
-      <table id="table1">
-        <thead>
-      <tr>
-       <th>Date</th>
-       <th>Stage</th>
-       <th>Week</th>
-       <th>Day</th>
-       <th>VisualInspection</th>
-       <th>AmountOfWater</th>
-       <th>PhGoal</th>
-       <th id="floranova_grow_head">FloraNovaGrow</th>
-       <th id="floranova_bloom_head">FloraNovaBloom</th>
-       <th id="foxfarms_head">FoxFarms</th>
-       <th id="mamoth_head">Mamoth</th>
-       <th>Calmag</th>
-       <th>Pro-Tekt</th>
-       <th>HoursOfLight</th>
-       <th>LightIntensity</th>
-       <th>LightDistance</th>
-       <th>DtTemp</th>
-       <th>NtTemp</th>
-       <th>Humidity</th>
-       <th>AirFanPosition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-       <td></td>
-       <td>GERMINATION</td>
-       <td>GERMINATION</td>
-       <td>1</td>
-       <td>Seed has germinated when tap root shows.</td>
-       <td>MOIST</td>
-       <td>6.2</td>
-       <td class="floranova_grow">5ml</td>
-       <td class="floranova_bloom">5ml</td>
-       <td class="foxfarms">5ml</td>
-       <td class="mamoth">5ml</td>
-       <td></td>
-       <td></td>
-       <td>18</td>
-       <td>50%</td>
-       <td>40in</td>
-       <td>80°F</td>
-       <td>75°F</td>
-       <td>80%</td>
-       <td>INDIRECT</td>
-      </tr>
-      
-      <tr>
-        <td></td>
-        <td>GERMINATION</td>
-        <td>GERMINATION</td>
-        <td>2</td>
-        <td>Seed has germinated when tap root shows.</td>
-        <td>MOIST</td>
-        <td>6.2</td>
-        <td class="floranova_grow">5ml</td>
-        <td class="floranova_bloom">5ml</td>
-        <td class="foxfarms">5ml</td>
-        <td class="mamoth">5ml</td>
-        <td></td>
-        <td></td>
-        <td>18</td>
-        <td>50%</td>
-        <td>40in</td>
-        <td>80°F</td>
-        <td>75°F</td>
-        <td>80%</td>
-        <td>INDIRECT</td>
-       </tr>
-      
-       <tr>
-        <td></td>
-        <td>GERMINATION</td>
-        <td>GERMINATION</td>
-        <td>3</td>
-        <td>Seed has germinated when tap root shows.</td>
-        <td>MOIST</td>
-        <td>6.2</td>
-        <td class="floranova_grow">5ml</td>
-        <td class="floranova_bloom">5ml</td>
-        <td class="foxfarms">5ml</td>
-        <td class="mamoth">5ml</td>
-        <td></td>
-        <td></td>
-        <td>18</td>
-        <td>50%</td>
-        <td>40in</td>
-        <td>80°F</td>
-        <td>75°F</td>
-        <td>80%</td>
-        <td>INDIRECT</td>
-       </tr>
-      
-       <tr>
-        <td></td>
-        <td>GERMINATION</td>
-        <td>GERMINATION</td>
-        <td>4</td>
-        <td>Seed has germinated when tap root shows.</td>
-        <td>MOIST</td>
-        <td>6.2</td>
-        <td class="floranova_grow">5ml</td>
-        <td class="floranova_bloom">5ml</td>
-        <td class="foxfarms">5ml</td>
-        <td class="mamoth">5ml</td>
-        <td></td>
-        <td></td>
-        <td>18</td>
-        <td>50%</td>
-        <td>40in</td>
-        <td>80°F</td>
-        <td>75°F</td>
-        <td>80%</td>
-        <td>INDIRECT</td>
-       </tr>
-      
-       <tr>
-        <td></td>
-        <td>GERMINATION</td>
-        <td>GERMINATION</td>
-        <td>5</td>
-        <td>Seed has germinated when tap root shows.</td>
-        <td>MOIST</td>
-        <td>6.2</td>
-        <td class="floranova_grow">5ml</td>
-        <td class="floranova_bloom">5ml</td>
-        <td class="foxfarms">5ml</td>
-        <td class="mamoth">5ml</td>
-        <td></td>
-        <td></td>
-        <td>18</td>
-        <td>50%</td>
-        <td>40in</td>
-        <td>80°F</td>
-        <td>75°F</td>
-        <td>80%</td>
-        <td>INDIRECT</td>
-       </tr>
-      </tbody>
-      </table>
-      
-      </div>
         
+        <div id="checkbox_div">
+          <p>Nutrients</p>
+          <li><input type="checkbox" value="hide" id="floranova_grow" onchange="hide_show_table(this.id);">FloraNova Grow</li>
+          <li><input type="checkbox" value="hide" id="floranova_bloom" onchange="hide_show_table(this.id);">FloraNova Bloom</li>
+          <li><input type="checkbox" value="hide" id="foxfarms" onchange="hide_show_table(this.id);">Fox Farms</li>
+          <li><input type="checkbox" value="hide" id="mamoth" onchange="hide_show_table(this.id);">Mamoth</li>
+          <a href="../mygrow/mygrow-saved.html"><button id="taskButton" class="btn btn-primary btn-lg" type="button" value="">select these nutrients</button></a>
+        </div>
+        
+        <div id="hide-table">
+
+          <table id="table1">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Stage</th>
+                <th>Week</th>
+                <th>Day</th>
+                <th>VisualInspection</th>
+                <th>AmountOfWater</th>
+                <th>PhGoal</th>
+                <th id="floranova_grow_head">FloraNovaGrow</th>
+                <th id="floranova_bloom_head">FloraNovaBloom</th>
+                <th id="foxfarms_head">FoxFarms</th>
+                <th id="mamoth_head">Mamoth</th>
+                <th>Calmag</th>
+                <th>Pro-Tekt</th>
+                <th>HoursOfLight</th>
+                <th>LightIntensity</th>
+                <th>LightDistance</th>
+                <th>DtTemp</th>
+                <th>NtTemp</th>
+                <th>Humidity</th>
+                <th>AirFanPosition</th>
+              </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <td>8 weeks</td>
+              <td>GERMINATION</td>
+              <td>GERMINATION</td>
+              <td>1</td>
+              <td>Seed has germinated when tap root shows.</td>
+              <td>MOIST</td>
+              <td>6.2</td>
+              <td class="floranova_grow">5ml</td>
+              <td class="floranova_bloom">5ml</td>
+              <td class="foxfarms">5ml</td>
+              <td class="mamoth">5ml</td>
+              <td></td>
+              <td></td>
+              <td>18</td>
+              <td>50%</td>
+              <td>20 Inches</td>
+              <td>80°F</td>
+              <td>75°F</td>
+              <td>80%</td>
+              <td>INDIRECT</td>
+            </tr>
+        
+            <tr class="twelveWeeks">
+                <td>12 weeks</td>
+                <td>GERMINATION</td>
+                <td>GERMINATION</td>
+                <td>2</td>
+                <td>Seed has germinated when tap root shows.</td>
+                <td>MOIST</td>
+                <td>6.2</td>
+                <td class="floranova_grow">5ml</td>
+                <td class="floranova_bloom">5ml</td>
+                <td class="foxfarms">5ml</td>
+                <td class="mamoth">5ml</td>
+                <td></td>
+                <td></td>
+                <td>18</td>
+                <td>50%</td>
+                <td class="lightInches"></td>
+                <td>80°F</td>
+                <td>75°F</td>
+                <td>80%</td>
+                <td>INDIRECT</td>
+            </tr>
+        
+            <tr class="sixteenWeeks">
+                <td>16 weeks</td>
+                <td>GERMINATION</td>
+                <td>GERMINATION</td>
+                <td>3</td>
+                <td>Seed has germinated when tap root shows.</td>
+                <td>MOIST</td>
+                <td>6.2</td>
+                <td class="floranova_grow">5ml</td>
+                <td class="floranova_bloom">5ml</td>
+                <td class="foxfarms">5ml</td>
+                <td class="mamoth">5ml</td>
+                <td></td>
+                <td></td>
+                <td>18</td>
+                <td>50%</td>
+                <td class="lightInches"></td>
+                <td>80°F</td>
+                <td>75°F</td>
+                <td>80%</td>
+                <td>INDIRECT</td>
+            </tr>
+        
+            <tr>
+                <td></td>
+                <td>GERMINATION</td>
+                <td>GERMINATION</td>
+                <td>4</td>
+                <td>Seed has germinated when tap root shows.</td>
+                <td>MOIST</td>
+                <td>6.2</td>
+                <td class="floranova_grow">5ml</td>
+                <td class="floranova_bloom">5ml</td>
+                <td class="foxfarms">5ml</td>
+                <td class="mamoth">5ml</td>
+                <td></td>
+                <td></td>
+                <td>18</td>
+                <td>50%</td>
+                <td class="lightInches"></td>
+                <td>80°F</td>
+                <td>75°F</td>
+                <td>80%</td>
+                <td>INDIRECT</td>
+            </tr>
+        
+            <tr>
+                <td></td>
+                <td>GERMINATION</td>
+                <td>GERMINATION</td>
+                <td>5</td>
+                <td>Seed has germinated when tap root shows.</td>
+                <td>MOIST</td>
+                <td>6.2</td>
+                <td class="floranova_grow">5ml</td>
+                <td class="floranova_bloom">5ml</td>
+                <td class="foxfarms">5ml</td>
+                <td class="mamoth">5ml</td>
+                <td></td>
+                <td></td>
+                <td>18</td>
+                <td>50%</td>
+                <td class="lightInches"></td>
+                <td>80°F</td>
+                <td>75°F</td>
+                <td>80%</td>
+                <td>INDIRECT</td>
+            </tr>
+        </tbody>
+        </table>
+    
+    </div>
+  </div>
     
 
 </main><!-- End #main -->
