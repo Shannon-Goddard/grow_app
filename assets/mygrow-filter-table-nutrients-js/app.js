@@ -43,9 +43,12 @@ $(function(){
   if (arr) {
     content.innerHTML = arr;
   }
-  console.log(arr);
+ 
 });
 
-
-/////////////using for editing code, NEED TO ERASE WHEN DONE!
-//localStorage.clear();
+////////////////////////delete when done coding this page
+// //BUTTON CLEAR
+DelButton.addEventListener('click', function () {
+  localStorage.clear();
+  location.reload();
+});

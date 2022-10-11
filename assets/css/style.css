@@ -1465,38 +1465,166 @@ h6 {
 /*--------------------------------------------------------------
 # myGrow filter table 
 --------------------------------------------------------------*/
+table, th, td {
+  border: 1px solid white;
+}
+
+#table1 tr:hover:not(.header) {
+  background-color: #04AA6D; /* Add a hover effect to all links, except for headers */
+}
+
+.icon-box li {
+  list-style-type: none;
+}
 #hide-table {
   display: none;
 }
 
-#floranova_grow_head {
+#MammothGardenGrowMe_head {
+  display: none;
+}
+.MammothGardenGrowMe {
   display: none;
 }
 
-#floranova_bloom_head {
+#MammothGardenProtectMe_head {
+  display: none;
+}
+.MammothGardenProtectMe {
   display: none;
 }
 
-#foxfarms_head {
+#BioThriveGrow_head {
+  display: none;
+}
+.BioThriveGrow {
   display: none;
 }
 
-#mamoth_head {
+#BioThriveBloom_head {
+  display: none;
+}
+.BioThriveBloom {
   display: none;
 }
 
-.floranova_grow {
+#BCGrow_head {
+  display: none;
+}
+.BCGrow {
   display: none;
 }
 
-.floranova_bloom {
+#BCBoost_head {
+  display: none;
+}
+.BCBoost {
   display: none;
 }
 
-.foxfarms {
+#BCBloom_head {
+  display: none;
+}
+.BCBloom {
   display: none;
 }
 
-.mamoth {
+#SugarDaddy_head {
   display: none;
 }
+.SugarDaddy {
+  display: none;
+}
+
+#ROOT66_head {
+  display: none;
+}
+.ROOT66 {
+  display: none;
+}
+
+#ThriveAliveRed_head {
+  display: none;
+}
+.ThriveAliveRed {
+  display: none;
+}
+
+#ThriveAliveGreen_head {
+  display: none;
+}
+.ThriveAliveGreen {
+  display: none;
+}
+
+#MagiCal_head {
+  display: none;
+}
+.MagiCal {
+  display: none;
+}
+
+#AwesomeBlossoms_head {
+  display: none;
+}
+.AwesomeBlossoms {
+  display: none;
+}
+
+#RootechCloningGel_head {
+  display: none;
+}
+.RootechCloningGel {
+  display: none;
+}
+
+#FloraGro_head {
+  display: none;
+}
+.FloraGro {
+  display: none;
+}
+
+#FloraBloom_head {
+  display: none;
+}
+.FloraBloom {
+  display: none;
+}
+
+#FloraMicro_head {
+  display: none;
+}
+.FloraMicro {
+  display: none;
+}
+
+#BigBloom_head {
+  display: none;
+}
+.BigBloom {
+  display: none;
+}
+
+#GrowBig_head {
+  display: none;
+}
+.GrowBig {
+  display: none;
+}
+
+#TigerBloom_head {
+  display: none;
+}
+.TigerBloom {
+  display: none;
+}
+
+#BudCandy_head {
+  display: none;
+}
+.BudCandy {
+  display: none;
+}
+
+
