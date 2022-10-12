@@ -1476,8 +1476,24 @@ table, th, td {
 .icon-box li {
   list-style-type: none;
 }
+
 #hide-table {
   display: none;
+}
+
+.listPrint {
+  text-align: left;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.listPrint {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.listPrint:hover {
+  color: #04AA6D;
 }
 
 #MammothGardenGrowMe_head {
@@ -1620,11 +1636,152 @@ table, th, td {
   display: none;
 }
 
+#Boomerang_head {
+  display: none;
+}
+.Boomerang {
+  display: none;
+}
+
+#Kangaroots_head {
+  display: none;
+}
+.Kangaroots {
+  display: none;
+}
+#MicrobeBrew_head {
+  display: none;
+}
+.MicrobeBrew {
+  display: none;
+}
+#WhollyMackerel_head {
+  display: none;
+}
+.WhollyMackerel {
+  display: none;
+}
+#KelpMeKelpYou_head {
+  display: none;
+}
+.KelpMeKelpYou {
+  display: none;
+}
+#Bembe_head {
+  display: none;
+}
+.Bembe {
+  display: none;
+}
+#OpenSesame_head {
+  display: none;
+}
+.OpenSesame {
+  display: none;
+}
+#BeastieBloomz_head {
+  display: none;
+}
+.BeastieBloomz {
+  display: none;
+}
+#ChaChing_head {
+  display: none;
+}
+.ChaChing {
+  display: none;
+}
+
+#VooDooJuice_head {
+  display: none;
+}
+.VooDooJuice {
+  display: none;
+}
+
+#BigBud_head {
+  display: none;
+}
+.BigBud {
+  display: none;
+}
+
+#B-52_head {
+  display: none;
+}
+.B-52 {
+  display: none;
+}
+
+#Overdrive_head {
+  display: none;
+}
+.Overdrive {
+  display: none;
+}
+
+#Piranha_head {
+  display: none;
+}
+.Piranha {
+  display: none;
+}
+
 #BudCandy_head {
   display: none;
 }
 .BudCandy {
   display: none;
 }
+
+#FinalPhaze_head {
+  display: none;
+}
+.FinalPhaze {
+  display: none;
+}
+
+#Tarantula_head {
+  display: none;
+}
+.Tarantula {
+  display: none;
+}
+
+#Nirvana_head {
+  display: none;
+}
+.Nirvana {
+  display: none;
+}
+
+#Sensizym_head {
+  display: none;
+}
+.Sensizym {
+  display: none;
+}
+
+#BudIgnitor_head {
+  display: none;
+}
+.BudIgnitor {
+  display: none;
+}
+
+#RhinoSkin_head {
+  display: none;
+}
+.RhinoSkin {
+  display: none;
+}
+
+#BudFactorX_head {
+  display: none;
+}
+.BudFactorX {
+  display: none;
+}
+
 
 
