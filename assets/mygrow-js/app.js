@@ -19,3 +19,6 @@ DeleteButton.addEventListener('click', function () {
   localStorage.clear();
   location.reload();
 });
+
+console.log(localStorage)
+

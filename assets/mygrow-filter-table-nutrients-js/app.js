@@ -1,3 +1,4 @@
+/////////////check boxes
 function hide_show_table(col_name)
 {
  var checkbox_val=document.getElementById(col_name).value;
@@ -44,11 +45,4 @@ $(function(){
     content.innerHTML = arr;
   }
  
-});
-
-////////////////////////delete when done coding this page
-// //BUTTON CLEAR
-DelButton.addEventListener('click', function () {
-  localStorage.clear();
-  location.reload();
 });

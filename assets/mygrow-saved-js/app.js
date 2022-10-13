@@ -37,21 +37,26 @@ $(function(){
     content.innerHTML = arr;
   }
   //add Inches to LightDistance column _125W _250W _400W _600W _1000W
-if($("#mywatts").text(" 125W")) {
-  $(".lightInches").text("12 Inches");
-}
-if($("#mywatts").text(" 250W")) {
-  $(".lightInches").text("16 Inches");
-}
-if($("#mywatts").text(" 400W")) {
-  $(".lightInches").text("20 Inches");
-}
-if($("#mywatts").text(" 600W")) {
-  $(".lightInches").text("30 Inches");
-}
-if($("#mywatts").text(" 1000W")) {
-  $(".lightInches").text("36 Inches");
-}
+  if($("#mywatts:contains(' 125W')").length) {
+  //if ( $("#mywatts").text(" 125W") && ($(".lightInches").text("")) ) {
+    $(".lightInches").text("12 Inches");
+  }
+  if($("#mywatts:contains(' 250W')").length) {
+  //if ( $("#mywatts").text(" 250W") && ($(".lightInches").text("")) ) {
+    $(".lightInches").text("16 Inches");
+  }
+  if($("#mywatts:contains(' 400W')").length) {
+  //if ( $("#mywatts").text(" 400W") && ($(".lightInches").text("")) ) {
+    $(".lightInches").text("20 Inches");
+  }
+  if($("#mywatts:contains(' 600W')").length) {
+  //if ( $("#mywatts").text(" 600W") && ($(".lightInches").text("")) ) {
+    $(".lightInches").text("30 Inches");
+  }
+  if($("#mywatts:contains('1000W')").length) {
+  //if ( $("#mywatts").text(" 1000W") && ($(".lightInches").text("")) ) {
+    $(".lightInches").text("36 Inches");
+  }
 
 /////Filter table by user selection
 //filter vegetative days by class in weeks
@@ -88,6 +93,7 @@ if($("#flowering").text("4")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("5")) {
   $(".sixFlowering").hide();
@@ -108,6 +114,7 @@ if($("#flowering").text("5")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("6")) {
   $(".sevenFlowering").hide();
@@ -127,6 +134,7 @@ if($("#flowering").text("6")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("7")) {
   $(".eightFlowering").hide();
@@ -145,6 +153,7 @@ if($("#flowering").text("7")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("8")) {
   $(".nineFlowering").hide();
@@ -162,6 +171,7 @@ if($("#flowering").text("8")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("9")) {
   $(".tenFlowering").hide();
@@ -178,6 +188,7 @@ if($("#flowering").text("9")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("10")) {
   $(".tenFlowering").hide();
@@ -194,6 +205,7 @@ if($("#flowering").text("10")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("11")) {
   $(".elevenFlowering").hide();
@@ -209,6 +221,7 @@ if($("#flowering").text("11")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("12")) {
   $(".twelveFlowering").hide();
@@ -223,6 +236,7 @@ if($("#flowering").text("12")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("13")) {
   $(".thirteenFlowering").hide();
@@ -236,6 +250,7 @@ if($("#flowering").text("13")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("14")) {
   $(".fourteenFlowering").hide();
@@ -248,6 +263,7 @@ if($("#flowering").text("14")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("15")) {
   $(".fifteenFlowering").hide();
@@ -259,6 +275,7 @@ if($("#flowering").text("15")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("16")) {
   $(".sixteenFlowering").hide();
@@ -269,6 +286,7 @@ if($("#flowering").text("16")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("17")) {
   $(".seventeenFlowering").hide();
@@ -278,6 +296,7 @@ if($("#flowering").text("17")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("18")) {
   $(".eighteenFlowering").hide();
@@ -286,6 +305,7 @@ if($("#flowering").text("18")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("19")) {
   $(".nineteenFlowering").hide();
@@ -293,24 +313,29 @@ if($("#flowering").text("19")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("20")) {
   $(".twentyFlowering").hide();
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("21")) {
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("22")) {
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 if($("#flowering").text("23")) {
   $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
 }
 
 });

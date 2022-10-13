@@ -18,18 +18,18 @@ window.onclick = function(event) {
 }
 
 //Function to change info on click//
-$("a").click(function() {
+$("#myDropdown a").click(function() {
   const d = data;
   //Change logo, strain, Grow, Sativa, THC, CBD, info, and more_info on user selection of search drop
   for (let value of d.values()) {
-    var height, gif, info, Index;
+    var height, logo, info, Index;
     
     height = value.height;
     info = value.info;
-    gif = value.gif;
+    logo = value.logo;
     Index = this.id;
     
-    $("#image").attr("src" , d[Index].gif).show();
+    $("#image").attr("src" , d[Index].logo).show();
     $("#height").text(d[Index].height);
     $("#info").text(d[Index].info);
     $("#more_info").show();
@@ -49,3 +49,4 @@ $("#taskButton").click(function() {
   
 })
 
+console.log(localStorage)

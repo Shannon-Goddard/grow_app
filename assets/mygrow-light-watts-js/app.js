@@ -15,10 +15,10 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};
 
 //Function to change info on click//
-$("a").click(function() {
+$("#myDropdown a").click(function() {
   const d = data;
   //Change logo, strain, Grow, Sativa, THC, CBD, info, and more_info on user selection of search drop
   for (let value of d.values()) {
@@ -47,5 +47,6 @@ $("#taskButton").click(function() {
   textContent = node.textContent;
 /////Store Plant watts
   localStorage.plantwatts = textContent;
-})
+});
 
+console.log(localStorage)

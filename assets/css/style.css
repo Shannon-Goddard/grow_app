@@ -1183,6 +1183,10 @@ h6 {
   max-width: 100%;
   flex-basis: 40%;
 }
+#mylogo {
+  max-width: 100%;
+  flex-basis: 40%;
+}
 #box {
   height: 100%;
   overflow:hidden;
@@ -1266,6 +1270,8 @@ h6 {
 # taskButton
 --------------------------------------------------------------*/
 #taskButton {
+  position: -webkit-sticky;
+  position: sticky;
   display: none;
   background: transparent;
   border-radius: 4px;
@@ -1289,6 +1295,7 @@ h6 {
     margin-right: 15px;
   }
 }
+
 /*--------------------------------------------------------------
 # savedButton
 --------------------------------------------------------------*/
@@ -1443,7 +1450,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0.7);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 2;
   color: #FFFFFF; /* Add a white text color */
   text-shadow: 1px 1px #000;
 }
@@ -1467,10 +1474,12 @@ h6 {
 --------------------------------------------------------------*/
 table, th, td {
   border: 1px solid white;
+  font-size: 10px;
 }
 
 #table1 tr:hover:not(.header) {
   background-color: #04AA6D; /* Add a hover effect to all links, except for headers */
+  color: #fff;
 }
 
 .icon-box li {
