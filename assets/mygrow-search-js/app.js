@@ -64,7 +64,7 @@ $("li").on("click" , "a" , function(){
 });
 
 ////////function to store users selection onto mygrow-saved.html///
-$("#taskButton").click(function() {
+$(".get-started-btn").click(function() {
   
   var node, logoNode, growNode;
   

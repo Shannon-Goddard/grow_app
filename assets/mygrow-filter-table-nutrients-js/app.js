@@ -35,7 +35,7 @@ $(function(){
   var content = document.getElementById('table1');
 
   // save the page's state after user selects and clicks "select"
-  $("#taskButton").click(function() {
+  $(".get-started-btn").click(function() {
     localStorage.setItem('page_html', JSON.stringify(content.innerHTML));
   });
 
@@ -46,3 +46,5 @@ $(function(){
   }
  
 });
+
+console.log(localStorage)

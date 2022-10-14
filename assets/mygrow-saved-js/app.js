@@ -13,7 +13,7 @@ function getValues() {
   $("#mylogo").attr("src" , plantLogo);
   /////Retrieve Grow Time
   document.getElementById("flowering").innerHTML = localStorage.plantGrow;
-
+  $("#taskButton").show();
 
 };
 window.onload = getValues;
@@ -27,7 +27,7 @@ $(function(){
   var content = document.getElementById('table1');
 
   // save the page's state after user selects and clicks "select"
-  $("#savedButton").click(function() {
+  $(".get-started-btn").click(function() {
     localStorage.setItem('page_html', JSON.stringify(content.innerHTML));
   });
 
@@ -55,16 +55,16 @@ $(function(){
     }
     /////Filter table by user selection////////////////////////////
     //filter vegetative days by class in weeks
-    if($("#size").text(" 1-2 Foot")) {
+    if(localStorage.plantHeight === "1-2 feet") {
       $(".eightWeeks").hide();
       $(".twelveWeeks").hide();
       $(".sixteenWeeks").hide();
     }
-    if($("#size").text(" 3-4 Foot")) {
+    if(localStorage.plantHeight === "3-4 feet") {
       $(".twelveWeeks").hide();
       $(".sixteenWeeks").hide();
     }
-    if($("#size").text(" 5-6 Foot")) {
+    if(localStorage.plantHeight === " 5-6 feet") {
       $(".sixteenWeeks").hide();
     }
   
@@ -321,3 +321,4 @@ if (localStorage.plantGrow === '23')  {
 }
 
 });
+

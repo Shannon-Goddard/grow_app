@@ -40,7 +40,7 @@ $("#myDropdown a").click(function() {
 });
 ////////////////////////
 
-$("#taskButton").click(function() {
+$(".get-started-btn").click(function() {
 
   var node = document.getElementById('watts'),
   //htmlContent = node.innerHTML,
