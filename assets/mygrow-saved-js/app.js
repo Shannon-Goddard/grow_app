@@ -4,15 +4,27 @@ function getValues() {
   document.getElementById("mystrain").innerHTML = localStorage.plantStrain;
   /////Retrieve Plant Height
   document.getElementById("size").innerHTML = localStorage.plantHeight;
-  /////Retrieve Plant Watts
-  document.getElementById("mywatts").innerHTML = localStorage.plantwatts;
-  /////Retrieve Plant Nutrients
-  document.getElementById("mynutes").innerHTML = localStorage.plantname;
+
   /////Retrieve Plant Logo
   var plantLogo = localStorage.getItem('plantLogo');
   $("#mylogo").attr("src" , plantLogo);
   /////Retrieve Grow Time
-  document.getElementById("flowering").innerHTML = localStorage.plantGrow;
+  var vegWeeks;
+  vegWeeks = "";
+  if(localStorage.plantHeight === "1-2 feet") {
+    vegWeeks = "4";
+  }
+    if(localStorage.plantHeight === "3-4 feet") {
+      vegWeeks = "8";
+    }
+      if(localStorage.plantHeight === "5-6 feet") {
+        vegWeeks = "12";
+      }
+        if(localStorage.plantHeight === "7+ feet") {
+          vegWeeks = "16";
+        
+        }
+  document.getElementById("flowering").innerHTML = (localStorage.plantGrow*7)+(vegWeeks*7)+" days";
   $("#taskButton").show();
 
 };
