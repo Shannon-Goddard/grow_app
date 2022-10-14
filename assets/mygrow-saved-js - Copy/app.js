@@ -36,62 +36,45 @@ $(function(){
   if (arr) {
     content.innerHTML = arr;
   }
-  ///////////////////////////////////////////////////////////////////
   //add Inches to LightDistance column _125W _250W _400W _600W _1000W
-  if (localStorage.plantwatts === '125W')  {
-      $(".lightInches").text("12 Inches");
-    }
-    if (localStorage.plantwatts === '250W')  {
-      $(".lightInches").text("16 Inches");
-    }
-    if (localStorage.plantwatts === '400W')  {
-      $(".lightInches").text("20 Inches");
-    }
-    if (localStorage.plantwatts === '600W')  {
-      $(".lightInches").text("30 Inches");
-    }
-    if (localStorage.plantwatts === '1000W')  {
-      $(".lightInches").text("36 Inches");
-    }
-    /////Filter table by user selection////////////////////////////
-    //filter vegetative days by class in weeks
-    if($("#size").text(" 1-2 Foot")) {
-      $(".eightWeeks").hide();
-      $(".twelveWeeks").hide();
-      $(".sixteenWeeks").hide();
-    }
-    if($("#size").text(" 3-4 Foot")) {
-      $(".twelveWeeks").hide();
-      $(".sixteenWeeks").hide();
-    }
-    if($("#size").text(" 5-6 Foot")) {
-      $(".sixteenWeeks").hide();
-    }
-  
-  //filter flowering days by class in weeks
-  if (localStorage.plantGrow === '4')  {
-    $(".fiveFlowering").hide();
-    $(".sixFlowering").hide();
-    $(".sevenFlowering").hide();
-    $(".eightFlowering").hide();
-    $(".nineFlowering").hide();
-    $(".tenFlowering").hide();
-    $(".elevenFlowering").hide();
-    $(".twelveFlowering").hide();
-    $(".thirteenFlowering").hide();
-    $(".fourteenFlowering").hide();
-    $(".fifteenFlowering").hide();
-    $(".sixteenFlowering").hide();
-    $(".seventeenFlowering").hide();
-    $(".eighteenFlowering").hide();
-    $(".nineteenFlowering").hide();
-    $(".twentyFlowering").hide();
-    $(".twentyoneFlowering").hide();
-    $(".twentytwoFlowering").hide();
-    $(".twentythreeFlowering").hide();
-    $(".twentyfourFlowering").hide();
+  if($("#mywatts:contains(' 125W')").length) {
+  //if ( $("#mywatts").text(" 125W") && ($(".lightInches").text("")) ) {
+    $(".lightInches").text("12 Inches");
   }
-  if (localStorage.plantGrow === '5')  {
+  if($("#mywatts:contains(' 250W')").length) {
+  //if ( $("#mywatts").text(" 250W") && ($(".lightInches").text("")) ) {
+    $(".lightInches").text("16 Inches");
+  }
+  if($("#mywatts:contains(' 400W')").length) {
+  //if ( $("#mywatts").text(" 400W") && ($(".lightInches").text("")) ) {
+    $(".lightInches").text("20 Inches");
+  }
+  if($("#mywatts:contains(' 600W')").length) {
+  //if ( $("#mywatts").text(" 600W") && ($(".lightInches").text("")) ) {
+    $(".lightInches").text("30 Inches");
+  }
+  if($("#mywatts:contains('1000W')").length) {
+  //if ( $("#mywatts").text(" 1000W") && ($(".lightInches").text("")) ) {
+    $(".lightInches").text("36 Inches");
+  }
+
+/////Filter table by user selection
+//filter vegetative days by class in weeks
+if($("#size").text(" 1-2 Foot")) {
+  $(".eightWeeks").hide();
+  $(".twelveWeeks").hide();
+  $(".sixteenWeeks").hide();
+}
+if($("#size").text(" 3-4 Foot")) {
+  $(".twelveWeeks").hide();
+  $(".sixteenWeeks").hide();
+}
+if($("#size").text(" 5-6 Foot")) {
+  $(".sixteenWeeks").hide();
+}
+//filter flowering days by class in weeks
+if($("#flowering").text("4")) {
+  $(".fiveFlowering").hide();
   $(".sixFlowering").hide();
   $(".sevenFlowering").hide();
   $(".eightFlowering").hide();
@@ -112,7 +95,8 @@ $(function(){
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '6')  {
+if($("#flowering").text("5")) {
+  $(".sixFlowering").hide();
   $(".sevenFlowering").hide();
   $(".eightFlowering").hide();
   $(".nineFlowering").hide();
@@ -132,7 +116,8 @@ if (localStorage.plantGrow === '6')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '7')  {
+if($("#flowering").text("6")) {
+  $(".sevenFlowering").hide();
   $(".eightFlowering").hide();
   $(".nineFlowering").hide();
   $(".tenFlowering").hide();
@@ -151,7 +136,8 @@ if (localStorage.plantGrow === '7')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '8')  {
+if($("#flowering").text("7")) {
+  $(".eightFlowering").hide();
   $(".nineFlowering").hide();
   $(".tenFlowering").hide();
   $(".elevenFlowering").hide();
@@ -169,7 +155,8 @@ if (localStorage.plantGrow === '8')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '9')  {
+if($("#flowering").text("8")) {
+  $(".nineFlowering").hide();
   $(".tenFlowering").hide();
   $(".elevenFlowering").hide();
   $(".twelveFlowering").hide();
@@ -186,7 +173,8 @@ if (localStorage.plantGrow === '9')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '10')  {
+if($("#flowering").text("9")) {
+  $(".tenFlowering").hide();
   $(".elevenFlowering").hide();
   $(".twelveFlowering").hide();
   $(".thirteenFlowering").hide();
@@ -202,7 +190,9 @@ if (localStorage.plantGrow === '10')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '11')  {
+if($("#flowering").text("10")) {
+  $(".tenFlowering").hide();
+  $(".elevenFlowering").hide();
   $(".twelveFlowering").hide();
   $(".thirteenFlowering").hide();
   $(".fourteenFlowering").hide();
@@ -217,7 +207,9 @@ if (localStorage.plantGrow === '11')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '12')  {
+if($("#flowering").text("11")) {
+  $(".elevenFlowering").hide();
+  $(".twelveFlowering").hide();
   $(".thirteenFlowering").hide();
   $(".fourteenFlowering").hide();
   $(".fifteenFlowering").hide();
@@ -231,7 +223,9 @@ if (localStorage.plantGrow === '12')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '13')  {
+if($("#flowering").text("12")) {
+  $(".twelveFlowering").hide();
+  $(".thirteenFlowering").hide();
   $(".fourteenFlowering").hide();
   $(".fifteenFlowering").hide();
   $(".sixteenFlowering").hide();
@@ -244,7 +238,9 @@ if (localStorage.plantGrow === '13')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '14')  {
+if($("#flowering").text("13")) {
+  $(".thirteenFlowering").hide();
+  $(".fourteenFlowering").hide();
   $(".fifteenFlowering").hide();
   $(".sixteenFlowering").hide();
   $(".seventeenFlowering").hide();
@@ -256,7 +252,9 @@ if (localStorage.plantGrow === '14')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '15')  {
+if($("#flowering").text("14")) {
+  $(".fourteenFlowering").hide();
+  $(".fifteenFlowering").hide();
   $(".sixteenFlowering").hide();
   $(".seventeenFlowering").hide();
   $(".eighteenFlowering").hide();
@@ -267,7 +265,9 @@ if (localStorage.plantGrow === '15')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '16')  {
+if($("#flowering").text("15")) {
+  $(".fifteenFlowering").hide();
+  $(".sixteenFlowering").hide();
   $(".seventeenFlowering").hide();
   $(".eighteenFlowering").hide();
   $(".nineteenFlowering").hide();
@@ -277,7 +277,9 @@ if (localStorage.plantGrow === '16')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '17')  {
+if($("#flowering").text("16")) {
+  $(".sixteenFlowering").hide();
+  $(".seventeenFlowering").hide();
   $(".eighteenFlowering").hide();
   $(".nineteenFlowering").hide();
   $(".twentyFlowering").hide();
@@ -286,7 +288,9 @@ if (localStorage.plantGrow === '17')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '18')  {
+if($("#flowering").text("17")) {
+  $(".seventeenFlowering").hide();
+  $(".eighteenFlowering").hide();
   $(".nineteenFlowering").hide();
   $(".twentyFlowering").hide();
   $(".twentyoneFlowering").hide();
@@ -294,30 +298,47 @@ if (localStorage.plantGrow === '18')  {
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '19')  {
+if($("#flowering").text("18")) {
+  $(".eighteenFlowering").hide();
+  $(".nineteenFlowering").hide();
   $(".twentyFlowering").hide();
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '20')  {
+if($("#flowering").text("19")) {
+  $(".nineteenFlowering").hide();
+  $(".twentyFlowering").hide();
   $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '21')  {
+if($("#flowering").text("20")) {
+  $(".twentyFlowering").hide();
+  $(".twentyoneFlowering").hide();
   $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '22')  {
+if($("#flowering").text("21")) {
+  $(".twentyoneFlowering").hide();
+  $(".twentytwoFlowering").hide();
   $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
-if (localStorage.plantGrow === '23')  {
+if($("#flowering").text("22")) {
+  $(".twentytwoFlowering").hide();
+  $(".twentythreeFlowering").hide();
+  $(".twentyfourFlowering").hide();
+}
+if($("#flowering").text("23")) {
+  $(".twentythreeFlowering").hide();
   $(".twentyfourFlowering").hide();
 }
 
 });
+
+
+
