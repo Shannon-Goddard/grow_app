@@ -1454,19 +1454,6 @@ table, th, td {
   border: 1px solid white;
   font-size: 10px;
 }
-@media (min-width: 1024px) {
-  #table1 {
-    width: 100%;
-    font-size: 4vw;
-  }
-}
-
-@media (max-width: 768px) {
-  #table1 {
-    width: 100%;
-    font-size: 4vw;
-  }
-}
 #table1 tr:hover:not(.header) {
   background-color: #04AA6D; /* Add a hover effect to all links, except for headers */
   color: #fff;
