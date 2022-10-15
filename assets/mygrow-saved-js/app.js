@@ -1,13 +1,13 @@
 /////Retrieve user selections
 function getValues() {
   /////Retrieve Strain
-  document.getElementById("mystrain").innerHTML = localStorage.plantStrain;
+  document.getElementById("strain").innerHTML = localStorage.plantStrain;
   /////Retrieve Plant Height
-  document.getElementById("size").innerHTML = localStorage.plantHeight;
+  document.getElementById("Grow").innerHTML = localStorage.plantHeight;
 
   /////Retrieve Plant Logo
   var plantLogo = localStorage.getItem('plantLogo');
-  $("#mylogo").attr("src" , plantLogo);
+  $("#image").attr("src" , plantLogo).show();
   /////Retrieve Grow Time
   var vegWeeks;
   vegWeeks = "";
@@ -24,7 +24,7 @@ function getValues() {
           vegWeeks = "16";
         
         }
-  document.getElementById("flowering").innerHTML = (localStorage.plantGrow*7)+(vegWeeks*7)+" days";
+  document.getElementById("info").innerHTML = (localStorage.plantGrow*7)+(vegWeeks*7)+" days";
   $("#taskButton").show();
 
 };

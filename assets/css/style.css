@@ -1183,11 +1183,7 @@ h6 {
   max-width: 100%;
   flex-basis: 40%;
 }
-#mylogo {
-  max-width: 100%;
-  flex-basis: 40%;
-  display: block;
-}
+
 #box {
   height: 100%;
   overflow:hidden;
