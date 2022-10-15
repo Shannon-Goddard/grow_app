@@ -1456,13 +1456,15 @@ table, th, td {
 }
 @media (min-width: 1024px) {
   #table1 {
-    width: auto;
+    width: 100%;
+    font-size: 4vw;
   }
 }
 
 @media (max-width: 768px) {
   #table1 {
-    width: auto;
+    width: 100%;
+    font-size: 4vw;
   }
 }
 #table1 tr:hover:not(.header) {
