@@ -1452,8 +1452,26 @@ h6 {
 --------------------------------------------------------------*/
 table, th, td {
   border: 1px solid white;
-  font-size: 10px;
+  font-size: 1vmax;
+  position: relative;
+  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; 
+  user-select: none;
 }
+th {
+  height: 12px;
+  font-weight: bold;
+  text-align: left;
+  color: #cccccc;
+}
+.table-responsive-sm {
+  overflow: auto; 
+  height: 50vh; 
+}
+.table-responsive-sm thead th {
+  position: sticky; 
+  top: 0;
+  z-index: 1; }
+
 #table1 tr:hover:not(.header) {
   background-color: #04AA6D; /* Add a hover effect to all links, except for headers */
   color: #fff;
