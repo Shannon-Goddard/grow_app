@@ -1425,7 +1425,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0.7);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2;
+  z-index: 996;
   color: #FFFFFF; /* Add a white text color */
   text-shadow: 1px 1px #000;
 }
