@@ -143,84 +143,204 @@
 
 # About Grow app
 
-[THIS]() grow app is designed to build a table that will convert to a day by day guide for the grower based on the users answers to prompted questions.  
+**GrowApp** by **Loyal9** is designed to build a table that will convert to a day by day guide for the grower based on the users answers to prompted questions.  
 
 ## Home  
-**Home** is the first window the user will see on open. It will show today()'s guided task  
+**Home** is the first window the user will see on open. With the options: 
+- MyGrow
+- MyDiary
+- Shop
+- Tools 
 
-## myGrow 
+## MyGrow 
 
-**myGrow** page is where a list of all the users grows exist. With the option to add a new one. Upon selecting **+ add a new grow** the user will be directed to answer multiple questions.
-
+**MyGrow** page is where the users will have the option to add a new grow. Upon selecting **+ AddGrow** the user will be directed to answer multiple questions.
+![](assets\img\phone1.png)
 <details>
-<summary><b>What strain are you growing?</b></summary>
+<summary><b>SELECT A STRAIN</b></summary>
 <!--more info-->
 
-**Search** page | **Filter** page  
-The User will be taken to a search page that allows them to filter search by typing through a list of 2,792 strains and select their strain. If the user is uncertain of what they want to grow, there is a filter search available to allow them to sort by Indica, Sativa, or Hybrid. This filter table, also, allows the user to sort accending and/or decending order on each header: Strain, THC, CBD, Indica, Sativa, Hybrid.    
+**Search** page  
+The User will be taken to a search page that allows them to filter through a list of 2,792 strains. As the user types in the input field the list filters the strain names and logos. Upon selecting a list item, that items logo and information appears:  
 
-The day by day table will start being built in the background based on the users strain selection. Each strain is linked to their average flowering weeks. In which, will be converted to days.  
+- Strain Name  
+- THC % 
+- CBD % 
+- Indica, Sativa, Hybrid %  
+- Basic information about the strain 
+
+ If the user likes what the see, they select it as their strain. Or go back and search till they do.  
+
+*The day by day table will start being built in the background based on the users strain selection. Each strain is linked to their average flowering weeks. In which, will be converted to days.*  
 </details>
 <details>
-<summary><b>How tall do you want your plant to be?</b></summary>
+<summary><b>SELECT YOUR desired plant height</b></summary>
 <!--more info-->
 
-**Tall** page  
-The user will be automatically directed to this page after secting their strain. A drop box with multiple choice will allow the user to select from:  
+**Plant Size** page  
+The user will be automatically directed to this page after selecting their strain. A drop box with multiple choice will allow the user to select from:  
     
-    - 1 foot tall
-    - 2 feet tall
-    - 3 feet tall
-    - 4 feet tall
-    - 5 feet tall
-    - 6 feet tall
-    - 7 feet tall
-    - 8 feet tall
-    - 9 feet tall
-    - 10 feet tall    
+    - 1-2 feet
+    - 3-4 feet
+    - 5-6 feet
+    - 7+ feet  
 
-The day by day table will continue being built in the background based on the users selection. Each plants height option is linked to their avaerage vegetative weeks needed to grow that height. In which, will be converted to days.  
+*The day by day table will continue being built in the background based on the users selection. Each plants height option is linked to their average vegetative weeks needed to grow that height. In which, will be converted to days.*  
 </details>
 <details>
-<summary><b>What nutrients will you be using?</b></summary>
-<!--more info-->  
-
-The user will be automatically directed to this page after secting their plant height. A drop box with multiple choice will allow the user to select from:  
-
-    - Mammoth 
-    - Grow 4-3-3 
-    - TechnaFlora Recipe For Success Nutrient Bundle  
-    - General Hydroponics Flora Grow, Bloom, Micro Combo Fertilizer set 
-    - FoxFarm FX14049 Liquid Nutrient Trio Soil Formula  
-    - Advanced Nutrients 2320-14 Bud Candy Fertilizer  
-
-with additions:  
-
-    - Dyna-Gro Liquid Grow 3-12-6  
-    - Advanced Nutrients Big Bud Liquid Fertilizer 
-    - Humboldts Secret Golden Tree
-    - Botanicare PURE BLEND PRO Grow  
-</details>  
-<details>
-<summary><b>What MAX wattage light will you be using?</b></summary>
+<summary><b>SELECT YOUR light watts</b></summary>
 <!--more info-->   
-- The user will be automatically directed to this page after secting their nutrients. A drop box with multiple choice will allow the user to select from:  
+- The user will be automatically directed to this page after selecting their plant height. A drop box with multiple choice will allow the user to select from:  
 
-    - 600 watts
-    - 750 watts
-    - 1000 watts  
+    - 125W
+    - 250W
+    - 400W
+    - 600W
+    - 1000W  
+
+*The day by day table will continue being built in the background based on the users selection. Each light watt option is linked to the inche space needed between the canopy and light. The **Light Distance** column data will be filled by the corresponding value.*  
 </details> 
-The user will be automatically directed to a page after showing all their selection selected in drop boxes and give them their anticipated amount of days of growing.  
-
-- Each drop box will allow the user to edit and update the days of growing 
-- A calandar box will allow the user to select their start date
-- The name field will allow the user to name this grow  
-- A button will submit the guide.  
-
-The user is now taken back to the **myGrow** page where a list of all their grows exist. With the option to add a new one.  
+<details><summary><b>NUTRIENTS mix and match</b></summary><blockquote>  
+<!--more info-->
+The user will be automatically directed to this page after selecting their light's watts. Checkboxes will allow the user to select from:  
+<br><br>
+<b>Advanced Nutrients</b><br>
+<input type="checkbox" checked>
+<label> VooDoo Juice</label><br>
+<input type="checkbox" checked>
+<label> Big Bud</label><br>
+<input type="checkbox">
+<label> B-52</label><br>
+<input type="checkbox">
+<label> Overdrive</label><br>
+<input type="checkbox">
+<label> Piranha</label><br>
+<input type="checkbox">
+<label> Bud Candy</label><br>
+<input type="checkbox">
+<label> Final Phaze</label><br>
+<input type="checkbox">
+<label> Tarantula</label><br>
+<input type="checkbox">
+<label> Nirvana</label><br>
+<input type="checkbox">
+<label> Sensizym</label><br>
+<input type="checkbox">
+<label> Bud Ignitor</label><br>
+<input type="checkbox">
+<label> Rhino Skin</label><br>  
+<input type="checkbox" checked>
+<label> Bud Factor X</label> 
+<br><br>
+<b>Mamoth Garden Starter Kit</b><br>
+<input type="checkbox">
+<label> Mammoth Grow Me™</label><br>
+<input type="checkbox">
+<label> Mammoth Protect Me™ </label>
+<br><br>
+<b>General Organics® BioThrive®</b><br>
+<input type="checkbox">
+<label> BioThrive® Grow</label><br>
+<input type="checkbox">
+<label> BioThrive® Bloom</label>
+<br><br>
+<b>General Organics® BioThrive®</b><br>
+<input type="checkbox" checked>
+<label> FloraGro®</label><br>
+<input type="checkbox" checked>
+<label> FloraBloom®</label><br>
+<input type="checkbox">
+<label> FloraMicro®</label>
+<br><br>
+<b>TECHNAFLORA The Recipe for Success Starter Kit™</b><br>
+<input type="checkbox">
+<label> B.C Grow</label><br>
+<input type="checkbox">
+<label> B.C Boost</label><br>
+<input type="checkbox">
+<label> B.C Bloom</label><br>
+<input type="checkbox" checked>
+<label> Sugar Daddy</label><br>
+<input type="checkbox">
+<label> ROOT 66</label><br>
+<input type="checkbox">
+<label> Thrive Alive B-1 Red</label><br>
+<input type="checkbox">
+<label> Thrive Alive B-1 Green</label><br>
+<input type="checkbox">
+<label> MagiCal</label><br>
+<input type="checkbox">
+<label> Awesome Blossoms</label><br>  
+<input type="checkbox">
+<label> Rootech Cloning Gel  </label><br> 
+<br><br>              
+<b>FOXFARM DIRTY DOZEN®</b><br>
+<input type="checkbox">
+<label> Big Bloom®</label><br>
+<input type="checkbox">
+<label> Grow Big®</label><br>
+<input type="checkbox">
+<label> Tiger Bloom®</label><br>
+<input type="checkbox">
+<label> Boomerang®</label><br>
+<input type="checkbox" checked>
+<label> Kangaroots®</label><br>
+<input type="checkbox">
+<label> Microbe Brew®</label><br>
+<input type="checkbox">
+<label> Wholly Mackerel®</label><br>
+<input type="checkbox" checked>
+<label> Kelp Me Kelp You®</label><br>
+<input type="checkbox">
+<label> Bembé®</label><br>
+<input type="checkbox">
+<label> Open Sesame®</label><br>
+<input type="checkbox">
+<label> Beastie Bloomz®</label><br>
+<input type="checkbox">
+<label> Cha Ching®</label><br>  
+<br><br>
+</blockquote></details>  
+<details><summary><b>BUILD YOUR guide</b></summary>
+<!--more info-->   
+The user will be automatically directed to a page showing their selections and give them their anticipated amount of days to growing along with a calandar box that will allow the user to select their start date.  
+<br>
+<br>    
+The user is now taken to the <b>INFORMATIONoverload</b> page where a table of all their grow days exist.  
+<br>
+<br>
+From there, the user can go back to the <b>MyGrow</b> page where their grow now exist or <b>MyTask</b> to view their daily task.
+</details>  
 
 ## Tools  
-A page that will answer or direct the user to websites to help troubleshoot grow problems.  
+The **Tools** page has the options:
+<br>
+- How-To
+- SickPlant
+- SearchStrains
+- ContactUs  
+<details><summary><b>How-To</b></summary>
+<!--more info-->   
+Gives a breakdown of GrowApp and how-to + AddGrow
+</details>
+<details><summary><b>SickPlant</b></summary>
+<!--more info-->   
+Links to GrowWeedEasy.com's
+
+            - Plant Doctor
+            - Tips on bugs, pest, and mold
+            - Signs of nutrient dificiencies
+            - Identifying light issues
+</details>
+<details><summary><b>SearchStrains</b></summary>
+<!--more info-->   
+Allows the User to a search through a list of 2,792 strains. As the user types in the input field the list filters the strain names and logos. Upon selecting a list item, that items logo and information appears. 
+</details>
+<details><summary><b>ContactUs</b></summary>
+<!--more info-->   
+Allows the User to contact Loyal9  
+</details>
+<br>  
 
 ## Diary  
 Allow the user to upload photos and place notes throughout their grow.  
@@ -237,15 +357,36 @@ A page that will have links to items a grower needs
 - Create an app that automatically updates each day as a daily guide for the user's personalized cannabis grow.   
 
 # Summary
-**Check-out this interactive website of the Search page [here](https://shannon-goddard.github.io/grow_search/)**  
-**Check-out this interactive website of the Filter page [here](https://shannon-goddard.github.io/grow_filter/)**   
 
-*still working on it, but take a look...*  
-**Check-out the app this project was used with [here](https://shannon-goddard.github.io/grow_app/)**
+
+*still working on it, but feel free to take a look...* 
+<br> 
+**Check-out the interactive website [here](https://shannon-goddard.github.io/grow_app/)**
+<br>
+
+ Give us some feedback at one of the social links below.
+
+ <img href="https://twitter.com/Loyal9GrowApp" src="pics\twitter.png" width="50" height="50">&nbsp;&nbsp;
+<img href="https://www.facebook.com/Loyal9GrowApp/" src="pics\facebook.png" width="50" height="50">&nbsp;&nbsp;
+<img href="https://www.instagram.com/loyal9growapp/" src="pics\instagram.png" width="50" height="50">&nbsp;&nbsp;
+<img href="https://github.com/Shannon-Goddard/grow_app" src="pics\github.png" width="50" height="50"> 
+<br>
+<br>  
+
 
 ![](/pics/gif.gif)  
 
 # Limitations  
-[MIT License](https://github.com/Shannon-Goddard/grow_search/blob/main/LICENSE)  
-[Copyright Act, Section 107](/resources/copyrightact.md)  
-[Permissions](/resources/permission.png) 
+This website is currently using localStorage. The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.
+
+localStorage is similar to sessionStorage, except that while localStorage data has no expiration time, sessionStorage data gets cleared when the page session ends — that is, when the page is closed. (localStorage data for a document loaded in a "private browsing" or "incognito" session is cleared when the last "private" tab is closed and/or browser history is cleared)  
+
+[MIT License](https://github.com/Shannon-Goddard/grow_search/blob/main/LICENSE) |
+[Copyright Act, Section 107](/resources/copyrightact.md) |
+[Permissions](/resources/permission.png) |
+[Terms of Use](../assets/vendor/policies/TermsOfUse.html) |
+[Privacy policy](../assets/vendor/policies/PrivacyPolicy.html) |
+[User Agreement](../assets/vendor/policies/eula.html) |
+[Cookies policy](../assets/vendor/policies/CookiePolicy.html)
+
+
