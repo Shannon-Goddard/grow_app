@@ -141,9 +141,9 @@
 
 
 
-# About Grow app
+# About GrowApp
 
-**GrowApp** by **Loyal9** is designed to build a table that will convert to a day by day guide for the grower based on the users answers to prompted questions.  
+**GrowApp** by **Loyal9** is designed to build a table based on the users answers to prompted questions. That table will be used as a day-by-day guide for the grower  
 
 ## Home  
 **Home** is the first window the user will see on open. With the options: 
@@ -205,100 +205,58 @@ The user will be automatically directed to this page after selecting their strai
 The user will be automatically directed to this page after selecting their light's watts. Checkboxes will allow the user to select from:  
 <br><br>
 <b>Advanced Nutrients</b><br>
-<input type="checkbox" checked>
-<label> VooDoo Juice</label><br>
-<input type="checkbox" checked>
-<label> Big Bud</label><br>
-<input type="checkbox">
-<label> B-52</label><br>
-<input type="checkbox">
-<label> Overdrive</label><br>
-<input type="checkbox">
-<label> Piranha</label><br>
-<input type="checkbox">
-<label> Bud Candy</label><br>
-<input type="checkbox">
-<label> Final Phaze</label><br>
-<input type="checkbox">
-<label> Tarantula</label><br>
-<input type="checkbox">
-<label> Nirvana</label><br>
-<input type="checkbox">
-<label> Sensizym</label><br>
-<input type="checkbox">
-<label> Bud Ignitor</label><br>
-<input type="checkbox">
-<label> Rhino Skin</label><br>  
-<input type="checkbox" checked>
-<label> Bud Factor X</label> 
+&#x2610 VooDoo Juice<br>
+&#x2611 Big Bud<br>
+&#x2610 B-52<br>
+&#x2610 Overdrive<br>
+&#x2610 Piranha<br>
+&#x2611 Bud Candy<br>
+&#x2610 Final Phaze<br>
+&#x2610 Tarantula<br>
+&#x2610 Nirvana<br>
+&#x2610 Sensizym<br>
+&#x2610 Bud Ignitor<br>
+&#x2610 Rhino Skin<br>  
+&#x2610 Bud Factor X<br> 
 <br><br>
 <b>Mamoth Garden Starter Kit</b><br>
-<input type="checkbox">
-<label> Mammoth Grow Me™</label><br>
-<input type="checkbox">
-<label> Mammoth Protect Me™ </label>
+&#x2610 Mammoth Grow Me™<br>
+&#x2610 Mammoth Protect Me™<br> 
 <br><br>
 <b>General Organics® BioThrive®</b><br>
-<input type="checkbox">
-<label> BioThrive® Grow</label><br>
-<input type="checkbox">
-<label> BioThrive® Bloom</label>
+&#x2610 BioThrive® Grow<br>
+&#x2610 BioThrive® Bloom<br>
 <br><br>
 <b>General Organics® BioThrive®</b><br>
-<input type="checkbox" checked>
-<label> FloraGro®</label><br>
-<input type="checkbox" checked>
-<label> FloraBloom®</label><br>
-<input type="checkbox">
-<label> FloraMicro®</label>
+&#x2611 FloraGro®<br>
+&#x2611 FloraBloom®<br>
+&#x2610 FloraMicro®<br>
 <br><br>
 <b>TECHNAFLORA The Recipe for Success Starter Kit™</b><br>
-<input type="checkbox">
-<label> B.C Grow</label><br>
-<input type="checkbox">
-<label> B.C Boost</label><br>
-<input type="checkbox">
-<label> B.C Bloom</label><br>
-<input type="checkbox" checked>
-<label> Sugar Daddy</label><br>
-<input type="checkbox">
-<label> ROOT 66</label><br>
-<input type="checkbox">
-<label> Thrive Alive B-1 Red</label><br>
-<input type="checkbox">
-<label> Thrive Alive B-1 Green</label><br>
-<input type="checkbox">
-<label> MagiCal</label><br>
-<input type="checkbox">
-<label> Awesome Blossoms</label><br>  
-<input type="checkbox">
-<label> Rootech Cloning Gel  </label><br> 
+&#x2610 B.C Grow<br>
+&#x2610 B.C Boost<br>
+&#x2610 B.C Bloom<br>
+&#x2610 Sugar Daddy<br>
+&#x2610 ROOT 66<br>
+&#x2610 Thrive Alive B-1 Red<br>
+&#x2610 Thrive Alive B-1 Green<br>
+&#x2611 MagiCal<br>
+&#x2610 Awesome Blossoms<br>  
+&#x2610 Rootech Cloning Gel<br>   
 <br><br>              
 <b>FOXFARM DIRTY DOZEN®</b><br>
-<input type="checkbox">
-<label> Big Bloom®</label><br>
-<input type="checkbox">
-<label> Grow Big®</label><br>
-<input type="checkbox">
-<label> Tiger Bloom®</label><br>
-<input type="checkbox">
-<label> Boomerang®</label><br>
-<input type="checkbox" checked>
-<label> Kangaroots®</label><br>
-<input type="checkbox">
-<label> Microbe Brew®</label><br>
-<input type="checkbox">
-<label> Wholly Mackerel®</label><br>
-<input type="checkbox" checked>
-<label> Kelp Me Kelp You®</label><br>
-<input type="checkbox">
-<label> Bembé®</label><br>
-<input type="checkbox">
-<label> Open Sesame®</label><br>
-<input type="checkbox">
-<label> Beastie Bloomz®</label><br>
-<input type="checkbox">
-<label> Cha Ching®</label><br>  
+&#x2611 Big Bloom®<br>
+&#x2610 Grow Big®<br>
+&#x2610 Tiger Bloom®<br>
+&#x2610 Boomerang®<br>
+&#x2610 Kangaroots®<br>
+&#x2610 Microbe Brew®<br>
+&#x2610 Wholly Mackerel®<br>
+&#x2611 Kelp Me Kelp You®<br>
+&#x2610 Bembé®<br>
+&#x2610 Open Sesame®<br>
+&#x2610 Beastie Bloomz®<br>
+&#x2610 Cha Ching®<br>  
 <br><br>
 </blockquote></details>  
 <details><summary><b>BUILD YOUR guide</b></summary>
@@ -310,15 +268,17 @@ The user is now taken to the <b>INFORMATIONoverload</b> page where a table of al
 <br>
 <br>
 From there, the user can go back to the <b>MyGrow</b> page where their grow now exist or <b>MyTask</b> to view their daily task.
-</details>  
+</details>    
+
+## Diary  
+Allow the user to upload photos and place notes throughout their grow.  
+
+## Shop  
+A page that will have links to items a grower needs
 
 ## Tools  
 The **Tools** page has the options:
 <br>
-- How-To
-- SickPlant
-- SearchStrains
-- ContactUs  
 <details><summary><b>How-To</b></summary>
 <!--more info-->   
 Gives a breakdown of GrowApp and how-to + AddGrow
@@ -342,12 +302,6 @@ Allows the User to contact Loyal9
 </details>
 <br>  
 
-## Diary  
-Allow the user to upload photos and place notes throughout their grow.  
-
-## Shop  
-A page that will have links to items a grower needs
-
 # Resources  
 - **Software:** VS Code   
 - **Languages:** Java Script, JQuery, CSS, and HTML  
@@ -366,10 +320,10 @@ A page that will have links to items a grower needs
 
  Give us some feedback at one of the social links below.
 
- <img href="https://twitter.com/Loyal9GrowApp" src="pics\twitter.png" width="50" height="50">&nbsp;&nbsp;
-<img href="https://www.facebook.com/Loyal9GrowApp/" src="pics\facebook.png" width="50" height="50">&nbsp;&nbsp;
-<img href="https://www.instagram.com/loyal9growapp/" src="pics\instagram.png" width="50" height="50">&nbsp;&nbsp;
-<img href="https://github.com/Shannon-Goddard/grow_app" src="pics\github.png" width="50" height="50"> 
+ <a href="https://twitter.com/Loyal9GrowApp"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/twitter.svg" width="50" height="50"></a>&nbsp;&nbsp;
+<a href="https://www.facebook.com/Loyal9GrowApp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/facebook.svg" width="50" height="50"></a>&nbsp;&nbsp;
+<a href="https://www.instagram.com/loyal9growapp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/instagram.svg" width="50" height="50"></a>&nbsp;&nbsp;
+<a href="https://github.com/Shannon-Goddard/grow_app"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="50" height="50"></a> 
 <br>
 <br>  
 
@@ -380,6 +334,8 @@ A page that will have links to items a grower needs
 This website is currently using localStorage. The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.
 
 localStorage is similar to sessionStorage, except that while localStorage data has no expiration time, sessionStorage data gets cleared when the page session ends — that is, when the page is closed. (localStorage data for a document loaded in a "private browsing" or "incognito" session is cleared when the last "private" tab is closed and/or browser history is cleared)  
+
+**MEANING: YOUR GROW WILL BE ERASED AFTER YOU CLEAR YOUR BROWSER HISTORY!** Eventually, localStorage will become "server side". . . /əˈven(t)SH(o͞o)əlē/. 
 
 [MIT License](https://github.com/Shannon-Goddard/grow_search/blob/main/LICENSE) |
 [Copyright Act, Section 107](/resources/copyrightact.md) |
