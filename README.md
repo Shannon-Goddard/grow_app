@@ -149,12 +149,12 @@
 - Grow together. Build confidence.   
 
 # Summary
-**GrowApp** by **Loyal9** uses contextual prompts to guide the user through building an automated daily task list.  **GrowApp** is designed to personalize each grow tailored to that users needs and expectations while providing tools and resources needed for success. 
+**GrowApp** by **Loyal9** uses contextual prompts to guide the user through building an automated daily task list.  **GrowApp** is designed to personalize each grow tailored to that user's needs and expectations while providing tools and resources needed for success. 
 
 **GrowApp**'s functionality: 
 - The user answers the prompted questions  
 - A table is filtered/filled in the background based on those answers  
-- The filtered table rows are used as the users today() data  
+- The filtered table rows are the user's today() data  
 - The data displayed is relevant to the user in a concise way.  
 
 **GrowApp**'s usability:  
@@ -342,7 +342,7 @@ Allows the User to contact Loyal9
 A **BIG shout-out** to **Nebula Haze** of [growweedeasy.com](https://www.growweedeasy.com/) I emailed this chick that I never met...  she already has a strong business base... yet, she took the time to get back to me... the very next day!!!
 <br>
 <br>
-Thanks out to [UC Berkeley Data Analytics Boot Camp](https://www.parchment.com/u/award/52aa69caa5dc9752cd8c72090bbb347c) for the couple week crash course in HTML, CSS, and Javascript. *Biggest take away: To get the right answer, you need to ask the right question.*
+Thanks out to [UC Berkeley Data Analytics Boot Camp](https://www.parchment.com/u/award/52aa69caa5dc9752cd8c72090bbb347c) for the crash course in HTML, CSS, and Javascript. *Biggest take away: To get the right answer, you need to ask the right question.*
 <br>
 <br>
 To [stackoverflow.com](https://stackoverflow.com/) and how you are reaffirmed that there are stupid questions. [Mohamed Yousef](https://stackoverflow.com/users/3385827/mohamed-yousef) for taking the time to answer and explain [this.id](https://stackoverflow.com/questions/72094774/using-jquery-to-change-img-src-from-a-js-arrays-value) question, thanks. 
