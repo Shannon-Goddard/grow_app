@@ -24,7 +24,7 @@ function getValues() {
           vegWeeks = "16";
         
         }
-  document.getElementById("info").innerHTML = (localStorage.plantGrow*7)+(vegWeeks*7)+" days";
+  document.getElementById("info").innerHTML = (localStorage.plantGrow*7)+(vegWeeks*7)+18+" days";
   $("#taskButton").show();
 
 };
