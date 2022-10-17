@@ -1,5 +1,7 @@
 /////Retrieve user selections
-function getValues() {
+window.onload = (event) => { loadDoc(); }
+	
+	function loadDoc() {
   /////Retrieve Strain
   document.getElementById("strain").innerHTML = localStorage.plantStrain;
   /////Retrieve Plant Height
@@ -311,8 +313,9 @@ if (localStorage.plantGrow === '23')  {
 $(".twentyfourFlowering").hide();
 }
 
-};
-window.onload = getValues;
+
+return; 
+	}
 
 //////////////////stores table after selection
 $(function(){
