@@ -339,13 +339,17 @@ Allows the User to contact Loyal9
 # Acknowledgments
 **To all the players who made this possible thank you very much! Yeah and..**
 <br>  
-A **BIG shout-out** to **Nebula Haze** of [growweedeasy.com](https://www.growweedeasy.com/) I emailed this chick that I never met...  she already has a strong business base... yet, she took the time to get back to me... the very next day!!!
+**A BIG shout-out to Nebula Haze of [growweedeasy.com](https://www.growweedeasy.com/)**
+<br>  *I emailed this chick that I never met...  she already has a strong business base... yet, she took the time to get back to me... the very next day!!!*
 <br>
 <br>
-Thanks out to [UC Berkeley Data Analytics Boot Camp](https://www.parchment.com/u/award/52aa69caa5dc9752cd8c72090bbb347c) for the crash course in HTML, CSS, and Javascript. *Biggest take away: To get the right answer, you need to ask the right question.*
+**Thanks out to [UC Berkeley](https://www.parchment.com/u/award/52aa69caa5dc9752cd8c72090bbb347c) for the crash course in HTML, CSS, and Javascript.**
+<br> *Biggest take away: To get the right answer, you need to ask the right question.*
 <br>
 <br>
-To [stackoverflow.com](https://stackoverflow.com/) and how you are reaffirmed that there are stupid questions. [Mohamed Yousef](https://stackoverflow.com/users/3385827/mohamed-yousef) for taking the time to answer and explain [this.id](https://stackoverflow.com/questions/72094774/using-jquery-to-change-img-src-from-a-js-arrays-value) question, thanks. 
+**To [stackoverflow.com](https://stackoverflow.com/) and how they reaffirm that there are stupid questions.**
+<br>
+*[Mohamed Yousef](https://stackoverflow.com/users/3385827/mohamed-yousef) for taking the time to answer and explain [this.id](https://stackoverflow.com/questions/72094774/using-jquery-to-change-img-src-from-a-js-arrays-value) question, thanks.* 
 <br>
 ![](/pics/gif.gif)  
 
