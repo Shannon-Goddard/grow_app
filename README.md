@@ -1,6 +1,6 @@
 ![header](/pics/header.png)
  
-#### Table of Contents  
+# Table of Contents 
 
 [Project Overview](#project-overview)  
 [Resources](#resources)  
@@ -79,7 +79,7 @@
 **[Ilovegrowingmarijuana.Com](https://www.ilovegrowingmarijuana.com/)** ia a source on how to grow marijuana by Robert Bergman, Amsterdam. With guides and helpful experts.    
 </details>  
 
-*The list above shows the variation of cannabis sites. Not all the sites listed are dedicated to personal cultivation.*  
+<sub>*The list above shows the variation of cannabis sites. Not all the sites listed are dedicated to personal cultivation.*</sub>  
 >"Long gone are the days of cannabis farmers scribbling illegible notes on stained notepads in the grow room. Today there is a growing marketplace of community-driven, expert-developed grow applications for mobile devices. Now, thanks to recent advancements in cloud-based technology, and our increasing obsession with mobile technologies, a cultivator can see everything they need to know about their crop all in one place."<div style="text-align: right" ><a href="https://www.cannabistech.com/articles/smart-grow-apps-cannabis-weed/">cannabistech.com</a></div>  
 ## There are many cannabis grow apps on the market today. However, they are geared towards hindsight in their data analytics from the user's input. To list a few:
 <details>
@@ -123,6 +123,8 @@
 
 **simLeaf** allows users to practice growing weed virtually from their phone or tablet. The platform is actually quite sophisticated, as you must manage light, temperature, humidity, water levels, nutrients, and pH levels throughout the growing stages. simLeaf also provides useful tips and educational information to help you along the way. 
 </details>  
+
+[Back to top](#table-of-contents)  
 
 # Resources  
 - **Software:** VS Code   
@@ -319,7 +321,8 @@ Allows the User to contact Loyal9
 <a href="https://www.instagram.com/loyal9growapp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/instagram.svg" width="50" height="50"></a>&nbsp;&nbsp;
 <a href="https://github.com/Shannon-Goddard/grow_app"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="50" height="50"></a> 
 <br>
-<br>  
+<br>
+[Back to top](#table-of-contents)  
 # Acknowledgments
 **To all the players who made this possible thank you very much! Yeah and..**
 <br>  
@@ -338,11 +341,12 @@ Allows the User to contact Loyal9
 ![](/pics/gif.gif)  
 
 # Limitations  
-This website is currently using localStorage. The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.
+<sub>This website is currently using localStorage. The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.</sub> 
 
-localStorage is similar to sessionStorage, except that while localStorage data has no expiration time, sessionStorage data gets cleared when the page session ends — that is, when the page is closed. (localStorage data for a document loaded in a "private browsing" or "incognito" session is cleared when the last "private" tab is closed and/or browser history is cleared)  
+<sub>localStorage is similar to sessionStorage, except that while localStorage data has no expiration time, sessionStorage data gets cleared when the page session ends — that is, when the page is closed. (localStorage data for a document loaded in a "private browsing" or "incognito" session is cleared when the last "private" tab is closed and/or browser history is cleared)</sub>
 
-**MEANING: YOUR GROW WILL BE ERASED AFTER YOU CLEAR YOUR BROWSER HISTORY!** Eventually, localStorage will become "server side". . . /əˈven(t)SH(o͞o)əlē/. 
+**MEANING: YOUR GROW WILL BE ERASED AFTER YOU CLEAR YOUR BROWSER HISTORY!** Eventually, localStorage will become "server side". . . /əˈven(t)SH(o͞o)əlē/.  
+[Back to top](#table-of-contents) 
 
 [MIT License](https://github.com/Shannon-Goddard/grow_search/blob/main/LICENSE) |
 [Copyright Act, Section 107](/resources/copyrightact.md) |
