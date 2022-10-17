@@ -140,10 +140,27 @@
 </details> 
 
 
+# Resources  
+- **Software:** VS Code   
+- **Languages:** Java Script | JQuery | CSS | HTML  
+- **Data Source:** [ALL_data.csv](https://raw.githubusercontent.com/Shannon-Goddard/grow_data/main/Resources/csv/ALL_data.csv) | [growweedeasy.com](https://www.growweedeasy.com/)    
 
-# About GrowApp
+# Objectives  
+- Grow together. Build confidence.   
 
-**GrowApp** by **Loyal9** is designed to build a table based on the users answers to prompted questions. That table will be used as a day-by-day guide for the grower  
+# Summary
+**GrowApp** by **Loyal9** uses contextual prompts to guide the user through building an automated daily task list.  **GrowApp** is designed to personalize each grow tailored to that users needs and expectations while providing tools and resources needed for success. 
+
+**GrowApp**'s functionality: 
+- The user answers the prompted questions  
+- A table is filtered/filled in the background based on those answers  
+- The filtered table rows are used as the users today() data  
+- The data displayed is relevant to the user in a concise way.  
+
+**GrowApp**'s usability:  
+- Relevant daily guide through a successful cannabis grow.
+- Resources to troubleshooting sick plants
+- Access and information on materials needed for a successful grow
 
 ## Home  
 **Home** is the first window the user will see on open. With the options: 
@@ -258,10 +275,12 @@ The user will be automatically directed to this page after selecting their light
 &#x2610 Beastie Bloomz®<br>
 &#x2610 Cha Ching®<br>  
 <br><br>
+
+*The filter table will show() the columns of nutrients the user selected*
 </blockquote></details>  
 <details><summary><b>BUILD YOUR guide</b></summary>
 <!--more info-->   
-The user will be automatically directed to a page showing their selections and give them their anticipated amount of days to growing along with a calandar box that will allow the user to select their start date.  
+The user will be automatically directed to the <b>BUILD YOUR guide</b> page showing their selections and give them their anticipated amount of days of growing along with a calandar box that will allow the user to select their start date.  
 <br>
 <br>    
 The user is now taken to the <b>INFORMATIONoverload</b> page where a table of all their grow days exist.  
@@ -281,7 +300,7 @@ The **Tools** page has the options:
 <br>
 <details><summary><b>How-To</b></summary>
 <!--more info-->   
-Gives a breakdown of GrowApp and how-to + AddGrow
+Gives a breakdown of GrowApp and how-to <b>+AddGrow</b>
 </details>
 <details><summary><b>SickPlant</b></summary>
 <!--more info-->   
@@ -302,22 +321,13 @@ Allows the User to contact Loyal9
 </details>
 <br>  
 
-# Resources  
-- **Software:** VS Code   
-- **Languages:** Java Script, JQuery, CSS, and HTML  
-- **Data Source:** [ALL_data.csv](https://raw.githubusercontent.com/Shannon-Goddard/grow_data/main/Resources/csv/ALL_data.csv)    
-
-# Objectives  
-- Create an app that automatically updates each day as a daily guide for the user's personalized cannabis grow.   
-
-# Summary
-
-
 *still working on it, but feel free to take a look...* 
 <br> 
-**Check-out the interactive website [here](https://shannon-goddard.github.io/grow_app/)**
+**Check-out the interactive website on GitPages [here](https://shannon-goddard.github.io/grow_app/)**
 <br>
-
+**Check-out the interactive website on AWS Amplify [here](https://main.d28ea5u7cfve1j.amplifyapp.com/)**
+<br>
+<br>
  Give us some feedback at one of the social links below.
 
  <a href="https://twitter.com/Loyal9GrowApp"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/twitter.svg" width="50" height="50"></a>&nbsp;&nbsp;
@@ -326,8 +336,17 @@ Allows the User to contact Loyal9
 <a href="https://github.com/Shannon-Goddard/grow_app"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="50" height="50"></a> 
 <br>
 <br>  
-
-
+# Acknowledgments
+**To all the players who made this possible thank you very much! Yeah and..**
+<br>  
+A **BIG shout-out** to **Nebula Haze** of [growweedeasy.com](https://www.growweedeasy.com/) I emailed this chick that I never met...  she already has a strong business base... yet, she took the time to get back to me... the very next day!!!
+<br>
+<br>
+Thanks out to [UC Berkeley Data Analytics Boot Camp](https://www.parchment.com/u/award/52aa69caa5dc9752cd8c72090bbb347c) for the couple week crash course in HTML, CSS, and Javascript. *Biggest take away: To get the right answer, you need to ask the right question.*
+<br>
+<br>
+To [stackoverflow.com](https://stackoverflow.com/) and how you are reaffirmed that there are stupid questions. [Mohamed Yousef](https://stackoverflow.com/users/3385827/mohamed-yousef) for taking the time to answer and explain [this.id](https://stackoverflow.com/questions/72094774/using-jquery-to-change-img-src-from-a-js-arrays-value) question, thanks. 
+<br>
 ![](/pics/gif.gif)  
 
 # Limitations  
