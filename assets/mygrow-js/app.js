@@ -7,6 +7,7 @@ if (plantLogo) {
   document.getElementById("MyGrowText").style.display = "block";
   document.getElementById("DeleteButton").style.display = "block";
   document.getElementById("MyGrowAdd").style.display = "none";
+  $("#taskButton").show();
 };
   
 
@@ -21,14 +22,3 @@ DeleteButton.addEventListener('click', function () {
 });
 
 console.log(localStorage)
-
-/////////////////hide taskButton button unless localStorage
-$(function(){
-  
-  // retrieve local storage data
-  var arr = JSON.parse( localStorage.getItem('page_html') );
-  if (arr) {
-    $("#taskButton").show();
-  }
- 
-});

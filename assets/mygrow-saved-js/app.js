@@ -332,8 +332,10 @@ $(function(){
   if (arr) {
     content.innerHTML = arr;
   }
-});
  
+});
+
+console.log(localStorage)
 
 
 

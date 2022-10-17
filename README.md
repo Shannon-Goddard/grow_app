@@ -10,15 +10,8 @@
   
 # Project Overview
 ![flowhub article clip](pics/news.gif) Full article can be found at [flowhub.com](https://flowhub.com/cannabis-industry-statistics)
-## Recent surveys suggest significant proportion of consumers started growing their own cannabis for personal consumption or gifting.  
-<br>
-<br>  
-
->"Homegrowers cultivate cannabis for a variety of reasons. Some opt-in due to a lack of other sources (14%), or to grow strains which they otherwise could not find to purchase (35%). Quality is another key consideration. Nearly one-third (32%) grow to avoid worries about contaminates such as pesticides, while 44% feel that they grow better-quality flower than they could find elsewhere. For others, it is a matter of convenience (52%), or less expense (46%). Nevertheless, a larger majority of homegrowers (70%) report growing cannabis because they enjoy it as a hobby.  
-
-<div style="text-align: right" ><a href="https://newfrontierdata.com/cannabis-insights/for-many-cannabis-consumers-home-is-where-the-grow-is/">newfrontierdata.com</a></div>
-<br>
-<br>
+## Recent surveys suggest significant proportion of consumers started growing their own cannabis for personal consumption or gifting.
+>"Homegrowers cultivate cannabis for a variety of reasons. Some opt-in due to a lack of other sources (14%), or to grow strains which they otherwise could not find to purchase (35%). Quality is another key consideration. Nearly one-third (32%) grow to avoid worries about contaminates such as pesticides, while 44% feel that they grow better-quality flower than they could find elsewhere. For others, it is a matter of convenience (52%), or less expense (46%). Nevertheless, a larger majority of homegrowers (70%) report growing cannabis because they enjoy it as a hobby.<div style="text-align: right" ><a href="https://newfrontierdata.com/cannabis-insights/for-many-cannabis-consumers-home-is-where-the-grow-is/">newfrontierdata.com</a></div>  
 
 [Global Cannabis Cultivation Research Consortium](https://worldwideweed.nl/about/) formed in 2009 to monitor the growth of domestic cultivation and how cannabis markets were evolving. They started studies on home cannabis growing dating back to 2012. However, with only 5,000 respondents in their case study, the data can only be considered preliminary findings. An indirect approach of seeing the increase in personal cultivation would be to look at the year over year growth in revenue of companies that sell cannabis cultivation products. 
 <br>  
@@ -34,11 +27,9 @@
 <!--more info-->
 
 **Hydrofarm** is a leading manufacturer and distributor of branded hydroponics equipment and supplies for controlled environment agriculture, including grow lights, climate control solutions, grow media and nutrients, as well as broad portfolio of innovative and proprietary branded products. As of Q2 2022, **HYDROFARM HOLDINGS GROUP**'s revenue has grown 23.98% year over year.    
-</details>
-<br>  
+</details>  
 
-## There are many website dedicated to marijuana. Such as:
-<br>
+## There are many website dedicated to marijuana. Such as:  
 <details>
 <summary><b>Leafly.Com  | 4,600,000 </b> Unique Visitors</summary>
 <!--more info-->
@@ -88,14 +79,8 @@
 **[Ilovegrowingmarijuana.Com](https://www.ilovegrowingmarijuana.com/)** ia a source on how to grow marijuana by Robert Bergman, Amsterdam. With guides and helpful experts.    
 </details>  
 
-## This is just to name a few and show the variation of sites. Not all are dedicated to personal cultivation. Those that are, show there is a need.  
-<br>
-
->"Long gone are the days of cannabis farmers scribbling illegible notes on stained notepads in the grow room. Today there is a growing marketplace of community-driven, expert-developed grow applications for mobile devices. Now, thanks to recent advancements in cloud-based technology, and our increasing obsession with mobile technologies, a cultivator can see everything they need to know about their crop all in one place."  
-
-<div style="text-align: right" ><a href="https://www.cannabistech.com/articles/smart-grow-apps-cannabis-weed/">cannabistech.com</a></div>  
-<br>  
-
+*The list above shows the variation of cannabis sites. Not all the sites listed are dedicated to personal cultivation.*  
+>"Long gone are the days of cannabis farmers scribbling illegible notes on stained notepads in the grow room. Today there is a growing marketplace of community-driven, expert-developed grow applications for mobile devices. Now, thanks to recent advancements in cloud-based technology, and our increasing obsession with mobile technologies, a cultivator can see everything they need to know about their crop all in one place."<div style="text-align: right" ><a href="https://www.cannabistech.com/articles/smart-grow-apps-cannabis-weed/">cannabistech.com</a></div>  
 ## There are many cannabis grow apps on the market today. However, they are geared towards hindsight in their data analytics from the user's input. To list a few:
 <details>
 <summary><b>Canix | 1K+</b> Downloads</summary>
@@ -137,8 +122,7 @@
 <!--more info-->
 
 **simLeaf** allows users to practice growing weed virtually from their phone or tablet. The platform is actually quite sophisticated, as you must manage light, temperature, humidity, water levels, nutrients, and pH levels throughout the growing stages. simLeaf also provides useful tips and educational information to help you along the way. 
-</details> 
-
+</details>  
 
 # Resources  
 - **Software:** VS Code   
@@ -158,7 +142,7 @@
 - The data displayed is relevant to the user in a concise way.  
 
 **GrowApp**'s usability:  
-- Relevant daily guide through a successful cannabis grow.
+- Relevant daily guide through a full cannabis grow cycle.
 - Resources to troubleshooting sick plants
 - Access and information on materials needed for a successful grow
 
@@ -321,7 +305,7 @@ Allows the User to contact Loyal9
 </details>
 <br>  
 
-*still working on it, but feel free to take a look...* 
+*still working on it, but feel free to take a look...*  
 <br> 
 **Check-out the interactive website on GitPages [here](https://shannon-goddard.github.io/grow_app/)**
 <br>
