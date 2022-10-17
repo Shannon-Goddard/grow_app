@@ -1,33 +1,6 @@
 /////Retrieve user selections
 function getValues() {
-  /////Retrieve Strain
-  document.getElementById("strain").innerHTML = localStorage.plantStrain;
-  /////Retrieve Plant Height
-  document.getElementById("Grow").innerHTML = localStorage.plantHeight;
-
-  /////Retrieve Plant Logo
-  var plantLogo = localStorage.getItem('plantLogo');
-  $("#image").attr("src" , plantLogo).show();
-  /////Retrieve Grow Time
-  var vegWeeks;
-  vegWeeks = "";
-  if(localStorage.plantHeight === "1-2 feet") {
-    vegWeeks = "4";
-  }
-    if(localStorage.plantHeight === "3-4 feet") {
-      vegWeeks = "8";
-    }
-      if(localStorage.plantHeight === "5-6 feet") {
-        vegWeeks = "12";
-      }
-        if(localStorage.plantHeight === "7+ feet") {
-          vegWeeks = "16";
-        
-        }
-  document.getElementById("info").innerHTML = (localStorage.plantGrow*7)+(vegWeeks*7)+18+" days";
-  $("#taskButton").show();
-
-   ///////////////////////////////////////////////////////////////////
+ ///////////////////////////////////////////////////////////////////
   //add Inches to LightDistance column _125W _250W _400W _600W _1000W
   if (localStorage.plantwatts === '125W')  {
     $(".lightInches").text("12 Inches");
