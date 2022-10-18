@@ -122,9 +122,7 @@
 <!--more info-->
 
 **simLeaf** allows users to practice growing weed virtually from their phone or tablet. The platform is actually quite sophisticated, as you must manage light, temperature, humidity, water levels, nutrients, and pH levels throughout the growing stages. simLeaf also provides useful tips and educational information to help you along the way. 
-</details>  
-
-[Back to top](#table-of-contents)  
+</details><div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>  
 
 # Resources  
 - **Software:** VS Code   
@@ -158,7 +156,7 @@
 ## MyGrow 
 
 **MyGrow** page is where the users will have the option to add a new grow. Upon selecting **+ AddGrow** the user will be directed to answer multiple questions.
-![](assets\img\phone1.png)
+![](assets/img/phone1.png)
 <details>
 <summary><b>SELECT A STRAIN</b></summary>
 <!--more info-->
@@ -319,11 +317,10 @@ Allows the User to contact Loyal9
  <a href="https://twitter.com/Loyal9GrowApp"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/twitter.svg" width="50" height="50"></a>&nbsp;&nbsp;
 <a href="https://www.facebook.com/Loyal9GrowApp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/facebook.svg" width="50" height="50"></a>&nbsp;&nbsp;
 <a href="https://www.instagram.com/loyal9growapp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/instagram.svg" width="50" height="50"></a>&nbsp;&nbsp;
-<a href="https://github.com/Shannon-Goddard/grow_app"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="50" height="50"></a> 
-<br>
-<br>
-[Back to top](#table-of-contents)  
-# Acknowledgments
+<a href="https://github.com/Shannon-Goddard/grow_app"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="50" height="50"></a>
+
+# Acknowledgments  
+
 **To all the players who made this possible thank you very much! Yeah and..**
 <br>  
 **A BIG shout-out to Nebula Haze of [growweedeasy.com](https://www.growweedeasy.com/)**
@@ -346,14 +343,13 @@ Allows the User to contact Loyal9
 <sub>localStorage is similar to sessionStorage, except that while localStorage data has no expiration time, sessionStorage data gets cleared when the page session ends — that is, when the page is closed. (localStorage data for a document loaded in a "private browsing" or "incognito" session is cleared when the last "private" tab is closed and/or browser history is cleared)</sub>
 
 **MEANING: YOUR GROW WILL BE ERASED AFTER YOU CLEAR YOUR BROWSER HISTORY!** Eventually, localStorage will become "server side". . . /əˈven(t)SH(o͞o)əlē/.  
-[Back to top](#table-of-contents) 
+</details>  
 
-[MIT License](https://github.com/Shannon-Goddard/grow_search/blob/main/LICENSE) |
-[Copyright Act, Section 107](/resources/copyrightact.md) |
-[Permissions](/resources/permission.png) |
-[Terms of Use](../assets/vendor/policies/TermsOfUse.html) |
-[Privacy policy](../assets/vendor/policies/PrivacyPolicy.html) |
-[User Agreement](../assets/vendor/policies/eula.html) |
-[Cookies policy](../assets/vendor/policies/CookiePolicy.html)
-
-
+<sub>[MIT License](https://github.com/Shannon-Goddard/grow_search/blob/main/LICENSE) |
+[Copyright Act, Section 107](resources/copyrightact.md) |
+[Permissions](resources/permission.png) |
+[Terms of Use](assets/vendor/policies/TermsOfUse.html) |
+[Privacy policy](assets/vendor/policies/PrivacyPolicy.html) |
+[User Agreement](assets/vendor/policies/eula.html) |
+[Cookies policy](assets/vendor/policies/CookiePolicy.html)</sub>
+<div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>
