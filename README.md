@@ -307,9 +307,7 @@ Allows the User to contact Loyal9
 
 *still working on it, but feel free to take a look...*  
 <br> 
-**Check-out the interactive website on GitPages [here](https://shannon-goddard.github.io/grow_app/)**
-<br>
-**Check-out the interactive website on AWS Amplify [here](https://main.d28ea5u7cfve1j.amplifyapp.com/)**
+**Check-out the interactive website at [loyal9.app](https://www.loyal9.app)**
 <br>
 <br>
  Give us some feedback at one of the social links below.
