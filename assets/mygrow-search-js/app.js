@@ -28,6 +28,7 @@ function myFunction() {
   }
 };
 //Function to change info on click//
+document.addEventListener("DOMContentLoaded", function(event) { 
 $("li").on("click" , "a" , function(){
   const d = data;
   //Change logo, strain, Grow, Sativa, THC, CBD, info, and more_info on user selection of search drop
@@ -62,7 +63,7 @@ $("li").on("click" , "a" , function(){
     $("#weeks").show();
   }
 });
-
+});
 ////////function to store users selection onto mygrow-saved.html///
 $(".get-started-btn").click(function() {
   
