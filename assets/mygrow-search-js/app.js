@@ -171,7 +171,9 @@
   });
 
 })()
-
+///////////////////////////////////////////////
+const observer = lozad();
+observer.observe();
 ///////////////////////////////////////////////////////
 //Function to hide search until user starts typing//
 $(function() {
