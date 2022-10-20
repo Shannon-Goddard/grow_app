@@ -1,0 +1,595 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+html, body {width: auto!important; overflow-x: hidden!important
+} 
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  margin: 0px;
+  height: 100%;
+}
+
+a {
+  color: #04AA6D; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #04AA6D; 
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo a span {
+  color: #04AA6D; 
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+#  Get Startet Button
+--------------------------------------------------------------*/
+.get-started-btn {
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 2px solid #04AA6D; 
+}
+
+.get-started-btn:hover {
+  background: #04AA6D; 
+  color: #343a40;
+}
+
+@media (max-width: 992px) {
+  .get-started-btn {
+    padding: 7px 20px 8px 20px;
+    margin-right: 15px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/hero-bg.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  position: relative;
+  padding-top: 74px;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero h1 span {
+  color: #04AA6D; 
+}
+
+#hero h2 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+#hero .icon-box {
+  padding: 30px 20px;
+  transition: ease-in-out 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 100%;
+  text-align: center;
+}
+
+#hero .icon-box i {
+  font-size: 32px;
+  line-height: 1;
+  color: #fff;
+  transition: ease-in-out 0.3s; 
+}
+
+#hero .icon-box h3 {
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#hero .icon-box h3 {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+#hero .icon-box i {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+#hero .icon-box:hover h3, #hero .icon-box:hover i {
+  color: #04AA6D;
+}
+
+#hero .icon-box:hover {
+  border-color: #04AA6D;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: auto;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+#hero small {
+  font-family: Arial;
+  font-size: 10px;
+ }
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 15px 0;
+  background: transparent;
+  min-height: 40px;
+  margin-top: 74px;
+}
+
+.breadcrumbs h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #2f2f2f;
+  content: "/";
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 68px;
+  }
+
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #04AA6D; 
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #151515;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #151515;
+}
+
+.back-to-top:hover i {
+  color: #04AA6D; 
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #151515;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 0px);
+  left: calc(50% - 30px);
+  border: 6px solid #04AA6D; 
+  border-top-color: #151515;
+  border-bottom-color: #151515;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 32px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #04AA6D; 
+}
+
+/**
+* Mobile Navigation 
+*/
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+/*--------------------------------------------------------------
+# Search Page
+--------------------------------------------------------------*/
+.customBody {
+  background-color:#000;
+  width: auto!important; 
+  overflow-x: hidden!important;
+}
+#myInput {
+  background: transparent;
+  box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.8);
+  width: 100%; /* Full-width */
+  font-size: 24px; /* Increase font-size */
+  padding: 1.0vw 1.0vw 1.0vw 1.0vw; /* Add some padding */
+  border: 0.1vw solid #04AA6D; /* Add a green border */
+  margin-bottom: 1.0vw; /* Add some space below the input */
+  color: #FFFFFF;
+  text-shadow: 1px 1px #000;
+}
+#myUL {
+  /* Remove default list styling */
+  display: none;
+  box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.8);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a {
+  margin-top: -1.0vw; /* Prevent double borders */
+  padding: 1.0vw; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 24px; /* Increase the font-size */
+  color: #FFFFFF; /* Add a white text color */
+  text-shadow: 1px 1px #000;
+  display: block; /* Make it into a block element to fill the whole list */
+  width: 100%; /* Full-width */
+}
+#myUL li a:hover:not(.header) {
+  background-color: #04AA6D; /* Add a hover effect to all links, except for headers */
+}
+/* user selection data css*/
+.post-container {
+  text-align: justify;
+  text-justify: inter-word;
+  width:100%;
+  inline-size: 100%;
+  position: relative;
+  padding: 2.0vmin 2.0vmin calc(20px + 10.0vmin) 2.0vmin;
+ }
+#image {
+  max-width: 100%;
+  flex-basis: 40%;
+}
+
+#box {
+  height: 100%;
+  overflow:hidden;
+  word-wrap: break-word;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 200;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+ 
+}
+#box h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box h2 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 40px;
+  line-height: 1.0;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+}
+#box h3 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 30px;
+  line-height: 1.0;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+}
+#box h4 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 20px;
+  line-height: 1.0;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+}
+#weeks {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #box {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #box {
+    height: auto;
+  }
+
+  #box h1 {
+    font-size: 28px;
+    line-height: 1.0;
+  }
+
+  #box h2 {
+    font-size: 20px;
+    line-height: 0.5;
+  }
+  #box h3 {
+    font-size: 15px;
+    line-height: 0.5;
+  }
+  #box h4 {
+    font-size: 10px;
+    line-height: 0.5;
+  }
+}
+/*--------------------------------------------------------------
+# taskButton
+--------------------------------------------------------------*/
+#taskButton {
+  display: none;
+}
+
+
+/*--------------------------------------------------------------
+# myGrow
+--------------------------------------------------------------*/
+/* Container holding the logo image*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+/* Search image and the text */
+#image {
+  float: left;
+  display: none;
+  margin: 1.0vmin 2.0vmin 0.0vmin 0.0vmin;
+}
+.info {
+  inline-size: 100%;
+  overflow-wrap: break-word;
+  font-weight: bold;
+  display: none;
+}
+#more_info {
+  inline-size: 100%;
+  overflow-wrap: break-word;
+  font-weight: bold;
+  display: none;
+}
+
+.show {display:block;
+}
