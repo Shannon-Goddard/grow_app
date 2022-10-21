@@ -19,7 +19,6 @@ $(function(){
  
 });
 
-console.log(localStorage)
 /////Retrieve user selections
 $(function() {
   /////Retrieve Strain
@@ -332,19 +331,21 @@ $(function() {
         if (localStorage.plantGrow === '23')  {
           $(".twentyfourFlowering").hide();
         }
-      
-//////////start date as today() by default///////////
-      document.getElementById('start').valueAsDate = new Date();
-///////////input dates on table//////////////////////
-      var startDate = document.getElementById('start').valueAsDate;
 
-      $('.datetime').each(function () {
-        var date=startDate;  
-        date.setDate(date.getDate() + 1);
-        var day = date.getDate();
-        var month = date.getMonth()+1;  
-        var year = date.getFullYear();
-        // action to perform.  Use $(this) for changing each cell
-        $(this).text(month+"/"+day+"/"+year);
-      });
-    });
+});
+///////////input dates on table//////////////////////
+$('.get-started-btn').on('click', function() {
+  var startDate = new Date($('#start').val());
+  console.log(startDate);
+  $('.datetime').each(function () {
+    var date=startDate;
+    date.setDate(date.getDate() + 1);
+    var day = date.getDate();
+    var month = date.getMonth()+1;
+    var year = date.getFullYear();
+    // action to perform.  Use $(this) for changing each cell
+    $(this).text(month+"/"+day+"/"+year);
+  });
+});       
+
+
