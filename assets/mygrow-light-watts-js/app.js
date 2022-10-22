@@ -2,7 +2,6 @@
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('#dropbtn')) {
@@ -16,20 +15,17 @@ window.onclick = function(event) {
     }
   }
 };
-
 //Function to change info on click//
 $("#myDropdown a").click(function() {
   const d = data;
   //Change logo, strain, Grow, Sativa, THC, CBD, info, and more_info on user selection of search drop
   for (let value of d.values()) {
     var watts, pic, info, more_info, Index;
-    
     watts = value.watts;
     info = value.info;
     more_info = value.more_info;
     pic = value.pic;
     Index = this.id;
-    
     $("#image").attr("src" , d[Index].pic).show();
     $("#watts").text(d[Index].watts);
     $("#info").text(d[Index].info);
@@ -38,15 +34,11 @@ $("#myDropdown a").click(function() {
     $("#taskButton").show();
   }
 });
-////////////////////////
-
+//localStorage//////////////////////
 $(".get-started-btn").click(function() {
-
   var node = document.getElementById('watts'),
   //htmlContent = node.innerHTML,
   textContent = node.textContent;
 /////Store Plant watts
   localStorage.plantwatts = textContent;
 });
-
-console.log(localStorage)

@@ -1,18 +1,13 @@
 //////////////////stores table after selection
 $(function(){
-  
   // append this attribute to the element you want the html stored of.
   $("#table1").attr("contenteditable", "true")
-
   var content = document.getElementById('table1');
-
-
   // retrieve local storage data
   var arr = JSON.parse( localStorage.getItem('page_html') );
   if (arr) {
     content.innerHTML = arr;
   }
- 
 /////////////////////get todays row
 $('#table1 > tbody  > tr').each(function() {
   var d = new Date();
@@ -26,4 +21,3 @@ $('#table1 > tbody  > tr').each(function() {
   };
 });
 });
-/////////////////////////

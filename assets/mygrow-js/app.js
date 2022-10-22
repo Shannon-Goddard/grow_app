@@ -1,5 +1,5 @@
-// retrieve local storage data
-/////Retrieve Plant Logo
+//////retrieve local storage data
+//  Retrieve Plant Logo
 var plantLogo = localStorage.getItem('plantLogo');
 
 if (plantLogo) {
@@ -9,13 +9,7 @@ if (plantLogo) {
   document.getElementById("MyGrowAdd").style.display = "none";
   $("#taskButton").show();
 };
-  
-
-
-
-/////////////delete button
-//localStorage.clear();
-// //BUTTON CLEAR
+/////////////delete button////////
 DeleteButton.addEventListener('click', function () {
   localStorage.clear();
   location.reload();

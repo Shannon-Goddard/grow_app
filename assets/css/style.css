@@ -10,6 +10,13 @@ body {
   height: 100%;
 }
 
+.customBody {
+  background-color:#000;
+  width: auto!important; 
+  overflow-x: hidden!important;
+  z-index: -1;
+}
+
 a {
   color: #04AA6D; 
   text-decoration: none;
@@ -1134,11 +1141,6 @@ h6 {
 /*--------------------------------------------------------------
 # Search Page
 --------------------------------------------------------------*/
-.customBody {
-  background-color:#000;
-  width: auto!important; 
-  overflow-x: hidden!important;
-}
 #myInput {
   background: transparent;
   box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.8);
@@ -1786,5 +1788,3 @@ th {
 .BudFactorX {
   display: none;
 }
-
-

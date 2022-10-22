@@ -20,15 +20,13 @@ window.onclick = function(event) {
 //Function to change info on click//
 $("#myDropdown a").click(function() {
   const d = data;
-  //Change logo, strain, Grow, Sativa, THC, CBD, info, and more_info on user selection of search drop
+  // Change logo, strain, Grow, Sativa, THC, CBD, info, and more_info on user selection of search drop
   for (let value of d.values()) {
     var height, logo, info, Index;
-    
     height = value.height;
     info = value.info;
     logo = value.logo;
     Index = this.id;
-    
     $("#image").attr("src" , d[Index].logo).show();
     $("#height").text(d[Index].height);
     $("#info").text(d[Index].info);
@@ -36,17 +34,11 @@ $("#myDropdown a").click(function() {
     $("#taskButton").show();
   }
 });
-////////////////////////
-
+//localStorage//////////////////////
 $(".get-started-btn").click(function() {
-
   var node = document.getElementById('height'),
-  //htmlContent = node.innerHTML,
+  // htmlContent = node.innerHTML,
   textContent = node.textContent;
-
-  /////Store Plant Height
+  // Store Plant Height
   localStorage.plantHeight = textContent;
-  
-})
-
-console.log(localStorage)
+});

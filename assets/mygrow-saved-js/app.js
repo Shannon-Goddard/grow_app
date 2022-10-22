@@ -1,31 +1,24 @@
 //////////////////stores table after selection
 $(function(){
-  
   // append this attribute to the element you want the html stored of.
   $("#table1").attr("contenteditable", "true")
-
   var content = document.getElementById('table1');
-
   // save the page's state after user selects and clicks "select"
   $(".get-started-btn").click(function() {
     localStorage.setItem('page_html', JSON.stringify(content.innerHTML));
   });
-
   // retrieve local storage data
   var arr = JSON.parse( localStorage.getItem('page_html') );
   if (arr) {
     content.innerHTML = arr;
   }
- 
 });
-
 /////Retrieve user selections
 $(function() {
   /////Retrieve Strain
   document.getElementById("strain").innerHTML = localStorage.plantStrain;
   /////Retrieve Plant Height
   document.getElementById("Grow").innerHTML = localStorage.plantHeight;
-
   /////Retrieve Plant Logo
   var plantLogo = localStorage.getItem('plantLogo');
   $("#image").attr("src" , plantLogo).show();
@@ -43,13 +36,9 @@ $(function() {
       }
         if(localStorage.plantHeight === "7+ feet") {
           vegWeeks = "16";
-        
         }
-        
         document.getElementById("info").innerHTML = (localStorage.plantGrow*7)+(vegWeeks*7)+18+" days";
         $("#taskButton").show();
-        
-        ///////////////////////////////////////////////////////////////////
         //add Inches to LightDistance column _125W _250W _400W _600W _1000W
         if (localStorage.plantwatts === '125W')  {
           $(".lightInches").text("12 Inches");
@@ -67,7 +56,7 @@ $(function() {
           $(".lightInches").text("36 Inches");
         }
         /////Filter table by user selection////////////////////////////
-        //filter vegetative days by class in weeks
+        // filter vegetative days by class in weeks
         if(localStorage.plantHeight === "1-2 feet") {
           $(".eightWeeks").hide();
           $(".twelveWeeks").hide();
@@ -80,7 +69,7 @@ $(function() {
         if(localStorage.plantHeight === " 5-6 feet") {
           $(".sixteenWeeks").hide();
         }
-        //filter flowering days by class in weeks
+        // filter flowering days by class in weeks
         if (localStorage.plantGrow === '4')  {
           $(".fiveFlowering").hide();
           $(".sixFlowering").hide();
@@ -336,7 +325,6 @@ $(function() {
 ///////////input dates on table//////////////////////
 $('.get-started-btn').on('click', function() {
   var startDate = new Date($('#start').val());
-  console.log(startDate);
   $('.datetime').each(function () {
     var date=startDate;
     date.setDate(date.getDate() + 1);
