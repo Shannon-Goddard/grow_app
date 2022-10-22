@@ -14,7 +14,8 @@ body {
   background-color:#000;
   width: auto!important; 
   overflow-x: hidden!important;
-  z-index: -1;
+  margin: 0px;
+  height: 100vh;
 }
 
 a {
