@@ -38,7 +38,7 @@ $(function() {
           vegWeeks = "16";
         }
         document.getElementById("info").innerHTML = (localStorage.plantGrow*7)+(vegWeeks*7)+18+" days";
-        $("#taskButton").show();
+       
         //add Inches to LightDistance column _125W _250W _400W _600W _1000W
         if (localStorage.plantwatts === '125W')  {
           $(".lightInches").text("12 Inches");
@@ -321,6 +321,10 @@ $(function() {
           $(".twentyfourFlowering").hide();
         }
 
+});
+////////////task button show////////
+$("#start").click(function() {
+  $("#taskButton").show();
 });
 ///////////input dates on table//////////////////////
 $('.get-started-btn').on('click', function() {
