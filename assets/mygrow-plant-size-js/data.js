@@ -2,19 +2,19 @@ var data = [
   {
     index: "0",
     height: "1-2 feet",
-    info: "Some people put their seedlings or clones right into the flowering stage if they want to harvest quickly though this makes for extremely small plants. It’s also important to remember that container size makes a big difference. Small containers constrain the roots and keep plants from getting as big as they could. For every foot tall you want your plant to be, the container should be eqal in gallon; 1 foot tall plant would need 1 gallon container.",
+    info: "Some people put their seedlings or clones right into the flowering stage if they want to harvest quickly though this makes for extremely small plants. Just because they are smaller in size does not mean they will yield low, it just means you will achieve more per square meter in a shorter amount of time than conventionally grown large plants. Growing small plants can work perfectly for growers who are simply limited to grow space. It’s also important to remember that container size makes a big difference. Small containers constrain the roots and keep plants from getting as big as they could. For every foot tall you want your plant to be, the container should be eqal in gallon; 1 foot tall plant would need 1 gallon container.",
     logo: "../assets/mygrow-plant-size-images/1-2foot.png"
   },
   {
     index: "1",
     height: "3-4 feet",
-    info: "A too-tall plant isn’t a big deal if it fits in your grow space, but the extra lower growth that doesn’t produce bud is essentially a waste of electricity, time and money, since you potentially could have shaved weeks off your vegetative stage without sacrificing yields! 3-gallon pots tend to produce mid-size plants",
+    info: "The option to grow more varieties is possible when growing mid-sized plants. It is much easier to include more varieties in a large plant count than when limited to large plants. 3-gallon pots tend to produce mid-size plants",
     logo: "../assets/mygrow-plant-size-images/3-4foot.png"
   },
   {
     index: "2",
     height: "5-6 feet",
-    info: "Your plant will likely double in size (maybe a bit less, maybe more) from when you first put it into the flowering stage; this is known as the Flowering Stretch. So make sure you end the vegetative stage before your plant reaches half the final height you want, or your cannabis plants may outgrow your grow space during the flowering stage! 5 gallon container",
+    info: "A main advantage associated with larger-sized plants is larger-sized buds and plenty of them. Spending the time to nurture a large-sized Cannabis plant that will have had a long vegging time and an equally long flowering period can require a lot of hands-on maintenance, but the rewards are worth their weight in gold. Big roots means big shoots, which means that larger-sized plants should have a 5 gallon container.",
     logo: "../assets/mygrow-plant-size-images/5-6foot.png"
   },
   {
