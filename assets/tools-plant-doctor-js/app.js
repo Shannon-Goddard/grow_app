@@ -1,4 +1,4 @@
-/////////////check boxes//////////////
+/////////////check boxes//columns////////////
 function hide_show_table(col_name) {
   var checkbox_val = document.getElementById(col_name).value;
   if (checkbox_val == "show") {
@@ -20,7 +20,7 @@ function hide_show_table(col_name) {
 
   hide_show_rows();
 }
-
+/////////////check boxes//rows////////////
 function hide_show_rows() {
   var checkboxes = document.querySelectorAll(".listPrint [type=checkbox]");
   var rows = document.querySelectorAll("#table2 tbody tr");
