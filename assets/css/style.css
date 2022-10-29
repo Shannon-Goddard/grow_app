@@ -1789,3 +1789,147 @@ th {
 .BudFactorX {
   display: none;
 }
+
+/*--------------------------------------------------------------
+# Plant Doctor filter table 
+--------------------------------------------------------------*/
+#Droopingplant_head {
+  display: none;
+}
+.Droopingplant {
+  display: none;
+}
+
+#Moldorpowder_head {
+  display: none;
+}
+.Moldorpowder {
+  display: none;
+}
+
+#Bugsarevisible_head {
+  display: none;
+}
+.Bugsarevisible {
+  display: none;
+}
+
+#Twistedgrowth_head {
+  display: none;
+}
+.Twistedgrowth {
+  display: none;
+}
+
+#Webbing_head {
+  display: none;
+}
+.Webbing {
+  display: none;
+}
+
+#Budsdying_head {
+  display: none;
+}
+.Budsdying {
+  display: none;
+}
+
+#Budslookodd_head {
+  display: none;
+}
+.Budslookodd {
+  display: none;
+}
+
+#Redstems_head {
+  display: none;
+}
+.Redstems {
+  display: none;
+}
+
+#Bronzeandbrownpatches_head {
+  display: none;
+}
+.Bronzeandbrownpatches {
+  display: none;
+}
+
+#Brownandslimyroots_head {
+  display: none;
+}
+.Brownandslimyroots {
+  display: none;
+}
+
+#CorCleaves_head {
+  display: none;
+}
+.CorCleaves {
+  display: none;
+}
+
+#Brownoryellowleaftips_head {
+  display: none;
+}
+.Brownoryellowleaftips {
+  display: none;
+}
+
+#Holesinleaves_head {
+  display: none;
+}
+.Holesinleaves {
+  display: none;
+}
+
+#Pinkorpurpleonleaves_head {
+  display: none;
+}
+.Pinkorpurpleonleaves {
+  display: none;
+}
+
+#Shinyorsmoothleaves_head {
+  display: none;
+}
+.Shinyorsmoothleaves {
+  display: none;
+}
+
+#Spotsormarkings_head {
+  display: none;
+}
+.Spotsormarkings {
+  display: none;
+}
+
+#Wiltingleaves_head {
+  display: none;
+}
+.Wiltingleaves {
+  display: none;
+}
+
+#Darkleaves_head {
+  display: none;
+}
+.Darkleaves {
+  display: none;
+}
+
+#Yellowingbetweenleafviens_head {
+  display: none;
+}
+.Yellowingbetweenleafviens {
+  display: none;
+}
+
+#Yellowleaves_head {
+  display: none;
+}
+.Yellowleaves {
+  display: none;
+}
+
