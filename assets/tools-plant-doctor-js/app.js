@@ -16,6 +16,7 @@ function hide_show_table(col_name) {
     }
     document.getElementById(col_name + "_head").style.display = "table-cell";
     document.getElementById(col_name).value = "show";
+   
   }
 
   hide_show_rows();
@@ -37,8 +38,16 @@ function hide_show_rows() {
   })
 
 }
+/////// show table
 
-/////
+  
+
+
+
+
+
+
+/////start over button ////////////
 $(document).ready(function () {
   $("button").click(function () {
       location.reload(true);
