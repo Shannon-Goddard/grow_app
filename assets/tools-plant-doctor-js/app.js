@@ -10,13 +10,11 @@ function hide_show_table(col_name) {
     document.getElementById(col_name).value = "hide";
   } else {
     var all_col = document.getElementsByClassName(col_name);
-
     for (var i = 0; i < all_col.length; i++) {
       all_col[i].style.display = "table-cell";
     }
     document.getElementById(col_name + "_head").style.display = "table-cell";
     document.getElementById(col_name).value = "show";
-   
   }
 
   hide_show_rows();
@@ -39,14 +37,10 @@ function hide_show_rows() {
 
 }
 /////// show table
-
-  
-
-
-
-
-
-
+$("li").on("click" , "input" , function(){
+ 
+  $('#hide-table').show();
+})
 /////start over button ////////////
 $(document).ready(function () {
   $("button").click(function () {

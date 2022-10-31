@@ -127,7 +127,7 @@
 # Resources  
 - **Software:** VS Code   
 - **Languages:** Java Script | JQuery | CSS | HTML  
-- **Data Source:** [ALL_data.csv](https://raw.githubusercontent.com/Shannon-Goddard/grow_data/main/Resources/csv/ALL_data.csv) | [growweedeasy.com](https://www.growweedeasy.com/)    
+- **Data Source:** [ALL_data.csv](https://raw.githubusercontent.com/Shannon-Goddard/grow_data/main/Resources/csv/ALL_data.csv) | general web based tool search   
 
 # Objectives  
 - Grow together. Build confidence.   
@@ -286,14 +286,33 @@ The **Tools** page has the options:
 <!--more info-->   
 Gives a breakdown of GrowApp and how-to <b>+AddGrow</b>
 </details>
-<details><summary><b>SickPlant</b></summary>
+<details><summary><b>PlantDoctor</b></summary>
 <!--more info-->   
-Links to GrowWeedEasy.com's
-
-            - Plant Doctor
-            - Tips on bugs, pest, and mold
-            - Signs of nutrient dificiencies
-            - Identifying light issues
+The user can identify plants ailment symptoms and treatments. Checkboxes will allow the user to select from:  
+<br><br>
+<b>Symptoms</b><br>
+&#x2610 Drooping plant<br>
+&#x2611 Mold or powder<br>
+&#x2610 Redstems<br>
+&#x2610 Twisted growth<br>
+&#x2610 Bugs are visible<br>
+&#x2611 Webbing<br>
+&#x2610 Buds dying<br>
+&#x2610 Buds look odd<br>
+&#x2610 Brown and slimy roots<br>
+&#x2610 Curling or clawing leaves<br>
+&#x2610 Shiny or smooth leaves<br>
+&#x2610 Wilting leaves<br>  
+&#x2610 Dark leaves<br>
+&#x2610 Yellow leaves<br>
+&#x2610 Pink or purple on leaves<br>  
+&#x2610 Spots or markings<br>
+&#x2610 Bronze and brown patches<br>
+&#x2610 Brown or yellow leaf tips<br>  
+&#x2610 Holes in leaves<br>
+&#x2610 Yellowing between viens<br>
+<br><br>
+As the user checks symptoms the table of ailments filters down with links to each ailments treatment
 </details>
 <details><summary><b>SearchStrains</b></summary>
 <!--more info-->   
