@@ -342,6 +342,11 @@ Allows the User to contact Loyal9
 
 # Promos  
 [<img alt="promo1" width="100%" src="pics\promo1.gif" />](https://www.loyal9.app/promo/promo1.html)
+<br>
+[<img alt="promo1" width="100%" src="pics\promo2.gif" />](https://www.loyal9.app/promo/promo2.html)
+<br>
+[<img alt="promo1" width="100%" src="pics\promo3.gif" />](https://www.loyal9.app/promo/promo3.html)
+<br>
   
   <div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>  
   
