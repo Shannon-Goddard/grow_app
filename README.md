@@ -11,7 +11,7 @@
 [Limitations](#limitations)  
   
 # Project Overview
-[![promo1](pics\promo1.gif)](promo\promo1.html)
+[<img alt="promo1" width="100%" src="pics\promo1.gif" />](promo\promo1.html)
 ## Recent surveys suggest significant proportion of consumers started growing their own cannabis for personal consumption or gifting.
 >"Homegrowers cultivate cannabis for a variety of reasons. Some opt-in due to a lack of other sources (14%), or to grow strains which they otherwise could not find to purchase (35%). Quality is another key consideration. Nearly one-third (32%) grow to avoid worries about contaminates such as pesticides, while 44% feel that they grow better-quality flower than they could find elsewhere. For others, it is a matter of convenience (52%), or less expense (46%). Nevertheless, a larger majority of homegrowers (70%) report growing cannabis because they enjoy it as a hobby.<div style="text-align: right" ><a href="https://newfrontierdata.com/cannabis-insights/for-many-cannabis-consumers-home-is-where-the-grow-is/">newfrontierdata.com</a></div>  
 
@@ -341,7 +341,7 @@ Allows the User to contact Loyal9
 
 
 # Promos  
-[![promo1](pics\promo1.gif)](promo\promo1.html)
+[<img alt="promo1" width="100%" src="pics\promo1.gif" />](promo\promo1.html)
   
   <div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>  
   
