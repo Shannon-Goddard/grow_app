@@ -6,10 +6,12 @@
 [Resources](#resources)  
 [Objectives](#objectives)  
 [Summary](#summary)  
+[Promos](#promos)  
+[Acknowledgments](#acknowledgments)    
 [Limitations](#limitations)  
   
 # Project Overview
-![flowhub article clip](pics/news.gif) Full article can be found at [flowhub.com](https://flowhub.com/cannabis-industry-statistics)
+[![promo1](pics\promo1.gif)](promo\promo1.html)
 ## Recent surveys suggest significant proportion of consumers started growing their own cannabis for personal consumption or gifting.
 >"Homegrowers cultivate cannabis for a variety of reasons. Some opt-in due to a lack of other sources (14%), or to grow strains which they otherwise could not find to purchase (35%). Quality is another key consideration. Nearly one-third (32%) grow to avoid worries about contaminates such as pesticides, while 44% feel that they grow better-quality flower than they could find elsewhere. For others, it is a matter of convenience (52%), or less expense (46%). Nevertheless, a larger majority of homegrowers (70%) report growing cannabis because they enjoy it as a hobby.<div style="text-align: right" ><a href="https://newfrontierdata.com/cannabis-insights/for-many-cannabis-consumers-home-is-where-the-grow-is/">newfrontierdata.com</a></div>  
 
@@ -127,7 +129,8 @@
 # Resources  
 - **Software:** VS Code   
 - **Languages:** Java Script | JQuery | CSS | HTML  
-- **Data Source:** [ALL_data.csv](https://raw.githubusercontent.com/Shannon-Goddard/grow_data/main/Resources/csv/ALL_data.csv) | general web based tool search   
+- **Data Source:** [ALL_data.csv](https://raw.githubusercontent.com/Shannon-Goddard/grow_data/main/Resources/csv/ALL_data.csv) | general web based tool search  
+- **Relevant GitHub Repositories:**  [grow_data](https://github.com/Shannon-Goddard/grow_data) | [grow_search](https://github.com/Shannon-Goddard/grow_search) | [grow_filter](https://github.com/Shannon-Goddard/grow_filter) | [grow_plant](https://github.com/Shannon-Goddard/grow_plant) | [grow_nutrients](https://github.com/Shannon-Goddard/grow_nutrients)   
 
 # Objectives  
 - Grow together. Build confidence.   
@@ -336,6 +339,12 @@ Allows the User to contact Loyal9
 <a href="https://www.instagram.com/loyal9growapp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/instagram.svg" width="50" height="50"></a>&nbsp;&nbsp;
 <a href="https://github.com/Shannon-Goddard/grow_app"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="50" height="50"></a>
 
+
+# Promos  
+[![promo1](pics\promo1.gif)](promo\promo1.html)
+  
+  <div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>  
+  
 # Acknowledgments  
 
 **To all the players who made this possible thank you very much! Yeah and..**
@@ -350,8 +359,11 @@ Allows the User to contact Loyal9
 <br>
 **To [stackoverflow.com](https://stackoverflow.com/) and how they reaffirm that there are stupid questions.**
 <br>
-*[Mohamed Yousef](https://stackoverflow.com/users/3385827/mohamed-yousef) for taking the time to answer and explain [this.id](https://stackoverflow.com/questions/72094774/using-jquery-to-change-img-src-from-a-js-arrays-value) question, thanks.* 
-<br>
+*[Mohamed Yousef](https://stackoverflow.com/users/3385827/mohamed-yousef) for taking the time to answer and explain [this.id](https://stackoverflow.com/questions/72094774/using-jquery-to-change-img-src-from-a-js-arrays-value) question, thanks.*  
+*[IT goldman](https://stackoverflow.com/users/3807365/it-goldman) for taking the time to answer how to [hide() the rows that have any "td:empty" and keep the first column's matching index.value in javascript or jquery](https://stackoverflow.com/questions/74240043/hide-the-rows-that-have-any-tdempty-and-keep-the-first-columns-matching-in), thanks.*  
+<div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>  
+<br>  
+
 ![](/pics/gif.gif)  
 
 # Limitations  
