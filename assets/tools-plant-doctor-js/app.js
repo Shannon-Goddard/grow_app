@@ -1,4 +1,4 @@
-/////////////check boxes//columns////////////
+/////////////check boxes//////////////
 function hide_show_table(col_name) {
   var checkbox_val = document.getElementById(col_name).value;
   if (checkbox_val == "show") {
@@ -10,16 +10,15 @@ function hide_show_table(col_name) {
     document.getElementById(col_name).value = "hide";
   } else {
     var all_col = document.getElementsByClassName(col_name);
+
     for (var i = 0; i < all_col.length; i++) {
       all_col[i].style.display = "table-cell";
     }
     document.getElementById(col_name + "_head").style.display = "table-cell";
     document.getElementById(col_name).value = "show";
   }
-
   hide_show_rows();
 }
-/////////////check boxes//rows////////////
 function hide_show_rows() {
   var checkboxes = document.querySelectorAll(".listPrint [type=checkbox]");
   var rows = document.querySelectorAll("#table2 tbody tr");
@@ -31,20 +30,12 @@ function hide_show_rows() {
     if (empty.length) {
       row.style.display = 'none'
     } else {
-      row.style.visibility = 'visible'
+      row.style.display = ''
     }
   })
-
 }
 /////// show table
 $("li").on("click" , "input" , function(){
  
   $('#hide-table').show();
 })
-/////start over button ////////////
-$(document).ready(function () {
-  $("button").click(function () {
-      location.reload(true);
-      
-  });
-});
