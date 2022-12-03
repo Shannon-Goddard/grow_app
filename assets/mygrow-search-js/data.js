@@ -36305,5 +36305,18 @@ var data = [
     Sativa: "",
     Grow: "10",
     logo: "../assets/mygrow-search-images/Cement_Shoes.jpg"
+  },
+  {
+    index: "2793",
+    strain: "Lake Tahoe",
+    info: "Lake Tahoe is an indica/sativa variety from Best Coast Genetics and can be cultivated indoors (where the plants will need a flowering time of ±60 days), outdoors and in the greenhouse. Best Coast Genetics' Lake Tahoe is a THC dominant variety and is/was never available as feminized seeds.（Tahoe OG x Blue Dream） x Blueberry AfghaniFlower Cycle: 55-65 Days Big yield Easy to grow Great for Commercial Use 22-25%THC",
+    more_info: "",
+    THC: "25",
+    CBD: "0",
+    Indica:"60% INDICA",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/lake-tahoe.jpg"
   }
 ];
