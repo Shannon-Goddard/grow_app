@@ -18,6 +18,7 @@ $('#table1 > tbody  > tr').each(function() {
   var today = (month+"/"+day+"/"+year);
   if (date != today) {
     $(this).hide();
+    $('.notesRow').show();
   };
 });
 });

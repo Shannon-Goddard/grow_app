@@ -1946,3 +1946,14 @@ iframe{
   width: 100vw;
   height: calc(100vw/1.77777778);
  }
+
+ /*--------------------------------------------------------------
+# User input on table
+--------------------------------------------------------------*/
+input[type=text] {
+  min-width: 10px;
+  max-width: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+}

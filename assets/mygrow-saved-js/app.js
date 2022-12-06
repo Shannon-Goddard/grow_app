@@ -339,5 +339,3 @@ $('.get-started-btn').on('click', function() {
     $(this).text(month+"/"+day+"/"+year);
   });
 });       
-
-
