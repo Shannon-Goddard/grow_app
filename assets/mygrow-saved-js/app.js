@@ -58,267 +58,267 @@ $(function() {
         /////Filter table by user selection////////////////////////////
         // filter vegetative days by class in weeks
         if(localStorage.plantHeight === "1-2 feet") {
-          $(".eightWeeks").hide();
-          $(".twelveWeeks").hide();
-          $(".sixteenWeeks").hide();
+          $(".eightWeeks").remove();
+          $(".twelveWeeks").remove();
+          $(".sixteenWeeks").remove();
         }
         if(localStorage.plantHeight === "3-4 feet") {
-          $(".twelveWeeks").hide();
-          $(".sixteenWeeks").hide();
+          $(".twelveWeeks").remove();
+          $(".sixteenWeeks").remove();
         }
         if(localStorage.plantHeight === " 5-6 feet") {
-          $(".sixteenWeeks").hide();
+          $(".sixteenWeeks").remove();
         }
         // filter flowering days by class in weeks
         if (localStorage.plantGrow === '4')  {
-          $(".fiveFlowering").hide();
-          $(".sixFlowering").hide();
-          $(".sevenFlowering").hide();
-          $(".eightFlowering").hide();
-          $(".nineFlowering").hide();
-          $(".tenFlowering").hide();
-          $(".elevenFlowering").hide();
-          $(".twelveFlowering").hide();
-          $(".thirteenFlowering").hide();
-          $(".fourteenFlowering").hide();
-          $(".fifteenFlowering").hide();
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".fiveFlowering").remove();
+          $(".sixFlowering").remove();
+          $(".sevenFlowering").remove();
+          $(".eightFlowering").remove();
+          $(".nineFlowering").remove();
+          $(".tenFlowering").remove();
+          $(".elevenFlowering").remove();
+          $(".twelveFlowering").remove();
+          $(".thirteenFlowering").remove();
+          $(".fourteenFlowering").remove();
+          $(".fifteenFlowering").remove();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '5')  {
-          $(".sixFlowering").hide();
-          $(".sevenFlowering").hide();
-          $(".eightFlowering").hide();
-          $(".nineFlowering").hide();
-          $(".tenFlowering").hide();
-          $(".elevenFlowering").hide();
-          $(".twelveFlowering").hide();
-          $(".thirteenFlowering").hide();
-          $(".fourteenFlowering").hide();
-          $(".fifteenFlowering").hide();
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".sixFlowering").remove();
+          $(".sevenFlowering").remove();
+          $(".eightFlowering").remove();
+          $(".nineFlowering").remove();
+          $(".tenFlowering").remove();
+          $(".elevenFlowering").remove();
+          $(".twelveFlowering").remove();
+          $(".thirteenFlowering").remove();
+          $(".fourteenFlowering").remove();
+          $(".fifteenFlowering").remove();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '6')  {
-          $(".sevenFlowering").hide();
-          $(".eightFlowering").hide();
-          $(".nineFlowering").hide();
-          $(".tenFlowering").hide();
-          $(".elevenFlowering").hide();
-          $(".twelveFlowering").hide();
-          $(".thirteenFlowering").hide();
-          $(".fourteenFlowering").hide();
-          $(".fifteenFlowering").hide();
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".sevenFlowering").remove();
+          $(".eightFlowering").remove();
+          $(".nineFlowering").remove();
+          $(".tenFlowering").remove();
+          $(".elevenFlowering").remove();
+          $(".twelveFlowering").remove();
+          $(".thirteenFlowering").remove();
+          $(".fourteenFlowering").remove();
+          $(".fifteenFlowering").remove();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '7')  {
-          $(".eightFlowering").hide();
-          $(".nineFlowering").hide();
-          $(".tenFlowering").hide();
-          $(".elevenFlowering").hide();
-          $(".twelveFlowering").hide();
-          $(".thirteenFlowering").hide();
-          $(".fourteenFlowering").hide();
-          $(".fifteenFlowering").hide();
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".eightFlowering").remove();
+          $(".nineFlowering").remove();
+          $(".tenFlowering").remove();
+          $(".elevenFlowering").remove();
+          $(".twelveFlowering").remove();
+          $(".thirteenFlowering").remove();
+          $(".fourteenFlowering").remove();
+          $(".fifteenFlowering").remove();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '8')  {
-          $(".nineFlowering").hide();
-          $(".tenFlowering").hide();
-          $(".elevenFlowering").hide();
-          $(".twelveFlowering").hide();
-          $(".thirteenFlowering").hide();
-          $(".fourteenFlowering").hide();
-          $(".fifteenFlowering").hide();
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".nineFlowering").remove();
+          $(".tenFlowering").remove();
+          $(".elevenFlowering").remove();
+          $(".twelveFlowering").remove();
+          $(".thirteenFlowering").remove();
+          $(".fourteenFlowering").remove();
+          $(".fifteenFlowering").remove();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '9')  {
-          $(".tenFlowering").hide();
-          $(".elevenFlowering").hide();
-          $(".twelveFlowering").hide();
-          $(".thirteenFlowering").hide();
-          $(".fourteenFlowering").hide();
-          $(".fifteenFlowering").hide();
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".tenFlowering").remove();
+          $(".elevenFlowering").remove();
+          $(".twelveFlowering").remove();
+          $(".thirteenFlowering").remove();
+          $(".fourteenFlowering").remove();
+          $(".fifteenFlowering").remove();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '10')  {
-          $(".elevenFlowering").hide();
-          $(".twelveFlowering").hide();
-          $(".thirteenFlowering").hide();
-          $(".fourteenFlowering").hide();
-          $(".fifteenFlowering").hide();
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".elevenFlowering").remove();
+          $(".twelveFlowering").remove();
+          $(".thirteenFlowering").remove();
+          $(".fourteenFlowering").remove();
+          $(".fifteenFlowering").remove();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '11')  {
-          $(".twelveFlowering").hide();
-          $(".thirteenFlowering").hide();
-          $(".fourteenFlowering").hide();
-          $(".fifteenFlowering").hide();
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".twelveFlowering").remove();
+          $(".thirteenFlowering").remove();
+          $(".fourteenFlowering").remove();
+          $(".fifteenFlowering").remove();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '12')  {
-          $(".thirteenFlowering").hide();
-          $(".fourteenFlowering").hide();
-          $(".fifteenFlowering").hide();
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".thirteenFlowering").remove();
+          $(".fourteenFlowering").remove();
+          $(".fifteenFlowering").remove();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '13')  {
-          $(".fourteenFlowering").hide();
-          $(".fifteenFlowering").hide();
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".fourteenFlowering").remove();
+          $(".fifteenFlowering").remove();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '14')  {
-          $(".fifteenFlowering").hide();
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".fifteenFlowering").remove();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '15')  {
-          $(".sixteenFlowering").hide();
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".sixteenFlowering").remove();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '16')  {
-          $(".seventeenFlowering").hide();
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".seventeenFlowering").remove();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '17')  {
-          $(".eighteenFlowering").hide();
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".eighteenFlowering").remove();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '18')  {
-          $(".nineteenFlowering").hide();
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".nineteenFlowering").remove();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '19')  {
-          $(".twentyFlowering").hide();
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".twentyFlowering").remove();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '20')  {
-          $(".twentyoneFlowering").hide();
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".twentyoneFlowering").remove();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '21')  {
-          $(".twentytwoFlowering").hide();
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".twentytwoFlowering").remove();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '22')  {
-          $(".twentythreeFlowering").hide();
-          $(".twentyfourFlowering").hide();
+          $(".twentythreeFlowering").remove();
+          $(".twentyfourFlowering").remove();
         }
         if (localStorage.plantGrow === '23')  {
-          $(".twentyfourFlowering").hide();
+          $(".twentyfourFlowering").remove();
         }
 
 });

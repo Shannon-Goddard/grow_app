@@ -23,6 +23,7 @@ function hide_show_table(col_name)
   document.getElementById(col_name).value="show";
   $("#taskButton").show();
  }
+ 
 }
 //////////////////stores table after selection
 $(function(){
