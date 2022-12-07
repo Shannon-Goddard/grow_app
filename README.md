@@ -338,6 +338,8 @@ Allows the User to contact Loyal9
 <a href="https://www.facebook.com/Loyal9GrowApp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/facebook.svg" width="50" height="50"></a>&nbsp;&nbsp;
 <a href="https://www.instagram.com/loyal9growapp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/instagram.svg" width="50" height="50"></a>&nbsp;&nbsp;
 <a href="https://github.com/Shannon-Goddard/grow_app"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="50" height="50"></a>
+&nbsp;&nbsp;
+<a href="https://www.buymeacoffee.com/goddardshannon9"><img src="pics/bmac.png" height="50"></a>
 
 
 # Promos  
