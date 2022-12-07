@@ -339,3 +339,16 @@ $('.get-started-btn').on('click', function() {
     $(this).text(month+"/"+day+"/"+year);
   });
 });       
+
+$('.get-started-btn').on('click', function() {
+  var startDate = new Date($('#start').val());
+  $('.datetime2').each(function () {
+    var date=startDate;
+    date.setDate(date.getDate() + 1);
+    var day = date.getDate();
+    var month = date.getMonth()+1;
+    var year = date.getFullYear();
+    // action to perform.  Use $(this) for changing each cell
+    $(this).text(month+"/"+day+"/"+year);
+  });
+});       

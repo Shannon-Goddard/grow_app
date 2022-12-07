@@ -13,3 +13,7 @@ $(function(){
     content.innerHTML = arr;
   }
 });
+////////////hide note rows
+$(function(){
+  $('.notes').hide();
+});

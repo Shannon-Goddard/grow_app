@@ -21,4 +21,18 @@ $('#table1 > tbody  > tr').each(function() {
     $('.notesRow').show();
   };
 });
+
+/////////////////////get todays note row
+$('#table1 > tbody  > tr').each(function() {
+  var d = new Date();
+  var date = $(this).find(".datetime2").html();
+  var day = d.getDate();
+  var month = d.getMonth()+1;
+  var year = d.getFullYear();
+  var today = (month+"/"+day+"/"+year);
+  if (date == today) {
+    $(this).show();
+    $('.notesRow').show();
+  };
+});
 });
