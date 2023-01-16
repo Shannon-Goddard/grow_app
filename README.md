@@ -277,7 +277,7 @@ From there, the user can go back to the <b>MyGrow</b> page where their grow now 
 </details>    
 
 ## Diary  
-Allow the user to upload photos and place notes throughout their grow.  
+Allow the user to add notes throughout their grow.  
 
 ## Shop  
 A page that will have links to items a grower needs

@@ -13,8 +13,9 @@ $(function(){
     content.innerHTML = arr;
   }
 });
-////////////hide note rows
+////////////show only note rows
 $(function(){
-  $('table tr').show();
-  $('.notes').hide();
+  $('table tr:not(:first)').hide();
+  $('.notes').show();
 });
+//////$('#mytable tr:not(:first)')
