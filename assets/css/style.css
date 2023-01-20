@@ -1326,6 +1326,36 @@ h6 {
   }
 }
 /*--------------------------------------------------------------
+# MyTask Save/Edit Button
+--------------------------------------------------------------*/
+.editbtn {
+  display: none;
+  background: transparent;
+  border-radius: 4px;
+  padding: 7px 7px 7px 7px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 20px;
+  border: 2px solid #04AA6D;
+  color: #FFFFFF; 
+  font-weight: bold;
+}
+
+.editbtn:hover {
+  background: #04AA6D; 
+  color: #343a40;
+}
+
+@media (max-width: 992px) {
+  .editbtn {
+    padding: 5px 5px 5px 5px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+/*--------------------------------------------------------------
 # Text and Image in MyGrow Image on show()
 --------------------------------------------------------------*/
 .MyGrowImg { 
