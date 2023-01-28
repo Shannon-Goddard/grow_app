@@ -1078,46 +1078,40 @@ h6 {
 */
 .navbar {
   background-color: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+  overflow: auto;
   position: fixed;
   bottom: 0;
   width: 100%;
   margin: 0;
   padding: 0;
   z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
 }
 
 .navbar ul {
   margin: 0;
-  padding: 0;
+  padding: 5px;
   display: flex;
-  list-style: none;
+  list-style-type: none;
   align-items: center;
 }
 
-.navbar li {
-  position: relative;
-}
-
-.navbar a,
-.navbar a:focus {
-  display: flex;
+.navbar a
+ {
+  float: left;
   text-align: center;
-  justify-content: space-between;
-  padding: 12px;
-  font-size: 32px;
+  padding: 10px 20px 10px 0;
+  font-size: 20px;
   font-weight: 600;
   color: #fff;
-  white-space: nowrap;
+  text-decoration: none;
   transition: 0.3s;
+  width: 16.6666667%;
 }
 
-.navbar a i,
-.navbar a:focus i {
-  font-size: 32px;
-  line-height: 0;
-  margin-left: 5px;
-}
+
 
 .navbar a:hover,
 .navbar .active,
@@ -1135,8 +1129,7 @@ h6 {
   .navbar a {
     float: none;
     display: block;
-    width: 100%;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
+    
   }
 }
 /*--------------------------------------------------------------
@@ -1993,7 +1986,7 @@ input[type=text] {
 --------------------------------------------------------------*/
 .fa-google-play {
   background: rgb(59, 204, 255);
-  background: linear-gradient(135deg, rgb(72, 255, 72) 30%, rgb(59, 204, 255) 40%, rgb(255, 51, 51) 62%, rgb(255, 212, 0) 65%);
+  background: linear-gradient(135deg, rgb(72, 255, 72) 30%, rgb(59, 204, 255) 35% 55%, rgb(255, 51, 51) 55%, rgb(255, 212, 0) 65%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
