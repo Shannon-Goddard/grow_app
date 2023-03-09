@@ -325,11 +325,16 @@ Allows the User to a search through a list of 2,792 strains. As the user types i
 <!--more info-->   
 Allows the User to contact Loyal9  
 </details>
-<br>  
+<br>    
 
-*still working on it, but feel free to take a look...*  
-<br> 
-**Check-out the interactive website at [loyal9.app](https://www.loyal9.app)**
+**Check-out the website at [loyal9.app](https://www.loyal9.app)**
+<br>
+<br>
+**Now available on [Google Play](https://play.google.com/store/apps/details?id=com.mywebapp)**
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://play.google.com/store/apps/details?id=com.mywebapp"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/google-play.svg" width="50" height="50"></a>
+&nbsp;&nbsp;
 <br>
 <br>
  Give us some feedback at one of the social links below.
@@ -339,7 +344,7 @@ Allows the User to contact Loyal9
 <a href="https://www.instagram.com/loyal9growapp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/instagram.svg" width="50" height="50"></a>&nbsp;&nbsp;
 <a href="https://github.com/Shannon-Goddard/grow_app"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="50" height="50"></a>
 &nbsp;&nbsp;
-<a href="https://www.buymeacoffee.com/goddardshannon9"><img src="pics/bmac.png" height="50"></a>
+
 
 
 # Promos  
@@ -374,11 +379,13 @@ Allows the User to contact Loyal9
 ![](/pics/gif.gif)  
 
 # Limitations  
-<sub>This website is currently using localStorage. The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.</sub> 
+<sub>GrowApp uses localStorage. The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.</sub> 
 
 <sub>localStorage is similar to sessionStorage, except that while localStorage data has no expiration time, sessionStorage data gets cleared when the page session ends — that is, when the page is closed. (localStorage data for a document loaded in a "private browsing" or "incognito" session is cleared when the last "private" tab is closed and/or browser history is cleared)</sub>
 
-**MEANING: YOUR GROW WILL BE ERASED AFTER YOU CLEAR YOUR BROWSER HISTORY!** Eventually, localStorage will become "server side". . . /əˈven(t)SH(o͞o)əlē/.  
+**MEANING: YOUR GROW WILL BE ERASED AFTER YOU CLEAR YOUR BROWSER HISTORY!**
+
+In purchasing the app on Google Play, the app stores the user input to the app and does not produce this minor inconvenience
 </details>  
 
 <sub>[MIT License](https://github.com/Shannon-Goddard/grow_search/blob/main/LICENSE) |
