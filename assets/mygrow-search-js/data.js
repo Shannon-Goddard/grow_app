@@ -36330,7 +36330,7 @@ var data = [
     Hybrid:"",
     Sativa: "80% SATIVA",
     Grow: "12",
-    logo: "../assets/mygrow-search-images/og-x-ghost-train-haze.jpg"
+    logo: "../assets/mygrow-search-images/og-x-ghost-train-haze.png"
   },
   {
     index: "2795",
@@ -36395,7 +36395,7 @@ var data = [
     Hybrid:"60% HYBRID",
     Sativa: "",
     Grow: "10",
-    logo: "../assets/mygrow-search-images/Golden_Hour.jpg"
+    logo: "../assets/mygrow-search-images/Golden_Hour.png"
   },
   {
     index: "2800",
