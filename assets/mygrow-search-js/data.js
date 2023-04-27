@@ -36343,7 +36343,7 @@ var data = [
     Hybrid:"",
     Sativa: "70% SATIVA",
     Grow: "8",
-    logo: "../assets/mygrow-search-images/apple_pie.jpg"
+    logo: "../assets/mygrow-search-images/apple_pie.png"
   },
   {
     index: "2796",
@@ -36426,7 +36426,7 @@ var data = [
   {
     index: "2802",
     strain: "Panama Haze",
-    info: "Panama Haze by Ace Seeds is a cannabis seed that derives from the cross between a Green Haze, a Purple Haze and a 10th generation *2100047. The result is a high-yielding, fast-flowering, easy-to-grow, feminized, Sativa-dominant cannabis strain that grows strong, powerful and vigorous.",
+    info: "Panama Haze is a cannabis seed that derives from the cross between a Green Haze, a Purple Haze and a 10th generation *2100047. The result is a high-yielding, fast-flowering, easy-to-grow, feminized, Sativa-dominant cannabis strain that grows strong, powerful and vigorous.",
     more_info: "Panama Haze produces an outstanding, medium-sized/big marijuana plant with a resistant structure, considerable distance between nodes and thin, elongated leaves. It is a slender plant that grows very vigorously, a short growing period being recommended indoors.",
     THC: "22",
     CBD: "0",
