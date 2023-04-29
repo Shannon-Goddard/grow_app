@@ -38,84 +38,35 @@
     <header id="header" class="fixed-top ">
       <div class="container d-flex align-items-center justify-content-lg-between">
         <h1 class="logo me-auto me-lg-0"><a href="index.html">Loyal<span>9</span></a></h1>
-        <a href="../mydiary-index.html" class="get-started-btn scrollto">MyDiary</a>
+        <a id="taskButton" href="../mygrow/mygrow-task.html" class="get-started-btn scrollto">MyTask</a>
       </div>
     </header><!-- End Header -->
     
-    <main id="main">
-      
-      <!-- ======= Breadcrumbs ======= -->
-      <section id="breadcrumbs" class="breadcrumbs">
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center">
-            <h2>My<b>Task</b></h2>
-            <ol>
-              <li><a href="../mygrow-index.html">MyGrow</a></li>
-              <li>My<b>Task</b></li>
-            </ol>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4 my-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+          
+          <div id="MyGrowAdd" class="col-xl-2 col-md-4"><!-- ======= add grow ======= -->
+            <div class="icon-box">
+                <h3>MyDiary 1</h3>
+                <p style="color:#F5F5F5;">Created automatically after you <b>AddGrow</b></p>
+              </a>
+            </div>
           </div>
-        </div>
-      </section><!-- End Breadcrumbs -->
+          
+          <div id="MyGrowText" class="col-xl-2 col-md-4"><!-- ======= mygrow ======= -->
+            <div class="icon-box">
+              <a href="../mydiary/mydiary-filter-table.html">
+                <img id="mylogo" src="" class="img-fluid" alt="Responsive image">
+                <h3>MyDiary 1</h3>
+              </a>
+            </div>
+          </div>
 
-      <!-- ======= directions Section ======= -->
-      <div class="container">
-        <div id="row">
-          <p class="text-center">To add notes/edit, click the cell <b style="border-width:1px; border-style:solid; border-color:rgb(54, 53, 53); padding: 1px 1px 1px 1px;"><i class="fa fa-save"></i> Save</b> after all changes. Go to <b>MyDiary</b> to view all notes.</p>
         </div>
-      </div><!-- ===== END directions Section -->
-      
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table1" class="table-condensed" style="color: whitesmoke;"></table>
-        </div>
-      </div><!-- ===== END Table Section -->
-      
-      <div>
-        <br>
       </div>
-
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table2" class="table-condensed" style="color: whitesmoke;"></table>
-        </div>
-      </div><!-- ===== END Table Section -->
-
-      <div>
-        <br>
-      </div>
-      
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table3" class="table-condensed" style="color: whitesmoke;"></table>
-        </div>
-      </div><!-- ===== END Table Section -->
-
-      <div>
-        <br>
-      </div>
-      
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table4" class="table-condensed" style="color: whitesmoke;"></table>
-        </div>
-      </div><!-- ===== END Table Section -->
-
-      <div class="text-center">
-      <button id="SaveButton" class="editbtn btn btn-secondary btn-sm" type="button"><i class="fa fa-save"></i> Save</button>
-      </div>
-
-      <div>
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
-
-    </main><!-- End #main -->
+    </section><!-- End Hero -->
     
     <!-- ======= .navbar ======= -->
     <div id="preloader"></div>
@@ -124,8 +75,8 @@
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li><a class="nav-link scrollto fa fa-home" href="../index.html"></a></li>
-        <li><a class="nav-link scrollto active fa fa-leaf" href="../mygrow-index.html"></a></li>
-        <li><a class="nav-link scrollto fa fa-book" href="../mydiary-index.html"></a></li>
+        <li><a class="nav-link scrollto fa fa-leaf" href="../mygrow-index.html"></a></li>
+        <li><a class="nav-link scrollto active fa fa-book" href="../mydiary-index.html"></a></li>
         <li><a class="nav-link scrollto fa fa-shopping-cart " href="../shop-index.html"></a></li>
         <li><a class="nav-link scrollto fa fa-cogs" href="../tools-index.html"></a></li>
         <li><a class="nav-link scrollto fa-brands fa-google-play" href="https://play.google.com/store/apps/details?id=com.mywebapp"></a></li>
@@ -143,9 +94,8 @@
     <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
     
     <!-- Template Main JS File -->
-    <script src="../assets/mygrow-task-js/app.js"></script>
+    <script src="../assets/mydiary-js/app.js"></script>
     <script src="../assets/js/main.js"></script>
-  
   </body>
 
 </html>

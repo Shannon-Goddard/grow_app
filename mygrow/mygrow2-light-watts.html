@@ -38,7 +38,7 @@
     <header id="header" class="fixed-top ">
       <div class="container d-flex align-items-center justify-content-lg-between">
         <h1 class="logo me-auto me-lg-0"><a href="index.html">Loyal<span>9</span></a></h1>
-        <a href="../mydiary-index.html" class="get-started-btn scrollto">MyDiary</a>
+        <a id="taskButton" href="../mygrow/mygrow2-filter-table-nutrients.html" class="get-started-btn scrollto">select this light watts</a>
       </div>
     </header><!-- End Header -->
     
@@ -48,73 +48,47 @@
       <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>My<b>Task</b></h2>
+            <h2>Light Watts</h2>
             <ol>
-              <li><a href="../mygrow-index.html">MyGrow</a></li>
-              <li>My<b>Task</b></li>
+              <li><a href="../mygrow/mygrow2-plant-size.html">Plant Size</a></li>
+              <li>Light Watts</li>
             </ol>
           </div>
         </div>
       </section><!-- End Breadcrumbs -->
-
-      <!-- ======= directions Section ======= -->
-      <div class="container">
-        <div id="row">
-          <p class="text-center">To add notes/edit, click the cell <b style="border-width:1px; border-style:solid; border-color:rgb(54, 53, 53); padding: 1px 1px 1px 1px;"><i class="fa fa-save"></i> Save</b> after all changes. Go to <b>MyDiary</b> to view all notes.</p>
-        </div>
-      </div><!-- ===== END directions Section -->
       
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table1" class="table-condensed" style="color: whitesmoke;"></table>
+      <!-- ======= Search Section ======= -->
+      <section id="hero">
+        <div class="container mb-5" data-aos="fade-up">
+
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-xl-6 col-lg-8">
+              <h1>SELECT YOU<span>R</span></h1>
+              <h2>light watts</h2>
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <button onclick="myFunction()" id="dropbtn" class="dropbtn btn btn-primary btn-lg" type="button">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a id="0" value="1"> 125W</a>
+              <a id="1" value="2"> 250W</a>                                       
+              <a id="2" value="3"> 400W</a>
+              <a id="3" value="4"> 600W</a>
+              <a id="4" value="5"> 1000W</a>                                     
+            </div>
+          </div>
+          
+          <div id="box" >
+            <div class="image"><img id="image" src="" style="width:30%;" alt=""></div>
+            <h1 class="post-title" style="color: white;"><div id="watts"></div></h1>
+            <br>
+            <div id="info" style="color: white;"></div>
+          </div>
+        
         </div>
-      </div><!-- ===== END Table Section -->
-      
-      <div>
-        <br>
-      </div>
-
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table2" class="table-condensed" style="color: whitesmoke;"></table>
-        </div>
-      </div><!-- ===== END Table Section -->
-
-      <div>
-        <br>
-      </div>
-      
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table3" class="table-condensed" style="color: whitesmoke;"></table>
-        </div>
-      </div><!-- ===== END Table Section -->
-
-      <div>
-        <br>
-      </div>
-      
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table4" class="table-condensed" style="color: whitesmoke;"></table>
-        </div>
-      </div><!-- ===== END Table Section -->
-
-      <div class="text-center">
-      <button id="SaveButton" class="editbtn btn btn-secondary btn-sm" type="button"><i class="fa fa-save"></i> Save</button>
-      </div>
-
-      <div>
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
-
+      </section>
+    
     </main><!-- End #main -->
     
     <!-- ======= .navbar ======= -->
@@ -143,7 +117,8 @@
     <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
     
     <!-- Template Main JS File -->
-    <script src="../assets/mygrow-task-js/app.js"></script>
+    <script src="../assets/mygrow-light-watts-js/data.js"></script>
+    <script src="../assets/mygrow2-light-watts-js/app.js"></script>
     <script src="../assets/js/main.js"></script>
   
   </body>

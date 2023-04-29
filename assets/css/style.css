@@ -1296,29 +1296,25 @@ h6 {
 /*--------------------------------------------------------------
 # DeleteButton
 --------------------------------------------------------------*/
-#DeleteButton {
+.DeleteButton {
+   
+
   background: transparent;
-  border-radius: 4px;
-  padding: 7px 7px 7px 7px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 20px;
-  border: 2px solid red;
-  color: #FFFFFF; 
-  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+  transition: ease-in-out 0.3s;
+  border: 1px solid red;
+  color: #FFFFFF;
+
+  text-align: center;
 }
 
-#DeleteButton:hover {
+.DeleteButton:hover {
   background: red; 
   color: #343a40;
 }
 
-@media (max-width: 992px) {
-  #DeleteButton {
-    padding: 5px 5px 5px 5px;
-  }
-}
-/*--------------------------------------------------------------
+
+/*-------------------------------------------------------------
 # MyTask Save/Edit Button
 --------------------------------------------------------------*/
 .editbtn {
@@ -1359,6 +1355,30 @@ h6 {
   display: none;
 }
 #DeleteButton {
+  display: none;
+}
+#MyGrow2Text {
+  display: none;
+}
+#Delete2Button {
+  display: none;
+}
+#MyGrow3Text {
+  display: none;
+}
+#Delete3Button {
+  display: none;
+}
+#MyGrow4Text {
+  display: none;
+}
+#Delete4Button {
+  display: none;
+}
+#MyGrow5Text {
+  display: none;
+}
+#Delete5Button {
   display: none;
 }
 /*--------------------------------------------------------------

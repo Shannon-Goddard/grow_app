@@ -38,83 +38,55 @@
     <header id="header" class="fixed-top ">
       <div class="container d-flex align-items-center justify-content-lg-between">
         <h1 class="logo me-auto me-lg-0"><a href="index.html">Loyal<span>9</span></a></h1>
-        <a href="../mydiary-index.html" class="get-started-btn scrollto">MyDiary</a>
+        <a id="taskButton" href="../mygrow/mygrow3-filter-table.html" class="get-started-btn scrollto">BuildGrow</a>
       </div>
     </header><!-- End Header -->
     
-    <main id="main">
+    <main id="main" class="container">
       
       <!-- ======= Breadcrumbs ======= -->
       <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>My<b>Task</b></h2>
+            <h2>BuildGrow</h2>
             <ol>
-              <li><a href="../mygrow-index.html">MyGrow</a></li>
-              <li>My<b>Task</b></li>
+              <li><a href="../mygrow/mygrow3-filter-table-nutrients.html">Nutrients</a></li>
+              <li>BuildGrow</li>
             </ol>
           </div>
         </div>
       </section><!-- End Breadcrumbs -->
-
-      <!-- ======= directions Section ======= -->
-      <div class="container">
-        <div id="row">
-          <p class="text-center">To add notes/edit, click the cell <b style="border-width:1px; border-style:solid; border-color:rgb(54, 53, 53); padding: 1px 1px 1px 1px;"><i class="fa fa-save"></i> Save</b> after all changes. Go to <b>MyDiary</b> to view all notes.</p>
-        </div>
-      </div><!-- ===== END directions Section -->
       
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table1" class="table-condensed" style="color: whitesmoke;"></table>
+      <!-- ======= Grow Info Section ======= -->
+      <section id="hero">
+
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-xl-6 col-lg-8">
+              <h1>BUILD YOU<span>R</span></h1>
+              <h2>guide</h2>
+            </div>
+          </div>
         </div>
-      </div><!-- ===== END Table Section -->
+        
+        <div class="container d-flex align-items-center justify-content-lg-between">
+          <div id="box" class="container mb-5">
+            <label for="start">Start date:</label>
+            <input type="date" id="start" onkeyup="myFunction()" name="trip-start" value="">
+            <br>
+            <br>
+            <div class="image"><img id="image" src="" style="width:45%;" alt=""></div>
+            <p>With <var id="strain"></var>'s flowering time and the vegetative weeks to get your plant <var id="Grow"></var> tall, it will take about <var id="info"></var> to grow from seed to harvest.</p>
+          </div>
+        </div>
       
-      <div>
-        <br>
-      </div>
-
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table2" class="table-condensed" style="color: whitesmoke;"></table>
-        </div>
-      </div><!-- ===== END Table Section -->
-
-      <div>
-        <br>
-      </div>
+      </section><!-- ======= END Grow Info Section ======= -->
       
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table3" class="table-condensed" style="color: whitesmoke;"></table>
-        </div>
-      </div><!-- ===== END Table Section -->
-
-      <div>
-        <br>
-      </div>
-      
-      <!-- ======= Table Section ======= -->
-      <div>
-        <div class="table-responsive">
-          <table id="table4" class="table-condensed" style="color: whitesmoke;"></table>
-        </div>
-      </div><!-- ===== END Table Section -->
-
-      <div class="text-center">
-      <button id="SaveButton" class="editbtn btn btn-secondary btn-sm" type="button"><i class="fa fa-save"></i> Save</button>
-      </div>
-
-      <div>
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
-
+      <!-- Hidden Table being filtered on confirm Section -->
+      <div id="hide-table">
+        <table id="table3"></table>
+      </div><!-- End Hidden Table being filtered on confirm Section -->
+    
     </main><!-- End #main -->
     
     <!-- ======= .navbar ======= -->
@@ -143,7 +115,7 @@
     <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
     
     <!-- Template Main JS File -->
-    <script src="../assets/mygrow-task-js/app.js"></script>
+    <script src="../assets/mygrow3-saved-js/app.js"></script>
     <script src="../assets/js/main.js"></script>
   
   </body>
