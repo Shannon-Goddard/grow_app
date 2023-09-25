@@ -2014,5 +2014,8 @@ input[type=text] {
 }
 
 .home .play {
-  height:80px;
+  width:200px;
+}
+.home .amazon {
+  width:200px;
 }
