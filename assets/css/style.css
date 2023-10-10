@@ -1086,7 +1086,7 @@ h6 {
   padding: 0;
   z-index: 1;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
 }
 
@@ -1108,10 +1108,8 @@ h6 {
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
-  width: 16.6666667%;
+  width: 20%;
 }
-
-
 
 .navbar a:hover,
 .navbar .active,
@@ -1132,6 +1130,7 @@ h6 {
     
   }
 }
+
 /*--------------------------------------------------------------
 # Search Page
 --------------------------------------------------------------*/
@@ -2004,14 +2003,14 @@ input[type=text] {
  /*--------------------------------------------------------------
 # google play nav icon
 --------------------------------------------------------------*/
-.fa-google-play {
+/*.fa-google-play {
   background: rgb(59, 204, 255);
   background: linear-gradient(135deg, rgb(72, 255, 72) 30%, rgb(59, 204, 255) 35% 55%, rgb(255, 51, 51) 55%, rgb(255, 212, 0) 65%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             -webkit-text-fill-color: transparent;
-}
+}*/
 
 .home .play {
   width:200px;
