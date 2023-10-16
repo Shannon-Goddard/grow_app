@@ -33,9 +33,9 @@ function myFunction() {
 //Function to change info on click////////////////////
 $("li").on("click" , "a" , function(){
   const d = data;
-  // Change logo, strain, Grow, Sativa, THC, CBD, info, and more_info on user selection of search drop
+  // Change logo, strain, Grow, Sativa, THC, CBD, info, and more on user selection of search drop
   for (let value of d.values()) {
-    var logo, strain, Grow, Sativa, Indica, Hybrid, THC, CBD, info, more_info, Index;
+    var logo, strain, Grow, Sativa, Indica, Hybrid, THC, CBD, info, more, Index;
     logo = value.logo;
     strain = value.strain;
     Grow = value.Grow;
@@ -45,7 +45,7 @@ $("li").on("click" , "a" , function(){
     THC = value.THC;
     CBD = value.CBD;
     info = value.info;
-    more_info = value.more_info;
+    more = value.more;
     Index = this.id;
     $("#image").attr("src" , d[Index].logo).show();
     $("#strain").text(d[Index].strain);
@@ -56,7 +56,7 @@ $("li").on("click" , "a" , function(){
     $("#THC").text('THC: '+d[Index].THC+'%');
     $("#CBD").text('CBD: '+d[Index].CBD+'%');
     $("#info").text(d[Index].info);
-    $("#more_info").text(d[Index].more_info);
+    $("#more").text(d[Index].more);
     document.getElementById("myInput").value = "";
     document.getElementById("myUL").style.display = "none";
     $("#taskButton").show();
