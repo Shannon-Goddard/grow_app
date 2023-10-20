@@ -233,9 +233,10 @@
   });
 
   /**
-   * Portfolio details slider
+   * Portfolio details slider SHOP
    */
   new Swiper('.portfolio-details-slider', {
+    lazy: true,
     speed: 400,
     loop: true,
     autoplay: {
