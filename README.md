@@ -124,7 +124,7 @@
 <!--more info-->
 
 **simLeaf** allows users to practice growing weed virtually from their phone or tablet. The platform is actually quite sophisticated, as you must manage light, temperature, humidity, water levels, nutrients, and pH levels throughout the growing stages. simLeaf also provides useful tips and educational information to help you along the way. 
-</details><div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>  
+</details><div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>
 
 # Resources  
 - **Software:** VS Code   
@@ -325,23 +325,32 @@ Allows the User to a search through a list of 2,792 strains. As the user types i
 <!--more info-->   
 Allows the User to contact Loyal9  
 </details>
-<br>    
 
-**Check-out the website at [loyal9.app](https://www.loyal9.app)**
+## Grow together. Build confidence. 
+
+**Check-out the website at &nbsp;[loyal9.app](https://www.loyal9.app)**
+
+**[Get the app!](https://www.loyal9.app/tools/GetTheApp.html)**
 <br>
 <br>
-**Now available on [Google Play](https://play.google.com/store/apps/details?id=com.mywebapp)**
-<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://play.google.com/store/apps/details?id=com.mywebapp"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/google-play.svg" width="50" height="50"></a>
-&nbsp;&nbsp;
+<a href="https://apps.apple.com/us/app/growapp-cannabis-guide/id6471381461"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/app-store-ios.svg" width="50" height="50"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://play.google.com/store/apps/details?id=com.mywebapp"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/google-play.svg" width="50" height="50"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.amazon.com/gp/product/B0CFG7HGQK"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/windows.svg" width="50" height="50"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.amazon.com/gp/product/B0CFG56Z43"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/amazon.svg" width="50" height="50"></a>
+&nbsp;
 <br>
 <br>
  Give us some feedback at one of the social links below.
 
- <a href="https://twitter.com/Loyal9GrowApp"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/twitter.svg" width="50" height="50"></a>&nbsp;&nbsp;
-<a href="https://www.facebook.com/Loyal9GrowApp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/facebook.svg" width="50" height="50"></a>&nbsp;&nbsp;
-<a href="https://www.instagram.com/loyal9growapp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/instagram.svg" width="50" height="50"></a>&nbsp;&nbsp;
+ <a href="https://twitter.com/Loyal9GrowApp"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/twitter.svg" width="50" height="50"></a>
+ &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.facebook.com/Loyal9GrowApp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/facebook.svg" width="50" height="50"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/loyal9growapp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/instagram.svg" width="50" height="50"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://github.com/Shannon-Goddard/grow_app"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="50" height="50"></a>
 &nbsp;&nbsp;
 
@@ -385,7 +394,7 @@ Allows the User to contact Loyal9
 
 **MEANING: YOUR GROW WILL BE ERASED AFTER YOU CLEAR YOUR BROWSER HISTORY!**
 
-In purchasing the app on Google Play, the app stores the user input to the app and does not produce this minor inconvenience
+In purchasing the app, the app stores the user input to the app and does not produce this minor inconvenience
 </details>  
 
 <sub>[MIT License](https://github.com/Shannon-Goddard/grow_search/blob/main/LICENSE) |
