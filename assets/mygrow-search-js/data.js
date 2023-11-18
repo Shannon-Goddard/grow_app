@@ -36448,5 +36448,18 @@ var data = [
     Sativa: "",
     Grow: "8",
     logo: "../assets/mygrow-search-images/Space_Panda.png"
+  },
+  {
+    index: "2804",
+    strain: "Platinum Pink Kush",
+    info: "Platinum Pink Kush is a “platinum” level indica-dominant strain for those who are looking for strong medicine. Best for strong body relaxation, pain relief, sleepiness and appetite stimulation, PP is a long-lasting “creeper” that may take a few minutes to kick in, but you won’t miss it once it does. Floral and full of kush spiciness in aroma, the flowers of this strain will have a surprisingly sweet flavor that’s a patient favorite. Across between Platinum OG Kush and Pink Kush, this indica finishes flowering in 8 to 9 weeks. These dense, purple-hued nugs are popular in California and are finding their way to other areas.",
+    more: "An intense and powerful indica strain, Platinum Pink works well as a strong afternoon medicine. With an 80:20 indica/sativa ratio, this hybrid strain can give you the high you need. A crossover between Pink Kush and Platinum OG Kush, this strain has a spicy aroma with a deliciously sweet flavor. Having a THC level of around 28%, this strain can take all your pains away. Favorite among the patients for its sweetness, the strain can cure anxiety, insomnia, pain, stress and a lack of appetite. A few tokes of this pungent strain can improve focus and revive your energy, pulling you out of depression. It can uplift your mood and bring you pure moments of joy. It takes a little time to sink in before it hits right on the spot, so smoke smartly. This high potency strain has dense nuggets with purple tones that are coated in sparkly silver trichomes. It can be cultivated indoors or outdoors; with the plant requiring 60 days for flowering. It is a favorable choice for novice gardeners as it can naturally resist pests and diseases.",
+    THC: "28",
+    CBD: "0",
+    Indica:"80% INDICA",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/platinum-pink-kush.png"
   }
 ];
