@@ -36461,5 +36461,31 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/platinum-pink-kush.png"
+  },
+    {
+    index: "2805",
+    strain: "Ghost Toof",
+    info: "Illuminauto #39 - Ghost Toof is an autoflowering cannabis strain developed by Mephisto genetics as a rework of a previous Mephisto Illuminauto special – Illuminauto #7 – Toof Decay x Fantasmo Express. This Indica-dominant cannabis strain is truly an artisanal strain – she has large, dense flowers which are, in the manufacturer's words, “dripping in frost”.",
+    more: "Growing Illuminauto #39 - Ghost Toof is very easy. She isn’t very fussy with nutrients and doesn’t have a wide range of phenotypes allowing you to have consistency across grows. As with most autoflowers, she is prone to stress-related issues however you can still train her using LST and leaf tucking to allow light into all parts of the plant. Due to her short height and stature, the best to maximise yields is to grow her “sea of green” style where well-kept gardens can bring in as much as 85 g/ plant after just 70 – 80 days from germination. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "NA",
+    CBD: "0",
+    Indica:"60% INDICA auto",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "5",
+    logo: "../assets/mygrow-search-images/ghost-toof.png"
+  },
+  {
+    index: "2806",
+    strain: "Dark Devil",
+    info: "Dark Devil is a hybrid weed strain made from a genetic cross between Big Devil XL and an auto-flowering purple strain. This strain is 40% sativa and 60% indica. Dark Devil is a stunning strain that has a dark purple and black coloration, with orange hairs and white trichomes. It has a sweet and fruity aroma and flavor, with hints of citrus and incense. It has a balanced high that is both relaxing and stimulating, with a pleasant body buzz and a creative mind. Dark Devil is 15-20% THC, making this strain an ideal choice for experienced cannabis consumers.",
+    more: "Dark Devil effects include feeling euphoric, happy, and relaxed. Medical marijuana patients often choose Dark Devil when dealing with symptoms associated with stress, depression, pain, and insomnia. Bred by Sweet Seeds, Dark Devil features flavors like citrus, fruit, and spicy/herbal. The dominant terpene of this strain is limonene. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "20",
+    CBD: "0",
+    Indica:"60% INDICA auto",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "5",
+    logo: "../assets/mygrow-search-images/dark-devil.png"
   }
 ];
