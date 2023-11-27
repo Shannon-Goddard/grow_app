@@ -36487,5 +36487,18 @@ var data = [
     Sativa: "",
     Grow: "5",
     logo: "../assets/mygrow-search-images/dark-devil.png"
+  },
+  {
+    index: "2807",
+    strain: "Double Up",
+    info: "Double Up is the offspring of the Mellowz #8 phenotype - a flawless plant, and the aromatic Gastro Pop. Compound Genetics thoroughly enjoyed the process of breeding the Double Up and eagerly anticipates the discovery of exceptional phenotypes from this genetic combination.",
+    more: "The result of this paring surpassed everyone's expectations. Expect stunning buds with intense purple tones and contrasting trichomes, that create a visually appealing display. Not only that, but the buds also boast mouthwatering terpenes that range from bubblegum and candy to fruit/citrus, with hints of kerosene and industrial chemical funk. The buds have larger calyxes and often exhibit elongated shapes, although excessive foxtailing is not a common occurrence.",
+    THC: "29",
+    CBD: "1",
+    Indica:"",
+    Hybrid:"70% HYBRID",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/double-up.png"
   }
 ];
