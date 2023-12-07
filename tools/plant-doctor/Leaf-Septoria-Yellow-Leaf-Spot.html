@@ -29,6 +29,8 @@
     <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Main CSS File -->
     <link href="../../assets/css/style.css" rel="stylesheet">
+    <!-- Video preload -->
+    <link rel="preload" href="https://github.com/Shannon-Goddard/grow_app/raw/main/assets/PlantDoctorVideos/Leaf_Septoria.mp4" as="video" type="video/mp4" />
   </head>
   
   <body class="customBody">
@@ -69,7 +71,10 @@
           <br>
           <video controls preload="none" width="100%" height="auto" poster="../../assets/PlantDoctorVideos/poster/leaf_septoria.png">
             <source src="https://github.com/Shannon-Goddard/grow_app/raw/main/assets/PlantDoctorVideos/Leaf_Septoria.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            <p>
+              Your browser doesn't support HTML video. Here is a
+              <a href="https://github.com/Shannon-Goddard/grow_app/raw/main/assets/PlantDoctorVideos/Leaf_Septoria.mp4">link to the video</a> instead.
+            </p>
           </video>
           <br>
           <div id="box">
