@@ -36500,5 +36500,57 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/double-up.png"
+  },
+  {
+    index: "2808",
+    strain: "Cherry Do-Si-Dos",
+    info: "Cherry Do Si Dos is an Indica-dominant hybrid with unknown genetic proportions but a star-studded heritage. It’ll have you singing along to its relaxing fruity flavors with a balancing, creativity-inducing high. Do-Si-Dos and a phenotype of the famous Cherry Pie strain were combined to create this strain by the breeder Tristan Langwinski. Though this was early in his career, the strain didn’t suffer for it and this little cherry-packed cultivar out of Indiana shows a lot of skill. With a THC level of around 22%, you can be sure that Cherry Do-Si-Dos will pack a punch if you need one and will not be too mind-meltingly powerful if you’re worried about your experience level.",
+    more: "The terpene content of Cherry Do-Si-Dos includes earthy, fruity flavors from limonene, linalool, alpha humulene, and beta-caryophyllene. The result is a flavor that comes on with a heavy, euphoric presence, earthy and sweet, with undertones of flower and pungent earth. On the exhale, the strain is deliciously sweet. As for its effects, users describe a non-sedating high that’s soothing and mellow, with a calm vibe. We recommend using the strain for social recreation, a little light yoga or stretching, a casual couch day with movies and games, or a brisk walk outside.",
+    THC: "23",
+    CBD: "1",
+    Indica:"",
+    Hybrid:"50% HYBRID",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/cherry-do-si-dos.png"
+  },
+  {
+    index: "2809",
+    strain: "Pablo's Revenge",
+    info: "Pablos Revenge is a hybrid weed strain made from a genetic cross between Animal Mints and Sherb Cake. This strain is 70% indica and 30% sativa. Pablos Revenge is a potent and exotic strain that has a sweet, peppery, and gassy flavor and aroma. Pablos Revenge is 26-32% THC, making this strain a strong choice for experienced cannabis consumers who can handle a potent high. Consumers often say Pablos Revenge effects include feeling sleepy, relaxed, and hungry. Medical marijuana patients often choose Pablos Revenge when dealing with symptoms associated with stress, anxiety, and pain. Bred by Tiki Madman, Pablos Revenge features flavors like diesel, berry, and mint. The dominant terpene of this strain is unknown. Pablos Revenge has a heavy and sedating high that can stimulate your appetite and soothe your body. This strain is best enjoyed at night or when you need a deep relaxation.",
+    more: "Pablo’s Revenge is an absolutely stunning strain, coming out purple, extremely frosty with a floral and gassy Animal Mints nose. This strain does well in all types of grows, especially in indoor or mixed light climates. If you are looking for bag appeal, this is the strain for you!",
+    THC: "32",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"70% HYBRID",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/pablos-revenge.png"
+  },
+  {
+    index: "2810",
+    strain: "Oreo Blizard",
+    info: "Oreo Blizzard, also known as Oreo Blizzy, is a cross between Ice Cream Cake and Sunset Sherbet. Two of the most popular strains over the past 5-10 years. This specific pheno we selected is very Indica dominant. It’s a short stout dense plant that produces heavy resin. The wedding cake seems to be most dominant in the terpene profile with hints of the gelato and sherb. Pure gas and a combination of citrus vanilla spice and sweet floral brown sugar. She will continue to darken as she ripens looking more like her gelato and sherb lineage. ",
+    more: "An incredible indica dominant dreamy comatose. A dense resinous combination of vanilla floral citrus and gassy brown sugar.",
+    THC: "31",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"60% HYBRID",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/oreo-blizzard.png"
+  },
+  {
+    index: "2811",
+    strain: "White Apple Tartz",
+    info: "White Apple Tart is an indica-dominant hybrid that packs a potent punch. Its effects are fast-acting and long-lasting, delivering a deeply calming body buzz accompanied by strong mental clarity. This strain is perfect for unwinding after a stressful day or easing into the evening to relax and enjoy the night with friends. Its aroma is a mix of tart apples and sweet candy with undertones of skunk. The flavor is reminiscent of apple cider and spices, creating an enjoyable experience for the taste buds. White Apple Tart provides relief from pain, inflammation, nausea, and anxiety while inspiring creativity and happiness.",
+    more: "White Apple Tartz is known for its bright, frosty bud structure that looks like a sparkly apple with some bluish-purple hues. Its aroma is a mix of sweet and sour apples, creamy berry gas, honey, and cinnamon spice. These scents are quite pleasant on the palate and make this strain an enjoyable experience. On the inhale, you’ll savor a taste of tart sour apple while the exhale brings out notes of creamy berry gas and cookie dough. Some users have even noted hints of Apple Jacks cereal and cinnamon spice, making this strain a delicious treat for the senses.",
+    THC: "26",
+    CBD: "1",
+    Indica:"",
+    Hybrid:"50% HYBRID",
+    Sativa: "",
+    Grow: "10",
+    logo: "../assets/mygrow-search-images/white-apple-tartz.png"
   }
 ];
