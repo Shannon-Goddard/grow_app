@@ -32,11 +32,14 @@ $(function() {
       vegWeeks = "8";
     }
       if(localStorage.plantHeight === "5-6 feet") {
-        vegWeeks = "12";
+        vegWeeks = "8";
       }
-        if(localStorage.plantHeight === "7+ feet") {
-          vegWeeks = "16";
-        }
+      /////if(localStorage.plantHeight === "5-6 feet") {
+      ////  vegWeeks = "12";
+      ////}
+      ////  if(localStorage.plantHeight === "7+ feet") {
+      ////    vegWeeks = "16";
+      ////  }
         document.getElementById("info").innerHTML = (localStorage.plantGrow*7)+(vegWeeks*7)+18+" days";
        
         //add Inches to LightDistance column _125W _250W _400W _600W _1000W
@@ -67,8 +70,12 @@ $(function() {
           $(".sixteenWeeks").remove();
         }
         if(localStorage.plantHeight === " 5-6 feet") {
+          $(".twelveWeeks").remove();
           $(".sixteenWeeks").remove();
         }
+        ////if(localStorage.plantHeight === " 5-6 feet") {
+        ////  $(".sixteenWeeks").remove();
+        ////}
         // filter flowering days by class in weeks
         if (localStorage.plantGrow === '4')  {
           $(".fiveFlowering").remove();
