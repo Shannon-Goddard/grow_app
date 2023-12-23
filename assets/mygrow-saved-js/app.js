@@ -31,7 +31,7 @@ $(function() {
     if(localStorage.plantHeight === "3-4 feet") {
       vegWeeks = "8";
     }
-      if(localStorage.plantHeight === "5-6 feet") {
+      if(localStorage.plantHeight === "5+ feet") {
         vegWeeks = "8";
       }
       /////if(localStorage.plantHeight === "5-6 feet") {

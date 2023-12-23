@@ -13,7 +13,7 @@ var data = [
   },
   {
     index: "2",
-    height: "5-6 feet",
+    height: "5+ feet",
     info: "A main advantage associated with larger-sized plants is larger-sized buds and plenty of them. Spending the time to nurture a large-sized Cannabis plant that will have had a long vegging time and an equally long flowering period can require a lot of hands-on maintenance, but the rewards are worth their weight in gold. Big roots means big shoots, which means that larger-sized plants should have a 5 gallon container.",
     logo: "../assets/mygrow-plant-size-images/5-6foot.png"
   },
