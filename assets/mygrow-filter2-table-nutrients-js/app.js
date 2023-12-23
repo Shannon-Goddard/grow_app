@@ -7,10 +7,10 @@ function hide_show_table(col_name)
   var all_col=document.getElementsByClassName(col_name);
   for(var i=0;i<all_col.length;i++)
   {
-   all_col[i].style.display="none";
+   all_col[i].remove();
   }
-  document.getElementById(col_name+"_head").style.display="none";
-  document.getElementById(col_name).value="hide";
+  document.getElementById(col_name+"_head").remove();
+  document.getElementById(col_name).remove();
  }
  else
  {
