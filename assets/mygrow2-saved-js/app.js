@@ -32,11 +32,9 @@ $(function() {
       vegWeeks = "8";
     }
       if(localStorage.plant2Height === "5-6 feet") {
-        vegWeeks = "12";
+        vegWeeks = "8";
       }
-        if(localStorage.plant2Height === "7+ feet") {
-          vegWeeks = "16";
-        }
+        
         document.getElementById("info").innerHTML = (localStorage.plant2Grow*7)+(vegWeeks*7)+18+" days";
        
         //add Inches to LightDistance column _125W _250W _400W _600W _1000W
