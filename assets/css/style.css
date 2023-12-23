@@ -1832,6 +1832,56 @@ th {
   display: none;
 }
 
+#Biofuel_head {
+  display: none;
+}
+.Biofuel {
+  display: none;
+}
+
+#Continum_head {
+  display: none;
+}
+.Continum {
+  display: none;
+}
+
+#Dune_head {
+  display: none;
+}
+.Dune {
+  display: none;
+}
+
+#Lumina_head {
+  display: none;
+}
+.Lumina {
+  display: none;
+}
+
+#NeroSC_head {
+  display: none;
+}
+.NeroSC {
+  display: none;
+}
+
+#TribusOriginal_head {
+  display: none;
+}
+.TribusOriginal {
+  display: none;
+}
+
+#Tundra_head {
+  display: none;
+}
+.Tundra {
+  display: none;
+}
+
+
 /*--------------------------------------------------------------
 # Plant Doctor filter table 
 --------------------------------------------------------------*/
