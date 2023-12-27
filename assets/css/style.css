@@ -1881,6 +1881,34 @@ th {
   display: none;
 }
 
+#Cal-Mag_head {
+  display: none;
+}
+.Cal-Mag {
+  display: none;
+}
+
+#FloraNovaGrow_head {
+  display: none;
+}
+.FloraNovaGrow {
+  display: none;
+}
+
+#FloraNovaBloom_head {
+  display: none;
+}
+.FloraNovaBloom {
+  display: none;
+}
+
+#ProTekt_head {
+  display: none;
+}
+.ProTekt {
+  display: none;
+}
+
 
 /*--------------------------------------------------------------
 # Plant Doctor filter table 
