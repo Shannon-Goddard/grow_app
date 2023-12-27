@@ -1509,8 +1509,9 @@ th {
   color: #cccccc;
 }
 .table-responsive-sm {
-  overflow: auto; 
-  height: 50vh; 
+  overflow: auto;
+  width:auto;
+  height: 70vh; 
 }
 .table-responsive-sm thead th {
   position: sticky; 
