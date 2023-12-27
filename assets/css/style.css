@@ -1909,6 +1909,34 @@ th {
   display: none;
 }
 
+#FoliagePro_head {
+  display: none;
+}
+.FoliagePro {
+  display: none;
+}
+
+#BLOOM_head {
+  display: none;
+}
+.BLOOM {
+  display: none;
+}
+
+#MagPro_head {
+  display: none;
+}
+.MagPro {
+  display: none;
+}
+
+#KLN_head {
+  display: none;
+}
+.KLN {
+  display: none;
+}
+
 
 /*--------------------------------------------------------------
 # Plant Doctor filter table 
