@@ -2155,21 +2155,46 @@ input[type=text] {
   color: white;
 }
 
- /*--------------------------------------------------------------
-# google play nav icon
+/*--------------------------------------------------------------
+# GetTheApp Menu
 --------------------------------------------------------------*/
-/*.fa-google-play {
-  background: rgb(59, 204, 255);
-  background: linear-gradient(135deg, rgb(72, 255, 72) 30%, rgb(59, 204, 255) 35% 55%, rgb(255, 51, 51) 55%, rgb(255, 212, 0) 65%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            -webkit-text-fill-color: transparent;
-}*/
-
-.home .play {
-  width:200px;
+/**
+* Desktop Navigation 
+*/
+.appbar {
+  background-color: rgba(0, 0, 0, 0);
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
-.home .amazon {
-  width:200px;
+
+.appbar ul {
+  margin: 0;
+  padding: 0 0 20px 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.appbar a
+ {
+  float: left;
+  padding: 0 0 20px 0;
+  width: 100px;
+  margin: 5px;
+}
+
+.gtaBody {
+background: url(../img/portfolio/pot3.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
