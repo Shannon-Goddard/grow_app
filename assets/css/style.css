@@ -1832,6 +1832,62 @@ th {
   display: none;
 }
 
+#GROWPowder_head {
+  display: none;
+}
+.GROWPowder {
+  display: none;
+}
+
+#CALMAGPowder_head {
+  display: none;
+}
+.CALMAGPowder {
+  display: none;
+}
+
+#BLOOMPowder_head {
+  display: none;
+}
+.BLOOMPowder {
+  display: none;
+}
+
+#BOOSTPowder_head {
+  display: none;
+}
+.BOOSTPowder {
+  display: none;
+}
+
+#CARBOFLUSHPowder_head {
+  display: none;
+}
+.CARBOFLUSHPowder {
+  display: none;
+}
+
+#pHPerfectMicro_head {
+  display: none;
+}
+.pHPerfectMicro {
+  display: none;
+}
+
+#pHPerfectBloom_head {
+  display: none;
+}
+.pHPerfectBloom {
+  display: none;
+}
+
+#pHPerfectGrow_head {
+  display: none;
+}
+.pHPerfectGrow {
+  display: none;
+}
+
 #Biofuel_head {
   display: none;
 }
