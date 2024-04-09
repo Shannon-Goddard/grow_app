@@ -36552,5 +36552,18 @@ var data = [
     Sativa: "",
     Grow: "10",
     logo: "../assets/mygrow-search-images/white-apple-tartz.png"
+  },
+  {
+    index: "2812",
+    strain: "Purple Sticky Punch",
+    info: "Purple Sticky Punch is a sativa dominant hybrid. It tastes and smells like a fruit basket of tropical fruits. Purple Sticky Punch is great for relaxation at the end of the day but it is also a great strain for daytime use. This is a wonderful strain for people suffering from PTDS and those that deal with minor pain.",
+    more: "Purple sticky punch pushes around 20-25% THC and .05 - 0.79% CBD depending on growing conditions. Flowering time is between 58-68 days and on average. This will be a tall cannabis plant so please be aware of that prior to growing indoors. It can quickly become to large for indoor tents if not trained properly.",
+    THC: "25",
+    CBD: "0.5",
+    Indica:"",
+    Hybrid:"50% HYBRID",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/purple-sticky-punch.png"
   }
 ];
