@@ -36565,5 +36565,18 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/purple-sticky-punch.png"
+  },
+  {
+    index: "2813",
+    strain: "Chemdog",
+    info: "The Chemdog is a famous cut-only strain stabilized by Green House Seeds in feminized form. This old-school strain is the perfect combination of Sour Diesel and OG Kush. Characteristic pungent aroma and narcotic effect. The effects of this strain are strong and medicinal; in fact, some users claim to have used this strain to manage chronic pain. The flavors of this strain are very complex, starting with an acidic, lemony tone and a diesel/fuel taste that will leave your mouth satisfied. The most expressed terpenes are α -Pinene, α -Humulene and β-Caryophyllene.",
+    more: "The structure of this plant is very reminiscent of OG Kush, with long internodes and lots of branching. Flowering time is 9 weeks, with a yield of 800g/m2. When grown outdoors, it reaches maturity at the end of October (in the Northern Hemisphere), and, with a production of 1000g/plant. the plant can grow up to 150–170 cm. This plant can handle a medium/high level of EC. Even after more than 10 years, this strain remains one of the most popular in the Cannabis world. A must-try!",
+    THC: "24.5",
+    CBD: "1.5",
+    Indica:"70% INDICA",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/chemdog.png"
   }
 ];
