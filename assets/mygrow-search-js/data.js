@@ -36578,5 +36578,18 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/chemdog.png"
+  },
+  {
+    index: "2814",
+    strain: "Ambrosia Kush",
+    info: "Ambrosia Kush impresses with its voluminous aromas and pleasant cultivation properties - whether indoors or outdoors. This hybrid strain brings together the best of the indica and sativa worlds, making it the ideal choice for those seeking both relaxing and invigorating effects.",
+    more: "With a medium to large height, Ambrosia Kush easily adapts to a wide range of growing conditions. Strong lateral branching promotes the growth of densely packed flowers. Techniques such as Sea of ​​Green (SOG) or Screen of Green (SCROG) are particularly suitable for boosting yields.",
+    THC: "20",
+    CBD: "0",
+    Indica:"70% INDICA",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "10",
+    logo: "../assets/mygrow-search-images/ambrosia-kush.png"
   }
 ];
