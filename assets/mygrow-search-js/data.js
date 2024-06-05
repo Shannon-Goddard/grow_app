@@ -36591,5 +36591,18 @@ var data = [
     Sativa: "",
     Grow: "10",
     logo: "../assets/mygrow-search-images/ambrosia-kush.png"
+  },
+  {
+    index: "2815",
+    strain: "Vanilla Gelato",
+    info: "Vanilla Gelato is the sweet star among cannabis strains, boasting a balance of 50% sativa and 50% indica. With a THC content of 20-25% THC, Vanilla Gelato delivers an unparalleled hybrid experience – a blend of deep relaxation and invigorating energy. From germination to harvest, this variety takes just 11-13 weeks, making it ideal for those who don't want to wait long. With its compact size, Vanilla Gelato fits perfectly into any growing environment, suitable for outdoor use from April to July.",
+    more: "Vanilla Gelato is the result of a cross between Vanilla Auto and Gelato 33, both strains known for their intense flavors and powerful effects. This combination takes the Gelato range to a new level, with a flowering time of 75-85 days. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "25",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"50% HYBRID auto",
+    Sativa: "",
+    Grow: "7",
+    logo: "../assets/mygrow-search-images/vanilla-gelato.png"
   }
 ];
