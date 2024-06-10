@@ -36604,5 +36604,18 @@ var data = [
     Sativa: "",
     Grow: "7",
     logo: "../assets/mygrow-search-images/vanilla-gelato.png"
+  },
+  {
+    index: "2816",
+    strain: "Apple Strudel",
+    info: "Apple Strudel is a hybrid weed strain made from a genetic cross between Sunset Strudel and Sour Apple Killer. This strain is 50% sativa and 50% indica. Apple Strudel is 20% THC, making this strain an ideal choice for experienced cannabis consumers.",
+    more: "Bred by Raw Genetics, We are still learning about Apple Strudel’s effects, flavors, and medical uses.",
+    THC: "20",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"50% HYBRID",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/apple-strudel.png"
   }
 ];
