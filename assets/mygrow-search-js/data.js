@@ -36617,5 +36617,18 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/apple-strudel.png"
+  },
+    {
+    index: "2817",
+    strain: "Wedding Glue",
+    info: "A solid autoflower suited for all types of growers due to being super easy to grow; A Indica-dominant hybrid that takes 63-70 days from seed to harvest, it’s a tall autoflower that can grow up to 120cm and produce around 550gr/m2. Thanks to the 26% THC, this strain offers a strong effect without much maintenance and buds so resinous that it looks like it’s covered with creamy white icing.",
+    more: "Expect a delicious terp mix of sweet vanilla and earthy aromas that comes along with a fairly strong head buzz that slowly transitions into a more relaxing corporal effect. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "26",
+    CBD: "0",
+    Indica:"60% INDICA auto",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "4",
+    logo: "../assets/mygrow-search-images/wedding-glue.png"
   }
 ];
