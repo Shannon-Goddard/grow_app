@@ -20,3 +20,12 @@ $(function(){
   $('.notes').show();
   $(":input").hide();
 });
+//////////export to pdf///////////////////////////////////////////////////////////////////////
+function printDiv(table1) {
+  var printContents=document.getElementById('table1').outerHTML;
+  var originalContents = document.body.outerHTML;
+  document.body.outerHTML = printContents;
+  window.print();
+  document.body.outerHTML = originalContents;
+}
+//////////////////////////////////////////////////////////////////////////////////////////////

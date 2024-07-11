@@ -22,5 +22,12 @@ $(function(){
   $('table tr').show();
   $('.notes').hide();
 });
-
-console.log(localStorage);
+//////////export to pdf///////////////////////////////////////////////////////////////////////
+function printDiv(table3) {
+  var printContents=document.getElementById('table3').outerHTML;
+  var originalContents = document.body.outerHTML;
+  document.body.outerHTML = printContents;
+  window.print();
+  document.body.outerHTML = originalContents;
+}
+//////////////////////////////////////////////////////////////////////////////////////////////

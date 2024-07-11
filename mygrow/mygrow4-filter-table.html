@@ -31,6 +31,16 @@
     <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <!-- Template Main CSS File -->
     <link href="../assets/css/style.css" rel="stylesheet">
+    <style media="print">
+      p {color:#000000;}
+      td {color:#000000;}
+      th {color:#000000;}
+      body {background-color:#FFFFFF;}
+      body {zoom: 50%;}
+      table {width: 100%;}
+      table {break-inside: avoid;}
+      table, th, td {border: 1px solid;}
+    </style>
   </head>
   
   <body class="customBody">
@@ -39,6 +49,7 @@
     <header id="header" class="fixed-top ">
       <div class="container d-flex align-items-center justify-content-lg-between">
         <h1 class="logo me-auto me-lg-0"><a href="index.html">Loyal<span>9</span></a></h1>
+        <a onclick="printDiv(table4)" class="get-started-btn scrollto" rel=”nofollow”>Print</a>
         <a href="../mygrow/mygrow-task.html" class="get-started-btn scrollto" rel=”nofollow”>MyTask</a>
       </div>
     </header><!-- End Header -->
