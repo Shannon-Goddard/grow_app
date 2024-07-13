@@ -36630,5 +36630,18 @@ var data = [
     Sativa: "",
     Grow: "4",
     logo: "../assets/mygrow-search-images/wedding-glue.png"
+  },
+      {
+    index: "2818",
+    strain: "Red Hot Wildberry",
+    info: "Lineage: Wildberry Cake x Red Hot Cookies",
+    more: "Robin Hood Seeds was created so growers can access elite hybrids at an affordable price. Unlike Square One Genetics, their sister company, the beans from Robin Hood Seeds go direct to market without testing.",
+    THC: "25",
+    CBD: "0",
+    Indica:"60% INDICA",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/Red-Hot-Wildberry.png"
   }
 ];

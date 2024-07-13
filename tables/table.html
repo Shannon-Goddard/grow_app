@@ -12,7 +12,7 @@
     <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MyGrow 1 Information Overload</title>
+    <title>Table</title>
     <meta content="A to-do list of everyday of your grow" name="description">
     <meta content="" name="keywords">
     <!-- Favicons -->
@@ -30,47 +30,17 @@
     <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <!-- Template Main CSS File -->
-    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../tables/table1/css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
   </head>
   
-  <body class="customBody">
-    
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top ">
-      <div class="container d-flex align-items-center justify-content-lg-between">
-        <h1 class="logo me-auto me-lg-0"><a href="index.html">Loyal<span>9</span></a></h1>
-        <a  class="get-started-btn scrollto" rel=”nofollow”>Print</a>
-        <a href="../mygrow/mygrow-task.html" class="get-started-btn scrollto" rel=”nofollow”>MyTask</a>
-      </div>
-    </header><!-- End Header -->
+  <body>
     
     <main id="main">
-      
-      <!-- ======= Breadcrumbs ======= -->
-      <section id="breadcrumbs" class="breadcrumbs">
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center">
-            
-            <ol>
-              <li><a href="../mygrow-index.html">MyGrow</a></li>
-              <li>Information<b>Overload</b></li>
-              <br><small style="color:red;">* The Print feature is under construction</small>
-            </ol>
-          </div>
-        </div>
-      </section><!-- End Breadcrumbs -->
-      
-      <!-- ======= Table Section ======= -->
-      <div class="table-responsive-sm">
-        <table id="table1" onfocus="blur();" style="color: whitesmoke;"></table>
-      </div><!-- ====== END Table Section -->
 
-      <!-- ======= directions Section ======= -->
-      <div class="container">
-        <div id="row">
-          <p class="text-center">If the table does not populate, then <b>localStorage</b> is full. This will also disable <b>MyTask</b> and <b>MyDiary</b> for this grow. Click <a href="https://en.wikipedia.org/wiki/Web_storage" target="_blank">here</a> for more information about <b>localStorage</b></p>
-        </div>
-      </div><!-- ===== END directions Section -->
+      <div class="table-responsive-sm">
+        <table id="table1" onfocus="blur();"></table>
+      </div><!-- ====== END Table Section -->
     
     </main><!-- End #main -->
     
@@ -79,26 +49,26 @@
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-sharp fa-solid fa-angle-up"></i></a>
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto fa fa-home" href="../index.html" title="Home"></a></li>
-          <li><a class="nav-link scrollto active fa fa-leaf" href="../mygrow-index.html" title="My Grow"></a></li>
-          <li><a class="nav-link scrollto fa fa-book" href="../mydiary-index.html" title="My Diary"></a></li>
-          <li><a class="nav-link scrollto fa fa-shopping-cart " href="../shop-index.html" title="Shop"></a></li>
-          <li><a class="nav-link scrollto fa fa-cogs" href="../tools-index.html" title="Tools"></a></li>
+          <li><a class="nav-link scrollto fa-solid fa-chevron-left" href="../mygrow/mygrow-filter-table.html" title="Back"></a></li>
+          <li><a id="csvButton" class="nav-link scrollto fa-solid fa-file-csv" onclick="tableToCSV()" title="Download CSV"></a></li>
+          <li><a id="JSON" class="nav-link scrollto fa-solid fa-file-excel" title="Download JSON"></a></li>
+          <li><a id="pdfButton" class="nav-link scrollto fa-solid fa-file-pdf" title="Download PDF"></a></li>
+          <li><a id="shareButton" class="nav-link scrollto fa-solid fa-share" onclick="shareList()" title="Share"></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Table -->
+    <!-- Vendor -->
     <script src="../assets/vendor/aos/aos.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Template Main JS File -->
-    <script src="../assets/mygrow-filtered-table-js/app.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="../tables/table1/js/app.js"></script>
   
   </body>
 
