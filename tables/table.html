@@ -51,10 +51,10 @@
         <ul>
           <li><a class="nav-link scrollto fa-solid fa-chevron-left" href="../mygrow/mygrow-filter-table.html" title="Back"></a></li>
           <!--<li><a id="csvButton" class="nav-link scrollto fa-solid fa-file-csv" onclick="tableToCSV()" title="Download CSV"></a></li>-->
-          <li><a href="#" id="dl" class="nav-link scrollto fa-solid fa-file-excel" title="Download" download="https://www.loyal9.app/tables/table.html" onclick="return downloadReference();"></a></li>
+          <li><a href="#" id="dl" class="nav-link scrollto fa-solid fa-download" title="Download" download="https://www.loyal9.app/tables/table.html" onclick=downloadReference()></a></li>-->
          
-          <!--<li><a id="pdfButton" class="nav-link scrollto fa-solid fa-file-pdf" title="Download PDF"></a></li>-->
-          <!--<li><a id="shareButton" class="nav-link scrollto fa-solid fa-share" onclick="shareList()" title="Share"></a></li>-->
+          <!--<li><a id="dl" href="#" class="nav-link scrollto fa-solid fa-download" title="download" onclick=downloadReference()></a></li>-->
+          <!--<li><a id="btn-Preview-Image" class="nav-link scrollto fa-solid fa-share" title="preview"></a></li>-->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -62,6 +62,9 @@
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Table -->
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf-html2canvas@latest/dist/jspdf-html2canvas.min.js"></script>
     <!-- Vendor -->
     <script src="../assets/vendor/aos/aos.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -30,18 +30,19 @@ $(function(){
 //  dl.href="data:text/plain," + document.getElementById("table1").outerHTML;
 //  return true;
 //}
-//////////test
+//////////WORKS! renders table correctly and allows to share url TABLE.HTML ADD onclick=downloadReference()////
 $(function(){
   $('.notes').remove();
 });
-//
+
 $(function(){
   $("th:hidden,td:hidden").remove();
 });
-//
+
 function downloadReference(){
   var dl = document.getElementById ("dl");
   dl.href="data:text/plain," + document.getElementById("table1").outerHTML;
   return true;
 
 }
+
