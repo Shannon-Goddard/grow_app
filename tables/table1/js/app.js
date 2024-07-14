@@ -22,39 +22,26 @@ $(function(){
   $('table tr').show();
   $('.notes').hide();
 });
-//////////Share///////////////////////////////////////////////////////////////////////
+/////////
 
-function shareList() {
-  if (navigator.canShare) {
-    navigator.share({
-      title: "Page Title",
-      text: "brief description",
-      url: window.location.href,
-    });
-  } else {
-    //functionality for desktop
-  }
-}
-
-////////////PDF///////////////////////////////////////////////////////////////////////
-//window.jsPDF = window.jspdf.jsPDF;
-var doc = new jsPDF();
-                var specialElementHandlers = {
-                  '#editor': function (element, renderer) {
-                return true;
-            }
-        };
-
-        $('#pdfButton').click(function () {
-            doc.fromHTML($('#table1').html(), 15, 15, {
-                'width': 170,
-                    'elementHandlers': specialElementHandlers
-            });
-            doc.save('SurveyReport.pdf');
-        });
 ////////////////////////////////////////Download//////////////////
+//function downloadReference(){
+//  var dl = document.getElementById ("dl");
+//  dl.href="data:text/plain," + document.getElementById("table1").outerHTML;
+//  return true;
+//}
+//////////test
+$(function(){
+  $('.notes').remove();
+});
+//
+$(function(){
+  $("th:hidden,td:hidden").remove();
+});
+//
 function downloadReference(){
   var dl = document.getElementById ("dl");
   dl.href="data:text/plain," + document.getElementById("table1").outerHTML;
   return true;
+
 }
