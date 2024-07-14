@@ -52,3 +52,9 @@ var doc = new jsPDF();
             });
             doc.save('SurveyReport.pdf');
         });
+////////////////////////////////////////Download//////////////////
+function downloadReference(){
+  var dl = document.getElementById ("dl");
+  dl.href="data:text/plain," + document.getElementById("table1").outerHTML;
+  return true;
+}
