@@ -22,14 +22,6 @@ $(function(){
   $('table tr').show();
   $('.notes').hide();
 });
-/////////
-
-////////////////////////////////////////Download//////////////////
-//function downloadReference(){
-//  var dl = document.getElementById ("dl");
-//  dl.href="data:text/plain," + document.getElementById("table1").outerHTML;
-//  return true;
-//}
 //////////WORKS! renders table correctly and allows to share url TABLE.HTML ADD onclick=downloadReference()////
 $(function(){
   $('.notes').remove();
@@ -39,10 +31,71 @@ $(function(){
   $("th:hidden,td:hidden").remove();
 });
 
-function downloadReference(){
+//$(function(){
+//  var dl = document.getElementById ("dl");
+//  dl.href="data:text/plain," + document.getElementById("table1").outerHTML;
+//  return true;
+
+//});
+
+////////////////////////////////////////Download ios//////////////////
+$(function(){
   var dl = document.getElementById ("dl");
   dl.href="data:text/plain," + document.getElementById("table1").outerHTML;
-  return true;
+var download = document.getElementById("table1").outerHTML;
+let tdownload = () => {
+  if (download) {
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    var isChrome =
+      navigator.userAgent.indexOf("CriOS") > -1 ||
+      navigator.vendor.toLowerCase().indexOf("google") > -1;
+    var iOSVersion = [];
+    if (iOS) {
+      iOSVersion = navigator.userAgent
+        .match(/OS [\d_]+/i)[0]
+        .substr(3)
+        .split("_")
+        .map((n) => parseInt(n));
+    }
+    var attachmentData = tdownload;
+    var attachmentName = "Test.pdf";
+    var contentType = "application/txt";
 
+var binary = atob(attachmentData.replace(/\s/g, ""));
+var len = binary.length;
+var buffer = new ArrayBuffer(len);
+var view = new Uint8Array(buffer);
+for (var i = 0; i < len; i++) {
+  view[i] = binary.charCodeAt(i);
 }
+var linkElement = document.createElement("a");
+try {
+  var hrefUrl = "";
+  var blob = "";
+  if (iOS && !isChrome && iOSVersion[0] <= 12) {
+    blob = "data:text/plain," + download;
+    hrefUrl = blob;
+  } else {
+    if (iOS && !isChrome) {
+      contentType = "application/octet-stream";
+    }
+    blob = new Blob([view], { type: contentType });
+    hrefUrl = window.URL.createObjectURL(blob);
+  }
+  linkElement.setAttribute("href", hrefUrl);
+  linkElement.setAttribute("target", "_blank");
+  if ((iOS && (iOSVersion[0] > 12 || isChrome)) || !iOS) {
+    linkElement.setAttribute("download", attachmentName);
+  }
+  var clickEvent = new MouseEvent("click", {
+    view: window,
+    bubbles: true,
+    cancelable: false
+  });
+  linkElement.dispatchEvent(clickEvent);
 
+
+   } catch (ex) {}
+  }
+};
+});
