@@ -35,9 +35,9 @@
   </head>
   
   <body>
-    
+    <iframe id="txtArea1"></iframe>
     <main id="main" allow="web-share" src="https://www.loyal9.app/tables/table.html">
-      <div class="table-responsive-sm">
+      <div class="table-responsive-sm table2excel colorClass">
         <table id="table1" onfocus="blur();"></table>
       </div><!-- ====== END Table Section -->
     
@@ -50,7 +50,8 @@
         <ul>
           <li><a class="nav-link scrollto fa-solid fa-chevron-left" href="../mygrow/mygrow-filter-table.html" title="Back"></a></li>
           <!--<li><a id="csvButton" class="nav-link scrollto fa-solid fa-file-csv" onclick="tableToCSV()" title="Download CSV"></a></li>-->
-          <li><a href="#" id="dl" class="nav-link scrollto fa-solid fa-download" title="Download" onclick="downloadReference()"></a></li>
+          <li><a href="#" class="nav-link scrollto fa-solid fa-download" title="Download" onclick="downloadReference()"></a></li>
+          <li><a id="toExcel" class="nav-link scrollto fa-solid fa-download" onclick="toExcel()">export</a></li>
           <button></button>
          
           <!--<li><a id="dl" href="#" class="nav-link scrollto fa-solid fa-download" title="download" onclick=downloadReference()></a></li>-->
@@ -62,6 +63,7 @@
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Table -->
+    <script src="../tables/table1/js/table2excel.js"></script>
     <!-- Vendor -->
     <script src="../assets/vendor/aos/aos.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -30,13 +30,9 @@ $(function(){
 $(function(){
   $("th:hidden,td:hidden").remove();
 });
-//////////WORKS WITH ERROR! renders table correctly and allows to share url TABLE.HTML ADD onclick=downloadReference()////
-//function downloadReference(){
-//  var dl = document.getElementById ("dl");
-//  dl.href="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet," + document.getElementById("table1").outerHTML;
-//  return true;
-//}
+//////////Get table data////
 
+//https://www.loyal9.app/tables/table
 /////////////////////share/////////////////////////////////////
 
 //navigator.share({
@@ -46,29 +42,23 @@ $(function(){
 //});
 
 /////////////////////////////////////////////////////////test
-function downloadReference(){
-  fetch("https://www.loyal9.app/tables/table.html")
-  .then(function(response) {
-    return response.blob()
-  })
-  .then(function(blob) {
-
-    var file = new File([blob], "MyGrow.xls", {type: 'application/vnd.ms-excel'});
-    var filesArray = [file];
-
-    if(navigator.canShare && navigator.canShare({ files: filesArray })) {
-      navigator.share({
-        text: 'MyGrow',
-        files: filesArray,
-        title: 'Information Overload',
-        url: 'https://www.loyal9.app/tables/table.html'
-      });
-    };
-  })
-}
+function toExcel() { 
+  $("#table1").table2excel({ 
+    exclude: ".noExl",
+    name: "MyGrow.xls",
+    filename: "MyGrow.xls",
+    fileext: ".xls",
+    exclude_img: true,
+    exclude_links: true,
+    exclude_inputs: true,
+    preserveColors: false
+});         
+    
+    
+}; 
 ///////////////////////////////////////////////////////////////end test
 const button = document.querySelector('button');
-const img =  document.querySelector('table');
+const img =  document.querySelector('table1');
 
 // Feature detection
 const webShareSupported = 'canShare' in navigator;
