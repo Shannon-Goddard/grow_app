@@ -22,7 +22,7 @@ $(function(){
   $('table tr').show();
   $('.notes').hide();
 });
-//////////WORKS! renders table correctly and allows to share url TABLE.HTML ADD onclick=downloadReference()////
+
 $(function(){
   $('.notes').remove();
 });
@@ -30,72 +30,39 @@ $(function(){
 $(function(){
   $("th:hidden,td:hidden").remove();
 });
-
-//$(function(){
+//////////WORKS WITH ERROR! renders table correctly and allows to share url TABLE.HTML ADD onclick=downloadReference()////
+//function downloadReference(){
 //  var dl = document.getElementById ("dl");
-//  dl.href="data:text/plain," + document.getElementById("table1").outerHTML;
+//  dl.href="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet," + document.getElementById("table1").outerHTML;
 //  return true;
+//}
 
+/////////////////////share/////////////////////////////////////
+
+//navigator.share({
+//  url,
+//  title: document.title,
+//  text: 'Hello World',
 //});
 
-////////////////////////////////////////Download ios//////////////////
-$(function(){
-  var dl = document.getElementById ("dl");
-  dl.href="data:text/plain," + document.getElementById("table1").outerHTML;
-var download = document.getElementById("table1").outerHTML;
-let tdownload = () => {
-  if (download) {
-    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    var isChrome =
-      navigator.userAgent.indexOf("CriOS") > -1 ||
-      navigator.vendor.toLowerCase().indexOf("google") > -1;
-    var iOSVersion = [];
-    if (iOS) {
-      iOSVersion = navigator.userAgent
-        .match(/OS [\d_]+/i)[0]
-        .substr(3)
-        .split("_")
-        .map((n) => parseInt(n));
-    }
-    var attachmentData = tdownload;
-    var attachmentName = "Test.pdf";
-    var contentType = "application/txt";
+/////////////////////////////////////////////////////////
+function downloadReference(){
+  fetch("https://www.loyal9.app/tables/table.html")
+  .then(function(response) {
+    return response.blob()
+  })
+  .then(function(blob) {
 
-var binary = atob(attachmentData.replace(/\s/g, ""));
-var len = binary.length;
-var buffer = new ArrayBuffer(len);
-var view = new Uint8Array(buffer);
-for (var i = 0; i < len; i++) {
-  view[i] = binary.charCodeAt(i);
+    var file = new File([blob], "MyGrow.jpg", {type: 'image/jpeg'});
+    var filesArray = [file];
+
+    if(navigator.canShare && navigator.canShare({ files: filesArray })) {
+      navigator.share({
+        text: 'MyGrow',
+        files: filesArray,
+        title: 'Information Overload',
+        url: 'https://www.loyal9.app/tables/table.html'
+      });
+    };
+  })
 }
-var linkElement = document.createElement("a");
-try {
-  var hrefUrl = "";
-  var blob = "";
-  if (iOS && !isChrome && iOSVersion[0] <= 12) {
-    blob = "data:text/plain," + download;
-    hrefUrl = blob;
-  } else {
-    if (iOS && !isChrome) {
-      contentType = "application/octet-stream";
-    }
-    blob = new Blob([view], { type: contentType });
-    hrefUrl = window.URL.createObjectURL(blob);
-  }
-  linkElement.setAttribute("href", hrefUrl);
-  linkElement.setAttribute("target", "_blank");
-  if ((iOS && (iOSVersion[0] > 12 || isChrome)) || !iOS) {
-    linkElement.setAttribute("download", attachmentName);
-  }
-  var clickEvent = new MouseEvent("click", {
-    view: window,
-    bubbles: true,
-    cancelable: false
-  });
-  linkElement.dispatchEvent(clickEvent);
-
-
-   } catch (ex) {}
-  }
-};
-});
