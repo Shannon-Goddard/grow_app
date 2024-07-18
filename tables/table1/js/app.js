@@ -45,7 +45,7 @@ $(function(){
 //  text: 'Hello World',
 //});
 
-/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////test
 function downloadReference(){
   fetch("https://www.loyal9.app/tables/table.html")
   .then(function(response) {
@@ -53,7 +53,7 @@ function downloadReference(){
   })
   .then(function(blob) {
 
-    var file = new File([blob], "MyGrow.jpg", {type: 'image/jpeg'});
+    var file = new File([blob], "MyGrow.xls", {type: 'application/vnd.ms-excel'});
     var filesArray = [file];
 
     if(navigator.canShare && navigator.canShare({ files: filesArray })) {
@@ -66,3 +66,55 @@ function downloadReference(){
     };
   })
 }
+///////////////////////////////////////////////////////////////end test
+const button = document.querySelector('button');
+const img =  document.querySelector('table');
+
+// Feature detection
+const webShareSupported = 'canShare' in navigator;
+// Update the button action text.
+button.textContent = webShareSupported ? 'Share' : 'Download';
+
+const shareOrDownload = async (blob, fileName, title, text) => {
+  // Using the Web Share API.
+  if (webShareSupported) {
+    const data = {
+      files: [
+        new File([blob], fileName, {
+          type: blob.type,
+        }),
+      ],
+      title,
+      text,
+    };
+    if (navigator.canShare(data)) {
+      try {
+        await navigator.share(data);
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          console.error(err.name, err.message);
+        }
+      } finally {
+        return;
+      }
+    }
+  }
+  // Fallback implementation.
+  const a = document.createElement('a');
+  a.download = fileName;
+  a.style.display = 'none';
+  a.href = URL.createObjectURL(blob);
+  a.addEventListener('click', () => {
+    setTimeout(() => {
+      URL.revokeObjectURL(a.href);
+      a.remove();
+    }, 1000)
+  });
+  document.body.append(a);
+  a.click();
+};
+
+button.addEventListener('click', async () => {
+  const blob = await fetch(img.src).then(res => res.blob());
+  await shareOrDownload(blob, 'MyGrow.xls', 'MyGrow', 'Information Overload');
+});
