@@ -56,8 +56,33 @@ function toExcel() {
 }; 
 
 //////////////////////////////////////////////////////
+
+////////////////
 function toShare() {
-fetch("https://www.loyal9.app/tables/table")
+  //gets table
+var oTable = document.getElementById('table1');
+
+//gets rows of table
+var rowLength = oTable.rows.length;
+
+//loops through rows    
+for (i = 0; i < rowLength; i++){
+
+  //gets cells of current row  
+   var oCells = oTable.rows.item(i).cells;
+
+   //gets amount of cells of current row
+   var cellLength = oCells.length;
+
+   //loops through each cell in current row
+   for(var j = 0; j < cellLength; j++){
+      // get your cell info here
+
+      var cellVal = oCells.item(j).innerHTML;
+      console.log(cellVal);
+   }
+}
+fetch(cellVal)
   .then(function(response) {
     return response.blob()
   })
@@ -66,10 +91,10 @@ fetch("https://www.loyal9.app/tables/table")
     var file = new File([blob], "myGrow.xls", {type: 'application/vnd.ms-excel'});
     var filesArray = [file];
 
-    if(navigator.canShare && navigator.canShare({ files: filesArray })) {
+    if(navigator.canShare && navigator.canShare({ file: filesArray })) {
       navigator.share({
         text: 'Information Overload',
-        files: filesArray,
+        file: filesArray,
         title: 'MyGrow',
         url: 'https://www.loyal9.app/tables/table'
       })
