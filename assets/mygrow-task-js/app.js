@@ -66,6 +66,7 @@ $(function(){
 });
     
 //////////////////////Save button hide/show
+$('#SaveButton').hide();
 $("#table1").on("click", "td", function() {
   $('#SaveButton').show();
 });

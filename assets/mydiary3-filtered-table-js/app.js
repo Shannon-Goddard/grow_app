@@ -1,31 +1,46 @@
-//////////////////stores table after selection
+////////////////////////get table from local storage/////////////////////////////////////
 $(function(){
-  // append this attribute to the element you want the html stored of.
-  $("#table3").attr("contenteditable", "true")
   var content = document.getElementById('table3');
-
   // retrieve local storage data
   var arr = JSON.parse( localStorage.getItem('page_html3') );
   if (arr) {
     content.innerHTML = arr;
-    /////Retrieve Strain
-    $('.strain').each(function(){
-      $(this).html(localStorage.plant3Strain);
-    });
+    $('#table3 > tbody  > tr').show();
   }
 });
-////////////show only note rows
+//show only note rows
 $(function(){
   $('table tr:not(:first)').hide();
   $('.notes').show();
   $(":input").hide();
 });
-//////////export to pdf///////////////////////////////////////////////////////////////////////
-function printDiv(table3) {
-  var printContents=document.getElementById('table3').outerHTML;
-  var originalContents = document.body.outerHTML;
-  document.body.outerHTML = printContents;
-  window.print();
-  document.body.outerHTML = originalContents;
-}
-//////////////////////////////////////////////////////////////////////////////////////////////
+//////////add notes///////////////////////////////////////////////////////////////////////
+//stores table after selection
+$(function(){
+  // append this attribute to the element you want the html stored of
+  $("#table3").attr("contenteditable", "false")
+  var content = document.getElementById('table3');
+  // save the page's state after user selects and clicks "select"
+  $('#SaveButton').bind("click",function(){
+    //$("#SaveButton").click(function() {
+    localStorage.setItem('page_html3', JSON.stringify(content.innerHTML));
+  });
+    //get user input row
+    $('#table3 > tbody  > tr').each(function() {
+
+        $(this).closest('tr').find("input").each(function() {
+          $(this).closest('td').html($(this).val()).attr("contenteditable", "true");
+        })
+      }
+    )
+  })
+//////////////////////Save button hide/show////////////////////////////////////////////////
+$('#SaveButton').hide();
+$("#table3").on("click", "td", function() {
+  $('#SaveButton').show();
+});
+
+$("#SaveButton").on("click", function() {
+  $('#SaveButton').hide();
+});
+////////////////////////////////////////////////////////////////////////////////////////////
