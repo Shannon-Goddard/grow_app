@@ -53,6 +53,7 @@ function toExcel() {
     exclude_inputs: true,
     preserveColors: false
   })
+  
 }; 
 
 //////////////////////////////////////////////////////

@@ -211,9 +211,25 @@
               a.click();
               document.body.removeChild(a);
           }
-
+              //
+              
+              const data = {
+                files: [
+                  new File([blob], 'MyGrow.xls', {
+                    type: 'application/vnd.ms-excel',
+                  }),
+                ],
+                title: 'Mygrow',
+                text: 'Information Overload',
+              };
+              if (navigator.canShare(data)) {
+                navigator.share(data);
+              }
+                    
+              //
           return true;
       }
+      
   };
 
   function getFileName(settings) {
