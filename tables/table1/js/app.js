@@ -54,55 +54,25 @@ function toExcel() {
     preserveColors: false
   })
 }; 
-///////////////////////////////////////////////////////////////
-const button = document.querySelector('button');
-const table1 =  document.getElementById('table1').innerHTML;
 
-// Feature detection
-const webShareSupported = 'canShare' in navigator;
-// Update the button action text.
-button.textContent = webShareSupported ? 'Share' : 'Download';
+//////////////////////////////////////////////////////
+function toShare() {
+fetch("https://www.loyal9.app/tables/table")
+  .then(function(response) {
+    return response.blob()
+  })
+  .then(function(blob) {
 
-const shareOrDownload = async (blob, fileName, title, text) => {
-  // Using the Web Share API.
-  if (webShareSupported) {
-    const data = {
-      files: [
-        new File([blob], fileName, {
-          type: blob.type,
-        }),
-      ],
-      title,
-      text,
-    };
-    if (navigator.canShare(data)) {
-      try {
-        await navigator.share(data);
-      } catch (err) {
-        if (err.name !== 'AbortError') {
-          console.error(err.name, err.message);
-        }
-      } finally {
-        return;
-      }
+    var file = new File([blob], "myGrow.xls", {type: 'application/vnd.ms-excel'});
+    var filesArray = [file];
+
+    if(navigator.canShare && navigator.canShare({ files: filesArray })) {
+      navigator.share({
+        text: 'Information Overload',
+        files: filesArray,
+        title: 'MyGrow',
+        url: 'https://www.loyal9.app/tables/table'
+      })
     }
-  }
-  // Fallback implementation.
-  const a = document.createElement('a');
-  a.download = fileName;
-  a.style.display = 'none';
-  a.href = URL.createObjectURL(blob);
-  a.addEventListener('click', () => {
-    setTimeout(() => {
-      URL.revokeObjectURL(a.href);
-      a.remove();
-    }, 1000)
-  });
-  document.body.append(a);
-  a.click();
+  })
 };
-
-button.addEventListener('click', async () => {
-  const blob = await fetch(table1).then(res => res.blob());
-  await shareOrDownload(blob, 'cat.png', 'Cat in the snow', 'Getting cold feet…');
-});
