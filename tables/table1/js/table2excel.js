@@ -211,8 +211,7 @@
               a.click();
               document.body.removeChild(a);
           }
-              //
-              
+              /////////////navigator.share()//////////////////
               const data = {
                 files: [
                   new File([blob], 'MyGrow.xls', {
@@ -225,8 +224,7 @@
               if (navigator.canShare(data)) {
                 navigator.share(data);
               }
-                    
-              //
+              //////////////////////////////////////////////////
           return true;
       }
       
