@@ -41,7 +41,7 @@ $(function(){
 //  text: 'Hello World',
 //});
 
-/////////////////////////////////////////////////////////test
+////////////////////////download table to excel ONLY WORKS ON PC *NOT MOBILE//////////////////////////////
 function toExcel() { 
   $("#table1").table2excel({ 
     exclude: ".noExl",
@@ -52,8 +52,57 @@ function toExcel() {
     exclude_links: true,
     exclude_inputs: true,
     preserveColors: false
-});         
-    
-    
+  })
 }; 
-///////////////////////////////////////////////////////////////end test
+///////////////////////////////////////////////////////////////
+const button = document.querySelector('button');
+const table1 =  document.getElementById('table1').innerHTML;
+
+// Feature detection
+const webShareSupported = 'canShare' in navigator;
+// Update the button action text.
+button.textContent = webShareSupported ? 'Share' : 'Download';
+
+const shareOrDownload = async (blob, fileName, title, text) => {
+  // Using the Web Share API.
+  if (webShareSupported) {
+    const data = {
+      files: [
+        new File([blob], fileName, {
+          type: blob.type,
+        }),
+      ],
+      title,
+      text,
+    };
+    if (navigator.canShare(data)) {
+      try {
+        await navigator.share(data);
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          console.error(err.name, err.message);
+        }
+      } finally {
+        return;
+      }
+    }
+  }
+  // Fallback implementation.
+  const a = document.createElement('a');
+  a.download = fileName;
+  a.style.display = 'none';
+  a.href = URL.createObjectURL(blob);
+  a.addEventListener('click', () => {
+    setTimeout(() => {
+      URL.revokeObjectURL(a.href);
+      a.remove();
+    }, 1000)
+  });
+  document.body.append(a);
+  a.click();
+};
+
+button.addEventListener('click', async () => {
+  const blob = await fetch(table1).then(res => res.blob());
+  await shareOrDownload(blob, 'cat.png', 'Cat in the snow', 'Getting cold feet…');
+});

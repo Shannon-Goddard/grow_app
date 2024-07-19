@@ -188,6 +188,7 @@
                   //convert to array
                   var blob1 = new Blob(fullTemplate, { type: "text/html" });
                   window.navigator.msSaveBlob(blob1, getFileName(e.settings) );
+                  
               } else {
                   //otherwise use the iframe and save
                   //requires a blank iframe on page called txtArea1
@@ -205,11 +206,8 @@
               a = document.createElement("a");
               a.download = getFileName(e.settings)
               a.href = link;
-
               document.body.appendChild(a);
-
               a.click();
-
               document.body.removeChild(a);
           }
 
