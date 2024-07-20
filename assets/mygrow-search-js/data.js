@@ -36643,5 +36643,44 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/Red-Hot-Wildberry.png"
+  },
+  {
+    index: "2819",
+    strain: "Auto CBG",
+    info: "Auto CBG is very fast – seed to harvest is just 75 days.The properties that CBG has shown so far are spectacular: anti-inflammatory, antibacterial, neuroprotective, among many others.THC levels are less than 0.1%.Buds are large and with lots of very white resin.Aromas are mild, sweet, and pleasant. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    more: "",
+    THC: "0.1",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"",
+    Sativa: "100% SATIVA auto",
+    Grow: "4",
+    logo: "../assets/mygrow-search-images/auto-cbg.png"
+  },
+  {
+    index: "2820",
+    strain: "CBG Zara",
+    info: "A pure CBG female with very good characteristics was discovered in a field of feminized Electra Campana. After creating an S1 and sowing a field of 20,000, a select 4 males were identified to create a regular generation pure in CBG. These regular seeds were cultivated and reproduced for 5 generations to make a stable F5. CBG quantity of up to 15% and THC of 0.0%. Fast-flowering with sweet aromas. Typical Sativa-type structure with long internodes.",
+    more: "",
+    THC: "0",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"",
+    Sativa: "100% SATIVA",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/cbg-zara.png"
+  },
+  {
+    index: "2821",
+    strain: "CBD Virginia Pond Water",
+    info: "A bushy high-CBD low-THC hybrid from Jolly Pond Hemp, with representative testing at 7.1% CBD and 0.29% THC.",
+    more: "",
+    THC: "0.29",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"100% HYBRID",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/CBD-Virginia-Pond-Water.png"
   }
 ];
