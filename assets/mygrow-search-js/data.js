@@ -36672,7 +36672,7 @@ var data = [
   },
   {
     index: "2821",
-    strain: "CBD Virginia Pond Water",
+    strain: "Virginia Pond Water",
     info: "A bushy high-CBD low-THC hybrid from Jolly Pond Hemp, with representative testing at 7.1% CBD and 0.29% THC.",
     more: "",
     THC: "0.29",
@@ -36682,5 +36682,18 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/CBD-Virginia-Pond-Water.png"
+  },
+    {
+    index: "2821",
+    strain: "Random Bag Seed",
+    info: "It's a mystery, yet to be solved. Grow it and find out!",
+    more: "In case it's an auto, SELECT 1-2 FOOT on MYGROW for guide. It may start flowering later. In which case, just follow the last day of vegetative guide till it does. If it flowers sooner, skip to flowering Day 1 on the guide. This guide is set for 9 weeks of flowering. The average flowering weeks is 8-9. Check those trichomes! If it's an auto, it should be ready in week 5-6 flower. Good Luck!",
+    THC: "?",
+    CBD: "?",
+    Indica:"",
+    Hybrid:"?",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/jo.png"
   }
 ];
