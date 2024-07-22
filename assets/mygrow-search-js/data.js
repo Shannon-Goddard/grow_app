@@ -36678,13 +36678,13 @@ var data = [
     THC: "0.29",
     CBD: "0",
     Indica:"",
-    Hybrid:"100% HYBRID",
+    Hybrid:"50% HYBRID",
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/CBD-Virginia-Pond-Water.png"
   },
     {
-    index: "2821",
+    index: "2822",
     strain: "Random Bag Seed",
     info: "It's a mystery, yet to be solved. Grow it and find out!",
     more: "In case it's an auto, SELECT 1-2 FOOT on MYGROW for guide. It may start flowering later. In which case, just follow the last day of vegetative guide till it does. If it flowers sooner, skip to flowering Day 1 on the guide. This guide is set for 9 weeks of flowering. The average flowering weeks is 8-9. Check those trichomes! If it's an auto, it should be ready in week 5-6 flower. Good Luck!",
@@ -36695,5 +36695,18 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/jo.png"
+  },
+    {
+    index: "2823",
+    strain: "Special Queen #1",
+    info: "In the '90s there was a mad dash from seed breeders and sellers to find that ultimate skunk. During this period, lots of growers tried to replicate that Mexican, Colombian, Afghan hybrid which resulted in a huge variety of new generation skunks.",
+    more: "The smoke from Special Queen 1 induces a classic Skunk stone. Mostly mental, Special Queen provides smokers with an uplifting high that will relax even the most anxious stoners.",
+    THC: "18",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"50% HYBRID",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/special-queen-1.png"
   }
 ];
