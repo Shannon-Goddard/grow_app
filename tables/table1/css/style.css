@@ -602,3 +602,66 @@ td { font-size: 16px; }
 .RHIZOBLAST {
   display: none;
 }
+
+#WormCastings_head {
+  display: none;
+}
+.WormCastings {
+  display: none;
+}
+
+#AllPurpose_head {
+  display: none;
+}
+.AllPurpose {
+  display: none;
+}
+
+#PowerBloom_head {
+  display: none;
+}
+.PowerBloom {
+  display: none;
+}
+
+#GlacialRockDust_head {
+  display: none;
+}
+.GlacialRockDust {
+  display: none;
+}
+
+#SuperFly_head {
+  display: none;
+}
+.SuperFly {
+  display: none;
+}
+
+#Greensand_head {
+  display: none;
+}
+.Greensand {
+  display: none;
+}
+
+#FeatherMeal_head {
+  display: none;
+}
+.FeatherMeal {
+  display: none;
+}
+
+#MineralizedPhosphate_head {
+  display: none;
+}
+.MineralizedPhosphate {
+  display: none;
+}
+
+#SolubleSeaweedExtract_head {
+  display: none;
+}
+.SolubleSeaweedExtract {
+  display: none;
+}
