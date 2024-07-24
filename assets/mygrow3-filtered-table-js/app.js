@@ -22,12 +22,9 @@ $(function(){
   $('table tr').show();
   $('.notes').hide();
 });
-//////////export to pdf///////////////////////////////////////////////////////////////////////
-function printDiv(table3) {
-  var printContents=document.getElementById('table3').outerHTML;
-  var originalContents = document.body.outerHTML;
-  document.body.outerHTML = printContents;
-  window.print();
-  document.body.outerHTML = originalContents;
-}
-//////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////download button hide/show
+if (!navigator.canShare) {
+  $('#tablePage3').hide()
+} else { (navigator.canShare()) 
+  $('#tablePage3').show()
+} 

@@ -22,3 +22,9 @@ $(function(){
   $('table tr').show();
   $('.notes').hide();
 });
+////////////////////download button hide/show
+if (!navigator.canShare) {
+  $('#tablePage').hide()
+} else { (navigator.canShare()) 
+  $('#tablePage').show()
+} 
