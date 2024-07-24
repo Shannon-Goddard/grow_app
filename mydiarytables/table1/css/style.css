@@ -1,0 +1,667 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+html, body {width: auto!important; overflow-x: hidden!important
+} 
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #FFFFFF;
+  margin: 0px;
+  height: 100%;
+}
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #04AA6D; 
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #151515;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #151515;
+}
+
+.back-to-top:hover i {
+  color: #04AA6D; 
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.navbar a
+ {
+  float: left;
+  text-align: center;
+  padding: 10px 50px 10px 0;
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  width: 20%;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #04AA6D; 
+}
+/*--------------------------------------------------------------
+# table 
+--------------------------------------------------------------*/
+p {color:#000000;}
+td {color:#000000;}
+th {color:#000000;}
+body {background-color:#FFFFFF;}
+body {zoom: 50%;}
+table {width: 100%;}
+table {break-inside: avoid;}
+table, th, td {border: 1px solid;}
+td { font-size: 16px; }
+/*--------------------------------------------------------------
+# nutrients hide/show list
+--------------------------------------------------------------*/
+#MammothGardenGrowMe_head {
+  display: none;
+}
+.MammothGardenGrowMe {
+  display: none;
+}
+
+#MammothGardenProtectMe_head {
+  display: none;
+}
+.MammothGardenProtectMe {
+  display: none;
+}
+
+#BioThriveGrow_head {
+  display: none;
+}
+.BioThriveGrow {
+  display: none;
+}
+
+#BioThriveBloom_head {
+  display: none;
+}
+.BioThriveBloom {
+  display: none;
+}
+
+#BCGrow_head {
+  display: none;
+}
+.BCGrow {
+  display: none;
+}
+
+#BCBoost_head {
+  display: none;
+}
+.BCBoost {
+  display: none;
+}
+
+#BCBloom_head {
+  display: none;
+}
+.BCBloom {
+  display: none;
+}
+
+#SugarDaddy_head {
+  display: none;
+}
+.SugarDaddy {
+  display: none;
+}
+
+#ROOT66_head {
+  display: none;
+}
+.ROOT66 {
+  display: none;
+}
+
+#ThriveAliveRed_head {
+  display: none;
+}
+.ThriveAliveRed {
+  display: none;
+}
+
+#ThriveAliveGreen_head {
+  display: none;
+}
+.ThriveAliveGreen {
+  display: none;
+}
+
+#MagiCal_head {
+  display: none;
+}
+.MagiCal {
+  display: none;
+}
+
+#AwesomeBlossoms_head {
+  display: none;
+}
+.AwesomeBlossoms {
+  display: none;
+}
+
+#RootechCloningGel_head {
+  display: none;
+}
+.RootechCloningGel {
+  display: none;
+}
+
+#FloraGro_head {
+  display: none;
+}
+.FloraGro {
+  display: none;
+}
+
+#FloraBloom_head {
+  display: none;
+}
+.FloraBloom {
+  display: none;
+}
+
+#FloraMicro_head {
+  display: none;
+}
+.FloraMicro {
+  display: none;
+}
+
+#BigBloom_head {
+  display: none;
+}
+.BigBloom {
+  display: none;
+}
+
+#GrowBig_head {
+  display: none;
+}
+.GrowBig {
+  display: none;
+}
+
+#TigerBloom_head {
+  display: none;
+}
+.TigerBloom {
+  display: none;
+}
+
+#Boomerang_head {
+  display: none;
+}
+.Boomerang {
+  display: none;
+}
+
+#Kangaroots_head {
+  display: none;
+}
+.Kangaroots {
+  display: none;
+}
+#MicrobeBrew_head {
+  display: none;
+}
+.MicrobeBrew {
+  display: none;
+}
+#WhollyMackerel_head {
+  display: none;
+}
+.WhollyMackerel {
+  display: none;
+}
+#KelpMeKelpYou_head {
+  display: none;
+}
+.KelpMeKelpYou {
+  display: none;
+}
+#Bembe_head {
+  display: none;
+}
+.Bembe {
+  display: none;
+}
+#OpenSesame_head {
+  display: none;
+}
+.OpenSesame {
+  display: none;
+}
+#BeastieBloomz_head {
+  display: none;
+}
+.BeastieBloomz {
+  display: none;
+}
+#ChaChing_head {
+  display: none;
+}
+.ChaChing {
+  display: none;
+}
+
+#VooDooJuice_head {
+  display: none;
+}
+.VooDooJuice {
+  display: none;
+}
+
+#BigBud_head {
+  display: none;
+}
+.BigBud {
+  display: none;
+}
+
+#B-52_head {
+  display: none;
+}
+.B-52 {
+  display: none;
+}
+
+#Overdrive_head {
+  display: none;
+}
+.Overdrive {
+  display: none;
+}
+
+#Piranha_head {
+  display: none;
+}
+.Piranha {
+  display: none;
+}
+
+#BudCandy_head {
+  display: none;
+}
+.BudCandy {
+  display: none;
+}
+
+#FinalPhaze_head {
+  display: none;
+}
+.FinalPhaze {
+  display: none;
+}
+
+#Tarantula_head {
+  display: none;
+}
+.Tarantula {
+  display: none;
+}
+
+#Nirvana_head {
+  display: none;
+}
+.Nirvana {
+  display: none;
+}
+
+#Sensizym_head {
+  display: none;
+}
+.Sensizym {
+  display: none;
+}
+
+#BudIgnitor_head {
+  display: none;
+}
+.BudIgnitor {
+  display: none;
+}
+
+#RhinoSkin_head {
+  display: none;
+}
+.RhinoSkin {
+  display: none;
+}
+
+#BudFactorX_head {
+  display: none;
+}
+.BudFactorX {
+  display: none;
+}
+
+#GROWPowder_head {
+  display: none;
+}
+.GROWPowder {
+  display: none;
+}
+
+#CALMAGPowder_head {
+  display: none;
+}
+.CALMAGPowder {
+  display: none;
+}
+
+#BLOOMPowder_head {
+  display: none;
+}
+.BLOOMPowder {
+  display: none;
+}
+
+#BOOSTPowder_head {
+  display: none;
+}
+.BOOSTPowder {
+  display: none;
+}
+
+#CARBOFLUSHPowder_head {
+  display: none;
+}
+.CARBOFLUSHPowder {
+  display: none;
+}
+
+#pHPerfectMicro_head {
+  display: none;
+}
+.pHPerfectMicro {
+  display: none;
+}
+
+#pHPerfectBloom_head {
+  display: none;
+}
+.pHPerfectBloom {
+  display: none;
+}
+
+#pHPerfectGrow_head {
+  display: none;
+}
+.pHPerfectGrow {
+  display: none;
+}
+
+#Biofuel_head {
+  display: none;
+}
+.Biofuel {
+  display: none;
+}
+
+#Continum_head {
+  display: none;
+}
+.Continum {
+  display: none;
+}
+
+#Dune_head {
+  display: none;
+}
+.Dune {
+  display: none;
+}
+
+#Lumina_head {
+  display: none;
+}
+.Lumina {
+  display: none;
+}
+
+#NeroSC_head {
+  display: none;
+}
+.NeroSC {
+  display: none;
+}
+
+#TribusOriginal_head {
+  display: none;
+}
+.TribusOriginal {
+  display: none;
+}
+
+#Tundra_head {
+  display: none;
+}
+.Tundra {
+  display: none;
+}
+
+#Cal-Mag_head {
+  display: none;
+}
+.Cal-Mag {
+  display: none;
+}
+
+#FloraNovaGrow_head {
+  display: none;
+}
+.FloraNovaGrow {
+  display: none;
+}
+
+#FloraNovaBloom_head {
+  display: none;
+}
+.FloraNovaBloom {
+  display: none;
+}
+
+#ProTekt_head {
+  display: none;
+}
+.ProTekt {
+  display: none;
+}
+
+#FoliagePro_head {
+  display: none;
+}
+.FoliagePro {
+  display: none;
+}
+
+#BLOOM_head {
+  display: none;
+}
+.BLOOM {
+  display: none;
+}
+
+#MagPro_head {
+  display: none;
+}
+.MagPro {
+  display: none;
+}
+
+#KLN_head {
+  display: none;
+}
+.KLN {
+  display: none;
+}
+
+#PUREBLENDPROGROW_head {
+  display: none;
+}
+.PUREBLENDPROGROW {
+  display: none;
+}
+
+#PUREBLENDPROBLOOM_head {
+  display: none;
+}
+.PUREBLENDPROBLOOM {
+  display: none;
+}
+
+#LIQUIDKARMA_head {
+  display: none;
+}
+.LIQUIDKARMA {
+  display: none;
+}
+
+#HYDROPLEX_head {
+  display: none;
+}
+.HYDROPLEX {
+  display: none;
+}
+
+#SWEETRAW_head {
+  display: none;
+}
+.SWEETRAW {
+  display: none;
+}
+
+#HYDROGUARD_head {
+  display: none;
+}
+.HYDROGUARD {
+  display: none;
+}
+
+#RHIZOBLAST_head {
+  display: none;
+}
+.RHIZOBLAST {
+  display: none;
+}
+
+#WormCastings_head {
+  display: none;
+}
+.WormCastings {
+  display: none;
+}
+
+#AllPurpose_head {
+  display: none;
+}
+.AllPurpose {
+  display: none;
+}
+
+#PowerBloom_head {
+  display: none;
+}
+.PowerBloom {
+  display: none;
+}
+
+#GlacialRockDust_head {
+  display: none;
+}
+.GlacialRockDust {
+  display: none;
+}
+
+#SuperFly_head {
+  display: none;
+}
+.SuperFly {
+  display: none;
+}
+
+#Greensand_head {
+  display: none;
+}
+.Greensand {
+  display: none;
+}
+
+#FeatherMeal_head {
+  display: none;
+}
+.FeatherMeal {
+  display: none;
+}
+
+#MineralizedPhosphate_head {
+  display: none;
+}
+.MineralizedPhosphate {
+  display: none;
+}
+
+#SolubleSeaweedExtract_head {
+  display: none;
+}
+.SolubleSeaweedExtract {
+  display: none;
+}

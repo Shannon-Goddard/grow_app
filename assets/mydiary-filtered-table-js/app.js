@@ -44,3 +44,8 @@ $("#SaveButton").on("click", function() {
   $('#SaveButton').hide();
 });
 ////////////////////////////////////////////////////////////////////////////////////////////
+if (!navigator.canShare) {
+  $('#tablePage').hide()
+} else { (navigator.canShare()) 
+  $('#tablePage').show()
+} 
