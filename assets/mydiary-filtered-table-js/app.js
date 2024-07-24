@@ -45,7 +45,7 @@ $("#SaveButton").on("click", function() {
 });
 ////////////////////////////////////////////////////////////////////////////////////////////
 if (!navigator.canShare) {
-  $('#tablePage').hide()
+  $('#diarytablePage').hide()
 } else { (navigator.canShare()) 
-  $('#tablePage').show()
+  $('#diarytablePage').show()
 } 
