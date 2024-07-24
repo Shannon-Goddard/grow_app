@@ -212,6 +212,19 @@
               document.body.removeChild(a);
           }
               /////////////navigator.share()//////////////////
+              //const data = {
+              //  files: [
+              //    new File([blob], 'MyGrow.xls', {
+              //      type: 'application/vnd.ms-excel',
+              //    }),
+              //  ],
+              //  title: 'Mygrow',
+              //  text: 'Information Overload',
+              //};
+              //if (navigator.canShare(data)) {
+              //  navigator.share(data);
+              //}
+              //////////////////////////////////////////////////
               const data = {
                 files: [
                   new File([blob], 'MyGrow.xls', {
@@ -223,8 +236,14 @@
               };
               if (navigator.canShare(data)) {
                 navigator.share(data);
+            
+            } else {
+                // If Web Share API is not supported, hide the button
+                const shareButton = document.getElementById('toExcel');
+                shareButton.style.display = 'none';
+              
               }
-              //////////////////////////////////////////////////
+              //////////////////////////////////////////////TEST
           return true;
       }
       
