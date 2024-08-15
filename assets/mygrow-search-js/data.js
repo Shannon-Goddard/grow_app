@@ -36708,5 +36708,18 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/special-queen-1.png"
+  },
+    {
+    index: "2824",
+    strain: "Chemical Bride",
+    info: "Green House Seeds presents Chemical Bride, a new cross between ChemDog, one of the Old School par excellence, and Wedding Cake strain, a selection of one of the most internationally recognised new generation strains created by Seedjunky. The result is an Indica dominant, compact, robust and productive variety with great flavour and potency. It is a compact growing plant, developing short internodal distances and a lateral ramification that provides a shrub-like structure. It is an optimal cannabis variety for both indoor and outdoor cultivation, developing well in conventional soil based and hydroponic cultivation systems. It produces dark leaves, a trait contributed by its Chemdog ancestor which produces the effect of a dark black forest.",
+    more: "It offers an aroma and flavour which is a balanced mixture of its two ancestors, with intense creamy notes enhanced by the Wedding Cake contribution. This heritage makes it creamier with acidic and gassy hints reminiscent of OG Kush, with a earthy touch that is a delight to the palate. It produces a powerful yet non-knocking effect. The consumer feels relaxed with a sensation of floating over the couch while the mind stays active and creative.",
+    THC: "23",
+    CBD: "0.16",
+    Indica:"70% INDICA",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/chemical-bride.png"
   }
 ];
