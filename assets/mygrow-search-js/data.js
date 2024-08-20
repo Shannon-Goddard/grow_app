@@ -36721,5 +36721,31 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/chemical-bride.png"
+  },
+    {
+    index: "2825",
+    strain: "Mango Isle",
+    info: "Mango Isle is an automatic flowering ruderalis/sativa variety from Night Owl Seeds and can be cultivated indoors and outdoors where the female, autoflowering plants need ±85 days from the seedling to the harvest. Night Owl Seeds’ Mango Isle is a THC dominant variety and is/was only available as feminized seeds.",
+    more: "Expect large, easy growing plants, and ample satellite branching with elongated colas filling their top halves. This true tropical F1 hybrid will transport you to sunny days on beaches far away, leaving you uplifted, clear-headed, and relaxed without sacrificing motivation. Flavors range from citrusy mango to blue and red berries with an exotic alcohol in the background. She is sure to please the Sativa lovers in your life and is definitely one to have around for the private reserve jars. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "24",
+    CBD: "1",
+    Indica:"",
+    Hybrid:"",
+    Sativa: "70% SATIVA auto",
+    Grow: "6",
+    logo: "../assets/mygrow-search-images/mango-isle.png"
+  },
+  {
+    index: "2826",
+    strain: "Banana Purple Punch",
+    info: "The majestic Banana Purple Punch Auto joins the “most potent autoflower” club. This marvelous variety offers one of the best terpene profiles out there in 56 days. You can expect a candy-like terpene profile with an overwhelming ripe banana taste, deliciously complemented by a fruity background that leaves your mouth tasting as if you’ve just eaten a bag of delicious gummy bears.",
+    more: "This Indica-dominant strain grows around 120 cm and yields up to 550 gr/m2, making it the perfect choice for beginners and those looking for the highest-yielding strains that can deliver strong sedative effects that can be felt from head-to-toe. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "26",
+    CBD: "1",
+    Indica:"75% INDICA auto",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "4",
+    logo: "../assets/mygrow-search-images/banana-purple-punch.png"
   }
 ];
