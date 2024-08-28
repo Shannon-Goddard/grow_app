@@ -36747,5 +36747,18 @@ var data = [
     Sativa: "",
     Grow: "4",
     logo: "../assets/mygrow-search-images/banana-purple-punch.png"
+  },
+    {
+    index: "2827",
+    strain: "Purple Ghost Candy",
+    info: "This strain was bred by crossing Ghost OG with Candyland Purple. Purple Ghost Candy is 60% sativa, 40% indica, and is both high-yielding, indoors and outdoors, and a highly resinous strain with a great terpene profile making it very suitable for extractions.",
+    more: "Purple Ghost Candy is an easy plant to grow but one which will require some form of support for side-branches due to their size - outdoors it can grow to between 250 - 350 cm. tall. Indoor-flowering takes 70 - 84 days producing 500 - 600 gr/m2. Outdoors in northern latitudes growers can expect to obtain between 700 - 900 gr. from each plant with harvest time during the middle of October. A notable feature of the buds is the very large, golden resin crystals which become apparent very early during flowering.",
+    THC: "27.54",
+    CBD: "0.9",
+    Indica:"",
+    Hybrid:"",
+    Sativa: "60% SATIVA",
+    Grow: "12",
+    logo: "../assets/mygrow-search-images/purple-ghost-candy.png"
   }
 ];
