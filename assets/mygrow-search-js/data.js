@@ -36760,5 +36760,18 @@ var data = [
     Sativa: "60% SATIVA",
     Grow: "12",
     logo: "../assets/mygrow-search-images/purple-ghost-candy.png"
+  },
+  {
+    index: "2828",
+    strain: "Zowahh",
+    info: "Genetically, Zowahh is a fusion of elite genetics that have been selected and honed by Karma’s world-class breeding team: Zkittlez x Karma Sour D BX is the exact lineage that produces this mouth-watering hybrid. Growers will enjoy average height plants developing a similar shape to a Christmas tree. 70 days is the optimum flowering time, however Karma Genetics’ test grows showed up some faster finishing phenotypes.",
+    more: "Flavours and aromas are frankly, outrageous. Legal growers will need to ensure that their odour control systems are on point. The funky, pungent sour candy aromas are simply exquisite and discerning connoisseurs will love the fusion of terpenes. Zowahh, like most of Karma Genetics’ recent releases, is a very potent strain of cannabis that produces strong, euphoric effects.",
+    THC: "22",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"60% HYBRID",
+    Sativa: "",
+    Grow: "10",
+    logo: "../assets/mygrow-search-images/zowahh.png"
   }
 ];
