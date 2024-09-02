@@ -36773,5 +36773,18 @@ var data = [
     Sativa: "",
     Grow: "10",
     logo: "../assets/mygrow-search-images/zowahh.png"
+  },
+  {
+    index: "2829",
+    strain: "Jack Frost Widow Auto",
+    info: "The Jack Frost Widow Auto thrives in temperate climates and is easy to grow, even for beginners. An additional advantage is the high mold resistance. From a marriage of two great ancestors, this strain offers all the positive characteristics that go with it and that you may expect from it: a fast, trouble-free growth, a stable phenotype, and a generally impressive appearance. Jack and Widow refer to the strains that form the basis for this autoflower, and those are not little-known cannabis strains. Both plants are world-famous Dutch classics that are sold all over the world. Sensi Seeds made the Jack Herer as a tribute to a cannabis activist. It became a stunner of a Sativa with four different phenotypes, one of which was also selected by Bedrocan as a medicinal cannabis strain.",
+    more: "The other parent White Widow is also a cannabis strain of Dutch origin that is known all over the world. White Widow was created by Green House Seeds and was the first so-called ‘white’ cannabis strain. This status was naturally given to White Widow by the unmistakably thick white layer of trichomes that cover the buds. The cannabis strain is an indica that hits like a bomb thanks to a super high THC percentage of over 20 percent. A beautiful plant that needs a week longer to flower. But that is well worth it because it gives a high yield with nice dense buds and an exciting terpene profile with great benefits for the taste. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "20",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"",
+    Sativa: "60% SATIVA auto",
+    Grow: "10",
+    logo: "../assets/mygrow-search-images/jack-frost-widow-auto.png"
   }
 ];
