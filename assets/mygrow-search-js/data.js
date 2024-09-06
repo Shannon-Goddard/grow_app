@@ -36786,5 +36786,57 @@ var data = [
     Sativa: "60% SATIVA auto",
     Grow: "10",
     logo: "../assets/mygrow-search-images/jack-frost-widow-auto.png"
+  },
+  {
+    index: "2830",
+    strain: "Royal Gorilla",
+    info: "Royal Gorilla isn’t necessarily a strain that you would choose for its yields, which are in fact quite moderate - the focus here is on the quality of the bud, rather than the quantity. You can grow Royal Gorilla seeds indoors or outdoors, where they will develop massive buds with wonderful lime-green leaves. Thanks to its strong resin production, the leaves will become covered with an abundance of trichomes, that will beautifully sparkle in the sun!",
+    more: "Most Royal Gorilla plants average a THC content of 24–26%, but certain phenotypes can surpass this when expertly grown. This cultivar induces a very potent effect that is incredibly relaxing - superb for chilling and stress relief. However, what makes Royal Gorilla’s high so special is that this chilled effect is balanced with an uplifting and happy high. Its potency also makes Royal Gorilla a good strain for medicinal users who want a strong herb to help with the management of their symptoms.",
+    THC: "26",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"50% HYBRID",
+    Sativa: "",
+    Grow: "10",
+    logo: "../assets/mygrow-search-images/royal-gorilla.png"
+  },
+  {
+    index: "2831",
+    strain: "Royal Moby",
+    info: "Since the days of the early skunks we have primarily used Sativa and Indica hybrids to produce new types of cannabis seeds. Although they are a mix of both, usually one trait will shine more than the other, which we refer to as the dominant trait. While playing around with genetics, some growers in Spain came across a Sativa/Indica hybrid which flowered to the full psychoactive effects of a pure Sativa. The smoke from this cannabis strain was so big, so gargantuan, it would eventually earn the title of Moby Dick. This hard-hitting sativa gets her impressive traits from Haze and White Widow.",
+    more: "The high that comes from smoking this is beyond astronomical, a pure psychedelic experience. The Royal Moby strain is amongst the strongest THC-bearing cannabis plants we sell, and every puff of a joint or bong will remind you of this fact.",
+    THC: "21",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"",
+    Sativa: "65% SATIVA",
+    Grow: "10",
+    logo: "../assets/mygrow-search-images/royal-moby.png"
+  },
+  {
+    index: "2832",
+    strain: "Shogun",
+    info: "Shogun cannabis seeds are the progeny of two very different cultivars. Our breeders selected parent strain Amnesia Haze for her high THC content, high productivity, and sativa dominance. This feisty strain descends from Original Amnesia Haze and contains a medium level of CBD. Shogun seeds also include genetics from Royal Gorilla. This ultra-potent beast features 25% THC and a perfect balance between sativa and indica genetics. Royal Gorilla stems from a trio of legendary cultivars: Sour Dubb, Chem Sis, and Chocolate Diesel. Shogun features a balance of traits from both of these strains. She inherited her sativa dominance from Amnesia Haze and a high THC level from both parents.",
+    more: "Shogun is named after the ancient Japanese warriors of old—embodying their focus, and unbridled might. The cognitive effects of this variety are like a whetstone against a samurai sword. The stimulating effects boost attention and concentration and allow users to work for long periods. The cultivar brings about a state of zen satisfaction. If you’ve got an essay to write or a deadline to meet, pull this strain out of the stash jar! It’s like downing a cup of coffee. She also makes a great smoke before physical activity such as trail running, skating, or jiu-jitsu. The high will help you get in the zone and enter a flow state.",
+    THC: "25",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"",
+    Sativa: "70% SATIVA",
+    Grow: "11",
+    logo: "../assets/mygrow-search-images/shogun.png"
+  },
+  {
+    index: "2833",
+    strain: "Cash Express",
+    info: "Cash Express by Zamnesia Seeds is a strain that stands out for its stable genetics and superb performance. As her name suggests, this is a Skunk that produces substantial yields in a short amount of time. Growing Cash Express is straightforward. This strain develops vigorously with minimal maintenance, quickly rewarding cultivators with abundant buds. This makes her a prime choice for those aiming for maximum results swiftly and effortlessly. Cash Express will thrive whether grown indoors or outdoors, and she adapts well to both hydroponic or soil setups. She’s also suitable for SOG and ScrOG methods. Indoors, she may grow to a height of about 5 feet, while outdoors she can reach up to nearly 10 feet in optimal conditions.",
+    more: "Now, let's discuss yields, as this is where Zamnesia’s Cash Express truly excels. With her dense buds distributed throughout the plant, she can deliver up to 1.65 pounds per square yard indoors and up to 1.21 pounds per plant outdoors. These are impressive figures considering her relatively short flowering time of only 8 weeks, with some cultivators harvesting as early as week 7. With these yields, it's important to ensure she receives ample nutrients and water to reach her full potential.",
+    THC: "18",
+    CBD: "0.9",
+    Indica:"",
+    Hybrid:"50% HYBRID",
+    Sativa: "",
+    Grow: "8",
+    logo: "../assets/mygrow-search-images/cash-express.png"
   }
 ];
