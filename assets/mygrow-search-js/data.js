@@ -36838,5 +36838,31 @@ var data = [
     Sativa: "",
     Grow: "8",
     logo: "../assets/mygrow-search-images/cash-express.png"
+  },
+  {
+    index: "2834",
+    strain: "Galaxy Brian",
+    info: "A long time coming, the Galaxy Brain is finally here! These large, branchy plants are covered with frost from the stems up! Piercingly sweet fruit scents and mouth coating flavors accompany a soaring euphoric head high, along with a relaxing body effect that doesn’t hamper your daily activities. I’m expecting this one to become a staple in the autoflower connoisseur’s garden. The reversal used was selected from over 40 Cosmic Queens and was extremely sativa dominant. I used this same expression for an unreleased seed run a few years back and she produced some of the most exquisitely beautiful and flavorful flowers. The female used was extremely pungent, with sappy and bulbous resin heads that stink up the whole room when burst. She also had extremely fat calyxes, providing massive amounts of surface area for the resin heads to call home.",
+    more: "Galaxy Brain is an automatic flowering ruderalis/indica/sativa variety from Night Owl Seeds and can be cultivated indoors and outdoors where the female, autoflowering plants need ±73 days from the seedling to the harvest. Night Owl Seeds’ Galaxy Brain is a THC dominant variety and is/was only available as feminized seeds. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "21",
+    CBD: "0",
+    Indica:"70% INDICA auto",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "5",
+    logo: "../assets/mygrow-search-images/galaxy-brain.png"
+  },
+  {
+    index: "2835",
+    strain: "Strawberry Gorilla",
+    info: "Strawberry Gorilla Auto is a hybrid weed strain bred by Fast Buds to create an extremely potent and high-yielding strain; this strain produces as much as 28% THC, and is better suited to experienced growers due to its ample stretch and height. Strawberry Gorilla Auto produces euphoric, uplifting effects and with a terpene profile of berry and diesel notes.",
+    more: "This strain is a certified winner, taking Highest Combined Terpenes at the 2023 Farmers Cup and first place at the 2023 American Autoflower Cup. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "29.86",
+    CBD: "1",
+    Indica:"",
+    Hybrid:"",
+    Sativa: "55% SATIVA auto",
+    Grow: "10",
+    logo: "../assets/mygrow-search-images/strawberry-gorilla.png"
   }
 ];
