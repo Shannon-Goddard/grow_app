@@ -36955,5 +36955,18 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/gorilla-punch.png"
+  },
+    {
+    index: "2843",
+    strain: "Washington Apple",
+    info: "The clone only Pez is a PNW strain from Lopez Island. She has the ability to put out HUGE yielding plants with grows eclipsing over 2 pounds per 1k light very common. This also comes long with the ability to harvest as quickly as 49 days into flower, but you can take her into the early 60’s to find her sweet spot. Her sweet candy aromas will take over your grow room and have you constantly sniffing your buds with pure pleasure. It was a match made in heaven to hit her with our Ortega stud to add some old school nasty funk and help solidify the heavy yields and structure of the Pez with his Northern Lights background. The project came out better than planned and test growers were rewarded with delicious combinations of both parents.",
+    more: "Many of the Washington Apples do have a very apple like aroma and terp profile, while other have a more orange citrus candy thing going on. However, all have a rotting fruit like aroma that came from the Ortega. Contrary to what you might think from the strong indica background, this is a great daytime medication that will keep you soaring all day long, with a smile on your face. Great for anti-depression.",
+    THC: "25",
+    CBD: "0",
+    Indica:"100% INDICA",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/washington-apple.png"
   }
 ];
