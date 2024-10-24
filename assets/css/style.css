@@ -2317,3 +2317,30 @@ background: url(../img/portfolio/pot3.png) no-repeat center center fixed;
   -o-background-size: cover;
   background-size: cover;
 }
+
+/*--------------------------------------------------------------
+# Shop Button
+--------------------------------------------------------------*/
+.shop-btn {
+  color: #343a40;
+  background: #04AA6D;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 2px solid #04AA6D; 
+}
+
+.shop-btn:hover {
+  background: #343a40; 
+  color: #FFFFFF;
+}
+
+@media (max-width: 992px) {
+  .shop-btn {
+    padding: 7px 20px 8px 20px;
+    margin-right: 15px;
+  }
+}
