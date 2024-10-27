@@ -36968,5 +36968,18 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/washington-apple.png"
+  },
+  {
+    index: "2844",
+    strain: "Chem Funk",
+    info: "Chem Funk R1 is a feminised, indica/sativa hybrid strain that was bred using a Chem '91 SK Va (clone only) for the mother and Tahoe OG for the father. Chem Funk R1 is easy to grow and produces good yields of dense buds with a very high THC content.",
+    more: "Chem Funk R1 can be grown in all environments, indoors, outdoors, as well as in a greenhouse. Plants are medium-sized and produce strong lateral branches to bear the weight of their dense buds. Indoors, flowering lasts for a period of 10 weeks or thereabouts. The mature buds become very nicely-stacked, are oval in shape, and are somewhat spongy, while having a high calyx to leaf ratio to make trimmimg a breeze. The trichome heads are nice and large and are good for extract-making.",
+    THC: "25",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"100% HYBRID",
+    Sativa: "",
+    Grow: "10",
+    logo: "../assets/mygrow-search-images/chem-funk.png"
   }
 ];
