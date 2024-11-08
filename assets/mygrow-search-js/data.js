@@ -36981,5 +36981,44 @@ var data = [
     Sativa: "",
     Grow: "10",
     logo: "../assets/mygrow-search-images/chem-funk.png"
+  },
+  {
+    index: "2845",
+    strain: "Purple Punch F1 FAST",
+    info: "Purple Punch F1 FAST is a 75% indica strain bred by crossing Purple Punch with (GMO Cookies x Legend OG). Grow Purple Punch F1 FAST for its high degree of vigour, big yields, high potency and its fruit and fuel nose.",
+    more: "Purple Punch F1 FAST are tall plants reaching 200cm. or more outdoors. They prefer hot, warm, dry as well as humid climates, the latter due to its mould-resistance. When sown in mid-May, plants are ready in the first half of September in northern latitudes while those in the southern hemisphere are ready in March following planting in November. Flowering times indoors are 7 - 9 weeks. Yields are very good with chunky, resinous buds displaying both light and dark green with splashes of purple.",
+    THC: "27",
+    CBD: "0",
+    Indica:"75% INDICA",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/purple-punch-f1-fast.png"
+  },
+  {
+    index: "2846",
+    strain: "Gelat.OG Auto",
+    info: "Gelat.OG Auto is the auto-flowering version of the West Coast strain Gelato, the parents of which are legends in their own right. A mix of Sunset Sherbet and the Platinum pheno of Girl Scout Cookies, Gelato is famous not only for very high levels of THC that it produces but also on account of the delicious dessert-like aroma that it exudes.",
+    more: "This auto version will flower and mature without any reduction in daylight hours responding well to 18 hours of light per day indoors. This means that it will mature outdoors or in a greenhouse even during the height of summer. Its buds often, though not always, display some lovely purple colouration to add to this strain's charms. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "24",
+    CBD: "1",
+    Indica:"",
+    Hybrid:"60% HYBRID auto",
+    Sativa: "",
+    Grow: "12",
+    logo: "../assets/mygrow-search-images/gelat-og-auto.png"
+  },
+  {
+    index: "2847",
+    strain: "Doctor Seedsman CBD",
+    info: "Doctor Seedsman CBD 30:1, a hybrid cannabis strain capable of producing up to 20% CBD (Cannabidiol) and less than 1% THC to give a CBD:THC ratio of 30:1!",
+    more: "Years investigating medicinal/therapeutic cannabis strains have resulted in this supremely rich CBD plant. For patients who prefer to benefit from healing properties without the high associated with psychoactive strains now have a first class choice.",
+    THC: "1",
+    CBD: "20",
+    Indica:"",
+    Hybrid:"60% HYBRID",
+    Sativa: "",
+    Grow: "10",
+    logo: "../assets/mygrow-search-images/dr-seedsman-cbd.png"
   }
 ];
