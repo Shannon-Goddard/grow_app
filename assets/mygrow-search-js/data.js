@@ -37020,5 +37020,18 @@ var data = [
     Sativa: "",
     Grow: "10",
     logo: "../assets/mygrow-search-images/dr-seedsman-cbd.png"
+  },
+    {
+    index: "2848",
+    strain: "Big D Boogie Woogie",
+    info: "Big D Boogie Woogie is a cross of GG4 from CSI Humboldt and Chemdog D, then crossed with Wedding Wine. The mom dominates the plant structure and bud quality in this pair. The Wedding Wine provided grapes and tannins to a majority of the phenos. Making for a great stoney high.",
+    more: "",
+    THC: "29",
+    CBD: "0",
+    Indica:"",
+    Hybrid:"50% HYBRID",
+    Sativa: "",
+    Grow: "9",
+    logo: "../assets/mygrow-search-images/big-d-boogie-woogie.png"
   }
 ];
