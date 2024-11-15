@@ -2323,14 +2323,14 @@ background: url(../img/portfolio/pot3.png) no-repeat center center fixed;
 --------------------------------------------------------------*/
 .shop-btn {
   color: #343a40;
-  background: #04AA6D;
-  border-radius: 4px;
+  background: #FFFF00;
+  border-radius: 0.5px;
   padding: 7px 25px 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
-  border: 2px solid #04AA6D; 
+  border: 0.5px solid #FFFF00; 
 }
 
 .shop-btn:hover {
@@ -2338,9 +2338,47 @@ background: url(../img/portfolio/pot3.png) no-repeat center center fixed;
   color: #FFFFFF;
 }
 
-@media (max-width: 992px) {
-  .shop-btn {
-    padding: 7px 20px 8px 20px;
-    margin-right: 15px;
-  }
+/*--------------------------------------------------------------
+# Shop style
+--------------------------------------------------------------*/
+
+.portfolio-info small {
+  color: #FFFFFF;
+}
+
+.portfolio-info b {
+  color: #FFFFFF;
+}
+
+.rating {
+  color: #FF9900;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #FF4500;
+}
+
+.empty-star {
+  color: #FF990000;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #FF4500;
+}
+
+.icon-check {
+  color: #FF9900;
+}
+
+.rounded-pill {
+  color: #131A22;
+  background: #e1ad01;
+  border-radius: 0.5px;
+  padding: 4px 10px 4px 10px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 0.5px solid #e1ad01; 
+}
+
+.rounded-pill:hover {
+  background: #e1ad0199; 
+  color: #131A22;
 }
