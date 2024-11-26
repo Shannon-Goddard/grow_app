@@ -37033,5 +37033,18 @@ var data = [
     Sativa: "",
     Grow: "9",
     logo: "../assets/mygrow-search-images/big-d-boogie-woogie.png"
+  },
+      {
+    index: "2849",
+    strain: "Dankberry",
+    info: "This cannabis strain offers you an exceptionally strong and impressive high and a delicious taste of ripe berries and  nuts – just like a extraordinary desert. It originated from a cross and selection of Little Devil and Skunkberry, two unique strains which set benchmarks for cannabinoid production. After several backcrosses and elaborate selection work, Anesia Seeds have managed to create one of the strongest and most aromatic cannabis strains worldwide.",
+    more: "This celebrity child packs a long-lasting high and an insane level of potency that can knock out even the most experienced of patients, all wrapped up with a delicious flavor that will leave you begging for more. The high comes on fast and hard with a rush of cerebral effects, launching its way through your mind and filling you with a giddy creative energy and hints of high-flying euphoria. This quickly turns heady, leaving you falling into fits of giggles at times. A relaxing body high accompanies this heady lift, locking you to the couch and keeping you anchored to the world below.",
+    THC: "35",
+    CBD: "0",
+    Indica:"60% INDICA",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "10",
+    logo: "../assets/mygrow-search-images/dankberry.png"
   }
 ];
