@@ -37046,5 +37046,18 @@ var data = [
     Sativa: "",
     Grow: "10",
     logo: "../assets/mygrow-search-images/dankberry.png"
-  }
+  },
+  {
+    index: "2850",
+    strain: "Purple Lemonade Auto",
+    info: "Purple Lemonade Auto ranks as one of the strongest autoflowering strains available and offers sweet, fruity, and floral tastes to boot. Not only that, but she races to harvest at lightning speed and delivers ample returns.",
+    more: "The breeders created this variety by starting out with Purple Haze, a legendary sativa-dominant strain known for its euphoric high and sweet and spicy flavor. Then, they added Lemon Skunk to the mix to add an uplifting effect and boatloads of skunky phytochemicals. Finally, Sweet Skunk Auto was selected to contribute speedy growth and more mouth-watering flavors. Purple Lemonade Auto emerged from this triad as a fast and potent indica-dominant hybrid. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "22",
+    CBD: "0",
+    Indica:"60% INDICA auto",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "6",
+    logo: "../assets/mygrow-search-images/purple-lemonade-auto.png"
+    }
 ];
