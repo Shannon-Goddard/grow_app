@@ -37059,5 +37059,18 @@ var data = [
     Sativa: "",
     Grow: "6",
     logo: "../assets/mygrow-search-images/purple-lemonade-auto.png"
+    },
+      {
+    index: "2851",
+    strain: "Speedy Chili",
+    info: "The Speedy Chile variety was accomplished by crossing a third-generation auto-flowering plant with a clone, providing you with a feminized cannabis seed that is ideal for indoor or outdoor marijuana gardens. Since some growers have been hesitant to embrace auto-flowering plants due to low THC levels, this was designed as a new fast cannabis version to yield buds of incredibly high potency.",
+    more: "Speedy Chile is a cross between Early Skunk x Skunk and Chile Indica, and it has an outstanding taste and a relaxing high. Early Skunk is an elite clone that has earned a reputation for producing medical marijuana flowers of the highest quality. The potent Early Skunk is ideal for pain, sleep issues and is a natural appetite enhancer. The Speedy Chile hybrid is 30% sativa and 70% indica, so you can expect the plants to stretch just a little bit and fill out nicely during the flowering period. The blend also provides a high of outstanding quality. The sativa influence can be felt slowly creeping up on you, and Speedy Chile provides an up high that is ideal for those who have tasks to accomplish during the day. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "16",
+    CBD: "0",
+    Indica:"70% INDICA auto",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "6",
+    logo: "../assets/mygrow-search-images/speedy-chili.png"
     }
 ];
