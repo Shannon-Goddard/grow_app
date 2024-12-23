@@ -37072,5 +37072,44 @@ var data = [
     Sativa: "",
     Grow: "6",
     logo: "../assets/mygrow-search-images/speedy-chili.png"
-    }
+    },
+      {
+    index: "2852",
+    strain: "Rainbow Six",
+    info: "Rainbow Six is the half sibling of our very popular and very sold out strain, Dreamcast! They share a dad (Both strains came from the same Sapphyre F2 Pollen Donor) and as a result they have a lot of similar traits. They’re both wildly frosty, they both have sharp haze and candy notes, and they both have great photoperiod-like bud structure. That’s where the similarities between the two strains begin to part ways, though. Rainbow Six exhibits some serious vegetative vigor that comes from it’s mom’s side. This strain will take over a tent in no time at all, so it tends not to play well with other plants in close quarters. But giving Rainbow Six some room to breathe majorly pays off in the end. It puts on some serious weight with tight, dense, solid buds from top to bottom. Rainbow Six also tends to puts on some serious colors toward the end of flowering. That’s not to say this is a purple strain, because it’s not. But it does display some beautiful pinks and oranges that pop out in sharp contrast to the green canvas of its leaves. Rainbow Six also has a tendency to get sort of a blue hue to the leaves and buds, which is partly due to extreme trichome coverage. You can expect dense, packed on trichomes to cover every possible surface of the flowers and even extend far onto the fan leaves.",
+    more: "The terpene profile is a bit less gassy than the Dreamcast was, but that’s not to say the gas and skunk notes aren’t there. They just tend to fall a little bit further into the background. Rainbow Six has some seriously unique citrus, lime and sour patch kids notes that we haven’t been able to find in any of our other strains. If you’re a fan of sharp, sour candy, citrusy, acidic terpene profiles with strong waves of haze, then you’ll be right at home with Rainbow Six. This strain will finish in just about 70 days on average. Its rare to find a Rainbow Six that goes above 80 days, and it’s not uncommon to see them finish between days 65 and 70. We’ve found the effect profile to be pretty balanced, with blind smoke test reports coming back relatively evenly split between uplifting morning effects, and relaxing night-time effects. This is one of those strains that you’ll have to try and make a decision about how it effects you. But at the end of the day, we have gotten more reports of Rainbow Six leaning toward being a good “sativa”-esque morning or day time strain. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+    THC: "22",
+    CBD: "0",
+    Indica:"80% INDICA auto",
+    Hybrid:"",
+    Sativa: "",
+    Grow: "5",
+    logo: "../assets/mygrow-search-images/rainbow-six.png"
+    },
+    {
+      index: "2853",
+      strain: "Acid Snow",
+      info: "Acid Snow is unlike any of the other strains on our menu, for one very specific reason. In order to explain that reason, we have to talk a little bit about our breeding process. Like most breeders, we use a chemical called Silver Thiosulfate (STS) as a part of our breeding process, to “reverse” the sex of certain female plants. Those reversed plants produce feminized pollen, which we collect in order to pollinate specific batches of females. It’s all pretty standard, but there are some things that make our process a little bit different from most other breeders. Instead of reversing entire plants from female to male, we designate specific branches on each pollen-donor “Dad” to be treated with the STS. Only those treated branches produce will pollen sacs, while the rest of the plant lives it’s life as a completely normal female. Once the reversed branches reach maturity and begin to produce pollen, we use some trade-secret techniques to collect the pollen without any cross contamination. That pollen is often used to create the next generation of a strain, by applying it to other female plants from the same seed batch. For example, in the case of Granite Haze F4, both the “dad” and the females that it pollinated were all Granite Haze F3.",
+      more: "But what happens when the remaining female portion of the “dad” gets treated with it’s own pollen? That’s called self pollination, and instead of creating Granite Haze F4 seeds like the rest of the batch, that single plant will create Granite Haze S4 (the S stands for Self) seeds. At Speedrun, we keep those self pollinated seeds separate throughout each generation, sometimes doing limited releases or sending them out as freebies. In the case of Acid Snow, we ended up crossing the 3rd generation(S3) self pollinated seeds from our Frosted Cherry’Os with the 4th generation (S4) of Granite Haze. Its the only Self Pollinated cross we’ve ever released, and it has some very different characteristics from it’s “cousin” Golden Gun (Frosted Cherry’Os F2 x Granite Haze F5). Acid Snow is extremely vigorous and WILDLY frosty. It’s one of those strains where most people have a hard time even believing it’s an autoflower. It produces lots of dense, golf ball sized flowers are densely caked with trichomes. It also does extremely well when grown outdoors, arguably our strongest outdoor strain to date. The terpene profile is also extremely unique for an autoflower. It will quickly fill your entire house (or back yard) with a heavy, gassy, skunky, burnt tire smell with very distinct notes of sharp, sour, acidic citrus and pine. Those acidic overtones and the insane frost is where Acid Snow gets it’s name. Its a good yielder, but not our highest yielding strain. In good conditions, and when fed well (it’s a very heavy feeder) you can expect yields in the range of ~12 ounces. Acid Snow finishes in 65-75 days, and our strain testers unanimously reported that it has a very sedating effect profile that’s perfect for an evening toke to wind down after a long day. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+      THC: "22",
+      CBD: "0",
+      Indica:"60% INDICA auto",
+      Hybrid:"",
+      Sativa: "",
+      Grow: "5",
+      logo: "../assets/mygrow-search-images/acid-snow.png"
+      },
+      {
+        index: "2854",
+        strain: "Frosted Cherry’Os F3",
+        info: "Frosted Cherry’Os F3 is a strain that we’ve gotten more messages about that probably any other upcoming strain in our lineup. We’re happy to say it’s finally here! After the release of Frosted Cherry’Os F2 almost a year ago, it quickly became one of our most popular strains–and there’s very good reason for that. Frosted Cherry’Os, like the name indicates, is an extremely frosty autoflower strain. There ar hundreds of pictures out there from home growers who got absolutely stellar results from the F2 generation, and we know we’ll see even more of that with the F3. Even beyond the dense coating of trichomes, Frosted Cherry’Os is known to produce beautiful pink and purple colors late in flower and has one of the most unique and addictive terpene profiles you’ll find anywhere in the world of autoflowers. Some phenotypes produce a sweet, candy-cherry-floral-citrus aroma that can quickly take over a room, while others produce some awesome funky, cheesy, rubbery, and what’s been described as “chinese foody” smells. Despite there being some terpene variance among phenotypes, Frosted Cherry’Os F2 is an extremely stable F2 strain. The F2 generation is where the largest phenotypic variations commonly occur. That is to say, F2 strains are inherently less stable than virtually any other generation.",
+        more: "Frosted Cherry O’s was originally bred for its INSANE frostiness, and the enormous lime green flowers it packs on. The most common feedback we get about Frosted Cherry’Os, once someone has the opportunity to grow some, is 'Now I know why its called FROSTED Cherry’Os!' Specific phenotypes were selected for their sweet and floral, cherry blossom nose with a punch of burnt rubber and black pepper. You can also expect some extremely funky, cheesy, savory notes with certian phenotypes. This is an excellent high-yielding outdoor strain, and also one of the most beautiful autos you’ll ever grow indoors. As usual with our varietals, expect yield potential between 6-8 oz when grown in 3 or 5 gallon containers. The potential of this strain in larger pots (10-gallon+) is easily north of 12 oz per plant! This one is very forgiving, making it a great choice for newer growers or growers that are new to Autoflowers. You can expect to see beautiful pink and orange color expressions in late flower, especially in cooler temperatures. Frosted Cherry’Os was the unanimous breeder favorite in our 2022 pheno hunts, across almost 100 strains and over 20,000 plants. We encourage everyone to grow this one! We know once you try it once, it’ll turn into one of you go-to strains for a long time. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+        THC: "25",
+        CBD: "0",
+        Indica:"",
+        Hybrid:"50% HYBRID auto",
+        Sativa: "",
+        Grow: "5",
+        logo: "../assets/mygrow-search-images/frosted-cherry-os.png"
+        }
 ];
