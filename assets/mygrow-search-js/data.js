@@ -37111,5 +37111,18 @@ var data = [
         Sativa: "",
         Grow: "5",
         logo: "../assets/mygrow-search-images/frosted-cherry-os.png"
+        },
+              {
+        index: "2855",
+        strain: "North Thunderfuck",
+        info: "North Thunderfuck derives from the famous Alaskan Thunder Fuck (aka Matanuska Thunder Fuck), a strain whose exact genetics are still a mystery. With around 22% THC, North Thunderfuck has a creeping and potent high that comes with powerful waves of euphoria. Her uplifting and long-lasting happiness is accompanied by an intense lemon flavor and a citrus scent mixed with notes of earth and pine in the aroma.",
+        more: "North Thunderfuck is a rather simple strain to grow, churning out above-average yields. After a flowering time of 8–9 weeks, you will be rewarded with up to 450–500g/m² indoors, or 500–550g/plant under natural sunlight. Outdoors, this cultivar is ready to harvest in mid-October. The plant prefers to be grown outdoors as she can easily deal with slightly colder climates and displays a moderate resistance to diseases.",
+        THC: "22",
+        CBD: "0",
+        Indica:"",
+        Hybrid:"50% HYBRID",
+        Sativa: "",
+        Grow: "9",
+        logo: "../assets/mygrow-search-images/north-thunderfuck.png"
         }
 ];
