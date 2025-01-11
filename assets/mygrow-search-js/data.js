@@ -37137,5 +37137,44 @@ var data = [
         Sativa: "",
         Grow: "10",
         logo: "../assets/mygrow-search-images/fat-bastard.png"
+        },
+        {
+        index: "2857",
+        strain: "Top Gun",
+        info: "Top Gun is an indica-dominant Atlas Seeds classic strain. Atlas Star crossed with Cotton Candy creates a couchlock candyland of sugary sweet terps laced with earthy, nutty goodness. Top Gun will make you feel like a sharp shooter, but don’t operate any heavy machinery—with THC levels around 26%, you’ll be too chilled out.",
+        more: "",
+        THC: "26",
+        CBD: "0",
+        Indica:"80% INDICA",
+        Hybrid:"",
+        Sativa: "",
+        Grow: "9",
+        logo: "../assets/mygrow-search-images/top-gun.png"
+        },
+        {
+          index: "2858",
+          strain: "GMO 8",
+          info: "GMO 8 is an auto reversal of Atlas Seed's photoperiod GMO pheno hunt winner, #8. Well branched and vigorous producer of frosty, fuely, purple flowers. A top performing extraction line with equal potential as finished flower. Good structure for machine trimming. Excellent uniformity across this lot. Matures in 75 days.",
+          more: "",
+          THC: "23",
+          CBD: "0",
+          Indica:"80% INDICA",
+          Hybrid:"",
+          Sativa: "",
+          Grow: "11",
+          logo: "../assets/mygrow-search-images/gmo-8.png"
+        },
+        {
+          index: "2859",
+          strain: "Fatality",
+          info: "It’s not uncommon to see FATALITY plants nearly collapsing under the weight of their fully loaded branches. It produces beautiful light green, trichome dusted flowers with some serious heft to them.",
+          more: "It’s got a syrupy sweet terpene profile with hints of clove, black pepper, rubber bands, and starbursts.",
+          THC: "27",
+          CBD: "0",
+          Indica:"",
+          Hybrid:"50% HYBRID",
+          Sativa: "",
+          Grow: "11",
+          logo: "../assets/mygrow-search-images/fatality.png"
         }
 ];
