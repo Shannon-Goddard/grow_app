@@ -37112,7 +37112,7 @@ var data = [
         Grow: "5",
         logo: "../assets/mygrow-search-images/frosted-cherry-os.png"
         },
-              {
+        {
         index: "2855",
         strain: "North Thunderfuck",
         info: "North Thunderfuck derives from the famous Alaskan Thunder Fuck (aka Matanuska Thunder Fuck), a strain whose exact genetics are still a mystery. With around 22% THC, North Thunderfuck has a creeping and potent high that comes with powerful waves of euphoria. Her uplifting and long-lasting happiness is accompanied by an intense lemon flavor and a citrus scent mixed with notes of earth and pine in the aroma.",
@@ -37124,5 +37124,18 @@ var data = [
         Sativa: "",
         Grow: "9",
         logo: "../assets/mygrow-search-images/north-thunderfuck.png"
+        },
+        {
+        index: "2856",
+        strain: "Fat Bastard",
+        info: "Fat Bastard is an Indica Sativa hybrid encounter between Goldmember and Monkey Spunk. The result is a new line as powerful as it is fragrant. It is a vigorous plant resistant to small errors during cultivation. Certainly an easy-to-grow variety that provide excellent results to both the most experienced and novice growers.",
+        more: "Fat Bastard presents a flowering period os about 8-10 weeks in indoor cannabis cultivation, with a yield of between 400-600g per m2 of dried flowers. Outdoors it is ready to harvest in October, with a yield of about 700-900g per plant under optimal conditions.",
+        THC: "38",
+        CBD: "0",
+        Indica:"",
+        Hybrid:"50% HYBRID",
+        Sativa: "",
+        Grow: "10",
+        logo: "../assets/mygrow-search-images/fat-bastard.png"
         }
 ];
