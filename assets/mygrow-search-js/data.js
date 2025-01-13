@@ -37176,5 +37176,18 @@ var data = [
           Sativa: "",
           Grow: "11",
           logo: "../assets/mygrow-search-images/fatality.png"
+        },
+        {
+          index: "2860",
+          strain: "Epsilon F1",
+          info: "Royal Queen Seeds of The Netherlands has their first true-breeding line-up of true “F1s”, including Epsilon F1. It finishes the fastest of the bunch, and it’s a mix of Blue Dream, Blueberry, Amnesia Lemon Haze, and Black Domina. They make like multiple generations of selection and in-crossing to stabilize it. So the end result is something else entirely. It’s physically relaxing and calming.",
+          more: "AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+          THC: "20",
+          CBD: "0",
+          Indica:"",
+          Hybrid:"50% HYBRID auto",
+          Sativa: "",
+          Grow: "3",
+          logo: "../assets/mygrow-search-images/epsilon-f1.png"
         }
 ];
