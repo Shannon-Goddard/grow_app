@@ -37189,5 +37189,18 @@ var data = [
           Sativa: "",
           Grow: "3",
           logo: "../assets/mygrow-search-images/epsilon-f1.png"
+        },
+        {
+          index: "2861",
+          strain: "Bob Marley",
+          info: "This is a sativa medical marijuana strain is being used in Jamaica during meditation. Bob Marley is known for providing a smooth and chilly nature of highness. This marijuana strain has been named after the world famous reggae singer, 'Bob Marley'. He called this particular strain as the 'healing of the nation' this is known to give creativity to the users. This plant would grow taller containing leggy branches.",
+          more: "The buds of this plant are found to be small and potent. The yield of the plant could be higher if they are grown outdoors in warm climates when compared to growing indoors. The THC levels of this strain are found to be ranging from 15% to 20%. In some of the extreme cases, we might find even higher potency levels. The smoke that is being produced from this strain can be tricky in the beginning as the users might not feel at first. Soon after creeping up, the users would get a euphoric high and hence, can be used as an efficient mood elevator. Thus, this strain is found to alleviate the symptoms of stress and anxiety.",
+          THC: "20",
+          CBD: "0",
+          Indica:"",
+          Hybrid:"",
+          Sativa: "70% SATIVA",
+          Grow: "9",
+          logo: "../assets/mygrow-search-images/bob-marley.png"
         }
 ];
