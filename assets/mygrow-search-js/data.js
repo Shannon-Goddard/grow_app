@@ -37202,5 +37202,31 @@ var data = [
           Sativa: "70% SATIVA",
           Grow: "9",
           logo: "../assets/mygrow-search-images/bob-marley.png"
+        },
+                {
+          index: "2862",
+          strain: "Super Boof",
+          info: "Super Boof is a zingy hybrid weed strain made by crossing Black Cherry Punch and Tropicana Cookies, and is Leafly Strain of the Year 2024. It has the same chunky, deep green and purple-dappled buds as its parents that look wet with silver calyxes. The effects of Super Boof are relaxing and giggly. Reviewers on Leafly say this strain makes them feel euphoric, creative and focused. Medical marijuana patients say they buy Super Boof for gastrointestinal disorders, depression, and fibromyalgia.",
+          more: "Super Boof regularly tests at 28% THC. The dominant terpene is myrcene. The original breeder of the Super Boof strain is California’s Blockhead, who named it “Blockberry” in 2019. Michigan grower/influencer Mobilejay selected a variety and ironically named it Super Boof, popularizing it in 2021 and 2022. Super Boof consistently wins top honors in the flower and hash category, including back-to-back wins as ice water hash in The Ego Clash of 2023 and 2024.",
+          THC: "28",
+          CBD: "0",
+          Indica:"",
+          Hybrid:"50% HYBRID",
+          Sativa: "",
+          Grow: "9",
+          logo: "../assets/mygrow-search-images/super-boof.png"
+        },
+        {
+          index: "2863",
+          strain: "Shady Boof",
+          info: "Shady Boof is a unique, extremely potent phenotype of Ultraboof. Smells citrusy, fruity and pine all mixed together.",
+          more: "",
+          THC: "33",
+          CBD: "0",
+          Indica:"",
+          Hybrid:"50% HYBRID",
+          Sativa: "",
+          Grow: "9",
+          logo: "../assets/mygrow-search-images/shady-boof.png"
         }
 ];
