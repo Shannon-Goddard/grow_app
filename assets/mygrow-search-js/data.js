@@ -37228,5 +37228,18 @@ var data = [
           Sativa: "",
           Grow: "9",
           logo: "../assets/mygrow-search-images/shady-boof.png"
+        },
+        {
+          index: "2864",
+          strain: "Marley's Grin #51",
+          info: "This cross is a all about the citrus funk. With the sativa dominant heritage this strain is a great candidate for outdoor growing. Indoors your can expect large plants and high yield potential.",
+          more: "AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+          THC: "?",
+          CBD: "0",
+          Indica:"",
+          Hybrid:"",
+          Sativa: "80% SATIVA auto",
+          Grow: "6",
+          logo: "../assets/mygrow-search-images/marleys-grin-51.png"
         }
 ];
