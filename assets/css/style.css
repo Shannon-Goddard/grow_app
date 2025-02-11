@@ -6,9 +6,12 @@ html, body {width: auto!important; overflow-x: hidden!important
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  margin: 0px;
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Change height to min-height */
+  position: relative; /* Add this */
 }
+
 
 .customBody {
   background-color:#000;
@@ -16,6 +19,15 @@ body {
   overflow-x: hidden!important;
   margin: 0px;
   height: 100vh;
+}
+  
+html {
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 a {
@@ -36,7 +48,10 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-
+/* Add padding to prevent content from being hidden behind navbar */
+main {
+  padding-bottom: 20px;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -354,7 +369,7 @@ h6 {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: url("../img/white.png") fixed center center;
+  background: url("../../shop/assets/img/white.png") fixed center center;
   background-size: cover;
   padding: 0px 0;
 }
@@ -1102,7 +1117,7 @@ h6 {
  {
   float: left;
   text-align: center;
-  padding: 10px 26px 10px 0;
+  padding: 10px 20px 10px 0;
   font-size: 26px;
   font-weight: 600;
   color: #fff;
@@ -1183,6 +1198,7 @@ h6 {
   height: 100%;
   overflow:hidden;
   word-wrap: break-word;
+  margin-top: 0;
   margin: 0;
   font-size: 16px;
   font-weight: 200;
@@ -1228,6 +1244,8 @@ h6 {
 }
 #weeks {
   display: none;
+  margin: 0;
+  padding: 5px;
 }
 @media (min-width: 1024px) {
   #box {
@@ -1266,32 +1284,6 @@ h6 {
 }
 
 
-/*--------------------------------------------------------------
-# savedButton
---------------------------------------------------------------*/
-#savedButton {
-  background: transparent;
-  border-radius: 4px;
-  padding: 7px 25px 8px 25px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
-  border: 2px solid #04AA6D;
-  color: #FFFFFF; 
-  font-weight: bold;
-}
-
-#savedButton:hover {
-  background: #04AA6D; 
-  color: #343a40;
-}
-
-@media (max-width: 992px) {
-  #savedButton {
-    padding: 7px 20px 8px 20px;
-    margin-right: 15px;
-  }
-}
 /*--------------------------------------------------------------
 # DeleteButton
 --------------------------------------------------------------*/
@@ -1490,7 +1482,7 @@ h6 {
 .show {display:block;}
 
 /*--------------------------------------------------------------
-# myGrow filter table 
+# myGrow mix and match nutrients 
 --------------------------------------------------------------*/
 
 table, th, td {
@@ -1522,6 +1514,12 @@ th {
   color: #fff;
 }
 
+#nutes {
+  overflow: auto;
+  width:auto;
+  height: 100vh;
+  }
+
 .icon-box li {
   list-style-type: none;
 }
@@ -1534,9 +1532,6 @@ th {
   text-align: left;
   font-size: 16px;
   line-height: 26px;
-}
-
-.listPrint {
   color: #fff;
   transition: ease-in-out 0.3s;
 }
@@ -2104,147 +2099,30 @@ th {
 .SolubleSeaweedExtract {
   display: none;
 }
-              
 
 /*--------------------------------------------------------------
 # Plant Doctor filter table 
 --------------------------------------------------------------*/
-#Droopingplant_head {
-  display: none;
-}
-.Droopingplant {
-  display: none;
-}
-
-#Moldorpowder_head {
-  display: none;
-}
-.Moldorpowder {
-  display: none;
-}
-
-#Bugsarevisible_head {
-  display: none;
-}
-.Bugsarevisible {
-  display: none;
-}
-
-#Twistedgrowth_head {
-  display: none;
-}
-.Twistedgrowth {
-  display: none;
-}
-
-#Webbing_head {
-  display: none;
-}
-.Webbing {
-  display: none;
-}
-
-#Budsdying_head {
-  display: none;
-}
-.Budsdying {
-  display: none;
-}
-
-#Budslookodd_head {
-  display: none;
-}
-.Budslookodd {
-  display: none;
-}
-
-#Redstems_head {
-  display: none;
-}
-.Redstems {
-  display: none;
-}
-
-#Bronzeandbrownpatches_head {
-  display: none;
-}
-.Bronzeandbrownpatches {
-  display: none;
-}
-
-#Brownandslimyroots_head {
-  display: none;
-}
-.Brownandslimyroots {
-  display: none;
-}
-
-#CorCleaves_head {
-  display: none;
-}
-.CorCleaves {
-  display: none;
-}
-
-#Brownoryellowleaftips_head {
-  display: none;
-}
-.Brownoryellowleaftips {
-  display: none;
-}
-
-#Holesinleaves_head {
-  display: none;
-}
-.Holesinleaves {
-  display: none;
-}
-
-#Pinkorpurpleonleaves_head {
-  display: none;
-}
-.Pinkorpurpleonleaves {
-  display: none;
-}
-
-#Shinyorsmoothleaves_head {
-  display: none;
-}
-.Shinyorsmoothleaves {
-  display: none;
-}
-
-#Spotsormarkings_head {
-  display: none;
-}
-.Spotsormarkings {
-  display: none;
-}
-
-#Wiltingleaves_head {
-  display: none;
-}
-.Wiltingleaves {
-  display: none;
-}
-
-#Darkleaves_head {
-  display: none;
-}
-.Darkleaves {
-  display: none;
-}
-
-#Yellowingbetweenleafviens_head {
-  display: none;
-}
-.Yellowingbetweenleafviens {
-  display: none;
-}
-
-#Yellowleaves_head {
-  display: none;
-}
+[id$="_head"],
+.Droopingplant,
+.Moldorpowder,
+.Bugsarevisible,
+.Twistedgrowth,
+.Webbing,
+.Budsdying,
+.Budslookodd,
+.Redstems,
+.Bronzeandbrownpatches,
+.Brownandslimyroots,
+.CorCleaves,
+.Brownoryellowleaftips,
+.Holesinleaves,
+.Pinkorpurpleonleaves,
+.Shinyorsmoothleaves,
+.Spotsormarkings,
+.Wiltingleaves,
+.Darkleaves,
+.Yellowingbetweenleafviens,
 .Yellowleaves {
   display: none;
 }
@@ -2254,6 +2132,7 @@ th {
   -webkit-columns: 2;
   -moz-columns: 2;
 }
+
 
 /*--------------------------------------------------------------
 # Video Promo Pages
@@ -2280,15 +2159,17 @@ input[type=text] {
 /**
 * Desktop Navigation 
 */
+/* Add this to ensure the appbar is visible */
 .appbar {
-  background-color: rgba(0, 0, 0, 0);
-  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: visible; /* Change from auto to visible */
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   margin: 0;
-  padding: 0;
-  z-index: 1;
+  padding: 10px 0;
+  z-index: 99999;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -2311,31 +2192,39 @@ input[type=text] {
 }
 
 .gtaBody {
-background: url(../img/portfolio/pot3.png) no-repeat center center fixed; 
+background: url(../img/pot-image.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+
 /*--------------------------------------------------------------
 # Shop Button
 --------------------------------------------------------------*/
 .shop-btn {
   color: #343a40;
-  background: #FFFF00;
-  border-radius: 0.5px;
+  background: #04AA6D;
+  border-radius: 4px;
   padding: 7px 25px 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
-  border: 0.5px solid #FFFF00; 
+  border: 2px solid #04AA6D; 
 }
 
 .shop-btn:hover {
   background: #343a40; 
   color: #FFFFFF;
+}
+
+@media (max-width: 992px) {
+  .shop-btn {
+    padding: 7px 20px 8px 20px;
+    margin-right: 15px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2381,4 +2270,26 @@ background: url(../img/portfolio/pot3.png) no-repeat center center fixed;
 .rounded-pill:hover {
   background: #e1ad0199; 
   color: #131A22;
+}
+
+
+/*--------------------------------------------------------------
+# How-to Videos
+--------------------------------------------------------------*/
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+body {
+  visibility: hidden;
+}
+
+.loaded body {
+  visibility: visible;
 }

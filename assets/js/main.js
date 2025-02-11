@@ -1,17 +1,36 @@
 (function() {
   "use strict";
 
+  
+
   /**
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
+    // Check if el exists and is a valid selector
+    if (!el || typeof el !== 'string') {
+      return null;
+    }
+    
+    el = el.trim();
+    
+    // Return null if selector is empty after trimming
+    if (!el) {
+      return null;
+    }
+  
+    try {
+      if (all) {
+        return [...document.querySelectorAll(el)]
+      } else {
+        return document.querySelector(el)
+      }
+    } catch (e) {
+      console.warn('Invalid selector:', el);
+      return null;
     }
   }
+  
 
   /**
    * Easy event listener function
@@ -123,19 +142,23 @@
    * Scrool with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+    // Check if this.hash exists and is not empty
+    if (this.hash && this.hash.trim()) {
+      e.preventDefault();
+  
+      let navbar = select('#navbar');
+      if (navbar && navbar.classList.contains('navbar-mobile')) {
+        navbar.classList.remove('navbar-mobile');
+        let navbarToggle = select('.mobile-nav-toggle');
+        if (navbarToggle) {
+          navbarToggle.classList.toggle('bi-list');
+          navbarToggle.classList.toggle('bi-x');
+        }
       }
-      scrollto(this.hash)
+      scrollto(this.hash);
     }
-  }, true)
+  }, true);
+  
 
   /**
    * Scroll with ofset on page load with hash links in the url
@@ -279,9 +302,155 @@
     });
   });
 
+  document.addEventListener("DOMContentLoaded", function() {
+    // Hide the loader and show content when everything is ready
+    window.addEventListener('load', function() {
+        document.documentElement.classList.add('loaded');
+        document.getElementById('loader-wrapper').style.display = 'none';
+    });
 
+
+//////////////indexedDB//////////////////////////////////
+//////////////indexedDB//////////////////////////////////
+(function() {
+  "use strict";
+
+  /**
+   * Easy selector helper function
+   */
+  const select = (el, all = false) => {
+    if (!el || typeof el !== 'string') {
+      return null;
+    }
+    
+    el = el.trim();
+    if (!el) {
+      return null;
+    }
+  
+    try {
+      if (all) {
+        return [...document.querySelectorAll(el)]
+      } else {
+        return document.querySelector(el)
+      }
+    } catch (e) {
+      console.warn('Invalid selector:', el);
+      return null;
+    }
+  }
+
+  /**
+   * Easy event listener function
+   */
+  const on = (type, el, listener, all = false) => {
+    let selectEl = select(el, all)
+    if (selectEl) {
+      if (all) {
+        selectEl.forEach(e => e.addEventListener(type, listener))
+      } else {
+        selectEl.addEventListener(type, listener)
+      }
+    }
+  }
+
+  /**
+   * Table Management and Initialization
+   */
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      // Only handle the current table based on the page
+      const currentTable = document.querySelector('[id^="table"]');
+      if (currentTable && window.tableStorage) {
+        const tableId = currentTable.id;
+        console.log(`Found table element: ${tableId}`);
+
+        // Set up mutation observer for the current table
+        const observer = new MutationObserver((mutations) => {
+          if (window.tableStorage) {
+            // Create a deep clone of the table for saving
+            const tableClone = currentTable.cloneNode(true);
+            const hiddenRows = tableClone.querySelectorAll('tr[style*="display: none"]');
+            
+            // Show all rows in the clone (invisible to user)
+            hiddenRows.forEach(row => {
+              row.style.display = '';
+            });
+
+            // Save complete table content from clone
+            window.tableStorage.saveTableData(tableId, tableClone.innerHTML)
+              .then(() => console.log(`Changes saved for ${tableId}`))
+              .catch(error => console.error(`Error saving changes for ${tableId}:`, error));
+          }
+        });
+
+        // Start observing the table
+        observer.observe(currentTable, {
+          childList: true,
+          subtree: true,
+          characterData: true,
+          attributes: true
+        });
+        
+        console.log(`Set up observer for ${tableId}`);
+      }
+
+    } catch (error) {
+      console.error('Error initializing table:', error);
+    }
+  });
+
+  /**
+   * Handle page visibility changes
+   */
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && window.tableStorage) {
+      window.tableStorage.restoreTableData()
+        .then(() => console.log('Table data refreshed on visibility change'))
+        .catch(error => console.error('Error refreshing table data:', error));
+    }
+  });
+
+  /**
+   * Handle page unload
+   */
+  window.addEventListener('beforeunload', async () => {
+    const currentTable = document.querySelector('[id^="table"]');
+    if (currentTable && window.tableStorage) {
+      try {
+        // Create a clone for saving complete data
+        const tableClone = currentTable.cloneNode(true);
+        const hiddenRows = tableClone.querySelectorAll('tr[style*="display: none"]');
+        hiddenRows.forEach(row => {
+          row.style.display = '';
+        });
+
+        await window.tableStorage.saveTableData(
+          currentTable.id, 
+          tableClone.innerHTML
+        );
+      } catch (error) {
+        console.error(`Error saving ${currentTable.id} before unload:`, error);
+      }
+    }
+  });
+
+  /**
+   * Handle network status changes
+   */
+  window.addEventListener('online', () => {
+    if (window.tableStorage) {
+      console.log('Network connection restored');
+      window.tableStorage.restoreTableData()
+        .then(() => console.log('Table data synchronized after coming online'))
+        .catch(error => console.error('Error synchronizing table data:', error));
+    }
+  });
+
+})();
+
+
+//////////////////////////////in code///////////
+});
 
 })()
-
-
-

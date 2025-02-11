@@ -1,4 +1,4 @@
-![header](/pics/header.png)
+# $${\color{black}GrowApp \color{lightgreen}. \space \color{black}Cannabis \space Guide}$$
  
 # Table of Contents 
 
@@ -6,12 +6,10 @@
 [Resources](#resources)  
 [Objectives](#objectives)  
 [Summary](#summary)  
-[Promos](#promos)  
 [Acknowledgments](#acknowledgments)    
 [Limitations](#limitations)  
   
 # Project Overview
-[<img alt="promo1" width="100%" src="pics\promo1.gif" />](https://www.loyal9.app/promo/promo1.html)
 ## Recent surveys suggest significant proportion of consumers started growing their own cannabis for personal consumption or gifting.
 >"Homegrowers cultivate cannabis for a variety of reasons. Some opt-in due to a lack of other sources (14%), or to grow strains which they otherwise could not find to purchase (35%). Quality is another key consideration. Nearly one-third (32%) grow to avoid worries about contaminates such as pesticides, while 44% feel that they grow better-quality flower than they could find elsewhere. For others, it is a matter of convenience (52%), or less expense (46%). Nevertheless, a larger majority of homegrowers (70%) report growing cannabis because they enjoy it as a hobby.<div style="text-align: right" ><a href="https://newfrontierdata.com/cannabis-insights/for-many-cannabis-consumers-home-is-where-the-grow-is/">newfrontierdata.com</a></div>  
 
@@ -136,7 +134,7 @@
 - Grow together. Build confidence.   
 
 # Summary
-**GrowApp** by **Loyal9** uses contextual prompts to guide the user through building an automated daily task list.  **GrowApp** is designed to personalize each grow tailored to that user's needs and expectations while providing tools and resources needed for success. 
+**GrowApp - Cannabis Guide** uses contextual prompts to guide the user through building an automated daily task list.  **GrowApp** is designed to personalize each grow tailored to that user's needs and expectations while providing tools and resources needed for success. 
 
 **GrowApp**'s functionality: 
 - The user answers the prompted questions  
@@ -326,45 +324,31 @@ Allows the User to a search through a list of 2,792 strains. As the user types i
 Allows the User to contact Loyal9  
 </details>
 
-## Grow together. Build confidence. 
+## Grow what you can't. 
 
-**Check-out the website at &nbsp;[loyal9.app](https://www.loyal9.app)**
+**Check-out the website at &nbsp;[https://growappcannabis.guide](https://growappcannabis.guide)**
 
-**[Get the app!](https://www.loyal9.app/tools/GetTheApp.html)**
+**[Get the app!](https://growappcannabis.guide/GetTheApp.html)**
 <br>
 <br>
 <a href="https://apps.apple.com/us/app/growapp-cannabis-guide/id6471381461"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/app-store-ios.svg" width="50" height="50"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://play.google.com/store/apps/details?id=com.mywebapp"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/google-play.svg" width="50" height="50"></a>
+<a href="https://play.google.com/store/apps/details?id=com.GrowAppCannabisGuide"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/google-play.svg" width="50" height="50"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.amazon.com/gp/product/B0CFG7HGQK"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/windows.svg" width="50" height="50"></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.amazon.com/gp/product/B0CFG56Z43"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/amazon.svg" width="50" height="50"></a>
+<a href="https://www.amazon.com/gp/product/B0CFG7HGQK"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/amazon.svg" width="50" height="50"></a>
 &nbsp;
 <br>
 <br>
  Give us some feedback at one of the social links below.
 
- <a href="https://twitter.com/Loyal9GrowApp"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/twitter.svg" width="50" height="50"></a>
+ <a href="https://twitter.com/Loyal9GrowApp"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/x-twitter.svg" width="50" height="50"></a>
  &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.facebook.com/Loyal9GrowApp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/facebook.svg" width="50" height="50"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.instagram.com/loyal9growapp/"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/instagram.svg" width="50" height="50"></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/Shannon-Goddard/grow_app"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="50" height="50"></a>
 &nbsp;&nbsp;
 
-
-
-# Promos  
-[<img alt="promo1" width="100%" src="pics\promo1.gif" />](https://www.loyal9.app/promo/promo1.html)
-<br>
-[<img alt="promo1" width="100%" src="pics\promo2.gif" />](https://www.loyal9.app/promo/promo2.html)
-<br>
-[<img alt="promo1" width="100%" src="pics\promo3.gif" />](https://www.loyal9.app/promo/promo3.html)
-<br>
-  
-  <div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>  
+ <div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>  
   
 # Acknowledgments  
 
@@ -382,26 +366,23 @@ Allows the User to contact Loyal9
 <br>
 *[Mohamed Yousef](https://stackoverflow.com/users/3385827/mohamed-yousef) for taking the time to answer and explain [this.id](https://stackoverflow.com/questions/72094774/using-jquery-to-change-img-src-from-a-js-arrays-value) question, thanks.*  
 *[IT goldman](https://stackoverflow.com/users/3807365/it-goldman) for taking the time to answer how to [hide() the rows that have any "td:empty" and keep the first column's matching index.value in javascript or jquery](https://stackoverflow.com/questions/74240043/hide-the-rows-that-have-any-tdempty-and-keep-the-first-columns-matching-in), thanks.*  
-<div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>  
-<br>  
-
-![](/pics/gif.gif)  
+<div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>   
 
 # Limitations  
-<sub>GrowApp uses localStorage. The localStorage read-only property of the window interface allows you to access a Storage object for the Document's origin; the stored data is saved across browser sessions.</sub> 
-
-<sub>localStorage is similar to sessionStorage, except that while localStorage data has no expiration time, sessionStorage data gets cleared when the page session ends — that is, when the page is closed. (localStorage data for a document loaded in a "private browsing" or "incognito" session is cleared when the last "private" tab is closed and/or browser history is cleared)</sub>
+<sub>GrowApp - Cannabis Guide uses IndexedDB. Each IndexedDB database is unique to an origin (typically the site domain or subdomain), meaning it can't access or be accessed by any other origin. Its data storage limits are usually large, if they exist at all, but different browsers handle limits and data eviction differently.</sub>
 
 **MEANING: YOUR GROW WILL BE ERASED AFTER YOU CLEAR YOUR BROWSER HISTORY!**
 
 In purchasing the app, the app stores the user input to the app and does not produce this minor inconvenience
 </details>  
 
-<sub>[MIT License](https://github.com/Shannon-Goddard/grow_search/blob/main/LICENSE) |
+<sub>[MIT License](resources/LICENSE) |
 [Copyright Act, Section 107](resources/copyrightact.md) |
 [Permissions](resources/permission.png) |
-[Terms of Use](assets/vendor/policies/TermsOfUse.html) |
-[Privacy policy](assets/vendor/policies/PrivacyPolicy.html) |
-[User Agreement](assets/vendor/policies/eula.html) |
-[Cookies policy](assets/vendor/policies/CookiePolicy.html)</sub>
+[Terms of Use](assets/policies/TermsOfUse.html) |
+[Privacy policy](assets/policies/PrivacyPolicy.html) |
+[User Agreement](assets/policies/eula.html) | 
+[Cookies policy](assets/policies/CookiePolicy.html) |
+[Disclosure](assets/policies/disclosure.html)</sub>
+
 <div style="text-align: right" ><a href="#table-of-contents"><img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/angle-up.svg" width="50" height="50"></a></div>
