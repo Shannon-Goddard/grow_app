@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X0XEMR28V2');
+    </script>
+    <!-- Character encoding and viewport -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic SEO (updated for Harvest Window) -->
+    <title>Harvest Window</title>
+    <meta name="robots" content="noindex,nofollow">
+    <!-- Favicons -->
+    <link href="../../assets/img/favicon.png" rel="icon">
+    <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!-- DNS Prefetch and Preconnect -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="../../assets/css/style.css" as="style">
+    <!-- CSS Files with performance attributes -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Font Awesome with defer -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Keep your custom styles local -->
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            padding-bottom: 60px;
+            background-color: #1a1a1a; /* Dark background for contrast */
+        }
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+        }
+        .button {
+            background: #000;
+            color: #fff;
+            border-radius: 4px;
+            padding: 7px 25px 8px 25px;
+            white-space: nowrap;
+            transition: 0.3s;
+            font-size: 14px;
+            display: inline-block;
+            border: 2px solid #04AA6D;
+        }
+        .button:hover {
+            background: #04AA6D;
+            color: #343a40;
+        }
+        @media (max-width: 992px) {
+            .button {
+                padding: 7px 20px 8px 20px;
+                margin-right: 15px;
+            }
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            padding-bottom: 60px;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        label {
+            background: #000;
+            color: #fff;
+            border-radius: 4px;
+            padding: 7px 25px 8px 25px;
+            white-space: nowrap;
+            transition: 0.3s;
+            font-size: 14px;
+            display: inline-block;
+            border: 2px solid #04AA6D;
+            cursor: pointer;
+        }
+        label:hover {
+            background: #04AA6D;
+            color: #343a40;
+        }
+        @media (max-width: 992px) {
+            label {
+                padding: 7px 20px 8px 20px;
+                margin-right: 15px;
+            }
+        }
+        #uploadedImage {
+            display: none;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        #loadingSpinner {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body class="customBody">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="mt-5 d-flex align-items-center justify-content-center">
+            <div class="container" data-aos="fade-up">
+                <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                    <div class="col-xl-6 col-lg-8">
+                        <h1>Harvest WINDO<span>W</span></h1>
+                        <h2>Is your plant ready to chop?</h2>
+                    </div>
+                </div>
+                
+                <div class="upload-section">
+                    <img id="uploadedImage" alt="Uploaded Plant Image">
+                    <div id="result"></div>
+                    <input type="file" id="imageUpload" accept="image/png, image/jpeg">
+                    <label for="imageUpload">Upload Image</label>
+                    <br>
+                    <span id="fileName">No image chosen</span>
+                    <br>
+                    <button class="button" id="checkBud">Check My Bud</button>
+                    <div id="loadingSpinner"><span class="spinner"></span> Loading...</div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </section><!-- End Hero -->
+    </main><!-- End #main -->
+
+    <!-- ======= .navbar ======= -->
+    <div id="preloader"></div>
+    <div id="loader-wrapper" style="display: block;">
+    <!-- Optional loader content, e.g., a spinner -->
+    <div class="spinner"></div>
+    </div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-sharp fa-solid fa-angle-up"></i></a>
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+            <li><a class="nav-link scrollto fa fa-home" href="../../index.html" title="Home" aria-label="Navigate to Home"></a></li>
+            <li><a class="nav-link scrollto fa fa-leaf" href="../../mygrow/mygrow.html" title="My Grow" aria-label="Navigate to MyGrow"></a></li>
+            <li><a class="nav-link scrollto fa fa-book" href="../../mydiary/mydiary.html" title="My Diary" aria-label="Navigate to MyDiary"></a></li>
+            <li><a class="nav-link scrollto fa fa-shopping-cart" href="../../shop/shop.html" title="Shop" aria-label="Navigate to Shop"></a></li>
+            <li><a class="nav-link scrollto active fa fa-cogs" href="../../tools/tools.html" title="Tools" aria-label="Navigate to Tools"></a></li>
+        </ul>
+    </nav><!-- .navbar -->
+
+    <!-- Essential libraries from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <!-- Non-critical vendor scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" crossorigin="anonymous"></script>
+    <!-- Custom scripts (load custom script before main.js to ensure initialization) -->
+    <script src="../../tools/harvest-window/assets/js/script.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
