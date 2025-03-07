@@ -83,8 +83,8 @@ async function classifyImage(img) {
         }
         console.log(`Top prediction: ${predictionLabel} with probability ${maxProbability.toFixed(2)}`);
 
-        const confidenceThreshold = 0.7;
-        const minProbabilityDifference = 0.3;
+        const confidenceThreshold = 0.6;
+        const minProbabilityDifference = 0.2;
         const secondMaxProbability = prediction[1]?.probability || 0;
         const probabilityDifference = maxProbability - secondMaxProbability;
         console.log(`Difference from second-highest: ${probabilityDifference.toFixed(2)}`);
