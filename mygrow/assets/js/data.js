@@ -37241,5 +37241,44 @@ var data = [
           Sativa: "80% SATIVA auto",
           Grow: "6",
           logo: "../../mygrow/assets/img/marleys-grin-51.png"
+        },
+        {
+          index: "2865",
+          strain: "CBD Auto",
+          info: "This strain is for sweetness lovers out there who need something a little more medicinal. The THC to CBD ratio is an amazing 1:1, it can even get up to 1:2. The effect is delightfully light and physically relaxing. CBD Auto feminised is recommended to those suffering from convulsions, inflammation, nausea and anxiety. The low THC to CBD ratio means that this strain won’t knock the brain sideways, and instead produces a high functioning but highly relaxing effect. This strain also has that classic scent and flavour of sweet fruit with just a hint of Skunk, spice and citrus.",
+          more: "She is auto-flowering, making it ideal for all sorts of growers. Auto-flowering plants are perfect for those who are short on time and space. These plants will flower much faster than regular plants due to their shorter vegetative period and automatic flowering. This shorter vegetative period will also result in a shorter stature, but the same amazing yields. This makes them great for stealth or commercial growing. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+          THC: "?",
+          CBD: "?",
+          Indica:"",
+          Hybrid:"",
+          Sativa: "",
+          Grow: "8",
+          logo: "../../mygrow/assets/img/cbd-auto.png"
+        },
+        {
+          index: "2866",
+          strain: "CBD Lemon Auto",
+          info: "CBD Lemon Auto is a great way to medicate and have tremendous fun doing it. You’ll get all the healing you need from 17% CBD, while the same amount of THC provides a great recreational value. The lemony scent and earthy taste complete the picture.",
+          more: "AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+          THC: "17",
+          CBD: "17",
+          Indica:"60% INDICA auto",
+          Hybrid:"",
+          Sativa: "",
+          Grow: "5",
+          logo: "../../mygrow/assets/img/cbd-lemon-auto.png"
+        },
+        {
+          index: "2867",
+          strain: "Strawberry Pie Auto",
+          info: "Densely snowed over with a blush pink tone, Strawberry Pie Auto produces some of the most potent and eye-catching buds of all time with a whopping THC content of up to 26%! True to her name, she caresses the senses with a fuel-covered candy intensity you’ll never forget while she beckons you to the couch for a soothing afternoon with your feet up.",
+          more: "AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+          THC: "26",
+          CBD: "1",
+          Indica:"85% INDICA auto",
+          Hybrid:"",
+          Sativa: "",
+          Grow: "8",
+          logo: "../../mygrow/assets/img/strawberry-pie-auto.png"
         }
 ];
