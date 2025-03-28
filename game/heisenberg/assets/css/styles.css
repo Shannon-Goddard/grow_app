@@ -1,7 +1,4 @@
 body {
-  background: url('../img/npk-background.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
   color: #fff;
   font-family: 'Roboto', 'Open Sans', 'Noto Sans', Arial, sans-serif;
   margin: 0;
@@ -10,27 +7,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: auto;
+  overflow-y: hidden !important; /* Force disable vertical scrolling */
+  overflow-x: hidden !important; /* Force disable horizontal scrolling */
+  height: 100vh !important; /* Force exact viewport height */
 }
 
-/* Smoke overlay as a pseudo-element (first layer) */
+/* Fixed background layer */
 body::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../img/smoke.png') no-repeat center center fixed;
+  background: url('../img/npk-background.png') no-repeat center center;
   background-size: cover;
-  opacity: 0.5;
-  z-index: 1;
-  -webkit-animation: driftSmoke 30s linear infinite;
-  animation: driftSmoke 30s linear infinite;
-  will-change: transform, background-position;
+  z-index: -1;
 }
 
-/* Second smoke layer for depth */
+/* First smoke layer */
 body::after {
   content: '';
   position: absolute;
@@ -38,70 +33,82 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../img/smoke2.png') no-repeat center center fixed;
-  background-size: cover;
-  opacity: 0.3;
-  z-index: 1;
-  -webkit-animation: driftSmoke 40s linear infinite;
-  animation: driftSmokeSecondary 40s linear infinite;
+  background: url('../img/smoke.png') no-repeat center top;
+  background-size: 100% 200%;
+  z-index: 1; /* First layer */
+  animation: driftSmoke 80s ease-in-out infinite;
   will-change: transform, background-position;
 }
 
-/* Animation for the first smoke layer */
+/* Second smoke layer */
+.smoke-layer-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/smoke2.png') no-repeat center top;
+  background-size: 100% 200%;
+  z-index: 2; /* Above first layer */
+  animation: driftSmokeSecondary 100s ease-in-out infinite;
+  will-change: transform, background-position;
+}
+
+/* Animation for the first smoke layer - Rising */
 @keyframes driftSmoke {
   0% {
-    background-position: center 100%; /* Start at the bottom of the viewport */
-    transform: scale(1);
+    background-position: center 0%; /* Top of image at viewport top */
+    transform: scale(1) translateX(0); /* Start centered */
+    opacity: 0.6; /* Denser at the base */
   }
   25% {
-    background-position: center 75%; /* Move up to 75% of the viewport height */
-    transform: scale(1.03);
+    background-position: center 25%;
+    transform: scale(1.1) translateX(-5px); /* Slight drift left */
+    opacity: 0.5;
   }
   50% {
-    background-position: center 50%; /* Move up to 50% of the viewport height */
-    transform: scale(1.05);
+    background-position: center 50%;
+    transform: scale(1.2) translateX(5px); /* Drift right */
+    opacity: 0.4;
   }
   75% {
-    background-position: center 25%; /* Move up to 25% of the viewport height */
-    transform: scale(1.03);
+    background-position: center 75%;
+    transform: scale(1.3) translateX(-3px); /* Subtle drift back */
+    opacity: 0.3;
   }
   100% {
-    background-position: center 0%; /* End at the top of the viewport */
-    transform: scale(1);
+    background-position: center 100%; /* Bottom reaches top */
+    transform: scale(1.4) translateX(0); /* Centered, expanded */
+    opacity: 0.1; /* Faded out */
   }
 }
 
-/* Animation for the second smoke layer */
+/* Animation for the second smoke layer - Rising */
 @keyframes driftSmokeSecondary {
   0% {
-    background-position: center 100%; /* Start at the bottom of the viewport */
-    transform: scale(1.1);
+    background-position: center 0%; /* Top of image at viewport top */
+    transform: scale(1.2) translateX(0); /* Slightly larger start */
+    opacity: 0.4; /* Fainter base */
   }
   25% {
-    background-position: center 85%; /* Move up to 85% of the viewport height */
-    transform: scale(1.13);
+    background-position: center 20%;
+    transform: scale(1.3) translateX(5px); /* Drift right */
+    opacity: 0.35;
   }
   50% {
-    background-position: center 70%; /* Move up to 70% of the viewport height */
-    transform: scale(1.15);
+    background-position: center 40%;
+    transform: scale(1.4) translateX(-5px); /* Drift left */
+    opacity: 0.3;
   }
   75% {
-    background-position: center 55%; /* Move up to 55% of the viewport height */
-    transform: scale(1.13);
+    background-position: center 60%;
+    transform: scale(1.5) translateX(3px); /* Subtle drift back */
+    opacity: 0.2;
   }
   100% {
-    background-position: center 40%; /* End higher than the first layer for a layered effect */
-    transform: scale(1.1);
-  }
-}
-
-/* Media query for mobile optimization */
-@media screen and (max-width: 768px) {
-  body::before {
-    animation-duration: 10s; /* Faster animation on mobile */
-  }
-  body::after {
-    animation-duration: 15s;
+    background-position: center 80%; /* Not fully to top */
+    transform: scale(1.6) translateX(0); /* Centered, more spread */
+    opacity: 0.05; /* Very faint */
   }
 }
 
@@ -117,6 +124,7 @@ h1 {
   z-index: 10;
   padding: 20px;
   position: relative;
+  
 }
 
 .lifelines {
