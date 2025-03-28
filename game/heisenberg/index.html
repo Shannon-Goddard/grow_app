@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-ui">
+    <h1>HEISENBERG</h1>
+    <div class="lifelines">
+      <button id="call-jesse">50:50</button>
+      <button id="ask-gus">Ask</button>
+      <button id="poll-cartel">Poll</button>
+    </div>
+    <button id="sound-toggle" class="sound-toggle sound-off">🔇</button>
+    <div class="timer" id="timer">15</div>
+    <div class="question"></div>
+    <div class="prize">$500</div> <!-- Moved above .options -->
+    <div class="options">
+      <button onclick="checkAnswer('A')"></button>
+      <button onclick="checkAnswer('B')"></button>
+      <button onclick="checkAnswer('C')"></button>
+      <button onclick="checkAnswer('D')"></button>
+    </div>
+  </div>
+
+  <!-- Poll the Cartel Results (hidden by default) -->
+  <div class="poll-results" id="poll-results" style="display: none;">
+    <h3>Votes</h3>
+    <div class="poll-bar"><span>A:</span><div id="poll-a" style="width: 0%;">0%</div></div>
+    <div class="poll-bar"><span>B:</span><div id="poll-b" style="width: 0%;">0%</div></div>
+    <div class="poll-bar"><span>C:</span><div id="poll-c" style="width: 0%;">0%</div></div>
+    <div class="poll-bar"><span>D:</span><div id="poll-d" style="width: 0%;">0%</div></div>
+  </div>
+
+  <!-- Smoke Message Overlay (hidden by default) -->
+  <div class="smoke-message" id="smoke-message" style="display: none;">
+    <div class="smoke-message-content" id="smoke-message-content"></div>
+  </div>
+
+  <script charset="UTF-8" src="assets/js/data.js"></script>
+  <script charset="UTF-8" src="assets/js/game.js"></script>
+</body>
+</html>

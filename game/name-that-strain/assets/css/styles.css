@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background: #000;
+    overflow-y: auto;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .cannabis-theme {
+    background: url('../../assets/img/cannabis-background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  #game-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 900px;
+    overflow-y: visible;
+    min-height: auto;
+  }
+  
+  h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 36px;
+    color: #32cd32 !important; /* Ensure green color with high specificity */
+    margin: 5px 0;
+    animation: bounceIn 1s ease;
+  }
+  
+  #puzzle-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #000;
+    padding: 5px;
+    border: 5px solid #00ced1;
+    border-radius: 10px;
+    min-height: 60px;
+  }
+  
+  .tile {
+    width: 40px;
+    height: 40px;
+    margin: 1px;
+    perspective: 1000px;
+  }
+  
+  .tile-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .tile.flipped .tile-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .tile-front, .tile-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .tile-front {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  
+  .tile-back {
+    background: linear-gradient(135deg, #00ff7f, #008000);
+    color: #fff;
+    border: 2px solid #fff;
+    transform: rotateY(180deg);
+  }
+  
+  #clues {
+    font-size: 14px;
+    font-style: italic;
+    color: #e6e6e6;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  #wheel-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 5px auto;
+  }
+  
+  #wheel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #wheel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    transition: transform 5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  
+  #wheel-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #ffffff, #f0f0f0);
+    border-radius: 50%;
+    border: 4px solid #333;
+    font-family: 'Bangers', cursive;
+    font-size: 32px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    z-index: 2;
+  }
+  
+  #wheel-center.bankrupt { color: #ff0000; }
+  #wheel-center.lose-a-turn { color: #0000ff; font-size: 24px; }
+  #wheel-center.points { color: #ffd700; }
+  #wheel-center.free-play { background-color: #ffd700; color: #000; }
+  
+  .button-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  
+  #spin-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0;
+    background-color: #28a745;
+  }
+  
+  #spin-btn:hover:not(:disabled),
+  #guess-btn:hover,
+  #solve-btn:hover,
+  #hint-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+  }
+  
+  #spin-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  #guess-section, #solve-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  
+  #letter-guess, #solve-guess {
+    max-width: 150px;
+  }
+  
+  #guess-btn {
+    background-color: #20B2AA;
+    border-color: #20B2AA;
+    color: #000;
+  }
+  
+  #guess-btn:hover {
+    background-color: #40E0D0;
+    border-color: #40E0D0;
+  }
+  
+  #solve-btn {
+    background-color: #228B22;
+    border-color: #228B22;
+  }
+  
+  #solve-btn:hover {
+    background-color: #32CD32;
+    border-color: #32CD32;
+  }
+  
+  #hint-btn {
+    background-color: #6A5ACD;
+    border-color: #6A5ACD;
+  }
+  
+  #hint-btn:hover {
+    background-color: #7B68EE;
+    border-color: #7B68EE;
+  }
+  
+  #score, #high-score, #counters {
+    font-size: 20px;
+    color: #ffd700;
+    text-align: center;
+    margin: 3px 0;
+  }
+  
+  #high-score {
+    font-size: 18px;
+    color: #32cd32;
+    font-family: 'Bangers', cursive;
+  }
+  
+  #counters {
+    font-size: 16px;
+    color: #e6e6e6;
+  }
+  
+  #spins-left { color: #ffd700; }
+  #solve-attempts { color: #32cd32; }
+  
+  #leaderboard {
+    margin-top: 10px;
+    color: #e6e6e6;
+    text-align: center;
+  }
+  
+  #leaderboard h3 {
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    color: #32cd32;
+    margin: 5px 0;
+  }
+  
+  #leaderboard-list {
+    list-style-position: inside;
+    padding: 0;
+  }
+  
+  #leaderboard-list li {
+    font-size: 14px;
+    color: #ffd700;
+    margin: 3px 0;
+  }
+  
+  #logo-reveal {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    z-index: 1000;
+    min-height: 300px; /* Ensure space for the logo */
+  }
+  
+  #logo-reveal img {
+    max-width: 300px;
+    max-height: 300px;
+    animation: zoomIn 1s ease-in;
+  }
+  
+  #logo-reveal img.sad {
+    filter: grayscale(100%) brightness(50%);
+    animation: zoomInSad 1s ease-in;
+  }
+  
+  /* Responsive adjustment for mobile */
+  @media (max-width: 576px) {
+    #logo-reveal {
+      width: 100%;
+      margin: 5px 0;
+      min-height: 200px;
+    }
+    #logo-reveal img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+  
+  #volume-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+  }
+  
+  #volume-btn.unmuted { background-color: #32cd32; }
+  #volume-btn.muted { background-color: #dc3545; }
+  
+  .notification {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    #game-container { padding: 10px; margin: 10px auto; }
+    h1 { font-size: 36px; }
+    .tile { width: 40px; height: 40px; }
+    .tile-front, .tile-back { font-size: 20px; }
+    #wheel-container { width: 350px; height: 350px; }
+    #wheel-center { width: 100px; height: 100px; font-size: 28px; }
+    #clues { font-size: 14px; }
+  }
+  
+  @media (max-width: 576px) {
+    #game-container {
+      max-width: 100%;
+      padding: 5px;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    h1 {
+      font-size: 20px;
+      margin: 5px 0;
+    }
+    #volume-btn {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+    #puzzle-board {
+      padding: 3px;
+      min-height: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .tile {
+      width: 18px;
+      height: 18px;
+      margin: 1px;
+    }
+    .tile-front, .tile-back {
+      font-size: 10px;
+    }
+    #clues {
+      font-size: 10px;
+      margin: 3px 0;
+    }
+    #wheel-container {
+      width: 250px;
+      height: 250px;
+      margin: 5px auto;
+    }
+    #wheel-center {
+      width: 60px;
+      height: 60px;
+      font-size: 16px;
+    }
+    #wheel-center.lose-a-turn {
+      font-size: 12px;
+    }
+    #spin-btn, #guess-btn, #solve-btn, #hint-btn {
+      padding: 4px 8px;
+      font-size: 10px;
+      margin: 3px auto;
+    }
+    #guess-section, #solve-section {
+      flex-wrap: nowrap;
+      margin: 3px 0;
+      gap: 5px;
+    }
+    #letter-guess, #solve-guess {
+      max-width: 80px;
+      font-size: 10px;
+      padding: 3px;
+    }
+    #hint-btn {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #logo-reveal {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #logo-reveal img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+    #score, #high-score, #counters {
+      font-size: 12px;
+      margin: 3px 0;
+    }
+    #leaderboard {
+      display: none;
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    60% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes zoomIn {
+    0% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes zoomInSad {
+    0% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+  }

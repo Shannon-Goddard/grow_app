@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name that Strain</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="cannabis-theme">
+  <div class="container">
+    <div id="game-container" class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h1>NAME THAT STRAIN</h1>
+        <button id="volume-btn" class="btn mb-3 muted btn-danger">
+          <span id="volume-icon">🔇</span> Sound Off
+        </button>
+      </div>
+
+      <div class="col-12">
+        <div id="puzzle-board" class="mb-3"></div>
+        <div id="clues" class="mb-3 text-center"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <div id="logo-reveal"></div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div id="notification" class="notification" style="display: none;">
+          <p></p>
+          <button id="close-notification" class="btn btn-sm btn-dark">Close</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center position-relative">
+          <div id="wheel-container" class="d-flex justify-content-center align-items-center">
+            <div id="wheel-wrapper" class="position-relative">
+              <img id="wheel" src="assets/img/wheel.png" alt="Wheel">
+              <div id="wheel-center" class="d-flex justify-content-center align-items-center">Spin Me!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row button-row">
+        <div class="col-12 text-center">
+          <button id="spin-btn" class="btn btn-success">Spin Wheel</button>
+          <div id="guess-section" class="mb-2 hidden">
+            <input type="text" id="letter-guess" class="form-control" placeholder="Guess a letter">
+            <button id="guess-btn" class="btn">Guess</button>
+          </div>
+          <div id="solve-section" class="mb-2">
+            <input type="text" id="solve-guess" class="form-control" placeholder="Solve the strain">
+            <button id="solve-btn" class="btn">Solve</button>
+            <button id="hint-btn" class="btn btn-icon" aria-label="Get a clue" title="Get a clue">
+              <span class="magnifying-glass">🔍</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 text-center">
+        <div id="score" class="mb-2"></div>
+        <div id="high-score" class="mb-2"></div>
+        <div id="counters" class="mb-2">
+          <span id="spins-left"></span> | <span id="solve-attempts"></span>
+        </div>
+      </div>
+
+      <div class="col-12 text-center">
+        <div id="leaderboard">
+          <h3>Leaderboard</h3>
+          <ul id="leaderboard-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="wheel-spin-sound" src="assets/audio/wheel-spin.mp3"></audio>
+  <audio id="ding-sound" src="assets/audio/ding.mp3"></audio>
+  <audio id="wrong-guess-sound" src="assets/audio/wrong-guess.mp3"></audio>
+  <audio id="game-over-sound" src="assets/audio/game-over.mp3"></audio>
+  <audio id="puzzle-solved-sound" src="assets/audio/puzzle-solved.mp3"></audio>
+  <audio id="hint-sound" src="assets/audio/hint.mp3"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
