@@ -1,5 +1,6 @@
 body {
   background: url('../img/npk-background.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
   background-size: cover;
   color: #fff;
   font-family: 'Roboto', 'Open Sans', 'Noto Sans', Arial, sans-serif;
@@ -24,7 +25,9 @@ body::before {
   background-size: cover;
   opacity: 0.5;
   z-index: 1;
-  animation: driftSmoke 10s linear infinite;
+  -webkit-animation: driftSmoke 30s linear infinite;
+  animation: driftSmoke 30s linear infinite;
+  will-change: transform, background-position;
 }
 
 /* Second smoke layer for depth */
@@ -39,7 +42,9 @@ body::after {
   background-size: cover;
   opacity: 0.3;
   z-index: 1;
-  animation: driftSmokeSecondary 12s linear infinite;
+  -webkit-animation: driftSmoke 40s linear infinite;
+  animation: driftSmokeSecondary 40s linear infinite;
+  will-change: transform, background-position;
 }
 
 /* Animation for the first smoke layer */
@@ -87,6 +92,16 @@ body::after {
   100% {
     background-position: center 40%; /* End higher than the first layer for a layered effect */
     transform: scale(1.1);
+  }
+}
+
+/* Media query for mobile optimization */
+@media screen and (max-width: 768px) {
+  body::before {
+    animation-duration: 10s; /* Faster animation on mobile */
+  }
+  body::after {
+    animation-duration: 15s;
   }
 }
 
