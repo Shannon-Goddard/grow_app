@@ -194,6 +194,7 @@
   
   #letter-guess, #solve-guess {
     max-width: 150px;
+    touch-action: manipulation; /* Disables double-tap zoom */
   }
   
   #guess-btn {
