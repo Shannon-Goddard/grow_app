@@ -1,0 +1,270 @@
+body {
+  background-color: #a83232;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  position: relative; /* For positioning the sound toggle */
+  /* Prevent scrolling */
+  overflow: hidden;
+  height: 100vh; /* Ensure body takes up full viewport height */
+  width: 100vw; /* Ensure body takes up full viewport width */
+}
+
+.sound-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.sound-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s;
+}
+
+.sound-button:hover {
+  color: #FFD700; /* Yellow hover effect */
+}
+
+h1 {
+  font-family: 'Bungee', cursive;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #4CAF50, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+.game-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.new-game-button, .play-again-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.new-game-button:hover, .play-again-button:hover {
+  background-color: #45a049;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  aspect-ratio: 5 / 7;
+  border-radius: 10px;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-back, .card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card-back {
+  background: url('../img/card-back.png') center/cover no-repeat;
+}
+
+.card-front {
+  transform: rotateY(180deg);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.card-logo {
+  width: 70%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.strain-name {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: black;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  word-wrap: break-word;
+}
+
+.card.matched {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.leaderboard {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.leaderboard h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard li {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.win-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  gap: 20px;
+}
+
+.win-message {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  white-space: pre-line;
+  font-family: 'Bungee', cursive;
+  border: 3px solid #4CAF50;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.thrown-card {
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  background: url('../img/card-back.png') center/cover no-repeat;
+  animation: throw 3s ease-in-out;
+}
+
+@keyframes throw {
+  0% {
+      transform: translateY(100vh) rotate(0deg);
+      opacity: 1;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-100vh) rotate(720deg);
+      opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+      font-size: 1.8rem; /* Smaller font for mobile */
+  }
+
+  .sound-button {
+      font-size: 1.2rem;
+  }
+
+  .game-board {
+      max-width: 300px;
+  }
+
+  .strain-name {
+      font-size: 0.6rem;
+  }
+
+  .game-stats {
+      font-size: 1rem;
+      gap: 15px;
+  }
+
+  .leaderboard h2 {
+      font-size: 1rem;
+  }
+
+  .leaderboard li {
+      font-size: 0.8rem;
+  }
+
+  .win-message {
+      font-size: 1.2rem;
+      padding: 15px;
+  }
+
+  .thrown-card {
+      width: 40px;
+      height: 56px;
+  }
+
+  .new-game-button, .play-again-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+      font-size: 1.5rem; /* Even smaller for very small screens */
+  }
+
+  .sound-button {
+      font-size: 1rem;
+  }
+}

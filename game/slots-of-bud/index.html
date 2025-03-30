@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slots of Bud</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="slot-machine">
+        <h1>Slots of Bud</h1>
+        <button id="paytable-button">Show Paytable</button>
+        <div id="paytable" class="paytable hidden">
+            <h2>Paytable</h2>
+            <ul>
+                <li>4x, 2x, 0x: 50x your bet (Jackpot!)</li>
+                <li>777, 777, 777: 30x your bet</li>
+                <li>7, 77, 7: 20x your bet</li>
+                <li>7, 7, 7: 10x your bet</li>
+                <li>Bar Bar Bar, Bar Bar Bar, Bar Bar Bar: 25x your bet</li>
+                <li>Bar, Bar Bar, Bar: 15x your bet</li>
+                <li>Bar, Bar, Bar: 5x your bet</li>
+                <li>Any Strain Logo: Blocker (No payout)</li>
+            </ul>
+            <button id="close-paytable">Close</button>
+        </div>
+        <div class="reels">
+            <div class="reel" id="reel1">
+                <img src="assets/img/seven.png" alt="Symbol">
+            </div>
+            <div class="reel" id="reel2">
+                <img src="assets/img/seven.png" alt="Symbol">
+            </div>
+            <div class="reel" id="reel3">
+                <img src="assets/img/seven.png" alt="Symbol">
+            </div>
+        </div>
+        <div class="betting">
+            <label for="bet-amount">Bet Amount: </label>
+            <input type="number" id="bet-amount" value="10" min="1" max="100">
+            <p>Balance: <span id="balance">1000</span></p>
+        </div>
+        <button id="spin-button">Pull the Lever!</button>
+        <button id="reset-button" class="hidden">Reset Game</button>
+        <p id="result">Spin to Win!</p>
+    </div>
+    <!-- Audio elements for sound effects -->
+    <audio id="spin-sound" src="assets/audio/spin.mp3"></audio>
+    <audio id="win-sound" src="assets/audio/win.mp3"></audio>
+    <audio id="jackpot-sound" src="assets/audio/jackpot.mp3"></audio>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

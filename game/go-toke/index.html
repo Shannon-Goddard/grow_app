@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Go Toke!</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sound-toggle">
+        <button id="soundToggle" class="sound-button">🔊</button>
+    </div>
+    <h1>Go Toke!</h1>
+    <div class="game-status">
+        <span>Your Stash: <span id="playerStash">0</span> sets</span>
+        <span>AI Stash: <span id="aiStash">0</span> sets</span>
+    </div>
+    <button id="newGameButton" class="new-game-button">New Game</button>
+    <div class="game-area">
+        <div class="opponent-hand" id="opponentHand"></div>
+        <div class="draw-pile" id="drawPile"></div>
+        <div class="player-hand" id="playerHand"></div>
+    </div>
+    <div class="game-message" id="gameMessage"></div>
+    <audio id="flipSound" src="assets/audio/flip.mp3"></audio>
+    <audio id="buttonSound" src="assets/audio/button.mp3"></audio>
+    <audio id="winSound" src="assets/audio/win.mp3"></audio>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

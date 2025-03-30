@@ -1,0 +1,192 @@
+body {
+  background-color: #a83232;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+.sound-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.sound-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s;
+}
+
+.sound-button:hover {
+  color: #FFD700;
+}
+
+h1 {
+  font-family: 'Bungee', cursive;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #4CAF50, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+.game-status {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.new-game-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.new-game-button:hover {
+  background-color: #45a049;
+}
+
+.game-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.opponent-hand, .player-hand {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.draw-pile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  max-width: 100px;
+  aspect-ratio: 5 / 7;
+}
+
+.draw-pile .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  position: relative;
+  aspect-ratio: 5 / 7;
+  border-radius: 10px;
+  cursor: pointer;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.card-back {
+  background: url('../img/card-back.png') center/cover no-repeat;
+}
+
+.card-logo {
+  width: 70%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px auto 5px auto;
+}
+
+.strain-name {
+  font-size: 0.8rem;
+  color: black;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  word-wrap: break-word;
+}
+
+.game-message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  .sound-button {
+      font-size: 1.2rem;
+  }
+
+  .game-status {
+      font-size: 1rem;
+      gap: 15px;
+  }
+
+  .opponent-hand, .player-hand {
+      max-width: 300px;
+  }
+
+  .draw-pile {
+      max-width: 75px;
+  }
+
+  .draw-pile .card {
+      font-size: 1rem;
+  }
+
+  .strain-name {
+      font-size: 0.6rem;
+  }
+
+  .game-message {
+      font-size: 1rem;
+  }
+
+  .card-logo {
+      margin: 8px auto 3px auto;
+  }
+
+  .new-game-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  .sound-button {
+      font-size: 1rem;
+  }
+}
