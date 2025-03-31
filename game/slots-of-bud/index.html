@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-light d-flex align-items-center justify-content-center min-vh-100">
+    <button id="sound-toggle" class="sound-toggle sound-off position-absolute top-0 end-0 mt-2 me-2">🔇</button>
     <div class="container my-4 d-flex justify-content-center">
         <div class="slot-machine position-relative" style="max-width: 900px;">
             <h1 class="text-center mb-3 game-title">Slots of Bud</h1>
@@ -26,7 +27,8 @@
                     <li class="d-flex align-items-center mb-2"><img src="assets/img/triple-bar.png" alt="Bar Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/triple-bar.png" alt="Bar Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/triple-bar.png" alt="Bar Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/triple-bar.png" alt="Bar Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/triple-bar.png" alt="Bar Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><span>: 30x your bet</span></li>
                     <li class="d-flex align-items-center mb-2"><img src="assets/img/double-bar.png" alt="Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/double-bar.png" alt="Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/double-bar.png" alt="Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/double-bar.png" alt="Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/double-bar.png" alt="Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><span>: 20x your bet</span></li>
                     <li class="d-flex align-items-center mb-2"><img src="assets/img/bar.png" alt="Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/bar.png" alt="Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/bar.png" alt="Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/bar.png" alt="Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/bar.png" alt="Bar" class="img-fluid me-1" style="max-width: 30px;"><span>: 10x your bet</span></li>
-                    <li class="d-flex align-items-center mb-2"><img src="assets/img/bar.png" alt="Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/double-bar.png" alt="Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/triple-bar.png" alt="Bar Bar Bar" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/seven.png" alt="7" class="img-fluid me-1" style="max-width: 30px;"><span><img src="assets/img/triple-seven.png" alt="777" class="img-fluid me-1" style="max-width: 30px;"><img src="assets/img/triple-seven.png" alt="777" class="img-fluid me-1" style="max-width: 30px;">: Any combo is 5x your bet</span></li>
+                    <li class="d-flex align-items-center mb-2"><span><b>Any 7 or Bar in each reel:</b> 5x your bet</span></li>
+                    <li class="d-flex align-items-center mb-2"><span><b>Multipliers (2x, 4x, 0x) multiply all wins!</b> 0x = 1x (no change).</span></li>
                 </ul>
                 <div class="d-flex justify-content-center">
                     <button id="close-paytable" class="btn btn-secondary">Close</button>
@@ -76,8 +78,12 @@
             </div>
             <div class="control-panel row mb-3 justify-content-center align-items-center">
                 <div class="col-12 col-md-3 d-flex justify-content-center align-items-center mb-2 mb-md-0">
-                    <label for="bet-amount" class="me-2">Bet Amount:</label>
-                    <input type="number" id="bet-amount" value="10" min="1" max="100" class="form-control w-auto">
+                    <div class="bet-buttons">
+                        <button class="btn bet-btn active" data-bet="5">5</button>
+                        <button class="btn bet-btn" data-bet="25">25</button>
+                        <button class="btn bet-btn" data-bet="50">50</button>
+                        <button class="btn bet-btn" data-bet="100">100</button>
+                    </div>
                 </div>
                 <div class="col-12 col-md-3 d-flex justify-content-center align-items-center mb-2 mb-md-0">
                     <button id="spin-button" class="btn btn-success">Spin</button>

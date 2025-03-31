@@ -298,15 +298,14 @@ body {
   }
 }
 
-/* Landscape phone view adjustments */
 @media (max-height: 450px) and (orientation: landscape) {
   .slot-machine {
-    padding: 10px; /* Reduce padding to save space */
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh; /* Ensure the container takes the full viewport height */
-    justify-content: space-between; /* Space out the title, reels, and spin button */
+    height: 100vh;
+    justify-content: space-between;
   }
 
   .game-title {
@@ -318,18 +317,18 @@ body {
   }
 
   #paytable-button {
-    display: none; /* Hide the paytable button in landscape view */
+    display: none;
   }
 
   .reels-container {
-    width: 350px; /* Scale down to fit the viewport */
-    height: 266px; /* 4 rows * 63.5px + 6px padding top + 6px padding bottom */
+    width: 350px;
+    height: 266px;
     padding: 6px;
   }
 
   .reel {
     width: 63.5px;
-    height: 254px; /* 4 rows * 63.5px */
+    height: 254px;
   }
 
   #reel1 { left: 0px; top: 6px; }
@@ -347,31 +346,90 @@ body {
   }
 
   @keyframes spin {
-    0% { transform: translateY(-3048px); } /* Adjusted for smaller height (48 * 63.5px) */
+    0% { transform: translateY(-3048px); }
     100% { transform: translateY(0); }
   }
 
   .control-panel {
-    background: transparent; /* Remove the background to save space */
-    border: none; /* Remove the border */
-    padding: 0; /* Remove padding */
-    position: fixed; /* Position the control panel at the bottom right */
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: fixed;
     bottom: 10px;
     right: 10px;
-    width: auto;
+    display: flex; /* Add flex to align children */
+    align-items: flex-end; /* Align items to bottom */
+    gap: 10px; /* Space between bet buttons and spin */
   }
 
   .control-panel label,
   .control-panel input,
   .control-panel p {
-    display: none; /* Hide bet amount and balance in landscape view */
+    display: none; /* Hide balance text */
   }
 
   #result {
-    display: none; /* Hide the result message in landscape view */
+    display: none;
   }
 
   .btn-success {
-    padding: 8px 16px; /* Slightly smaller button */
+    padding: 8px 16px; /* Spin button size */
   }
+
+  .bet-buttons {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    gap: 5px; /* Tighten spacing */
+  }
+
+  .bet-btn {
+    padding: 4px 8px; /* Smaller than Spin for compactness */
+    font-size: 0.9rem; /* Slightly smaller text */
+    border-radius: 8px; /* Softer curve */
+  }
+}
+
+/* Sound Toggle */
+.sound-toggle {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+}
+
+.sound-off { border-color: #ff0000; }
+.sound-on { border-color: #00ff00; }
+.sound-toggle:hover { background: rgba(255, 255, 255, 0.2); }
+
+.bet-buttons {
+  display: flex;
+  gap: 5px; /* Space between buttons */
+}
+
+.bet-btn {
+  background-color: #ab47bc; /* Purple like btn-primary */
+  border: 2px solid #ab47bc;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px; /* Softer curve than 20px on other buttons */
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.bet-btn:hover {
+  background-color: #8e24aa; /* Darker purple */
+  border-color: #8e24aa;
+}
+
+.bet-btn.active {
+  background-color: #2e7d32; /* Green like btn-success to show selected */
+  border-color: #2e7d32;
+}
+
+.bet-btn.active:hover {
+  background-color: #1b5e20; /* Darker green */
+  border-color: #1b5e20;
 }
