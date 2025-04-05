@@ -71,8 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Game logic
   function initializeGameState() {
+    if (!data || data.length === 0) {
+      console.error('No strain data available');
+      showNotification('No strain data available. Game cannot start.');
+      return false;
+    }
     currentStrain = data[Math.floor(Math.random() * data.length)];
     if (!currentStrain || typeof currentStrain.strain !== 'string') {
+      console.error('Invalid strain data:', currentStrain);
       showNotification('Error: Invalid strain data. Retrying...');
       setTimeout(startGame, 1000);
       return false;
@@ -105,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function createPuzzleBoard() {
-    puzzleBoard.innerHTML = '';
+    puzzleBoard.innerHTML = ''; // Clear previous puzzle
     strainName.split('').forEach((char, i) => {
       const tile = document.createElement('div');
       tile.className = 'tile';
@@ -153,19 +159,30 @@ document.addEventListener('DOMContentLoaded', () => {
     hintBtn.classList.remove('hidden');
     hintBtn.disabled = false;
     logoReveal.classList.add('hidden');
-    logoReveal.innerHTML = '';
+    logoReveal.innerHTML = ''; // Clear logoReveal
     notification.classList.add('hidden');
     updateCounters();
   }
 
   function startGame() {
     if (!initializeGameState()) return;
+
+    // Clear and recreate puzzle board
+    puzzleBoard.innerHTML = '';
     createPuzzleBoard();
     updateClues();
     updateScore();
     updateLeaderboard();
     resetUI();
     solveInput.value = '';
+
+    // Ensure button states are reset
+    spinBtn.disabled = false;
+    guessBtn.disabled = true;
+    solveBtn.disabled = false;
+    hintBtn.disabled = false;
+
+    console.log('New game started with strain:', strainName); // Debug log
   }
 
   function spinWheel() {
@@ -291,27 +308,37 @@ document.addEventListener('DOMContentLoaded', () => {
       img.src = logoSrc;
       img.alt = strainName;
       img.onload = () => {
-        console.log('Win logo loaded:', logoSrc); // Debug log
+        console.log('Win logo loaded:', logoSrc);
         logoReveal.innerHTML = '';
         logoReveal.appendChild(img);
         logoReveal.classList.remove('hidden');
         playSound(puzzleSolvedSound);
-        confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+        if (typeof confetti === 'function') {
+          confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+        } else {
+          console.warn('Confetti library not loaded');
+        }
         updateLeaderboard();
         setTimeout(() => {
           logoReveal.classList.add('hidden');
+          logoReveal.innerHTML = ''; // Clear for next game
           startGame();
         }, 4000);
       };
       img.onerror = () => {
-        console.error('Win logo failed to load, using default:', logoSrc); // Debug log
+        console.error('Win logo failed to load, using default:', logoSrc);
         logoReveal.innerHTML = `<img src="assets/img/default-win-logo.png" alt="${strainName}">`;
         logoReveal.classList.remove('hidden');
         playSound(puzzleSolvedSound);
-        confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+        if (typeof confetti === 'function') {
+          confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+        } else {
+          console.warn('Confetti library not loaded');
+        }
         updateLeaderboard();
         setTimeout(() => {
           logoReveal.classList.add('hidden');
+          logoReveal.innerHTML = ''; // Clear for next game
           startGame();
         }, 4000);
       };
@@ -338,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.alt = strainName;
         img.className = 'sad';
         img.onload = () => {
-          console.log('Lose logo loaded:', logoSrc); // Debug log
+          console.log('Lose logo loaded:', logoSrc);
           logoReveal.innerHTML = '';
           logoReveal.appendChild(img);
           logoReveal.classList.remove('hidden');
@@ -346,17 +373,19 @@ document.addEventListener('DOMContentLoaded', () => {
           updateLeaderboard();
           setTimeout(() => {
             logoReveal.classList.add('hidden');
+            logoReveal.innerHTML = '';
             startGame();
           }, 4000);
         };
         img.onerror = () => {
-          console.error('Lose logo failed to load, using default:', logoSrc); // Debug log
+          console.error('Lose logo failed to load, using default:', logoSrc);
           logoReveal.innerHTML = `<img src="assets/img/default-lose-logo.png" alt="${strainName}" class="sad">`;
           logoReveal.classList.remove('hidden');
           playSound(gameOverSound);
           updateLeaderboard();
           setTimeout(() => {
             logoReveal.classList.add('hidden');
+            logoReveal.innerHTML = '';
             startGame();
           }, 4000);
         };
