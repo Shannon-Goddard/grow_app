@@ -37280,5 +37280,31 @@ var data = [
           Sativa: "",
           Grow: "8",
           logo: "../../mygrow/assets/img/strawberry-pie-auto.png"
+        },
+        {
+          index: "2868",
+          strain: "Purple Berry Muffins",
+          info: "Purple Berry Muffinz Feminized seeds germinate into a compact plant with multi-coloured flowers. Ideal for growing indoors due to its low height, this strain also grows well outdoors in temperate / Continental climates. Large yields of dense buds await the successful grower. A true 50/50 hybrid, Purple Berry Muffinz Feminized bud contains desired effects from both ends of the spectrum.",
+          more: "Purple Berry Muffinz Feminized is an enticing treat for those seeking dynamic profiles. Sweet and creamy, while also pungent and gassy. This plant finishes flowering in up to 55 days, giving gardeners the opportunity for more growing cycles each year. A perfect-sized plant for growers with small tents or low ceilings. Amaze your friends with one of the freshest profiles at the party.",
+          THC: "25",
+          CBD: "",
+          Indica:"",
+          Hybrid:"50% HYBRID",
+          Sativa: "",
+          Grow: "7",
+          logo: "../../mygrow/assets/img/purple-berry-muffins.png"
+        },
+        {
+          index: "2869",
+          strain: "Sweet Cherry Kush",
+          info: "Sweet Cherry Kush Feminized seeds originate from a 60% indica / 40% sativa background. Plants grow stocky and reach a medium height while producing large yields. In both the terpene and the flavour profile, freshly picked cherries stand out as a unique feature. Not one dimensional, both the aroma and taste are multi-layered. Similarly, the effects begin as cerebral, but end deep within the muscles. Ideal for growing indoors or in Mediterranean climates.",
+          more: "Sweet Cherry Kush Feminized is unlike any other cannabis genetics out there. The genetic contributors aligned with the stars to create an incredible new strain with unforgettable profiles. This is a jar that gets reached for above anything else. The range of flavours and aromas will surely be a hit at any social gathering.",
+          THC: "22",
+          CBD: "",
+          Indica:"60% INDICA",
+          Hybrid:"",
+          Sativa: "",
+          Grow: "8",
+          logo: "../../mygrow/assets/img/sweet-cherry-kush.png"
         }
 ];
