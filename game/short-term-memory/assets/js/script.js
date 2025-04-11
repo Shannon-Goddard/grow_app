@@ -18,13 +18,13 @@ let timerInterval = null;
 let gameCards = [];
 let isSoundOn = true;
 
-let scores = JSON.parse(localStorage.getItem('shortTermMemoryScores')) || [];
+let scores = JSON.parse(localStorage.getItem('shortTermRamRomScores')) || [];
 
 function saveScore(moves, seconds) {
     scores.push({ moves, seconds });
     scores.sort((a, b) => a.moves === b.moves ? a.seconds - b.seconds : a.moves - b.moves);
     scores = scores.slice(0, 5);
-    localStorage.setItem('shortTermMemoryScores', JSON.stringify(scores));
+    localStorage.setItem('shortTermRamRomScores', JSON.stringify(scores));
     displayScores();
 }
 
@@ -51,6 +51,28 @@ function stopTimer() {
     timerInterval = null;
 }
 
+function resizeGameBoard() {
+    const maxWidth = Math.min(window.innerWidth * 0.9, 500);
+    const maxHeight = Math.min(window.innerHeight * 0.7, 700); // Cap height
+    const cardAspect = 5 / 7;
+    const gridRows = 4;
+    const gridCols = 4;
+    const gap = parseFloat(getComputedStyle(gameBoard).gap) || 10;
+
+    // Calculate board size to fit viewport
+    const boardWidth = Math.min(maxWidth, (maxHeight - gap * (gridRows - 1)) * cardAspect * gridCols / (gridRows * cardAspect));
+    gameBoard.style.width = `${boardWidth}px`;
+    gameBoard.style.maxHeight = `${boardWidth * (gridRows * cardAspect + gap * (gridRows - 1)) / gridCols}px`;
+
+    const cards = gameBoard.querySelectorAll('.card');
+    cards.forEach(card => {
+        const strainName = card.querySelector('.strain-name');
+        if (strainName) {
+            strainName.style.fontSize = `${Math.max(boardWidth / 38, 9)}px`; // Min 9px
+        }
+    });
+}
+
 function resetGame() {
     stopTimer();
     moves = 0;
@@ -63,10 +85,13 @@ function resetGame() {
     gameBoard.innerHTML = '';
     winOverlay.style.display = 'none';
 
-    const randomStrains = data.sort(() => Math.random() - 0.5).slice(0, 8);
+    // Filter out risky strain names
+    const safeStrains = data.filter(strain => !/memory/i.test(strain.strain));
+    const randomStrains = safeStrains.sort(() => Math.random() - 0.5).slice(0, 8);
     gameCards = [...randomStrains, ...randomStrains].sort(() => Math.random() - 0.5);
 
     createBoard();
+    resizeGameBoard();
 }
 
 function createBoard() {
@@ -94,7 +119,6 @@ function createBoard() {
 
         cardFront.appendChild(logoDiv);
         cardFront.appendChild(strainName);
-
         cardInner.appendChild(cardBack);
         cardInner.appendChild(cardFront);
         card.appendChild(cardInner);
@@ -112,6 +136,7 @@ function throwCards() {
         card.style.top = `${Math.random() * 100}vh`;
         card.style.animationDelay = `${Math.random() * 2}s`;
         winOverlay.appendChild(card);
+        setTimeout(() => card.remove(), 3000);
     }
 }
 
@@ -123,7 +148,7 @@ function showWinEffect() {
 }
 
 function flipCard() {
-    if (flippedCards.length < 2 && !this.classList.contains('flipped')) {
+    if (flippedCards.length < 2 && !this.classList.contains('flipped') && !this.classList.contains('matched')) {
         if (moves === 0 && seconds === 0) {
             startTimer();
         }
@@ -175,7 +200,10 @@ function toggleSound() {
     winSound.muted = !isSoundOn;
 }
 
-soundToggle.addEventListener('click', toggleSound);
+soundToggle.addEventListener('click', () => {
+    toggleSound();
+    if (isSoundOn) buttonSound.play();
+});
 
 newGameButton.addEventListener('click', () => {
     if (isSoundOn) buttonSound.play();
@@ -187,5 +215,11 @@ playAgainButton.addEventListener('click', () => {
     resetGame();
 });
 
+// Prevent iOS zoom
+document.addEventListener('touchstart', (e) => {
+    if (e.touches.length > 1) e.preventDefault();
+}, { passive: false });
+
+window.addEventListener('resize', resizeGameBoard);
 displayScores();
 resetGame();
