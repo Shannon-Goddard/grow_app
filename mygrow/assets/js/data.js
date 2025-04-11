@@ -37306,5 +37306,18 @@ var data = [
           Sativa: "",
           Grow: "8",
           logo: "../../mygrow/assets/img/sweet-cherry-kush.png"
+        },
+        {
+          index: "2870",
+          strain: "Strawberry Headband",
+          info: "Strawberry Headband is a hybrid weed strain made from a genetic cross between Strawberry Milk and Headband. This strain is 60% sativa and 40% indica, offering a balanced and invigorating experience that combines the genetics of two renowned strains. Strawberry Headband is celebrated for its unique blend of flavors and effects that can elevate your spirits and soothe your body. With an average THC content of 20-24%, this strain is suitable for both beginners and experienced cannabis consumers. Leafly customers report that Strawberry Headband's effects include feeling happy, relaxed, and creative, making it an ideal choice for enhancing mood, reducing stress, and improving concentration.",
+          more: "Medical marijuana patients often choose Strawberry Headband when dealing with symptoms associated with anxiety, muscle spasms, and chronic pain. Its well-rounded effects can provide therapeutic relief without excessive sedation. Bred by Bodhi Seeds, Strawberry Headband features flavors like strawberry, diesel, and earthy notes, creating a delightful and multi-layered taste profile. The dominant terpene of this strain is limonene, contributing to its citrusy aroma and uplifting properties.",
+          THC: "24",
+          CBD: "",
+          Indica:"",
+          Hybrid:"",
+          Sativa: "60% SATIVA",
+          Grow: "10",
+          logo: "../../mygrow/assets/img/strawberry-headband.png"
         }
 ];
