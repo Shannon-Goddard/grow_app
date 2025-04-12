@@ -1,28 +1,35 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, rgba(46, 125, 50, 0.7), rgba(129, 199, 132, 0.7)), url('') center/cover no-repeat fixed; /* Gradient overlay with dynamic background */
+  background: linear-gradient(to bottom, rgba(46, 125, 50, 0.7), rgba(129, 199, 132, 0.7)), url('') center/cover no-repeat fixed;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  transition: background-image 1s ease-in-out; /* Smooth transition for background changes */
+  transition: background-image 1s ease-in-out;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  box-sizing: border-box;
 }
 
 .slot-machine {
   background-color: transparent;
   padding: 20px;
   border-radius: 15px;
-  position: relative;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .game-title {
-  font-family: 'Bangers', cursive; /* Tagger-style font */
-  font-size: 3.5rem; /* Larger size for impact */
-  color: #39ff14; /* Bright neon green */
-  -webkit-text-stroke: 2px #000; /* Black outline for WebKit browsers */
-  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, /* Fallback outline for non-WebKit browsers */
-               0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #00ff00; /* Neon glow effect */
-  transform: rotate(-5deg); /* Slight tilt for a graffiti vibe */
+  font-family: 'Bangers', cursive;
+  font-size: 3.5rem;
+  color: #39ff14;
+  -webkit-text-stroke: 2px #000;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+               0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #00ff00;
+  transform: rotate(-5deg);
   z-index: 2;
   position: relative;
   text-align: center;
@@ -35,8 +42,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  background-color: #f5f5dc; /* Light beige for a paper-like look */
+  background-color: #f5f5dc;
   border: 3px solid #4a2c0b;
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .paytable h2 {
@@ -56,26 +67,26 @@ body {
 .reels-container {
   position: relative;
   width: 620px;
-  height: 460px; /* 4 rows * 110px + 10px padding top + 10px padding bottom */
+  height: 460px;
   margin: 0 auto;
   z-index: 1;
-  background: #f5f5dc; /* Light beige background for reels */
+  background: #f5f5dc;
   border: 3px solid #4a2c0b;
   border-radius: 10px;
-  overflow: hidden; /* Prevent tiles from popping out */
-  padding: 10px; /* Equal padding on all sides */
-  box-sizing: border-box; /* Include padding in width calculation */
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .reel {
-  width: 110px; /* Reel width */
-  height: 440px; /* 4 rows * 110px */
+  width: 110px;
+  height: 440px;
   position: absolute;
   z-index: 1;
-  overflow: hidden; /* Ensure tiles stay within reel bounds during animation */
+  overflow: hidden;
 }
 
-/* Reel positions with even spacing */
 #reel1 { left: 0px; top: 10px; }
 #reel2 { left: 122.5px; top: 10px; }
 #reel3 { left: 245px; top: 10px; }
@@ -93,43 +104,38 @@ body {
 .grid-row {
   display: flex;
   width: 100%;
-  height: 110px; /* Make square with reel width */
+  height: 110px;
   flex-shrink: 0;
 }
 
 .grid-cell {
   width: 100%;
-  height: 110px; /* Make square with reel width */
+  height: 110px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent; /* Remove the background */
-  border: none; /* Remove the black border */
+  background: transparent;
+  border: none;
 }
 
 .grid-cell img {
-  width: 100px; /* Slightly smaller than the cell to fit */
-  height: 100px; /* Keep square aspect ratio */
+  width: 100px;
+  height: 100px;
   object-fit: contain;
 }
 
 .grid-cell img.blocker {
-  border: none; /* Remove the red border */
+  border: none;
 }
 
-/* Spinning animation for the reel strip */
 .reel-strip.spinning {
-  animation: spin 0.5s linear infinite; /* Faster loop to ensure continuous tiles */
+  animation: spin 0.5s linear infinite;
 }
 
 @keyframes spin {
-  0% {
-    transform: translateY(-5280px); /* Matches 48 rows (48 * 110px) */
-  }
-  100% {
-    transform: translateY(0); /* End at the bottom */
-  }
+  0% { transform: translateY(-5280px); }
+  100% { transform: translateY(0); }
 }
 
 .control-panel {
@@ -137,7 +143,9 @@ body {
   padding: 10px;
   border-radius: 10px;
   border: 2px solid #fff;
-  position: relative; /* For positioning the spin button in landscape */
+  max-width: 620px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .control-panel label {
@@ -157,7 +165,7 @@ body {
 }
 
 .btn-primary {
-  background-color: #ab47bc; /* Purple for cannabis theme */
+  background-color: #ab47bc;
   border-color: #ab47bc;
   color: #fff;
   font-weight: bold;
@@ -171,7 +179,7 @@ body {
 }
 
 .btn-success {
-  background-color: #2e7d32; /* Green for spin button */
+  background-color: #2e7d32;
   border-color: #2e7d32;
   color: #fff;
   font-weight: bold;
@@ -219,7 +227,6 @@ body {
   position: relative;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .game-title {
     font-size: 2.5rem;
@@ -230,13 +237,13 @@ body {
 
   .reels-container {
     width: 450px;
-    height: 344px; /* 4 rows * 82px + 8px padding top + 8px padding bottom */
+    height: 344px;
     padding: 8px;
   }
 
   .reel {
     width: 82px;
-    height: 328px; /* 4 rows * 82px */
+    height: 328px;
   }
 
   #reel1 { left: 0px; top: 7.5px; }
@@ -249,13 +256,17 @@ body {
   .grid-row, .grid-cell { height: 82px; }
 
   .grid-cell img {
-    width: 75px; /* Slightly smaller than the cell */
+    width: 75px;
     height: 75px;
   }
 
   @keyframes spin {
-    0% { transform: translateY(-3936px); } /* Adjusted for smaller height (48 * 82px) */
+    0% { transform: translateY(-3936px); }
     100% { transform: translateY(0); }
+  }
+
+  .control-panel {
+    max-width: 450px;
   }
 }
 
@@ -269,13 +280,13 @@ body {
 
   .reels-container {
     width: 300px;
-    height: 228px; /* 4 rows * 54px + 6px padding top + 6px padding bottom */
+    height: 228px;
     padding: 6px;
   }
 
   .reel {
     width: 54px;
-    height: 216px; /* 4 rows * 54px */
+    height: 216px;
   }
 
   #reel1 { left: 0px; top: 5px; }
@@ -288,13 +299,27 @@ body {
   .grid-row, .grid-cell { height: 54px; }
 
   .grid-cell img {
-    width: 50px; /* Slightly smaller than the cell */
+    width: 50px;
     height: 50px;
   }
 
   @keyframes spin {
-    0% { transform: translateY(-2592px); } /* Adjusted for smaller height (48 * 54px) */
+    0% { transform: translateY(-2592px); }
     100% { transform: translateY(0); }
+  }
+
+  .control-panel {
+    max-width: 300px;
+  }
+
+  .bet-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bet-btn {
+    min-width: 60px;
+    padding: 6px 10px;
   }
 }
 
@@ -357,15 +382,16 @@ body {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    display: flex; /* Add flex to align children */
-    align-items: flex-end; /* Align items to bottom */
-    gap: 10px; /* Space between bet buttons and spin */
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    max-width: 200px;
   }
 
   .control-panel label,
   .control-panel input,
   .control-panel p {
-    display: none; /* Hide balance text */
+    display: none;
   }
 
   #result {
@@ -373,23 +399,22 @@ body {
   }
 
   .btn-success {
-    padding: 8px 16px; /* Spin button size */
+    padding: 8px 16px;
   }
 
   .bet-buttons {
     display: flex;
-    flex-direction: column; /* Stack vertically */
-    gap: 5px; /* Tighten spacing */
+    flex-direction: column;
+    gap: 5px;
   }
 
   .bet-btn {
-    padding: 4px 8px; /* Smaller than Spin for compactness */
-    font-size: 0.9rem; /* Slightly smaller text */
-    border-radius: 8px; /* Softer curve */
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    border-radius: 8px;
   }
 }
 
-/* Sound Toggle */
 .sound-toggle {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -406,30 +431,30 @@ body {
 
 .bet-buttons {
   display: flex;
-  gap: 5px; /* Space between buttons */
+  gap: 5px;
 }
 
 .bet-btn {
-  background-color: #ab47bc; /* Purple like btn-primary */
+  background-color: #ab47bc;
   border: 2px solid #ab47bc;
   color: #fff;
   font-weight: bold;
-  border-radius: 10px; /* Softer curve than 20px on other buttons */
+  border-radius: 10px;
   padding: 5px 10px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .bet-btn:hover {
-  background-color: #8e24aa; /* Darker purple */
+  background-color: #8e24aa;
   border-color: #8e24aa;
 }
 
 .bet-btn.active {
-  background-color: #2e7d32; /* Green like btn-success to show selected */
+  background-color: #2e7d32;
   border-color: #2e7d32;
 }
 
 .bet-btn.active:hover {
-  background-color: #1b5e20; /* Darker green */
+  background-color: #1b5e20;
   border-color: #1b5e20;
 }
