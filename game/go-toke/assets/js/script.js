@@ -149,7 +149,7 @@ function askForCard(strain) {
         gameMessage.textContent = `AI had ${aiHasCard.length} ${strain}(s)! Your turn again.`;
         checkForSets(playerCards, true);
     } else {
-        gameMessage.textContent = `Go Toke! Drawing a card...`;
+        gameMessage.textContent = `No Fish! Drawing a card...`;
         setTimeout(drawCard, 1000, strain);
     }
     renderGame();
@@ -171,7 +171,7 @@ function drawCard(requestedStrain) {
     renderGame(); // Ensure render after drawing
 
     if (drawnCard.strain === requestedStrain) {
-        gameMessage.textContent = `Buzzed! You drew a ${drawnCard.strain}! Your turn again.`;
+        gameMessage.textContent = `Nice one, bud! You drew a ${drawnCard.strain}! Your turn again.`;
     } else {
         isPlayerTurn = false;
         setTimeout(aiTurn, 1000);
@@ -235,7 +235,7 @@ function aiTurn() {
         renderGame(); // Force render after trade and set check
         setTimeout(aiTurn, 1000);
     } else {
-        gameMessage.textContent = `AI goes to toke! Drawing a card...`;
+        gameMessage.textContent = `No Fish! Drawing a card...`;
         if (deck.length === 0) {
             gameMessage.textContent = `Draw pile empty! Your turn.`;
             isPlayerTurn = true;
@@ -247,7 +247,7 @@ function aiTurn() {
             checkForSets(aiCards, false);
             renderGame(); // Ensure render after AI draws
             if (drawnCard.strain === randomStrain) {
-                gameMessage.textContent = `AI got buzzed and drew a ${drawnCard.strain}! AI's turn again.`;
+                gameMessage.textContent = `AI got a whopper and drew a ${drawnCard.strain}! AI's turn again.`;
                 setTimeout(aiTurn, 1000);
             } else {
                 gameMessage.textContent = `Your turn!`;
