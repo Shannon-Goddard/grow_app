@@ -60,7 +60,7 @@ function checkForSets(cards, isPlayer) {
             if (isPlayer) {
                 playerStash++;
                 playerStashDisplay.textContent = playerStash;
-                gameMessage.textContent = `You stashed 4 ${strain}s!`;
+                gameMessage.textContent = `You got 4 ${strain}s!`;
                 const initialLength = playerCards.length;
                 let removed = 0;
                 playerCards = playerCards.filter(card => {
@@ -74,7 +74,7 @@ function checkForSets(cards, isPlayer) {
             } else {
                 aiStash++;
                 aiStashDisplay.textContent = aiStash;
-                gameMessage.textContent = `AI stashed 4 ${strain}s!`;
+                gameMessage.textContent = `AI got 4 ${strain}s!`;
                 const initialLength = aiCards.length;
                 let removed = 0;
                 aiCards = aiCards.filter(card => {
@@ -171,7 +171,7 @@ function drawCard(requestedStrain) {
     renderGame(); // Ensure render after drawing
 
     if (drawnCard.strain === requestedStrain) {
-        gameMessage.textContent = `Nice one, bud! You drew a ${drawnCard.strain}! Your turn again.`;
+        gameMessage.textContent = `Nice! You drew a ${drawnCard.strain}! Your turn again.`;
     } else {
         isPlayerTurn = false;
         setTimeout(aiTurn, 1000);

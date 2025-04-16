@@ -204,6 +204,10 @@ function populateReelStrips() {
 
 // Spin reels independently with a downward motion
 spinButton.addEventListener('click', spinReels);
+spinButton.addEventListener('touchstart', (event) => {
+    event.preventDefault();
+    spinReels();
+});
 
 function spinReels() {
     const bet = currentBet; // Use currentBet instead of betAmountInput.value
