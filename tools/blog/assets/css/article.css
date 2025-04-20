@@ -687,3 +687,48 @@
 .video-btn i { 
   margin-right: 0.5em; 
 }
+
+.youtube-btn {
+  background: transparent;
+  border: 2px solid #04AA6D;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.youtube-btn:hover {
+  background: #ff0000;
+  color: #151515;
+}
+
+.youtube-btn i {
+  margin-right: 0.5rem;
+  font-size: 1.2em; /* Slightly larger for visibility */
+}
+
+.youtube-warning {
+  color: #aaaaaa;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .youtube-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9em;
+  }
+  .youtube-btn i {
+    font-size: 1em;
+  }
+  .youtube-warning {
+    font-size: 0.8em;
+  }
+}
