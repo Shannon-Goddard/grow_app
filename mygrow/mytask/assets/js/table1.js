@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const table = $('#table1');
-        const saveButton = document.getElementById('SaveButton');
-        table.attr('contenteditable', 'true');
+        const tableSection = $('#table1-section');
 
         // Pre-calculate today's date once
         const today = new Date();
@@ -21,13 +20,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 const isNoteRow = row.hasClass('notes');
                 
                 if (isNoteRow) {
-                    const prevRow = row.prev();
-                    const prevRowVisible = prevRow.is(':visible');
-                    row.toggle(prevRowVisible);
+                    row.hide(); // Always hide notes row
                 } else {
-                    row.toggle(isToday);
+                    row.toggle(isToday); // Show only rows for today
                 }
             });
+
+            // Check if there are any visible rows (excluding header)
+            const visibleRows = table.find('tr:not(:first)').filter(':visible').length;
+            if (visibleRows === 0) {
+                tableSection.hide(); // Hide the entire section if no rows are visible
+            } else {
+                tableSection.show(); // Show the section if there are visible rows
+            }
         }
 
         try {
@@ -36,32 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
             if (savedContent) {
                 table.html(savedContent);
                 filterTableByToday();
-                table.find(":input").hide();
+            } else {
+                tableSection.hide(); // Hide section if no data is loaded
             }
-
-            // Register table
-            window.tableStorage.registerTable('table1', filterTableByToday);
-
-            // Save handler
-            let saveTimeout;
-            table.on('input', 'td', function() {
-                if (saveButton) {
-                    saveButton.classList.add('save-button-pending');
-                }
-                
-                clearTimeout(saveTimeout);
-                saveTimeout = setTimeout(async () => {
-                    const tableClone = table[0].cloneNode(true);
-                    const $clone = $(tableClone);
-                    
-                    $clone.find('tr').each(function() {
-                        $(this).css('display', '');
-                    });
-                    
-                    await window.tableStorage.saveTableData('table1', $clone.html());
-                    $clone.remove();
-                }, 2000);
-            });
 
             // Style application
             table.css({
@@ -78,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         } catch (error) {
             console.error('Error initializing table1:', error);
+            tableSection.hide(); // Hide section on error
         }
     }, 100);
 });
