@@ -1,0 +1,114 @@
+/* Banner Styles */
+#growtogether-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #151515, #04AA6D);
+    color: #fff;
+    z-index: 998; /* Below navbar (z-index: 99999 in style.css) */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+  }
+  
+  .banner-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  .banner-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  
+  .banner-text strong {
+    font-weight: 700;
+    color: #e0e0e0;
+  }
+  
+  .banner-cta {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .banner-cta:hover {
+    background: #fff;
+    color: #151515;
+    transform: scale(1.05);
+  }
+  
+  .banner-cta i {
+    margin-right: 5px;
+  }
+  
+  .banner-close {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+  }
+  
+  .banner-close:hover {
+    color: #e0e0e0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #growtogether-banner {
+      padding: 8px 0;
+    }
+    .banner-content {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .banner-icon {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+    .banner-text {
+      font-size: 14px;
+      flex: 1 100%;
+      margin-bottom: 10px;
+    }
+    .banner-cta {
+      margin: 0;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    .banner-close {
+      top: 5px;
+      right: 10px;
+      font-size: 18px;
+    }
+  }
+  
+  /* Hidden state for dismissed banner */
+  #growtogether-banner.hidden {
+    display: none;
+  }

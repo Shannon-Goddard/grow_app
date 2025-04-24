@@ -1,0 +1,203 @@
+/* Community-specific styles */
+.back-to-home {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: #1a1a1a;
+  border: 2px solid #04AA6D;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.back-to-home:hover {
+  background: #04AA6D;
+  color: #151515;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(4, 170, 109, 0.5);
+}
+
+#community-landing {
+  background: #151515;
+  padding: 60px 0;
+}
+
+#community-landing h1 {
+  color: #04AA6D !important; /* Add !important to ensure precedence */
+  font-size: 36px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#community-landing h2, #community-landing h3 {
+  color: #04AA6D;
+  margin-top: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#community-landing p,
+#community-landing ul,
+#community-landing ol {
+  color: #e0e0e0 !important; /* Add !important to ensure precedence */
+  line-height: 1.8;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.community-landing ul, .community-landing ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.community-landing a {
+  color: #04AA6D;
+  transition: color 0.3s;
+}
+
+.community-landing a:hover {
+  color: #fff;
+}
+
+.community-landing .img-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.community-landing .img-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Remove the default overlay */
+.community-landing .img-wrapper::before {
+  content: none; /* Disable by default */
+}
+
+/* Add overlay only when .with-overlay class is present */
+.community-landing .img-wrapper.with-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(4, 170, 109, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+/* Keep mobile behavior */
+@media (max-width: 768px) {
+  .community-landing .img-wrapper::before,
+  .community-landing .img-wrapper.with-overlay::before {
+    background: none; /* No overlay on mobile */
+  }
+}
+
+.community-landing .img-caption {
+  font-style: italic;
+  color: #aaaaaa;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.affiliate-btn {
+  background: transparent;
+  border: 2px solid #04AA6D;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.affiliate-btn:hover {
+  background: #04AA6D;
+  color: #151515;
+}
+
+.affiliate-btn i {
+  margin-right: 0.5rem;
+}
+
+.sidebar .widget {
+  background: #2f2f2f;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar h3 {
+  color: #04AA6D;
+  margin-bottom: 1rem;
+}
+
+#community-landing .sidebar p {
+  color: #e0e0e0 !important; /* Add !important for safety */
+}
+
+.sidebar ul li a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #04AA6D;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+  font-size: 20px;
+}
+
+.sticky-cta {
+  position: fixed;
+  top: 20px; /* Aligns with the top edge, matching back-to-home */
+  right: 20px; /* Positions it in the top-right corner */
+  z-index: 1000; /* Matches back-to-home to ensure visibility */
+  display: none; /* Maintains existing behavior */
+}
+
+.sticky-cta.show {
+  display: block; /* Maintains existing behavior */
+}
+
+@media (max-width: 768px) {
+  .back-to-home {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    top: 10px;
+    left: 10px;
+  }
+  #community-landing h1 { /* Changed to ID for consistency */
+    font-size: 28px !important;
+  }
+  #community-landing h2, #community-landing h3 { /* Changed to ID */
+    font-size: 20px !important;
+  }
+  #community-landing p, #community-landing ul, #community-landing ol { /* Changed to ID */
+    font-size: 14px !important;
+    color: #e0e0e0 !important; /* Ensure color consistency */
+  }
+  .faq-item h3 {
+    font-size: 18px !important;
+  }
+  .sidebar {
+    margin-top: 2rem;
+  }
+}
