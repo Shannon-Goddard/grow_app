@@ -37319,5 +37319,18 @@ var data = [
           Sativa: "60% SATIVA",
           Grow: "10",
           logo: "../../mygrow/assets/img/strawberry-headband.png"
+        },
+        {
+          index: "2871",
+          strain: "Planet of The Grapes",
+          info: "Planet of the Grapes is made to PRODUCE! Extremely high in both cannabinoid and terpene percentages, she's close to a perfect commercial plant for scale production, regardless of end-game.",
+          more: "Her aroma is only outdone by her flavor: sharp grapes, sweet citrus and the signature musky, greasy flavor of Chem D. Acrid aromas like propane and 'hooch' accompany the more citrusy pheno.",
+          THC: "30",
+          CBD: "",
+          Indica:"",
+          Hybrid:"50% HYBRID",
+          Sativa: "",
+          Grow: "9",
+          logo: "../../mygrow/assets/img/planet-of-the-grapes.png"
         }
 ];
