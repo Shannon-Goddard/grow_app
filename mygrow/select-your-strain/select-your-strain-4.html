@@ -2944,7 +2944,16 @@
             <li><a id="2869"><img loading="lazy" class="lozad" data-src="../../mygrow/assets/img/sweet-cherry-kush.png" width="40" height="40" > Sweet Cherry Kush</a></li>
             <li><a id="2870"><img loading="lazy" class="lozad" data-src="../../mygrow/assets/img/strawberry-headband.png" width="40" height="40" > Strawberry Headband</a></li>
             <li><a id="2871"><img loading="lazy" class="lozad" data-src="../../mygrow/assets/img/planet-of-the-grapes.png" width="40" height="40" > Planet of The Grapes</a></li>
-            <a href="mailto:growapp@loyal9.app?subject=My&nbsp;strain&nbsp;is&nbsp;not&nbsp;listed&nbsp;on&nbsp;GrowApp &body=Give me the name of your strain and I will do what I can to get it listed. Links to info about the strain are helpful. Please and Thank You!"><li>Is your strain not listed? Email growapp@loyal9.app to add strain.</li></a>
+            <button class="email-button" onclick="sendEmail()">Is your strain not listed? Email growapp@loyal9.app to add strain.</button>
+            <script>
+            function sendEmail() {
+              try {
+                window.location.href = "mailto:growapp@loyal9.app?subject=My%20strain%20is%20not%20listed%20on%20GrowApp%20%26body=Give%20me%20the%20name%20of%20your%20strain%20and%20I%20will%20do%20what%20I%20can%20to%20get%20it%20listed.%20Links%20to%20info%20about%20the%20strain%20are%20helpful.%20Please%20and%20Thank%20You!";
+              } catch (e) {
+                alert("Unable to open email client. Please email growapp@loyal9.app manually.");
+              }
+              }
+              </script>
           </ul>
           
           <div class="container d-flex align-items-center justify-content-lg-between">

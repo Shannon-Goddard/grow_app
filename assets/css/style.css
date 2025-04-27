@@ -2293,3 +2293,15 @@ body {
 .loaded body {
   visibility: visible;
 }
+
+/*--------------------------------------------------------------
+# Email growapp@loyal9.app if strain is not listed
+--------------------------------------------------------------*/
+.email-button {
+    background: none;
+    border: none;
+    color: #04AA6D; /* Match your site’s link color */
+    text-decoration: none;
+    cursor: pointer;
+    font-size: inherit;
+}
