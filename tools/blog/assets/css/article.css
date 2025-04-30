@@ -1,4 +1,21 @@
 /* Article-specific styles */
+html, .article-body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh; /* Dynamic viewport height */
+  overflow-x: hidden;
+}
+
+.article-body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #000; /* Ensure consistent background */
+}
+
 .back-to-blog {
   position: fixed;
   top: 20px;
