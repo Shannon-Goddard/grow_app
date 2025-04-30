@@ -24,6 +24,7 @@
   box-shadow: 0 0 10px rgba(4, 170, 109, 0.5);
 }
 
+/* Blog Article Section */
 #blog-article {
   background: #151515;
   padding: 60px 0;
@@ -38,19 +39,31 @@
 
 .blog-article h2, .blog-article h3 {
   color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
   margin-top: 2rem;
+  margin-bottom: 1.5rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .blog-article p, .blog-article ul, .blog-article ol {
   color: #cccccc;
+  font-size: 1rem;
   line-height: 1.8;
+  margin-bottom: 1.5rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .blog-article ul, .blog-article ol {
   padding-left: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.blog-article ul li, .blog-article ol li {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
 }
 
 .blog-article a {
@@ -62,6 +75,7 @@
   color: #fff;
 }
 
+/* Image Wrapper */
 .blog-article .img-wrapper {
   position: relative;
   margin-bottom: 1rem;
@@ -108,6 +122,17 @@
   margin-bottom: 1.5rem;
 }
 
+.img-caption a {
+  color: #04AA6D;
+  text-decoration: none;
+}
+
+.img-caption a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Affiliate Button */
 .affiliate-btn {
   background: transparent;
   border: 2px solid #04AA6D;
@@ -129,6 +154,7 @@
   margin-right: 0.5rem;
 }
 
+/* Product Card */
 .product-card {
   background: #1a1a1a;
   border: none;
@@ -166,6 +192,7 @@
   margin-bottom: 1rem;
 }
 
+/* Sidebar */
 .sidebar .widget {
   background: #2f2f2f;
   padding: 1.5rem;
@@ -175,15 +202,22 @@
 
 .sidebar h3 {
   color: #04AA6D;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 
 .sidebar p {
   color: #cccccc;
+  font-size: 0.9rem;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.75rem;
 }
 
 .sidebar ul li a {
   color: #fff;
+  font-size: 0.9rem;
   transition: color 0.3s;
 }
 
@@ -191,6 +225,7 @@
   color: #04AA6D;
 }
 
+/* FAQ Item */
 .faq-item {
   margin-bottom: 1.5rem;
 }
@@ -199,6 +234,7 @@
   font-size: 20px;
 }
 
+/* Sticky CTA */
 .sticky-cta {
   position: fixed;
   top: 20px; /* Aligns with the top edge, matching back-to-blog */
@@ -211,6 +247,12 @@
   display: block; /* Maintains existing behavior */
 }
 
+.sticky-cta .affiliate-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Breadcrumbs */
 #breadcrumbs {
   background: #1a1a1a;
   padding: 15px 0;
@@ -238,35 +280,7 @@
   color: #cccccc;
 }
 
-@media (max-width: 768px) {
-  .back-to-blog {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    top: 10px;
-    left: 10px;
-  }
-  .blog-article h1 {
-    font-size: 28px;
-  }
-  .blog-article h2, .blog-article h3 {
-    font-size: 20px;
-  }
-  .blog-article p, .blog-article ul, .blog-article ol {
-    font-size: 14px;
-  }
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
-  .faq-item h3 {
-    font-size: 18px;
-  }
-  .sidebar {
-    margin-top: 2rem;
-  }
-}
-
-/* Blog Landing Page Styles */
+/* Blog Hero Section */
 #blog-hero {
   position: relative;
   background: url('../img/cannabis-hero-bg.png') no-repeat center/cover;
@@ -303,14 +317,17 @@
   margin-bottom: 30px;
 }
 
+/* Section Title */
 .section-title {
   color: #fff;
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 20px;
   text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Blog Card */
 .blog-card {
   background: #1a1a1a;
   border-radius: 8px;
@@ -376,6 +393,7 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Category Badge */
 .category-badge {
   position: absolute;
   top: 10px;
@@ -407,6 +425,7 @@
   color: #aaaaaa;
 }
 
+/* Category Filter */
 .category-filter {
   display: flex;
   flex-wrap: wrap;
@@ -431,6 +450,7 @@
   color: #151515;
 }
 
+/* Blog Section */
 .blog-section {
   background: #151515;
   padding: 60px 0;
@@ -441,8 +461,531 @@
   padding: 40px 0;
 }
 
+/* References Section */
+.references {
+  background: #1a1a1a;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.references::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #04AA6D, #1e90ff);
+  z-index: 1;
+}
+
+.references .section-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.references-divider {
+  width: 100px;
+  height: 3px;
+  background: #04AA6D;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.references-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: list-counter;
+}
+
+.reference-item {
+  background: #2f2f2f;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.reference-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.reference-item::before {
+  content: counter(list-counter);
+  counter-increment: list-counter;
+  color: #04AA6D;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.reference-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  flex: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.reference-publisher {
+  color: #cccccc;
+  font-style: italic;
+  font-size: 14px;
+  flex: 1;
+}
+
+.reference-link {
+  background: transparent;
+  border: 2px solid #04AA6D;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.reference-link:hover {
+  background: #04AA6D;
+  color: #151515;
+  transform: scale(1.05);
+}
+
+/* Video Link Styles */
+.video-link { 
+  margin: 1em 0; 
+  text-align: center; 
+  font-size: 1.1em; 
+}
+
+.video-btn { 
+  color: #04AA6D; 
+  border: 1px solid #04AA6D; 
+  padding: 0.5em 1em; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  transition: all 0.3s ease; 
+}
+
+.video-btn:hover { 
+  background: #04AA6D; 
+  color: #151515; 
+}
+
+.video-btn i { 
+  margin-right: 0.5em; 
+}
+
+.youtube-btn {
+  background: transparent;
+  border: 2px solid #04AA6D;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.youtube-btn:hover {
+  background: #ff0000;
+  color: #151515;
+}
+
+.youtube-btn i {
+  margin-right: 0.5rem;
+  font-size: 1.2em;
+}
+
+.youtube-warning {
+  color: #aaaaaa;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Breeder List */
+.breeders-list {
+  margin-bottom: 3rem;
+}
+
+/* Breeder Row */
+.breeder-row {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: block;
+  clear: both;
+  transition: transform 0.2s ease-in-out;
+}
+
+.breeder-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure the last breeder row doesn't have extra margin */
+.breeder-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Breeder Background */
+.breeder-background {
+  position: relative;
+  width: 100%;
+  min-height: 300px; /* Desktop min-height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Black tint overlay */
+.breeder-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85); /* 85% black tint */
+  z-index: 1;
+}
+
+/* Gradient fade effect at the bottom */
+.breeder-background::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px; /* Height of the fade effect */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  z-index: 1;
+}
+
+/* Breeder Content */
+.breeder-content {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Align content to the top */
+  min-height: 300px; /* Match min-height of background */
+}
+
+/* Breeder Name and Description */
+.breeder-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.breeder-desc {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5rem; /* Add spacing between descriptions */
+}
+
+/* Enhance Top Seller Badge */
+.badge.bg-success {
+  background-color: #04AA6D !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Seed Bank Buttons */
+.seed-bank-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem; /* Add spacing above buttons */
+}
+
+.seed-bank-buttons .btn {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  transition: all 0.3s ease; /* Updated transition to include all properties */
+}
+
+.seed-bank-buttons .btn:hover {
+  background-color: #04AA6D;
+  color: #151515;
+  transform: scale(1.05); /* Slight scale on hover */
+  box-shadow: 0 0 8px rgba(4, 170, 109, 0.5); /* Subtle green glow */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+  .breeder-background {
+    min-height: 550px; /* Further increased min-height to ensure buttons fit */
+  }
+
+  .breeder-content {
+    padding: 0.75rem; /* Reduced padding for more content space */
+    min-height: 550px; /* Match min-height of background */
+  }
+
+  .breeder-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem; /* Reduced spacing */
+  }
+
+  .breeder-desc {
+    font-size: 0.85rem; /* Slightly smaller font size */
+    line-height: 1.3; /* Further reduced line-height for compactness */
+    margin-bottom: 0.3rem; /* Reduced spacing */
+  }
+
+  .seed-bank-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start;
+    gap: 0.2rem; /* Further reduced gap */
+    margin-top: 0.2rem; /* Reduced margin */
+  }
+
+  .seed-bank-buttons .btn {
+    margin-bottom: 0.2rem !important; /* Further reduced margin */
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem; /* Smaller font size for buttons */
+    padding: 0.25rem 0.5rem; /* Further reduced padding */
+  }
+
+  .breeder-content .col-12 {
+    margin-bottom: 0.3rem; /* Reduced spacing */
+  }
+
+  .breeder-content .text-md-end {
+    text-align: left !important;
+  }
+
+  .breeder-background::after {
+    height: 80px; /* Slightly shorter fade effect on mobile */
+  }
+}
+
+/* Grower Cheat Sheet */
+.grower-cheat-sheet {
+  padding: 2rem 0;
+  background: #1a1a1a;
+}
+
+.grower-cheat-sheet .section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.cheat-sheet-list ol {
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.cheat-sheet-list li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+.cheat-sheet-list strong {
+  color: #04AA6D;
+}
+
+.cta {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* Grower Stories */
+#grower-stories h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#grower-stories p {
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Back to Top */
+.back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #04AA6D;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #04AA6D;
+  z-index: 1000;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Share Buttons */
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.share-buttons p {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.share-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.share-btn:hover {
+  transform: scale(1.1);
+}
+
+.share-x {
+  background-color: #000;
+  color: #fff;
+}
+
+.share-x:hover {
+  background-color: #333;
+}
+
+.share-instagram {
+  background-color: #E1306C;
+  color: #fff;
+}
+
+.share-instagram:hover {
+  background-color: #C13584;
+}
+
+.share-facebook {
+  background-color: #3B5998;
+  color: #fff;
+}
+
+.share-facebook:hover {
+  background-color: #2D4373;
+}
+
+.share-reddit {
+  background-color: #FF4500;
+  color: #fff;
+}
+
+.share-reddit:hover {
+  background-color: #8B0000;
+}
+
+.share-copy {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.share-copy:hover {
+  background-color: #5a6268;
+}
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
+  .back-to-blog {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .blog-article {
+    padding: 40px 0;
+  }
+
+  .blog-article h1 {
+    font-size: 28px;
+  }
+
+  .blog-article h2, .blog-article h3 {
+    font-size: 20px;
+  }
+
+  .blog-article p, .blog-article ul, .blog-article ol {
+    font-size: 14px;
+  }
+
+  .product-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .faq-item h3 {
+    font-size: 18px;
+  }
+
+  .sidebar {
+    margin-top: 2rem;
+  }
+
   #blog-hero {
     padding: 60px 0;
   }
@@ -524,116 +1067,7 @@
   .card-meta {
     font-size: 10px;
   }
-}
 
-/* References Section Styles */
-.references {
-  background: #1a1a1a;
-  padding: 60px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.references::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #04AA6D, #1e90ff);
-  z-index: 1;
-}
-
-.references .section-title {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.references-divider {
-  width: 100px;
-  height: 3px;
-  background: #04AA6D;
-  margin-bottom: 30px;
-  border-radius: 2px;
-}
-
-.references-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.reference-item {
-  background: #2f2f2f;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 15px;
-}
-
-.reference-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.reference-title {
-  color: #fff;
-  font-weight: 600;
-  font-size: 16px;
-  flex: 1;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.reference-publisher {
-  color: #cccccc;
-  font-style: italic;
-  font-size: 14px;
-  flex: 1;
-}
-
-.reference-link {
-  background: transparent;
-  border: 2px solid #04AA6D;
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.reference-link:hover {
-  background: #04AA6D;
-  color: #151515;
-  transform: scale(1.05);
-}
-
-.reference-item::before {
-  content: counter(list-counter);
-  counter-increment: list-counter;
-  color: #04AA6D;
-  font-weight: 700;
-  font-size: 18px;
-  margin-right: 15px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-/* Reset counter for ordered list */
-.references-list {
-  counter-reset: list-counter;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
   .references {
     padding: 40px 0;
   }
@@ -664,71 +1098,69 @@
   .references-divider {
     width: 80px;
   }
-}
 
-/* Video Link Styles */
-.video-link { 
-  margin: 1em 0; 
-  text-align: center; 
-  font-size: 1.1em; 
-}
-.video-btn { 
-  color: #04AA6D; 
-  border: 1px solid #04AA6D; 
-  padding: 0.5em 1em; 
-  border-radius: 5px; 
-  text-decoration: none; 
-  transition: all 0.3s ease; 
-}
-.video-btn:hover { 
-  background: #04AA6D; 
-  color: #151515; 
-}
-.video-btn i { 
-  margin-right: 0.5em; 
-}
-
-.youtube-btn {
-  background: transparent;
-  border: 2px solid #04AA6D;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-weight: 600;
-  transition: all 0.3s;
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.youtube-btn:hover {
-  background: #ff0000;
-  color: #151515;
-}
-
-.youtube-btn i {
-  margin-right: 0.5rem;
-  font-size: 1.2em; /* Slightly larger for visibility */
-}
-
-.youtube-warning {
-  color: #aaaaaa;
-  font-size: 0.9em;
-  font-style: italic;
-  margin-top: 0.5rem;
-  text-align: center;
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
   .youtube-btn {
     padding: 0.4rem 0.8rem;
     font-size: 0.9em;
   }
+
   .youtube-btn i {
     font-size: 1em;
   }
+
   .youtube-warning {
     font-size: 0.8em;
+  }
+
+  .breeder-background {
+    height: 400px; /* Taller on mobile to accommodate stacked content */
+  }
+
+  .breeder-content {
+    padding: 1.5rem;
+  }
+
+  .breeder-name {
+    font-size: 1.25rem;
+  }
+
+  .breeder-desc {
+    font-size: 0.9rem;
+  }
+
+  .seed-bank-buttons {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .seed-bank-buttons .btn {
+    margin-bottom: 0.5rem !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  .breeder-content .col-12 {
+    margin-bottom: 1rem;
+  }
+
+  .breeder-content .text-md-end {
+    text-align: left !important;
+  }
+
+  .share-buttons {
+    gap: 0.75rem;
+  }
+
+  .share-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    margin-top: 3rem !important;
   }
 }
