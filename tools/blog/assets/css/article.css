@@ -1181,3 +1181,15 @@ html, .article-body {
     margin-top: 3rem !important;
   }
 }
+
+.manual-share-link {
+  display: none; /* Taller on mobile to accommodate stacked content */
+ /* display: inline-block; */
+  margin-top: 10px;
+  font-size: 14px;
+  color: #04AA6D;
+  text-decoration: underline;
+}
+.manual-share-link:hover {
+  color: #028a4e;
+}
