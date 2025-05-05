@@ -37332,5 +37332,57 @@ var data = [
           Sativa: "",
           Grow: "9",
           logo: "../../mygrow/assets/img/planet-of-the-grapes.png"
+        },
+        {
+          index: "2872",
+          strain: "Auto Glueberry OG",
+          info: "Auto Glueberry OG is an autoflower with a very strong and pungent aroma. Her fragrance can best be described as earthy and fruity with notes of diesel and chemicals. The excellent aroma and taste are two of the reasons this plant is so loved by the cannabis growing community.",
+          more: "In addition to the strong smell, the buds are also very sticky and full of resin. This makes this strain highly suited for those who want to use their buds to make concentrates such as 'rosin'. The thick layer of trichomes and resin ensures a great yield when making this type of cannabis concentrate. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+          THC: "24",
+          CBD: "",
+          Indica:"",
+          Hybrid:"",
+          Sativa: "60% SATIVA auto",
+          Grow: "6",
+          logo: "../../mygrow/assets/img/auto-glueberry-og.png"
+        },
+        {
+          index: "2873",
+          strain: "Auto Blackberry Kush",
+          info: "Auto Blackberry Kush is one of those autoflower strains that many growers fall in love with. The beautiful bright purple buds look so special that it is hard not to love them! It is a compact indica-dominant plant that usually produces plants with purple buds.",
+          more: "She belongs to the 'Blue-Family' because of her parents and the special fruity Blueberry aroma. These Blueberry genes provide the sweet and fruity notes in the complex aroma. The Hash plant provides the dominant Kush fragrance with earth and pine-like notes in this crossing. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+          THC: "20",
+          CBD: "",
+          Indica:"60% INDICA auto",
+          Hybrid:"",
+          Sativa: "",
+          Grow: "4",
+          logo: "../../mygrow/assets/img/auto-blackberry-kush.png"
+        },
+        {
+          index: "2874",
+          strain: "Runtz Auto",
+          info: "Runtz Autoflower Just like the original, it can bathe away your worries and strife in a sumptuous sea of fruity flavours, with killer buds that are smeared in an intoxicating layer of diverse cannabinoids.",
+          more: "This balanced yet saucy hybrid will deliver you to another flabbergasting level of relaxation, shattering mental tensions and ensuring you can carry on through your day, protected from any worries or negativity by a halo of positivity. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+          THC: "24",
+          CBD: "",
+          Indica:"",
+          Hybrid:"50% HYBRID auto",
+          Sativa: "",
+          Grow: "4",
+          logo: "../../mygrow/assets/img/runtz-auto.png"
+        },
+        {
+          index: "2875",
+          strain: "Gorilla Zkittlez Auto",
+          info: "Bubble and fizz your way through the day with Gorilla Zkittlez Auto. Your taste buds will explode as you experience the fruity flavours for the first time.",
+          more: "Beware of sensory overload, though; the medical effects of Gorilla Zkittlez Auto can be quite an exhilarating experience. AUTO: NEED TO SELECT 1-2 FOOT ON MYGROW FOR GUIDE",
+          THC: "25",
+          CBD: "",
+          Indica:"75% INDICA auto",
+          Hybrid:"",
+          Sativa: "",
+          Grow: "5",
+          logo: "../../mygrow/assets/img/gorilla-zkittlez-auto.png"
         }
 ];
