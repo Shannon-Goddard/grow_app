@@ -37384,5 +37384,31 @@ var data = [
           Sativa: "",
           Grow: "5",
           logo: "../../mygrow/assets/img/gorilla-zkittlez-auto.png"
+        },
+        {
+          index: "2876",
+          strain: "Zoap",
+          info: "Zoap is a hybrid weed strain made by crossing Rainbow Sherbet and Pink Guava; bred by Deo Farms of Oakland, CA. This evenly balanced powerhouse has a quick onset, bringing waves of euphoria and positivity.",
+          more: "Zoap started with packs of OZ Kush seeds from Dying Breed (Eddy OG x Z). Two of Deo's selections of OZ Kush became his Pink Guava. Then Deo crossed his Pink Guava to Sunset Sherbert and started the 'RS' line. 'RS' is short for Rainbow Sherbert. LA grower Wizard Trees selected the RS#11 and RS#54. Deo took the RS#16 and bred it back with RS to make Zoap.",
+          THC: "26",
+          CBD: "",
+          Indica:"",
+          Hybrid:"50% HYBRID",
+          Sativa: "",
+          Grow: "10",
+          logo: "../../mygrow/assets/img/zoap.png"
+        },
+        {
+          index: "2877",
+          strain: "Warermelon Mimosa",
+          info: "Watermelon Mimosa is a hybrid weed strain made from a genetic cross between  Watermelon Zkittlez and Jesus OG. Watermelon Mimosa is 26% THC, making this strain an ideal choice for experienced cannabis consumers.",
+          more: "Bred by Elyon Cannabis, Watermelon Mimosa features flavors like citrus, ammonia, and tropical. The dominant terpene of this strain is limonene.",
+          THC: "26",
+          CBD: "",
+          Indica:"",
+          Hybrid:"",
+          Sativa: "70% SATIVA",
+          Grow: "10",
+          logo: "../../mygrow/assets/img/watermelon-mimosa.png"
         }
 ];
