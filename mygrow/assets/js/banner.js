@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const banner = document.getElementById('growtogether-banner');
   const closeButton = document.querySelector('.banner-close');
 
-  // Check if banner was previously dismissed
-  if (localStorage.getItem('growtogetherBannerDismissed') === 'true') {
+  // Check if update banner was previously dismissed
+  if (localStorage.getItem('updateBannerDismissed') === 'true') {
     banner.classList.add('hidden');
   }
 
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (closeButton) {
     closeButton.addEventListener('click', function () {
       banner.classList.add('hidden');
-      localStorage.setItem('growtogetherBannerDismissed', 'true');
+      localStorage.setItem('updateBannerDismissed', 'true');
     });
   }
 });
