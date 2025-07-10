@@ -37462,5 +37462,18 @@ var data = [
           Sativa: "",
           Grow: "5",
           logo: "../../mygrow/assets/img/supreme-runtz-f3.png"
+        },
+                {
+          index: "2882",
+          strain: "Frosted Guava",
+          info: "Frosted Guava is a super-resinous treat bred from Guava and Frosted Skywalker. Balancing versatile grow traits with exotic, fruity aromas and a relaxing, clear-headed experience, Frosted Guava is a fine choice for any garden.",
+          more: "Note that, given the space, Frosted Guava will surge in height. For smaller grow rooms and tents, 5–5.3 gallon pots should work for a single plant, whereas 2.6–4 gallon pots will work better if you’re planning to grow multiple plants in the same room. In a tent or room, expect to see harvests of roughly 1.3–1.5 oz/ft² after 70 days of bloom. If you’re growing outdoors and have the space, feel free to plant Frosted Guava in 11.9–13.2 gallon pots for bigger plants and harvests (up to 1.1 lbs/plant). Just keep in mind to trim, defoliate, and train this strain in order to manage its size!",
+          THC: "22",
+          CBD: "",
+          Indica:"70% INDICA",
+          Hybrid:"",
+          Sativa: "",
+          Grow: "11",
+          logo: "../../mygrow/assets/img/frosted-guava.png"
         }
 ];
