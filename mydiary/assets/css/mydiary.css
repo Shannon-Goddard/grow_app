@@ -1,0 +1,230 @@
+/* Base styles */
+body {
+    padding-top: 70px;
+    background-color: #333;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+/* Container for camera and data */
+#data-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 200px);
+    min-height: 300px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Camera and photo elements */
+#camera-view, #captured-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#camera-view {
+    z-index: 1;
+}
+
+#captured-photo {
+    z-index: 2;
+    display: none;
+}
+
+/* Data overlay */
+#data-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 5;
+}
+
+/* Table styles */
+#data-overlay table {
+    width: 100%;
+    margin-bottom: 0;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+#data-overlay th, #data-overlay td {
+    padding: 2px 5px;
+    text-align: left;
+    border-color: rgba(255, 255, 255, 0.2);
+    overflow: visible;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+/* Column selector */
+#column-selector {
+    max-height: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    white-space: normal;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: black;
+    z-index: 10;
+    overflow-x: auto;
+}
+
+.column-option {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+
+/* Camera controls */
+.camera-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    border: 2px solid white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.camera-controls, .photo-controls {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.photo-controls {
+    display: none;
+}
+
+/* Button styles */
+.get-started-btn {
+    color: #fff;
+    border-radius: 4px;
+    padding: 7px 25px 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    border: 2px solid #04AA6D;
+}
+
+.get-started-btn:hover {
+    background: #04AA6D;
+    color: #343a40;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 992px) {
+    .get-started-btn {
+        padding: 7px 20px 8px 20px;
+        margin-right: 15px;
+    }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    #data-container {
+        height: calc(100vh - 180px);
+    }
+    
+    .column-option {
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    .camera-controls, .photo-controls {
+        bottom: 20px;
+    }
+    
+    .camera-button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    #column-selector {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    body {
+        padding-top: 50px;
+    }
+    
+    #data-container {
+        height: calc(100vh - 100px);
+    }
+    
+    .camera-controls, .photo-controls {
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        left: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #data-overlay {
+        font-size: 12px;
+        max-height: 40%;
+        overflow-y: auto;
+    }
+    
+    #column-selector {
+        padding: 5px;
+        max-height: 150px;
+        overflow-y: auto;
+        white-space: nowrap;
+    }
+
+    .column-option {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .camera-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        margin: 5px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    #data-overlay th, #data-overlay td {
+        padding: 1px 3px;
+        font-size: 12px;
+    }
+}

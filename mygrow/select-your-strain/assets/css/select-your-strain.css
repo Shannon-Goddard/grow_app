@@ -1,0 +1,54 @@
+#strainListContainer {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: static; /* Already set, kept for clarity */
+  /* Removed box-shadow, background-color, and z-index to integrate into page */
+}
+
+#strainList li {
+  padding: 10px;
+  font-size: 24px;
+  color: #FFFFFF; /* Keep text color, adjust if needed to match page theme */
+  text-shadow: 1px 1px #000; /* Keep text shadow for readability */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  min-height: 60px;
+  box-sizing: border-box;
+}
+
+#strainList li img {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+#strainList li span {
+  flex-grow: 1;
+}
+
+#strainList li:hover:not(.header) {
+  background-color: #04AA6D; /* Keep hover effect */
+}
+
+#strainList li.selected {
+  background-color: #04AA6D; /* Keep selected style for keyboard navigation */
+}
+
+/* Ensure the input container is styled to flow naturally */
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+#myInput {
+  width: 100%;
+  padding: 10px;
+  background-color: #000; /* Example: Match page background */
+  color: #FFFFFF;
+  border: 1px solid #04AA6D;
+  border-radius: 4px;
+}

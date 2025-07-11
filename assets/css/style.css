@@ -92,25 +92,36 @@ main {
 #  Get Startet Button
 --------------------------------------------------------------*/
 .get-started-btn {
-  color: #fff;
+  color: #fff !important;
+  background: transparent;
   border-radius: 4px;
   padding: 7px 25px 8px 25px;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 14px;
+  font-weight: 600;
   display: inline-block;
-  border: 2px solid #04AA6D; 
+  border: 2px solid #04AA6D;
+  text-decoration: none !important;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
 }
 
-.get-started-btn:hover {
-  background: #04AA6D; 
-  color: #343a40;
+.get-started-btn:hover,
+.get-started-btn:focus,
+.get-started-btn:active {
+  background: #04AA6D !important;
+  color: #343a40 !important;
+  text-decoration: none !important;
+  transform: none;
 }
 
 @media (max-width: 992px) {
   .get-started-btn {
     padding: 7px 20px 8px 20px;
     margin-right: 15px;
+    font-size: 13px;
   }
 }
 
@@ -271,100 +282,49 @@ main {
   color: #151515;
 }
 /*--------------------------------------------------------------
-# grow
+# MyGrow
 --------------------------------------------------------------*/
-.grow {
-  padding-top: 20px;
+#growContainer .icon-box {
+  padding: 15px;
 }
 
-.grow .icon-box {
-  padding-left: 15px;
-}
-
-.grow .icon-box h4 {
+#growContainer .icon-box h3 {
   font-size: 20px;
   font-weight: 700;
-  margin: 5px 0 10px 60px;
+  padding: 0;
 }
 
-.grow .icon-box i {
-  font-size: 48px;
+#growContainer .icon-box i {
+  font-size: 20px;
   float: left;
-  color: #04AA6D; 
+  color: #fff; 
 }
 
-.grow .icon-box p {
-  font-size: 15px;
-  color: #848484;
-  margin-left: 60px;
-}
-
-.grow .image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400px;
-}
 /*--------------------------------------------------------------
-# diary
+# DeleteButton
 --------------------------------------------------------------*/
-.diary {
-  padding-top: 20px;
-}
-
-.diary .icon-box {
-  text-align: center;
-  border: 1px solid #ebebeb;
-  padding: 80px 20px;
-  transition: all ease-in-out 0.3s;
-  background: #fff;
-}
-
-.diary .icon-box .icon {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #04AA6D; 
+.DeleteButton {
+  background: transparent;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transition: 0.3s;
-}
-
-.diary .icon-box .icon i {
-  color: #151515;
-  font-size: 28px;
+  padding: 5px 5px 5px 5px;
   transition: ease-in-out 0.3s;
-}
-
-.diary .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.diary .icon-box h4 a {
-  color: #151515;
-  transition: ease-in-out 0.3s;
-}
-
-.diary .icon-box h4 a:hover {
-  color: #04AA6D; 
-}
-
-.diary .icon-box p {
-  line-height: 24px;
+  border: 1px solid red;
+  color: #FFFFFF;
   font-size: 14px;
-  margin-bottom: 0;
+  text-align: center;
+  margin-top: 5px;
 }
 
-.diary .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  transform: translateY(-10px);
+.DeleteButton:hover {
+  background: red; 
+  color: #343a40;
 }
+
+/*--------------------------------------------------------------
+# MyDiary
+--------------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -1283,28 +1243,6 @@ main {
   display: none;
 }
 
-
-/*--------------------------------------------------------------
-# DeleteButton
---------------------------------------------------------------*/
-.DeleteButton {
-   
-
-  background: transparent;
-  padding: 5px 5px 5px 5px;
-  transition: ease-in-out 0.3s;
-  border: 1px solid red;
-  color: #FFFFFF;
-
-  text-align: center;
-}
-
-.DeleteButton:hover {
-  background: red; 
-  color: #343a40;
-}
-
-
 /*-------------------------------------------------------------
 # MyTask Save/Edit Button
 --------------------------------------------------------------*/
@@ -1514,6 +1452,11 @@ th {
   color: #fff;
 }
 
+#taskTable tr:hover:not(.header) {
+  background-color: #04AA6D; /* Add a hover effect to all links, except for headers */
+  color: #fff;
+}
+
 #nutes {
   overflow: auto;
   width:auto;
@@ -1538,566 +1481,6 @@ th {
 
 .listPrint:hover {
   color: #04AA6D;
-}
-
-#MammothGardenGrowMe_head {
-  display: none;
-}
-.MammothGardenGrowMe {
-  display: none;
-}
-
-#MammothGardenProtectMe_head {
-  display: none;
-}
-.MammothGardenProtectMe {
-  display: none;
-}
-
-#BioThriveGrow_head {
-  display: none;
-}
-.BioThriveGrow {
-  display: none;
-}
-
-#BioThriveBloom_head {
-  display: none;
-}
-.BioThriveBloom {
-  display: none;
-}
-
-#BCGrow_head {
-  display: none;
-}
-.BCGrow {
-  display: none;
-}
-
-#BCBoost_head {
-  display: none;
-}
-.BCBoost {
-  display: none;
-}
-
-#BCBloom_head {
-  display: none;
-}
-.BCBloom {
-  display: none;
-}
-
-#SugarDaddy_head {
-  display: none;
-}
-.SugarDaddy {
-  display: none;
-}
-
-#ROOT66_head {
-  display: none;
-}
-.ROOT66 {
-  display: none;
-}
-
-#ThriveAliveRed_head {
-  display: none;
-}
-.ThriveAliveRed {
-  display: none;
-}
-
-#ThriveAliveGreen_head {
-  display: none;
-}
-.ThriveAliveGreen {
-  display: none;
-}
-
-#MagiCal_head {
-  display: none;
-}
-.MagiCal {
-  display: none;
-}
-
-#AwesomeBlossoms_head {
-  display: none;
-}
-.AwesomeBlossoms {
-  display: none;
-}
-
-#RootechCloningGel_head {
-  display: none;
-}
-.RootechCloningGel {
-  display: none;
-}
-
-#FloraGro_head {
-  display: none;
-}
-.FloraGro {
-  display: none;
-}
-
-#FloraBloom_head {
-  display: none;
-}
-.FloraBloom {
-  display: none;
-}
-
-#FloraMicro_head {
-  display: none;
-}
-.FloraMicro {
-  display: none;
-}
-
-#BigBloom_head {
-  display: none;
-}
-.BigBloom {
-  display: none;
-}
-
-#GrowBig_head {
-  display: none;
-}
-.GrowBig {
-  display: none;
-}
-
-#TigerBloom_head {
-  display: none;
-}
-.TigerBloom {
-  display: none;
-}
-
-#Boomerang_head {
-  display: none;
-}
-.Boomerang {
-  display: none;
-}
-
-#Kangaroots_head {
-  display: none;
-}
-.Kangaroots {
-  display: none;
-}
-#MicrobeBrew_head {
-  display: none;
-}
-.MicrobeBrew {
-  display: none;
-}
-#WhollyMackerel_head {
-  display: none;
-}
-.WhollyMackerel {
-  display: none;
-}
-#KelpMeKelpYou_head {
-  display: none;
-}
-.KelpMeKelpYou {
-  display: none;
-}
-#Bembe_head {
-  display: none;
-}
-.Bembe {
-  display: none;
-}
-#OpenSesame_head {
-  display: none;
-}
-.OpenSesame {
-  display: none;
-}
-#BeastieBloomz_head {
-  display: none;
-}
-.BeastieBloomz {
-  display: none;
-}
-#ChaChing_head {
-  display: none;
-}
-.ChaChing {
-  display: none;
-}
-
-#VooDooJuice_head {
-  display: none;
-}
-.VooDooJuice {
-  display: none;
-}
-
-#BigBud_head {
-  display: none;
-}
-.BigBud {
-  display: none;
-}
-
-#B-52_head {
-  display: none;
-}
-.B-52 {
-  display: none;
-}
-
-#Overdrive_head {
-  display: none;
-}
-.Overdrive {
-  display: none;
-}
-
-#Piranha_head {
-  display: none;
-}
-.Piranha {
-  display: none;
-}
-
-#BudCandy_head {
-  display: none;
-}
-.BudCandy {
-  display: none;
-}
-
-#FinalPhaze_head {
-  display: none;
-}
-.FinalPhaze {
-  display: none;
-}
-
-#Tarantula_head {
-  display: none;
-}
-.Tarantula {
-  display: none;
-}
-
-#Nirvana_head {
-  display: none;
-}
-.Nirvana {
-  display: none;
-}
-
-#Sensizym_head {
-  display: none;
-}
-.Sensizym {
-  display: none;
-}
-
-#BudIgnitor_head {
-  display: none;
-}
-.BudIgnitor {
-  display: none;
-}
-
-#RhinoSkin_head {
-  display: none;
-}
-.RhinoSkin {
-  display: none;
-}
-
-#BudFactorX_head {
-  display: none;
-}
-.BudFactorX {
-  display: none;
-}
-
-#GROWPowder_head {
-  display: none;
-}
-.GROWPowder {
-  display: none;
-}
-
-#CALMAGPowder_head {
-  display: none;
-}
-.CALMAGPowder {
-  display: none;
-}
-
-#BLOOMPowder_head {
-  display: none;
-}
-.BLOOMPowder {
-  display: none;
-}
-
-#BOOSTPowder_head {
-  display: none;
-}
-.BOOSTPowder {
-  display: none;
-}
-
-#CARBOFLUSHPowder_head {
-  display: none;
-}
-.CARBOFLUSHPowder {
-  display: none;
-}
-
-#pHPerfectMicro_head {
-  display: none;
-}
-.pHPerfectMicro {
-  display: none;
-}
-
-#pHPerfectBloom_head {
-  display: none;
-}
-.pHPerfectBloom {
-  display: none;
-}
-
-#pHPerfectGrow_head {
-  display: none;
-}
-.pHPerfectGrow {
-  display: none;
-}
-
-#Biofuel_head {
-  display: none;
-}
-.Biofuel {
-  display: none;
-}
-
-#Continum_head {
-  display: none;
-}
-.Continum {
-  display: none;
-}
-
-#Dune_head {
-  display: none;
-}
-.Dune {
-  display: none;
-}
-
-#Lumina_head {
-  display: none;
-}
-.Lumina {
-  display: none;
-}
-
-#NeroSC_head {
-  display: none;
-}
-.NeroSC {
-  display: none;
-}
-
-#TribusOriginal_head {
-  display: none;
-}
-.TribusOriginal {
-  display: none;
-}
-
-#Tundra_head {
-  display: none;
-}
-.Tundra {
-  display: none;
-}
-
-#Cal-Mag_head {
-  display: none;
-}
-.Cal-Mag {
-  display: none;
-}
-
-#FloraNovaGrow_head {
-  display: none;
-}
-.FloraNovaGrow {
-  display: none;
-}
-
-#FloraNovaBloom_head {
-  display: none;
-}
-.FloraNovaBloom {
-  display: none;
-}
-
-#ProTekt_head {
-  display: none;
-}
-.ProTekt {
-  display: none;
-}
-
-#FoliagePro_head {
-  display: none;
-}
-.FoliagePro {
-  display: none;
-}
-
-#BLOOM_head {
-  display: none;
-}
-.BLOOM {
-  display: none;
-}
-
-#MagPro_head {
-  display: none;
-}
-.MagPro {
-  display: none;
-}
-
-#KLN_head {
-  display: none;
-}
-.KLN {
-  display: none;
-}
-
-#PUREBLENDPROGROW_head {
-  display: none;
-}
-.PUREBLENDPROGROW {
-  display: none;
-}
-
-#PUREBLENDPROBLOOM_head {
-  display: none;
-}
-.PUREBLENDPROBLOOM {
-  display: none;
-}
-
-#LIQUIDKARMA_head {
-  display: none;
-}
-.LIQUIDKARMA {
-  display: none;
-}
-
-#HYDROPLEX_head {
-  display: none;
-}
-.HYDROPLEX {
-  display: none;
-}
-
-#SWEETRAW_head {
-  display: none;
-}
-.SWEETRAW {
-  display: none;
-}
-
-#HYDROGUARD_head {
-  display: none;
-}
-.HYDROGUARD {
-  display: none;
-}
-
-#RHIZOBLAST_head {
-  display: none;
-}
-.RHIZOBLAST {
-  display: none;
-}
-
-#WormCastings_head {
-  display: none;
-}
-.WormCastings {
-  display: none;
-}
-
-#AllPurpose_head {
-  display: none;
-}
-.AllPurpose {
-  display: none;
-}
-
-#PowerBloom_head {
-  display: none;
-}
-.PowerBloom {
-  display: none;
-}
-
-#GlacialRockDust_head {
-  display: none;
-}
-.GlacialRockDust {
-  display: none;
-}
-
-#SuperFly_head {
-  display: none;
-}
-.SuperFly {
-  display: none;
-}
-
-#Greensand_head {
-  display: none;
-}
-.Greensand {
-  display: none;
-}
-
-#FeatherMeal_head {
-  display: none;
-}
-.FeatherMeal {
-  display: none;
-}
-
-#MineralizedPhosphate_head {
-  display: none;
-}
-.MineralizedPhosphate {
-  display: none;
-}
-
-#SolubleSeaweedExtract_head {
-  display: none;
-}
-.SolubleSeaweedExtract {
-  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -2286,9 +1669,9 @@ background: url(../img/pot-image.png) no-repeat center center fixed;
   background-color: #fff;
 }
 
-body {
-  visibility: hidden;
-}
+ body { 
+  visibility: hidden; 
+ } 
 
 .loaded body {
   visibility: visible;
@@ -2306,3 +1689,49 @@ body {
     font-size: inherit;
 }
 
+/*--------------------------------------------------------------
+# Toast notification system 
+--------------------------------------------------------------*/
+.toast-container {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 1050;
+  max-width: 300px;
+}
+
+.toast-notification {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  animation: fadeIn 0.3s, fadeOut 0.3s 2.7s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-left: 4px solid #f44336;
+}
+
+.toast-notification.success {
+  border-left: 4px solid #04AA6D;
+}
+
+.toast-notification.info {
+  border-left: 4px solid #2196F3;
+}
+
+.is-invalid {
+  border-color: #f44336 !important;
+  box-shadow: 0 0 0 0.2rem rgba(244, 67, 54, 0.25) !important;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1; transform: translateY(0);}
+  to {opacity: 0; transform: translateY(-20px);}
+}

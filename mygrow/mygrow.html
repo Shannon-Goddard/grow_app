@@ -55,17 +55,6 @@
         <a id="taskButton" href="../mygrow/mytask/mytask.html" class="get-started-btn scrollto">MyTask</a>
       </div>
     </header><!-- End Header -->
-
-    <div id="growtogether-banner" class="banner" data-aos="fade-down" data-aos-duration="600">
-      <div class="banner-content">
-        <i class="fas fa-leaf banner-icon"></i>
-        <span class="banner-text"><strong>Important Update: </strong>GrowApp - Cannabis Guide Transition & New GrowApp - Cannabis App!</span>
-        <a href="../tools/grow-together/grow-together.html" class="banner-cta affiliate-btn" aria-label="More info">
-          <i class="fa-solid fa-circle-info"></i> More Info
-        </a>
-        <button class="banner-close" aria-label="Close banner">&times;</button>
-      </div>
-    </div>
     
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center justify-content-center">
@@ -78,88 +67,22 @@
           </div>
         </div>
 
-        <div class="row gy-4 my-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-          
-          <div id="MyGrowAdd" class="col-xl-2 col-md-4"><!-- ======= add grow ======= -->
-            <div class="icon-box">
-              <a href="../mygrow/select-your-strain/select-your-strain-1.html">
-                <i class="fa fa-plus"></i>
-                <h3>AddGrow</h3>
-              </a>
-            </div>
-          </div>
-          
-          <div id="MyGrowText" class="col-xl-2 col-md-4"><!-- ======= mygrow ======= -->
-            <div class="icon-box">
-              <a href="../mygrow/information-overload/information-overload-1.html">
-                <img id="mylogo" src="" class="img-fluid" alt="Grow 1 Logo">
-                <h3>MyGrow</h3>
-              </a>
-              <button id="DeleteButton" class="DeleteButton btn btn-secondary btn-sm" type="button" value=""><i class="fa fa-trash-can"></i>DELETE</button><!-- ======= delete ======= -->
-            </div>
-          </div>
+       <div class="row gy-4 my-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+  <!-- Add Grow Button -->
+  <div id="MyGrowAdd" class="col-xl-2 col-md-4">
+    <div class="icon-box">
+      <a href="../mygrow/select-your-strain/select-your-strain-1.html">
+        <i class="fa fa-plus"></i>
+        <h3>AddGrow</h3>
+      </a>
+    </div>
+  </div>
 
-          <div id="MyGrow2Add" class="col-xl-2 col-md-4"><!-- ======= add grow ======= -->
-            <div class="icon-box">
-              <a href="../mygrow/select-your-strain/select-your-strain-2.html">
-                <i class="fa fa-plus"></i>
-                <h3>AddGrow</h3>
-              </a>
-            </div>
-          </div>
-          
-          <div id="MyGrow2Text" class="col-xl-2 col-md-4"><!-- ======= mygrow ======= -->
-            <div class="icon-box">
-              <a href="../mygrow/information-overload/information-overload-2.html">
-                <img id="my2logo" src="" class="img-fluid" alt="Grow 2 Logo">
-                <h3>MyGrow</h3>
-              </a>
-              <button id="Delete2Button" class="DeleteButton btn btn-secondary btn-sm" type="button" value=""><i class="fa fa-trash-can"></i>DELETE</button><!-- ======= delete ======= -->
-            </div>
-          </div>
-
-          <div id="MyGrow3Add" class="col-xl-2 col-md-4"><!-- ======= add grow ======= -->
-            <div class="icon-box">
-              <a href="../mygrow/select-your-strain/select-your-strain-3.html">
-                <i class="fa fa-plus"></i>
-                <h3>AddGrow</h3>
-              </a>
-            </div>
-          </div>
-          
-          <div id="MyGrow3Text" class="col-xl-2 col-md-4"><!-- ======= mygrow ======= -->
-            <div class="icon-box">
-              <a href="../mygrow/information-overload/information-overload-3.html">
-                <img id="my3logo" src="" class="img-fluid" alt="Grow 3 Logo">
-                <h3>MyGrow</h3>
-              </a>
-              <button id="Delete3Button" class="DeleteButton btn btn-secondary btn-sm" type="button" value=""><i class="fa fa-trash-can"></i>DELETE</button><!-- ======= delete ======= -->
-            </div>
-          </div>
-
-          <div id="MyGrow4Add" class="col-xl-2 col-md-4"><!-- ======= add grow ======= -->
-            <div class="icon-box">
-              <a href="../mygrow/select-your-strain/select-your-strain-4.html">
-                <i class="fa fa-plus"></i>
-                <h3>AddGrow</h3>
-              </a>
-            </div>
-          </div>
-          
-          <div id="MyGrow4Text" class="col-xl-2 col-md-4"><!-- ======= mygrow ======= -->
-            <div class="icon-box">
-              <a href="../mygrow/information-overload/information-overload-4.html">
-                <img id="my4logo" src="" class="img-fluid" alt="Grow 4 Logo">
-                <h3>MyGrow</h3>
-              </a>
-              <button id="Delete4Button" class="DeleteButton btn btn-secondary btn-sm" type="button" value=""><i class="fa fa-trash-can"></i>DELETE</button><!-- ======= delete ======= -->
-            </div>
-          </div>
-
-          </div>
-
-        </div>
-      </div>
+  <!-- Container for dynamically added grow cards -->
+  <div id="growContainer" class="row gy-4 justify-content-center">
+    <!-- Grows will be dynamically added here via JavaScript -->
+  </div>
+</div>
     </section><!-- End Hero -->
     
     <!-- ======= .navbar ======= -->
@@ -186,8 +109,10 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" crossorigin="anonymous"></script>
     <!-- Keep your custom scripts local -->
     <script defer src="../assets/js/main.js"></script>
-    <script defer src="../mygrow/assets/js/app.js"></script>
-    <script defer src="assets/js/banner.js"></script>
+    <!-- Add this script before app.js in mygrow.html -->
+    <script type="module" src="common/js/indexedDBService.js"></script>
+    <script defer type="module" src="assets/js/app.js"></script>
+    <script defer type="module" src="assets/js/banner.js"></script>
   
   </body>
   </html>

@@ -52,7 +52,7 @@
     <header id="header" class="fixed-top ">
       <div class="container d-flex align-items-center justify-content-lg-between">
         <h1 class="logo me-auto me-lg-0"><a href="#"><span></span></a></h1>
-        <a id="taskButton" href="../../mygrow/information-overload/information-overload-1.html" class="get-started-btn scrollto" rel=”nofollow” style="display: none;">BuildGrow</a>
+        <a id="taskButton" href="../../mygrow/information-overload/information-overload-1.html" class="get-started-btn scrollto" rel="nofollow" style="display: none;">Save and Continue</a>
       </div>
     </header><!-- End Header -->
     
@@ -74,13 +74,14 @@
         
      
           <div id="box" class="container mb-5">
-            <label for="start" aria-label="Select start date">Start date:</label>
-            <input type="date" id="start" name="trip-start" value="" aria-label="Start date selection">
-            <br>
-            <br>
-            <div class="image"><img id="image" src="" style="width:45%;" alt="Plant growth guide"></div>
-            <p>With <span id="strain"></span>'s flowering time and the vegetative weeks to get your plant <span id="Grow"></span> tall, it will take about <span id="info"></span> to grow from seed to harvest.</p>
-          </div>
+  <label for="start" aria-label="Select start date">Start date:</label>
+  <input type="date" id="start" name="trip-start" value="" aria-label="Start date selection">
+  <br>
+  <br>
+  <div class="image" style="display: flex; justify-content: center; align-items: center;">
+    <img id="image" src="" style="width: 300px; max-width: 80%; height: auto;" alt="Plant growth guide">
+  </div>
+</div>
           
         </div>
       
@@ -109,10 +110,12 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" crossorigin="anonymous"></script>
     <!-- Keep your custom scripts local -->
     <script src="../../assets/js/main.js"></script>
-    <script src="../../mygrow/build-your-guide/assets/js/plantConfig.js"></script>
-    <script src="../../mygrow/build-your-guide/assets/js/storage.js"></script>
-    <script src="../../mygrow/build-your-guide/assets/js/dateUtils.js"></script>
-    <script src="../../mygrow/build-your-guide/assets/js/app.js"></script>
+    <script type="module" src="../common/js/indexedDBService.js"></script>
+    <script type="module" src="../common/js/storage.js"></script>
+    <script type="module" src="assets/js/plant-config.js"></script>
+    <script type="module" src="assets/js/date-manager.js"></script>
+    <script type="module" src="assets/js/schedule-generator.js"></script>
+    <script type="module" src="assets/js/app.js"></script>
 
  </body>
  </html>

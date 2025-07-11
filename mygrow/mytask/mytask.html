@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWP9QD7GPL"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-KWP9QD7GPL');
+    gtag('config', 'G-X0XEMR28V2');
     </script>
     <!-- Character encoding and viewport -->
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
     <meta name="robots" content="noindex,nofollow">
     <!-- Basic SEO -->
     <title>MyGrow</title>
-    <meta name="description" content="MyTask">
+    <meta name="description" content="My Task">
     <!-- Cache Control -->
     <meta http-equiv="Cache-Control" content="max-age=31536000, public">
     <!-- Security Headers -->
@@ -40,61 +40,60 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- Keep your custom styles local -->
     <link href="../../assets/css/style.css" rel="stylesheet">
-  
   </head>
   
   <body class="customBody">
-
-    <div id="loader-wrapper">
-      <!-- Optional: Add a loading spinner or animation here -->
-    </div>
-    
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top ">
       <div class="container d-flex align-items-center justify-content-lg-between">
         <h1 class="logo me-auto me-lg-0"><a href="#"><span></span></a></h1>
-        <a href="../../mydiary/mydiary.html" class="get-started-btn scrollto" rel=”nofollow”>MyDiary</a>
+        <a href="../../mygrow/information-overload/information-overload-1.html" class="get-started-btn scrollto" rel="nofollow">Information Overload</a>
       </div>
     </header><!-- End Header -->
-      
-      <main id="main">
-        <!-- ======= Breadcrumbs ======= -->
-        <section id="breadcrumbs" class="breadcrumbs">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h2>My<b>Task</b></h2>
-                </div>
-            </div>
-        </section><!-- End Breadcrumbs -->
     
-        <!-- ======= Table Section 1 ======= -->
-        <div id="table1-section">
-            <div class="table-responsive">
-                <table id="table1" class="table-condensed" style="color: whitesmoke;"></table>
+    <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <ol>
+                    <li>My<b>Task</b></li>
+                </ol>
             </div>
-        </div><!-- ===== END Table Section 1 -->
-    
-        <!-- ======= Table Section 2 ======= -->
-        <div id="table2-section">
-            <div class="table-responsive">
-                <table id="table2" class="table-condensed" style="color: whitesmoke;"></table>
+        </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Grow Selection ======= -->
+    <div class="container" style="display: block;">
+        <div class="row">
+            <div class="col-md-6">
+                <form id="growForm" method="GET">
+                    <label for="growSelect">Select Grow:</label>
+                    <select id="growSelect" name="growId">
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                </form>
+                <script>
+                document.getElementById('growForm').onsubmit = function(e) {
+                    e.preventDefault();
+                    const selectedGrowId = document.getElementById('growSelect').value;
+                    localStorage.setItem('currentGrowId', selectedGrowId);
+                    window.location.reload();
+                };
+                </script>
             </div>
-        </div><!-- ===== END Table Section 2 -->
-    
-        <!-- ======= Table Section 3 ======= -->
-        <div id="table3-section">
-            <div class="table-responsive">
-                <table id="table3" class="table-condensed" style="color: whitesmoke;"></table>
-            </div>
-        </div><!-- ===== END Table Section 3 -->
-    
-        <!-- ======= Table Section 4 ======= -->
-        <div id="table4-section">
-            <div class="table-responsive">
-                <table id="table4" class="table-condensed" style="color: whitesmoke;"></table>
-            </div>
-        </div><!-- ===== END Table Section 4 -->
-    </main><!-- End #main -->
+        </div>
+    </div>
+
+    <!-- ======= Task Table Section ======= -->
+    <div class="container-fluid mt-4">
+        <div class="table-responsive-sm">
+            <table id="taskTable">
+                <!-- Table content populated by mytask.js -->
+            </table>
+        </div>
+    </div><!-- ====== END Task Table Section -->
+</main>
     
    <!-- ======= .navbar ======= -->
    <div id="preloader"></div>
@@ -110,21 +109,25 @@
      </ul>
    </nav><!-- .navbar -->
 
-    <!-- Essential libraries from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <!-- Non-critical vendor scripts -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" crossorigin="anonymous"></script>
-    <!-- Keep your custom scripts local -->
-   <script src="../../assets/js/main.js"></script>
-   <script src="../../mygrow/mytask/assets/js/save.js"></script>
-   <script src="../../mygrow/mytask/assets/js/table1.js"></script>
-   <script src="../../mygrow/mytask/assets/js/table2.js"></script>
-   <script src="../../mygrow/mytask/assets/js/table3.js"></script>
-   <script src="../../mygrow/mytask/assets/js/table4.js"></script>
-   
+<!-- Essential libraries from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<!-- Non-critical vendor scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" crossorigin="anonymous"></script>
+<!-- Keep your custom scripts local -->
+<script src="../../assets/js/main.js"></script> 
+<script type="module">
+    import { IndexedDBService } from '../../mygrow/common/js/indexedDBService.js';
+    window.IndexedDBService = IndexedDBService;
+</script>
+<script type="module" src="../../mygrow/information-overload/assets/js/nutrient-display.js"></script>
+<script type="module" src="../../mygrow/information-overload/assets/js/grow-selector.js"></script>
+<script type="module" src="../../mygrow/information-overload/assets/js/plant-size-filter.js"></script>
+<script type="module" src="../../mygrow/information-overload/assets/js/table-renderer.js"></script>
+<script type="module" src="../../mygrow/mytask/assets/js/mytask.js"></script>
+
  </body>
  </html>
