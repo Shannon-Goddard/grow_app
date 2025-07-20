@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Analytics - Keep for user insights -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X0XEMR28V2');
+    </script>
+    
+    <!-- Essential Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <!-- Mobile WebView Optimizations -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    
+    <!-- Performance Optimizations -->
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="../../assets/css/style.css" as="style">
+    
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    
+    <title>Schedule Builder</title>
+  </head>
+  
+  <body class="customBody">
+
+    <div id="loader-wrapper">
+      <!-- Optional: Add a loading spinner or animation here -->
+    </div>
+    
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center justify-content-lg-between">
+        <h1 class="logo me-auto me-lg-0"><a href="#"><span></span></a></h1>
+        <a id="taskButton" href="../../mygrow/schedule-viewer/schedule-viewer.html" class="get-started-btn scrollto" rel="nofollow" style="display: none;">Save and Continue</a>
+      </div>
+    </header><!-- End Header -->
+    
+    <main id="main" class="container">
+      
+      <!-- ======= Grow Info Section ======= -->
+      <section id="hero">
+
+        <div class="container" data-aos="fade-up">
+
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-xl-6 col-lg-8">
+              <h1>BUILD YOU<span>R</span></h1>
+              <h2>guide</h2>
+
+            </div>
+          </div>
+        
+        
+     
+          <div id="box" class="container mb-5">
+  <label for="start" aria-label="Select start date">Start date:</label>
+  <input type="date" id="start" name="trip-start" value="" aria-label="Start date selection">
+  <br>
+  <br>
+  <div class="image" style="display: flex; justify-content: center; align-items: center;">
+    <img id="image" src="" style="width: 300px; max-width: 80%; height: auto;" alt="Plant growth guide">
+  </div>
+</div>
+          
+        </div>
+      
+      </section><!-- ======= END Grow Info Section ======= -->
+      
+      <!-- Hidden Table being filtered on confirm Section -->
+      <div id="hide-table">
+        <table id="table1"></table>
+      </div><!-- End Hidden Table being filtered on confirm Section -->
+    
+    </main><!-- End #main -->
+
+  </div>
+</div>
+</div>
+</section>
+</main>
+
+    <!-- Essential libraries from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- Non-critical vendor scripts -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" crossorigin="anonymous"></script>
+    <!-- Keep your custom scripts local -->
+    <script src="../../assets/js/main.js"></script>
+    <script type="module" src="../common/js/indexedDBService.js"></script>
+    <script type="module" src="../common/js/storage.js"></script>
+    <script type="module" src="assets/js/plant-config.js"></script>
+    <script type="module" src="assets/js/date-manager.js"></script>
+    <script type="module" src="assets/js/schedule-generator.js"></script>
+    <script type="module" src="assets/js/schedule-builder.js"></script>
+
+ </body>
+ </html>

@@ -1,6 +1,20 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* Font display optimization for faster text rendering */
+@font-face {
+  font-family: 'Open Sans';
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-display: swap;
+}
+
 html, body {width: auto!important; overflow-x: hidden!important
 } 
 body {
@@ -131,20 +145,11 @@ main {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/black.png") top center;
-  background-size: cover;
+  background: #000000;
   position: relative;
 }
 
-#hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+/* Removed overlay since we have solid black background */
 
 #hero .container {
   position: relative;
@@ -364,234 +369,8 @@ main {
   color: #151515;
 }
 
-/*--------------------------------------------------------------
-# promo
---------------------------------------------------------------*/
-.clients {
-  padding-top: 20px;
-}
 
-.clients .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
-  filter: grayscale(100);
-}
 
-.clients .swiper-slide img:hover {
-  filter: none;
-  opacity: 1;
-}
-
-.clients .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  background-color: #ddd;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #04AA6D;
-}
-
-.clients .swiper-slide img {
-  transition-duration: 0ms !important;
-}
-/*--------------------------------------------------------------
-# shop
---------------------------------------------------------------*/
-.portfolio {
-  padding-top: 20px;
-}
-
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 15px 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #444444;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 3px;
-}
-
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #151515;
-  background: #04AA6D; 
-}
-
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(21, 21, 21, 0.6);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
-.portfolio .portfolio-wrap img {
-  transition: all ease-in-out 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  font-style: italic;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  margin: 0 5px 0 0;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #04AA6D; 
-}
-
-.portfolio .portfolio-wrap:hover::before {
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.2);
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-/*--------------------------------------------------------------
-# shop Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #04AA6D; 
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #04AA6D; 
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(21, 21, 21, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
 
 /*--------------------------------------------------------------
 # tools
@@ -1106,169 +885,9 @@ main {
   }
 }
 
-/*--------------------------------------------------------------
-# Search Page
---------------------------------------------------------------*/
-#myInput {
-  background: transparent;
-  box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.8);
-  width: 100%; /* Full-width */
-  font-size: 24px; /* Increase font-size */
-  padding: 1.0vw 1.0vw 1.0vw 1.0vw; /* Add some padding */
-  border: 0.1vw solid #04AA6D; /* Add a green border */
-  margin-bottom: 1.0vw; /* Add some space below the input */
-  color: #FFFFFF;
-  text-shadow: 1px 1px #000;
-}
-#myUL {
-  /* Remove default list styling */
-  display: none;
-  box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.8);
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-#myUL li a {
-  margin-top: -1.0vw; /* Prevent double borders */
-  padding: 1.0vw; /* Add some padding */
-  text-decoration: none; /* Remove default text underline */
-  font-size: 24px; /* Increase the font-size */
-  color: #FFFFFF; /* Add a white text color */
-  text-shadow: 1px 1px #000;
-  display: block; /* Make it into a block element to fill the whole list */
-}
-#myUL li a:hover:not(.header) {
-  background-color: #04AA6D; /* Add a hover effect to all links, except for headers */
-}
-/* user selection data css*/
-.post-container {
-  text-align: justify;
-  text-justify: inter-word;
-  width:100%;
-  inline-size: 100%;
-  position: relative;
-  padding: 2.0vmin 2.0vmin calc(20px + 10.0vmin) 2.0vmin;
- }
-#image {
-  max-width: 100%;
-  flex-basis: 40%;
-}
 
-#box {
-  height: 100%;
-  overflow:hidden;
-  word-wrap: break-word;
-  margin-top: 0;
-  margin: 0;
-  font-size: 16px;
-  font-weight: 200;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
- 
-}
-#box h1 {
-  margin: 0;
-  font-size: 56px;
-  font-weight: 700;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#box h2 {
-  color: rgba(255, 255, 255, 0.9);
-  margin: 10px 0 0 0;
-  font-size: 40px;
-  line-height: 1.0;
-  font-family: "Poppins", sans-serif;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
-}
-#box h3 {
-  color: rgba(255, 255, 255, 0.9);
-  margin: 10px 0 0 0;
-  font-size: 30px;
-  line-height: 1.0;
-  font-family: "Poppins", sans-serif;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
-}
-#box h4 {
-  color: rgba(255, 255, 255, 0.9);
-  margin: 10px 0 0 0;
-  font-size: 20px;
-  line-height: 1.0;
-  font-family: "Poppins", sans-serif;
-  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
-}
-#weeks {
-  display: none;
-  margin: 0;
-  padding: 5px;
-}
-@media (min-width: 1024px) {
-  #box {
-    background-attachment: fixed;
-  }
-}
 
-@media (max-width: 768px) {
-  #box {
-    height: auto;
-  }
 
-  #box h1 {
-    font-size: 28px;
-    line-height: 1.0;
-  }
-
-  #box h2 {
-    font-size: 20px;
-    line-height: 0.5;
-  }
-  #box h3 {
-    font-size: 15px;
-    line-height: 0.5;
-  }
-  #box h4 {
-    font-size: 10px;
-    line-height: 0.5;
-  }
-}
-/*--------------------------------------------------------------
-# taskButton
---------------------------------------------------------------*/
-#taskButton {
-  display: none;
-}
-
-/*-------------------------------------------------------------
-# MyTask Save/Edit Button
---------------------------------------------------------------*/
-.editbtn {
-  display: none;
-  background: transparent;
-  border-radius: 4px;
-  padding: 7px 7px 7px 7px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 20px;
-  border: 2px solid #04AA6D;
-  color: #FFFFFF; 
-  font-weight: bold;
-}
-
-.editbtn:hover {
-  background: #04AA6D; 
-  color: #343a40;
-}
-
-@media (max-width: 992px) {
-  .editbtn {
-    padding: 5px 5px 5px 5px;
-  }
-}
 
 .text-center {
   text-align: center;
@@ -1339,30 +958,7 @@ main {
 /*--------------------------------------------------------------
 # myGrow plant size 
 --------------------------------------------------------------*/
-/* Container holding the logo image*/
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
-}
-/* Search image and the text */
-#image {
-  float: left;
-  display: none;
-  margin: 1.0vmin 2.0vmin 0.0vmin 0.0vmin;
-}
-.info {
-  inline-size: 100%;
-  overflow-wrap: break-word;
-  font-weight: bold;
-}
-#more_info {
-  display: none;
-}
-#web {
-  display: none;
-}
+
 /*drop menu */
 /* Dropdown Button */
 #dropbtn {
@@ -1419,102 +1015,9 @@ main {
 
 .show {display:block;}
 
-/*--------------------------------------------------------------
-# myGrow mix and match nutrients 
---------------------------------------------------------------*/
 
-table, th, td {
-  border: 1px solid white;
-  font-size: 16px;
-  position: relative;
-  cursor: -moz-zoom-in; 
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
-}
 
-th {
-  font-weight: bold;
-  text-align: left;
-  color: #cccccc;
-}
-.table-responsive-sm {
-  overflow: auto;
-  width:auto;
-  height: 70vh; 
-}
-.table-responsive-sm thead th {
-  position: sticky; 
-  top: 0;
-  z-index: 1; }
 
-#table1 tr:hover:not(.header) {
-  background-color: #04AA6D; /* Add a hover effect to all links, except for headers */
-  color: #fff;
-}
-
-#taskTable tr:hover:not(.header) {
-  background-color: #04AA6D; /* Add a hover effect to all links, except for headers */
-  color: #fff;
-}
-
-#nutes {
-  overflow: auto;
-  width:auto;
-  height: 100vh;
-  }
-
-.icon-box li {
-  list-style-type: none;
-}
-
-#hide-table {
-  display: none;
-}
-
-.listPrint {
-  text-align: left;
-  font-size: 16px;
-  line-height: 26px;
-  color: #fff;
-  transition: ease-in-out 0.3s;
-}
-
-.listPrint:hover {
-  color: #04AA6D;
-}
-
-/*--------------------------------------------------------------
-# Plant Doctor filter table 
---------------------------------------------------------------*/
-[id$="_head"],
-.Droopingplant,
-.Moldorpowder,
-.Bugsarevisible,
-.Twistedgrowth,
-.Webbing,
-.Budsdying,
-.Budslookodd,
-.Redstems,
-.Bronzeandbrownpatches,
-.Brownandslimyroots,
-.CorCleaves,
-.Brownoryellowleaftips,
-.Holesinleaves,
-.Pinkorpurpleonleaves,
-.Shinyorsmoothleaves,
-.Spotsormarkings,
-.Wiltingleaves,
-.Darkleaves,
-.Yellowingbetweenleafviens,
-.Yellowleaves {
-  display: none;
-}
-
-#newCol {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
 
 
 /*--------------------------------------------------------------
@@ -1525,135 +1028,14 @@ iframe{
   height: calc(100vw/1.77777778);
  }
 
- /*--------------------------------------------------------------
-# User input on table
---------------------------------------------------------------*/
-input[type=text] {
-  min-width: 10px;
-  max-width: 100%;
-  width: 100%;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-}
-
-/*--------------------------------------------------------------
-# GetTheApp Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
-/* Add this to ensure the appbar is visible */
-.appbar {
-  background-color: rgba(0, 0, 0, 0.7);
-  overflow: visible; /* Change from auto to visible */
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99999;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.appbar ul {
-  margin: 0;
-  padding: 0 0 20px 0;
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-}
-
-.appbar a
- {
-  float: left;
-  padding: 0 0 20px 0;
-  width: 100px;
-  margin: 5px;
-}
-
-.gtaBody {
-background: url(../img/pot-image.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 
-/*--------------------------------------------------------------
-# Shop Button
---------------------------------------------------------------*/
-.shop-btn {
-  color: #343a40;
-  background: #04AA6D;
-  border-radius: 4px;
-  padding: 7px 25px 8px 25px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
-  display: inline-block;
-  border: 2px solid #04AA6D; 
-}
 
-.shop-btn:hover {
-  background: #343a40; 
-  color: #FFFFFF;
-}
 
-@media (max-width: 992px) {
-  .shop-btn {
-    padding: 7px 20px 8px 20px;
-    margin-right: 15px;
-  }
-}
 
-/*--------------------------------------------------------------
-# Shop style
---------------------------------------------------------------*/
 
-.portfolio-info small {
-  color: #FFFFFF;
-}
 
-.portfolio-info b {
-  color: #FFFFFF;
-}
 
-.rating {
-  color: #FF9900;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #FF4500;
-}
-
-.empty-star {
-  color: #FF990000;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #FF4500;
-}
-
-.icon-check {
-  color: #FF9900;
-}
-
-.rounded-pill {
-  color: #131A22;
-  background: #e1ad01;
-  border-radius: 0.5px;
-  padding: 4px 10px 4px 10px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
-  display: inline-block;
-  border: 0.5px solid #e1ad01; 
-}
-
-.rounded-pill:hover {
-  background: #e1ad0199; 
-  color: #131A22;
-}
 
 
 /*--------------------------------------------------------------
@@ -1734,4 +1116,62 @@ background: url(../img/pot-image.png) no-repeat center center fixed;
 @keyframes fadeOut {
   from {opacity: 1; transform: translateY(0);}
   to {opacity: 0; transform: translateY(-20px);}
+}
+
+/*--------------------------------------------------------------
+# Global page transition loader
+--------------------------------------------------------------*/
+.page-transitioning::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  animation: fadeIn 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-transitioning::before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #04AA6D;
+  border-top-color: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 10000;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/*--------------------------------------------------------------
+# Keyboard navigation focus styles
+--------------------------------------------------------------*/
+.icon-box a:focus,
+.get-started-btn:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #04AA6D;
+  outline-offset: 2px;
+}
+
+/* Remove default focus outline for mouse users */
+.icon-box a:focus:not(:focus-visible),
+.get-started-btn:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
 }

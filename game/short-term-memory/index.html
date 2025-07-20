@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X0XEMR28V2');
+    </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Short-Term Mem-uh... | Cannabis Game</title>
+    <!-- Mobile WebView Optimizations -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Short-Term Mem-uh... | Cannabis Game</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="safe-area-inset">
     <div class="sound-toggle">
         <button id="soundToggle" class="sound-button">🔊</button>
     </div>
-    <h1>Short-Term Mem-uh...</h1>
+    <h1 class="mt-3">Short-Term Mem-uh...</h1>
     <div class="game-stats">
         <span>Moves: <span id="moveCounter">0</span></span>
         <span>Time: <span id="timer">0</span>s</span>
     </div>
     <button id="newGameButton" class="new-game-button">New Game</button>
-    <div class="game-board" id="gameBoard"></div>
-    <div class="leaderboard">
+    <div class="game-board mb-3" id="gameBoard"></div>
+    <div class="leaderboard mb-4">
         <h2>Top 5 Scores</h2>
         <ul id="scoreList"></ul>
     </div>

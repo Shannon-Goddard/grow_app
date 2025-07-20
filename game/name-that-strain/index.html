@@ -11,9 +11,14 @@
     </script>
     <!-- Character encoding and viewport -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <!-- Mobile WebView Optimizations -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
     <!-- Search Engine Controls -->
-    <meta name="robots" content="noindex,nofollow">
+    <!-- Meta tag removed as per WebView Head Optimization Guide -->
     <title>Name That Strain</title>
     <meta http-equiv="Cache-Control" content="max-age=31536000, public">
     <!-- Security Headers -->
@@ -24,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bangers&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="cannabis-theme">
+<body class="cannabis-theme safe-area-inset">
   <div class="container">
     <div id="game-container" class="row justify-content-center">
       <div class="col-12 text-center">

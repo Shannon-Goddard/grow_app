@@ -231,6 +231,9 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
   h1 {
       font-size: clamp(1.4rem, 4.8vw, 1.7rem);
       margin-top: clamp(25px, 6vw, 35px); /* More top space on small screens */
@@ -259,6 +262,13 @@ h1 {
       font-size: clamp(0.75rem, 2.8vw, 0.85rem);
       padding: clamp(5px, 1.5vw, 7px) clamp(10px, 2.5vw, 14px);
   }
+}
+
+.safe-area-inset {
+  padding-top: max(env(safe-area-inset-top), 15px);
+  padding-bottom: max(env(safe-area-inset-bottom), 15px);
+  padding-left: max(env(safe-area-inset-left), 10px);
+  padding-right: max(env(safe-area-inset-right), 10px);
 }
 
 @media (max-width: 400px) {

@@ -1,0 +1,70 @@
+/* Fix for hero section on desktop */
+#hero {
+  height: auto !important;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* Ensure content is visible below fixed header */
+.header-inner-pages + main #hero {
+  padding-top: 120px;
+}
+
+/* Make sure icon boxes display properly */
+#hero .icon-box {
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #hero {
+    padding-top: 80px;
+  }
+}
+/*--------------------------------------------------------------
+# Plant Doctor Specific Styles
+--------------------------------------------------------------*/
+[id$="_head"],
+.Droopingplant,
+.Moldorpowder,
+.Bugsarevisible,
+.Twistedgrowth,
+.Webbing,
+.Budsdying,
+.Budslookodd,
+.Redstems,
+.Bronzeandbrownpatches,
+.Brownandslimyroots,
+.CorCleaves,
+.Brownoryellowleaftips,
+.Holesinleaves,
+.Pinkorpurpleonleaves,
+.Shinyorsmoothleaves,
+.Spotsormarkings,
+.Wiltingleaves,
+.Darkleaves,
+.Yellowingbetweenleafviens,
+.Yellowleaves {
+  display: none;
+}
+
+#newCol {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.listPrint {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.listPrint {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 0;
+}

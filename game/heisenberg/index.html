@@ -11,9 +11,14 @@
     </script>
     <!-- Character encoding and viewport -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <!-- Mobile WebView Optimizations -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
     <!-- Search Engine Controls -->
-    <meta name="robots" content="noindex,nofollow">
+    <!-- Meta tag removed as per WebView Head Optimization Guide -->
     <title>Hensenberg</title>
     <meta http-equiv="Cache-Control" content="max-age=31536000, public">
     <!-- Security Headers -->
@@ -30,8 +35,8 @@
   <div class="smoke-layer-2"></div>
 
   <!-- Game UI with Bootstrap container -->
-  <div class="game-ui container text-center position-relative z-3 d-flex flex-column">
-    <h1 class="mb-3">HEISENBERG</h1>
+  <div class="game-ui container text-center position-relative z-3 d-flex flex-column safe-area-inset">
+    <h1 class="mb-3 mt-3">HEISENBERG</h1>
     <!-- Lifelines -->
     <div class="lifelines row justify-content-center mb-2 g-2">
       <div class="col-3 col-md-1"><button id="call-jesse" class="btn w-100">50:50</button></div>
@@ -49,7 +54,7 @@
     <!-- Spacer to push options down -->
     <div class="spacer flex-grow-1"></div>
     <!-- Options -->
-    <div class="options row justify-content-center g-2">
+    <div class="options row justify-content-center g-2 mb-4">
       <div class="col-10 col-md-6 col-lg-3"><button onclick="checkAnswer('A')" class="btn w-100"></button></div>
       <div class="col-10 col-md-6 col-lg-3"><button onclick="checkAnswer('B')" class="btn w-100"></button></div>
       <div class="col-10 col-md-6 col-lg-3"><button onclick="checkAnswer('C')" class="btn w-100"></button></div>

@@ -3,7 +3,6 @@ import { IndexedDBService } from '../../../common/js/indexedDBService.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     const currentGrowId = localStorage.getItem('currentGrowId');
-    console.log('Current grow ID:', currentGrowId);
     
     // Populate grow dropdown (same as before)
     async function initGrowDropdown() {
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             }
         } catch (error) {
-            console.error('Error loading grows:', error);
+            // Error loading grows
         }
     }
     
@@ -36,13 +35,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         try {
             const growId = localStorage.getItem('currentGrowId');
             if (!growId) {
-                console.error('No current grow ID');
                 return;
             }
             
             const schedule = await IndexedDBService.loadSchedule(growId);
             if (!schedule || !Array.isArray(schedule)) {
-                console.error('Invalid schedule data');
                 return;
             }
             
@@ -53,18 +50,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             const year = today.getFullYear();
             const todayStr = `${month}/${day}/${year}`; // Format: MM/DD/YYYY
             
-            console.log('Looking for today\'s date:', todayStr);
-            console.log('First few schedule dates:', schedule.slice(0, 5).map(d => d.date));
-            console.log('Current actual date:', new Date().toLocaleDateString());
-            console.log('Schedule start date:', schedule[0]?.date);
-            console.log('Schedule end date:', schedule[schedule.length - 1]?.date);
+
             
             // Filter schedule for today's entry
             const todayEntry = schedule.find(row => row.date === todayStr);
             
             if (!todayEntry) {
                 // Use first entry as fallback
-                console.log('Today\'s date not found, using first entry as fallback');
                 renderTable([schedule[0]], growId);
                 return;
             }
@@ -72,7 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             renderTable([todayEntry], growId);
             
         } catch (error) {
-            console.error('Error loading today\'s task:', error);
+            // Error loading today's task
         }
     }
     
@@ -166,7 +158,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
         
         table.appendChild(tbody);
-        console.log('Table rendered successfully');
     }
     
     // Add dropdown change listener
@@ -175,7 +166,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         growSelect.addEventListener('change', async (e) => {
             const selectedGrowId = e.target.value;
             localStorage.setItem('currentGrowId', selectedGrowId);
-            console.log('Grow changed to:', selectedGrowId);
             await loadTodayTask();
         });
     }

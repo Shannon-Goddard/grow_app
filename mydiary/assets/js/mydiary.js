@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 request.onerror = () => resolve([]);
             });
         } catch (error) {
-            console.error('Error getting selected nutrients:', error);
             return [];
         }
     }
@@ -140,14 +139,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Play video when metadata is loaded
             cameraView.onloadedmetadata = () => {
                 cameraView.play()
-                    .then(() => console.log('Camera preview started'))
-                    .catch(err => console.error('Error starting camera preview:', err));
+                    .then(() => {})
+                    .catch(err => {});
             };
             
-            console.log('Camera initialized for ' + (isMobile ? 'mobile' : 'desktop'));
             return true;
         } catch (error) {
-            console.error('Camera initialization error:', error);
             return false;
         }
     }
@@ -170,7 +167,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                     '<br><a href="../mygrow/mygrow.html" class="btn btn-sm btn-primary mt-2">Go to MyGrow</a>' +
                     '</div></td></tr>';
                 return;
-
             } else {
                 grows.forEach(grow => {
                     const option = document.createElement('option');
@@ -194,7 +190,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 createColumnCheckboxes([]);
             }
         } catch (error) {
-            console.error('Error populating grow dropdown:', error);
+            // Error populating grow dropdown
         }
     }
     
@@ -236,17 +232,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             const year = today.getFullYear();
             const todayStr = `${month}/${day}/${year}`; // Format: MM/DD/YYYY
             
-            console.log('Looking for today\'s date:', todayStr);
-            console.log('Today\'s date type:', typeof todayStr, 'length:', todayStr.length);
-            console.log('First few schedule dates:', schedule.slice(0, 5).map(d => d.date));
-            console.log('Schedule entry 22 date:', schedule[22]?.date);
-            
             // Filter schedule for today's entry
             let todayData = schedule.find(row => row.date === todayStr);
             if (!todayData) {
                 // Use first entry as fallback
                 todayData = schedule[0];
-                console.log('Today\'s date not found, using first entry as fallback');
                 if (!todayData) {
                     dataTable.innerHTML = '<tr><td colspan="5">No schedule data available</td></tr>';
                     return;
@@ -366,7 +356,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             dataTable.innerHTML = tableHTML + dataHTML;
             
         } catch (error) {
-            console.error('Error updating data table:', error);
             dataTable.innerHTML = '<tr><td colspan="5">Error loading data</td></tr>';
         }
     }
@@ -486,7 +475,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             cameraControls.style.display = 'none';
             photoControls.style.display = 'block';
         } catch (error) {
-            console.error('Error capturing photo:', error);
             alert('Failed to capture photo. Please try again.');
         }
     });

@@ -1,0 +1,182 @@
+/*--------------------------------------------------------------
+# Strain Search Page Specific Styles
+--------------------------------------------------------------*/
+#myInput {
+  background: transparent;
+  box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.8);
+  width: 100%;
+  font-size: 24px;
+  padding: 1.0vw 1.0vw 1.0vw 1.0vw;
+  border: 0.1vw solid #04AA6D;
+  margin-bottom: 1.0vw;
+  color: #FFFFFF;
+  text-shadow: 1px 1px #000;
+}
+
+#myUL {
+  display: none;
+  box-shadow: 0 0.3vw 1.0vw rgb(0 0 0 / 0.8);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#myUL li a {
+  margin-top: -1.0vw;
+  padding: 1.0vw;
+  text-decoration: none;
+  font-size: 24px;
+  color: #E0E0E0;
+  text-shadow: 1px 1px #000;
+  display: block;
+  list-style: none;
+}
+
+/* Ensure no bullet points anywhere in strain list */
+#strainList,
+#strainList li,
+#strainListContainer ul,
+#strainListContainer li {
+  list-style: none !important;
+  list-style-type: none !important;
+  margin: 0;
+  padding-left: 0;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #04AA6D;
+}
+
+/*--------------------------------------------------------------
+# Strain Display Styles
+--------------------------------------------------------------*/
+.post-container {
+  text-align: justify;
+  text-justify: inter-word;
+  width: 100%;
+  inline-size: 100%;
+  position: relative;
+  padding: 2.0vmin 2.0vmin calc(20px + 10.0vmin) 2.0vmin;
+}
+
+#image {
+  max-width: 100%;
+  flex-basis: 40%;
+  float: left;
+  display: none;
+  margin: 1.0vmin 2.0vmin 0.0vmin 0.0vmin;
+}
+
+#box {
+  height: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  margin-top: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 200;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+}
+
+#box h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#box h2 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 40px;
+  line-height: 1.0;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+}
+
+#box h3 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 30px;
+  line-height: 1.0;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+}
+
+#box h4 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 20px;
+  line-height: 1.0;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0vw 0.3vw 0.3vw rgb(0 0 0 / 0.8);
+}
+
+#weeks {
+  display: none;
+  margin: 0;
+  padding: 5px;
+}
+
+#taskButton {
+  display: none;
+}
+
+.info {
+  inline-size: 100%;
+  overflow-wrap: break-word;
+  font-weight: bold;
+}
+
+#more_info {
+  display: none;
+}
+
+#web {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  #box {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #box {
+    height: auto;
+  }
+
+  #box h1 {
+    font-size: 28px;
+    line-height: 1.0;
+  }
+
+  #box h2 {
+    font-size: 20px;
+    line-height: 0.5;
+  }
+
+  #box h3 {
+    font-size: 15px;
+    line-height: 0.5;
+  }
+
+  #box h4 {
+    font-size: 10px;
+    line-height: 0.5;
+  }
+}

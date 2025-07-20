@@ -17,10 +17,27 @@ let model, maxPredictions;
 
 // Initialize the model when the page loads
 async function setup() {
-    const modelUrl = 'https://www.loyal9.app/tools/harvest-window/assets/js/model.json';
-    const metadataUrl = 'https://www.loyal9.app/tools/harvest-window/assets/js/metadata.json';
-    model = await tmImage.load(modelUrl, metadataUrl);
-    maxPredictions = model.getTotalClasses();
+    // Check if we're running locally or on the production site
+    const isLocal = window.location.hostname === 'localhost' || 
+                   window.location.hostname === '127.0.0.1' ||
+                   window.location.protocol === 'file:';
+    
+    // Use relative paths for local development, absolute paths for production
+    const baseUrl = isLocal ? 'assets/js/' : 'https://www.loyal9.app/tools/harvest-window/assets/js/';
+    const modelUrl = baseUrl + 'model.json';
+    const metadataUrl = baseUrl + 'metadata.json';
+    
+    try {
+        model = await tmImage.load(modelUrl, metadataUrl);
+        maxPredictions = model.getTotalClasses();
+        console.log('Model loaded successfully');
+    } catch (error) {
+        console.error('Error loading model:', error);
+        document.getElementById('result').innerHTML = 
+            '<strong>Model loading error:</strong><br>The AI model could not be loaded. ' +
+            'This feature requires an internet connection and may not work in local development. ' +
+            'The model will work correctly when deployed to www.loyal9.app.';
+    }
 }
 
 // Handle file upload (store image but don’t classify immediately)
@@ -49,7 +66,8 @@ document.getElementById('imageUpload').addEventListener('change', function(e) {
 // Classify the image using Teachable Machine with enhanced preprocessing
 async function classifyImage(img) {
     if (!model) {
-        document.getElementById('result').textContent = 'Error: Model not loaded. Please refresh and try again.';
+        document.getElementById('result').innerHTML = '<strong>Model not loaded</strong><br>The AI model is not available. ' +
+            'This feature will work correctly when deployed to www.loyal9.app.';
         const loadingSpinner = document.getElementById('loadingSpinner');
         if (loadingSpinner) loadingSpinner.style.display = 'none';
         return;
@@ -127,6 +145,15 @@ async function classifyImage(img) {
         }
 
         document.getElementById('result').innerHTML = resultText;
+        
+        // Track successful prediction in Google Analytics
+        if (typeof gtag === 'function') {
+            gtag('event', 'prediction_complete', {
+                'event_category': 'Harvest Window',
+                'event_label': predictionLabel,
+                'value': Math.round(maxProbability * 100)
+            });
+        }
     } catch (error) {
         document.getElementById('result').textContent = 'Error processing image.';
     } finally {

@@ -26,7 +26,6 @@
         return document.querySelector(el)
       }
     } catch (e) {
-      console.warn('Invalid selector:', el);
       return null;
     }
   }
@@ -181,114 +180,15 @@
     });
   }
 
-  /**
-   * Clients Slider
-   */
-  new Swiper('.clients-slider', {
-    speed: 3500,
-    loop: true,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false
-    },
 
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
-      }
-    }
-  });
 
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
-      });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
 
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
-    }
 
-  });
 
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
 
-  /**
-   * Portfolio details slider SHOP
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
 
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
 
   /**
    * Animation on scroll
@@ -342,3 +242,28 @@ function showToast(message, type = 'error') {
 
 // Make showToast available globally
 window.showToast = showToast;
+
+/**
+ * Global page transition loader
+ */
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a[href]');
+  if (link && !link.href.includes('#') && !link.target && !link.hasAttribute('download')) {
+    // Don't show loading for buttons that have validation (they handle their own loading)
+    if (link.id === 'taskButton') {
+      return; // Let the page-specific JS handle loading animation
+    }
+    // Show loading overlay before navigation
+    document.body.classList.add('page-transitioning');
+  }
+});
+
+// Clear loading animation on page load (handles back button)
+window.addEventListener('pageshow', function() {
+  document.body.classList.remove('page-transitioning');
+});
+
+// Clear loading animation if page load takes too long
+window.addEventListener('load', function() {
+  document.body.classList.remove('page-transitioning');
+});

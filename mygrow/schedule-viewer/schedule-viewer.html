@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Analytics - Keep for user insights -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X0XEMR28V2');
+    </script>
+    
+    <!-- Essential Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <!-- Mobile WebView Optimizations -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    
+    <!-- Performance Optimizations -->
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="../../assets/css/style.css" as="style">
+    
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/data-tables.css" rel="stylesheet">
+    
+    <title>Schedule Viewer</title>
+    
+    <style>
+      .btn-outline-primary {
+        color: #04AA6D;
+        border-color: #04AA6D;
+      }
+      .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active {
+        background-color: #04AA6D;
+        border-color: #04AA6D;
+        color: white;
+      }
+    </style>
+  </head>
+  
+  <body class="customBody">
+
+    
+    
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center justify-content-lg-between">
+        <h1 class="logo me-auto me-lg-0"><a href="#"><span></span></a></h1>
+        <a id='tablePage' href="../../mygrow/print-page/table.html" class="get-started-btn scrollto fa-solid fa-download" rel="nofollow"></a>
+        <a href="../../mygrow/mytask/mytask.html" class="get-started-btn scrollto" rel="nofollow">MyTask</a>
+      </div>
+    </header><!-- End Header -->
+    
+    <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <ol>
+                    <li>Information<b>Overload</b></li>
+                </ol>
+            </div>
+        </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Grow Selection ======= -->
+    <div class="container" style="display: block;">
+        <div class="row">
+            <div class="col-md-6">
+                <form id="growForm" method="GET">
+                    <label for="growSelect">Select Grow:</label>
+                    <select id="growSelect" name="growId">
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                </form>
+                <script>
+                document.getElementById('growForm').onsubmit = function(e) {
+                    e.preventDefault();
+                    const selectedGrowId = document.getElementById('growSelect').value;
+                    localStorage.setItem('currentGrowId', selectedGrowId);
+                    window.location.href = window.location.pathname + '?growId=' + selectedGrowId;
+                };
+                </script>
+                
+                <!-- Plant Size Toggle -->
+                <div class="mt-3 d-flex align-items-center">
+                  <span class="me-2">Plant Size:</span>
+                  <div class="btn-group" role="group" aria-label="Plant size selection">
+                    <button type="button" class="btn btn-sm btn-outline-primary" id="smallPlantBtn">Small Plant</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary" id="mediumPlantBtn">Medium Plant</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary" id="largePlantBtn">Large Plant</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary" id="autoPlantBtn">Auto</button>
+                  </div>
+                  <span class="ms-2 text-muted small" id="filterInfo"></span>
+                  <div id="autoOptions" class="ms-2" style="display: none;">
+                    <input type="number" id="seedToHarvest" class="form-control form-control-sm d-inline-block" style="width: 60px;" min="1" max="365">
+                    <label for="seedToHarvest" class="ms-1">days seed to harvest</label>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Table Section ======= -->
+    <div class="container-fluid">
+    <div class="table-responsive-sm">
+        <table id="table1">
+            <!-- Table content populated by app.js -->
+        </table>
+    </div>
+</div><!-- ====== END Table Section -->
+</main>
+    
+   <!-- ======= .navbar ======= -->
+   <div id="preloader"></div>
+   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-sharp fa-solid fa-angle-up"></i></a>
+ 
+   <nav id="navbar" class="navbar order-last order-lg-0">
+     <ul>
+       <li><a class="nav-link scrollto fa fa-home" href="../../index.html" title="Home" aria-label="Navigate to Home"></a></li>
+       <li><a class="nav-link scrollto active fa fa-leaf" href="../../mygrow/mygrow.html" title="My Grow" aria-label="Navigate to MyGrow"></a></li>
+       <li><a class="nav-link scrollto fa fa-book" href="../../mydiary/mydiary.html" title="My Diary" aria-label="Navigate to MyDiary"></a></li>
+       <li><a class="nav-link scrollto fa fa-shopping-cart " href="../../shop/shop.html" title="Shop" aria-label="Navigate to Shop"></a></li>
+       <li><a class="nav-link scrollto fa fa-cogs" href="../../tools/tools.html" title="Tools" aria-label="Navigate to Tools"></a></li>
+     </ul>
+   </nav><!-- .navbar -->
+
+<!-- Essential libraries from CDN -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<!-- Non-critical vendor scripts -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" crossorigin="anonymous"></script>
+<!-- Keep your custom scripts local -->
+<script defer src="../../assets/js/main.js"></script> 
+<script type="module" src="../common/js/storage.js"></script>
+<script type="module" src="../common/js/indexedDBService.js"></script>
+<script type="module" src="assets/js/date-manager.js"></script>
+<script type="module" src="assets/js/plant-size-filter.js"></script>
+<script type="module" src="assets/js/nutrient-display.js"></script>
+<script type="module" src="assets/js/table-editable.js"></script>
+<script type="module" src="assets/js/grow-selector.js"></script>
+<script type="module">
+import { loadAndRenderTable } from './assets/js/table-renderer.js';
+import './assets/js/schedule-viewer.js';
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const growId = localStorage.getItem('currentGrowId');
+    if (growId) {
+        await loadAndRenderTable(growId);
+    }
+});
+</script>
+
+
+ </body>
+ </html>

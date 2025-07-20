@@ -109,8 +109,8 @@
         <div class="actions">
             <button id="exportBtn" class="btn btn-primary">Export to Excel</button>
             <button onclick="window.print()" class="btn btn-secondary">Print</button>
-            <button onclick="shareTable()" class="btn btn-info">Share</button>
-            <a href="../../mygrow/information-overload/information-overload-1.html" class="btn btn-outline-primary">Back to Information Overload</a>
+            <button onclick="shareTable(event)" class="btn btn-info">Download Image</button>
+            <a href="../../mygrow/schedule-viewer/schedule-viewer.html" class="btn btn-outline-primary">Back to Information Overload</a>
         </div>
         
         <div class="table-responsive">
@@ -194,13 +194,16 @@
             bsToast.show();
         }
         
-        // Share function for mobile
-        window.shareTable = function() {
+        // Share function for mobile - simplified to just download the image
+        window.shareTable = function(event) {
             const tableElement = document.getElementById('printTable');
             if (!tableElement) {
                 showToast('Table not found', 'error');
                 return;
             }
+            
+            // Show loading indicator
+            showToast('Creating image...', 'info');
             
             // Create a canvas from the table for image sharing
             html2canvas(tableElement, {
@@ -218,43 +221,17 @@
                     // Get grow name for the file name
                     const growName = localStorage.getItem('currentGrowName') || 'grow';
                     
-                    // Create text for sharing
-                    const text = `Check out my grow schedule for ${growName}!`;
+                    // Just download the image - more reliable than Web Share API
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = `${growName}_schedule.png`;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(url);
+                    showToast('Image downloaded! You can now share it from your device.');
                     
-                    // Check if Web Share API is available and supports files
-                    if (navigator.share && navigator.canShare) {
-                        const file = new File([blob], `${growName}_schedule.png`, {type: 'image/png'});
-                        
-                        if (navigator.canShare({ files: [file] })) {
-                            // Share with file
-                            navigator.share({
-                                title: 'My Grow Schedule',
-                                text: text,
-                                files: [file]
-                            }).then(() => {
-                                showToast('Shared successfully!');
-                            }).catch(err => {
-                                console.error('Error sharing:', err);
-                                fallbackDownload(blob, growName);
-                            });
-                        } else {
-                            // Share without file
-                            navigator.share({
-                                title: 'My Grow Schedule',
-                                text: text,
-                                url: window.location.href
-                            }).then(() => {
-                                showToast('Shared successfully!');
-                                fallbackDownload(blob, growName);
-                            }).catch(err => {
-                                console.error('Error sharing:', err);
-                                fallbackDownload(blob, growName);
-                            });
-                        }
-                    } else {
-                        // Fallback: download the image
-                        fallbackDownload(blob, growName);
-                    }
                 }, 'image/png');
             }).catch(err => {
                 console.error('Error creating canvas:', err);

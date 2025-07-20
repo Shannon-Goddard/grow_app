@@ -1,0 +1,24 @@
+/* Fix for hero section on desktop */
+#hero {
+  height: auto !important;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* Ensure content is visible below fixed header */
+.header-inner-pages + main #hero {
+  padding-top: 120px;
+}
+
+/* Make sure icon boxes display properly */
+#hero .icon-box {
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #hero {
+    padding-top: 80px;
+  }
+}

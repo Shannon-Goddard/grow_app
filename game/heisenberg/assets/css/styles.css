@@ -75,6 +75,7 @@ body::after {
   z-index: 3;
   min-height: 100vh;
   padding: 10px 0;
+  box-sizing: border-box;
 }
 
 /* Spacer to push options down */
@@ -179,6 +180,14 @@ h1 {
 .sound-on { border-color: #00ff00; }
 .sound-toggle:hover { background: rgba(255, 255, 255, 0.2); }
 
+/* Safe area inset for modern mobile devices */
+.safe-area-inset {
+  padding-top: env(safe-area-inset-top, 10px);
+  padding-bottom: env(safe-area-inset-bottom, 10px);
+  padding-left: env(safe-area-inset-left, 0);
+  padding-right: env(safe-area-inset-right, 0);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   h1 { font-size: 36px; margin-bottom: 8px; }
@@ -190,7 +199,7 @@ h1 {
 }
 
 @media (max-width: 576px) {
-  .game-ui { padding: 5px 0; }
+  .game-ui { padding: 20px 10px; }
   h1 { font-size: 28px; margin-bottom: 5px; }
   .lifelines .btn { font-size: 12px; padding: 4px 6px; }
   .sound-toggle { width: 35px; height: 35px; font-size: 18px; margin-top: 5px; margin-right: 5px; }
