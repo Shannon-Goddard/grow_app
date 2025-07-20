@@ -9,7 +9,7 @@
 
 /* Smaller images for comparison suggestions */
 .comparison-suggestion img.img-fluid {
-  max-height: 120px;
+  max-height: 100px;
   width: auto;
 }
 
