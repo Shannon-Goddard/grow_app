@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Germination Rates Bar Chart</title>
+  <style>
+    .chart-container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+    }
+  </style>
+</head>
+<body style="background-color: #1a1a1a;">
+  <div class="chart-container">
+    <canvas id="germinationChart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <script>
+    const ctx = document.getElementById('germinationChart').getContext('2d');
+    const germinationChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Rapid Rooters', 'Paper Towels', 'Rockwool', 'Direct Soil'],
+        datasets: [{
+          label: 'Germination Rate (%)',
+          data: [90, 75, 80, 70],
+          backgroundColor: ['#04AA6D', '#6c757d', '#6c757d', '#6c757d'],
+          borderColor: ['#04AA6D', '#6c757d', '#6c757d', '#6c757d'],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Germination Rates: Rapid Rooters vs. Other Methods',
+            color: '#ffffff',
+            font: {
+              family: 'Poppins',
+              size: 18,
+              weight: '600'
+            },
+            padding: {
+              top: 10,
+              bottom: 20
+            }
+          },
+          legend: {
+            display: false
+          },
+          tooltip: {
+            backgroundColor: '#333',
+            titleFont: { family: 'Poppins', size: 14 },
+            bodyFont: { family: 'Poppins', size: 12 },
+            callbacks: {
+              label: function(context) {
+                return `${context.dataset.label}: ${context.raw}%`;
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            title: {
+              display: true,
+              text: 'Germination Rate (%)',
+              color: '#ffffff',
+              font: {
+                family: 'Poppins',
+                size: 14
+              }
+            },
+            ticks: {
+              color: '#ffffff',
+              font: {
+                family: 'Poppins',
+                size: 12
+              },
+              stepSize: 10
+            },
+            grid: {
+              color: '#333'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Germination Method',
+              color: '#ffffff',
+              font: {
+                family: 'Poppins',
+                size: 14
+              }
+            },
+            ticks: {
+              color: '#ffffff',
+              font: {
+                family: 'Poppins',
+                size: 12
+              }
+            },
+            grid: {
+              display: false
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
