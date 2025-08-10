@@ -1,130 +1,101 @@
-// table-renderer.js
+// In your table-renderer.js
 import { showToast } from '../../../common/js/toast.js';
 import { makeTableEditable } from './table-editor.js';
 
 export async function loadAndRenderTable(growId) {
+    console.log('[WebViewDebug] loadAndRenderTable called with growId:', growId); // ADD THIS
+
     try {
+        // 1. Check if IndexedDBService itself is available
+        if (!window.IndexedDBService || typeof window.IndexedDBService.loadSchedule !== 'function') {
+            console.error('[WebViewDebug] IndexedDBService is not available or loadSchedule is not a function.');
+            showToast('Critical error: Database service not available.'); // Make sure this toast is visible
+            return;
+        }
+        console.log('[WebViewDebug] IndexedDBService appears to be available.'); // ADD THIS
+
         const schedule = await window.IndexedDBService.loadSchedule(growId);
+        console.log('[WebViewDebug] schedule data loaded:', schedule); // ADD THIS (VERY IMPORTANT)
 
         if (!Array.isArray(schedule) || schedule.length === 0) {
+            console.warn('[WebViewDebug] No schedule data found or schedule is not an array. Exiting.'); // ADD THIS
             showToast('No schedule data found for this grow.');
             return;
         }
 
         const table = document.getElementById('table1');
+        console.log('[WebViewDebug] table element:', table); // ADD THIS
         if (!table) {
+            console.warn('[WebViewDebug] Table element with ID "table1" not found. Exiting.'); // ADD THIS
             showToast('Table not found on page.');
             return;
         }
-        table.innerHTML = '';
+        table.innerHTML = ''; // Clear existing content
 
         const strainName = localStorage.getItem(`plantStrain_${growId}`) || localStorage.getItem('plantStrain') || '';
+        console.log('[WebViewDebug] strainName from localStorage:', strainName); // ADD THIS
+
+        // 2. Further IndexedDB Checks
+        if (typeof window.IndexedDBService.initDB !== 'function') {
+            console.error('[WebViewDebug] IndexedDBService.initDB is not a function.');
+            showToast('Critical error: Database init service not available.');
+            return;
+        }
+        console.log('[WebViewDebug] Attempting to initDB...'); // ADD THIS
         const db = await window.IndexedDBService.initDB();
+        console.log('[WebViewDebug] DB initialized:', db ? 'OK' : 'Failed or null'); // ADD THIS
+
+        if (!db) {
+            console.error('[WebViewDebug] Failed to initialize database. Exiting.');
+            showToast('Failed to initialize database.');
+            return;
+        }
+
         const transaction = db.transaction(['selectedNutrients'], 'readonly');
         const store = transaction.objectStore('selectedNutrients');
         const request = store.get(growId);
         const selectedNutrients = await new Promise((resolve, reject) => {
-            request.onsuccess = () => resolve(request.result ? request.result.nutrients : []);
-            request.onerror = () => reject(request.error);
+            request.onsuccess = () => {
+                console.log('[WebViewDebug] selectedNutrients request successful:', request.result); // ADD THIS
+                resolve(request.result ? request.result.nutrients : []);
+            };
+            request.onerror = (event) => {
+                console.error('[WebViewDebug] selectedNutrients request error:', event.target.error); // ADD THIS
+                reject(request.error);
+            };
         });
+        console.log('[WebViewDebug] selectedNutrients data:', selectedNutrients); // ADD THIS
 
         const nutrientTransaction = db.transaction(['nutrients'], 'readonly');
         const nutrientStore = nutrientTransaction.objectStore('nutrients');
         const nutrientRequest = nutrientStore.getAll();
         const customNutrients = await new Promise((resolve, reject) => {
-            nutrientRequest.onsuccess = () => resolve(nutrientRequest.result);
-            nutrientRequest.onerror = () => reject(nutrientRequest.error);
+            nutrientRequest.onsuccess = () => {
+                console.log('[WebViewDebug] customNutrients request successful:', nutrientRequest.result); // ADD THIS
+                resolve(nutrientRequest.result);
+            };
+            nutrientRequest.onerror = (event) => {
+                console.error('[WebViewDebug] customNutrients request error:', event.target.error); // ADD THIS
+                reject(nutrientRequest.error);
+            };
         });
-
-        const nutrientMap = {
-            'voodoo-juice': 'Voodoo Juice®',
-            'tarantula': 'Tarantula®',
-            // ... other mappings from original app.js ...
-        };
-
-        const nutrientDisplayNames = selectedNutrients.map(nutrient => {
-            const customNutrient = customNutrients.find(n => n.nutrientName === nutrient);
-            return customNutrient ? customNutrient.displayName : nutrientMap[nutrient] || nutrient.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-        });
-
-        const coreHeaders = [
-            { name: 'MyGrow', field: 'strain' },
-            { name: 'Date', field: 'date' },
-            { name: 'Stage', field: 'stage' },
-            { name: 'Week', field: 'week' },
-            { name: 'Day', field: 'day' },
-            { name: 'Visual Inspection', field: 'visual_inspection' },
-            { name: 'Amount Of Water', field: 'amount_of_water' },
-            { name: 'pH Goal', field: 'ph_goal' },
-            { name: 'Light Intensity', field: 'light_intensity' },
-            { name: 'Light Distance', field: 'light_distance' },
-            { name: 'Daytime Temp', field: 'dt_temp' },
-            { name: 'Nighttime Temp', field: 'nt_temp' },
-            { name: 'Hours Of Light', field: 'hours_of_light' },
-            { name: 'Humidity', field: 'humidity' },
-            { name: 'Air Fan Position', field: 'air_fan_position' }
-        ];
-
-        const nutrientHeaders = nutrientDisplayNames.map(name => ({ name, field: name.toLowerCase().replace(/\s+/g, '-') }));
-        const allHeaders = [...coreHeaders, ...nutrientHeaders];
-
-        const thead = document.createElement('thead');
-        const headerRow = document.createElement('tr');
-        allHeaders.forEach(header => {
-            const th = document.createElement('th');
-            th.textContent = header.name;
-            th.dataset.field = header.field;
-            headerRow.appendChild(th);
-        });
-        thead.appendChild(headerRow);
-        table.appendChild(thead);
-
-        const tbody = document.createElement('tbody');
-        schedule.forEach((dayData, index) => {
-            const row = document.createElement('tr');
-            const lightDistance = dayData.stage === 'seedling' ? '40 Inches' :
-                                 dayData.stage === 'vegetative' ? (parseInt(dayData.week) >= 2 ? '24 Inches' : '36 Inches') :
-                                 dayData.stage === 'flowering' ? '18 Inches' : '';
-
-            const values = [
-                strainName,
-                dayData.date || '',
-                dayData.stage || '',
-                dayData.week || '',
-                dayData.day || (index + 1),
-                dayData.visual_inspection || '',
-                dayData.amount_of_water || '',
-                dayData.ph_goal || '',
-                dayData.light_intensity || '',
-                lightDistance || dayData.light_distance || '',
-                dayData.dt_temp || '',
-                dayData.nt_temp || '',
-                dayData.hours_of_light || '',
-                dayData.humidity || '',
-                dayData.air_fan_position || ''
-            ];
-
-            selectedNutrients.forEach(nutrient => {
-                const value = dayData.nutrients && dayData.nutrients[nutrient] ? dayData.nutrients[nutrient] : '';
-                values.push(value);
-            });
-            
+        console.log('[WebViewDebug] customNutrients data:', customNutrients); // ADD THIS
 
 
-            values.forEach((value, i) => {
-                const td = document.createElement('td');
-                td.textContent = value;
-                td.dataset.field = allHeaders[i].field;
-                row.appendChild(td);
-            });
+        // ... (rest of your rendering logic) ...
+        console.log('[WebViewDebug] Proceeding to render table headers and body...'); // ADD THIS
 
-            tbody.appendChild(row);
-        });
-        table.appendChild(tbody);
 
+        // (Your existing header and body rendering code)
+
+
+        console.log('[WebViewDebug] Table rendering complete. Calling makeTableEditable.'); // ADD THIS
         await makeTableEditable();
+        console.log('[WebViewDebug] makeTableEditable finished. Dispatching tableRendered event.'); // ADD THIS
         document.dispatchEvent(new CustomEvent('tableRendered'));
+
     } catch (error) {
-        showToast('Failed to load schedule.');
+        console.error('[WebViewDebug] Error in loadAndRenderTable:', error); // MODIFIED THIS
+        showToast('Failed to load schedule. Check console for details.'); // MODIFIED THIS
     }
 }
