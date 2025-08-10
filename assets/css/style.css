@@ -1051,9 +1051,9 @@ iframe{
   background-color: #fff;
 }
 
- body { 
-  visibility: hidden; 
- } 
+html.loaded body {
+  visibility: visible;
+}
 
 .loaded body {
   visibility: visible;
