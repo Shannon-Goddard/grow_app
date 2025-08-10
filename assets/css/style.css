@@ -1,29 +1,25 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/* Font display optimization for faster text rendering */
-@font-face {
-  font-family: 'Open Sans';
-  font-display: swap;
+html {  
 }
-@font-face {
-  font-family: 'Raleway';
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Poppins';
-  font-display: swap;
+body {  
 }
 
-html, body {width: auto!important; overflow-x: hidden!important
+
+html, body {width: auto!important; 
+  overflow-x: hidden!important;
+  height: 100%; /* Add this */
 } 
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
   margin: 0;
   padding: 0;
-  min-height: 100vh; /* Change height to min-height */
-  position: relative; /* Add this */
+  /* min-height: 100vh; removed this */
+  min-height: 100%; /* Add this */
+  height: 100vh;    /* Add this */
+  position: relative; 
 }
 
 
@@ -1174,4 +1170,16 @@ textarea:focus {
 .get-started-btn:focus:not(:focus-visible),
 button:focus:not(:focus-visible) {
   outline: none;
+}
+
+/*--------------------------------------------------------------
+# WebView input field fixes
+--------------------------------------------------------------*/
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea {
+  text-align: left !important;
+  direction: ltr !important;
 }

@@ -11,6 +11,8 @@
   margin-bottom: 1.0vw;
   color: #FFFFFF;
   text-shadow: 1px 1px #000;
+  text-align: left;
+  direction: ltr;
 }
 
 #myUL {
