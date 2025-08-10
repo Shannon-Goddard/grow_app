@@ -1172,14 +1172,4 @@ button:focus:not(:focus-visible) {
   outline: none;
 }
 
-/*--------------------------------------------------------------
-# WebView input field fixes
---------------------------------------------------------------*/
-input[type="text"],
-input[type="search"],
-input[type="email"],
-input[type="password"],
-textarea {
-  text-align: left !important;
-  direction: ltr !important;
-}
+
