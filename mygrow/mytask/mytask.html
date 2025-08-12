@@ -40,6 +40,20 @@
     <link href="assets/css/data-tables.css" rel="stylesheet">
     
     <title>MyTask</title>
+
+    <style>
+        .table-responsive-sm {
+    height: auto !important; /* Let content dictate height */
+    min-height: 50%; /* Ensure it takes at least half the parent height */
+    max-height: 80%; /* Prevent overflow on smaller screens */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+      }
+      #taskTable {
+    display: table !important; /* Ensure table layout */
+    width: 100%;
+    min-height: 200px; /* Fallback height */
+      }
+    </style>
   </head>
   
   <body class="customBody">
