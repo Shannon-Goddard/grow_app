@@ -51,6 +51,17 @@
         border-color: #04AA6D;
         color: white;
       }
+      .table-responsive-sm {
+    height: auto !important; /* Let content dictate height */
+    min-height: 50%; /* Ensure it takes at least half the parent height */
+    max-height: 80%; /* Prevent overflow on smaller screens */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+      }
+      #table1 {
+    display: table !important; /* Ensure table layout */
+    width: 100%;
+    min-height: 200px; /* Fallback height */
+      }
     </style>
   </head>
   
