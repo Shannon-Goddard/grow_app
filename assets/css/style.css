@@ -1,27 +1,30 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-html {  
+/* Font display optimization for faster text rendering */
+@font-face {
+  font-family: 'Open Sans';
+  font-display: swap;
 }
-body {  
+@font-face {
+  font-family: 'Raleway';
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-display: swap;
 }
 
-
-html, body {width: auto!important; 
-  overflow-x: hidden!important;
-  height: 100%; /* Add this */
+html, body {width: auto!important; overflow-x: hidden!important
 } 
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
   margin: 0;
   padding: 0;
-  /* min-height: 100vh; removed this */
-  min-height: 100%; /* Add this */
-  height: 100vh;    /* Add this */
-  position: relative; 
+  min-height: 100vh; /* Change height to min-height */
+  position: relative; /* Add this */
 }
-
 
 .customBody {
   background-color:#000;
