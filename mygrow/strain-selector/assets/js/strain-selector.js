@@ -56,9 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.stopPropagation();
                 const idx = li.data('original-index');
                 displayStrainDetails(idx);
-                const cursorPos = input[0].selectionStart;
                 input.val(strain.strain);
-                input[0].setSelectionRange(cursorPos, cursorPos);
                 listContainer.hide();
             });
             li.find('img').on('error', function () {
