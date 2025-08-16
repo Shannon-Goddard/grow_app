@@ -52,15 +52,37 @@
         color: white;
       }
       .table-responsive-sm {
-    height: auto !important; /* Let content dictate height */
-    min-height: 50%; /* Ensure it takes at least half the parent height */
-    max-height: 80%; /* Prevent overflow on smaller screens */
-    overflow-y: auto; /* Allow scrolling if content overflows */
+        height: auto !important; /* Let content dictate height */
+        min-height: 50%; /* Ensure it takes at least half the parent height */
+        max-height: 80%; /* Prevent overflow on smaller screens */
+        overflow-y: auto; /* Allow scrolling if content overflows */
       }
       #table1 {
-    display: table !important; /* Ensure table layout */
-    width: 100%;
-    min-height: 200px; /* Fallback height */
+        display: table !important; /* Ensure table layout */
+        width: 100%;
+        min-height: 200px; /* Fallback height */
+      }
+      .container {
+        height: auto !important; /* Let content dictate height */
+        min-height: 20%; /* Ensure it takes some parent height */
+        max-height: 30%; /* Prevent overflow on smaller screens */
+        overflow-y: auto; /* Allow scrolling if needed */
+      }
+      .row {
+        height: auto !important;
+        min-height: 100%; /* Take full container height */
+      }
+      .col-md-6 {
+        height: auto !important;
+        min-height: 100px; /* Fallback height */
+      }
+      #growForm {
+        display: block !important;
+        min-height: 50px; /* Ensure form has height even if select is empty */
+      }
+      #growSelect {
+        width: 100%;
+        min-height: 30px; /* Ensure dropdown is visible */
       }
     </style>
   </head>

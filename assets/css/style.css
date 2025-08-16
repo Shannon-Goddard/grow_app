@@ -26,6 +26,7 @@ body {
   position: relative; /* Add this */
 }
 
+
 .customBody {
   background-color:#000;
   width: auto!important; 
@@ -1050,9 +1051,9 @@ iframe{
   background-color: #fff;
 }
 
-html.loaded body {
-  visibility: visible;
-}
+ body { 
+  visibility: hidden; 
+ } 
 
 .loaded body {
   visibility: visible;
@@ -1174,5 +1175,3 @@ textarea:focus {
 button:focus:not(:focus-visible) {
   outline: none;
 }
-
-

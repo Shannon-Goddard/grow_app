@@ -110,7 +110,7 @@ body {
 }
 
 .photo-controls {
-    display: none;
+    display: none !important;
 }
 
 /* Button styles */
@@ -226,5 +226,16 @@ a {
     #data-overlay th, #data-overlay td {
         padding: 1px 3px;
         font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-controls {
+        display: none !important; /* Reinforce for mobile */
+    }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+    .photo-controls {
+        display: none !important; /* Reinforce for landscape */
     }
 }
