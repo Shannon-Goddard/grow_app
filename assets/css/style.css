@@ -1175,3 +1175,11 @@ textarea:focus {
 button:focus:not(:focus-visible) {
   outline: none;
 }
+
+/*--------------------------------------------------------------
+# Android Studio typing 
+--------------------------------------------------------------*/
+#myInput, #growName {
+    direction: ltr;
+    text-align: left;
+}
