@@ -1179,7 +1179,14 @@ button:focus:not(:focus-visible) {
 /*--------------------------------------------------------------
 # Android Studio typing 
 --------------------------------------------------------------*/
-#myInput, #growName {
-    direction: ltr;
-    text-align: left;
+input[type="text"],
+input[type="search"], /* Common type for search inputs */
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+textarea {
+    direction: ltr !important;
+    text-align: left !important;
+    unicode-bidi: bidi-override !important; /* Strongest override, use with caution */
 }
