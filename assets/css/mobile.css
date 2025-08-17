@@ -77,11 +77,11 @@ textarea {
 
 /* --- 3. Simplify List Display (if it appears on input focus) --- */
 
-#strainListContainer {
-    position: static !important; /* Ensure it's in normal document flow */
-    display: none !important; /* Keep it hidden initially if your JS shows it */
-    border: 1px dashed red !important; /* Make it visible if it does appear */
-    max-height: 200px !important; /* Limit height to prevent huge reflows */
+/* #strainListContainer {
+    position: static !important; 
+    display: none !important;  
+    border: 1px dashed red !important; 
+    max-height: 200px !important; 
     overflow-y: auto !important;
 }
 
@@ -89,7 +89,7 @@ textarea {
     background-color: #eee !important;
     color: #333 !important;
     border-bottom: 1px solid #ccc !important;
-}
+}*/
 
 /* --- 4. Visual Debugging --- */
 
