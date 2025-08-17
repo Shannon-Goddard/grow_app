@@ -471,8 +471,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             cameraView.style.display = 'none';
             capturedPhoto.style.display = 'block';
             
-            // Show photo controls
-            cameraControls.style.display = 'none';
+            // Show photo controls and hide capture button
+            captureBtn.style.display = 'none';
             photoControls.style.display = 'block';
         } catch (error) {
             alert('Failed to capture photo. Please try again.');
@@ -494,10 +494,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         cameraView.style.display = 'block';
         capturedPhoto.style.display = 'none';
         
-        // Show camera controls
-        cameraControls.style.display = 'block';
+        // Show capture button and hide photo controls
+        captureBtn.style.display = 'block';
         photoControls.style.display = 'none';
     });
+    
+    // Set initial visibility states
+    captureBtn.style.display = 'block';
+    photoControls.style.display = 'none';
+    capturedPhoto.style.display = 'none';
     
     // Initialize
     await populateGrowDropdown();
