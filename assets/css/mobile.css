@@ -18,14 +18,15 @@ body,
     /* overflow-x: visible !important;  /* Temporarily allow horizontal scroll to see if content is too wide */
 }
 
-/* Override fixed positioning that conflicts with keyboard */
+/* Keep header absolutely fixed regardless of keyboard or scroll */
 #header,
 .fixed-top {
-    position: -webkit-sticky !important; /* For Safari */
-    position: sticky !important;
+    position: fixed !important;
     top: 0 !important;
-    width: 100%;
-    z-index: 1000 !important; /* Ensure it's above other content when sticky */
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    transform: translateZ(0) !important; /* Force hardware acceleration */
 }
 
 /* If you have a fixed bottom navbar, add its selector here too */
