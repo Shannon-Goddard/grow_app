@@ -88,16 +88,21 @@ body {
     white-space: nowrap;
 }
 
-/* Camera controls */
+/* Camera controls - WebView friendly */
 .camera-button {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     font-size: 24px;
     border: 2px solid white;
     margin: 10px;
     cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 15;
 }
 
 .camera-controls, .photo-controls {
@@ -107,10 +112,24 @@ body {
     width: 100%;
     text-align: center;
     z-index: 10;
+    display: block;
+    min-height: 80px;
 }
 
 .photo-controls {
-    display: none !important;
+    display: none;
+}
+
+#capture-btn {
+    display: block;
+    position: relative;
+    z-index: 20;
+}
+
+#save-btn, #retake-btn {
+    display: inline-block;
+    position: relative;
+    z-index: 20;
 }
 
 /* Button styles */
