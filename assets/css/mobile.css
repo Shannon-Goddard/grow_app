@@ -19,14 +19,13 @@ body,
 }
 
 /* Override fixed positioning that conflicts with keyboard */
-#header, /* Your fixed header ID */
-.fixed-top { /* Common Bootstrap class for fixed headers */
-    position: absolute !important; /* Change to absolute or static for testing */
-    /* Or try: position: static !important; */
-    top: 0;
-    left: 0;
+#header,
+.fixed-top {
+    position: -webkit-sticky !important; /* For Safari */
+    position: sticky !important;
+    top: 0 !important;
     width: 100%;
-    z-index: 1 !important; /* Lower z-index during test */
+    z-index: 1000 !important; /* Ensure it's above other content when sticky */
 }
 
 /* If you have a fixed bottom navbar, add its selector here too */
