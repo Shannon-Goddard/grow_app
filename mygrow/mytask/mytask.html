@@ -68,8 +68,10 @@
         min-height: 100px; /* Fallback height */
       }
       #growForm {
-        display: block !important;
-        min-height: 50px; /* Ensure form has height even if select is empty */
+        display: block; /* Removed !important */
+        min-height: 50px;
+        position: relative; /* Combined with the other rule */
+        z-index: 10; /* Combined with the other rule */
       }
       #growSelect {
         width: 100%;

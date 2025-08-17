@@ -1,0 +1,110 @@
+/* mobile.css - Troubleshooting Styles for Mobile WebView Issues */
+
+/*
+    IMPORTANT: This file is for TROUBLESHOOTING.
+    It applies aggressive overrides. Remove or refine these rules
+    once the issues are identified.
+*/
+
+/* --- 1. Address Potential Screen Jump Issues --- */
+
+/* Override full viewport heights that can conflict with virtual keyboard */
+html,
+body,
+.customBody, /* Your specific body class */
+#hero { /* Your main content section holding inputs */
+    height: auto !important;
+    min-height: 100% !important; /* Use min-height to ensure content can expand */
+    /* overflow-x: visible !important;  /* Temporarily allow horizontal scroll to see if content is too wide */
+}
+
+/* Override fixed positioning that conflicts with keyboard */
+#header, /* Your fixed header ID */
+.fixed-top { /* Common Bootstrap class for fixed headers */
+    position: absolute !important; /* Change to absolute or static for testing */
+    /* Or try: position: static !important; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1 !important; /* Lower z-index during test */
+}
+
+/* If you have a fixed bottom navbar, add its selector here too */
+/* .navbar-fixed-bottom, #myFixedFooter {
+    position: static !important;
+} */
+
+
+/* --- 2. Force LTR Text Direction and Alignment for Inputs --- */
+
+input[type="text"],
+input[type="search"], /* Common type for search inputs */
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+textarea {
+    direction: ltr !important;
+    text-align: left !important;
+    unicode-bidi: bidi-override !important; /* Strongest override, use with caution */
+
+    /* Basic visual reset for testing */
+    background-color: #f0f0f0 !important;
+    color: #111 !important;
+    border: 1px solid #999 !important;
+    padding: 8px !important;
+    font-size: 16px !important; /* Reset font size */
+    font-family: sans-serif !important; /* Use a basic system font */
+    box-shadow: none !important;
+    text-shadow: none !important;
+    -webkit-appearance: none !important; /* Try to reset native appearance */
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+/* Specifically target your inputs if the general rule isn't enough */
+#myInput,
+#growName {
+    direction: ltr !important;
+    text-align: left !important;
+    unicode-bidi: bidi-override !important; /* Be careful with this */
+    font-family: sans-serif !important;
+    font-size: 16px !important;
+    background: lightyellow !important; /* Make it visually distinct */
+    color: black !important;
+}
+
+
+/* --- 3. Simplify List Display (if it appears on input focus) --- */
+
+#strainListContainer {
+    position: static !important; /* Ensure it's in normal document flow */
+    display: none !important; /* Keep it hidden initially if your JS shows it */
+    border: 1px dashed red !important; /* Make it visible if it does appear */
+    max-height: 200px !important; /* Limit height to prevent huge reflows */
+    overflow-y: auto !important;
+}
+
+#strainList li {
+    background-color: #eee !important;
+    color: #333 !important;
+    border-bottom: 1px solid #ccc !important;
+}
+
+/* --- 4. Visual Debugging --- */
+
+/* Add a border to key elements to see their boundaries */
+/*
+body { border: 2px solid blue !important; }
+#main { border: 2px solid green !important; }
+#hero { border: 2px solid purple !important; }
+.input-container { border: 2px solid orange !important; }
+#myInput { border: 2px solid red !important; }
+*/
+
+/* --- 5. Attempt to control scroll behavior if related to jumps --- */
+/*
+body, html {
+    overscroll-behavior-y: contain !important;
+}
+*/
