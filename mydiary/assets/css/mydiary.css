@@ -116,9 +116,7 @@ body {
     min-height: 80px;
 }
 
-.photo-controls {
-    display: none;
-}
+
 
 #capture-btn {
     display: block;
@@ -257,4 +255,9 @@ a {
     .photo-controls {
         display: none !important; /* Reinforce for landscape */
     }
+}
+
+/* Override media query rules - must be last */
+.photo-controls {
+    display: none;
 }
