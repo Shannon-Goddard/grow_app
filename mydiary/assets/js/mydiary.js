@@ -473,7 +473,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             // Show photo controls and hide capture button
             captureBtn.style.display = 'none';
-            photoControls.style.display = 'block';
+            photoControls.style.setProperty('display', 'block', 'important');
         } catch (error) {
             alert('Failed to capture photo. Please try again.');
         }
@@ -496,12 +496,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         // Show capture button and hide photo controls
         captureBtn.style.display = 'block';
-        photoControls.style.display = 'none';
+        photoControls.style.setProperty('display', 'none', 'important');
     });
     
     // Set initial visibility states
     captureBtn.style.display = 'block';
-    photoControls.style.display = 'none';
+    photoControls.style.setProperty('display', 'none', 'important');
     capturedPhoto.style.display = 'none';
     
     // Initialize
