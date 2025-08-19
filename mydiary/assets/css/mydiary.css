@@ -162,11 +162,11 @@ a {
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
     body {
-        padding-top: 60px;
+        padding-top: 40px;
     }
     
     #data-container {
-        height: calc(100vh - 120px);
+        height: calc(100vh - 60px);
     }
     
     .column-option {
