@@ -214,8 +214,6 @@
 
         window.shareTable = function(event) {
             console.log("JS: shareTable called.");
-            // event.preventDefault(); // Usually not needed for <button type="button"> but good to keep in mind
-
             const tableElement = document.getElementById('printTable');
             if (!tableElement) {
                 console.error("JS: Table element #printTable not found!");
@@ -248,19 +246,55 @@
                 if (wrapper) { // Restore wrapper style
                     wrapper.style.overflow = originalOverflow;
                 }
-                const imageData = canvas.toDataURL('image/png');
-                console.log("JS: imageData URL length:", imageData.length);
-                // console.log("JS: imageData (first 100 chars):", imageData.substring(0,100)); // To verify format
+                const fullDataUrl = canvas.toDataURL('image/png'); // Or your desired image type
+                console.log("JS: Full dataURL length:", fullDataUrl.length);
 
-                if (window.Android && window.Android.shareImage) {
-                    console.log("JS: Attempting to call window.Android.shareImage(imageDataUrl)");
-                    window.Android.shareImage(imageData); // Pass the full data URL
-                    showToast('Image ready to share!');
+                if (window.Android && window.Android.shareImageBase64) {
+                    try {
+                        // Extract MIME type and Base64 data
+                        const mimeType = fullDataUrl.substring(fullDataUrl.indexOf(":") + 1, fullDataUrl.indexOf(";"));
+                        const base64Data = fullDataUrl.substring(fullDataUrl.indexOf(",") + 1);
+                        
+                        console.log("JS: Attempting to call window.Android.shareImageBase64()");
+                        console.log("JS: MIME Type:", mimeType);
+                        console.log("JS: Base64 Data Length:", base64Data.length);
+
+                        window.Android.shareImageBase64(base64Data, mimeType);
+                        showToast('Processing image for sharing...'); // Updated toast message
+                    } catch (e) {
+                        console.error("JS: Error preparing or sending Base64 data:", e);
+                        showToast('Error preparing image for sharing.', 'error');
+                    }
                 } else {
-                    console.error("JS: window.Android.shareImage is not defined. Using fallback.");
-                    // Your existing fallback logic for browsers
+                    console.error("JS: window.Android.shareImageBase64 is not defined. Using fallback.");
+                    // Your existing fallback logic for browsers using fullDataUrl
                     const growName = localStorage.getItem('currentGrowName') || 'grow';
-                    // ... (rest of your fallback)
+                    if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                        const newWindow = window.open();
+                        if (newWindow) {
+                            newWindow.document.write(`
+                                <html>
+                                    <head><title>${growName} Schedule</title></head>
+                                    <body style="margin:0;text-align:center;background:#f5f5f5;">
+                                        <img src="${fullDataUrl}" style="max-width:100%;height:auto;border:1px solid #ddd;">
+                                        <p style="margin:20px;color:#666;">Long press the image to save or share</p>
+                                    </body>
+                                </html>
+                            `);
+                            showToast('Image opened in new tab!');
+                        } else {
+                            showToast('Please allow popups and try again', 'error');
+                        }
+                    } else {
+                        const link = document.createElement('a');
+                        link.href = fullDataUrl;
+                        link.download = `${growName}_schedule.png`;
+                        link.style.display = 'none';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                        showToast('Image downloaded!');
+                    }
                 }
             }).catch(err => {
                 console.error('JS: html2canvas FAILED or error in promise chain:', err);
@@ -270,6 +304,7 @@
                 showToast('Failed to create image. See console for details.', 'error');
             });
         };
+
         
         
 
