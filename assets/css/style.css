@@ -33,6 +33,7 @@ body {
   overflow-x: hidden!important;
   margin: 0px;
   height: 100vh;
+  padding-top: env(safe-area-inset-top, 24px);
 }
   
 html {
