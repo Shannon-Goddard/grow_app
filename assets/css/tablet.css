@@ -1,4 +1,11 @@
-/* Tablet Styles - TROUBLESHOOTING: Test these container rules first */
+/* Tablet Styles - Fix for visibility issue */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        visibility: visible !important;
+    }
+}
+
+/* COMMENTED OUT - These cause layout issues:
 .container {
     height: auto !important;
     min-height: 20%;
@@ -9,6 +16,7 @@
     height: auto !important;
     min-height: 100%;
 }
+*/
 
 /* COMMENTED OUT - Test above first, then uncomment these one by one:
 main {
