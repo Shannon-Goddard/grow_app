@@ -28,12 +28,12 @@ body {
 
 
 .customBody {
-  background-color:#000;
+  background-color:#000 !important;
   width: auto!important; 
   overflow-x: hidden!important;
   margin: 0px;
   height: 100vh;
-  padding-top: env(safe-area-inset-top, 24px);
+  padding-top: env(safe-area-inset-top, 24px) !important;
 }
   
 html {

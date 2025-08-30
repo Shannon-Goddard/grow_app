@@ -1,15 +1,21 @@
 /* Tablet Styles */
 main {
-    padding-top: 120px; /* Account for header (~40px) + breadcrumbs margin (74px) + buffer */
+    padding-top: 80px;
     padding-bottom: 20px;
-    min-height: calc(100vh - 120px); /* Ensure main fills viewport minus header */
+    min-height: calc(100vh - 80px);
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .breadcrumbs {
-        margin-top: 80px; /* Slightly more than mobile to account for tablet header height */
+        margin-top: 60px;
     }
     main {
-        padding-top: 130px; /* Extra padding for tablets */
+        padding-top: 90px;
+    }
+    #header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
     }
 }
 .container {
