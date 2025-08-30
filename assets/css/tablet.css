@@ -1,20 +1,17 @@
 /* Tablet Styles - Fix for visibility issue */
-/* Test if this file loads at all */
+/* Override the body visibility hidden from style.css */
 body {
-    border: 10px solid blue !important;
+    visibility: visible !important;
+    background: red !important;
+    padding-top: env(safe-area-inset-top, 24px) !important;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        visibility: visible !important;
-        background: red !important;
-    }
-    #hero {
-        background: red !important;
-    }
-    #hero .container {
-        padding-top: 120px !important;
-    }
+#hero {
+    background: green !important;
+}
+
+#hero .container {
+    padding-top: 120px !important;
 }
 
 /* COMMENTED OUT - These cause layout issues:
