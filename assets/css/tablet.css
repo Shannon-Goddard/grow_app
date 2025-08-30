@@ -1,20 +1,16 @@
-/* Tablet Styles - TESTING IF THIS FILE LOADS */
-* {
-    border: 5px solid yellow !important;
-}
-
+/* Tablet Styles - Fix visibility and layout */
 html, body {
     visibility: visible !important;
-    background: blue !important;
+    background: black !important;
     padding-top: env(safe-area-inset-top, 24px) !important;
 }
 
 #hero {
-    background: red !important;
+    background: black !important;
 }
 
 #hero .container {
-    padding-top: 50px !important;
+    padding-top: 80px !important;
 }
 
 /* COMMENTED OUT - These cause layout issues:
