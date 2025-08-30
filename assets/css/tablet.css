@@ -1,5 +1,16 @@
-/* Tablet Styles - COMMENTED OUT FOR TROUBLESHOOTING */
-/*
+/* Tablet Styles - TROUBLESHOOTING: Test these container rules first */
+.container {
+    height: auto !important;
+    min-height: 20%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+.row {
+    height: auto !important;
+    min-height: 100%;
+}
+
+/* COMMENTED OUT - Test above first, then uncomment these one by one:
 main {
     padding-top: 80px;
     padding-bottom: 20px;
@@ -18,16 +29,6 @@ main {
         width: 100%;
         z-index: 1000;
     }
-}
-.container {
-    height: auto !important;
-    min-height: 20%;
-    max-height: 100%;
-    overflow-y: auto;
-}
-.row {
-    height: auto !important;
-    min-height: 100%;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     #header {
