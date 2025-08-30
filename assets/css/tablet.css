@@ -3,6 +3,9 @@
     body {
         visibility: visible !important;
     }
+    #hero .container {
+        padding-top: 120px !important;
+    }
 }
 
 /* COMMENTED OUT - These cause layout issues:
