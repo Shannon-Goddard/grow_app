@@ -1,17 +1,20 @@
-/* Tablet Styles - Fix for visibility issue */
-/* Override the body visibility hidden from style.css */
-body {
+/* Tablet Styles - TESTING IF THIS FILE LOADS */
+* {
+    border: 5px solid yellow !important;
+}
+
+html, body {
     visibility: visible !important;
-    background: red !important;
+    background: blue !important;
     padding-top: env(safe-area-inset-top, 24px) !important;
 }
 
 #hero {
-    background: green !important;
+    background: red !important;
 }
 
 #hero .container {
-    padding-top: 120px !important;
+    padding-top: 50px !important;
 }
 
 /* COMMENTED OUT - These cause layout issues:
