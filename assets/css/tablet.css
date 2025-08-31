@@ -1,22 +1,22 @@
-/* Tablet Styles - Fix visibility and layout */
+/* Tablet Styles - Simplified fix */
 html {
-    background: black !important;
-    padding-top: 30px !important;
+    background-color: black !important;
 }
 
 body {
     visibility: visible !important;
-    background: black !important;
+    background-color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.customBody {
+    background-color: black !important;
     padding-top: 30px !important;
 }
 
-#hero {
-    background: black !important;
-    padding-top: 60px !important;
-}
-
 #hero .container {
-    padding-top: 150px !important;
+    padding-top: 100px !important;
 }
 
 /* COMMENTED OUT - These cause layout issues:
