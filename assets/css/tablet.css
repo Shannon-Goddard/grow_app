@@ -1,4 +1,5 @@
 /* Tablet Styles - Simplified fix */
+/* COMMENTED OUT - These cause layout issues:
 html {
     background-color: black !important;
 }
@@ -18,6 +19,7 @@ body {
 #hero .container {
     padding-top: 100px !important;
 }
+*/
 
 /* COMMENTED OUT - These cause layout issues:
 .container {
