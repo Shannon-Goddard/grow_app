@@ -1,16 +1,22 @@
 /* Tablet Styles - Fix visibility and layout */
-html, body {
+html {
+    background: black !important;
+    padding-top: 30px !important;
+}
+
+body {
     visibility: visible !important;
     background: black !important;
-    padding-top: env(safe-area-inset-top, 24px) !important;
+    padding-top: 30px !important;
 }
 
 #hero {
     background: black !important;
+    padding-top: 60px !important;
 }
 
 #hero .container {
-    padding-top: 80px !important;
+    padding-top: 150px !important;
 }
 
 /* COMMENTED OUT - These cause layout issues:
