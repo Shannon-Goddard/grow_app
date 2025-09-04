@@ -204,8 +204,11 @@
         window.printTable = function() {
             console.log("JS: printTable called.");
             if (window.Android && window.Android.printPage) {
-                console.log("JS: Attempting to call window.Android.printPage()");
+                console.log("JS: Calling Android.printPage()");
                 window.Android.printPage();
+            } else if (window.webkit && window.webkit.messageHandlers.printHandler) {
+                console.log("JS: Sending to iOS printHandler");
+                window.webkit.messageHandlers.printHandler.postMessage({ action: "print" });
             } else {
                 console.log("JS: Fallback to window.print()");
                 window.print();
@@ -249,22 +252,21 @@
                 const fullDataUrl = canvas.toDataURL('image/png'); // Or your desired image type
                 console.log("JS: Full dataURL length:", fullDataUrl.length);
 
-                if (window.Android && window.Android.shareImageBase64) {
-                    try {
-                        // Extract MIME type and Base64 data
-                        const mimeType = fullDataUrl.substring(fullDataUrl.indexOf(":") + 1, fullDataUrl.indexOf(";"));
-                        const base64Data = fullDataUrl.substring(fullDataUrl.indexOf(",") + 1);
-                        
-                        console.log("JS: Attempting to call window.Android.shareImageBase64()");
-                        console.log("JS: MIME Type:", mimeType);
-                        console.log("JS: Base64 Data Length:", base64Data.length);
+                const base64Data = fullDataUrl.substring(fullDataUrl.indexOf(",") + 1);
+                const filename = (localStorage.getItem('currentGrowName') || 'grow') + '_schedule.png';
 
-                        window.Android.shareImageBase64(base64Data, mimeType);
-                        showToast('Processing image for sharing...'); // Updated toast message
-                    } catch (e) {
-                        console.error("JS: Error preparing or sending Base64 data:", e);
-                        showToast('Error preparing image for sharing.', 'error');
-                    }
+                if (window.Android && window.Android.shareImageBase64) {
+                    console.log("JS: Calling Android.shareImageBase64");
+                    window.Android.shareImageBase64(base64Data, 'image/png');
+                    showToast('Image shared on Android!');
+                } else if (window.webkit && window.webkit.messageHandlers.downloadHandler) {
+                    console.log("JS: Sending to iOS downloadHandler");
+                    window.webkit.messageHandlers.downloadHandler.postMessage({
+                        action: "download",
+                        url: base64Data,
+                        filename: filename
+                    });
+                    showToast('Image processing for download/share...');
                 } else {
                     console.error("JS: window.Android.shareImageBase64 is not defined. Using fallback.");
                     // Your existing fallback logic for browsers using fullDataUrl
@@ -288,8 +290,20 @@
                     } else {
                         const link = document.createElement('a');
                         link.href = fullDataUrl;
-                        link.download = `${growName}_schedule.png`;
+                        link.download = filename;
                         link.style.display = 'none';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                        showToast('Image downloaded!');
+                    }
+                }
+            }).catch(err => {
+                console.error('JS: html2canvas FAILED:', err);
+                if (wrapper) wrapper.style.overflow = originalOverflow;
+                showToast('Failed to create image.', 'error');
+            });
+        };ink.style.display = 'none';
                         document.body.appendChild(link);
                         link.click();
                         document.body.removeChild(link);
