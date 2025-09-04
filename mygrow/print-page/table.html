@@ -181,6 +181,54 @@
             exportBtn.addEventListener('click', exportTable);
         }
         
+        // Load and populate table data
+        async function populateTable() {
+            try {
+                const currentGrowId = localStorage.getItem('currentGrowId');
+                if (!currentGrowId) {
+                    table.innerHTML = '<tr><td colspan="5">No grow selected</td></tr>';
+                    return;
+                }
+                
+                const schedule = await IndexedDBService.loadSchedule(currentGrowId);
+                if (!schedule || schedule.length === 0) {
+                    table.innerHTML = '<tr><td colspan="5">No schedule data found</td></tr>';
+                    return;
+                }
+                
+                // Create table header
+                const headers = Object.keys(schedule[0]).filter(key => key !== 'nutrients');
+                let headerRow = '<tr>';
+                headers.forEach(header => {
+                    headerRow += `<th>${header.replace(/_/g, ' ').toUpperCase()}</th>`;
+                });
+                headerRow += '</tr>';
+                
+                // Create table rows
+                let rows = '';
+                schedule.forEach(row => {
+                    rows += '<tr>';
+                    headers.forEach(header => {
+                        rows += `<td>${row[header] || ''}</td>`;
+                    });
+                    rows += '</tr>';
+                });
+                
+                table.innerHTML = headerRow + rows;
+                
+                // Update page title
+                const growName = localStorage.getItem(`growName_${currentGrowId}`) || 'Unknown Grow';
+                document.getElementById('growTitle').textContent = `${growName} - Schedule`;
+                
+            } catch (error) {
+                console.error('Error loading schedule:', error);
+                table.innerHTML = '<tr><td colspan="5">Error loading schedule data</td></tr>';
+            }
+        }
+        
+        // Populate table on load
+        await populateTable();
+        
         // Toast function
         function showToast(message, type = 'info') {
             const toast = document.getElementById('toast');
@@ -302,20 +350,6 @@
                 console.error('JS: html2canvas FAILED:', err);
                 if (wrapper) wrapper.style.overflow = originalOverflow;
                 showToast('Failed to create image.', 'error');
-            });
-        };ink.style.display = 'none';
-                        document.body.appendChild(link);
-                        link.click();
-                        document.body.removeChild(link);
-                        showToast('Image downloaded!');
-                    }
-                }
-            }).catch(err => {
-                console.error('JS: html2canvas FAILED or error in promise chain:', err);
-                if (wrapper) { // Restore wrapper style even on error
-                    wrapper.style.overflow = originalOverflow;
-                }
-                showToast('Failed to create image. See console for details.', 'error');
             });
         };
 
