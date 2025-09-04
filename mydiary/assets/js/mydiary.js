@@ -487,10 +487,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (window.Android && window.Android.shareImageBase64) {
             // Android native app
             const base64Data = capturedPhoto.src.substring(capturedPhoto.src.indexOf(",") + 1);
+            console.log("JS: Android base64 length:", base64Data.length);
             window.Android.shareImageBase64(base64Data, 'image/png');
         } else if (window.webkit && window.webkit.messageHandlers.downloadHandler) {
             // iOS native app
             const base64Data = capturedPhoto.src.substring(capturedPhoto.src.indexOf(",") + 1);
+            console.log("JS: iOS base64 length:", base64Data.length);
             window.webkit.messageHandlers.downloadHandler.postMessage({
                 action: "download",
                 url: base64Data,
@@ -525,13 +527,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.downloadPhoto = function() {
         const imageElement = document.querySelector('#captured-photo');
         if (!imageElement || !imageElement.src) {
-            console.error("JS: No image element found!");
+            console.error("JS: No image element found or no src!");
             return;
         }
 
         html2canvas(imageElement).then(canvas => {
             const fullDataUrl = canvas.toDataURL('image/png');
+            console.log("JS: Full dataURL length:", fullDataUrl.length);
             const base64Data = fullDataUrl.substring(fullDataUrl.indexOf(",") + 1);
+            console.log("JS: Base64 length:", base64Data.length);
             const filename = 'diary_photo.png';
             window.webkit.messageHandlers.downloadHandler.postMessage({
                 action: "download",
