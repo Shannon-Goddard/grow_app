@@ -481,11 +481,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     // Save photo
     saveBtn.addEventListener('click', () => {
-        const link = document.createElement('a');
         const growName = localStorage.getItem(`growName_${localStorage.getItem('currentGrowId')}`) || 'grow';
-        link.download = `${growName}-diary-${new Date().toISOString().slice(0, 10)}.png`;
-        link.href = capturedPhoto.src;
-        link.click();
+        const filename = `${growName}-diary-${new Date().toISOString().slice(0, 10)}.png`;
+        
+        if (window.Android && window.Android.shareImageBase64) {
+            // Android native app
+            const base64Data = capturedPhoto.src.substring(capturedPhoto.src.indexOf(",") + 1);
+            window.Android.shareImageBase64(base64Data, 'image/png');
+        } else if (window.webkit && window.webkit.messageHandlers.downloadHandler) {
+            // iOS native app
+            const base64Data = capturedPhoto.src.substring(capturedPhoto.src.indexOf(",") + 1);
+            window.webkit.messageHandlers.downloadHandler.postMessage({
+                action: "download",
+                url: base64Data,
+                filename: filename
+            });
+        } else {
+            // Web fallback
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = capturedPhoto.src;
+            link.click();
+        }
     });
     
     // Retake photo
@@ -504,6 +521,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     photoControls.style.setProperty('display', 'none', 'important');
     capturedPhoto.style.display = 'none';
     
+    // Download photo function for iOS
+    window.downloadPhoto = function() {
+        const imageElement = document.querySelector('#captured-photo');
+        if (!imageElement || !imageElement.src) {
+            console.error("JS: No image element found!");
+            return;
+        }
+
+        html2canvas(imageElement).then(canvas => {
+            const fullDataUrl = canvas.toDataURL('image/png');
+            const base64Data = fullDataUrl.substring(fullDataUrl.indexOf(",") + 1);
+            const filename = 'diary_photo.png';
+            window.webkit.messageHandlers.downloadHandler.postMessage({
+                action: "download",
+                url: base64Data,
+                filename: filename
+            });
+        }).catch(err => {
+            console.error('JS: html2canvas FAILED:', err);
+        });
+    };
+
     // Initialize
     await populateGrowDropdown();
     await updateDataTable();
