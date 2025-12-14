@@ -1,908 +1,493 @@
 <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <!-- Google Analytics - Keep for user insights -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-X0XEMR28V2');
-        </script>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta name="description" content="GrowApp Cannabis Gear - Premium growing apparel">
+    <meta name="keywords" content="cannabis, growing, equipment, nutrients, gear, supplies">
+    
+    <!-- Mobile App Meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    <!-- App Icons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://shop.growappcannabis.guide https://*.shopify.com;">
+    
+    <title>GrowApp Gear - Cannabis Growing Equipment</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        <!-- Essential Meta Tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #000;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
         
-        <!-- Mobile WebView Optimizations -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="msapplication-tap-highlight" content="no">
+        .shop-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
         
-        <!-- App Icons -->
-        <link href="../assets/img/favicon.png" rel="icon">
-        <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        .shop-header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #333;
+            z-index: 1000;
+            position: relative;
+        }
         
-        <!-- Security Headers -->
-        <meta http-equiv="X-Content-Type-Options" content="nosniff">
-        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+        .back-btn {
+            background: none;
+            border: none;
+            color: #04AA6D;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
         
-        <!-- Performance Optimizations -->
-        <meta http-equiv="Cache-Control" content="max-age=31536000, public">
-        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" as="style" crossorigin="anonymous">
-        <link rel="preload" href="assets/css/shop.css" as="style">
-        <link rel="preload" href="../assets/css/style.css" as="style">
-        <!-- CSS Files -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet" crossorigin>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" crossorigin="anonymous">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css" rel="stylesheet" crossorigin="anonymous">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet" crossorigin="anonymous">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
-        <link href="../assets/css/style.css" rel="stylesheet">
-        <link href="assets/css/shop.css" rel="stylesheet">
-        <link href="assets/css/shop-image-fix.css" rel="stylesheet">
-
-
+        .back-btn:hover {
+            background: rgba(4, 170, 109, 0.1);
+        }
         
-        <title>Shop</title>
-        <!-- Critical CSS -->
-<style>
-/* Critical CSS for shop page */
-body {font-family:"Open Sans",sans-serif;margin:0;padding:0}
-#loader-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000;background-color:#fff}
-.navbar{background-color:rgba(0,0,0,.5);overflow:auto;position:fixed;bottom:0;width:100%;margin:0;padding:0;z-index:1;align-items:center;justify-content:center;display:flex}
-.navbar ul{margin:0;padding:5px;display:flex;list-style-type:none;align-items:center}
-.navbar a{float:left;text-align:center;padding:10px 20px 10px 0;font-size:26px;font-weight:600;color:#fff;text-decoration:none;transition:.3s;width:20%}
-.navbar a:hover,.navbar .active{color:#04AA6D}
-.portfolio-container{opacity:0;transition:opacity 0.3s ease}
-.portfolio-container.loaded{opacity:1}
-.portfolio-item{opacity:0;transform:translateY(20px);transition:opacity 0.5s ease, transform 0.5s ease}
-.portfolio-item.visible{opacity:1;transform:translateY(0)}
-</style>
-
-      </head>
+        .shop-title {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            flex: 1;
+            text-align: center;
+            margin: 0 10px;
+        }
+        
+        .refresh-btn {
+            background: none;
+            border: none;
+            color: #04AA6D;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+        
+        .refresh-btn:hover {
+            background: rgba(4, 170, 109, 0.1);
+        }
+        
+        .webview-container {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .shop-message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            padding: 40px 20px;
+        }
+        
+        .shop-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        
+        .shop-message h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #04AA6D;
+        }
+        
+        .shop-message p {
+            font-size: 16px;
+            color: #ccc;
+            margin-bottom: 0;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            transition: opacity 0.3s ease;
+        }
+        
+        .loading-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #333;
+            border-top: 3px solid #04AA6D;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+            color: #04AA6D;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .error-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1a1a1a;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 998;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .error-icon {
+            font-size: 48px;
+            color: #ff4444;
+            margin-bottom: 20px;
+        }
+        
+        .error-title {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .error-message {
+            color: #ccc;
+            font-size: 14px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        
+        .retry-btn {
+            background: #04AA6D;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .retry-btn:hover {
+            background: #038a5a;
+        }
+        
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .shop-header {
+                padding: 8px 12px;
+            }
+            
+            .shop-title {
+                font-size: 16px;
+            }
+            
+            .back-btn, .refresh-btn {
+                font-size: 16px;
+                padding: 6px;
+            }
+        }
+        
+        /* iOS specific styles */
+        @supports (-webkit-touch-callout: none) {
+            .shop-header {
+                padding-top: env(safe-area-inset-top, 10px);
+            }
+        }
+        
+        /* Android specific styles */
+        @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+            .shopify-iframe {
+                transform: translateZ(0);
+            }
+        }
+    </style>
+</head>
 
 <body>
-
-  <div id="loader-wrapper">
-    <!-- Optional: Add a loading spinner or animation here -->
-  </div>
-
-  <main id="main">
-   
-    <!-- ======= Shop ======= -->
-    <section id="portfolio" class="portfolio mt-5">
-
-      <div class="container">
-        <div class="section-title" role="heading" aria-level="1">
-          <h2>Shop</h2>
-          <p>must-have</p>
-        </div>
-
-        <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <small><a target="_blank" href="../assets/policies/disclosure.html">Disclosure: </a>As an Amazon Associate, Loyal9 LLC earns from qualifying purchases.<br><span class="typed-text"></span><span class="cursor">&nbsp;</span></small>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-        
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-web">Nutrients</li>
-              <li data-filter=".filter-kit">Gear</li>
-              <li data-filter=".filter-apparel">Apparel</li>
-            </ul>
-          </div>
+    <div class="shop-container">
+        <div class="shop-header">
+            <button class="back-btn" onclick="goBack()" aria-label="Go back">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1 class="shop-title">GrowApp Gear</h1>
+            <button class="refresh-btn" onclick="refreshShop()" aria-label="Refresh">
+                <i class="fas fa-sync-alt"></i>
+            </button>
         </div>
         
-        <div class="row portfolio-container mb-5">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap comparison-item">
-              <img data-src="../shop/assets/img/calendar.png" class="img-fluid" src="" alt="Calendar">
-              <div class="portfolio-info">
-                <h4>2026 Cannabis Grow Calendar</h4>
-                <h4>Classic Strains</h4>
-                <small>Listed Price: $29</small>
-                <br>
-                <a href="https://loyal9llc.gumroad.com/l/fvlrts" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">Buy It!</button></a>
-              </div>
+        <div class="webview-container">
+            <div class="loading-overlay" id="loadingOverlay">
+                <div class="spinner"></div>
+                <div class="loading-text">Loading GrowApp Gear...</div>
+            </div>
+            
+            <div class="error-overlay" id="errorOverlay">
+                <div class="error-icon">🛒</div>
+                <div class="error-title">Opening Shop</div>
+                <div class="error-message">
+                    Taking you to GrowApp Gear store...
                 </div>
-              </div>
+                <button class="retry-btn" onclick="redirectToShop()">Continue to Shop</button>
             </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap comparison-item">
-              <img data-src="../shop/assets/img/seedsman/cannabis-seeds.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Cannabis Seeds">
-              <div class="portfolio-info">
-                <h4>Seed Supreme</h4>
-                <h4>seeds</h4>
-                <small>USA Shipping ONLY</small>
-                <br>
-                <a href="https://www.seedsupreme.com/?utm_source=affiliate&utm_campaign=generic&utm_medium=banner&utm_content=light-300x250-mediumrectangle&a_aid=loyal9&a_bid=1d995941" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-              <div class="comparison-suggestion">
-                <img data-src="https://seedsman.postaffiliatepro.com/accounts/default1/aang5ubmn24/b00c0ade.gif" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Seedsman gif">
-                <div class="suggestion-info">
-                <small>Worldwide Shipping</small>
-                <br>
-                <a href="https://www.seedsman.com?a_aid=6675f1c3ce128" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-                <small>COMPARE & SAVE</small>
-                </div>
-              </div>
+            
+            <div class="shop-message">
+                <div class="shop-icon">🛍️</div>
+                <h2>Opening GrowApp Gear</h2>
+                <p>Taking you to our premium cannabis growing equipment...</p>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/ac-infinity/germination-kit.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="AC Infinity Germination Kit">
-              <div class="portfolio-info">
-                <h4>AC Infinity Germination Kit</h4>
-                <h4>with LED Grow Light Bars</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   742</small>
-                <small>List Price: $74.99 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <br>
-                <a href="https://amzn.to/458WwlB" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/general-hydroponics/rapid-rooter-plugs.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Rapid Rooter 50 Cube Tray">
-              <div class="portfolio-info">
-                <h4>Rapid Rooter plugs</h4>
-                <h4>50pk</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   12,371</small>
-                <small>List Price: $20.37 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <br>
-                <a href="https://amzn.to/3TYdvSt" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-apparel">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/redbubble/sticker.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Sticker">
-              <div class="portfolio-info">
-                <h4>Loyal9 Stickers</h4>
-                <small>From $2.24</small>
-                <small>+16 designs</small>
-                <br>
-                <a class="rounded-pill" aria-label="See Offer" href="https://www.redbubble.com/people/loyal9/shop?artistUserName=Loyal9&iaCode=all-stickers" target="_blank">See Offer</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap comparison-item">
-              <img data-src="../shop/assets/img/gorilla/4x4-tent.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Gorilla grow tent 4X4">
-              <div class="portfolio-info">
-                <h4>Gorilla</h4>
-                <h4>4X4 Grow Tent</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   614</small>
-                <small>List Price: $189.95 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <small>+6 sizes</small>
-                <br>
-                <a href="https://amzn.to/4lV7O3B" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-              <div class="comparison-suggestion">
-                <img data-src="../shop/assets/img/vivosun/4x4-tent.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Vivosun grow tent 4X4">
-                <div class="suggestion-info">
-                  <small>Vivosun 4X4 Grow Tent</small>
-                  <small></small>
-                  <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   30,383</small>
-                <small>List Price: $129.99</small>
-                <small>+9 sizes</small>
-                <small>+1 colors</small>
-                <br>
-                <a href="https://amzn.to/3Ik2ZSX" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-                <small>COMPARE & SAVE</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/bn-link/plug-timer.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="BN-LINK WiFi outlet timer">
-              <div class="portfolio-info">
-                <h4>BN-LINK Outlet | Timer</h4>
-                <h4>WiFi</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star empty-star"></i> 
-                </a>   13,617</small>
-                <small>List Price: $19.99 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <br>
-                <a href="https://amzn.to/3QdR5un" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/blink/mini-camera.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="BN-LINK WiFi outlet timer">
-              <div class="portfolio-info">
-                <h4>Blink Mini camera</h4>
-                <h4>WiFi</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star half-star"></i> 
-                </a>   301,645</small>
-                <small>List Price: $29.99 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <small>+4 options</small>
-                <br>
-                <a href="https://amzn.to/42RZ3Rt" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-apparel">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/redbubble/pin.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Pin">
-              <div class="portfolio-info">
-                <h4>Loyal9 Pins</h4>
-                <small style="color:white;"><mark style="background-color:red;"><b>Save up to 20%</b></mark></small>
-                <small>List Price: $4.59</small>
-                <small>+16 designs</small>
-                <br>
-                <a class="rounded-pill" aria-label="See Offer" href="https://www.redbubble.com/people/loyal9/shop?artistUserName=loyal9&asc=u&iaCode=u-pin-button" target="_blank">See Offer</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/general-hydroponics/flora-series.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="GH General Hydroponics Flora Series">
-              <div class="portfolio-info">
-                <h4>GH Flora Series</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   1,021</small>
-                <small>List Price: $35.99</small>
-                <br>
-                <a href="https://amzn.to/40jiTDZ" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap comparison-item">
-              <img data-src="../shop/assets/img/blue-lab/ph-pen.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Bluelab pH Pen">
-              <div class="portfolio-info">
-                <h4>Bluelab</h4>
-                <h4>pH Pen</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   4,622</small>
-                <small>List Price: $112.50 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <small>+1 option</small>
-                <br>
-                <a href="https://amzn.to/46HYgnX" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-              <div class="comparison-suggestion">
-                <img data-src="../shop/assets/img/vivosun/ph-pen.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Vivosun pH Pen">
-                <div class="suggestion-info">
-                  <small>VIVOSUN</small>
-                  <small>pH and TDS</small>
-                  <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star empty-star"></i>  
-                </a>   23,341</small>
-                <small>List Price: $18.99</small>
-                <small>+1 option</small>
-                <br>
-                <a href="https://amzn.to/44MzpNt" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-                <small>COMPARE & SAVE</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/general-hydroponics/ph-kit.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="General Hydroponics pH Control Kit">
-              <div class="portfolio-info">
-                <h4>GH pH Control Kit</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   28,029</small>
-                <small>List Price: $21.89 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <small>+2 options</small>
-                <br>
-                <a href="https://amzn.to/3YIi1aE" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-apparel">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/redbubble/shirt.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="T-Shirt">
-              <div class="portfolio-info">
-                <h4>Loyal9 T-Shirts</h4>
-                <small style="color:white;"><mark style="background-color:red;"><b>Save up to 30%</b></mark></small>
-                <small>List Price: $29.99</small>
-                <small>+16 designs</small>
-                <br>
-                <a class="rounded-pill" aria-label="See Offer" href="https://www.redbubble.com/people/loyal9/shop?artistUserName=loyal9&iaCode=u-tees" target="_blank">See Offer</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap comparison-item">
-              <img data-src="../shop/assets/img/vivosun/fabric-pots.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Bluelab pH Pen">
-              <div class="portfolio-info">
-                <h4>Vivosun</h4>
-                <h4>5 Gal 10pk</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   1,694</small>
-                <small>List Price: $24.99 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <small>+6 options</small>
-                <br>
-                <a href="https://amzn.to/4kMEaww" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-              <div class="comparison-suggestion">
-                <img data-src="../shop/assets/img/gardzen/fabric-pots.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Vivosun pH Pen">
-                <div class="suggestion-info">
-                  <small>Gardzen</small>
-                  <small>5 Gal 10pk</small>
-                  <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i>  
-                </a>   20,332</small>
-                <small>List Price: $21.99</small>
-                <small>+8 options</small>
-                <br>
-                <a href="https://amzn.to/4kyUH6P" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-                <small>COMPARE & SAVE</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/lost-coast/plant-therapy.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Lost Coast Plant Therapy">
-              <div class="portfolio-info">
-                <h4>Lost Coast Plant Therapy</h4>
-                <h4>Plant Wash</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   647</small>
-                <small>List Price: $48.99</small>
-                <br>
-                <a href="https://amzn.to/3TDEu5u" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/bio-bizz/bio-bizz.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Lost Coast Plant Therapy">
-              <div class="portfolio-info">
-                <h4>Biobizz</h4>
-                <h4>Bio Grow - Bio Bloom - Top Max</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   18</small>
-                <small>List Price: $123.36</small>
-                <br>
-                <a href="https://amzn.to/40XoPky" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-apparel">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/redbubble/hoodie.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Hoodie">
-              <div class="portfolio-info">
-                <h4>Loyal9 Hoodies</h4>
-                <small style="color:white;"><mark style="background-color:red;"><b>Save up to 25%</b></mark></small>
-                <small>List Price: $58.49</small>
-                <small>+16 designs</small>
-                <br>
-                <a class="rounded-pill" aria-label="See Offer" href="https://www.redbubble.com/people/loyal9/shop?artistUserName=loyal9&iaCode=u-sweatshirts" target="_blank">See Offer</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/microscope/microscope.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Wireless Digital Microscope">
-              <div class="portfolio-info">
-                <h4>Wireless Digital Microscope</h4>
-                <h4>Android | iOS | Windows | Mac</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star empty-star"></i> 
-                </a>   9,109</small>
-                <small>List Price: $39.99</small>
-                <small>+1 option</small>
-                <br>
-                <a href="https://amzn.to/40S5Rfo" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/foxfarms/ocean-forest.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Ocean Forest Potting Soil Mix">
-              <div class="portfolio-info">
-                <h4>OCEAN FOREST®</h4>
-                <h4>Potting Soil</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   10,534</small>
-                <small>List Price: $26.99 </small>
-                <small>+2 options</small>
-                <br>
-                <a href="https://amzn.to/3Urq9d8" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap comparison-item">
-              <img data-src="../shop/assets/img/govee/hygrometers.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Gorilla grow tent 4X4">
-              <div class="portfolio-info">
-                <h4>Govee Mini Hygrometers</h4>
-                <h4>6pk</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star empty-star"></i> 
-                </a>   2,319</small>
-                <small>List Price: $99.99 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <small>+1 option</small>
-                <br>
-                <a href="https://amzn.to/3Aqj2L6" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-              <div class="comparison-suggestion">
-                <img data-src="../shop/assets/img/hygrometer/mini-hygrometers.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Vivosun grow tent 4X4">
-                <div class="suggestion-info">
-                  <small>Mini Hygrometers 12pk</small>
-                  <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star empty-star"></i>  
-                </a>   8,108</small>
-                <small>List Price: $14.99</small>
-                <br>
-                <a href="https://amzn.to/4cUnuQy" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-                <small>COMPARE & SAVE</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap comparison-item">
-              <img data-src="../shop/assets/img/herb-guard/smart-jar.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Advanced Nutrients Starter Kit">
-              <div class="portfolio-info">
-                <h4>Herb Guard</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   2,095</small>
-                <small>List Price: $72.99 </small>
-                <br>
-                <a href="https://amzn.to/4ly3wiz" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-              <div class="comparison-suggestion">
-                <img data-src="../shop/assets/img/ball/32oz-jars.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Ball Wide Mouth Quart Jar">
-              <div class="suggestion-info">
-                <small>Ball Wide Mouth</small>
-                <small>Quart Jar 3pk</small>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   22,012</small>
-                <small>List Price: $19.98 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <br>
-                <a href="https://amzn.to/4ly39EH" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-                <small>COMPARE & SAVE</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-apparel">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/redbubble/backpack.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Backpack">
-              <div class="portfolio-info">
-                <h4>Loyal9 Backpacks</h4>
-                <small style="color:white;"><mark style="background-color:red;"><b>Save up to 20%</b></mark></small>
-                <small>List Price: $63.74</small>
-                <small>+16 designs</small>
-                <br>
-                <a class="rounded-pill" aria-label="See Offer" href="https://www.redbubble.com/people/loyal9/shop?artistUserName=loyal9&asc=u&iaCode=u-backpack" target="_blank">See Offer</a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/growers-choice/4x4-light.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Growers Choice Grow Light">
-              <div class="portfolio-info">
-                <h4>Growers Choice</h4>
-                <h4>4X4 Grow Light</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star empty-star"></i>  
-                </a>   7</small>
-                <small>List Price: $720 </small>
-                <a href="https://amzn.to/3U7Glj8" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap comparison-item">
-              <img data-src="../shop/assets/img/advanced-nutrients/starter-kit.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Advanced Nutrients Starter Kit">
-              <div class="portfolio-info">
-                <h4>Advanced Nutrients Starter Kit</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   63</small>
-                <small>List Price: $137.12 </small>
-                <br>
-                <a href="https://amzn.to/3UQoLBd" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-              <div class="comparison-suggestion">
-                <img data-src="../shop/assets/img/advanced-nutrients/micro-grow-bloom.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Vivosun AeroZesh S Series">
-                <div class="suggestion-info">
-                  <small>Advanced Nutrients</small>
-                  <small>Micro,Grow, Bloom </small>
-                  <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   4,966</small>
-                <small>List Price: $49.99</small>
-                <br>
-                <a href="https://amzn.to/4kIk06I" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-                <small>COMPARE & SAVE</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/foxfarms/cultivation-nation.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="FoxFarm Cultivation Nation 70/30">
-              <div class="portfolio-info">
-                <h4>Cultivation Nation®</h4>
-                <h4>Coconut Coir and Perlite</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   581</small>
-                <small>List Price: $39.95 </small>
-                <br>
-                <a href="https://amzn.to/4fGbD9N" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/foxfarms/happy-frog.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Happy Frog Potting Soil">
-              <div class="portfolio-info">
-                <h4>Happy Frog® Potting Soil</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i>  
-                </a>   2,860</small>
-                <small>List Price: $29.99 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <small>+2 options</small>
-                <br>
-                <a href="https://amzn.to/3UupRSJ" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/foxfarms/dirty-dozen.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="FoxFarm Dirty Dozen Starter Kit">
-              <div class="portfolio-info">
-                <h4>FoxFarm Dirty Dozen Starter Kit</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i>  
-                </a>   996</small>
-                <small>List Price: $122.99 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <br>
-                <a href="https://amzn.to/44MVJXc" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap comparison-item">
-              <img data-src="../shop/assets/img/ac-infinity/6in-air-filtration-kit.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="AC Infinity Air Filtration PRO">
-              <div class="portfolio-info">
-                <h4>AC Infinity Air Filtration PRO</h4>
-                <h4>6" Kit</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   1,4151</small>
-                <small>List Price: $259 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <small>+5 options</small>
-                <br>
-                <a href="https://amzn.to/3NHs4GG" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-              <div class="comparison-suggestion">
-                <img data-src="../shop/assets/img/vivosun/6in-fan-kit.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Vivosun AeroZesh S Series">
-                <div class="suggestion-info">
-                  <small>Vivosun AeroZesh S Series</small>
-                  <small>6" Kit</small>
-                  <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i> 
-                </a>   7,207</small>
-                <small>List Price: $129.99</small>
-                <br>
-                <a href="https://amzn.to/3IJVeWg" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-                <small>COMPARE & SAVE</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/ac-infinity/5x5-tent-kit.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="AC Infinity Advance Grow System PRO 5x5">
-              <div class="portfolio-info">
-                <h4>AC Infinity Advance Grow System</h4>
-                <h4>PRO 4x4</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i>  
-                </a>   1,206</small>
-                <small>List Price: $1,399 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <small>+6 options</small>
-                <br>
-                <a href="https://amzn.to/4cYdRkp" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-apparel">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/redbubble/notebook.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Notebook">
-              <div class="portfolio-info">
-                <h4>Loyal9 Notebooks</h4>
-                <small style="color:white;"><mark style="background-color:red;"><b>Save up to 20%</b></mark></small>
-                <small>List Price: $19.02</small>
-                <small>+16 designs</small>
-                <br>
-                <a class="rounded-pill" aria-label="See Offer" href="https://www.redbubble.com/people/loyal9/shop?artistUserName=loyal9&asc=u&iaCode=u-notebook-spiral" target="_blank">See Offer</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/midea/dehumidifier.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Midea Smart Dehumidifiers">
-              <div class="portfolio-info">
-                <h4>Midea Smart Dehumidifiers</h4>
-                <h4>20 pint</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star empty-star"></i> 
-                </a>   4,371</small>
-                <small>List Price: $199.99 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <small>+3 options</small>
-                <br>
-                <a href="https://amzn.to/4f0rdwY" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/dreo/humidifier.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Dreo Humidifier">
-              <div class="portfolio-info">
-                <h4>Dreo Smart Humidifier</h4>
-                <h4>4L</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i>  
-                </a>   6,010</small>
-                <small>List Price: $54.99 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <small>+4 options</small>
-                <br>
-                <a href="https://amzn.to/4hoUzXi" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/givebest/heater.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="GiveBest Smart Heater">
-              <div class="portfolio-info">
-                <h4>GiveBest Smart Heater</h4>
-                <small><a class="rating">
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star"></i> 
-                  <i class="fas fa-star-half-alt"></i>  
-                </a>   792</small>
-                <small>List Price: $119.99 <i class="fa-sharp fa-solid fa-check icon-check"></i><b style="color: #00A8E1; font-family:typography">prime</b></small>
-                <br>
-                <a href="https://amzn.to/4e43eeT" target="_blank"><button type="button" class="rounded-pill" aria-label="See Offer">See Offer</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-apparel">
-            <div class="portfolio-wrap">
-              <img data-src="../shop/assets/img/shop-watch-face.png" class="img-fluid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Cannabis Watch Face | 420 Time">
-              <div class="portfolio-info">
-                <h4>Cannabis Watch Face | 420 Time</h4>
-                <small>List Price: $1.99</small>
-                <small>100 designs</small>
-                <br>
-                <a class="rounded-pill" aria-label="See Offer" href="https://play.google.com/store/apps/details?id=com.loyal9.strainswatchface" target="_blank">See Offer</a>
-              </div>
-            </div>
-          </div>
-
         </div>
+    </div>
 
-      </div>
-    </section><!-- End Shop Section -->
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
 
-  </main><!-- End #main -->
+    <script>
+        // Global variables
+        let loadingOverlay;
+        let errorOverlay;
+        
+        // Shop URL for this domain
+        const shopUrl = 'https://shop.loyal9.app';
+        
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            loadingOverlay = document.getElementById('loadingOverlay');
+            errorOverlay = document.getElementById('errorOverlay');
+            
+            // Check if returning from Shopify
+            checkReturnFromShopify();
+            
+            // Shopify blocks iframes - redirect immediately with smooth transition
+            setTimeout(function() {
+                redirectToShop();
+            }, 800);
+            
+            setupMobileOptimizations();
+        });
+        
+        // Check if user is returning from Shopify
+        function checkReturnFromShopify() {
+            const returnUrl = sessionStorage.getItem('growapp_return_url');
+            if (returnUrl && document.referrer.includes('loyal9.app')) {
+                sessionStorage.removeItem('growapp_return_url');
+                showReturnMessage();
+            }
+        }
+        
+        // Show return message
+        function showReturnMessage() {
+            const message = document.createElement('div');
+            message.style.cssText = `
+                position: fixed;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #04AA6D;
+                color: white;
+                padding: 12px 24px;
+                border-radius: 25px;
+                z-index: 2000;
+                font-size: 14px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            `;
+            message.textContent = 'Welcome back! 🛍️';
+            document.body.appendChild(message);
+            
+            setTimeout(() => {
+                message.remove();
+            }, 3000);
+        }
+        
+        // Direct redirect to shop
+        function redirectToShop() {
+            // Store return URL for seamless return
+            sessionStorage.setItem('growapp_return_url', window.location.href);
+            
+            // Add return parameter and UTM tracking
+            const returnParam = encodeURIComponent(window.location.href);
+            const shopifyUrl = `${shopUrl}?return_to=${returnParam}&utm_source=growapp&utm_medium=webapp&utm_campaign=shop_redirect`;
+            
+            // Redirect to Shopify store
+            window.location.href = shopifyUrl;
+        }
+        
 
-   <!-- ======= .navbar ======= -->
-   <div id="preloader"></div>
-   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-sharp fa-solid fa-angle-up"></i></a>
- 
-   <nav id="navbar" class="navbar order-last order-lg-0">
-     <ul>
-       <li><a class="nav-link scrollto fa fa-home" href="../index.html" title="Home" aria-label="Navigate to Home"></a></li>
-       <li><a class="nav-link scrollto fa fa-leaf" href="../mygrow/mygrow.html" title="My Grow" aria-label="Navigate to MyGrow"></a></li>
-       <li><a class="nav-link scrollto fa fa-book" href="../mydiary/mydiary.html" title="My Diary" aria-label="Navigate to MyDiary"></a></li>
-       <li><a class="nav-link scrollto active fa fa-shopping-cart " href="../shop/shop.html" title="Shop" aria-label="Navigate to Shop"></a></li>
-       <li><a class="nav-link scrollto fa fa-cogs" href="../tools/tools.html" title="Tools" aria-label="Navigate to Tools"></a></li>
-     </ul>
-   </nav><!-- .navbar -->
-
-<!-- Essential libraries -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" defer crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js" defer crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" defer crossorigin="anonymous"></script>
-
-<!-- Performance optimizations -->
-<script src="assets/js/script-loader.js"></script>
-<script src="assets/js/shop-perf.js"></script>
-<script src="../assets/js/main.js" defer></script>
-
- </body>
- </html>
+        
+        // Setup mobile-specific optimizations
+        function setupMobileOptimizations() {
+            // Prevent zoom on iOS
+            document.addEventListener('touchstart', function(e) {
+                if (e.touches.length > 1) {
+                    e.preventDefault();
+                }
+            });
+            
+            // Handle orientation changes
+            window.addEventListener('orientationchange', function() {
+                // Orientation handling for mobile
+            });
+            
+            // Optimize for webview
+            if (window.navigator.userAgent.includes('wv')) {
+                document.body.classList.add('webview');
+            }
+        }
+        
+        // Inject mobile styles into iframe (if same-origin)
+        function injectMobileStyles() {
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            const style = iframeDoc.createElement('style');
+            style.textContent = `
+                body { 
+                    -webkit-touch-callout: none;
+                    -webkit-user-select: none;
+                    -webkit-tap-highlight-color: transparent;
+                }
+                .shopify-section { 
+                    padding: 10px !important; 
+                }
+                .btn, button { 
+                    min-height: 44px !important;
+                    font-size: 16px !important;
+                }
+                input, select, textarea {
+                    font-size: 16px !important;
+                }
+            `;
+            iframeDoc.head.appendChild(style);
+        }
+        
+        // Hide loading overlay
+        function hideLoading() {
+            loadingOverlay.classList.add('hidden');
+            setTimeout(() => {
+                loadingOverlay.style.display = 'none';
+            }, 300);
+        }
+        
+        // Show error overlay
+        function showError() {
+            loadingOverlay.style.display = 'none';
+            errorOverlay.style.display = 'flex';
+        }
+        
+        // Hide error overlay
+        function hideError() {
+            errorOverlay.style.display = 'none';
+        }
+        
+        // Retry loading
+        function retryLoad() {
+            redirectToShop();
+        }
+        
+        // Refresh shop
+        function refreshShop() {
+            const refreshBtn = document.querySelector('.refresh-btn i');
+            refreshBtn.style.animation = 'spin 1s linear infinite';
+            
+            redirectToShop();
+        }
+        
+        // Go back function
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                // Navigate to main app
+                window.location.href = '../index.html';
+            }
+        }
+        
+        // Handle app lifecycle events
+        document.addEventListener('visibilitychange', function() {
+            if (document.visibilityState === 'visible') {
+                // App became visible - refresh if needed
+                if (errorOverlay.style.display === 'flex') {
+                    retryLoad();
+                }
+            }
+        });
+        
+        // Handle network status changes
+        window.addEventListener('online', function() {
+            if (errorOverlay.style.display === 'flex') {
+                retryLoad();
+            }
+        });
+        
+        window.addEventListener('offline', function() {
+            showError();
+        });
+        
+        // Prevent context menu on long press (mobile)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Handle iOS safe areas
+        if (window.CSS && CSS.supports('padding-top', 'env(safe-area-inset-top)')) {
+            document.documentElement.style.setProperty('--safe-area-inset-top', 'env(safe-area-inset-top)');
+        }
+    </script>
+</body>
+</html>
