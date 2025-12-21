@@ -64,6 +64,18 @@ const techStack = {
 - Offline functionality
 - Data synchronization
 
+### 📸 **MyDiary Photo Feature**
+- Camera integration with custom data overlays
+- Visual grow documentation
+- Progress tracking with schedule data
+- Shareable grow logs
+
+### ♾️ **Unlimited Grows**
+- No restrictions on grow tracking
+- Multiple strain management
+- Comparative analysis tools
+- Advanced scheduling for auto-flowering strains
+
 ## 🏗️ Architecture
 
 ```
@@ -78,6 +90,41 @@ const techStack = {
 │  (6 Brands)     │    │   (Local Store)  │    │   (Apps)        │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
 ```
+
+## 🤖 Development & AI Collaboration
+
+### The 5-Year Journey (2020-2025)
+
+**GrowApp** represents 5 years of solo development by Shannon Goddard, evolving from a simple grow tracker into a comprehensive cultivation platform. The project demonstrates transparent human-AI collaboration in modern software development.
+
+### 🧠 Human Vision & Leadership
+**Shannon Goddard | Loyal9 LLC** (2020-2025)
+- **Original Concept**: Cannabis cultivation guidance platform
+- **5-Year Development**: Solo development from concept to app stores
+- **Product Vision**: User experience design and feature roadmap
+- **Business Strategy**: Market positioning and growth planning
+- **Domain Expertise**: Cannabis cultivation knowledge and community understanding
+
+### 🤖 AI Technical Implementation
+**Amazon Q (AWS)** (2025)
+- **Website Optimization**: Google search optimization and header enhancements
+- **Storage Architecture**: Migration from 4 localStorage grows to unlimited IndexedDB system
+- **MyDiary Enhancement**: Evolution from user input to photo overlay system with schedule data
+- **Performance Optimization**: Technical implementation of advanced features
+
+**Grok 3** (2025)
+- **Blog Section**: Content management and article generation
+- **Games Integration**: Cannabis-themed mini-games and entertainment features
+
+### 🤝 Collaboration Model
+
+**The Partnership**: Human vision meets AI implementation capability
+
+- **Shannon's Role**: "I need unlimited grows with auto-flower schedules and photo overlays showing grow data"
+- **AI Role**: "Here's how we implement that with IndexedDB, camera APIs, and data visualization"
+- **Shared Success**: Features that neither could have built alone
+
+This represents the future of software development — human creativity and domain expertise enhanced by AI technical capabilities.
 
 ## 🚀 Quick Start
 
@@ -96,6 +143,7 @@ const techStack = {
 - **Cross-platform deployment** (Web, iOS, Android)
 - **Offline-first architecture** with IndexedDB
 - **Mobile-optimized** responsive design
+- **Unlimited grow tracking** with auto-flower support
 
 ## 🎮 User Journey
 
@@ -103,8 +151,9 @@ const techStack = {
 2. **Grow Configuration** → Set plant size, lighting, nutrients
 3. **Schedule Generation** → Automated daily task creation
 4. **Daily Guidance** → Contextual growing instructions
-5. **Problem Solving** → Plant diagnostic tools
-6. **Harvest Planning** → Timing and preparation guides
+5. **Photo Documentation** → MyDiary with data overlays
+6. **Problem Solving** → Plant diagnostic tools
+7. **Harvest Planning** → Timing and preparation guides
 
 ## 🔧 Development
 
@@ -118,9 +167,13 @@ const techStack = {
 │   ├── strain-selector/    # Strain search interface
 │   ├── schedule-builder/   # Dynamic scheduling
 │   └── nutrient-selector/  # Nutrient configuration
+├── mydiary/
+│   ├── mydiary.html       # Photo overlay system
+│   └── assets/            # Camera integration
 ├── tools/
 │   ├── plant-doctor/       # Diagnostic tools
-│   └── search-strains/     # Strain database
+│   ├── search-strains/     # Strain database
+│   └── games/             # Cannabis mini-games
 └── data/
     ├── schedule-data.json  # Growth schedules
     └── nutrient-data.json  # Feeding schedules
@@ -146,6 +199,16 @@ const scheduleBuilder = {
     const { strain, size, lighting, nutrients } = userConfig;
     return buildCustomSchedule(strain, size, lighting, nutrients);
   }
+};
+```
+
+**MyDiary Photo System**
+```javascript
+// Camera integration with data overlays
+const myDiary = {
+  capturePhoto: () => accessCamera(),
+  addDataOverlay: (photo, scheduleData) => overlayGrowData(photo, scheduleData),
+  saveEntry: (photo, data) => storeInIndexedDB(photo, data)
 };
 ```
 
@@ -182,6 +245,30 @@ This repository contains the **mobile app version** of GrowApp. To maintain stab
 - **Featured** on multiple cannabis technology platforms
 - **Growing user base** across web and mobile platforms
 - **Open-source** contribution to cannabis cultivation technology
+- **AI Collaboration Pioneer** - Transparent human-AI development model
+
+## 🔬 Academic Transparency
+
+**GrowApp** demonstrates responsible AI integration in software development:
+
+### Human Contributions (2020-2025)
+- **5 years solo development** - Core platform and user experience
+- **Domain expertise** - Cannabis cultivation knowledge
+- **Product vision** - Feature roadmap and market strategy
+- **Community building** - User engagement and feedback integration
+
+### AI Contributions (2025)
+- **Technical implementation** - Advanced feature development
+- **Performance optimization** - Search optimization and data architecture
+- **Content generation** - Blog articles and game development
+
+### Collaboration Ethics
+- **Transparent attribution** - Clear credit for all contributions
+- **Skill complementarity** - Human vision + AI implementation
+- **Shared ownership** - Collaborative success model
+- **Future standard** - Template for ethical AI collaboration
+
+*This project sets the standard for transparent human-AI collaboration in software development.*
 
 ## 📱 Get the Apps
 
@@ -214,6 +301,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 **"Grow what you can't."** 🌿
 
-*Built with ❤️ by [Loyal9 LLC](https://loyal9.com)*
+*Built with ❤️ by Shannon Goddard | Loyal9 LLC*  
+*Enhanced through Human-AI Collaboration*
+
+**Setting the standard for transparent AI integration in software development**
 
 </div>
