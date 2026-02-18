@@ -49,16 +49,24 @@
         <link href="../assets/css/style.css" rel="stylesheet">
         <link href="../shop/assets/css/shop.css" rel="stylesheet">
         <style>
-          /* Ensure the links are always touchable even if the overlay hasn't 'faded' in yet */
           .portfolio-info {
           pointer-events: auto !important;
           }
 
-          /* Force mobile browsers to treat the images as instant buttons */
+          .portfolio-info a {
+          -webkit-touch-callout: none;
+          user-select: none;
+          pointer-events: auto !important;
+          }
+
           .portfolio-info a img {
           touch-action: manipulation;
           -webkit-user-drag: none;
+          -webkit-touch-callout: none;
+          user-select: none;
+          pointer-events: none;
           }
+
         </style>
       </head>
 
