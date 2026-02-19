@@ -49,39 +49,22 @@
         <link href="../assets/css/style.css" rel="stylesheet">
         <link href="../shop/assets/css/shop.css" rel="stylesheet">
         <style>
-          /* Disable hover effects for mobile */
-          .portfolio .portfolio-wrap::before {
-            opacity: 1 !important;
+          /* Button row below image */
+          .game-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 0;
+            background: #151515;
           }
-          .portfolio .portfolio-wrap .portfolio-info {
-            opacity: 1 !important;
-            pointer-events: auto !important;
-          }
-          .portfolio .portfolio-wrap img {
-            transform: none !important;
-          }
-          .portfolio .portfolio-wrap:hover img {
-            transform: none !important;
-          }
-          /* Make links instantly clickable */
-          .portfolio-info a {
+          .game-buttons a {
             -webkit-touch-callout: none;
             -webkit-tap-highlight-color: transparent;
-            -webkit-user-select: none;
             user-select: none;
-            pointer-events: auto !important;
-            display: block;
           }
-          .portfolio-info a img {
-            touch-action: manipulation;
-            -webkit-user-drag: none;
-            -webkit-user-select: none;
-            user-select: none;
-            pointer-events: none;
-          }
-          .portfolio-info h4 {
-            -webkit-user-select: none;
-            user-select: none;
+          .game-buttons img {
+            width: 70px;
+            height: auto;
             pointer-events: none;
           }
         </style>
@@ -111,18 +94,18 @@
               <img src="../games/img/heisenberg.png" class="img-fluid" alt="Heisenberg">
               <div class="portfolio-info">
                 <h4>Heisenberg</h4>
-                <div>
-                  <a href="../game/heisenberg/index.html" target="_blank">
-                  <img src="../games/img/play-demo.png" alt="Get it on Google Play" style="width: 80px; display: block; margin-bottom: 10px;">
-                  </a>
-                  <a href="https://play.google.com/store/apps/details?id=com.heinsenberg" target="_blank">
-                    <img src="../games/img/google.png" alt="Get it on Google Play" style="width: 80px; display: block; margin-bottom: 10px;">
-                  </a>
-                  <a href="https://apps.apple.com/us/app/heisenberg-cannabis-trivia/id6744303898" target="_blank">
-                    <img src="../games/img/apple.png" alt="Get it on App Store" style="width: 80px; display: block;">
-                  </a>
-                </div>
               </div>
+            </div>
+            <div class="game-buttons">
+              <a href="../game/heisenberg/index.html" target="_blank">
+                <img src="../games/img/play-demo.png" alt="Play Demo">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.heinsenberg" target="_blank">
+                <img src="../games/img/google.png" alt="Google Play">
+              </a>
+              <a href="https://apps.apple.com/us/app/heisenberg-cannabis-trivia/id6744303898" target="_blank">
+                <img src="../games/img/apple.png" alt="App Store">
+              </a>
             </div>
           </div>
 
@@ -131,38 +114,38 @@
               <img src="../games/img/short-term-memory.png" class="img-fluid" alt="Short-Term Memory">
               <div class="portfolio-info">
                 <h4>Short-Term Mem-uh...</h4>
-                <div>
-                <a href="../game/short-term-memory/index.html" target="_blank">
-                  <img src="../games/img/play-demo.png" alt="Get it on Google Play" style="width: 80px; display: block; margin-bottom: 10px;">
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.shorttermmemory" target="_blank">
-                  <img src="../games/img/google.png" alt="Get it on Google Play" style="width: 80px; display: block; margin-bottom: 10px;">
-                </a>
-                <a href="https://apps.apple.com/us/app/short-term-mem-uh/id6744303945" target="_blank">
-                  <img src="../games/img/apple.png" alt="Get it on App Store" style="width: 80px; display: block;">
-                </a>
               </div>
             </div>
+            <div class="game-buttons">
+              <a href="../game/short-term-memory/index.html" target="_blank">
+                <img src="../games/img/play-demo.png" alt="Play Demo">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.shorttermmemory" target="_blank">
+                <img src="../games/img/google.png" alt="Google Play">
+              </a>
+              <a href="https://apps.apple.com/us/app/short-term-mem-uh/id6744303945" target="_blank">
+                <img src="../games/img/apple.png" alt="App Store">
+              </a>
+            </div>
           </div>
-        </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-kit">
             <div class="portfolio-wrap">
               <img src="../games/img/name-that-strain.png" class="img-fluid" alt="Name That Strain">
               <div class="portfolio-info">
                 <h4>Name That Strain</h4>
-                <div>
-                <a href="../game/name-that-strain/index.html" target="_blank">
-                  <img src="../games/img/play-demo.png" alt="Get it on Google Play" style="width: 80px; display: block; margin-bottom: 10px;">
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.namethatstrain" target="_blank">
-                  <img src="../games/img/google.png" alt="Get it on Google Play" style="width: 80px; display: block; margin-bottom: 10px;">
-                </a>
-                <a href="https://apps.apple.com/us/app/name-that-strain/id6744304052" target="_blank">
-                  <img src="../games/img/apple.png" alt="Get it on App Store" style="width: 80px; display: block;">
-                </a>
-                </div>
               </div>
+            </div>
+            <div class="game-buttons">
+              <a href="../game/name-that-strain/index.html" target="_blank">
+                <img src="../games/img/play-demo.png" alt="Play Demo">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.namethatstrain" target="_blank">
+                <img src="../games/img/google.png" alt="Google Play">
+              </a>
+              <a href="https://apps.apple.com/us/app/name-that-strain/id6744304052" target="_blank">
+                <img src="../games/img/apple.png" alt="App Store">
+              </a>
             </div>
           </div>
 
@@ -171,18 +154,18 @@
               <img src="../games/img/go-toke.png" class="img-fluid" alt="Go Toke!">
               <div class="portfolio-info">
                 <h4>Go Toke! | No Fish!</h4>
-                <div>
-                <a href="../game/go-toke/index.html" target="_blank">
-                  <img src="../games/img/play-demo.png" alt="Get it on Google Play" style="width: 80px; display: block; margin-bottom: 10px;">
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.loyal9.gotoke" target="_blank">
-                  <img src="../games/img/google.png" alt="Get it on Google Play" style="width: 80px; display: block; margin-bottom: 10px;">
-                </a>
-                <a href="https://apps.apple.com/us/app/no-fish/id6744301471" target="_blank">
-                  <img src="../games/img/apple.png" alt="Get it on App Store" style="width: 80px; display: block;">
-                </a>
-                </div>
               </div>
+            </div>
+            <div class="game-buttons">
+              <a href="../game/go-toke/index.html" target="_blank">
+                <img src="../games/img/play-demo.png" alt="Play Demo">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.loyal9.gotoke" target="_blank">
+                <img src="../games/img/google.png" alt="Google Play">
+              </a>
+              <a href="https://apps.apple.com/us/app/no-fish/id6744301471" target="_blank">
+                <img src="../games/img/apple.png" alt="App Store">
+              </a>
             </div>
           </div>
 
@@ -191,15 +174,15 @@
               <img src="../games/img/slots-of-bud.png" class="img-fluid" alt="Slots of Bud">
               <div class="portfolio-info">
                 <h4>Slots of Bud</h4>
-                <div>
-                  <a href="../game/slots-of-bud/index.html" target="_blank">
-                  <img src="../games/img/play-demo.png" alt="Get it on Google Play" style="width: 80px; display: block; margin-bottom: 10px;">
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.slotsofbud" target="_blank">
-                  <img src="../games/img/google.png" alt="Get it on Google Play" style="width: 80px;">
-                </a>
-                </div>
               </div>
+            </div>
+            <div class="game-buttons">
+              <a href="../game/slots-of-bud/index.html" target="_blank">
+                <img src="../games/img/play-demo.png" alt="Play Demo">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.slotsofbud" target="_blank">
+                <img src="../games/img/google.png" alt="Google Play">
+              </a>
             </div>
           </div>
 
@@ -208,12 +191,12 @@
               <img src="../games/img/cannabis-watch-face.png" class="img-fluid" alt="Cannabis Watch Face | 420 Time">
               <div class="portfolio-info">
                 <h4>Cannabis Watch Face | 420 Time</h4>
-                <div>
-                <a href="https://play.google.com/store/apps/details?id=com.loyal9.strainswatchface" target="_blank">
-                  <img src="../games/img/google.png" alt="Get it on Google Play" style="width: 80px;">
-                </a>
-                </div>
               </div>
+            </div>
+            <div class="game-buttons">
+              <a href="https://play.google.com/store/apps/details?id=com.loyal9.strainswatchface" target="_blank">
+                <img src="../games/img/google.png" alt="Google Play">
+              </a>
             </div>
           </div>
 
