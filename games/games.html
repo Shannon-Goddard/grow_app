@@ -61,13 +61,30 @@
             -webkit-touch-callout: none;
             -webkit-tap-highlight-color: transparent;
             user-select: none;
+            display: block;
+            padding: 5px;
           }
           .game-buttons img {
             width: 70px;
             height: auto;
-            pointer-events: none;
           }
         </style>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.game-buttons a').forEach(function(link) {
+              link.addEventListener('click', function(e) {
+                var url = this.href;
+                // Let app store links work naturally
+                if (url.includes('apps.apple.com') || url.includes('play.google.com')) {
+                  return; // Don't prevent default for store links
+                }
+                // Force navigation for demo links
+                e.preventDefault();
+                window.location.href = url;
+              });
+            });
+          });
+        </script>
       </head>
 
 <body>
@@ -94,6 +111,7 @@
               <img src="../games/img/heisenberg.png" class="img-fluid" alt="Heisenberg">
               <div class="portfolio-info">
                 <h4>Heisenberg</h4>
+                <p>$0.99</p>
               </div>
             </div>
             <div class="game-buttons">
@@ -114,6 +132,7 @@
               <img src="../games/img/short-term-memory.png" class="img-fluid" alt="Short-Term Memory">
               <div class="portfolio-info">
                 <h4>Short-Term Mem-uh...</h4>
+                <p>$0.99</p>
               </div>
             </div>
             <div class="game-buttons">
@@ -134,6 +153,7 @@
               <img src="../games/img/name-that-strain.png" class="img-fluid" alt="Name That Strain">
               <div class="portfolio-info">
                 <h4>Name That Strain</h4>
+                <p>$0.99</p>
               </div>
             </div>
             <div class="game-buttons">
@@ -154,6 +174,7 @@
               <img src="../games/img/go-toke.png" class="img-fluid" alt="Go Toke!">
               <div class="portfolio-info">
                 <h4>Go Toke! | No Fish!</h4>
+                <p>$0.99</p>
               </div>
             </div>
             <div class="game-buttons">
@@ -174,6 +195,7 @@
               <img src="../games/img/slots-of-bud.png" class="img-fluid" alt="Slots of Bud">
               <div class="portfolio-info">
                 <h4>Slots of Bud</h4>
+                <p>$0.99</p>
               </div>
             </div>
             <div class="game-buttons">
@@ -191,6 +213,7 @@
               <img src="../games/img/cannabis-watch-face.png" class="img-fluid" alt="Cannabis Watch Face | 420 Time">
               <div class="portfolio-info">
                 <h4>Cannabis Watch Face | 420 Time</h4>
+                <p>$1.99</p>
               </div>
             </div>
             <div class="game-buttons">
