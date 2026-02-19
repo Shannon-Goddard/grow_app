@@ -50,23 +50,30 @@
         <link href="../shop/assets/css/shop.css" rel="stylesheet">
         <style>
           .portfolio-info {
-          pointer-events: auto !important;
+            pointer-events: auto !important;
           }
-
           .portfolio-info a {
-          -webkit-touch-callout: none;
-          -webkit-tap-highlight-color: transparent;
-          user-select: none;
-          pointer-events: auto !important;
+            -webkit-tap-highlight-color: transparent;
           }
-
           .portfolio-info a img {
-          touch-action: manipulation;
-          -webkit-user-drag: none;
-          -webkit-touch-callout: none;
-          user-select: none;
+            touch-action: manipulation;
+            -webkit-user-drag: none;
           }
         </style>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.portfolio-info a').forEach(function(link) {
+              link.addEventListener('touchstart', function(e) {
+                e.stopPropagation();
+              });
+              link.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                window.open(this.href, '_blank');
+              });
+            });
+          });
+        </script>
       </head>
 
 <body>
