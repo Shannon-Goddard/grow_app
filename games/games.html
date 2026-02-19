@@ -67,11 +67,21 @@
           .portfolio-info a {
             -webkit-touch-callout: none;
             -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            user-select: none;
             pointer-events: auto !important;
+            display: block;
           }
           .portfolio-info a img {
             touch-action: manipulation;
             -webkit-user-drag: none;
+            -webkit-user-select: none;
+            user-select: none;
+            pointer-events: none;
+          }
+          .portfolio-info h4 {
+            -webkit-user-select: none;
+            user-select: none;
             pointer-events: none;
           }
         </style>
