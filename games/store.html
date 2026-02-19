@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <style>
+    body {
+      background: #000;
+      color: #04AA6D;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div>Opening Play Store...</div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const appId = params.get('id');
+    
+    if (appId) {
+      // Using the full URL rather than the intent:// scheme
+      // is often more stable in restricted WebViews.
+      window.location.href = `https://play.google.com/store/apps/details?id=${appId}`;
+    } else {
+      window.location.href = 'games.html';
+    }
+  </script>
+</body>
+</html>
