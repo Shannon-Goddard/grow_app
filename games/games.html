@@ -49,6 +49,7 @@
         <link href="../assets/css/style.css" rel="stylesheet">
         <link href="../shop/assets/css/shop.css" rel="stylesheet">
         <style>
+          
           /* Button row below image */
           .game-buttons {
             display: flex;
@@ -65,8 +66,8 @@
             padding: 5px;
           }
           .game-buttons img {
-            width: 70px;
-            height: auto;
+            width: auto;
+            height: 30px;
           }
         </style>
         <script>
@@ -74,9 +75,16 @@
             document.querySelectorAll('.game-buttons a').forEach(function(link) {
               link.addEventListener('click', function(e) {
                 var url = this.href;
+                // Convert Google Play web links to market:// protocol on Android
+                if (url.includes('play.google.com/store/apps/details?id=')) {
+                  e.preventDefault();
+                  var packageId = url.split('id=')[1].split('&')[0];
+                  window.location.href = 'market://details?id=' + packageId;
+                  return;
+                }
                 // Let app store links work naturally
-                if (url.includes('apps.apple.com') || url.includes('play.google.com')) {
-                  return; // Don't prevent default for store links
+                if (url.includes('apps.apple.com')) {
+                  return;
                 }
                 // Force navigation for demo links
                 e.preventDefault();
@@ -115,7 +123,7 @@
               </div>
             </div>
             <div class="game-buttons">
-              <a href="../game/heisenberg/index.html" target="_blank">
+              <a href="play.html?game=heisenberg">
                 <img src="../games/img/play-demo.png" alt="Play Demo">
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.heinsenberg" target="_blank">
@@ -136,7 +144,7 @@
               </div>
             </div>
             <div class="game-buttons">
-              <a href="../game/short-term-memory/index.html" target="_blank">
+              <a href="play.html?game=short-term-memory">
                 <img src="../games/img/play-demo.png" alt="Play Demo">
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.shorttermmemory" target="_blank">
@@ -157,7 +165,7 @@
               </div>
             </div>
             <div class="game-buttons">
-              <a href="../game/name-that-strain/index.html" target="_blank">
+              <a href="play.html?game=name-that-strain">
                 <img src="../games/img/play-demo.png" alt="Play Demo">
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.namethatstrain" target="_blank">
@@ -178,7 +186,7 @@
               </div>
             </div>
             <div class="game-buttons">
-              <a href="../game/go-toke/index.html" target="_blank">
+              <a href="play.html?game=go-toke">
                 <img src="../games/img/play-demo.png" alt="Play Demo">
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.loyal9.gotoke" target="_blank">
@@ -199,7 +207,7 @@
               </div>
             </div>
             <div class="game-buttons">
-              <a href="../game/slots-of-bud/index.html" target="_blank">
+              <a href="play.html?game=slots-of-bud">
                 <img src="../games/img/play-demo.png" alt="Play Demo">
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.slotsofbud" target="_blank">

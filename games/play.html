@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Game</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #000;
+      overflow: hidden;
+    }
+    #back-button {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 9999;
+      background: #04AA6D;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #back-button:hover {
+      background: #038f5a;
+    }
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="back-button" onclick="window.location.href='games.html'">← Back to Games</button>
+  <iframe id="game-frame"></iframe>
+  
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const game = params.get('game');
+    const gameUrls = {
+      'heisenberg': '../game/heisenberg/index.html',
+      'short-term-memory': '../game/short-term-memory/index.html',
+      'name-that-strain': '../game/name-that-strain/index.html',
+      'go-toke': '../game/go-toke/index.html',
+      'slots-of-bud': '../game/slots-of-bud/index.html'
+    };
+    
+    if (game && gameUrls[game]) {
+      document.getElementById('game-frame').src = gameUrls[game];
+    } else {
+      window.location.href = 'games.html';
+    }
+  </script>
+</body>
+</html>
