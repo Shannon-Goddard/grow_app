@@ -1,0 +1,114 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #333; line-height: 1.7; padding: 0; background: #fff; }
+.top-bar { position: sticky; top: 0; z-index: 100; background: #111; display: flex; align-items: center; justify-content: space-between; padding: 8px 20px; opacity: 0.7;}
+.top-bar a { color: #04AA6D; text-decoration: none; font-size: 13px; font-weight: 600; }
+.top-bar a:hover { color: #000; }
+.top-bar img { height: 18px; }
+.content { padding: 40px 20px; max-width: 800px; margin: 0 auto; }
+h1 { font-size: 28px; color: #000; margin-bottom: 4px; }
+.subtitle { color: #888; font-size: 14px; margin-bottom: 16px; }
+a { color: #04AA6D; }
+
+/* Filter Toggle */
+.filter-toggle { display: flex; gap: 0; margin-bottom: 20px; border-radius: 6px; overflow: hidden; border: 1px solid #ddd; width: fit-content; }
+.filter-btn { text-align: center; padding: 6px 16px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; color: #666; }
+.filter-btn input { display: none; }
+.filter-btn.active, .ship-btn.active { background: #04AA6D; color: #fff; }
+.ship-btn { text-align: center; padding: 6px 16px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; color: #666; }
+.ship-btn input { display: none; }
+
+/* Breeder-style cards */
+.partner-list { display: flex; flex-direction: column; gap: 20px; }
+.partner-row {
+  position: relative; border-radius: 12px; overflow: hidden;
+  min-height: 180px; transition: transform 0.2s;
+}
+.partner-row:hover { transform: translateY(-2px); }
+.partner-background {
+  position: absolute; inset: 0;
+  background-size: contain; background-position: center; background-repeat: no-repeat;
+}
+.partner-content {
+  position: relative; z-index: 1;
+  padding: 24px;
+  min-height: 192px; display: flex; flex-direction: column; justify-content: flex-end;
+}
+.partner-name {
+  font-size: 18px; font-weight: 700; color: #000; margin-bottom: 0px;
+}
+
+
+/* Partner Info Overlay */
+.partner-info-btn {
+  background: none; border: none; color: #999; font-size: 20px;
+  cursor: pointer; padding: 2px 6px; transition: color 0.2s; vertical-align: middle;
+}
+.partner-info-btn:hover { color: #04AA6D; }
+.partner-overlay {
+  display: none; position: absolute; inset: 0; z-index: 5;
+  background: rgba(255,255,255,0.93); border-radius: 12px;
+  padding: 20px; flex-direction: column; justify-content: center; gap: 10px;
+  font-size: 12px; color: #333; cursor: pointer;
+}
+.partner-overlay.visible { display: flex; }
+.partner-overlay .info-row { display: flex; align-items: center; gap: 8px; }
+.partner-overlay .info-row i { width: 18px; text-align: center; color: #04AA6D; font-size: 14px; }
+.partner-overlay .info-row .info-label { font-weight: 600; min-width: 80px; }
+.partner-overlay .info-icons { display: flex; gap: 6px; align-items: center; }
+.partner-overlay .info-icons i { color: #555; font-size: 16px; width: auto; }
+.partner-overlay .info-icons img { height: 20px; width: auto; border-radius: 3px; }
+.partner-overlay .info-close { position: absolute; top: 10px; right: 14px; font-size: 16px; color: #999; }
+
+.partner-tagline { font-size: 10px; color: #666; font-style: italic; margin-bottom: 2px; }
+
+.seed-bank-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.seed-bank-btn {
+  display: inline-block; padding: 6px 6px;
+  border: 1px solid #04AA6D; border-radius: 6px;
+  color: #04AA6D; font-size: 12px; font-weight: 600;
+  text-decoration: none; transition: all 0.2s;
+}
+.seed-bank-btn:hover { background: #04AA6D; color: #000; }
+.promo-code {
+  display: inline-block; padding: 6px 6px;
+  border: 1px dashed #04AA6D; border-radius: 6px;
+  background: rgba(4,170,109,0.25); color: #04AA6D;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
+  cursor: pointer; transition: all 0.2s; position: relative;
+}
+.promo-code:hover { background: rgba(4,170,109,0.5); }
+.promo-code .code { font-family: monospace; font-weight: 700; color: #fff; }
+
+/* App Section */
+.app-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+.app-badges a img { height: 33px; width: auto; border-radius: 6px; opacity: 0.7; }
+.app-badges a img:hover { opacity: 1.0; }
+
+/* CTA */
+.cta-box {
+  border: 2px solid #04AA6D; border-radius: 12px;
+  padding: 28px; text-align: center; margin-top: 40px;
+}
+.cta-box h3 { font-size: 18px; margin-bottom: 8px; color: #000; }
+.cta-box p { font-size: 14px; color: #888; margin-bottom: 16px; }
+.cta-box a {
+  display: inline-block; padding: 10px 24px; background: #04AA6D; color: #000;
+  border-radius: 8px; font-weight: 600; text-decoration: none;
+}
+.cta-box a:hover { background: #038857; }
+
+/* Disclaimer */
+.affiliate-disclaimer {
+  margin-top: 40px; padding-top: 20px; border-top: 1px solid #222;
+  font-size: 11px; color: #666; line-height: 1.6;
+}
+.affiliate-disclaimer a { color: #04AA6D; }
+
+footer { margin-top: 60px; padding: 16px 20px; background: #fff; text-align: center; opacity: 0.7;}
+footer .ci-badge { height: 2em; vertical-align: middle; }
+footer a { color: #111; text-decoration: none; font-size: 12px; }
+
+@media (max-width: 480px) {
+  .partner-content { padding: 16px; }
+  .app-content { flex-direction: column; text-align: center; }
+}

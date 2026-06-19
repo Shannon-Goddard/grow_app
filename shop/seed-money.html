@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <!-- Google Analytics - Keep for user insights -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X0XEMR28V2');
+        </script>
+        
+        <!-- Essential Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <!-- App Icons -->
+        <link rel="icon" href="../assets/img/favicon.png">
+        <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+        
+        <!-- Mobile WebView Optimizations -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="msapplication-tap-highlight" content="no">
+        
+        <!-- Security Headers -->
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+        
+        <!-- Performance Optimizations -->
+        <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+        <link rel="preload" href="../assets/css/style.css" as="style">
+        <link rel="stylesheet" href="assets/css/seed-money.css">
+
+        <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="content">
+
+<h1>Seed Money</h1>
+<p style="font-size:13px;color:#aaa;margin-bottom:16px;">Compare the best cannabis seed banks and breeders side by side. Filter by shipping region, payment methods, and germination guarantees to find the right seeds for your grow.</p>
+
+<p id="slogan-typer" style="font-size:12px;color:#888;margin-bottom:4px;min-height:18px;">We may earn commissions from links. <span id="typer-text"></span><span id="typer-cursor" style="animation:blink 1s infinite;">|</span></p>
+<style>#typer-cursor{animation:blink 1s step-end infinite}@keyframes blink{50%{opacity:0}}</style>
+
+<p style="font-size:12px;color:#888;margin-bottom:24px;"><i class="fas fa-leaf" style="color:#04AA6D;"></i> Affiliate link | <i class="fas fa-circle-info" style="color:#888;"></i> Freebie info</p>
+
+<div class="filter-toggle">
+  <label class="filter-btn active" data-filter="all"><input type="radio" name="pfilter" value="all" checked> All</label>
+  <label class="filter-btn" data-filter="breeder"><input type="radio" name="pfilter" value="breeder"> Breeder</label>
+  <label class="filter-btn" data-filter="bank"><input type="radio" name="pfilter" value="bank"> Bank</label>
+</div>
+
+<div class="filter-toggle" style="margin-top:-12px;">
+  <label class="ship-btn active" data-ship="all"><input type="radio" name="shipfilter" value="all" checked> All</label>
+  <label class="ship-btn" data-ship="usa"><input type="radio" name="shipfilter" value="usa"><i class="fa-solid fa-flag-usa" title="USA"></i> USA</label>
+  <label class="ship-btn" data-ship="intl"><input type="radio" name="shipfilter" value="intl"><i class="fa-solid fa-earth-americas" title="International"></i> International</label>
+</div>
+
+<div class="partner-list">
+
+  <!-- 42 Fast Buds -->
+  <div class="partner-row" data-type="breeder" data-shipping="intl">
+    <div class="partner-background" role="img" aria-label="42 Fast Buds logo" style="background-image: url('assets/affiliate-logo/42-fast-buds.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> 42 Fast Buds</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-brands fa-bitcoin" title="Bitcoin"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-earth-americas" title="International"></i>5-15</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>100% Germination</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+      <div class="info-row"><i class="fa-solid fa-skull"></i><span class="info-label"><b>Excludes: </b></span><span>USA & Canada</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button> Same Rebel Spirit</p>
+      <div class="seed-bank-buttons">
+        <a href="https://2fast4buds.com/?af=329747" class="seed-bank-btn" target="_blank" rel="noopener sponsored">42 Fast Buds <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        <span class="promo-code" onclick="navigator.clipboard.writeText('LOYAL9');this.querySelector('.code').textContent='Copied!';setTimeout(()=>this.querySelector('.code').textContent='LOYAL9',1500)">15% off: <span class="code">LOYAL9</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alchimia -->
+  <div class="partner-row" data-type="bank" data-shipping="both">
+    <div class="partner-background" role="img" aria-label="Alchimia Seed Bank logo" style="background-image: url('assets/affiliate-logo/alchimia.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> 23 brands</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-brands fa-bitcoin" title="Bitcoin"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i><i class="fa-solid fa-money-bill" title="Cash"></i><img src="assets/payment-logo/google-pay.png" title="Google Pay"><img src="assets/payment-logo/apple-pay.png" title="Apple Pay"></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>15-30<i class="fa-solid fa-earth-americas" title="International"></i>2-30</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>Case-by-case</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>Frequent promos</span></div>
+      <div class="info-row"><i class="fa-solid fa-skull"></i><span class="info-label"><b>Excludes: </b></span><span>Customs seizures</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button> Growing Happiness</p>
+      <div class="seed-bank-buttons">
+        <a href="https://www.alchimiaweb.com/en/seeds_selector.php?aff=B629EF277A86A59A24269BC9AA256704FC7481CE" class="seed-bank-btn" target="_blank" rel="noopener sponsored">Alchimia <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        <span class="promo-code" onclick="navigator.clipboard.writeText('LOYAL9');this.querySelector('.code').textContent='Copied!';setTimeout(()=>this.querySelector('.code').textContent='LOYAL9',1500)">10% off: <span class="code">LOYAL9</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Amsterdam Seed Center -->
+  <div class="partner-row" data-type="bank" data-shipping="intl">
+    <div class="partner-background" role="img" aria-label="Amsterdam Seed Center logo" style="background-image: url('assets/affiliate-logo/amsterdam-seed-center.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> 80 brands</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-brands fa-bitcoin" title="Bitcoin"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i><i class="fa-solid fa-money-bill" title="Cash"></i></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-earth-americas" title="International"></i>3-15</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>Germination</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+      <div class="info-row"><i class="fa-solid fa-skull"></i><span class="info-label"><b>Excludes: </b></span><div class="info-icons"><img src="assets/payment-logo/paypal.png" title="PayPal"><i class="fa-solid fa-flag-usa"></i><small> AU, NO</small></div></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button> Let's grow happiness together</p>
+      <div class="seed-bank-buttons">
+        <a href="https://www.amsterdamseedcenter.com/en/cannabis-seeds?affiliate_code=F8ezyFcOGg&referring_service=link" class="seed-bank-btn" target="_blank" rel="noopener sponsored">ASC <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        <span class="promo-code" onclick="navigator.clipboard.writeText('GROWLIFE');this.querySelector('.code').textContent='Copied!';setTimeout(()=>this.querySelector('.code').textContent='GROWLIFE',1500)">10% off: <span class="code">GROWLIFE</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Canuk Seeds -->
+  <div class="partner-row" data-type="breeder" data-shipping="both">
+    <div class="partner-background" role="img" aria-label="Canuk Seeds logo" style="background-image: url('assets/affiliate-logo/canuk-seeds.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> Canuk Seeds</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i><i class="fa-solid fa-money-bill" title="Cash"></i><i class="fa-solid fa-money-check-dollar" title="Money Orders"></i></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>5-14<i class="fa-solid fa-earth-americas" title="International"></i>3-21+</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>85% Germination</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+      <div class="info-row"><i class="fa-solid fa-skull"></i><span class="info-label"><b>Bank Trans:</b></span><span>NO USA & Canada</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button>Success is in the right genetics</p>
+      <div class="seed-bank-buttons">
+        <a href="https://www.canukseeds.com?a_id=bi0c19wc2xc8u" class="seed-bank-btn" target="_blank" rel="noopener sponsored">Canuk <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        <span class="promo-code">20% off w/newsletter</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Freeworld Genetics -->
+  <div class="partner-row" data-type="breeder" data-shipping="usa">
+    <div class="partner-background" role="img" aria-label="Freeworld Genetics logo" style="background-image: url('assets/affiliate-logo/freeworld-genetics.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> Freeworld Genetics</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><img src="assets/payment-logo/apple-pay.png" title="Apple Pay"><img src="assets/payment-logo/google-pay.png" title="Google Pay"></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>3-7 days</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>Case-by-case</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>Occasional promos</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button>A Passion for Plants</p>
+      <div class="seed-bank-buttons">
+        <a href="https://freeworldseedvault.com/affiliates/?_se=bG95YWw5Y2FubmFiaXNAZ21haWwuY29t&v=0b3b97fa6688" class="seed-bank-btn" target="_blank" rel="noopener sponsored">Freeworld Genetics <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- Herbies Seeds -->
+  <div class="partner-row" data-type="bank" data-shipping="both">
+    <div class="partner-background" role="img" aria-label="Herbies Seeds logo" style="background-image: url('assets/affiliate-logo/herbies-seeds.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> 14 brands</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-brands fa-bitcoin" title="Bitcoin"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i><i class="fa-solid fa-money-bill" title="Cash"></i><img src="assets/payment-logo/apple-pay.png" title="Apple Pay"><img src="assets/payment-logo/google-pay.png" title="Google Pay"><img src="assets/payment-logo/venmo.png" title="Venmo"><img src="assets/payment-logo/paypal.png" title="PayPal"></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>2-5<i class="fa-solid fa-earth-americas" title="International"></i>varies</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>90% Germination</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button>From little seeds grow mighty trees</p>
+      <div class="seed-bank-buttons">
+        <a href="https://herbiesheadshop.com/?utm_source=loyal9&utm_medium=people&utm_campaign=loyal9_partner&a_aid=loyal9&a_bid=83818890" class="seed-bank-btn" target="_blank" rel="noopener sponsored">Herbies <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Homegrown Cannabis -->
+  <div class="partner-row" data-type="breeder" data-shipping="both">
+    <div class="partner-background" role="img" aria-label="Homegrown Cannabis Co logo" style="background-image: url('assets/affiliate-logo/homegrown-cannabis-co.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> HCC + various</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i><i class="fa-solid fa-money-check" title="Check"></i><i class="fa-solid fa-money-check-dollar" title="Money Orders"></i><img src="assets/payment-logo/apple-pay.png" title="Apple Pay"></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>4-9<i class="fa-solid fa-earth-americas" title="International"></i>varies</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>Germination</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button>We set you up for success</p>
+      <div class="seed-bank-buttons">
+        <a href="https://homegrowncannabis.com" class="seed-bank-btn" target="_blank" rel="noopener sponsored">HCC <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ILGM -->
+  <div class="partner-row" data-type="breeder" data-shipping="usa">
+    <div class="partner-background" role="img" aria-label="ILGM logo" style="background-image: url('assets/affiliate-logo/ilgm.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> ILGM</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-brands fa-bitcoin" title="Bitcoin"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i><i class="fa-solid fa-money-bill" title="Cash"></i><i class="fa-solid fa-money-check" title="Check"></i><i class="fa-solid fa-money-check-dollar" title="Money Orders"></i><img src="assets/payment-logo/zelle.png" title="Zelle"></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>1-5<i class="fa-solid fa-earth-americas" title="International"></i>limited</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>100% Germination</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button>Home of the Growers</p>
+      <div class="seed-bank-buttons">
+        <a href="https://ilgm.com/?aff=7215" class="seed-bank-btn" target="_blank" rel="noopener sponsored">ILGM <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        <span class="promo-code" onclick="navigator.clipboard.writeText('THXFROMROBERT');this.querySelector('.code').textContent='Copied!';setTimeout(()=>this.querySelector('.code').textContent='THXFROMROBERT',1500)">$10 off: <span class="code">THXFROMROBERT</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mass Hydro -->
+  <div class="partner-row" data-type="bank" data-shipping="usa">
+    <div class="partner-background" role="img" aria-label="Mass Hydro logo" style="background-image: url('assets/affiliate-logo/mass-hydro.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeders:</span> 8 brands</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><img src="assets/payment-logo/apple-pay.png" title="Apple Pay"><img src="assets/payment-logo/google-pay.png" title="Google Pay"></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>1-5</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>Nope</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button>Grow smarter, grow together.</p>
+      <div class="seed-bank-buttons">
+        <a href="https://mass-hydro.com?sca_ref=11547740.l5DDc4X4smj" class="seed-bank-btn" target="_blank" rel="noopener sponsored">Mass Hydro <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        <span class="promo-code" onclick="navigator.clipboard.writeText('LOYAL9');this.querySelector('.code').textContent='Copied!';setTimeout(()=>this.querySelector('.code').textContent='LOYAL9',1500)">10% off: <span class="code">LOYAL9</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nirvana -->
+  <div class="partner-row" data-type="breeder" data-shipping="both">
+    <div class="partner-background" role="img" aria-label="Nirvana Seeds logo" style="background-image: url('assets/affiliate-logo/nirvana.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> Nirvana Seeds</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-brands fa-bitcoin" title="Bitcoin"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i><i class="fa-solid fa-money-bill" title="Cash"></i></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>7-21<i class="fa-solid fa-earth-americas" title="International"></i>varies</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>Worldwide delivery</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button>Grow your dream garden today</p>
+      <div class="seed-bank-buttons">
+        <a href="https://nirvanashop.com/?ref=LOYAL9" class="seed-bank-btn" target="_blank" rel="noopener sponsored">Nirvana <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        <span class="promo-code" onclick="navigator.clipboard.writeText('LOYAL9');this.querySelector('.code').textContent='Copied!';setTimeout(()=>this.querySelector('.code').textContent='LOYAL9',1500)">15% off: <span class="code">LOYAL9</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Original Sensible Seeds -->
+  <div class="partner-row" data-type="breeder" data-shipping="both">
+    <div class="partner-background" role="img" aria-label="Original Sensible Seeds logo" style="background-image: url('assets/affiliate-logo/original-sensible-seeds.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> Original Sensible</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-brands fa-bitcoin" title="Bitcoin"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i><i class="fa-solid fa-money-bill" title="Cash"></i></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>1-5<i class="fa-solid fa-earth-americas" title="International"></i>7-21+</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>Case-by-case</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button>Highest yielding</p>
+      <div class="seed-bank-buttons">
+        <a href="https://originalsensible.com/?acc=XEZBsayl4vfGi~tHw4H4" class="seed-bank-btn" target="_blank" rel="noopener sponsored">Original Sensible <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Paradise Seeds -->
+  <div class="partner-row" data-type="breeder" data-shipping="intl">
+    <div class="partner-background" role="img" aria-label="Paradise Seeds logo" style="background-image: url('assets/affiliate-logo/paradise-seeds.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> Paradise Seeds</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-brands fa-bitcoin" title="Bitcoin"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-earth-americas" title="International"></i>3-5</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>95% Germination</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+      <div class="info-row"><i class="fa-solid fa-skull"></i><span class="info-label"><b>Only EU:</b></span><span><b>NO</b> US, UK, CH</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button>Finest Seed Collection</p>
+      <div class="seed-bank-buttons">
+        <a href="https://www.paradise-seeds.com" class="seed-bank-btn" target="_blank" rel="noopener sponsored">Paradise Seeds <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Royal Queen Seeds -->
+  <div class="partner-row" data-type="breeder" data-shipping="usa">
+    <div class="partner-background" role="img" aria-label="Royal Queen Seeds logo" style="background-image: url('assets/affiliate-logo/royal-queen.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> Royal Queen Seeds</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><img src="assets/payment-logo/apple-pay.png" title="Apple Pay"></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>4-9</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>Case-by-case</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button>Grow Higher</p>
+      <div class="seed-bank-buttons">
+        <a href="https://www.royalqueenseeds.com/?utm_source=postaffiliatepro&utm_medium=affiliate&utm_campaign=test&a_aid=36694750" class="seed-bank-btn" target="_blank" rel="noopener sponsored">Royal Queen <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        <span class="promo-code" onclick="navigator.clipboard.writeText('POT20');this.querySelector('.code').textContent='Copied!';setTimeout(()=>this.querySelector('.code').textContent='POT20',1500)">20% off: <span class="code">POT20</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seedsman -->
+  <div class="partner-row" data-type="bank" data-shipping="both">
+    <div class="partner-background" role="img" aria-label="Seedsman logo" style="background-image: url('assets/affiliate-logo/seedsman.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> 55 brands</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-brands fa-bitcoin" title="Bitcoin"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i><i class="fa-solid fa-money-bill" title="Cash"></i><i class="fa-solid fa-money-check" title="Check"></i><i class="fa-solid fa-money-check-dollar" title="Money Orders"></i><img src="assets/payment-logo/zelle.png" title="Zelle"></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>3-7<i class="fa-solid fa-earth-americas" title="International"></i>7-25+</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>Germination</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds & merch</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button> Where growing becomes a way of living</p>
+      <div class="seed-bank-buttons">
+        <a href="https://www.seedsman.com/us-en/cannabis-seed-breeders?a_aid=6675f1c3ce128" class="seed-bank-btn" target="_blank" rel="noopener sponsored">Seedsman <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        <span class="promo-code">10% off first order!<span class="code"></span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- True North -->
+  <div class="partner-row" data-type="bank" data-shipping="both">
+    <div class="partner-background" role="img" aria-label="True North Seed Bank logo" style="background-image: url('assets/affiliate-logo/true-north.png');"></div>
+    <div class="partner-overlay" onclick="this.classList.remove('visible')">
+      <i class="fas fa-xmark info-close"></i>
+      <div class="info-row"><i class="fas fa-seedling"></i><span class="info-label">Breeder:</span> 32 brands</div>
+      <div class="info-row"><i class="fas fa-credit-card"></i><span class="info-label">Payment:</span><div class="info-icons"><i class="fa-solid fa-credit-card" title="Credit/Debit"></i><i class="fa-brands fa-bitcoin" title="Bitcoin"></i><i class="fa-solid fa-building-columns" title="Bank Transfer"></i><i class="fa-solid fa-money-bill" title="Cash"></i><i class="fa-solid fa-money-check-dollar" title="Money Orders"></i></div></div>
+      <div class="info-row"><i class="fas fa-truck-fast"></i><span class="info-label">Shipping:</span><div class="info-icons"><i class="fa-solid fa-flag-usa" title="USA"></i>5-14<i class="fa-solid fa-earth-americas" title="International"></i>varies</div></div>
+      <div class="info-row"><i class="fas fa-shield-halved"></i><span class="info-label">Guarantee:</span><span>85% Germination</span></div>
+      <div class="info-row"><i class="fas fa-gift"></i><span class="info-label">Freebies:</span><span>FREE seeds</span></div>
+      <div class="info-row"><i class="fa-solid fa-skull"></i><span class="info-label"><b>Bank Transfer: </b></span><span><b>NO</b> USA & Canada</span></div>
+    </div>
+    <div class="partner-content">
+      <p class="partner-tagline"><button class="partner-info-btn" onclick="this.closest('.partner-row').querySelector('.partner-overlay').classList.add('visible')"><i class="fas fa-circle-info"></i></button>Your #1 Seed Store</p>
+      <div class="seed-bank-buttons">
+        <a href="https://www.truenorthseedbank.com?a_id=bi0c19wc2xc8u" class="seed-bank-btn" target="_blank" rel="noopener sponsored">True North <i class="fas fa-leaf" style="color:#04AA6D;font-size:10px;"></i></a>
+        <span class="promo-code">20%: w/newsletter<span class="code"></span></span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+<!-- ======= .navbar ======= -->
+<div id="nav-placeholder" data-depth="1"></div>
+<script src="../assets/js/nav.js"></script>
+<!-- .navbar -->
+<script defer src="../assets/js/main.js"></script>
+<script src="assets/js/seed-money.js"></script>
+
+<script>
+(function(){
+  var slogans=[
+    "America runs on growin'",
+    "Betcha can't grow just one.",
+    "Like a good neighbor, seeds are here.",
+    "When it absolutely, positively has to grow there overnight.",
+    "It keeps growing, and growing, and growing...",
+    "Grow it your way.",
+    "Because you're growing it.",
+    "Don't grow home without it.",
+    "Just grow it.",
+    "Grow different.",
+    "A seed is forever.",
+    "Got seeds?",
+    "I'm growin' it.",
+    "Where's the grow?",
+    "There are some things money can't buy. For everything else, there's seeds.",
+    "You're in grow hands.",
+    "15 minutes could save you 15% or more on seeds.",
+    "Not dishwasher safe.",
+    "Do not eat.",
+    "Do not use as ear plugs.",
+    "Do not use while sleeping.",
+    "Do not use while driving.",
+    "Keep out of reach of children.",
+    "Caution: Contents may be hot.",
+    "Do not microwave."
+  ];
+  var el=document.getElementById('typer-text');
+  if(!el) return;
+  var i=0,j=0,deleting=false;
+  for(var k=slogans.length-1;k>0;k--){var r=Math.floor(Math.random()*(k+1));var t=slogans[k];slogans[k]=slogans[r];slogans[r]=t;}
+  function type(){
+    var s=slogans[i];
+    if(!deleting){
+      el.textContent=s.substring(0,++j);
+      if(j===s.length){deleting=true;setTimeout(type,2000);return;}
+      setTimeout(type,60+Math.random()*40);
+    }else{
+      el.textContent=s.substring(0,--j);
+      if(j===0){deleting=false;i=(i+1)%slogans.length;setTimeout(type,500);return;}
+      setTimeout(type,30);
+    }
+  }
+  type();
+})();
+</script>
+</body>
+</html>
