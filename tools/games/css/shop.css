@@ -1,0 +1,438 @@
+/*--------------------------------------------------------------
+# Shop/Portfolio Specific Styles
+--------------------------------------------------------------*/
+.portfolio {
+  padding-top: 20px;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #151515;
+  background: #04AA6D;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(21, 21, 21, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  margin: 0 5px 0 0;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #04AA6D;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.2);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.portfolio .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.portfolio .col-lg-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 0 15px;
+}
+
+.portfolio .col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media (max-width: 991px) {
+  .portfolio .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Shop Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #04AA6D;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #04AA6D;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(21, 21, 21, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Shop Button
+--------------------------------------------------------------*/
+.shop-btn {
+  color: #343a40;
+  background: #04AA6D;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 2px solid #04AA6D;
+}
+
+.shop-btn:hover {
+  background: #343a40;
+  color: #FFFFFF;
+}
+
+@media (max-width: 992px) {
+  .shop-btn {
+    padding: 7px 20px 8px 20px;
+    margin-right: 15px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Shop style
+--------------------------------------------------------------*/
+.portfolio-info small {
+  color: #FFFFFF;
+}
+
+.portfolio-info b {
+  color: #FFFFFF;
+}
+
+.rating {
+  color: #FF9900;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #FF4500;
+}
+
+.empty-star {
+  color: #FF990000;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #FF4500;
+}
+
+.icon-check {
+  color: #FF9900;
+}
+
+.rounded-pill {
+  color: #131A22;
+  background: #e1ad01;
+  border-radius: 0.5px;
+  padding: 4px 10px 4px 10px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 0.5px solid #e1ad01;
+}
+
+.rounded-pill:hover {
+  background: #e1ad0199;
+  color: #131A22;
+}
+
+/*--------------------------------------------------------------
+# Promo/Clients
+--------------------------------------------------------------*/
+.clients {
+  padding-top: 20px;
+}
+
+.clients .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+}
+
+.clients .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  background-color: #ddd;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #04AA6D;
+}
+
+.clients .swiper-slide img {
+  transition-duration: 0ms !important;
+}
+
+/*--------------------------------------------------------------
+# Amazon Associate disclaimer curser
+--------------------------------------------------------------*/
+.text-center small {
+  overflow: hidden;
+}
+.text-center small span.typed-text {
+  font-weight: normal;
+}
+.text-center small span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.text-center small span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+/*--------------------------------------------------------------
+# Comparison Items
+--------------------------------------------------------------*/
+.comparison-item {
+  position: relative;
+}
+
+.comparison-suggestion {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 125px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 8px;
+  padding: 8px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.comparison-item:hover .comparison-suggestion {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.comparison-suggestion img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.suggestion-info {
+  text-align: center;
+}
+
+.suggestion-info small {
+  display: block;
+  font-size: 10px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.suggestion-link {
+  font-size: 10px;
+  color: #04AA6D;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.suggestion-link:hover {
+  text-decoration: underline;
+}
+
+.comparison-suggestion {
+  z-index: 10;
+}
+
+.comparison-suggestion button {
+  background-color: rgba(4, 170, 109, 0.7) !important;
+  border-color: rgba(4, 170, 109, 0.7) !important;
+  color: white !important;
+  font-size: 10px;
+  padding: 4px 8px;
+  position: relative;
+  z-index: 11;
+  pointer-events: auto;
+}
+
+.comparison-suggestion button:hover {
+  background-color: rgba(4, 170, 109, 0.9) !important;
+  border-color: rgba(4, 170, 109, 0.9) !important;
+}

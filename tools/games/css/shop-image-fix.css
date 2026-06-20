@@ -1,0 +1,24 @@
+/* Image optimization for shop items */
+.portfolio-wrap img.img-fluid {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1; /* Force square aspect ratio */
+  object-fit: contain; /* Ensure image isn't cropped */
+  background-color: #f8f8f8; /* Light background for transparent images */
+}
+
+/* Smaller images for comparison suggestions */
+.comparison-suggestion img.img-fluid {
+  max-height: 100px;
+  width: auto;
+}
+
+/* Fix duplicate class attributes */
+img[class="img-fluid"][class="img-fluid"] {
+  class: "img-fluid";
+}
+
+/* Add placeholder dimensions to prevent layout shift */
+img.img-fluid[data-src] {
+  min-height: 300px;
+}
