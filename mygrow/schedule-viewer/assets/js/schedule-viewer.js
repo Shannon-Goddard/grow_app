@@ -56,9 +56,11 @@ async function loadAndRenderTable(growId) {
         const headerRow = document.createElement('tr');
         
         const coreHeaders = [
-            'MyGrow', 'Date', 'Stage', 'Week', 'Day', 'Visual Inspection', 'Amount Of Water', 'pH Goal',
-            'Light Intensity', 'Light Distance', 'Daytime Temp', 'Nighttime Temp',
-            'Hours Of Light', 'Humidity', 'Air Fan Position'
+            'MyGrow', 'Date', 'Stage', 'Week', 'Day', 'Visual Inspection', 'My Notes',
+            'Amount Of Water', 'pH Goal', 'My pH',
+            'Light Intensity', 'My Light Intensity', 'Light Distance', 'My Light Distance',
+            'Daytime Temp', 'My Daytime Temp', 'Nighttime Temp', 'My Nighttime Temp',
+            'Hours Of Light', 'Humidity', 'My Humidity', 'Air Fan Position', 'My Fan Position'
         ];
         
         coreHeaders.forEach(header => {
@@ -151,6 +153,10 @@ async function loadAndRenderTable(growId) {
             th.textContent = header;
             th.style.width = '120px';
             headerRow.appendChild(th);
+            const thMy = document.createElement('th');
+            thMy.textContent = 'My ' + header;
+            thMy.style.width = '120px';
+            headerRow.appendChild(thMy);
         });
         // Render in chunks to prevent blocking
         const chunkSize = 50;
@@ -170,20 +176,29 @@ async function loadAndRenderTable(growId) {
                 dayData.week || '',
                 dayData.day || (actualIndex + 1),
                 dayData.visual_inspection || '',
+                dayData.actual_inspection_notes || '',
                 dayData.amount_of_water || '',
                 dayData.ph_goal || '',
+                dayData.actual_ph || '',
                 dayData.light_intensity || '',
+                dayData.actual_light_intensity || '',
                 lightDistance || dayData.light_distance || '',
+                dayData.actual_light_distance || '',
                 dayData.dt_temp || '',
+                dayData.actual_dt_temp || '',
                 dayData.nt_temp || '',
+                dayData.actual_nt_temp || '',
                 dayData.hours_of_light || '',
                 dayData.humidity || '',
-                dayData.air_fan_position || ''
+                dayData.actual_humidity || '',
+                dayData.air_fan_position || '',
+                dayData.actual_fan_position || ''
             ];
 
             selectedNutrients.forEach(nutrient => {
                 const value = dayData.nutrients && dayData.nutrients[nutrient] ? dayData.nutrients[nutrient] : '';
                 values.push(value);
+                values.push(dayData['actual_nutrient_' + nutrient] || '');
             });
 
             values.forEach(value => {

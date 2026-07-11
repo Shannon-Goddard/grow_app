@@ -54,15 +54,23 @@ export async function loadAndRenderTable(growId) {
             { name: 'Week', field: 'week' },
             { name: 'Day', field: 'day' },
             { name: 'Visual Inspection', field: 'visual_inspection' },
+            { name: 'My Notes', field: 'actual_inspection_notes' },
             { name: 'Amount Of Water', field: 'amount_of_water' },
             { name: 'pH Goal', field: 'ph_goal' },
+            { name: 'My pH', field: 'actual_ph' },
             { name: 'Light Intensity', field: 'light_intensity' },
+            { name: 'My Light Intensity', field: 'actual_light_intensity' },
             { name: 'Light Distance', field: 'light_distance' },
+            { name: 'My Light Distance', field: 'actual_light_distance' },
             { name: 'Daytime Temp', field: 'dt_temp' },
+            { name: 'My Daytime Temp', field: 'actual_dt_temp' },
             { name: 'Nighttime Temp', field: 'nt_temp' },
+            { name: 'My Nighttime Temp', field: 'actual_nt_temp' },
             { name: 'Hours Of Light', field: 'hours_of_light' },
             { name: 'Humidity', field: 'humidity' },
-            { name: 'Air Fan Position', field: 'air_fan_position' }
+            { name: 'My Humidity', field: 'actual_humidity' },
+            { name: 'Air Fan Position', field: 'air_fan_position' },
+            { name: 'My Fan Position', field: 'actual_fan_position' }
         ];
 
         const nutrientHeaders = nutrientDisplayNames.map(name => ({ name, field: name.toLowerCase().replace(/\s+/g, '-') }));
@@ -92,16 +100,24 @@ export async function loadAndRenderTable(growId) {
                 dayData.stage || '',
                 dayData.week || '',
                 dayData.day || (index + 1),
-                dayData.visual_inspection || '',
+                dayData._original_inspection || dayData.visual_inspection || '',
+                dayData.actual_inspection_notes || '',
                 dayData.amount_of_water || '',
                 dayData.ph_goal || '',
+                dayData.actual_ph || '',
                 dayData.light_intensity || '',
+                dayData.actual_light_intensity || '',
                 lightDistance || dayData.light_distance || '',
+                dayData.actual_light_distance || '',
                 dayData.dt_temp || '',
+                dayData.actual_dt_temp || '',
                 dayData.nt_temp || '',
+                dayData.actual_nt_temp || '',
                 dayData.hours_of_light || '',
                 dayData.humidity || '',
-                dayData.air_fan_position || ''
+                dayData.actual_humidity || '',
+                dayData.air_fan_position || '',
+                dayData.actual_fan_position || ''
             ];
 
             selectedNutrients.forEach(nutrient => {

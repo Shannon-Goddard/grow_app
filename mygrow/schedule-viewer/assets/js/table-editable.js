@@ -47,31 +47,27 @@
         const currentGrowId = localStorage.getItem('currentGrowId');
         if (!currentGrowId) return;
         
-        // Get original schedule to preserve nutrient data
+        // Get original schedule to preserve all data including actual_ fields
         const originalSchedule = await window.IndexedDBService.loadSchedule(currentGrowId);
         
         const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.dataset.field);
+        
         const updatedSchedule = rows.map((row, index) => {
             const cells = Array.from(row.querySelectorAll('td'));
             const originalEntry = originalSchedule[index] || {};
+            const entry = { ...originalEntry };
             
-            return {
-                date: cells[1]?.textContent || '',
-                stage: cells[2]?.textContent || '',
-                week: cells[3]?.textContent || '',
-                day: cells[4]?.textContent || '',
-                visual_inspection: cells[5]?.textContent || '',
-                amount_of_water: cells[6]?.textContent || '',
-                ph_goal: cells[7]?.textContent || '',
-                light_intensity: cells[8]?.textContent || '',
-                light_distance: cells[9]?.textContent || '',
-                dt_temp: cells[10]?.textContent || '',
-                nt_temp: cells[11]?.textContent || '',
-                hours_of_light: cells[12]?.textContent || '',
-                humidity: cells[13]?.textContent || '',
-                air_fan_position: cells[14]?.textContent || '',
-                nutrients: originalEntry.nutrients || {} // Preserve original nutrients
-            };
+            cells.forEach((cell, i) => {
+                const field = headers[i];
+                if (field && field !== 'strain') {
+                    entry[field] = cell.textContent || '';
+                }
+            });
+            
+            // Preserve nutrients
+            entry.nutrients = originalEntry.nutrients || {};
+            return entry;
         });
         
         // Save to IndexedDB

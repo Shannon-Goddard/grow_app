@@ -41,11 +41,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/banner.css" rel="stylesheet">
-    <link href="assets/css/tablet.css" rel="stylesheet">
+
     
-    <title>GrowApp | Home</title>
-    <meta name="description" content="GrowApp - Complete cannabis growing guide with strain selection, nutrient scheduling, and daily task management. Track your grow from seed to harvest.">
+    <!-- No Index - App Version -->
+    <meta name="robots" content="noindex, nofollow">
+    
+    <title>GrowApp Cannabis Guide</title>
+
   </head>
 
   <body class="customBody">
@@ -53,28 +55,24 @@
     <div id="loader-wrapper">
       <!-- Optional: Add a loading spinner or animation here -->
     </div>
-
-    <!-- ======= Banner Section ======= 
-    <div id="growtogether-banner" class="banner" data-aos="fade-down" data-aos-duration="600">
-      <div class="banner-content">
-        <i class="fas fa-leaf banner-icon"></i>
-        <span class="banner-text">New: <strong>Unlimited Grows</strong> + Auto Flower Schedules!</span>
-        <a href="tools/grow-together/grow-together.html" class="banner-cta affiliate-btn" aria-label="More info">
-          <i class="fa-solid fa-circle-info"></i> More Info
-        </a>
-        <button class="banner-close" aria-label="Close banner">&times;</button>
-      </div>
-    </div>
-     ======= Banner Section END ======= --> 
     
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center justify-content-center">
       <div class="container">
 
+                <!-- ======= banner ======= 
+                <a href="https://www.seedsupreme.com/?utm_source=affiliate&utm_campaign=generic&utm_medium=banner&utm_content=dark-728x90-leaderboard&amp;a_aid=loyal9&amp;a_bid=0defa9cc" target="_top"><img src="https://partners.seedsupreme.com/accounts/default1/5l3bvv/0defa9cc.gif" alt="seed supreme ad" title="" width="100%" height="auto" /></a>
+                <img style="border:0" src="https://partners.seedsupreme.com/scripts/5l3ivv?a_aid=loyal9&amp;a_bid=0defa9cc" width="1" height="1" alt="Tracking pixel" />
+                 ======= banner END ======= -->
+
         <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
           <div class="col-xl-6 col-lg-8">
             <h1>GrowApp<span>.</span></h1>
             <h2>Grow what you can't</h2>
+            <h6><a href="GetTheApp.html">Sick of ads? Get The App!</a></h6>
+            <div class="text-center">
+              <small><a target="_blank" href="assets/policies/disclosure.html" >Disclosure: </a>If Loyal9 LLC is not making money through affiliate links on the website you're currently using, it's an oversight and will be corrected soon.</small>
+            </div>
           </div>
         </div>
         
@@ -130,11 +128,70 @@
     <!-- Keep your custom scripts local -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/banner.js"></script>
-     <script>
+    
+    
+    <!-- SEO Content Block -->
+    <section style="max-width:800px;margin:0 auto;padding:0 15px 40px;color:#ccc;font-size:0.95em;line-height:1.7;text-align:center;">
+      <h2 style="color:#04AA6D;font-size:1.2em;">Your Personal Cannabis Grow Schedule Generator</h2>
+      <p>GrowApp builds a <strong>personalized day-by-day growing guide</strong> based on your strain selection, nutrient brand, and plant size. From germination through harvest, know exactly what to do every single day.</p>
+      <p><strong>2,800+ strains</strong> | <strong>6 nutrient brands</strong> | <strong>Plant Doctor</strong> (38 conditions) | <strong>Harvest Window</strong> trichome analyzer | <strong>Grow Diary</strong> with camera overlay | <strong>20+ how-to videos</strong></p>
+    </section>
+
+    <!-- Age Gate -->
+    <div id="ageGate" class="age-gate">
+        <div class="gate-content">
+            <h2>Age Verification Required</h2>
+            <p>Cannabis cultivation laws vary by location. You must be 21+ to access this site.</p>
+            <p>By entering, you confirm you are of legal age in your jurisdiction.</p>
+            <div class="gate-buttons">
+                <button id="enterBtn" class="btn-enter">I'm 21+</button>
+                <button id="exitBtn" class="btn-exit">Under 21</button>
+            </div>
+        </div>
+    </div>
+
+ <script>
  (function(){
    var icons=['fa-bomb','fa-ghost','fa-robot','fa-rocket','fa-pizza-slice','fa-dice','fa-hat-wizard','fa-skull','fa-skull-crossbones','fa-paw','fa-snowman','fa-piggy-bank','fa-face-meh-blank','fa-fire','fa-bolt','fa-meteor','fa-dragon','fa-biohazard','fa-cannabis'];
    var el=document.getElementById('seed-money-icon');
    if(el) el.className='fa-solid '+icons[Math.floor(Math.random()*icons.length)];
+ })();
+ </script>
+
+ <!-- MyTask Sticky Button -->
+ <a id="mytaskBtn" href="#" style="position:fixed;bottom:20px;right:20px;z-index:998;background:#04AA6D;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 15px rgba(4,170,109,0.4);text-decoration:none;font-size:22px;transition:transform 0.2s;" aria-label="Go to MyTask">
+   <i class="fa-solid fa-leaf"></i>
+ </a>
+
+ <!-- MyTask Overlay -->
+ <div id="mytaskOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9998;display:none;align-items:center;justify-content:center;">
+   <div style="background:#1a1a1a;border:1px solid #333;border-radius:12px;padding:30px;text-align:center;max-width:320px;margin:20px;">
+     <i class="fa-solid fa-seedling" style="font-size:40px;color:#04AA6D;margin-bottom:15px;"></i>
+     <h3 style="color:#fff;margin:0 0 10px;font-size:20px;">No Grow Found</h3>
+     <p style="color:#aaa;margin:0 0 20px;font-size:14px;">Create a grow first to start tracking your daily tasks.</p>
+     <a href="mygrow/mygrow.html" style="display:inline-block;background:#04AA6D;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">Create Grow</a>
+     <button id="closeOverlay" style="display:block;margin:15px auto 0;background:none;border:none;color:#666;cursor:pointer;font-size:13px;">Cancel</button>
+   </div>
+ </div>
+
+ <script>
+ (function(){
+   var btn = document.getElementById('mytaskBtn');
+   var overlay = document.getElementById('mytaskOverlay');
+   var closeBtn = document.getElementById('closeOverlay');
+   btn.addEventListener('click', function(e){
+     e.preventDefault();
+     var growId = localStorage.getItem('currentGrowId');
+     if(growId){
+       window.location.href = 'mygrow/mytask/mytask.html';
+     } else {
+       overlay.style.display = 'flex';
+     }
+   });
+   btn.addEventListener('mousedown', function(){ btn.style.transform='scale(0.9)'; });
+   btn.addEventListener('mouseup', function(){ btn.style.transform='scale(1)'; });
+   closeBtn.addEventListener('click', function(){ overlay.style.display='none'; });
+   overlay.addEventListener('click', function(e){ if(e.target===overlay) overlay.style.display='none'; });
  })();
  </script>
  </body>
