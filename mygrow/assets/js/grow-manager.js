@@ -67,6 +67,7 @@ function createGrowCard(growId, growName, logoPath) {
     link.addEventListener('click', function(event) {
         event.preventDefault();
         localStorage.setItem('currentGrowId', growId);
+        localStorage.setItem('currentGrowName', growName);
 
         window.location.href = this.href;
     });

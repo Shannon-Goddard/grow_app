@@ -24,6 +24,7 @@
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
     <!-- CSS Files with performance attributes -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- Add html2canvas for sharing as image -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous"></script>
     <style>
@@ -31,8 +32,8 @@
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
         th { background-color: #f2f2f2; }
-        .actions { margin-bottom: 20px; }
-        .actions button { margin-right: 10px; }
+        .actions { margin-bottom: 20px; display: flex; gap: 10px; align-items: center; }
+        .actions .btn { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; padding: 0; font-size: 18px; border-radius: 8px; }
         
         /* Theme colors */
         .btn-primary { 
@@ -107,10 +108,9 @@
         <h1 id="growTitle">Grow Schedule</h1>
         
         <div class="actions">
-            <button id="exportBtn" class="btn btn-primary">Export to Excel</button>
-            <button onclick="printTable()" class="btn btn-secondary">Print</button>
-            <button onclick="shareTable(event)" class="btn btn-info">Download Image</button>
-            <a href="../../mygrow/schedule-viewer/schedule-viewer.html" class="btn btn-outline-primary">Back to Information Overload</a>
+            <button onclick="printTable()" class="btn btn-secondary" title="Print"><i class="fas fa-print"></i></button>
+            <button onclick="shareTable(event)" class="btn btn-info" title="Download Image"><i class="fas fa-image"></i></button>
+            <a href="../../mygrow/schedule-viewer/schedule-viewer.html" class="btn btn-outline-primary" title="Back"><i class="fas fa-arrow-left"></i></a>
         </div>
         
         <div class="table-responsive">
@@ -142,92 +142,15 @@
     
     document.addEventListener('DOMContentLoaded', async () => {
         const table = document.getElementById('printTable');
-        const exportBtn = document.getElementById('exportBtn');
         
         if (!table) {
             console.error('Table element not found');
             return;
         }
         
-        // Function to export table to Excel/CSV
-        function exportTable() {
-            const rows = Array.from(table.querySelectorAll('tr'));
-            let csvContent = "data:text/csv;charset=utf-8,";
-            
-            rows.forEach(row => {
-                const cells = Array.from(row.querySelectorAll('th, td'));
-                const rowData = cells.map(cell => {
-                    // Escape quotes and wrap content in quotes
-                    let content = cell.textContent.trim();
-                    content = content.replace(/"/g, '""');
-                    return `"${content}"`;
-                });
-                csvContent += rowData.join(',') + '\r\n';
-            });
-            
-            // Create download link
-            const encodedUri = encodeURI(csvContent);
-            const link = document.createElement('a');
-            const growName = localStorage.getItem('currentGrowName') || 'grow';
-            link.setAttribute('href', encodedUri);
-            link.setAttribute('download', `${growName}_schedule.csv`);
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
+
         
-        // Add export button click handler
-        if (exportBtn) {
-            exportBtn.addEventListener('click', exportTable);
-        }
-        
-        // Load and populate table data
-        async function populateTable() {
-            try {
-                const currentGrowId = localStorage.getItem('currentGrowId');
-                if (!currentGrowId) {
-                    table.innerHTML = '<tr><td colspan="5">No grow selected</td></tr>';
-                    return;
-                }
-                
-                const schedule = await IndexedDBService.loadSchedule(currentGrowId);
-                if (!schedule || schedule.length === 0) {
-                    table.innerHTML = '<tr><td colspan="5">No schedule data found</td></tr>';
-                    return;
-                }
-                
-                // Create table header
-                const headers = Object.keys(schedule[0]).filter(key => key !== 'nutrients');
-                let headerRow = '<tr>';
-                headers.forEach(header => {
-                    headerRow += `<th>${header.replace(/_/g, ' ').toUpperCase()}</th>`;
-                });
-                headerRow += '</tr>';
-                
-                // Create table rows
-                let rows = '';
-                schedule.forEach(row => {
-                    rows += '<tr>';
-                    headers.forEach(header => {
-                        rows += `<td>${row[header] || ''}</td>`;
-                    });
-                    rows += '</tr>';
-                });
-                
-                table.innerHTML = headerRow + rows;
-                
-                // Update page title
-                const growName = localStorage.getItem(`growName_${currentGrowId}`) || 'Unknown Grow';
-                document.getElementById('growTitle').textContent = `${growName} - Schedule`;
-                
-            } catch (error) {
-                console.error('Error loading schedule:', error);
-                table.innerHTML = '<tr><td colspan="5">Error loading schedule data</td></tr>';
-            }
-        }
-        
-        // Populate table on load
-        await populateTable();
+
         
         // Toast function
         function showToast(message, type = 'info') {
@@ -652,7 +575,7 @@
                 }
                 
                 // Update title with grow name
-                const growName = localStorage.getItem('currentGrowName') || 'Grow';
+                const growName = localStorage.getItem(`growName_${currentGrowId}`) || localStorage.getItem('currentGrowName') || 'Grow';
                 document.getElementById('growTitle').textContent = growName;
                 
             } catch (error) {
