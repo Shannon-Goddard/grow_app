@@ -1,168 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google Analytics - Keep for user insights -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
-    <script>
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-X0XEMR28V2');
-    </script>
-    
-    <!-- Essential Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    
-    <!-- Mobile WebView Optimizations -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="msapplication-tap-highlight" content="no">
-    
-    <!-- App Icons -->
-    <link rel="icon" href="assets/img/favicon.png">
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-    
-    <!-- Security Headers -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
-    
-    <!-- Performance Optimizations -->
-    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" as="style" crossorigin="anonymous">
-    <link rel="preload" href="assets/css/style.css" as="style">
-    
-    <!-- CSS Files -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet" crossorigin>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="assets/css/style.css" rel="stylesheet">
+  </script>
 
-    
-    <!-- No Index - App Version -->
-    <meta name="robots" content="noindex, nofollow">
-    
-    <title>GrowApp Cannabis Guide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
-  </head>
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <body class="customBody">
+  <title>GrowApp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { brand: '#04AA6D', brandDark: '#038a58' } } }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-image { height: 220px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), var(--hero-bg) center/cover no-repeat; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white min-h-screen">
 
-    <div id="loader-wrapper">
-      <!-- Optional: Add a loading spinner or animation here -->
+  <!-- Header -->
+  <header class="sticky top-0 z-50 flex items-center justify-between px-5 py-4 bg-zinc-900 border-b border-zinc-800">
+    <div class="text-lg font-bold tracking-tight">GrowApp</div>
+    <div id="growName" class="text-brand font-semibold text-sm px-3 py-1.5 rounded-full border border-zinc-700 bg-zinc-800"></div>
+    <div id="todayDate" class="text-sm text-zinc-400"></div>
+  </header>
+
+  <!-- Hero Image -->
+  <div id="heroImage" class="hero-image flex items-end relative" style="--hero-bg: url('assets/img/hero.png');">
+    <div class="w-full p-5 relative z-10">
+      <div id="stagePill" class="inline-flex items-center gap-2 bg-black/70 px-4 py-1.5 rounded-full text-brand text-sm font-semibold">
+        <span class="w-2 h-2 bg-brand rounded-full animate-pulse"></span>
+        <span id="stageText">Flowering • Week 4 • Day 26</span>
+      </div>
     </div>
-    
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center justify-content-center">
-      <div class="container">
+  </div>
 
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-          <div class="col-xl-6 col-lg-8">
-            <h1>GrowApp<span>.</span></h1>
-            <h2>Grow what you can't</h2>
-          </div>
+  <!-- Progress Bar -->
+  <div id="progressBar" class="px-5 pt-4">
+    <div class="flex justify-between text-xs text-zinc-400 mb-1.5">
+      <span id="progressLabel">Day 26 of 84</span>
+      <span id="progressPct">31%</span>
+    </div>
+    <div class="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+      <div id="progressFill" class="h-full bg-gradient-to-r from-brand to-emerald-500 rounded-full transition-all duration-500" style="width:31%"></div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="p-5 space-y-4 pb-28" id="cardsContainer">
+
+    <!-- Environmental Targets -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden">
+      <div class="p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-base font-semibold">Environmental Targets</h2>
         </div>
-        
-        <div class="row gy-4 my-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-          
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <a href="mygrow/mygrow.html" rel=”nofollow” aria-label="Navigate to MyGrow">
-                <i class="fa fa-leaf"></i>
-                <h3>MyGrow</h3>
-              </a>
-            </div>
-          </div>
-          
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <a href="mydiary/mydiary.html" rel=”nofollow” aria-label="Navigate to MyDiary">
-                <i class="fa fa-book"></i>
-                <h3>MyDiary</h3>
-              </a>
-            </div>
-          </div>
-          
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <a href="shop/seed-money.html" aria-label="Navigate to Seed Money">
-                <i id="seed-money-icon" class="fa-solid fa-skull-crossbones"></i>
-                <h3>SeedMoney</h3>
-              </a>
-            </div>
-          </div>
-          
-          <div class="col-xl-2 col-md-4">
-            <div class="icon-box">
-              <a href="tools/tools.html" aria-label="Navigate to Tools">
-                <i class="fa fa-cogs"></i>
-                <h3>Tools</h3>
-              </a>
-            </div>
-          </div>
-        
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div><div class="text-xs text-zinc-400">pH Goal</div><div class="text-2xl font-bold text-brand" id="val-ph">6.2</div></div>
+          <div><div class="text-xs text-zinc-400">Daytime Temp</div><div class="text-2xl font-bold" id="val-dt-temp">78°F</div></div>
+          <div><div class="text-xs text-zinc-400">Humidity</div><div class="text-2xl font-bold" id="val-humidity">50%</div></div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 text-center mt-3">
+          <div><div class="text-xs text-zinc-400">Nighttime Temp</div><div class="text-xl font-semibold" id="val-nt-temp">68°F</div></div>
+          <div><div class="text-xs text-zinc-400">Hours Of Light</div><div class="text-xl font-semibold" id="val-hours-light">12</div></div>
         </div>
       </div>
-    </section><!-- End Hero -->
+    </div>
 
-    <!-- Essential libraries from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <!-- Non-critical vendor scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" crossorigin="anonymous"></script>
-    <!-- Keep your custom scripts local -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/banner.js"></script>
+    <!-- Water & Nutrients -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden">
+      <div class="p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-base font-semibold">Water & Nutrients</h2>
+        </div>
+        <div class="text-3xl font-bold text-brand mb-3" id="val-water">500 mL</div>
+        <div id="nutrientList" class="space-y-2 text-sm">
+          <div class="flex justify-between"><span class="text-zinc-300">FloraMicro®</span><span class="font-mono text-zinc-100">2.5 mL/L</span></div>
+          <div class="flex justify-between"><span class="text-zinc-300">FloraBloom®</span><span class="font-mono text-zinc-100">3 mL/L</span></div>
+        </div>
+      </div>
+    </div>
 
- <script>
- (function(){
-   var icons=['fa-bomb','fa-ghost','fa-robot','fa-rocket','fa-pizza-slice','fa-dice','fa-hat-wizard','fa-skull','fa-skull-crossbones','fa-paw','fa-snowman','fa-piggy-bank','fa-face-meh-blank','fa-fire','fa-bolt','fa-meteor','fa-dragon','fa-biohazard','fa-cannabis'];
-   var el=document.getElementById('seed-money-icon');
-   if(el) el.className='fa-solid '+icons[Math.floor(Math.random()*icons.length)];
- })();
- </script>
+    <!-- Light & Air Flow -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden">
+      <div class="p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-base font-semibold">Light & Air Flow</h2>
+        </div>
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div><div class="text-xs text-zinc-400">Intensity</div><div class="text-xl font-bold" id="val-light-intensity">75%</div></div>
+          <div><div class="text-xs text-zinc-400">Distance</div><div class="text-xl font-bold" id="val-light-distance">18″</div></div>
+          <div><div class="text-xs text-zinc-400">Fan Position</div><div class="text-xl font-bold text-amber-400" id="val-fan">3</div></div>
+        </div>
+      </div>
+    </div>
 
- <!-- MyTask Sticky Button -->
- <a id="mytaskBtn" href="#" style="position:fixed;bottom:20px;right:20px;z-index:998;background:#04AA6D;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 15px rgba(4,170,109,0.4);text-decoration:none;font-size:22px;transition:transform 0.2s;" aria-label="Go to MyTask">
-   <i class="fa-solid fa-leaf"></i>
- </a>
+    <!-- Visual Inspection -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden">
+      <div class="p-5">
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-base font-semibold">Visual Inspection</h2>
+        </div>
+        <p class="text-sm text-zinc-300" id="val-inspection-tip">Check for yellowing on lower leaves. Trichomes should be mostly cloudy — harvest window approaching.</p>
+      </div>
+    </div>
 
- <!-- MyTask Overlay -->
- <div id="mytaskOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9998;display:none;align-items:center;justify-content:center;">
-   <div style="background:#1a1a1a;border:1px solid #333;border-radius:12px;padding:30px;text-align:center;max-width:320px;margin:20px;">
-     <i class="fa-solid fa-seedling" style="font-size:40px;color:#04AA6D;margin-bottom:15px;"></i>
-     <h3 style="color:#fff;margin:0 0 10px;font-size:20px;">No Grow Found</h3>
-     <p style="color:#aaa;margin:0 0 20px;font-size:14px;">Create a grow first to start tracking your daily tasks.</p>
-     <a href="mygrow/mygrow.html" style="display:inline-block;background:#04AA6D;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">Create Grow</a>
-     <button id="closeOverlay" style="display:block;margin:15px auto 0;background:none;border:none;color:#666;cursor:pointer;font-size:13px;">Cancel</button>
-   </div>
- </div>
+  </div>
 
- <script>
- (function(){
-   var btn = document.getElementById('mytaskBtn');
-   var overlay = document.getElementById('mytaskOverlay');
-   var closeBtn = document.getElementById('closeOverlay');
-   btn.addEventListener('click', function(e){
-     e.preventDefault();
-     var growId = localStorage.getItem('currentGrowId');
-     if(growId){
-       window.location.href = 'mygrow/mytask/mytask.html';
-     } else {
-       overlay.style.display = 'flex';
-     }
-   });
-   btn.addEventListener('mousedown', function(){ btn.style.transform='scale(0.9)'; });
-   btn.addEventListener('mouseup', function(){ btn.style.transform='scale(1)'; });
-   closeBtn.addEventListener('click', function(){ overlay.style.display='none'; });
-   overlay.addEventListener('click', function(e){ if(e.target===overlay) overlay.style.display='none'; });
- })();
- </script>
- </body>
- </html>
+  <!-- CTA Button -->
+  <div class="fixed bottom-6 left-0 right-0 px-5 z-50">
+    <button id="ctaBtn" class="w-full bg-gradient-to-r from-brand to-emerald-600 hover:from-brandDark hover:to-emerald-700 text-white font-semibold text-base py-4 rounded-2xl shadow-2xl shadow-brand/30 active:scale-[0.97] transition-all">
+      Go to Dashboard
+    </button>
+  </div>
+
+  <!-- New User Overlay -->
+  <div id="newUserOverlay" class="hidden fixed inset-0 bg-zinc-950/85 backdrop-blur-sm flex flex-col items-center justify-center z-40 px-8">
+    <i class="fa-solid fa-seedling text-5xl text-brand mb-5"></i>
+    <h2 class="text-2xl font-bold mb-2 text-center">Welcome to GrowApp</h2>
+    <p class="text-zinc-400 text-sm text-center mb-8">Your personal cannabis cultivation dashboard. Create your first grow to get started.</p>
+    <a href="mygrow/mygrow.html" class="w-full bg-gradient-to-r from-brand to-emerald-600 text-white font-semibold text-base py-4 rounded-2xl text-center shadow-2xl shadow-brand/30 active:scale-[0.97] transition-all block">
+      Create Grow
+    </a>
+    <p class="text-zinc-600 text-xs mt-6 text-center">2,800+ strains • Smart scheduling • Daily guidance</p>
+  </div>
+
+  <script type="module">
+    import { IndexedDBService } from './mygrow/common/js/indexedDBService.js';
+
+    const DB = IndexedDBService;
+
+    // Date
+    const today = new Date();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    const yyyy = today.getFullYear();
+    document.getElementById('todayDate').textContent = `${mm}/${dd}/${yyyy}`;
+    const todayStr = `${mm}/${dd}/${yyyy}`;
+
+    function capitalize(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : ''; }
+
+    async function init() {
+      const grows = await DB.loadAllGrows();
+
+      if (!grows.length) {
+        // New user — show overlay over mock data
+        document.getElementById('newUserOverlay').classList.remove('hidden');
+        document.getElementById('newUserOverlay').classList.add('flex');
+        document.getElementById('ctaBtn').classList.add('hidden');
+        document.getElementById('growName').textContent = 'Blue Dream';
+        return;
+      }
+
+      // Returning user — load real data
+      const growId = localStorage.getItem('currentGrowId') || grows[0].growId;
+      const growName = localStorage.getItem(`growName_${growId}`) || grows[0].growName;
+      document.getElementById('growName').textContent = growName;
+
+      // Hero image
+      const savedImg = localStorage.getItem(`taskImage_${growId}`);
+      if (savedImg) {
+        document.getElementById('heroImage').style.setProperty('--hero-bg', `url('${savedImg}')`);
+      }
+
+      // Schedule
+      const schedule = await DB.loadSchedule(growId);
+      if (schedule && schedule.length) {
+        const entry = schedule.find(r => r.date === todayStr) || schedule[0];
+        const idx = schedule.findIndex(r => r.date === todayStr);
+        const currentDay = idx >= 0 ? idx + 1 : 1;
+        const totalDays = schedule.length;
+        const pct = Math.round((currentDay / totalDays) * 100);
+
+        // Stage pill
+        const weekNum = entry.week ? entry.week.toString().replace(/week\s*/i, '') : '';
+        document.getElementById('stageText').textContent = `${capitalize(entry.stage)} • Week ${weekNum} • Day ${entry.day}`;
+
+        // Progress
+        document.getElementById('progressLabel').textContent = `Day ${currentDay} of ${totalDays}`;
+        document.getElementById('progressPct').textContent = `${pct}%`;
+        document.getElementById('progressFill').style.width = `${pct}%`;
+
+        // Environmental
+        document.getElementById('val-ph').textContent = entry.ph_goal || '—';
+        document.getElementById('val-dt-temp').textContent = entry.dt_temp || '—';
+        document.getElementById('val-nt-temp').textContent = entry.nt_temp || '—';
+        document.getElementById('val-humidity').textContent = entry.humidity || '—';
+        document.getElementById('val-hours-light').textContent = entry.hours_of_light || '—';
+
+        // Water
+        document.getElementById('val-water').textContent = entry.amount_of_water || 'MOIST';
+
+        // Nutrients
+        const selectedNutrients = JSON.parse(localStorage.getItem(`nutrients_${growId}`) || '[]');
+        const nutrientMap = {
+          'floramicro': 'FloraMicro®', 'floragro': 'FloraGro®', 'florabloom': 'FloraBloom®',
+          'voodoo-juice': 'Voodoo Juice®', 'tarantula': 'Tarantula®', 'piranha': 'Piranha®'
+        };
+        if (selectedNutrients.length) {
+          document.getElementById('nutrientList').innerHTML = selectedNutrients.map(n => {
+            const name = nutrientMap[n] || n.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            const val = (entry.nutrients && entry.nutrients[n]) || '0 mL/L';
+            return `<div class="flex justify-between"><span class="text-zinc-300">${name}</span><span class="font-mono text-zinc-100">${val}</span></div>`;
+          }).join('');
+        }
+
+        // Light & Air
+        const lightDistance = entry.stage === 'seedling' ? '40″' : entry.stage === 'vegetative' ? '36″' : '18″';
+        document.getElementById('val-light-intensity').textContent = entry.light_intensity || '—';
+        document.getElementById('val-light-distance').textContent = lightDistance;
+        document.getElementById('val-fan').textContent = entry.air_fan_position || '—';
+
+        // Inspection
+        document.getElementById('val-inspection-tip').textContent = entry.visual_inspection || '—';
+      }
+
+      // CTA button navigates to dashboard
+      document.getElementById('ctaBtn').addEventListener('click', () => {
+        window.location.href = '/mygrow/mytask/mytask.html';
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>
