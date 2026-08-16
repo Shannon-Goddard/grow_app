@@ -11,7 +11,7 @@ body {
 #data-container {
     position: relative;
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 150px);
     min-height: 300px;
     background-color: #333;
     display: flex;
@@ -88,16 +88,21 @@ body {
     white-space: nowrap;
 }
 
-/* Camera controls */
+/* Camera controls - WebView friendly */
 .camera-button {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     font-size: 24px;
     border: 2px solid white;
     margin: 10px;
     cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 15;
 }
 
 .camera-controls, .photo-controls {
@@ -107,10 +112,22 @@ body {
     width: 100%;
     text-align: center;
     z-index: 10;
+    display: block;
+    min-height: 80px;
 }
 
-.photo-controls {
-    display: none;
+
+
+#capture-btn {
+    display: block;
+    position: relative;
+    z-index: 20;
+}
+
+#save-btn, #retake-btn {
+    display: inline-block;
+    position: relative;
+    z-index: 20;
 }
 
 /* Button styles */
@@ -145,11 +162,11 @@ a {
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
     body {
-        padding-top: 60px;
+        padding-top: 40px;
     }
     
     #data-container {
-        height: calc(100vh - 180px);
+        height: calc(100vh - 60px);
     }
     
     .column-option {
@@ -180,7 +197,7 @@ a {
     }
     
     #data-container {
-        height: calc(100vh - 100px);
+        height: calc(100vh - 80px);
     }
     
     .camera-controls, .photo-controls {
@@ -227,4 +244,20 @@ a {
         padding: 1px 3px;
         font-size: 12px;
     }
+}
+
+@media (max-width: 768px) {
+    .photo-controls {
+        display: none !important; /* Reinforce for mobile */
+    }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+    .photo-controls {
+        display: none !important; /* Reinforce for landscape */
+    }
+}
+
+/* Override media query rules - must be last */
+.photo-controls {
+    display: none;
 }

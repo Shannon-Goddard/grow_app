@@ -224,19 +224,23 @@
       const growName = localStorage.getItem(`growName_${localStorage.getItem('currentGrowId')}`) || 'grow';
       const filename = `${growName}-diary-${new Date().toISOString().slice(0,10)}.png`;
       html2canvas(document.getElementById('data-container'), { useCORS: true, allowTaint: true })
-        .then(canvas => {
-          const link = document.createElement('a');
-          link.download = filename;
-          link.href = canvas.toDataURL('image/png');
-          link.click();
-        })
-        .catch(() => {
-          const link = document.createElement('a');
-          link.download = filename;
-          link.href = document.getElementById('captured-photo').src;
-          link.click();
-        });
+        .then(canvas => saveImage(canvas.toDataURL('image/png'), filename))
+        .catch(() => saveImage(document.getElementById('captured-photo').src, filename));
     });
+
+    function saveImage(dataUrl, filename) {
+      const base64 = dataUrl.substring(dataUrl.indexOf(',') + 1);
+      if (window.Android && window.Android.shareImageBase64) {
+        window.Android.shareImageBase64(base64, 'image/png');
+      } else if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.downloadHandler) {
+        window.webkit.messageHandlers.downloadHandler.postMessage({ action: 'download', url: base64, filename: filename });
+      } else {
+        const link = document.createElement('a');
+        link.download = filename;
+        link.href = dataUrl;
+        link.click();
+      }
+    }
 
     document.getElementById('retake-btn').addEventListener('click', () => {
       document.getElementById('camera-view').style.display = 'block';
