@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X0XEMR28V2');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="robots" content="noindex, nofollow">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+  <title>MyDiary — GrowApp</title>
+
+  <style>
+    body { padding-top: 60px; background-color: #0a0c0e; color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; }
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: #13181d; border-bottom: 1px solid #2a333d; display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; }
+    header a { color: #8b949e; text-decoration: none; font-size: 0.875rem; display: flex; align-items: center; gap: 0.4rem; }
+    header a:hover { color: #04AA6D; }
+    header h1 { font-size: 1rem; font-weight: 700; margin: 0; color: #e8eaed; }
+    #data-container { position: relative; width: 100%; height: calc(100vh - 260px); min-height: 300px; background-color: #13181d; display: flex; flex-direction: column; justify-content: flex-end; border-radius: 0.75rem; overflow: hidden; }
+    #camera-view, #captured-photo { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+    #camera-view { z-index: 1; }
+    #captured-photo { z-index: 2; display: none; }
+    #data-overlay { position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0,0,0,0.75); color: white; padding: 10px; font-size: 14px; z-index: 5; }
+    #data-overlay table { width: 100%; margin-bottom: 0; border-collapse: collapse; }
+    #data-overlay th, #data-overlay td { padding: 2px 5px; text-align: left; border-color: rgba(255,255,255,0.2); word-wrap: break-word; }
+    #column-selector { background: #13181d; border: 1px solid #2a333d; border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 0.75rem; max-height: 180px; overflow-y: auto; }
+    #column-selector h5 { font-size: 0.8rem; color: #8b949e; margin-bottom: 0.5rem; }
+    .column-option { display: inline-block; margin-right: 10px; margin-bottom: 6px; white-space: nowrap; font-size: 0.8rem; }
+    .column-option input { accent-color: #04AA6D; }
+    .camera-button { background-color: rgba(255,255,255,0.15); border-radius: 50%; width: 56px; height: 56px; font-size: 22px; border: 2px solid rgba(255,255,255,0.4); margin: 8px; cursor: pointer; color: white; transition: background 0.15s; }
+    .camera-button:hover { background-color: rgba(4,170,109,0.4); border-color: #04AA6D; }
+    .camera-controls, .photo-controls { position: absolute; bottom: 60px; left: 0; width: 100%; text-align: center; z-index: 10; }
+    .photo-controls { display: none; }
+    select.form-select-sm { background: #1c2329; border: 1px solid #2a333d; color: #e8eaed; border-radius: 0.4rem; font-size: 0.8rem; }
+    @media (max-width: 768px) {
+      #data-container { height: calc(100vh - 240px); }
+      .column-option { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="schedule-viewer.html"><i class="fa-solid fa-arrow-left"></i> Schedule</a>
+    <h1>MyDiary</h1>
+    <a href="mytask.html"><i class="fa-solid fa-check-circle"></i> MyTask</a>
+  </header>
+
+  <main class="container-fluid px-3 pt-2">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <form id="growForm" class="mb-2 d-flex align-items-center gap-2">
+          <label for="growSelect" class="text-zinc-400 small mb-0">Grow:</label>
+          <select id="growSelect" name="growId" class="form-select form-select-sm d-inline-block w-auto"></select>
+        </form>
+      </div>
+    </div>
+
+    <div id="column-selector">
+      <h5>Select columns to display:</h5>
+      <div id="column-options"></div>
+    </div>
+
+    <div id="data-container">
+      <video id="camera-view" autoplay playsinline></video>
+      <img id="captured-photo" alt="Captured photo">
+      <div id="data-overlay">
+        <table id="data-table" class="table table-sm table-dark mb-0"></table>
+      </div>
+      <div class="camera-controls">
+        <button id="capture-btn" class="camera-button"><i class="fas fa-camera"></i></button>
+      </div>
+      <div class="photo-controls">
+        <button id="save-btn" class="camera-button"><i class="fas fa-download"></i></button>
+        <button id="retake-btn" class="camera-button"><i class="fas fa-redo"></i></button>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="../assets/js/bottom-nav.js"></script>
+  <script type="module">
+    import { IndexedDBService } from './assets/js/indexedDBService.js';
+
+    const availableColumns = [
+      { id: 'strain', name: 'Strain', checked: true },
+      { id: 'date', name: 'Date', checked: true },
+      { id: 'stage', name: 'Stage', checked: true },
+      { id: 'week', name: 'Week', checked: true },
+      { id: 'day', name: 'Day', checked: false },
+      { id: 'visual', name: 'Visual Inspection', checked: false },
+      { id: 'water', name: 'Water', checked: false },
+      { id: 'ph', name: 'pH Goal', checked: false },
+      { id: 'light_intensity', name: 'Light Intensity', checked: false },
+      { id: 'light_distance', name: 'Light Distance', checked: false },
+      { id: 'dt_temp', name: 'Day Temp', checked: false },
+      { id: 'nt_temp', name: 'Night Temp', checked: false },
+      { id: 'hours_light', name: 'Hours Of Light', checked: false },
+      { id: 'humidity', name: 'Humidity', checked: false },
+      { id: 'fan', name: 'Fan Position', checked: false }
+    ];
+
+    async function getSelectedNutrients(growId) {
+      const stored = localStorage.getItem(`nutrients_${growId}`);
+      if (stored) return JSON.parse(stored);
+      try {
+        const db = await IndexedDBService.initDB();
+        const tx = db.transaction('selectedNutrients', 'readonly');
+        const req = tx.objectStore('selectedNutrients').get(growId);
+        return new Promise(res => { req.onsuccess = () => res(req.result?.nutrients || []); req.onerror = () => res([]); });
+      } catch { return []; }
+    }
+
+    function buildCheckboxes(selectedNutrients) {
+      const wrap = document.getElementById('column-options');
+      wrap.innerHTML = '';
+      availableColumns.forEach(col => {
+        const d = document.createElement('div'); d.className = 'column-option form-check form-check-inline';
+        const inp = document.createElement('input'); inp.type = 'checkbox'; inp.className = 'form-check-input'; inp.id = `col-${col.id}`; inp.checked = col.checked;
+        inp.addEventListener('change', updateTable);
+        const lbl = document.createElement('label'); lbl.className = 'form-check-label'; lbl.htmlFor = `col-${col.id}`; lbl.textContent = col.name;
+        d.appendChild(inp); d.appendChild(lbl); wrap.appendChild(d);
+      });
+      selectedNutrients.forEach(n => {
+        const d = document.createElement('div'); d.className = 'column-option form-check form-check-inline';
+        const inp = document.createElement('input'); inp.type = 'checkbox'; inp.className = 'form-check-input'; inp.id = `col-${n}`; inp.checked = false;
+        inp.addEventListener('change', updateTable);
+        const lbl = document.createElement('label'); lbl.className = 'form-check-label'; lbl.htmlFor = `col-${n}`; lbl.textContent = n.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        d.appendChild(inp); d.appendChild(lbl); wrap.appendChild(d);
+      });
+    }
+
+    async function updateTable() {
+      const growId = localStorage.getItem('currentGrowId');
+      if (!growId) return;
+      const schedule = await IndexedDBService.loadSchedule(growId);
+      if (!schedule) return;
+      const today = new Date();
+      const todayStr = `${String(today.getMonth()+1).padStart(2,'0')}/${String(today.getDate()).padStart(2,'0')}/${today.getFullYear()}`;
+      const entry = schedule.find(r => r.date === todayStr) || schedule[0];
+      if (!entry) return;
+      const strainName = localStorage.getItem(`plantStrain_${growId}`) || '';
+      const selectedNutrients = await getSelectedNutrients(growId);
+      const lightDist = entry.stage === 'seedling' ? '40 Inches' : entry.stage === 'vegetative' ? (parseInt(entry.week) >= 2 ? '24 Inches' : '36 Inches') : '18 Inches';
+
+      const colMap = {
+        strain: ['Strain', strainName], date: ['Date', entry.date||''], stage: ['Stage', entry.stage||''],
+        week: ['Week', entry.week||''], day: ['Day', entry.day||''], visual: ['Visual', entry.visual_inspection||''],
+        water: ['Water', entry.amount_of_water||''], ph: ['pH', entry.ph_goal||''],
+        light_intensity: ['Light Int.', entry.light_intensity||''], light_distance: ['Light Dist.', lightDist],
+        dt_temp: ['Day Temp', entry.dt_temp||''], nt_temp: ['Night Temp', entry.nt_temp||''],
+        hours_light: ['Light Hrs', entry.hours_of_light||''], humidity: ['Humidity', entry.humidity||''],
+        fan: ['Fan', entry.air_fan_position||'']
+      };
+
+      let hRow = '<tr>', dRow = '<tr>';
+      availableColumns.forEach(col => {
+        const el = document.getElementById(`col-${col.id}`);
+        if (el && el.checked && colMap[col.id]) {
+          hRow += `<th>${colMap[col.id][0]}</th>`;
+          dRow += `<td>${colMap[col.id][1]}</td>`;
+        }
+      });
+      selectedNutrients.forEach(n => {
+        const el = document.getElementById(`col-${n}`);
+        if (el && el.checked) {
+          hRow += `<th>${n.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase())}</th>`;
+          dRow += `<td>${entry.nutrients?.[n]||''}</td>`;
+        }
+      });
+      hRow += '</tr>'; dRow += '</tr>';
+      document.getElementById('data-table').innerHTML = hRow + dRow;
+    }
+
+    async function populateDropdown() {
+      const grows = await IndexedDBService.loadAllGrows();
+      const sel = document.getElementById('growSelect');
+      sel.innerHTML = grows.length ? grows.map(g => `<option value="${g.growId}">${g.growName}</option>`).join('') : '<option value="">No grows found</option>';
+      const cur = localStorage.getItem('currentGrowId');
+      if (cur) sel.value = cur;
+      const nutrients = await getSelectedNutrients(sel.value);
+      buildCheckboxes(nutrients);
+    }
+
+    document.getElementById('growSelect').addEventListener('change', async function() {
+      localStorage.setItem('currentGrowId', this.value);
+      buildCheckboxes(await getSelectedNutrients(this.value));
+      updateTable();
+    });
+
+    // Camera
+    async function initCamera() {
+      try {
+        const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
+        const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: isMobile ? 'environment' : 'user' } });
+        const vid = document.getElementById('camera-view');
+        vid.srcObject = stream; vid.style.display = 'block';
+        vid.onloadedmetadata = () => vid.play().catch(()=>{});
+      } catch { document.getElementById('camera-view').style.display = 'none'; }
+    }
+
+    document.getElementById('capture-btn').addEventListener('click', () => {
+      const vid = document.getElementById('camera-view');
+      const canvas = document.createElement('canvas');
+      canvas.width = vid.videoWidth || 640; canvas.height = vid.videoHeight || 480;
+      canvas.getContext('2d').drawImage(vid, 0, 0, canvas.width, canvas.height);
+      const photo = document.getElementById('captured-photo');
+      photo.src = canvas.toDataURL('image/png');
+      vid.style.display = 'none'; photo.style.display = 'block';
+      document.querySelector('.camera-controls').style.display = 'none';
+      document.querySelector('.photo-controls').style.display = 'block';
+    });
+
+    document.getElementById('save-btn').addEventListener('click', () => {
+      const growName = localStorage.getItem(`growName_${localStorage.getItem('currentGrowId')}`) || 'grow';
+      const filename = `${growName}-diary-${new Date().toISOString().slice(0,10)}.png`;
+      html2canvas(document.getElementById('data-container'), { useCORS: true, allowTaint: true })
+        .then(canvas => {
+          const link = document.createElement('a');
+          link.download = filename;
+          link.href = canvas.toDataURL('image/png');
+          link.click();
+        })
+        .catch(() => {
+          const link = document.createElement('a');
+          link.download = filename;
+          link.href = document.getElementById('captured-photo').src;
+          link.click();
+        });
+    });
+
+    document.getElementById('retake-btn').addEventListener('click', () => {
+      document.getElementById('camera-view').style.display = 'block';
+      document.getElementById('captured-photo').style.display = 'none';
+      document.querySelector('.camera-controls').style.display = 'block';
+      document.querySelector('.photo-controls').style.display = 'none';
+    });
+
+    await populateDropdown();
+    await updateTable();
+    await initCamera();
+  </script>
+</body>
+</html>

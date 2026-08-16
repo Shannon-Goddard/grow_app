@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X0XEMR28V2');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lighting — GrowApp Cannabis Guide</title>
+
+  <meta name="description" content="Compare 132 LEDs, calculate grow costs, find the best light for your tent, and use the DLI calculator.">
+  <link rel="canonical" href="https://growappcannabis.guide/lighting/lighting.html">
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { brand: '#04AA6D', brandDark: '#038a57' } } }
+    }
+  </script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .tool-card.selected { border-color: #04AA6D; background: rgba(4,170,109,0.08); }
+    .tool-card.selected .tool-icon { color: #04AA6D; }
+    .filter-btn.active { background: #04AA6D; color: #000; border-color: #04AA6D; }
+    .prose h2 { font-size: 1.3rem; font-weight: 700; color: #e8eaed; margin: 1.8rem 0 0.6rem; }
+    .prose h3 { font-size: 1.05rem; font-weight: 600; color: #04AA6D; margin: 1.2rem 0 0.4rem; }
+    .prose p  { color: #8b949e; line-height: 1.75; margin-bottom: 0.8rem; font-size: 0.92rem; }
+    .prose ul { color: #8b949e; font-size: 0.92rem; line-height: 1.75; padding-left: 1.2rem; margin-bottom: 0.8rem; }
+    .prose ul li { margin-bottom: 0.3rem; }
+    .prose strong { color: #e8eaed; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white min-h-screen">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-zinc-900/90 backdrop-blur border-b border-zinc-800 flex items-center justify-between px-5 py-4">
+    <a href="../index.html" class="flex items-center gap-2 text-zinc-400 hover:text-brand text-sm transition-colors">
+      <i class="fa-solid fa-arrow-left"></i> Back
+    </a>
+    <div class="font-bold text-base tracking-tight">Lighting</div>
+    <div class="w-16"></div>
+  </header>
+
+  <!-- HAMBURGER -->
+  <div id="bottom-nav-placeholder" data-depth="1"></div>
+
+  <main class="max-w-4xl mx-auto px-5 pb-20">
+
+    <!-- PAGE TITLE -->
+    <div class="pt-8 pb-6">
+      <div class="inline-flex items-center gap-2 bg-brand/10 border border-brand/30 text-brand text-xs font-semibold px-3 py-1 rounded-full mb-4">
+        <i class="fa-solid fa-sun"></i> Lighting
+      </div>
+      <h1 class="text-3xl font-extrabold leading-tight mb-3">Find Your Perfect Grow Light</h1>
+      <p class="text-zinc-400 text-base leading-relaxed">Use our free tools to calculate costs, match a light to your tent, or browse 132 LEDs from 10 top brands.</p>
+    </div>
+
+    <!-- TOOL SELECTOR -->
+    <section class="mb-6">
+      <h2 class="text-base font-bold mb-4 text-zinc-300">Free Lighting Tools</h2>
+      <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+
+        <button data-tool="cost"
+           class="tool-card selected flex flex-col gap-3 bg-zinc-900 border border-zinc-800 rounded-2xl p-4 transition-colors hover:border-brand/60 cursor-pointer text-left">
+          <div class="tool-icon text-brand text-2xl"><i class="fa-solid fa-calculator"></i></div>
+          <div>
+            <div class="font-bold text-sm mb-1">Grow Cost Calculator</div>
+            <div class="text-zinc-500 text-xs leading-relaxed">See exactly what your light costs per cycle in electricity.</div>
+          </div>
+        </button>
+
+        <button data-tool="tent"
+           class="tool-card flex flex-col gap-3 bg-zinc-900 border border-zinc-800 rounded-2xl p-4 transition-colors hover:border-brand/60 cursor-pointer text-left">
+          <div class="tool-icon text-zinc-400 text-2xl"><i class="fa-solid fa-tent"></i></div>
+          <div>
+            <div class="font-bold text-sm mb-1">Best Light For My Tent</div>
+            <div class="text-zinc-500 text-xs leading-relaxed">Filter the shop below by tent size — sorted by efficacy with a top pick.</div>
+          </div>
+        </button>
+
+        <button data-tool="dli"
+           class="tool-card flex flex-col gap-3 bg-zinc-900 border border-zinc-800 rounded-2xl p-4 transition-colors hover:border-brand/60 cursor-pointer text-left">
+          <div class="tool-icon text-zinc-400 text-2xl"><i class="fa-solid fa-sun"></i></div>
+          <div>
+            <div class="font-bold text-sm mb-1">DLI Calculator</div>
+            <div class="text-zinc-500 text-xs leading-relaxed">Daily Light Integral — know if your plants are getting enough light each day.</div>
+          </div>
+        </button>
+
+        <button data-tool="compare"
+           class="tool-card flex flex-col gap-3 bg-zinc-900 border border-zinc-800 rounded-2xl p-4 transition-colors hover:border-brand/60 cursor-pointer text-left">
+          <div class="tool-icon text-zinc-400 text-2xl"><i class="fa-solid fa-scale-balanced"></i></div>
+          <div>
+            <div class="font-bold text-sm mb-1">Side-by-Side Compare</div>
+            <div class="text-zinc-500 text-xs leading-relaxed">Compare any two lights spec-for-spec. Efficacy, cost, coverage, and more.</div>
+          </div>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- TOOL PANEL -->
+    <div id="tool-panel" class="mb-8"></div>
+
+    <!-- ARTICLE -->
+    <article class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 mb-8 prose">
+      <h2>How to Choose a Grow Light</h2>
+      <p>The single biggest factor in your yield is light. Not nutrients, not genetics — light. Getting this right before you buy saves you from the most expensive mistake in home growing.</p>
+
+      <h3>Wattage vs. Coverage</h3>
+      <p>Manufacturers advertise "equivalent" wattages that mean nothing. What matters is <strong>actual draw watts</strong> and the <strong>flowering footprint</strong> — the area the light can actually cover at full intensity during flower. A 200W light covering a 3×3 is very different from a 200W light rated for a 4×4.</p>
+
+      <h3>Efficacy: The Number That Actually Matters</h3>
+      <p>Efficacy is measured in <strong>µmol/J</strong> (micromoles per joule). It tells you how efficiently the light converts electricity into usable plant light. Anything above <strong>2.5 µmol/J</strong> is excellent. Below 2.0 µmol/J and you're leaving yield on the table.</p>
+
+      <h3>Spectrum Type</h3>
+      <ul>
+        <li><strong>Full Spectrum</strong> — white light covering the full PAR range. Best all-around for veg and flower.</li>
+        <li><strong>Enhanced Spectrum</strong> — adds UV and/or far-red for terpene production and faster flowering.</li>
+        <li><strong>Targeted</strong> — tuned for specific growth stages. Less common in home grows.</li>
+      </ul>
+
+      <h3>Quick Sizing Guide</h3>
+      <ul>
+        <li><strong>2×2 tent</strong> — 100–150W actual draw</li>
+        <li><strong>3×3 tent</strong> — 200–300W actual draw</li>
+        <li><strong>4×4 tent</strong> — 400–600W actual draw</li>
+        <li><strong>5×5 tent</strong> — 600–800W actual draw</li>
+      </ul>
+    </article>
+
+    <!-- LIGHT SHOP -->
+    <section id="shop">
+      <h2 class="text-lg font-bold mb-1">Browse 132 LED Grow Lights</h2>
+      <p class="text-zinc-400 text-sm mb-5">Filter by tent size, brand, or wattage. Data sourced from manufacturer specs.</p>
+
+      <!-- Filters -->
+      <div class="flex gap-2 flex-wrap mb-2">
+        <button class="filter-btn active text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-tent="all">All Sizes</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-tent="2x2">2×2</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-tent="3x3">3×3</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-tent="4x4">4×4</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-tent="5x5">5×5+</button>
+      </div>
+      <div class="flex gap-2 flex-wrap mb-2">
+        <button class="filter-btn active text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-brand="all">All Brands</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-brand="Horticulture Lighting Group">HLG</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-brand="Mars Hydro">Mars Hydro</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-brand="Spider Farmer">Spider Farmer</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-brand="AC Infinity Inc.">AC Infinity</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-brand="Vivosun">Vivosun</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-brand="Gavita Horticultural Lighting">Gavita</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-brand="other">Other</button>
+      </div>
+      <div class="flex gap-2 flex-wrap mb-6">
+        <button class="filter-btn active text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-watts="all">All Wattages</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-watts="under200">Under 200W</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-watts="200to400">200–400W</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-watts="400to600">400–600W</button>
+        <button class="filter-btn text-xs font-semibold px-3 py-1.5 rounded-lg border border-zinc-700 bg-zinc-800 transition-all" data-watts="over600">600W+</button>
+      </div>
+
+      <div id="results-count" class="text-xs text-zinc-500 mb-4"></div>
+
+      <!-- Grid -->
+      <div id="light-grid" class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+
+      <div id="no-results" class="hidden text-center py-16 text-zinc-500">
+        <i class="fa-solid fa-sun text-3xl mb-3 block opacity-30"></i>
+        No lights match those filters.
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../assets/js/bottom-nav.js"></script>
+  <script>
+  (function () {
+    var allLights = [];
+    var activeTent = 'all', activeBrand = 'all', activeWatts = 'all', sortByEfficacy = false;
+
+    // ── Tool panel templates ──
+    var panels = {
+      cost: '<div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6"><h2 class="text-base font-bold mb-4">Grow Cost Calculator</h2><div class="grid grid-cols-2 gap-3 sm:grid-cols-3 mb-4"><div><label class="block text-xs text-zinc-400 mb-1">Brand</label><select id="cc-brand" class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white"><option value="">Select brand...</option></select></div><div><label class="block text-xs text-zinc-400 mb-1">Model</label><select id="cc-model" disabled class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white"><option value="">Select model...</option></select></div><div><label class="block text-xs text-zinc-400 mb-1">Electric Rate ($/kWh)</label><input id="cc-rate" type="number" value="0.16" step="0.01" class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white"></div><div><label class="block text-xs text-zinc-400 mb-1">Veg Weeks</label><input id="cc-veg" type="number" value="4" min="0" class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white"></div><div><label class="block text-xs text-zinc-400 mb-1">Flower Weeks</label><input id="cc-flower" type="number" value="8" min="1" class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white"></div><div><label class="block text-xs text-zinc-400 mb-1">Veg Hours/Day</label><input id="cc-vegh" type="number" value="18" min="1" max="24" class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white"></div><div><label class="block text-xs text-zinc-400 mb-1">Flower Hours/Day</label><input id="cc-flowerh" type="number" value="12" min="1" max="24" class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white"></div></div><div id="cc-results" class="hidden"><div class="grid grid-cols-2 gap-3 sm:grid-cols-4"><div class="bg-zinc-800 rounded-xl p-4 text-center"><div class="text-2xl font-extrabold text-brand" id="cc-total">—</div><div class="text-xs text-zinc-400 mt-1">Total Cost</div></div><div class="bg-zinc-800 rounded-xl p-4 text-center"><div class="text-xl font-bold text-white" id="cc-veg-cost">—</div><div class="text-xs text-zinc-400 mt-1">Veg Stage</div></div><div class="bg-zinc-800 rounded-xl p-4 text-center"><div class="text-xl font-bold text-white" id="cc-flower-cost">—</div><div class="text-xs text-zinc-400 mt-1">Flower Stage</div></div><div class="bg-zinc-800 rounded-xl p-4 text-center"><div class="text-xl font-bold text-white" id="cc-daily">—</div><div class="text-xs text-zinc-400 mt-1">Per Day</div></div></div></div></div>',
+      dli: '<div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6"><h2 class="text-base font-bold mb-4">DLI Calculator</h2><p class="text-zinc-400 text-sm mb-5">Daily Light Integral — the total amount of light your plants receive in a day.</p><div class="grid grid-cols-2 gap-3 mb-5"><div><label class="block text-xs text-zinc-400 mb-1">PPFD (µmol/m²/s)</label><input id="dli-ppfd" type="number" value="600" min="0" class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white"></div><div><label class="block text-xs text-zinc-400 mb-1">Hours of Light/Day</label><input id="dli-hours" type="number" value="18" min="1" max="24" class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white"></div></div><div class="bg-zinc-800 rounded-xl p-5 text-center"><div class="text-3xl font-extrabold text-brand" id="dli-result">—</div><div class="text-xs text-zinc-400 mt-1">mol/m²/day</div></div><div class="mt-4 text-xs text-zinc-500 leading-relaxed"><strong class="text-zinc-300">Target ranges:</strong> Seedling 15–20 · Veg 25–35 · Flower 35–50 mol/m²/day</div></div>',
+      compare: '<div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6"><h2 class="text-base font-bold mb-4">Side-by-Side Compare</h2><div class="grid grid-cols-2 gap-3 mb-5"><div><label class="block text-xs text-zinc-400 mb-1">Light A — Brand</label><select id="cmp-brand-a" class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white"><option value="">Brand...</option></select><select id="cmp-model-a" disabled class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white mt-2"><option value="">Model...</option></select></div><div><label class="block text-xs text-zinc-400 mb-1">Light B — Brand</label><select id="cmp-brand-b" class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white"><option value="">Brand...</option></select><select id="cmp-model-b" disabled class="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-sm text-white mt-2"><option value="">Model...</option></select></div></div><div id="cmp-output"></div></div>'
+    };
+
+    function showPanel(tool) {
+      var panel = document.getElementById('tool-panel');
+      if (tool === 'tent') { panel.innerHTML = ''; scrollToShop(); return; }
+      panel.innerHTML = panels[tool] || '';
+      if (tool === 'cost') initCostCalc();
+      if (tool === 'dli')  initDLI();
+      if (tool === 'compare') initCompare();
+    }
+
+    function scrollToShop() {
+      document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // ── Tool card clicks ──
+    document.querySelectorAll('.tool-card').forEach(function (card) {
+      card.addEventListener('click', function () {
+        document.querySelectorAll('.tool-card').forEach(function (c) {
+          c.classList.remove('selected');
+          c.querySelector('.tool-icon').classList.replace('text-brand', 'text-zinc-400');
+        });
+        card.classList.add('selected');
+        card.querySelector('.tool-icon').classList.replace('text-zinc-400', 'text-brand');
+        showPanel(card.getAttribute('data-tool'));
+      });
+    });
+
+    // ── Cost Calculator ──
+    function initCostCalc() {
+      var brandSel = document.getElementById('cc-brand');
+      var modelSel = document.getElementById('cc-model');
+      var brands = [...new Set(allLights.map(function(l){ return l.make; }))].sort();
+      brands.forEach(function(b) {
+        var o = document.createElement('option'); o.value = b; o.textContent = b; brandSel.appendChild(o);
+      });
+      brandSel.addEventListener('change', function() {
+        modelSel.innerHTML = '<option value="">Select model...</option>';
+        modelSel.disabled = !brandSel.value;
+        allLights.filter(function(l){ return l.make === brandSel.value; }).forEach(function(l) {
+          var o = document.createElement('option'); o.value = l.index; o.textContent = l.model + ' (' + l.max_Watts + 'W)'; modelSel.appendChild(o);
+        });
+      });
+      modelSel.addEventListener('change', runCost);
+      ['cc-rate','cc-veg','cc-flower','cc-vegh','cc-flowerh'].forEach(function(id) {
+        document.getElementById(id).addEventListener('input', runCost);
+      });
+    }
+
+    function runCost() {
+      var light = allLights.find(function(l){ return l.index === document.getElementById('cc-model').value; });
+      if (!light) return;
+      var w = parseFloat(light.max_Watts);
+      var rate = parseFloat(document.getElementById('cc-rate').value) || 0.16;
+      var vegW = parseFloat(document.getElementById('cc-veg').value) || 0;
+      var flW  = parseFloat(document.getElementById('cc-flower').value) || 8;
+      var vegH = parseFloat(document.getElementById('cc-vegh').value) || 18;
+      var flH  = parseFloat(document.getElementById('cc-flowerh').value) || 12;
+      var vegCost = (w * vegH * vegW * 7) / 1000 * rate;
+      var flCost  = (w * flH  * flW  * 7) / 1000 * rate;
+      var total = vegCost + flCost;
+      var days = (vegW + flW) * 7;
+      document.getElementById('cc-total').textContent = '$' + total.toFixed(2);
+      document.getElementById('cc-veg-cost').textContent = '$' + vegCost.toFixed(2);
+      document.getElementById('cc-flower-cost').textContent = '$' + flCost.toFixed(2);
+      document.getElementById('cc-daily').textContent = '$' + (days > 0 ? (total/days).toFixed(2) : '0.00');
+      document.getElementById('cc-results').classList.remove('hidden');
+    }
+
+    // ── DLI Calculator ──
+    function initDLI() {
+      function calc() {
+        var ppfd = parseFloat(document.getElementById('dli-ppfd').value) || 0;
+        var hrs  = parseFloat(document.getElementById('dli-hours').value) || 0;
+        var dli  = (ppfd * hrs * 3600) / 1000000;
+        document.getElementById('dli-result').textContent = dli.toFixed(1);
+      }
+      document.getElementById('dli-ppfd').addEventListener('input', calc);
+      document.getElementById('dli-hours').addEventListener('input', calc);
+      calc();
+    }
+
+    // ── Compare Tool ──
+    function initCompare() {
+      ['a','b'].forEach(function(slot) {
+        var bSel = document.getElementById('cmp-brand-' + slot);
+        var mSel = document.getElementById('cmp-model-' + slot);
+        var brands = [...new Set(allLights.map(function(l){ return l.make; }))].sort();
+        brands.forEach(function(b) {
+          var o = document.createElement('option'); o.value = b; o.textContent = b; bSel.appendChild(o);
+        });
+        bSel.addEventListener('change', function() {
+          mSel.innerHTML = '<option value="">Model...</option>';
+          mSel.disabled = !bSel.value;
+          allLights.filter(function(l){ return l.make === bSel.value; }).forEach(function(l) {
+            var o = document.createElement('option'); o.value = l.index; o.textContent = l.model + ' (' + l.max_Watts + 'W)'; mSel.appendChild(o);
+          });
+        });
+        mSel.addEventListener('change', runCompare);
+      });
+    }
+
+    function runCompare() {
+      var a = allLights.find(function(l){ return l.index === document.getElementById('cmp-model-a').value; });
+      var b = allLights.find(function(l){ return l.index === document.getElementById('cmp-model-b').value; });
+      if (!a || !b) return;
+      function cost(l) { return (parseFloat(l.max_Watts) * 18 * 28 + parseFloat(l.max_Watts) * 12 * 56) / 1000 * 0.16; }
+      function wpsf(l) { var fl=parseFloat(l.flowering_footprint_length_ft),fw=parseFloat(l.flowering_footprint_width_ft); return (fl&&fw)?(parseFloat(l.max_Watts)/(fl*fw)).toFixed(1):'—'; }
+      var cA=cost(a), cB=cost(b);
+      var rows = [
+        ['Wattage', a.max_Watts+'W', b.max_Watts+'W'],
+        ['Coverage', (a.flowering_footprint_length_ft||'—')+'×'+(a.flowering_footprint_width_ft||'—')+' ft', (b.flowering_footprint_length_ft||'—')+'×'+(b.flowering_footprint_width_ft||'—')+' ft'],
+        ['W/sqft', wpsf(a), wpsf(b)],
+        ['Efficacy', (a.efficacy_umol_joule||'—')+' µmol/J', (b.efficacy_umol_joule||'—')+' µmol/J'],
+        ['Price', a.price?'$'+parseFloat(a.price).toFixed(0):'—', b.price?'$'+parseFloat(b.price).toFixed(0):'—'],
+        ['Cost/Grow*', '$'+cA.toFixed(2), '$'+cB.toFixed(2)],
+        ['Warranty', (a.Warranty_years||'—')+' yr', (b.Warranty_years||'—')+' yr']
+      ];
+      var html = '<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4 text-zinc-400 font-medium"></th><th class="text-left py-2 pr-4 text-white font-bold">'+a.model+'</th><th class="text-left py-2 text-white font-bold">'+b.model+'</th></tr></thead><tbody>';
+      rows.forEach(function(r) {
+        html += '<tr class="border-t border-zinc-800"><td class="py-2 pr-4 text-zinc-400">'+r[0]+'</td><td class="py-2 pr-4">'+r[1]+'</td><td class="py-2">'+r[2]+'</td></tr>';
+      });
+      html += '</tbody></table></div><p class="text-xs text-zinc-600 mt-3">*4wk veg + 8wk flower at $0.16/kWh</p>';
+      if (Math.abs(cA-cB) > 0.5) {
+        var cheaper = cA < cB ? a : b;
+        html += '<div class="mt-3 bg-brand/10 border border-brand/30 rounded-xl p-3 text-sm text-brand"><strong>'+cheaper.make+' '+cheaper.model+'</strong> saves $'+Math.abs(cA-cB).toFixed(2)+'/grow in electricity.</div>';
+      }
+      document.getElementById('cmp-output').innerHTML = html;
+    }
+
+    // ── Filter state ──
+    var activeTent  = 'all';
+    var activeBrand = 'all';
+    var activeWatts = 'all';
+
+    // ── Tent size matcher ──
+    function tentMatch(fl, fw, filter) {
+      if (filter === 'all') return true;
+      var l = parseFloat(fl), w = parseFloat(fw);
+      if (isNaN(l) || isNaN(w)) return false;
+      var sqft = l * w;
+      if (filter === '2x2') return sqft <= 5;
+      if (filter === '3x3') return sqft > 5 && sqft <= 10;
+      if (filter === '4x4') return sqft > 10 && sqft <= 17;
+      if (filter === '5x5') return sqft > 17;
+      return true;
+    }
+
+    // ── Watts matcher ──
+    function wattsMatch(w, filter) {
+      if (filter === 'all') return true;
+      var n = parseInt(w);
+      if (isNaN(n)) return false;
+      if (filter === 'under200') return n < 200;
+      if (filter === '200to400') return n >= 200 && n <= 400;
+      if (filter === '400to600') return n > 400 && n <= 600;
+      if (filter === 'over600')  return n > 600;
+      return true;
+    }
+
+    // ── Brand matcher ──
+    var mainBrands = ['Horticulture Lighting Group','Mars Hydro','Spider Farmer','AC Infinity Inc.','Vivosun','Gavita Horticultural Lighting'];
+    function brandMatch(make, filter) {
+      if (filter === 'all') return true;
+      if (filter === 'other') return mainBrands.indexOf(make) === -1;
+      return make === filter;
+    }
+
+    // ── Render ──
+    var allLights = [];
+
+    function render() {
+      var filtered = allLights.filter(function (r) {
+        return tentMatch(r.flowering_footprint_length_ft, r.flowering_footprint_width_ft, activeTent)
+            && brandMatch(r.make, activeBrand)
+            && wattsMatch(r.max_Watts, activeWatts);
+      });
+
+      if (activeTent !== 'all') {
+        filtered.sort(function(a,b) {
+          return (parseFloat(b.efficacy_umol_joule)||0) - (parseFloat(a.efficacy_umol_joule)||0);
+        });
+      }
+
+      var grid = document.getElementById('light-grid');
+      var noRes = document.getElementById('no-results');
+      var count = document.getElementById('results-count');
+      count.textContent = filtered.length + ' light' + (filtered.length !== 1 ? 's' : '') + ' found';
+
+      if (filtered.length === 0) { grid.innerHTML = ''; noRes.classList.remove('hidden'); return; }
+      noRes.classList.add('hidden');
+
+      var brandFolders = {'AC Infinity Inc.':'ac-infinity','California Lightworks':'clw','Gavita Horticultural Lighting':'gavita',"Grower's Choice Horticultural Lighting":'growers_choice','Horticulture Lighting Group':'hlg','Mammoth Lighting':'mammoth','Mars Hydro':'mars-hydro','Photontek Lighting':'photontek','Spider Farmer':'spider-farmer','Vivosun':'vivosun'};
+
+      grid.innerHTML = filtered.map(function (r, idx) {
+        var fl = r.flowering_footprint_length_ft, fw = r.flowering_footprint_width_ft;
+        var footprint = (fl && fw) ? fl + '×' + fw + ' ft' : '—';
+        var efficacy = r.efficacy_umol_joule ? parseFloat(r.efficacy_umol_joule).toFixed(2) + ' µmol/J' : '—';
+        var price = r.price ? '$' + parseFloat(r.price).toLocaleString() : '—';
+        var spectrum = r.spectrum_type || '—';
+        var dimmable = r.dimmable === 'TRUE' ? '<span class="text-xs bg-zinc-800 border border-zinc-700 px-2 py-0.5 rounded">Dimmable</span>' : '';
+        var eff = parseFloat(r.efficacy_umol_joule);
+        var effColor = eff >= 2.5 ? 'text-brand' : eff >= 2.0 ? 'text-yellow-400' : 'text-zinc-400';
+        var topPick = (activeTent !== 'all' && idx === 0) ? '<span class="text-xs font-bold bg-brand text-black px-2 py-0.5 rounded-full ml-1">TOP PICK</span>' : '';
+        var folder = brandFolders[r.make] || (r.make_slug || '').replace(/_/g,'-');
+        var imgHtml = r.img ? '<img src="brand/'+folder+'/images/'+r.img+'" alt="'+r.model+'" class="w-full h-40 object-contain bg-zinc-800 p-2" onerror="this.parentNode.removeChild(this)">' : '';
+        var btnHtml = r.url
+          ? '<a href="'+r.url+'" target="_blank" rel="noopener" class="block w-full text-center bg-brand hover:bg-brandDark text-black font-bold text-sm py-2.5 rounded-xl transition-colors">View Light <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>'
+          : '<span class="block w-full text-center bg-zinc-800 text-zinc-500 text-sm py-2.5 rounded-xl">No link available</span>';
+        return '<div class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-brand/50 transition-colors flex flex-col">'
+          + imgHtml
+          + '<div class="p-4 flex-1">'
+          + '<div class="flex items-start justify-between mb-2">'
+          + '<span class="text-xs font-semibold text-brand bg-brand/10 border border-brand/20 px-2 py-0.5 rounded-full">' + footprint + '</span>'
+          + '<span class="text-xs text-zinc-400 font-bold">' + price + '</span>'
+          + '</div>'
+          + '<div class="text-xs text-zinc-500 font-semibold uppercase tracking-wide mb-1">' + r.make + '</div>'
+          + '<h3 class="font-bold text-sm mb-3">' + r.model + topPick + '</h3>'
+          + '<div class="flex flex-wrap gap-1 mb-3">'
+          + '<span class="text-xs bg-zinc-800 border border-zinc-700 px-2 py-0.5 rounded">' + r.max_Watts + 'W</span>'
+          + '<span class="text-xs bg-zinc-800 border border-zinc-700 px-2 py-0.5 rounded ' + effColor + '">' + efficacy + '</span>'
+          + '<span class="text-xs bg-zinc-800 border border-zinc-700 px-2 py-0.5 rounded">' + spectrum + '</span>'
+          + dimmable
+          + '</div>'
+          + '</div>'
+          + '<div class="px-4 pb-4">' + btnHtml + '</div>'
+          + '</div>';
+      }).join('');
+    }
+
+    // ── Filter button wiring ──
+    function wireFilters(attr, setter) {
+      document.querySelectorAll('[data-' + attr + ']').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('[data-' + attr + ']').forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          setter(btn.getAttribute('data-' + attr));
+          render();
+        });
+      });
+    }
+
+    wireFilters('tent',  function (v) { activeTent  = v; });
+    wireFilters('brand', function (v) { activeBrand = v; });
+    wireFilters('watts', function (v) { activeWatts = v; });
+
+    // ── Load JSON ──
+    fetch('lighting-data-complete.json')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        allLights = data;
+        render();
+        showPanel('cost');
+      });
+
+  })();
+  </script>
+</body>
+</html>

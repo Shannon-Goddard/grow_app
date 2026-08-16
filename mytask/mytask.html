@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X0XEMR28V2');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>MyTask</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#04AA6D',
+            brandDark: '#038a58',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .card-expand { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.35s ease; }
+    .card-expand.open { grid-template-rows: 1fr; }
+    .card-expand > div { overflow: hidden; }
+    .card-header .chevron { transition: transform 0.35s ease; }
+    .card-expand.open ~ .card-header .chevron,
+    .card-header.active .chevron { transform: rotate(180deg); }
+    .hero-image { height: 220px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), var(--hero-bg) center/cover no-repeat; }
+    #navbar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; background: rgba(0, 0, 0, 0.5); overflow: auto; width: 100%; margin: 0; padding: 0; display: flex; align-items: center; justify-content: center; }
+    #navbar ul { margin: 0; padding: 5px; display: flex; list-style-type: none; align-items: center; }
+    #navbar a { float: left; text-align: center; padding: 10px 20px 10px 0; font-size: 26px; font-weight: 600; color: #fff; text-decoration: none; transition: 0.3s; width: 20%; }
+    #navbar a:hover, #navbar .active { color: #04AA6D; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 flex items-center justify-between px-5 py-4 bg-zinc-900 border-b border-zinc-800">
+    <div class="text-lg font-bold tracking-tight">MyTask</div>
+    <select id="growSelect" class="bg-zinc-800 text-brand font-semibold text-sm px-3 py-1.5 rounded-full border border-zinc-700 outline-none cursor-pointer"></select>
+    <div id="todayDate" class="text-sm text-zinc-400"></div>
+  </header>
+
+  <!-- Hero Image -->
+  <div id="heroImage" class="hero-image flex items-end cursor-pointer relative" style="--hero-bg: url(''); background-color: #1a1a1a;">
+    <input type="file" id="imageUpload" accept="image/*" class="hidden">
+    <div class="absolute inset-0 flex items-center justify-center text-zinc-500 text-sm" id="uploadHint">
+      <i class="fa-solid fa-camera mr-2"></i> Tap to upload plant photo
+    </div>
+    <div class="w-full p-5 relative z-10">
+      <div id="stagePill" class="inline-flex items-center gap-2 bg-black/70 px-4 py-1.5 rounded-full text-brand text-sm font-semibold">
+        <span class="w-2 h-2 bg-brand rounded-full animate-pulse"></span>
+        <span id="stageText">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div id="progressBar" class="px-5 pt-4">
+    <div class="flex justify-between text-xs text-zinc-400 mb-1.5">
+      <span id="progressLabel">Day 0 of 0</span>
+      <span id="progressPct">0%</span>
+    </div>
+    <div class="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+      <div id="progressFill" class="h-full bg-gradient-to-r from-brand to-emerald-500 rounded-full transition-all duration-500" style="width:0%"></div>
+    </div>
+  </div>
+
+  <!-- Cards Container -->
+  <div class="p-5 space-y-4 pb-28" id="cardsContainer">
+
+    <!-- Environmental Targets -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden" data-card="environment">
+      <div class="p-5 cursor-pointer card-header flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-base font-semibold">Environmental Targets</h2>
+          <i class="fa-solid fa-chevron-down text-zinc-500 text-xs chevron"></i>
+        </div>
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div><div class="text-xs text-zinc-400">pH Goal</div><div class="text-2xl font-bold text-brand" id="val-ph">—</div></div>
+          <div><div class="text-xs text-zinc-400">Daytime Temp</div><div class="text-2xl font-bold" id="val-dt-temp">—</div></div>
+          <div><div class="text-xs text-zinc-400">Humidity</div><div class="text-2xl font-bold" id="val-humidity">—</div></div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 text-center mt-3">
+          <div><div class="text-xs text-zinc-400">Nighttime Temp</div><div class="text-xl font-semibold" id="val-nt-temp">—</div></div>
+          <div><div class="text-xs text-zinc-400">Hours Of Light</div><div class="text-xl font-semibold" id="val-hours-light">—</div></div>
+        </div>
+      </div>
+      <div class="card-expand">
+        <div class="px-5 pb-5">
+          <div class="border-t border-zinc-800 pt-4 space-y-3">
+            <div class="grid grid-cols-2 gap-3">
+              <div><label class="text-xs text-zinc-400">Your pH</label><input type="number" step="0.1" data-field="actual_ph" data-goal="ph" class="actual-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+              <div><label class="text-xs text-zinc-400">Your Daytime Temp</label><input type="number" data-field="actual_dt_temp" data-goal="dt_temp" class="actual-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <div><label class="text-xs text-zinc-400">Your Humidity</label><input type="number" data-field="actual_humidity" data-goal="humidity" class="actual-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+              <div><label class="text-xs text-zinc-400">Your Nighttime Temp</label><input type="number" data-field="actual_nt_temp" data-goal="nt_temp" class="actual-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Water & Nutrients -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden" data-card="nutrients">
+      <div class="p-5 cursor-pointer card-header flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-base font-semibold">Water & Nutrients</h2>
+          <i class="fa-solid fa-chevron-down text-zinc-500 text-xs chevron"></i>
+        </div>
+        <div class="text-3xl font-bold text-brand mb-3" id="val-water">—</div>
+        <div id="nutrientList" class="space-y-2 text-sm"></div>
+      </div>
+      <div class="card-expand">
+        <div class="px-5 pb-5">
+          <div class="border-t border-zinc-800 pt-4 space-y-3" id="nutrientInputs"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Air Flow & Light (Reference - Editable) -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden" data-card="reference">
+      <div class="p-5 cursor-pointer card-header flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-base font-semibold">Light & Air Flow</h2>
+          <i class="fa-solid fa-chevron-down text-zinc-500 text-xs chevron"></i>
+        </div>
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div><div class="text-xs text-zinc-400">Intensity</div><div class="text-xl font-bold" id="val-light-intensity">—</div></div>
+          <div><div class="text-xs text-zinc-400">Distance</div><div class="text-xl font-bold" id="val-light-distance">—</div></div>
+          <div><div class="text-xs text-zinc-400">Fan Position</div><div class="text-xl font-bold text-amber-400" id="val-fan">—</div></div>
+        </div>
+      </div>
+      <div class="card-expand">
+        <div class="px-5 pb-5">
+          <div class="border-t border-zinc-800 pt-4 space-y-3">
+            <p class="text-xs text-zinc-500 mb-2">Log what you actually set:</p>
+            <div class="grid grid-cols-3 gap-3">
+              <div><label class="text-xs text-zinc-400">Intensity</label><input type="text" data-field="actual_light_intensity" class="ref-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+              <div><label class="text-xs text-zinc-400">Distance</label><input type="text" data-field="actual_light_distance" class="ref-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+              <div><label class="text-xs text-zinc-400">Fan</label><input type="text" data-field="actual_fan_position" class="ref-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual Inspection -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden" data-card="inspection">
+      <div class="p-5 cursor-pointer card-header flex flex-col">
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-base font-semibold">Visual Inspection</h2>
+          <i class="fa-solid fa-chevron-down text-zinc-500 text-xs chevron"></i>
+        </div>
+        <p class="text-sm text-zinc-300" id="val-inspection-tip">—</p>
+      </div>
+      <div class="card-expand">
+        <div class="px-5 pb-5">
+          <div class="border-t border-zinc-800 pt-4">
+            <label class="text-xs text-zinc-400 mb-2 block">Your Notes</label>
+            <textarea id="inspectionNotes" data-field="actual_inspection_notes" rows="3" class="w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand resize-none" placeholder="What do you see today?"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Floating CTA -->
+  <div class="fixed bottom-20 left-0 right-0 px-5 z-50">
+    <button id="logBtn" class="w-full bg-gradient-to-r from-brand to-emerald-600 hover:from-brandDark hover:to-emerald-700 text-white font-semibold text-base py-4 rounded-2xl shadow-2xl shadow-brand/30 active:scale-[0.97] transition-all">
+      Log Today's Check
+    </button>
+  </div>
+
+  <!-- Navbar -->
+  <div id="nav-placeholder" data-depth="2"></div>
+  <script src="../../assets/js/nav.js"></script>
+
+  <script type="module">
+    import { IndexedDBService } from '../common/js/indexedDBService.js';
+
+    const DB = IndexedDBService;
+    let currentData = null;
+    let growId = localStorage.getItem('currentGrowId');
+
+    // --- Date ---
+    const today = new Date();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    const yyyy = today.getFullYear();
+    document.getElementById('todayDate').textContent = `${mm}/${dd}/${yyyy}`;
+    const todayStr = `${mm}/${dd}/${yyyy}`;
+
+    // --- Grow Selector ---
+    async function initGrows() {
+      const grows = await DB.loadAllGrows();
+      const sel = document.getElementById('growSelect');
+      sel.innerHTML = grows.map(g => `<option value="${g.growId}" ${g.growId === growId ? 'selected' : ''}>${g.growName}</option>`).join('');
+      if (!growId && grows.length) {
+        growId = grows[0].growId;
+        localStorage.setItem('currentGrowId', growId);
+      }
+      sel.addEventListener('change', e => {
+        growId = e.target.value;
+        localStorage.setItem('currentGrowId', growId);
+        loadHeroImage();
+        loadTask();
+      });
+    }
+
+    // --- Load Task ---
+    async function loadTask() {
+      if (!growId) return;
+      const schedule = await DB.loadSchedule(growId);
+      if (!schedule || !schedule.length) return;
+
+      const entry = schedule.find(r => r.date === todayStr) || schedule[0];
+      currentData = entry;
+
+      // Update progress bar
+      updateProgress(schedule, entry);
+
+      const strainName = localStorage.getItem(`plantStrain_${growId}`) || 'Unknown';
+
+      // Stage pill
+      const weekNum = entry.week ? entry.week.toString().replace(/week\s*/i, '') : '';
+      document.getElementById('stageText').textContent = `${capitalize(entry.stage)} • Week ${weekNum} • Day ${entry.day}`;
+
+      // Environmental
+      document.getElementById('val-ph').textContent = entry.ph_goal || '—';
+      document.getElementById('val-dt-temp').textContent = entry.dt_temp || '—';
+      document.getElementById('val-nt-temp').textContent = entry.nt_temp || '—';
+      document.getElementById('val-humidity').textContent = entry.humidity || '—';
+      document.getElementById('val-hours-light').textContent = entry.hours_of_light || '—';
+
+      // Water & Nutrients
+      document.getElementById('val-water').textContent = entry.amount_of_water || 'MOIST';
+
+      const selectedNutrients = JSON.parse(localStorage.getItem(`nutrients_${growId}`) || '[]');
+      const nutrientMap = {
+        'floramicro': 'FloraMicro®', 'floragro': 'FloraGro®', 'florabloom': 'FloraBloom®',
+        'voodoo-juice': 'Voodoo Juice®', 'tarantula': 'Tarantula®', 'piranha': 'Piranha®'
+      };
+
+      const listEl = document.getElementById('nutrientList');
+      const inputsEl = document.getElementById('nutrientInputs');
+      listEl.innerHTML = '';
+      inputsEl.innerHTML = '<p class="text-xs text-zinc-500 mb-2">Log your actual amounts:</p>';
+
+      selectedNutrients.forEach(n => {
+        const name = nutrientMap[n] || n.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        const val = (entry.nutrients && entry.nutrients[n]) || '0 mL/L';
+        listEl.innerHTML += `<div class="flex justify-between"><span class="text-zinc-300">${name}</span><span class="font-mono text-zinc-100">${val}</span></div>`;
+        inputsEl.innerHTML += `<div><label class="text-xs text-zinc-400">Your ${name}</label><input type="text" data-field="actual_nutrient_${n}" data-goal-val="${val}" class="actual-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>`;
+      });
+
+      // Light & Air
+      const lightDistance = entry.stage === 'seedling' ? '40″' : entry.stage === 'vegetative' ? '36″' : '18″';
+      document.getElementById('val-light-intensity').textContent = entry.light_intensity || '—';
+      document.getElementById('val-light-distance').textContent = lightDistance;
+      document.getElementById('val-fan').textContent = entry.air_fan_position || '—';
+
+      // Visual Inspection
+      document.getElementById('val-inspection-tip').textContent = entry.visual_inspection || 'No tips for today.';
+
+      // Load saved actuals
+      loadActuals();
+    }
+
+    // --- Image Upload ---
+    const heroEl = document.getElementById('heroImage');
+    const uploadInput = document.getElementById('imageUpload');
+    const uploadHint = document.getElementById('uploadHint');
+
+    heroEl.addEventListener('click', () => uploadInput.click());
+    uploadInput.addEventListener('change', e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = ev => {
+        const url = ev.target.result;
+        heroEl.style.setProperty('--hero-bg', `url('${url}')`);
+        uploadHint.classList.add('hidden');
+        localStorage.setItem(`taskImage_${growId}`, url);
+      };
+      reader.readAsDataURL(file);
+    });
+
+    function loadHeroImage() {
+      const saved = localStorage.getItem(`taskImage_${growId}`);
+      if (saved) {
+        heroEl.style.setProperty('--hero-bg', `url('${saved}')`);
+        uploadHint.classList.add('hidden');
+      } else {
+        heroEl.style.setProperty('--hero-bg', `url('')`);
+        uploadHint.classList.remove('hidden');
+      }
+    }
+
+    // --- Expandable Cards ---
+    document.querySelectorAll('.card-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const expand = header.nextElementSibling;
+        expand.classList.toggle('open');
+        header.classList.toggle('active');
+      });
+    });
+
+    // --- Color Coding for Numeric Inputs ---
+    function applyColor(input) {
+      const goalField = input.dataset.goal;
+      if (!goalField || !currentData) return;
+      const goalVal = parseFloat(currentData[goalField]);
+      const actual = parseFloat(input.value);
+      if (isNaN(actual) || isNaN(goalVal)) { input.style.color = 'white'; return; }
+
+      const tolerance = goalVal * 0.1; // 10% tolerance
+      if (actual > goalVal + tolerance) input.style.color = '#ef4444'; // red
+      else if (actual < goalVal - tolerance) input.style.color = '#3b82f6'; // blue
+      else input.style.color = '#04AA6D'; // brand green
+    }
+
+    document.addEventListener('input', e => {
+      if (e.target.classList.contains('actual-input')) applyColor(e.target);
+    });
+
+    // --- Save & Load Actuals ---
+    function getActualsKey() { return `taskActuals_${growId}_${todayStr}`; }
+
+    function saveActuals() {
+      const data = {};
+      document.querySelectorAll('.actual-input, .ref-input, #inspectionNotes').forEach(el => {
+        if (el.dataset.field && el.value) data[el.dataset.field] = el.value;
+      });
+      localStorage.setItem(getActualsKey(), JSON.stringify(data));
+    }
+
+    // Save actuals into the IndexedDB schedule so schedule-viewer can see them
+    async function saveActualsToSchedule() {
+      if (!growId) return;
+      const schedule = await DB.loadSchedule(growId);
+      if (!schedule || !schedule.length) { console.log('No schedule found for', growId); return; }
+
+      const idx = schedule.findIndex(r => r.date === todayStr);
+      const entry = idx >= 0 ? schedule[idx] : schedule[0];
+      const entryIdx = idx >= 0 ? idx : 0;
+
+      // Unit suffixes for display in schedule-viewer
+      const unitMap = {
+        actual_ph: '',
+        actual_dt_temp: '°F',
+        actual_nt_temp: '°F',
+        actual_humidity: '%',
+        actual_light_intensity: '%',
+        actual_light_distance: '"',
+      };
+
+      // Collect all user inputs
+      document.querySelectorAll('.actual-input, .ref-input, #inspectionNotes').forEach(el => {
+        if (el.dataset.field && el.value) {
+          const raw = el.value.trim();
+          const suffix = unitMap[el.dataset.field] || '';
+          // Append unit if it's not already there
+          entry[el.dataset.field] = (suffix && !raw.endsWith(suffix)) ? raw + suffix : raw;
+        }
+      });
+
+      schedule[entryIdx] = entry;
+      const result = await DB.saveSchedule(growId, schedule);
+      console.log('Saved to IndexedDB:', result, 'growId:', growId, 'entry:', entry);
+    }
+
+    function loadActuals() {
+      const saved = JSON.parse(localStorage.getItem(getActualsKey()) || '{}');
+      const stripUnits = (val) => val ? val.replace(/[°F%"]/g, '').trim() : '';
+      // Also check the schedule entry for previously saved actuals
+      if (currentData) {
+        document.querySelectorAll('.actual-input, .ref-input, #inspectionNotes').forEach(el => {
+          const field = el.dataset.field;
+          if (!field) return;
+          const val = saved[field] || currentData[field] || '';
+          if (val) {
+            el.value = (el.type === 'number') ? stripUnits(val) : val;
+            if (el.classList.contains('actual-input')) applyColor(el);
+          }
+        });
+      }
+    }
+
+    // --- Log Button ---
+    document.getElementById('logBtn').addEventListener('click', async () => {
+      saveActuals();
+      await saveActualsToSchedule();
+      const btn = document.getElementById('logBtn');
+      btn.textContent = '✓ Logged';
+      btn.classList.add('opacity-70');
+      setTimeout(() => { btn.textContent = 'Log Today\'s Check'; btn.classList.remove('opacity-70'); }, 2000);
+    });
+
+    // Auto-save on input blur
+    document.addEventListener('focusout', async e => {
+      if (e.target.classList.contains('actual-input') || e.target.classList.contains('ref-input') || e.target.id === 'inspectionNotes') {
+        saveActuals();
+        await saveActualsToSchedule();
+      }
+    });
+
+    // --- Helpers ---
+    function capitalize(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : ''; }
+
+    // --- Progress Bar ---
+    function updateProgress(schedule, todayEntry) {
+      if (!schedule || !schedule.length) return;
+      const idx = schedule.findIndex(r => r.date === todayStr);
+      const currentDay = idx >= 0 ? idx + 1 : 1;
+      const totalDays = schedule.length;
+      const pct = Math.round((currentDay / totalDays) * 100);
+      document.getElementById('progressLabel').textContent = `Day ${currentDay} of ${totalDays}`;
+      document.getElementById('progressPct').textContent = `${pct}%`;
+      document.getElementById('progressFill').style.width = `${pct}%`;
+    }
+
+    // --- Empty State ---
+    function showEmptyState() {
+      document.getElementById('progressBar').classList.add('hidden');
+      document.getElementById('stageText').textContent = 'Vegetative • Week 3 • Day 18';
+      document.getElementById('val-ph').textContent = '6.2';
+      document.getElementById('val-dt-temp').textContent = '78';
+      document.getElementById('val-humidity').textContent = '55';
+      document.getElementById('val-nt-temp').textContent = '68';
+      document.getElementById('val-hours-light').textContent = '18';
+      document.getElementById('val-water').textContent = '500 mL';
+      document.getElementById('val-light-intensity').textContent = '75%';
+      document.getElementById('val-light-distance').textContent = '24″';
+      document.getElementById('val-fan').textContent = '3';
+      document.getElementById('val-inspection-tip').textContent = 'Check for yellowing on lower leaves.';
+      document.getElementById('nutrientList').innerHTML = '<div class="flex justify-between"><span class="text-zinc-300">FloraMicro®</span><span class="font-mono text-zinc-100">2.5 mL/L</span></div><div class="flex justify-between"><span class="text-zinc-300">FloraGro®</span><span class="font-mono text-zinc-100">3 mL/L</span></div>';
+
+      // Overlay
+      const container = document.getElementById('cardsContainer');
+      container.classList.add('relative');
+      container.insertAdjacentHTML('beforeend', `
+        <div class="absolute inset-0 bg-zinc-950/80 backdrop-blur-sm flex flex-col items-center justify-center rounded-2xl z-40">
+          <i class="fa-solid fa-seedling text-4xl text-brand mb-4"></i>
+          <p class="text-lg font-semibold mb-2">No Grow Found</p>
+          <p class="text-sm text-zinc-400 mb-5 text-center px-8">Create a grow in MyGrow to start tracking your daily tasks.</p>
+          <a href="../mygrow.html" class="bg-brand hover:bg-brandDark text-white font-semibold px-6 py-3 rounded-xl transition-colors">Create Grow</a>
+        </div>
+      `);
+
+      // Disable CTA
+      document.getElementById('logBtn').disabled = true;
+      document.getElementById('logBtn').classList.add('opacity-30', 'pointer-events-none');
+    }
+
+    // --- Init ---
+    async function init() {
+      await initGrows();
+      const grows = await DB.loadAllGrows();
+      if (!grows.length) {
+        showEmptyState();
+        return;
+      }
+      loadHeroImage();
+      await loadTask();
+    }
+    init();
+  </script>
+</body>
+</html>

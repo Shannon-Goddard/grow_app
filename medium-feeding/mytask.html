@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X0XEMR28V2');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="robots" content="noindex, nofollow">
+  <title>MyTask — GrowApp</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { brand: '#04AA6D', brandDark: '#038a58' } } }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .card-expand { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.35s ease; }
+    .card-expand.open { grid-template-rows: 1fr; }
+    .card-expand > div { overflow: hidden; }
+    .card-header .chevron { transition: transform 0.35s ease; }
+    .card-header.active .chevron { transform: rotate(180deg); }
+    .hero-image { height: 220px; background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), var(--hero-bg) center/cover no-repeat; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 flex items-center justify-between px-5 py-4 bg-zinc-900 border-b border-zinc-800">
+    <a href="schedule-viewer.html" class="text-zinc-400 hover:text-brand text-sm flex items-center gap-2">
+      <i class="fa-solid fa-arrow-left"></i> Schedule
+    </a>
+    <div class="text-lg font-bold tracking-tight">MyTask</div>
+    <div class="flex items-center gap-3">
+      <select id="growSelect" class="bg-zinc-800 text-brand font-semibold text-sm px-3 py-1.5 rounded-full border border-zinc-700 outline-none cursor-pointer"></select>
+      <div id="todayDate" class="text-sm text-zinc-400"></div>
+    </div>
+  </header>
+
+  <!-- Hero Image -->
+  <div id="heroImage" class="hero-image flex items-end cursor-pointer relative" style="--hero-bg: url(''); background-color: #1a1a1a;">
+    <input type="file" id="imageUpload" accept="image/*" class="hidden">
+    <div class="absolute inset-0 flex items-center justify-center text-zinc-500 text-sm" id="uploadHint">
+      <i class="fa-solid fa-camera mr-2"></i> Tap to upload plant photo
+    </div>
+    <div class="w-full p-5 relative z-10">
+      <div id="stagePill" class="inline-flex items-center gap-2 bg-black/70 px-4 py-1.5 rounded-full text-brand text-sm font-semibold">
+        <span class="w-2 h-2 bg-brand rounded-full animate-pulse"></span>
+        <span id="stageText">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div id="progressBar" class="px-5 pt-4">
+    <div class="flex justify-between text-xs text-zinc-400 mb-1.5">
+      <span id="progressLabel">Day 0 of 0</span>
+      <span id="progressPct">0%</span>
+    </div>
+    <div class="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+      <div id="progressFill" class="h-full bg-gradient-to-r from-brand to-emerald-500 rounded-full transition-all duration-500" style="width:0%"></div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="p-5 space-y-4 pb-28" id="cardsContainer">
+
+    <!-- Environmental -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden">
+      <div class="p-5 cursor-pointer card-header flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-base font-semibold">Environmental Targets</h2>
+          <i class="fa-solid fa-chevron-down text-zinc-500 text-xs chevron"></i>
+        </div>
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div><div class="text-xs text-zinc-400">pH Goal</div><div class="text-2xl font-bold text-brand" id="val-ph">—</div></div>
+          <div><div class="text-xs text-zinc-400">Daytime Temp</div><div class="text-2xl font-bold" id="val-dt-temp">—</div></div>
+          <div><div class="text-xs text-zinc-400">Humidity</div><div class="text-2xl font-bold" id="val-humidity">—</div></div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 text-center mt-3">
+          <div><div class="text-xs text-zinc-400">Nighttime Temp</div><div class="text-xl font-semibold" id="val-nt-temp">—</div></div>
+          <div><div class="text-xs text-zinc-400">Hours Of Light</div><div class="text-xl font-semibold" id="val-hours-light">—</div></div>
+        </div>
+      </div>
+      <div class="card-expand">
+        <div class="px-5 pb-5">
+          <div class="border-t border-zinc-800 pt-4 space-y-3">
+            <div class="grid grid-cols-2 gap-3">
+              <div><label class="text-xs text-zinc-400">Your pH</label><input type="number" step="0.1" data-field="actual_ph" data-goal="ph_goal" class="actual-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+              <div><label class="text-xs text-zinc-400">Your Daytime Temp</label><input type="number" data-field="actual_dt_temp" data-goal="dt_temp" class="actual-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <div><label class="text-xs text-zinc-400">Your Humidity</label><input type="number" data-field="actual_humidity" data-goal="humidity" class="actual-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+              <div><label class="text-xs text-zinc-400">Your Nighttime Temp</label><input type="number" data-field="actual_nt_temp" data-goal="nt_temp" class="actual-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Water & Nutrients -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden">
+      <div class="p-5 cursor-pointer card-header flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-base font-semibold">Water & Nutrients</h2>
+          <i class="fa-solid fa-chevron-down text-zinc-500 text-xs chevron"></i>
+        </div>
+        <div class="text-3xl font-bold text-brand mb-3" id="val-water">—</div>
+        <div id="nutrientList" class="space-y-2 text-sm"></div>
+      </div>
+      <div class="card-expand">
+        <div class="px-5 pb-5">
+          <div class="border-t border-zinc-800 pt-4 space-y-3" id="nutrientInputs"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Light & Air -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden">
+      <div class="p-5 cursor-pointer card-header flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-base font-semibold">Light & Air Flow</h2>
+          <i class="fa-solid fa-chevron-down text-zinc-500 text-xs chevron"></i>
+        </div>
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div><div class="text-xs text-zinc-400">Intensity</div><div class="text-xl font-bold" id="val-light-intensity">—</div></div>
+          <div><div class="text-xs text-zinc-400">Distance</div><div class="text-xl font-bold" id="val-light-distance">—</div></div>
+          <div><div class="text-xs text-zinc-400">Fan Position</div><div class="text-xl font-bold text-amber-400" id="val-fan">—</div></div>
+        </div>
+      </div>
+      <div class="card-expand">
+        <div class="px-5 pb-5">
+          <div class="border-t border-zinc-800 pt-4 space-y-3">
+            <p class="text-xs text-zinc-500 mb-2">Log what you actually set:</p>
+            <div class="grid grid-cols-3 gap-3">
+              <div><label class="text-xs text-zinc-400">Intensity</label><input type="text" data-field="actual_light_intensity" class="ref-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+              <div><label class="text-xs text-zinc-400">Distance</label><input type="text" data-field="actual_light_distance" class="ref-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+              <div><label class="text-xs text-zinc-400">Fan</label><input type="text" data-field="actual_fan_position" class="ref-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual Inspection -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden">
+      <div class="p-5 cursor-pointer card-header flex flex-col">
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="text-base font-semibold">Visual Inspection</h2>
+          <i class="fa-solid fa-chevron-down text-zinc-500 text-xs chevron"></i>
+        </div>
+        <p class="text-sm text-zinc-300" id="val-inspection-tip">—</p>
+      </div>
+      <div class="card-expand">
+        <div class="px-5 pb-5">
+          <div class="border-t border-zinc-800 pt-4">
+            <label class="text-xs text-zinc-400 mb-2 block">Your Notes</label>
+            <textarea id="inspectionNotes" data-field="actual_inspection_notes" rows="3" class="w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand resize-none" placeholder="What do you see today?"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Floating CTA -->
+  <div class="fixed bottom-6 left-0 right-0 px-5 z-50">
+    <button id="logBtn" class="w-full bg-gradient-to-r from-brand to-emerald-600 hover:from-brandDark hover:to-emerald-700 text-white font-semibold text-base py-4 rounded-2xl shadow-2xl shadow-brand/30 active:scale-[0.97] transition-all">
+      Log Today's Check
+    </button>
+  </div>
+
+  <script src="../assets/js/bottom-nav.js"></script>
+
+  <script type="module">
+    import { IndexedDBService } from './assets/js/indexedDBService.js';
+
+    const DB = IndexedDBService;
+    let currentData = null;
+    let growId = localStorage.getItem('currentGrowId');
+
+    const today = new Date();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    const yyyy = today.getFullYear();
+    const todayStr = `${mm}/${dd}/${yyyy}`;
+    document.getElementById('todayDate').textContent = todayStr;
+
+    async function initGrows() {
+      const grows = await DB.loadAllGrows();
+      const sel = document.getElementById('growSelect');
+      sel.innerHTML = grows.map(g => `<option value="${g.growId}" ${g.growId === growId ? 'selected' : ''}>${g.growName}</option>`).join('');
+      if (!growId && grows.length) { growId = grows[0].growId; localStorage.setItem('currentGrowId', growId); }
+      sel.addEventListener('change', e => { growId = e.target.value; localStorage.setItem('currentGrowId', growId); loadHeroImage(); loadTask(); });
+    }
+
+    async function loadTask() {
+      if (!growId) return;
+      const schedule = await DB.loadSchedule(growId);
+      if (!schedule || !schedule.length) return;
+      const entry = schedule.find(r => r.date === todayStr) || schedule[0];
+      currentData = entry;
+      updateProgress(schedule);
+      const weekNum = entry.week ? entry.week.toString().replace(/week\s*/i, '') : '';
+      document.getElementById('stageText').textContent = `${cap(entry.stage)} • Week ${weekNum} • Day ${entry.day}`;
+      document.getElementById('val-ph').textContent = entry.ph_goal || '—';
+      document.getElementById('val-dt-temp').textContent = entry.dt_temp || '—';
+      document.getElementById('val-nt-temp').textContent = entry.nt_temp || '—';
+      document.getElementById('val-humidity').textContent = entry.humidity || '—';
+      document.getElementById('val-hours-light').textContent = entry.hours_of_light || '—';
+      document.getElementById('val-water').textContent = entry.amount_of_water || 'MOIST';
+      const lightDist = entry.stage === 'seedling' ? '40″' : entry.stage === 'vegetative' ? '36″' : '18″';
+      document.getElementById('val-light-intensity').textContent = entry.light_intensity || '—';
+      document.getElementById('val-light-distance').textContent = lightDist;
+      document.getElementById('val-fan').textContent = entry.air_fan_position || '—';
+      document.getElementById('val-inspection-tip').textContent = entry.visual_inspection || 'No tips for today.';
+
+      const selectedNutrients = JSON.parse(localStorage.getItem(`nutrients_${growId}`) || '[]');
+      const listEl = document.getElementById('nutrientList');
+      const inputsEl = document.getElementById('nutrientInputs');
+      listEl.innerHTML = '';
+      inputsEl.innerHTML = '<p class="text-xs text-zinc-500 mb-2">Log your actual amounts:</p>';
+      selectedNutrients.forEach(n => {
+        const name = n.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        const val = (entry.nutrients && entry.nutrients[n]) || '0 mL/L';
+        listEl.innerHTML += `<div class="flex justify-between"><span class="text-zinc-300">${name}</span><span class="font-mono text-zinc-100">${val}</span></div>`;
+        inputsEl.innerHTML += `<div><label class="text-xs text-zinc-400">Your ${name}</label><input type="text" data-field="actual_nutrient_${n}" class="actual-input w-full bg-zinc-800 rounded-lg px-3 py-2 text-sm outline-none border border-zinc-700 focus:border-brand"></div>`;
+      });
+      loadActuals();
+    }
+
+    const heroEl = document.getElementById('heroImage');
+    const uploadInput = document.getElementById('imageUpload');
+    heroEl.addEventListener('click', () => uploadInput.click());
+    uploadInput.addEventListener('change', e => {
+      const file = e.target.files[0]; if (!file) return;
+      const img = new Image();
+      img.onload = () => {
+        const MAX = 800; let w = img.width, h = img.height;
+        if (w > MAX) { h = Math.round(h * MAX / w); w = MAX; }
+        const c = document.createElement('canvas'); c.width = w; c.height = h;
+        c.getContext('2d').drawImage(img, 0, 0, w, h);
+        const url = c.toDataURL('image/jpeg', 0.7);
+        heroEl.style.setProperty('--hero-bg', `url('${url}')`);
+        document.getElementById('uploadHint').classList.add('hidden');
+        localStorage.setItem(`taskImage_${growId}`, url);
+      };
+      img.src = URL.createObjectURL(file);
+    });
+
+    function loadHeroImage() {
+      const saved = localStorage.getItem(`taskImage_${growId}`);
+      heroEl.style.setProperty('--hero-bg', saved ? `url('${saved}')` : `url('')`);
+      document.getElementById('uploadHint').classList.toggle('hidden', !!saved);
+    }
+
+    document.querySelectorAll('.card-header').forEach(h => {
+      h.addEventListener('click', () => { h.nextElementSibling.classList.toggle('open'); h.classList.toggle('active'); });
+    });
+
+    function applyColor(input) {
+      const goalField = input.dataset.goal;
+      if (!goalField || !currentData) return;
+      const goalVal = parseFloat(currentData[goalField]);
+      const actual = parseFloat(input.value);
+      if (isNaN(actual) || isNaN(goalVal)) { input.style.color = 'white'; return; }
+      const tol = goalVal * 0.1;
+      input.style.color = actual > goalVal + tol ? '#ef4444' : actual < goalVal - tol ? '#3b82f6' : '#04AA6D';
+    }
+    document.addEventListener('input', e => { if (e.target.classList.contains('actual-input')) applyColor(e.target); });
+
+    function getKey() { return `taskActuals_${growId}_${todayStr}`; }
+    function saveActuals() {
+      const data = {};
+      document.querySelectorAll('.actual-input, .ref-input, #inspectionNotes').forEach(el => { if (el.dataset.field && el.value) data[el.dataset.field] = el.value; });
+      localStorage.setItem(getKey(), JSON.stringify(data));
+    }
+    async function saveActualsToSchedule() {
+      if (!growId) return;
+      const schedule = await DB.loadSchedule(growId);
+      if (!schedule || !schedule.length) return;
+      const idx = schedule.findIndex(r => r.date === todayStr);
+      const i = idx >= 0 ? idx : 0;
+      const entry = schedule[i];
+      const unitMap = { actual_ph:'', actual_dt_temp:'°F', actual_nt_temp:'°F', actual_humidity:'%', actual_light_intensity:'%', actual_light_distance:'″' };
+      document.querySelectorAll('.actual-input, .ref-input, #inspectionNotes').forEach(el => {
+        if (el.dataset.field && el.value) {
+          const raw = el.value.trim(), suffix = unitMap[el.dataset.field] || '';
+          entry[el.dataset.field] = (suffix && !raw.endsWith(suffix)) ? raw + suffix : raw;
+        }
+      });
+      schedule[i] = entry;
+      await DB.saveSchedule(growId, schedule);
+    }
+    function loadActuals() {
+      const saved = JSON.parse(localStorage.getItem(getKey()) || '{}');
+      if (!currentData) return;
+      document.querySelectorAll('.actual-input, .ref-input, #inspectionNotes').forEach(el => {
+        const field = el.dataset.field; if (!field) return;
+        const val = saved[field] || currentData[field] || '';
+        if (val) { el.value = el.type === 'number' ? val.toString().replace(/[°F%″]/g, '').trim() : val; if (el.classList.contains('actual-input')) applyColor(el); }
+      });
+    }
+
+    document.getElementById('logBtn').addEventListener('click', async () => {
+      saveActuals(); await saveActualsToSchedule();
+      const btn = document.getElementById('logBtn');
+      btn.textContent = '✓ Logged'; btn.classList.add('opacity-70');
+      setTimeout(() => { btn.textContent = "Log Today's Check"; btn.classList.remove('opacity-70'); }, 2000);
+    });
+    document.addEventListener('focusout', async e => {
+      if (e.target.classList.contains('actual-input') || e.target.classList.contains('ref-input') || e.target.id === 'inspectionNotes') { saveActuals(); await saveActualsToSchedule(); }
+    });
+
+    function cap(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : ''; }
+    function updateProgress(schedule) {
+      const idx = schedule.findIndex(r => r.date === todayStr);
+      const cur = idx >= 0 ? idx + 1 : 1, total = schedule.length, pct = Math.round(cur / total * 100);
+      document.getElementById('progressLabel').textContent = `Day ${cur} of ${total}`;
+      document.getElementById('progressPct').textContent = `${pct}%`;
+      document.getElementById('progressFill').style.width = `${pct}%`;
+    }
+
+    async function init() {
+      await initGrows();
+      const grows = await DB.loadAllGrows();
+      if (!grows.length) { document.getElementById('stageText').textContent = 'No grow found'; return; }
+      loadHeroImage();
+      await loadTask();
+    }
+    init();
+  </script>
+</body>
+</html>

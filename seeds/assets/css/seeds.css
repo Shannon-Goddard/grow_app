@@ -1,0 +1,95 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0c0e;color:#e8eaed;min-height:100vh;}
+a{color:#04AA6D;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:50;background:rgba(10,12,14,0.95);backdrop-filter:blur(12px);border-bottom:1px solid #2a333d;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:60px;}
+.nav-logo{font-size:1.1rem;font-weight:800;color:#fff;display:flex;align-items:center;gap:.4rem;}
+.nav-logo i{color:#04AA6D;}
+header a.back{color:#8b949e;font-size:.875rem;display:flex;align-items:center;gap:.4rem;transition:color .15s;}
+header a.back:hover{color:#04AA6D;}
+
+/* HERO */
+.page-hero{background:linear-gradient(180deg,rgba(4,170,109,0.07) 0%,transparent 100%);border-bottom:1px solid #2a333d;padding:3.5rem 1.5rem 2.5rem;text-align:center;}
+.page-hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;margin-bottom:.6rem;line-height:1.15;}
+.page-hero h1 em{color:#04AA6D;font-style:normal;}
+.page-hero p{color:#8b949e;font-size:1rem;max-width:520px;margin:.5rem auto 0;line-height:1.7;}
+
+/* DISCLAIMER */
+.disclaimer{max-width:860px;margin:1.5rem auto 0;padding:0 1.5rem;}
+#typer-cursor{animation:blink 1s step-end infinite;}
+@keyframes blink{50%{opacity:0;}}
+
+/* PAIN POINTS */
+.pain-section{max-width:860px;margin:2.5rem auto 0;padding:0 1.5rem;}
+.pain-section h2{font-size:1.1rem;font-weight:700;color:#e8eaed;margin-bottom:1rem;}
+.pain-section h2 em{color:#04AA6D;font-style:normal;}
+.pain-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.75rem;}
+.pain-card{background:#13181d;border:1px solid #2a333d;border-radius:10px;padding:1rem 1.1rem;display:flex;gap:.75rem;align-items:flex-start;}
+.pain-card i{color:#04AA6D;font-size:1.1rem;margin-top:2px;flex-shrink:0;width:18px;text-align:center;}
+.pain-card-text strong{display:block;font-size:.85rem;font-weight:700;color:#e8eaed;margin-bottom:.2rem;}
+.pain-card-text span{font-size:.78rem;color:#8b949e;line-height:1.5;}
+
+/* SEED MAP */
+.map-section{max-width:860px;margin:2.5rem auto 0;padding:0 1.5rem;}
+.map-section h2{font-size:1.1rem;font-weight:700;color:#e8eaed;margin-bottom:.4rem;}
+.map-section h2 em{color:#04AA6D;font-style:normal;}
+.map-section p{font-size:.85rem;color:#8b949e;margin-bottom:1rem;line-height:1.6;}
+.map-frame-wrap{border-radius:12px;overflow:hidden;border:1px solid #2a333d;height:480px;}
+.map-frame-wrap iframe{width:100%;height:100%;border:none;display:block;}
+
+/* FILTERS */
+.filter-section{max-width:860px;margin:2.5rem auto 0;padding:0 1.5rem;}
+.filter-section h2{font-size:1.1rem;font-weight:700;color:#e8eaed;margin-bottom:1rem;}
+.filter-section h2 em{color:#04AA6D;font-style:normal;}
+.filter-row{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.25rem;}
+.filter-toggle{display:flex;border-radius:6px;overflow:hidden;border:1px solid #2a333d;}
+.filter-btn,.ship-btn{padding:.45rem 1rem;font-size:.78rem;font-weight:600;cursor:pointer;color:#8b949e;background:#13181d;border:none;transition:all .15s;}
+.filter-btn.active,.ship-btn.active{background:#04AA6D;color:#000;}
+.filter-btn input,.ship-btn input{display:none;}
+
+/* PARTNER CARDS */
+.partner-list{display:flex;flex-direction:column;gap:1rem;}
+.partner-row{position:relative;border-radius:12px;overflow:hidden;min-height:160px;border:1px solid #2a333d;transition:border-color .2s,transform .2s;background:#13181d;}
+.partner-row:hover{border-color:#04AA6D;transform:translateY(-2px);}
+.partner-background{position:absolute;inset:0;background-size:contain;background-position:center;background-repeat:no-repeat;opacity:.12;}
+.partner-content{position:relative;z-index:1;padding:1.25rem 1.5rem;min-height:160px;display:flex;flex-direction:column;justify-content:flex-end;}
+.partner-tagline{font-size:.72rem;color:#555;font-style:italic;margin-bottom:.4rem;display:flex;align-items:center;gap:.3rem;}
+.partner-info-btn{background:none;border:none;color:#555;font-size:1rem;cursor:pointer;padding:0 4px;transition:color .15s;vertical-align:middle;}
+.partner-info-btn:hover{color:#04AA6D;}
+.seed-bank-buttons{display:flex;flex-wrap:wrap;gap:.5rem;}
+.seed-bank-btn{display:inline-flex;align-items:center;gap:.4rem;padding:.45rem .9rem;border:1px solid #04AA6D;border-radius:6px;color:#04AA6D;font-size:.8rem;font-weight:600;text-decoration:none;transition:all .15s;}
+.seed-bank-btn:hover{background:#04AA6D;color:#000;text-decoration:none;}
+.promo-code{display:inline-flex;align-items:center;padding:.45rem .9rem;border:1px dashed #2a6b4a;border-radius:6px;background:rgba(4,170,109,0.08);color:#04AA6D;font-size:.78rem;font-weight:600;cursor:pointer;transition:background .15s;letter-spacing:.3px;}
+.promo-code:hover{background:rgba(4,170,109,0.18);}
+.promo-code .code{font-family:monospace;font-weight:700;color:#e8eaed;margin-left:.3rem;}
+
+/* INFO OVERLAY */
+.partner-overlay{display:none;position:absolute;inset:0;z-index:5;background:rgba(10,12,14,0.96);border-radius:12px;padding:1.25rem 1.5rem;flex-direction:column;justify-content:center;gap:.6rem;font-size:.8rem;color:#e8eaed;cursor:pointer;}
+.partner-overlay.visible{display:flex;}
+.info-row{display:flex;align-items:center;gap:.6rem;}
+.info-row i{width:18px;text-align:center;color:#04AA6D;font-size:.85rem;}
+.info-label{font-weight:600;min-width:80px;color:#8b949e;}
+.info-icons{display:flex;gap:.4rem;align-items:center;}
+.info-icons i{color:#e8eaed;font-size:.95rem;width:auto;}
+.info-icons img{height:18px;width:auto;border-radius:3px;}
+.info-close{position:absolute;top:12px;right:14px;font-size:1rem;color:#8b949e;}
+
+/* CTA */
+.cta-section{max-width:860px;margin:2.5rem auto;padding:0 1.5rem;}
+.cta-box{background:#13181d;border:1px solid #2a333d;border-radius:14px;padding:2rem;text-align:center;}
+.cta-box h3{font-size:1.2rem;font-weight:800;margin-bottom:.5rem;}
+.cta-box p{color:#8b949e;font-size:.875rem;margin-bottom:1.25rem;line-height:1.6;}
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:#04AA6D;color:#000;font-weight:700;font-size:.9rem;padding:.7rem 1.5rem;border-radius:8px;text-decoration:none;transition:opacity .2s;}
+.btn-primary:hover{opacity:.85;text-decoration:none;}
+
+/* FOOTER */
+footer{border-top:1px solid #2a333d;padding:2rem;text-align:center;font-size:.78rem;color:#8b949e;}
+footer a{color:#04AA6D;}
+
+@media(max-width:600px){
+  .map-frame-wrap{height:360px;}
+  .partner-content{padding:1rem;}
+  .pain-grid{grid-template-columns:1fr;}
+}

@@ -1,4 +1,4 @@
-import { IndexedDBService } from '../../../mygrow/common/js/indexedDBService.js';
+import { IndexedDBService } from '../../medium-feeding/assets/js/indexedDBService.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     // DOM elements
@@ -363,148 +363,40 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Capture photo
     captureBtn.addEventListener('click', () => {
         try {
-            // Create canvas for capturing
+            // Snapshot the video frame onto the captured-photo element first
             const canvas = document.createElement('canvas');
             canvas.width = cameraView.videoWidth || 640;
             canvas.height = cameraView.videoHeight || 480;
-            
-            // Draw video frame to canvas
-            const ctx = canvas.getContext('2d');
-            ctx.drawImage(cameraView, 0, 0, canvas.width, canvas.height);
-            
-            // Extract table data
-            const tableRows = Array.from(dataTable.querySelectorAll('tr'));
-            const headers = Array.from(tableRows[0]?.querySelectorAll('th') || []).map(th => th.textContent);
-            const values = Array.from(tableRows[1]?.querySelectorAll('td') || []).map(td => td.textContent);
-            
-            // Find visual inspection index
-            const visualIndex = headers.findIndex(h => h === 'Visual');
-            let visualHeader = null;
-            let visualValue = null;
-            
-            // Remove visual inspection from the arrays if it exists
-            if (visualIndex !== -1) {
-                visualHeader = headers.splice(visualIndex, 1)[0];
-                visualValue = values.splice(visualIndex, 1)[0];
-            }
-            
-            // Use more columns to reduce height
-            const numColumns = Math.min(7, headers.length);
-            const rowCount = Math.ceil(headers.length / numColumns);
-            const lineHeight = 24;
-            const padding = 5;
-            
-            // Calculate exact height needed - just enough for the content
-            const tableHeight = (rowCount * lineHeight * 2);
-            const visualHeight = visualHeader ? (lineHeight * 2) : 0;
-            
-            // Total height is just the table height plus visual height plus minimal padding
-            const overlayHeight = tableHeight + visualHeight + (padding * 2);
-            
-            // Draw a semi-transparent background for the data
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
-            ctx.fillRect(0, canvas.height - overlayHeight, canvas.width, overlayHeight);
-            
-            // Calculate column widths
-            const colWidth = (canvas.width - (padding * 2)) / numColumns;
-            
-            // Draw table in grid format
-            for (let i = 0; i < headers.length; i++) {
-                const col = i % numColumns;
-                const row = Math.floor(i / numColumns);
-                
-                const x = padding + (col * colWidth);
-                const y = canvas.height - overlayHeight + padding + (row * lineHeight * 2);
-                
-                // Draw header
-                ctx.fillStyle = 'white';
-                ctx.font = 'bold 14px Arial';
-                ctx.fillText(headers[i], x, y + 20);
-                
-                // Draw value
-                ctx.font = '14px Arial';
-                ctx.fillText(values[i] || '', x, y + 20 + lineHeight);
-            }
-            
-            // Draw visual inspection at the bottom if it exists
-            if (visualHeader) {
-                // Add padding between table and visual inspection
-                const visualPadding = 15;
-                
-                // Position visual inspection after the table data with added padding
-                const y = canvas.height - overlayHeight + padding + tableHeight + visualPadding;
-                
-                // Draw header
-                ctx.fillStyle = 'white';
-                ctx.font = 'bold 14px Arial';
-                ctx.fillText(visualHeader, padding, y);
-                
-                // Draw wrapped text
-                if (visualValue) {
-                    const maxWidth = canvas.width - (padding * 2);
-                    ctx.font = '14px Arial';
-                    
-                    const words = visualValue.split(' ');
-                    let currentLine = '';
-                    let lineY = y + lineHeight;
-                    
-                    for (let i = 0; i < words.length; i++) {
-                        const testLine = currentLine + words[i] + ' ';
-                        const metrics = ctx.measureText(testLine);
-                        
-                        if (metrics.width > maxWidth && i > 0) {
-                            ctx.fillText(currentLine, padding, lineY);
-                            currentLine = words[i] + ' ';
-                            lineY += lineHeight;
-                        } else {
-                            currentLine = testLine;
-                        }
-                    }
-                    
-                    // Draw the last line
-                    ctx.fillText(currentLine, padding, lineY);
-                }
-            }
-            
-            // Show captured photo
-            capturedPhoto.src = canvas.toDataURL('image/png');
-            cameraView.style.display = 'none';
+            canvas.getContext('2d').drawImage(cameraView, 0, 0, canvas.width, canvas.height);
+
+            capturedPhoto.src = canvas.toDataURL('image/jpeg');
             capturedPhoto.style.display = 'block';
-            
-            // Show photo controls and hide capture button
-            captureBtn.style.display = 'none';
-            photoControls.style.setProperty('display', 'block', 'important');
+            cameraView.style.display = 'none';
+            cameraControls.style.display = 'none';
+            photoControls.style.display = 'block';
         } catch (error) {
             alert('Failed to capture photo. Please try again.');
         }
     });
     
-    // Save photo
+    // Save photo — use html2canvas to composite the overlay into the image
     saveBtn.addEventListener('click', () => {
         const growName = localStorage.getItem(`growName_${localStorage.getItem('currentGrowId')}`) || 'grow';
         const filename = `${growName}-diary-${new Date().toISOString().slice(0, 10)}.png`;
-        
-        if (window.Android && window.Android.shareImageBase64) {
-            // Android native app
-            const base64Data = capturedPhoto.src.substring(capturedPhoto.src.indexOf(",") + 1);
-            console.log("JS: Android base64 length:", base64Data.length);
-            window.Android.shareImageBase64(base64Data, 'image/png');
-        } else if (window.webkit && window.webkit.messageHandlers.downloadHandler) {
-            // iOS native app
-            const base64Data = capturedPhoto.src.substring(capturedPhoto.src.indexOf(",") + 1);
-            console.log("JS: iOS base64 length:", base64Data.length);
-            window.webkit.messageHandlers.downloadHandler.postMessage({
-                action: "download",
-                url: base64Data,
-                filename: filename
+        html2canvas(document.getElementById('data-container'), { useCORS: true, allowTaint: true })
+            .then(canvas => {
+                const link = document.createElement('a');
+                link.download = filename;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            })
+            .catch(() => {
+                // Fallback: save without overlay
+                const link = document.createElement('a');
+                link.download = filename;
+                link.href = capturedPhoto.src;
+                link.click();
             });
-        } else {
-            // Web fallback
-            const link = document.createElement('a');
-            link.download = filename;
-            link.href = capturedPhoto.src;
-            link.click();
-        }
     });
     
     // Retake photo
@@ -513,40 +405,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         cameraView.style.display = 'block';
         capturedPhoto.style.display = 'none';
         
-        // Show capture button and hide photo controls
-        captureBtn.style.display = 'block';
-        photoControls.style.setProperty('display', 'none', 'important');
+        // Show camera controls
+        cameraControls.style.display = 'block';
+        photoControls.style.display = 'none';
     });
     
-    // Set initial visibility states
-    captureBtn.style.display = 'block';
-    photoControls.style.setProperty('display', 'none', 'important');
-    capturedPhoto.style.display = 'none';
-    
-    // Download photo function for iOS
-    window.downloadPhoto = function() {
-        const imageElement = document.querySelector('#captured-photo');
-        if (!imageElement || !imageElement.src) {
-            console.error("JS: No image element found or no src!");
-            return;
-        }
-
-        html2canvas(imageElement).then(canvas => {
-            const fullDataUrl = canvas.toDataURL('image/png');
-            console.log("JS: Full dataURL length:", fullDataUrl.length);
-            const base64Data = fullDataUrl.substring(fullDataUrl.indexOf(",") + 1);
-            console.log("JS: Base64 length:", base64Data.length);
-            const filename = 'diary_photo.png';
-            window.webkit.messageHandlers.downloadHandler.postMessage({
-                action: "download",
-                url: base64Data,
-                filename: filename
-            });
-        }).catch(err => {
-            console.error('JS: html2canvas FAILED:', err);
-        });
-    };
-
     // Initialize
     await populateGrowDropdown();
     await updateDataTable();

@@ -1,299 +1,288 @@
 # 🌿 GrowApp Cannabis Guide
 
-> **Mobile App Repository** | This is the app store version of GrowApp. For web contributions, visit our [website repository](https://github.com/Shannon-Goddard/growappcannabis.guide).
-
 > **Founder @ Loyal9 LLC | Scaling 2,800+ Strain DB with GrowApp | Architecting Social Blockchain w/ Mission Mischief | AWS Serverless & Open-Source — We Pass Them Left, Then Watch the Industry Blink.**
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-growappcannabis.guide-green?style=for-the-badge)](https://growappcannabis.guide)
+[![Live App](https://img.shields.io/badge/🌐_Live_App-growappcannabis.guide-green?style=for-the-badge)](https://growappcannabis.guide)
 [![App Store](https://img.shields.io/badge/📱_iOS-App_Store-blue?style=for-the-badge)](https://apps.apple.com/us/app/growapp-cannabis-guide/id6471381461)
-[![Google Play](https://img.shields.io/badge/🤖_Android-Google_Play-green?style=for-the-badge)](https://play.google.com/store/apps/details?id=com.GrowAppCannabisGuide)
+[![Google Play](https://img.shields.io/badge/🤖_Android-Google_Play-green?style=for-the-badge)](https://play.google.com/store/apps/details?id=com.growappcannabiscannabis.guide)
+[![Amazon Appstore](https://img.shields.io/badge/📦_Amazon-Appstore-orange?style=for-the-badge)](https://www.amazon.com/gp/product/B0CFG7HGQK)
 [![License](https://img.shields.io/badge/📄_License-MIT-yellow?style=for-the-badge)](LICENSE.md)
+[![AI Pair Programmer](https://img.shields.io/badge/🤖_Pair_Programmer-Amazon_Q-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/q/)
+
+---
 
 ## 🚀 What We Built
 
-GrowApp isn't just another grow tracker — it's a **data-driven cultivation platform** that transforms how home growers approach cannabis cultivation. Built with vanilla JavaScript and powered by a comprehensive strain database, we're serving personalized grow schedules to thousands of cultivators worldwide.
+GrowApp is a **data-driven cannabis cultivation platform** that transforms how home growers approach their grows. Built with vanilla JavaScript, powered by a 2,800+ strain database, and architected around IndexedDB for fully offline-capable, personalized grow tracking.
 
-### 🎯 The Problem We Solved
+This repo is the **live app webview** — served inside the iOS, Android, and Amazon native app shells. It is not open for contributions. If you're looking for the public website version, check out the website repo below.
 
-While 70% of home growers cultivate as a hobby, existing apps were stuck in reactive mode — tracking what already happened instead of guiding what should happen next. We flipped the script.
+> 🌐 Website repo: [github.com/Shannon-Goddard/growappcannabis.guide](https://github.com/Shannon-Goddard/growappcannabis.guide)
 
-### ⚡ Our Solution
+---
 
-**Smart Grow Scheduling Engine**
-- **2,800+ strain database** with flowering/vegetative timing data
-- **Dynamic nutrient scheduling** across 6 major brands (Advanced Nutrients, FoxFarm, BioBizz, etc.)
-- **Contextual daily tasks** generated from user selections
-- **Plant diagnostics** with symptom-based troubleshooting
+## 🗂 App Structure
 
-## 🛠️ Tech Stack
+```
+grow_app/
+├── index.html                      ← Smart entry point: new user → builder, returning → mytask
+├── medium-feeding/
+│   ├── medium-feeding.html         ← 3-step grow builder
+│   ├── schedule-viewer.html        ← Full schedule: cards + table + My Notes
+│   ├── mytask.html                 ← Daily check-in dashboard
+│   └── mydiary.html                ← Photo diary with data overlay
+├── tools/
+│   └── tools.html                  ← Tools hub: calculators + grow tools + games
+├── lighting/
+│   └── lighting.html               ← 132 LEDs, grow cost calculator, DLI tool
+├── airflow/
+│   └── airflow.html                ← CFM calculator, fan & filter kits
+├── grow-space/
+│   └── grow-space.html             ← Tent kits, space calculator
+├── harvest-window/
+│   └── harvest-window.html         ← AI trichome analyzer (TensorFlow on-device)
+├── strain-search/
+│   ├── strain-search.html          ← 2,800+ strain search & filter
+│   └── strains/                    ← ~2,800 individual strain pages
+├── plant-doctor/
+│   ├── plant-doctor.html           ← Symptom-based diagnosis
+│   └── assets/html/                ← 45+ condition detail pages
+├── blog/
+│   ├── blog.html
+│   └── assets/article/             ← Grow guides & gear reviews
+├── seeds/
+│   └── seeds.html                  ← Seed Money marketplace
+├── games/
+│   └── games.html                  ← Cannabis games hub
+├── how-to/
+│   └── how-to.html                 ← 20 seed-to-cure how-to videos
+├── assets/
+│   ├── js/
+│   │   ├── bottom-nav.js           ← Global bottom nav (replaces hamburger)
+│   │   └── age-gate.js
+│   ├── css/
+│   ├── img/
+│   └── policies/                   ← Privacy, Terms, EULA, Disclosure, Contact
+├── server.py                       ← Local dev server (repo root, port 8000)
+├── CNAME                           ← growappcannabis.guide
+├── robots.txt
+└── sitemap.xml
+```
+
+---
+
+## 🌱 medium-feeding — The Core Grow App
+
+The primary product. Users build a personalized grow then track it day by day.
+
+### Page Flow
+
+```
+index.html  (smart entry — new vs returning user detection)
+  └── medium-feeding.html  (3-step builder)
+        └── schedule-viewer.html  (schedule + card view)
+              ├── mytask.html     (daily check-in)
+              └── mydiary.html    (photo diary)
+```
+
+### Pages
+
+| Page | Purpose |
+|---|---|
+| `medium-feeding.html` | 3-step grow builder: Strain → Nutrients → Start Date → generates schedule |
+| `schedule-viewer.html` | Full schedule viewer with card view (mobile default) and table view (desktop default) |
+| `mytask.html` | Daily check-in: log actuals for environment, water, nutrients, light, inspection |
+| `mydiary.html` | Camera + column selector + data overlay photo diary |
+
+### Schedule Viewer — View Modes
+
+Accessed via the **⚙ Options** dropdown in the toolbar:
+
+| Mode | Description |
+|---|---|
+| Cards | Collapsible day cards — default on mobile. Date · Day · Week in header, sections for Environment / Water & pH / Nutrients / Visual Inspection |
+| Table | Full horizontal-scroll data table — default on desktop. Sticky header + toolbar + column headers |
+| My Notes | Cards or table with all editable "My" fields visible: environment, light/air, nutrients (dynamic), inspection notes |
+
+My Notes fields match exactly what MyTask saves — data entered in either place is shared via IndexedDB.
+
+### Plant Size Filter
+
+| Size | Veg Weeks Shown |
+|---|---|
+| Small | 4 |
+| Medium | 6 |
+| Large | All |
+| Auto | All (optional days-to-harvest trim) |
+
+---
+
+## 🧭 Navigation — Bottom Nav
+
+All pages (except `index.html`) use a fixed bottom nav bar injected by `assets/js/bottom-nav.js` via a `bottom-nav-placeholder` div. Works at any directory depth via `data-depth`.
+
+| Tab | Icon | Destination |
+|---|---|---|
+| Today | `fa-gauge-high` | `/medium-feeding/mytask.html` |
+| Schedule | `fa-leaf` | `/medium-feeding/schedule-viewer.html` |
+| Diary | `fa-camera` | `/medium-feeding/mydiary.html` |
+| Tools | `fa-screwdriver-wrench` | `/tools/tools.html` |
+| More | `fa-ellipsis` | Bottom sheet drawer |
+
+**More drawer** contains: Strain Search, Plant Doctor, Seeds, Blog, Games, and policy footer links. Supports swipe-down-to-close on mobile.
+
+---
+
+## 🛠 Tools Hub — tools/tools.html
+
+Organized into three sections:
+
+**Featured:** Harvest Window — AI trichome analyzer (TensorFlow.js on-device, model hosted at `loyal9.app`)
+
+**Calculators:**
+- Lighting Calculator — best LED for tent, grow cost, DLI (132 lights)
+- CFM Calculator — fan & filter sizing for your space
+- Grow Space Calculator — tent kit matching by room dimensions
+
+**Grow Tools:**
+- Strain Search — 2,800+ strains, filter by type/THC/CBD/flowering time
+- Plant Doctor — 45+ conditions, symptom-based diagnosis
+- How-To Videos — 20 seed-to-cure videos
+- Grow Blog — lighting, nutrients, hydro, gear reviews
+
+---
+
+## 🛠 Tech Stack
 
 ```javascript
-// Core Technologies
 const techStack = {
-  frontend: ['Vanilla JavaScript', 'jQuery', 'CSS3', 'HTML5'],
-  data: ['JSON', 'IndexedDB', 'CSV processing'],
-  deployment: ['GitHub Pages', 'CDN optimization'],
-  mobile: ['PWA', 'iOS App Store', 'Google Play'],
-  analytics: ['Google Analytics', 'User behavior tracking']
+  frontend:   ['Vanilla JavaScript', 'CSS3', 'HTML5'],
+  data:       ['JSON', 'IndexedDB (MyGrowDB v8)', 'localStorage'],
+  ai:         ['TensorFlow.js', 'Teachable Machine (on-device trichome analysis)'],
+  deployment: ['GitHub Pages', 'CDN'],
+  mobile:     ['PWA', 'iOS App Store', 'Google Play', 'Amazon Appstore'],
+  analytics:  ['Google Analytics (G-X0XEMR28V2)'],
+  devServer:  ['Python server.py — serves repo root on port 8000']
 };
 ```
 
-## 🌱 Key Features
+---
 
-### 📊 **Strain Intelligence**
-- Search through 2,800+ cannabis strains
-- THC/CBD percentages and genetic profiles
-- Flowering time predictions
-- Growth characteristic matching
+## 🧪 Key Features
 
-### 🧪 **Nutrient Automation**
-- Multi-brand nutrient scheduling
-- Growth stage optimization
-- pH and feeding recommendations
-- Custom nutrient mixing ratios
+### 📊 Strain Intelligence
+- 2,800+ strains with THC/CBD, genetics, flowering time
+- Strain search with image previews
+- Auto vs photoperiod detection → adjusts veg weeks
 
-### 🔬 **Plant Diagnostics**
-- Symptom-based problem identification
-- Treatment recommendations
-- Visual diagnostic tools
-- Preventive care scheduling
+### 📅 Smart Schedule Generation
+- 126-row base schedule (seedling → veg → flower → harvest)
+- Dynamic nutrient columns per selected brand/product
+- Personalized start date → day-by-day calendar dates
+- Saved to IndexedDB, fully offline
 
-### 📱 **Cross-Platform Experience**
-- Responsive web application
-- Native iOS/Android apps
-- Offline functionality
-- Data synchronization
+### 📋 Schedule Viewer
+- Card view (mobile-first, collapsible per day)
+- Table view (power user, all columns, sticky headers)
+- My Notes mode — edit actuals inline on cards or in table cells
+- Options dropdown — view mode + plant size + navigation in one tap
+- Size filter hides excess veg weeks per plant type
 
-### 📸 **MyDiary Photo Feature**
-- Camera integration with custom data overlays
-- Visual grow documentation
-- Progress tracking with schedule data
-- Shareable grow logs
+### ✅ MyTask — Daily Check-In
+- Hero plant photo upload (compressed to 800px JPEG)
+- Today's schedule row auto-matched by date
+- Expandable cards: Environmental, Water & Nutrients, Light & Air, Visual Inspection
+- Color-coded inputs: green = on target, red = over, blue = under
+- Auto-saves actuals to IDB on blur + manual Log button
+- Progress bar: Day X of Y
 
-### ♾️ **Unlimited Grows**
-- No restrictions on grow tracking
-- Multiple strain management
-- Comparative analysis tools
-- Advanced scheduling for auto-flowering strains
+### 📓 MyDiary
+- Camera capture or file upload
+- Column selector — overlay any schedule field on photo
+- Dark theme, back to schedule viewer
 
-## 🏗️ Architecture
+### 🔬 Harvest Window
+- On-device TensorFlow.js model (no server round-trip)
+- Classifies: clear, clear-white, white, white-amber, amber, flower, preflower, seedling, vegetative, non-cannabis
+- Model and metadata served from `loyal9.app`
+
+---
+
+## 🏗 Architecture
 
 ```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Strain DB     │    │  Schedule Engine │    │   User Interface│
-│   (2,800+)      │───▶│  (Dynamic Tasks) │───▶│   (Responsive)  │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-         │                        │                        │
-         ▼                        ▼                        ▼
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│  Nutrient Data  │    │   IndexedDB      │    │   PWA/Mobile    │
-│  (6 Brands)     │    │   (Local Store)  │    │   (Apps)        │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
+┌─────────────────┐    ┌──────────────────┐    ┌──────────────────┐
+│  Strain DB      │    │ Schedule Engine  │    │  Schedule Viewer │
+│  (2,800+)       │───▶│ (126 base rows + │───▶│  Cards / Table   │
+│  data.js        │    │  nutrient cols)  │    │  My Notes        │
+└─────────────────┘    └──────────────────┘    └──────────────────┘
+         │                      │                        │
+         ▼                      ▼                        ▼
+┌─────────────────┐    ┌──────────────────┐    ┌──────────────────┐
+│ Nutrient Data   │    │  IndexedDB       │    │ MyTask / MyDiary │
+│ (6 Brands)      │    │  MyGrowDB v8     │    │ (actuals logged) │
+└─────────────────┘    └──────────────────┘    └──────────────────┘
 ```
 
-## 🤖 Development & AI Collaboration
+### IndexedDB — MyGrowDB v8
 
-### The 5-Year Journey (2020-2025)
+| Store | Key | Value |
+|---|---|---|
+| `tables` | `growId` | grow metadata (name, strain, logo) |
+| `tables` | `${growId}_schedule` | full schedule array |
+| `selectedNutrients` | `growId` | selected nutrient IDs array |
+| `nutrients` | `nutrientName` | custom nutrient objects |
 
-**GrowApp** represents 5 years of solo development by Shannon Goddard, evolving from a simple grow tracker into a comprehensive cultivation platform. The project demonstrates transparent human-AI collaboration in modern software development.
+Singleton instance exported as `{ IndexedDBService }` from `indexedDBService.js`. All methods are instance methods. `dbPromise` cached to prevent multiple connections.
 
-### 🧠 Human Vision & Leadership
-**Shannon Goddard | Loyal9 LLC** (2020-2025)
-- **Original Concept**: Cannabis cultivation guidance platform
-- **5-Year Development**: Solo development from concept to app stores
-- **Product Vision**: User experience design and feature roadmap
-- **Business Strategy**: Market positioning and growth planning
-- **Domain Expertise**: Cannabis cultivation knowledge and community understanding
-
-### 🤖 AI Technical Implementation
-**Amazon Q (AWS)** (2025)
-- **Website Optimization**: Google search optimization and header enhancements
-- **Storage Architecture**: Migration from 4 localStorage grows to unlimited IndexedDB system
-- **MyDiary Enhancement**: Evolution from user input to photo overlay system with schedule data
-- **Performance Optimization**: Technical implementation of advanced features
-
-**Grok 3** (2025)
-- **Blog Section**: Content management and article generation
-- **Games Integration**: Cannabis-themed mini-games and entertainment features
-
-### 🤝 Collaboration Model
-
-**The Partnership**: Human vision meets AI implementation capability
-
-- **Shannon's Role**: "I need unlimited grows with auto-flower schedules and photo overlays showing grow data"
-- **AI Role**: "Here's how we implement that with IndexedDB, camera APIs, and data visualization"
-- **Shared Success**: Features that neither could have built alone
-
-This represents the future of software development — human creativity and domain expertise enhanced by AI technical capabilities.
+---
 
 ## 🚀 Quick Start
 
-### Mobile Apps
-- **iOS**: [Download from App Store](https://apps.apple.com/us/app/growapp-cannabis-guide/id6471381461)
-- **Android**: [Download from Google Play](https://play.google.com/store/apps/details?id=com.GrowAppCannabisGuide)
+```bash
+# Clone
+git clone https://github.com/Shannon-Goddard/grow_app.git
+cd grow_app
 
-### Web Application
-- **Live Demo**: [growappcannabis.guide](https://growappcannabis.guide)
-- **Web Repository**: For development and contributions, visit the [website repository](https://github.com/yourusername/growappcannabis.guide)
-
-## 📈 Performance Metrics
-
-- **2,800+ strains** in searchable database
-- **6 nutrient brands** with complete feeding schedules
-- **Cross-platform deployment** (Web, iOS, Android)
-- **Offline-first architecture** with IndexedDB
-- **Mobile-optimized** responsive design
-- **Unlimited grow tracking** with auto-flower support
-
-## 🎮 User Journey
-
-1. **Strain Selection** → Search and filter 2,800+ strains
-2. **Grow Configuration** → Set plant size, lighting, nutrients
-3. **Schedule Generation** → Automated daily task creation
-4. **Daily Guidance** → Contextual growing instructions
-5. **Photo Documentation** → MyDiary with data overlays
-6. **Problem Solving** → Plant diagnostic tools
-7. **Harvest Planning** → Timing and preparation guides
-
-## 🔧 Development
-
-### Project Structure
-```
-├── assets/
-│   ├── css/           # Styling and themes
-│   ├── js/            # Core JavaScript modules
-│   └── img/           # Images and icons
-├── mygrow/
-│   ├── strain-selector/    # Strain search interface
-│   ├── schedule-builder/   # Dynamic scheduling
-│   └── nutrient-selector/  # Nutrient configuration
-├── mydiary/
-│   ├── mydiary.html       # Photo overlay system
-│   └── assets/            # Camera integration
-├── tools/
-│   ├── plant-doctor/       # Diagnostic tools
-│   ├── search-strains/     # Strain database
-│   └── games/             # Cannabis mini-games
-└── data/
-    ├── schedule-data.json  # Growth schedules
-    └── nutrient-data.json  # Feeding schedules
+# Serve from repo root (required for absolute fetch paths)
+python server.py
+# → http://localhost:8000
 ```
 
-### Key Components
+> Fetch paths in `schedule-generator.js` use `/medium-feeding/assets/data/` — must be served from repo root.
 
-**Strain Database Engine**
-```javascript
-// Dynamic strain filtering and selection
-const strainEngine = {
-  searchStrains: (query) => filterDatabase(query),
-  getStrainData: (id) => strainDatabase[id],
-  calculateSchedule: (strain, config) => generateTasks(strain, config)
-};
-```
+---
 
-**Schedule Builder**
-```javascript
-// Automated task generation
-const scheduleBuilder = {
-  generateDailyTasks: (userConfig) => {
-    const { strain, size, lighting, nutrients } = userConfig;
-    return buildCustomSchedule(strain, size, lighting, nutrients);
-  }
-};
-```
+## 🔒 This Repo
 
-**MyDiary Photo System**
-```javascript
-// Camera integration with data overlays
-const myDiary = {
-  capturePhoto: () => accessCamera(),
-  addDataOverlay: (photo, scheduleData) => overlayGrowData(photo, scheduleData),
-  saveEntry: (photo, data) => storeInIndexedDB(photo, data)
-};
-```
+This is the **live app webview** powering the GrowApp mobile apps. It is not open for external contributions.
 
-## 🌍 Deployment
+If you want to explore the public-facing website codebase, check out:
 
-- **Production**: [growappcannabis.guide](https://growappcannabis.guide)
-- **CDN**: Optimized asset delivery
-- **Mobile**: iOS App Store & Google Play
-- **Analytics**: Google Analytics integration
+> 🌐 [github.com/Shannon-Goddard/growappcannabis.guide](https://github.com/Shannon-Goddard/growappcannabis.guide)
 
-## 🤝 Contributing
-
-This repository contains the **mobile app version** of GrowApp. To maintain stability for our app store users, we don't accept direct contributions to this repository.
-
-**Want to contribute?** We'd love your help on the **web version**:
-- 🌐 **Web Repository**: [growappcannabis.guide](https://github.com/yourusername/growappcannabis.guide)
-- 🔄 **Contributions flow**: Web → App (we sync improvements from web to mobile)
-
-### Areas We Need Help (Web Version)
-- 🌱 **Strain data expansion** (genetics, terpene profiles)
-- 🧪 **Nutrient brand integration** (new feeding schedules)
-- 🔬 **Plant diagnostic accuracy** (symptom identification)
-- 🌐 **Internationalization** (multi-language support)
-
-## 📊 Data Sources
-
-- **Strain Database**: Curated from multiple cannabis databases
-- **Nutrient Schedules**: Official feeding charts from manufacturers
-- **Growth Data**: Community-validated cultivation timelines
-- **Diagnostic Info**: Peer-reviewed plant pathology resources
-
-## 🏆 Recognition
-
-- **Featured** on multiple cannabis technology platforms
-- **Growing user base** across web and mobile platforms
-- **Open-source** contribution to cannabis cultivation technology
-- **AI Collaboration Pioneer** - Transparent human-AI development model
-
-## 🔬 Academic Transparency
-
-**GrowApp** demonstrates responsible AI integration in software development:
-
-### Human Contributions (2020-2025)
-- **5 years solo development** - Core platform and user experience
-- **Domain expertise** - Cannabis cultivation knowledge
-- **Product vision** - Feature roadmap and market strategy
-- **Community building** - User engagement and feedback integration
-
-### AI Contributions (2025)
-- **Technical implementation** - Advanced feature development
-- **Performance optimization** - Search optimization and data architecture
-- **Content generation** - Blog articles and game development
-
-### Collaboration Ethics
-- **Transparent attribution** - Clear credit for all contributions
-- **Skill complementarity** - Human vision + AI implementation
-- **Shared ownership** - Collaborative success model
-- **Future standard** - Template for ethical AI collaboration
-
-*This project sets the standard for transparent human-AI collaboration in software development.*
+---
 
 ## 📱 Get the Apps
 
-<div align="center">
-
 [![iOS App Store](https://img.shields.io/badge/Download_on_the-App_Store-black?style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/us/app/growapp-cannabis-guide/id6471381461)
-[![Google Play](https://img.shields.io/badge/Get_it_on-Google_Play-green?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.GrowAppCannabisGuide)
+[![Google Play](https://img.shields.io/badge/Get_it_on-Google_Play-green?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.growappcannabiscannabis.guide)
 [![Amazon Appstore](https://img.shields.io/badge/Available_at-Amazon_Appstore-orange?style=for-the-badge&logo=amazon&logoColor=white)](https://www.amazon.com/gp/product/B0CFG7HGQK)
 
-</div>
+---
 
 ## 🌐 Connect
-
-<div align="center">
 
 [![Website](https://img.shields.io/badge/🌐_Website-growappcannabis.guide-green?style=for-the-badge)](https://growappcannabis.guide)
 [![Twitter](https://img.shields.io/badge/Twitter-@Loyal9GrowApp-blue?style=for-the-badge&logo=twitter)](https://twitter.com/Loyal9GrowApp)
 [![Facebook](https://img.shields.io/badge/Facebook-Loyal9GrowApp-blue?style=for-the-badge&logo=facebook)](https://www.facebook.com/Loyal9GrowApp/)
 [![Instagram](https://img.shields.io/badge/Instagram-@loyal9growapp-purple?style=for-the-badge&logo=instagram)](https://www.instagram.com/loyal9growapp/)
 
-</div>
+---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+MIT License — see [LICENSE.md](LICENSE.md)
 
 ---
 
@@ -301,9 +290,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 **"Grow what you can't."** 🌿
 
-*Built with ❤️ by Shannon Goddard | Loyal9 LLC*  
-*Enhanced through Human-AI Collaboration*
+*Shannon passed it left. Amazon Q caught it, refactored it, rebuilt the nav, wired up the tools hub, batch-updated 2,975 files, and passed it back greener than it started.* 🍃
 
-**Setting the standard for transparent AI integration in software development**
+*Built with ❤️ by [Loyal9 LLC](https://loyal9.com) · Pair programmed with [Amazon Q](https://aws.amazon.com/q/)*
 
 </div>

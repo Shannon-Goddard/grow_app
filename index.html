@@ -151,14 +151,14 @@
     <i class="fa-solid fa-seedling text-5xl text-brand mb-5"></i>
     <h2 class="text-2xl font-bold mb-2 text-center">Welcome to GrowApp</h2>
     <p class="text-zinc-400 text-sm text-center mb-8">Your personal cannabis cultivation dashboard. Create your first grow to get started.</p>
-    <a href="mygrow/mygrow.html" class="w-full bg-gradient-to-r from-brand to-emerald-600 text-white font-semibold text-base py-4 rounded-2xl text-center shadow-2xl shadow-brand/30 active:scale-[0.97] transition-all block">
+    <a href="/medium-feeding/medium-feeding.html" class="w-full bg-gradient-to-r from-brand to-emerald-600 text-white font-semibold text-base py-4 rounded-2xl text-center shadow-2xl shadow-brand/30 active:scale-[0.97] transition-all block">
       Create Grow
     </a>
     <p class="text-zinc-600 text-xs mt-6 text-center">2,800+ strains • Smart scheduling • Daily guidance</p>
   </div>
 
   <script type="module">
-    import { IndexedDBService } from './mygrow/common/js/indexedDBService.js';
+    import { IndexedDBService } from '/medium-feeding/assets/js/indexedDBService.js';
 
     const DB = IndexedDBService;
 
@@ -249,7 +249,7 @@
 
       // CTA button navigates to dashboard
       document.getElementById('ctaBtn').addEventListener('click', () => {
-        window.location.href = '/mygrow/mytask/mytask.html';
+        window.location.href = '/medium-feeding/mytask.html';
       });
     }
 

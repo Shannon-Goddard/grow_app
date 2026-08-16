@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X0XEMR28V2');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>Cannabis Plant Doctor – Diagnose 45+ Plant Problems by Symptom | GrowApp</title>
+
+    <meta name="description" content="Free cannabis plant diagnostic tool. Check symptoms like yellow leaves, brown spots, drooping, or bugs and instantly identify the problem from 45+ diseases, deficiencies & pests with treatment guides.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="keywords" content="cannabis plant problems, cannabis leaf diagnosis, yellow leaves cannabis, nutrient deficiency cannabis, cannabis pests, plant doctor">
+    <meta name="author" content="Loyal9 LLC">
+    <link rel="canonical" href="https://growappcannabis.guide/plant-doctor/plant-doctor.html">
+    <meta property="og:title" content="Cannabis Plant Doctor – Diagnose 45+ Problems by Symptom" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Free symptom-based diagnostic tool for cannabis. Identify nutrient deficiencies, pests, mold, and environmental stress. Instant treatment guides." />
+    <meta property="og:url" content="https://growappcannabis.guide/plant-doctor/plant-doctor.html" />
+    <meta property="og:site_name" content="GrowApp Cannabis Guide" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Loyal9GrowApp" />
+    <link rel="icon" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/plant-doctor.css">
+    <style>
+        :root {
+            --bg:#0a0c0e; --surface:#13181d; --surface-2:#1c2329;
+            --border:#2a333d; --text:#e8eaed; --text-muted:#8b949e;
+            --green:#04AA6D; --green-dim:#038a57;
+            --radius:14px; --radius-sm:8px;
+        }
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+        a{color:inherit;text-decoration:none;}
+        #hero{padding:5rem 1.5rem 3rem;max-width:1200px;margin:0 auto;}
+        .hero-head{text-align:center;margin-bottom:2.5rem;}
+        .hero-head h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;margin-bottom:0.5rem;}
+        .hero-head h1 span{color:var(--green);}
+        .hero-head h2{font-size:1rem;font-weight:400;color:var(--text-muted);}
+        .tool-layout{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:start;}
+        .symptoms-panel,.results-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;}
+        .symptoms-panel h3,.results-panel h3{font-size:1rem;font-weight:700;color:var(--green);margin-bottom:0.3rem;}
+        .symptoms-panel p{font-size:0.8rem;color:var(--text-muted);margin-bottom:1rem;}
+        #newCol{columns:2;-webkit-columns:2;-moz-columns:2;}
+        .listPrint{list-style-type:none;text-align:left;padding-left:0;margin-left:0;}
+        .listPrint label{display:flex;align-items:center;gap:8px;font-size:0.85rem;color:var(--text-muted);padding:4px 0;cursor:pointer;transition:color 0.15s;}
+        .listPrint label:hover{color:var(--text);}
+        .listPrint input[type=checkbox]{accent-color:var(--green);width:14px;height:14px;flex-shrink:0;}
+        .results-container{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+        #table2{min-width:600px;white-space:nowrap;width:100%;border-collapse:collapse;font-size:0.8rem;}
+        #table2 thead tr{background:var(--surface-2);}
+        #table2 th{padding:8px 10px;text-align:left;color:var(--text-muted);font-weight:600;border-bottom:1px solid var(--border);font-size:0.72rem;}
+        #table2 td{padding:8px 10px;border-bottom:1px solid var(--border);}
+        #table2 td.solution{white-space:normal;min-width:160px;}
+        #table2 td.solution a{color:var(--green);font-weight:600;font-size:0.82rem;}
+        #table2 td.solution a:hover{text-decoration:underline;}
+        #table2 .tableRow:hover{background:var(--surface-2);}
+        #table2 .fa-check{color:var(--green);}
+        .seo-section{max-width:900px;margin:0 auto;padding:2rem 1.5rem 4rem;font-size:0.9rem;line-height:1.7;color:var(--text-muted);}
+        .seo-section h3{color:var(--green);font-size:1rem;margin:1.2rem 0 0.4rem;}
+        .seo-section h3:first-child{margin-top:0;}
+        footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-size:0.8rem;color:var(--text-muted);}
+        footer a{color:var(--green);}
+        @media(max-width:768px){
+            .tool-layout{grid-template-columns:1fr;}
+            #hero{padding:4rem 1.2rem 2rem;}
+            #newCol{columns:1;}
+        }
+    </style>
+</head>
+<body>
+<main id="main">
+  <section id="hero">
+    <div class="hero-head">
+      <h1>Cannabis Plant <span>Doctor</span></h1>
+      <h2>Diagnose &amp; treat 45+ cannabis plant problems by symptom</h2>
+    </div>
+    <div class="tool-layout">
+      <div class="symptoms-panel">
+        <h3>Symptoms</h3>
+        <p><b>check all that apply</b></p>
+        <div id="newCol">
+                <div id="newCol">
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Droopingplant" onchange="hide_show_table(this.id);"> Drooping plant</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Moldorpowder" onchange="hide_show_table(this.id);"> Mold or powder</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Redstems" onchange="hide_show_table(this.id);"> Red stems</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Twistedgrowth" onchange="hide_show_table(this.id);"> Twisted growth</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Bugsarevisible" onchange="hide_show_table(this.id);"> Bugs are visible</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Webbing" onchange="hide_show_table(this.id);"> Webbing</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Budsdying" onchange="hide_show_table(this.id);"> Buds dying</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Budslookodd" onchange="hide_show_table(this.id);"> Buds look odd</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Brownandslimyroots" onchange="hide_show_table(this.id);"> Brown and slimy roots</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="CorCleaves" onchange="hide_show_table(this.id);"> Curling or clawing leaves</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Shinyorsmoothleaves" onchange="hide_show_table(this.id);"> Shiny or smooth leaves</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Wiltingleaves" onchange="hide_show_table(this.id);"> Wilting leaves</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Darkleaves" onchange="hide_show_table(this.id);"> Dark leaves</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Yellowleaves" onchange="hide_show_table(this.id);"> Yellow leaves</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Pinkorpurpleonleaves" onchange="hide_show_table(this.id);"> Pink or purple on leaves</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Spotsormarkings" onchange="hide_show_table(this.id);"> Spots or markings</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Bronzeandbrownpatches" onchange="hide_show_table(this.id);"> Bronze and brown patches</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Brownoryellowleaftips" onchange="hide_show_table(this.id);"> Brown or yellow leaf tips</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Holesinleaves" onchange="hide_show_table(this.id);"> Holes in leaves</label></li>
+                <li class="listPrint"><label><input type="checkbox" value="hide" id="Yellowingbetweenleafviens" onchange="hide_show_table(this.id);"> Yellowing between viens</label></li>
+                </div>
+              </div>
+            </div>
+          
+          
+      <!-- ======= Table Section ======= -->
+        </div>
+      </div>
+      <div class="results-panel" id="hide-table">
+        <h3>Disease</h3>
+        <div class="results-container">
+        <div class="icon-box">
+          <h3>Disease</h3>
+          <div class="results-container">
+            <div>
+            <table id="table2" class="mx-auto mb-5" width="100%">
+              <thead>
+                <tr>
+                  <th>click for treatment</th>
+                  <th id="Droopingplant_head">Drooping plant</th>
+                  <th id="Moldorpowder_head">Mold or powder</th>
+                  <th id="Redstems_head">Red stems</th>
+                  <th id="Twistedgrowth_head">Twisted growth</th>
+                  <th id="Bugsarevisible_head">Bugs are visible</th>
+                  <th id="Webbing_head">Webbing</th>
+                  <th id="Budsdying_head">Budsdying</th>
+                  <th id="Budslookodd_head">Buds look odd</th>
+                  <th id="Brownandslimyroots_head">Brown and slimy roots</th>
+                  <th id="CorCleaves_head">Curling or clawing leaves</th>
+                  <th id="Shinyorsmoothleaves_head">Shiny or smooth leaves</th>
+                  <th id="Wiltingleaves_head">Wilting leaves</th>
+                  <th id="Darkleaves_head">Dark leaves</th>
+                  <th id="Yellowleaves_head">Yellow leaves</th>
+                  <th id="Pinkorpurpleonleaves_head">Pink or purple on leaves</th>
+                  <th id="Spotsormarkings_head">Spots or markings</th>
+                  <th id="Bronzeandbrownpatches_head">Bronze and brown patches</th>
+                  <th id="Brownoryellowleaftips_head">Brown or yellow leaf tips</th>
+                  <th id="Holesinleaves_head">Holes in leaves</th>
+                  <th id="Yellowingbetweenleafviens_head">Yellowing between leaf viens</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Accidental-Re-Vegging.html">
+                      <div>Accidental Re-Vegging</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"><i class="fa-solid fa-check"></i></td>
+                  <td class="Budslookodd"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Aphids.html">
+                      <div>Aphids</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+        
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Barnacle-Scales.html">
+                      <div>Barnacle Scales</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Boron-Deficiency.html">
+                      <div>Boron Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Broad-Mites.html">
+                      <div>Broad Mites</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"><i class="fa-solid fa-check"></i></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"><i class="fa-solid fa-check"></i></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Bud-Rot-or-Mold.html">
+                      <div>Bud Rot or Mold</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"><i class="fa-solid fa-check"></i></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"><i class="fa-solid fa-check"></i></td>
+                  <td class="Budslookodd"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Calcium-Deficiency.html">
+                      <div>Calcium Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Caterpillars-Inchworms.html">
+                      <div>Caterpillars & Inchworms</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Copper-Deficiency.html">
+                      <div>Copper Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"><i class="fa-solid fa-check"></i></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"><i class="fa-solid fa-check"></i></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Crickets.html">
+                      <div>Crickets</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Fungus-Gnats.html">
+                      <div>Fungus Gnats</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"><i class="fa-solid fa-check"></i></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Grasshoppers.html">
+                      <div>Grasshoppers</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Heat-Stress.html">
+                      <div>Heat Stress</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"><i class="fa-solid fa-check"></i></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"><i class="fa-solid fa-check"></i></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Hemp-Russet-Mites.html">
+                      <div>Hemp Russet Mites</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"><i class="fa-solid fa-check"></i></td>
+                  <td class="Moldorpowder"><i class="fa-solid fa-check"></i></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"><i class="fa-solid fa-check"></i></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Hermies-Pollen-Sacs-Bananas.html">
+                      <div>Hermies, Pollen Sacs & Bananas</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Iron-Deficiency.html">
+                      <div>Iron Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+                
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Leaf-Miners.html">
+                      <div>Leaf Miners</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Leaf-Septoria-Yellow-Leaf-Spot.html">
+                      <div>Leaf Septoria / Yellow Leaf Spot</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Leafhoppers.html">
+                      <div>Leafhoppers</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Light-Burn-or-Light-Stress.html">
+                      <div>Light Burn or Light Stress</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"><i class="fa-solid fa-check"></i></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"><i class="fa-solid fa-check"></i></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Magnesium-Deficiency.html">
+                      <div>Magnesium Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"><i class="fa-solid fa-check"></i></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"><i class="fa-solid fa-check"></i></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Manganese-Deficiency.html">
+                      <div>Manganese Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"><i class="fa-solid fa-check"></i></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Mealybugs.html">
+                      <div>Mealybugs</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"><i class="fa-solid fa-check"></i></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"><i class="fa-solid fa-check"></i></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Molybdenum-Deficiency.html">
+                      <div>Molybdenum Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Nitrogen-Deficiency.html">
+                      <div>Nitrogen Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Nitrogen-Toxicity.html">
+                      <div>Nitrogen Toxicity</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"><i class="fa-solid fa-check"></i></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Nutrient-Burn.html">
+                      <div>Nutrient Burn</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"><i class="fa-solid fa-check"></i></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Over-Watering.html">
+                      <div>Over-Watering</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"><i class="fa-solid fa-check"></i></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/pH-Fluctuations.html">
+                      <div>pH Fluctuations</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+                
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Phosphorus-Deficiency.html">
+                      <div>Phosphorus Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"><i class="fa-solid fa-check"></i></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Planthoppers.html">
+                      <div>Planthoppers</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"><i class="fa-solid fa-check"></i></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"><i class="fa-solid fa-check"></i></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Potassium-Deficiency.html">
+                      <div>Potassium Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"><i class="fa-solid fa-check"></i></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Root-Problems.html">
+                      <div>Root Problems</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"><i class="fa-solid fa-check"></i></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Root-Rot.html">
+                      <div>Root Rot</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"><i class="fa-solid fa-check"></i></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"><i class="fa-solid fa-check"></i></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"><i class="fa-solid fa-check"></i></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"><i class="fa-solid fa-check"></i></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Slugs-or-Snails.html">
+                      <div>Slugs or Snails</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"><i class="fa-solid fa-check"></i></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Spider-Mites.html">
+                      <div>Spider Mites</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"><i class="fa-solid fa-check"></i></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Stink-Bug.html">
+                      <div>Stink Bug</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Sulfur-Deficiency.html">
+                      <div>Sulfur Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"><i class="fa-solid fa-check"></i></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Thrips.html">
+                      <div>Thrips</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Tobacco-Mosaic-Virus.html">
+                      <div>Tobacco Mosaic Virus (TMV)</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Under-watering.html">
+                      <div>Under-watering</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"><i class="fa-solid fa-check"></i></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/White-Powdery-Mildew.html">
+                      <div>White Powdery Mildew</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"><i class="fa-solid fa-check"></i></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Whiteflies.html">
+                      <div>Whiteflies</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"><i class="fa-solid fa-check"></i></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+          
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Wind-Burn.html">
+                      <div>Wind Burn</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"><i class="fa-solid fa-check"></i></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"><i class="fa-solid fa-check"></i></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"></td>
+                </tr>
+
+                <tr class="tableRow">
+                  <td class="solution">
+                    <a href="assets/html/Zinc-Deficiency.html">
+                      <div>Zinc Deficiency</div>
+                    </a>
+                  </td>
+                  <td class="Droopingplant"></td>
+                  <td class="Moldorpowder"></td>
+                  <td class="Redstems"></td>
+                  <td class="Twistedgrowth"></td>
+                  <td class="Bugsarevisible"></td>
+                  <td class="Webbing"></td>
+                  <td class="Budsdying"></td>
+                  <td class="Budslookodd"></td>
+                  <td class="Brownandslimyroots"></td>
+                  <td class="CorCleaves"></td>
+                  <td class="Shinyorsmoothleaves"></td>
+                  <td class="Wiltingleaves"></td>
+                  <td class="Darkleaves"></td>
+                  <td class="Yellowleaves"><i class="fa-solid fa-check"></i></td>
+                  <td class="Pinkorpurpleonleaves"></td>
+                  <td class="Spotsormarkings"></td>
+                  <td class="Bronzeandbrownpatches"></td>
+                  <td class="Brownoryellowleaftips"><i class="fa-solid fa-check"></i></td>
+                  <td class="Holesinleaves"></td>
+                  <td class="Yellowingbetweenleafviens"><i class="fa-solid fa-check"></i></td>
+                </tr>
+
+          </tbody>
+        
+        </table>
+      </div>
+    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- SEO -->
+<section class="seo-section">
+  <h3>Free Cannabis Symptom Checker &amp; Diagnosis Tool</h3>
+  <p>The Plant Doctor identifies <strong>45+ cannabis plant problems</strong> by cross-referencing 20 visible symptoms. Select what you see — yellow leaves, brown spots, drooping, bugs, webbing, curling — and instantly narrow down the diagnosis with a treatment plan.</p>
+  <h3>Nutrient Deficiencies</h3>
+  <p>Nitrogen, phosphorus, potassium, calcium, magnesium, iron, manganese, boron, copper, molybdenum, sulfur, and zinc deficiencies — each with unique symptom patterns and targeted treatment guides.</p>
+  <h3>Pests &amp; Bugs</h3>
+  <p>Spider mites, fungus gnats, aphids, thrips, whiteflies, broad mites, hemp russet mites, caterpillars, crickets, grasshoppers, leafhoppers, leaf miners, mealybugs, planthoppers, barnacle scales, slugs, snails, and stink bugs — identified by visible symptoms and treated with specific solutions.</p>
+  <h3>Diseases &amp; Environmental Stress</h3>
+  <p>Bud rot, white powdery mildew, root rot, tobacco mosaic virus, heat stress, light burn, wind burn, overwatering, underwatering, pH fluctuations, nutrient burn, nitrogen toxicity, and accidental re-vegging — all diagnosable through the symptom matrix.</p>
+</section>
+</main>
+
+<footer>
+  <p style="margin-bottom:0.5rem;">
+    <a href="../assets/policies/PrivacyPolicy.html">Privacy</a> ·
+    <a href="../assets/policies/TermsOfUse.html">Terms</a> ·
+    <a href="../assets/policies/disclosure.html">Disclosure</a> ·
+    <a href="../assets/policies/contact-us.html">Contact</a>
+  </p>
+  <p>© 2025 <a href="https://loyal9.com">Loyal9 LLC</a> · Built for home growers.</p>
+</footer>
+
+<div id="bottom-nav-placeholder" data-depth="1"></div>
+<script src="../assets/js/bottom-nav.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="../assets/js/age-gate.js"></script>
+</body>
+</html>

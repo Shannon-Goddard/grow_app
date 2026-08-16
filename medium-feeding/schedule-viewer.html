@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Grow Schedule — GrowApp Cannabis Guide</title>
+
+  <meta name="description" content="Your personalized day-by-day cannabis grow schedule.">
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X0XEMR28V2');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0c0e; color: #e8eaed; min-height: 100vh; overflow-x: auto; }
+
+    /* HEADER */
+    header { position: sticky; top: 0; z-index: 50; background: rgba(10,12,14,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid #2a333d; display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; min-width: max-content; width: 100%; }
+    header a { color: #8b949e; text-decoration: none; font-size: 0.875rem; display: flex; align-items: center; gap: 0.4rem; transition: color 0.15s; }
+    header a:hover { color: #04AA6D; }
+    header .title { font-weight: 700; font-size: 1rem; }
+
+    /* TOOLBAR */
+    .toolbar { position: sticky; top: 57px; z-index: 40; padding: 0.75rem 1.25rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; border-bottom: 1px solid #2a333d; background: #13181d; min-width: max-content; width: 100%; }
+    .grow-select-wrap { display: flex; align-items: center; gap: 0.5rem; }
+    .grow-select-wrap label { font-size: 0.78rem; color: #8b949e; white-space: nowrap; }
+    #growSelect { background: #0a0c0e; border: 1px solid #2a333d; border-radius: 0.5rem; color: #e8eaed; padding: 0.35rem 0.6rem; font-size: 0.8rem; }
+    #growSelect:focus { outline: none; border-color: #04AA6D; }
+
+    /* Options dropdown */
+    .opts-wrap { position: relative; }
+    .opts-trigger { font-size: 0.78rem; font-weight: 600; padding: 0.35rem 0.75rem; border-radius: 0.5rem; border: 1px solid #3f4f5e; background: #1c2329; color: #e8eaed; cursor: pointer; display: inline-flex; align-items: center; gap: 0.4rem; transition: all 0.15s; white-space: nowrap; }
+    .opts-trigger:hover, .opts-trigger.open { border-color: #04AA6D; color: #04AA6D; }
+    .opts-panel { display: none; position: absolute; top: calc(100% + 6px); left: 0; background: #13181d; border: 1px solid #2a333d; border-radius: 0.65rem; padding: 0.6rem; min-width: 200px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+    .opts-panel.open { display: block; }
+    .opts-section { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8b949e; padding: 0.3rem 0.4rem 0.2rem; }
+    .opts-group { display: flex; flex-wrap: wrap; gap: 0.3rem; padding: 0.2rem 0; }
+    .opts-divider { border: none; border-top: 1px solid #2a333d; margin: 0.4rem 0; }
+    /* reuse view-btn + size-btn styles inside panel */
+    .view-btn { font-size: 0.72rem; font-weight: 600; padding: 0.3rem 0.65rem; border-radius: 0.4rem; border: 1px solid #3f4f5e; background: #1c2329; color: #8b949e; cursor: pointer; transition: all 0.15s; text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem; }
+    .view-btn.active { background: #04AA6D; color: #000; border-color: #04AA6D; }
+    .view-btn:hover:not(.active) { border-color: #04AA6D; color: #04AA6D; }
+    .size-btn { font-size: 0.72rem; font-weight: 600; padding: 0.3rem 0.65rem; border-radius: 0.4rem; border: 1px solid #3f4f5e; background: #1c2329; color: #8b949e; cursor: pointer; transition: all 0.15s; }
+    .size-btn.active, .size-btn:hover { background: #04AA6D; color: #000; border-color: #04AA6D; }
+    #autoOptions { display: none; align-items: center; gap: 0.4rem; padding: 0.2rem 0.4rem; }
+    #autoOptions input { width: 60px; background: #0a0c0e; border: 1px solid #2a333d; border-radius: 0.4rem; color: #e8eaed; padding: 0.3rem 0.5rem; font-size: 0.78rem; }
+    #autoOptions label { font-size: 0.75rem; color: #8b949e; }
+
+    /* Print / back buttons */
+    .toolbar-actions { margin-left: auto; display: flex; gap: 0.5rem; }
+    .btn-icon { background: #1c2329; border: 1px solid #2a333d; color: #8b949e; border-radius: 0.5rem; padding: 0.35rem 0.7rem; font-size: 0.78rem; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem; transition: all 0.15s; }
+    .btn-icon:hover { border-color: #04AA6D; color: #04AA6D; }
+
+    /* My Notes editable cells */
+    #table1 tbody td.my-col[contenteditable="true"] { background: #1c2a22; outline: 1px solid #04AA6D; border-radius: 3px; }
+    #table1 tbody td.my-col { cursor: text; }
+
+    /* GROW INFO BAR */
+    #growInfoBar { display: none; padding: 0.75rem 1.25rem; background: #13181d; border-bottom: 1px solid #2a333d; align-items: center; gap: 0.75rem; }
+    #growInfoBar img { width: 44px; height: 44px; border-radius: 8px; object-fit: cover; }
+    #growInfoBar .grow-name { font-weight: 700; font-size: 0.95rem; }
+    #growInfoBar .grow-meta { font-size: 0.78rem; color: #8b949e; margin-top: 0.15rem; }
+
+    /* EMPTY STATE */
+    #emptyState { display: none; text-align: center; padding: 4rem 1.25rem; }
+    #emptyState .icon { font-size: 3rem; margin-bottom: 1rem; }
+    #emptyState h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    #emptyState p { color: #8b949e; font-size: 0.875rem; margin-bottom: 1.5rem; }
+    #emptyState a { display: inline-block; background: #04AA6D; color: #000; font-weight: 700; font-size: 0.875rem; padding: 0.65rem 1.5rem; border-radius: 0.75rem; text-decoration: none; }
+
+    /* TABLE */
+    .table-wrap { overflow-x: visible; }
+    #table1 { width: 100%; border-collapse: collapse; font-size: 0.78rem; white-space: nowrap; }
+    #table1 thead th { background: #13181d; color: #8b949e; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 0.6rem 0.75rem; border-bottom: 2px solid #2a333d; position: sticky; top: 112px; z-index: 10; white-space: nowrap; }
+    #table1 { position: relative; }
+    #table1 tbody tr { border-bottom: 1px solid #1c2329; transition: background 0.1s; }
+    #table1 tbody tr:hover { background: #13181d; }
+    #table1 tbody td { padding: 0.5rem 0.75rem; color: #c9d1d9; vertical-align: middle; }
+
+    /* Stage color coding */
+    #table1 tbody tr[data-stage="seedling"] td:nth-child(3) { color: #58a6ff; }
+    #table1 tbody tr[data-stage="vegetative"] td:nth-child(3) { color: #04AA6D; }
+    #table1 tbody tr[data-stage="flowering"] td:nth-child(3) { color: #f78166; }
+
+    /* Editable cells */
+    #table1 tbody td[contenteditable="true"] { background: #1c2a22; outline: 1px solid #04AA6D; border-radius: 3px; }
+
+    /* Save indicator */
+    #saveIndicator { position: fixed; bottom: 1.5rem; right: 1.5rem; background: #04AA6D; color: #000; font-weight: 700; font-size: 0.8rem; padding: 0.5rem 1rem; border-radius: 0.5rem; opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 9999; }
+    #saveIndicator.show { opacity: 1; }
+
+    /* Toast */
+    #toast { position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); background: #1c2329; border: 1px solid #2a333d; color: #e8eaed; padding: 0.6rem 1.2rem; border-radius: 0.75rem; font-size: 0.85rem; z-index: 9999; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+    #toast.show { opacity: 1; }
+
+    /* CARD VIEW */
+    #cardView { display: none; padding: 0.75rem 1rem; }
+    .day-card { background: #13181d; border: 1px solid #2a333d; border-radius: 0.75rem; margin-bottom: 0.65rem; overflow: hidden; }
+    .day-card-header { display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 0.9rem; cursor: pointer; user-select: none; }
+    .day-card-header .card-title { font-weight: 700; font-size: 0.88rem; }
+    .card-stage { font-size: 0.72rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 999px; }
+    .card-stage-seedling { background: rgba(88,166,255,0.15); color: #58a6ff; }
+    .card-stage-vegetative { background: rgba(4,170,109,0.15); color: #04AA6D; }
+    .card-stage-flowering { background: rgba(247,129,102,0.15); color: #f78166; }
+    .day-card-body { display: none; padding: 0 0.9rem 0.75rem; border-top: 1px solid #2a333d; }
+    .day-card.open .day-card-body { display: block; }
+    .day-card.open .card-chevron { transform: rotate(180deg); }
+    .card-chevron { transition: transform 0.2s; color: #8b949e; font-size: 0.75rem; }
+    .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem 0.75rem; margin-top: 0.6rem; }
+    .card-field { font-size: 0.78rem; }
+    .card-field .cf-label { color: #8b949e; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.1rem; }
+    .card-field .cf-value { color: #e8eaed; }
+    .card-field.full { grid-column: 1 / -1; }
+    .card-section-title { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #04AA6D; margin: 0.65rem 0 0.3rem; }
+    .cf-my { background: #1c2a22; border: 1px solid #2a333d; border-radius: 0.35rem; padding: 0.25rem 0.4rem; color: #e8eaed; font-size: 0.78rem; width: 100%; min-height: 28px; cursor: text; display: block; }
+    .cf-my:focus { outline: 1px solid #04AA6D; }
+    .card-notes-row { display: none; margin-top: 0.5rem; }
+    .notes-mode .card-notes-row { display: block; }
+
+    @media print {
+      header, .toolbar, #growInfoBar { display: none !important; }
+      body { background: #fff; color: #000; }
+      #table1 thead th { background: #f0f0f0; color: #000; position: static; }
+      #table1 tbody td { color: #000; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="toast"></div>
+  <div id="saveIndicator">✓ Saved</div>
+
+  <!-- HEADER -->
+  <header>
+    <a href="medium-feeding.html"><i class="fa-solid fa-arrow-left"></i> Build New Grow</a>
+    <span class="title">My Schedule</span>
+    <div style="width:100px;display:flex;justify-content:flex-end;gap:0.5rem;">
+      <button class="btn-icon" onclick="window.print()"><i class="fa-solid fa-print"></i></button>
+    </div>
+  </header>
+
+  <!-- HAMBURGER -->
+  <div id="bottom-nav-placeholder" data-depth="1"></div>
+
+  <!-- TOOLBAR -->
+  <div class="toolbar">
+    <div class="grow-select-wrap">
+      <label for="growSelect">Grow:</label>
+      <select id="growSelect"><option value="">Loading...</option></select>
+    </div>
+
+    <div class="opts-wrap">
+      <button class="opts-trigger" id="optsTrigger"><i class="fa-solid fa-sliders"></i> Options <i class="fa-solid fa-chevron-down" style="font-size:0.6rem"></i></button>
+      <div class="opts-panel" id="optsPanel">
+        <div class="opts-section">View</div>
+        <div class="opts-group">
+          <button class="view-btn active" id="viewSchedule"><i class="fa-solid fa-table-cells-large"></i> Cards</button>
+          <button class="view-btn" id="viewTable"><i class="fa-solid fa-table"></i> Table</button>
+          <button class="view-btn" id="viewNotes"><i class="fa-solid fa-pen"></i> My Notes</button>
+        </div>
+        <hr class="opts-divider">
+        <div class="opts-section">Plant Size</div>
+        <div class="opts-group">
+          <button class="size-btn" id="smallPlantBtn">Small</button>
+          <button class="size-btn" id="mediumPlantBtn">Medium</button>
+          <button class="size-btn" id="largePlantBtn">Large</button>
+          <button class="size-btn" id="autoPlantBtn">Auto</button>
+        </div>
+        <div id="autoOptions">
+          <input type="number" id="seedToHarvest" min="1" max="365" placeholder="days">
+          <label for="seedToHarvest">days to harvest</label>
+        </div>
+        <hr class="opts-divider">
+        <div class="opts-section">Navigate</div>
+        <div class="opts-group">
+          <a class="view-btn" id="viewTask" href="mytask.html"><i class="fa-solid fa-check-circle"></i> MyTask</a>
+          <a class="view-btn" id="viewDiary" href="mydiary.html"><i class="fa-solid fa-book"></i> MyDiary</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar-actions">
+      <button class="btn-icon" onclick="window.print()"><i class="fa-solid fa-print"></i></button>
+    </div>
+  </div>
+
+  <!-- GROW INFO BAR -->
+  <div id="growInfoBar">
+    <img id="growLogo" src="" alt="">
+    <div>
+      <div class="grow-name" id="growNameDisplay"></div>
+      <div class="grow-meta" id="growMetaDisplay"></div>
+    </div>
+  </div>
+
+  <!-- EMPTY STATE -->
+  <div id="emptyState">
+    <div class="icon">🌱</div>
+    <h2>No schedule found</h2>
+    <p>Build your grow first and we'll generate your full day-by-day guide.</p>
+    <a href="medium-feeding.html"><i class="fa-solid fa-seedling"></i> Build My Grow</a>
+  </div>
+
+  <!-- CARD VIEW -->
+  <div id="cardView"></div>
+
+  <!-- TABLE -->
+  <div class="table-wrap">
+    <table id="table1"></table>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="../assets/js/bottom-nav.js"></script>
+  <script type="module" src="assets/js/og-schedule-viewer.js"></script>
+
+  <script>
+    const MY_COL_INDICES = [6, 9, 11, 13, 15, 17, 20, 22];
+    const isMobile = () => window.innerWidth <= 768;
+
+    // layout: 'cards' | 'table' | 'notes'
+    // On mobile default to cards, desktop default to table
+    let currentLayout = localStorage.getItem('scheduleLayout') || (isMobile() ? 'cards' : 'table');
+
+    // ── Cached schedule data for card renderer ──
+    let _scheduleData = null;
+    let _nutrientNames = []; // display names in order
+    let _nutrientKeys = [];  // raw keys in order
+
+    // ── View switching ──
+    function setLayout(layout) {
+      currentLayout = layout;
+      localStorage.setItem('scheduleLayout', layout);
+      const isCards = layout === 'cards';
+      const isTable = layout === 'table';
+      const isNotes = layout === 'notes';
+
+      document.getElementById('viewSchedule').classList.toggle('active', isCards);
+      document.getElementById('viewTable').classList.toggle('active', isTable);
+      document.getElementById('viewNotes').classList.toggle('active', isNotes);
+
+      document.getElementById('cardView').style.display = (isCards || isNotes) ? 'block' : 'none';
+      document.querySelector('.table-wrap').style.display = isTable ? 'block' : 'none';
+
+      document.getElementById('cardView').classList.toggle('notes-mode', isNotes);
+
+      if (isTable) applyTableMode(isNotes ? 'notes' : 'schedule');
+      if ((isCards || isNotes) && _scheduleData) renderCards(_scheduleData, _nutrientKeys, _nutrientNames);
+    }
+
+    // ── Table My-cols show/hide ──
+    function applyTableMode(mode) {
+      const table = document.getElementById('table1');
+      if (!table) return;
+      const headers = table.querySelectorAll('thead th');
+      const rows = table.querySelectorAll('tbody tr');
+      const totalCols = headers.length;
+      const myIndices = new Set(MY_COL_INDICES);
+      for (let i = 24; i < totalCols; i += 2) myIndices.add(i);
+      myIndices.forEach(idx => {
+        const show = mode === 'notes';
+        if (headers[idx]) headers[idx].style.display = show ? '' : 'none';
+        rows.forEach(row => {
+          const td = row.querySelectorAll('td')[idx];
+          if (td) { td.style.display = show ? '' : 'none'; td.classList.toggle('my-col', show); }
+        });
+      });
+      if (mode === 'notes') attachTableEditing();
+    }
+
+    function attachTableEditing() {
+      const table = document.getElementById('table1');
+      if (!table || table.dataset.editBound) return;
+      table.dataset.editBound = '1';
+      table.addEventListener('click', async e => {
+        const td = e.target.closest('td.my-col');
+        if (!td || td.contentEditable === 'true') return;
+        const orig = td.textContent;
+        td.contentEditable = 'true'; td.focus();
+        const done = async () => {
+          td.contentEditable = 'false';
+          if (td.textContent.trim() === orig) return;
+          const growId = localStorage.getItem('currentGrowId');
+          const { IndexedDBService } = await import('./assets/js/indexedDBService.js');
+          const schedule = await IndexedDBService.loadSchedule(growId);
+          const rowIdx = Array.from(table.querySelectorAll('tbody tr')).indexOf(td.closest('tr'));
+          if (schedule[rowIdx]) {
+            const fieldMap = {6:'actual_inspection_notes',9:'actual_ph',11:'actual_light_intensity',13:'actual_light_distance',15:'actual_dt_temp',17:'actual_nt_temp',20:'actual_humidity',22:'actual_fan_position'};
+            const field = fieldMap[td.cellIndex];
+            if (field) { schedule[rowIdx][field] = td.textContent.trim(); await IndexedDBService.saveSchedule(growId, schedule); }
+          }
+        };
+        td.addEventListener('blur', done, { once: true });
+        td.addEventListener('keydown', ev => {
+          if (ev.key === 'Enter') { ev.preventDefault(); done(); }
+          if (ev.key === 'Escape') { td.textContent = orig; td.contentEditable = 'false'; }
+        }, { once: true });
+      });
+    }
+
+    // ── Card renderer ──
+    function val(v) { return (v === '' || v === null || v === undefined) ? '—' : v; }
+
+    function makeField(label, value, full) {
+      const d = document.createElement('div');
+      d.className = 'card-field' + (full ? ' full' : '');
+      d.innerHTML = `<div class="cf-label">${label}</div><div class="cf-value">${val(value)}</div>`;
+      return d;
+    }
+
+    function renderCards(schedule, nutrientKeys, nutrientNames) {
+      const container = document.getElementById('cardView');
+      container.innerHTML = '';
+      const isNotes = container.classList.contains('notes-mode');
+      const size = localStorage.getItem('plantSize') || 'large';
+      const maxVeg = size === 'small' ? 4 : size === 'medium' ? 6 : 99;
+
+      schedule.forEach((d, idx) => {
+        const stage = (d.stage || '').toLowerCase();
+        const week = parseInt(d.week) || 0;
+        if (stage === 'vegetative' && week > maxVeg) return;
+
+        const card = document.createElement('div');
+        card.className = 'day-card';
+        card.dataset.idx = idx;
+
+        // Header
+        const stageClass = 'card-stage card-stage-' + (stage || 'seedling');
+        const hdr = document.createElement('div');
+        hdr.className = 'day-card-header';
+        hdr.innerHTML = `<span class="card-title">${d.date || ''} &nbsp;·&nbsp; Day ${d.day || idx+1} &nbsp;·&nbsp; Week ${d.week || ''}</span><span class="${stageClass}">${d.stage || ''}</span><i class="fa-solid fa-chevron-down card-chevron"></i>`;
+        hdr.addEventListener('click', () => card.classList.toggle('open'));
+        card.appendChild(hdr);
+
+        // Body
+        const body = document.createElement('div');
+        body.className = 'day-card-body';
+
+        // Environment
+        const envTitle = document.createElement('div');
+        envTitle.className = 'card-section-title'; envTitle.textContent = 'Environment';
+        body.appendChild(envTitle);
+        const envGrid = document.createElement('div'); envGrid.className = 'card-grid';
+        envGrid.appendChild(makeField('Day Temp', d.dt_temp));
+        envGrid.appendChild(makeField('Night Temp', d.nt_temp));
+        envGrid.appendChild(makeField('Humidity', d.humidity));
+        envGrid.appendChild(makeField('Hours of Light', d.hours_of_light));
+        envGrid.appendChild(makeField('Light Intensity', d.light_intensity));
+        envGrid.appendChild(makeField('Light Distance', d.light_distance));
+        envGrid.appendChild(makeField('Fan Position', d.air_fan_position));
+        body.appendChild(envGrid);
+
+        // Water
+        const waterTitle = document.createElement('div');
+        waterTitle.className = 'card-section-title'; waterTitle.textContent = 'Water & pH';
+        body.appendChild(waterTitle);
+        const waterGrid = document.createElement('div'); waterGrid.className = 'card-grid';
+        waterGrid.appendChild(makeField('Amount of Water', d.amount_of_water));
+        waterGrid.appendChild(makeField('pH Goal', d.ph_goal));
+        body.appendChild(waterGrid);
+
+        // Nutrients
+        if (nutrientKeys.length) {
+          const nutTitle = document.createElement('div');
+          nutTitle.className = 'card-section-title'; nutTitle.textContent = 'Nutrients';
+          body.appendChild(nutTitle);
+          const nutGrid = document.createElement('div'); nutGrid.className = 'card-grid';
+          nutrientKeys.forEach((key, i) => {
+            const nv = (d.nutrients && d.nutrients[key] !== undefined) ? d.nutrients[key] : '0';
+            nutGrid.appendChild(makeField(nutrientNames[i], nv));
+          });
+          body.appendChild(nutGrid);
+        }
+
+        // Visual inspection
+        const visTitle = document.createElement('div');
+        visTitle.className = 'card-section-title'; visTitle.textContent = 'Visual Inspection';
+        body.appendChild(visTitle);
+        const visGrid = document.createElement('div'); visGrid.className = 'card-grid';
+        visGrid.appendChild(makeField('Notes', d.visual_inspection, true));
+        body.appendChild(visGrid);
+
+        // My Notes section (hidden unless notes-mode)
+        const notesRow = document.createElement('div');
+        notesRow.className = 'card-notes-row';
+
+        const makeMyField = (label, field, full) => {
+          const wrap = document.createElement('div');
+          wrap.className = 'card-field' + (full ? ' full' : '');
+          wrap.innerHTML = `<div class="cf-label">${label}</div>`;
+          const span = document.createElement('span');
+          span.className = 'cf-my';
+          span.contentEditable = 'true';
+          span.textContent = d[field] || '';
+          span.addEventListener('blur', async () => {
+            const growId = localStorage.getItem('currentGrowId');
+            const { IndexedDBService } = await import('./assets/js/indexedDBService.js');
+            const schedule = await IndexedDBService.loadSchedule(growId);
+            if (schedule[idx]) { schedule[idx][field] = span.textContent.trim(); await IndexedDBService.saveSchedule(growId, schedule); }
+          });
+          wrap.appendChild(span);
+          return wrap;
+        };
+
+        // Environment section
+        const myEnvTitle = document.createElement('div');
+        myEnvTitle.className = 'card-section-title'; myEnvTitle.textContent = 'My Environment';
+        notesRow.appendChild(myEnvTitle);
+        const myEnvGrid = document.createElement('div'); myEnvGrid.className = 'card-grid';
+        myEnvGrid.appendChild(makeMyField('My pH', 'actual_ph'));
+        myEnvGrid.appendChild(makeMyField('My Day Temp', 'actual_dt_temp'));
+        myEnvGrid.appendChild(makeMyField('My Night Temp', 'actual_nt_temp'));
+        myEnvGrid.appendChild(makeMyField('My Humidity', 'actual_humidity'));
+        notesRow.appendChild(myEnvGrid);
+
+        // Light & Air section
+        const myLightTitle = document.createElement('div');
+        myLightTitle.className = 'card-section-title'; myLightTitle.textContent = 'My Light & Air';
+        notesRow.appendChild(myLightTitle);
+        const myLightGrid = document.createElement('div'); myLightGrid.className = 'card-grid';
+        myLightGrid.appendChild(makeMyField('My Intensity', 'actual_light_intensity'));
+        myLightGrid.appendChild(makeMyField('My Distance', 'actual_light_distance'));
+        myLightGrid.appendChild(makeMyField('My Fan', 'actual_fan_position'));
+        notesRow.appendChild(myLightGrid);
+
+        // Nutrients section
+        if (nutrientKeys.length) {
+          const myNutTitle = document.createElement('div');
+          myNutTitle.className = 'card-section-title'; myNutTitle.textContent = 'My Nutrients';
+          notesRow.appendChild(myNutTitle);
+          const myNutGrid = document.createElement('div'); myNutGrid.className = 'card-grid';
+          nutrientKeys.forEach((key, i) => {
+            myNutGrid.appendChild(makeMyField('My ' + nutrientNames[i], 'actual_nutrient_' + key));
+          });
+          notesRow.appendChild(myNutGrid);
+        }
+
+        // Inspection notes
+        const myVisTitle = document.createElement('div');
+        myVisTitle.className = 'card-section-title'; myVisTitle.textContent = 'My Inspection Notes';
+        notesRow.appendChild(myVisTitle);
+        const myVisGrid = document.createElement('div'); myVisGrid.className = 'card-grid';
+        myVisGrid.appendChild(makeMyField('Notes', 'actual_inspection_notes', true));
+        notesRow.appendChild(myVisGrid);
+
+        body.appendChild(notesRow);
+
+        card.appendChild(body);
+        container.appendChild(card);
+      });
+    }
+
+    document.getElementById('viewSchedule').addEventListener('click', () => setLayout('cards'));
+    document.getElementById('viewTable').addEventListener('click', () => setLayout('table'));
+    document.getElementById('viewNotes').addEventListener('click', () => setLayout('notes'));
+
+    // After og-schedule-viewer renders the table, grab data + render cards if needed
+    document.addEventListener('tableRendered', () => {
+      // Extract data from the rendered table rows into _scheduleData
+      // og-schedule-viewer already loaded it into the table; we read it back via window.loadAndRenderTable
+      // Instead, hook into IDB directly
+      const growId = localStorage.getItem('currentGrowId');
+      const size = localStorage.getItem('plantSize_' + growId) || localStorage.getItem('plantSize') || 'large';
+      setActiveSize(size);
+
+      // Read nutrient headers from table
+      const ths = document.querySelectorAll('#table1 thead th');
+      _nutrientKeys = [];
+      _nutrientNames = [];
+      ths.forEach((th, i) => {
+        if (i >= 23 && i % 2 === 1) { /* skip — My nutrient cols */ }
+        else if (i >= 23 && i % 2 === 0) {
+          // even index >= 23 = nutrient col; derive key from display name
+          const name = th.textContent.trim();
+          _nutrientNames.push(name);
+          // key stored in og-schedule-viewer nutrientMap reverse — just store index for lookup
+        }
+      });
+
+      // Reload from IDB for card data (og-schedule-viewer already has it, expose via window)
+      import('./assets/js/indexedDBService.js').then(({ IndexedDBService }) => {
+        IndexedDBService.loadSchedule(growId).then(schedule => {
+          if (!Array.isArray(schedule)) return;
+          _scheduleData = schedule;
+          // Get nutrient keys from first row that has nutrients
+          const firstWithNutrients = schedule.find(r => r.nutrients && Object.keys(r.nutrients).length);
+          if (firstWithNutrients) {
+            _nutrientKeys = Object.keys(firstWithNutrients.nutrients);
+            // Build display names from table headers (already rendered)
+            const allThs = Array.from(document.querySelectorAll('#table1 thead th'));
+            _nutrientNames = _nutrientKeys.map((_, i) => {
+              const thIdx = 23 + i * 2;
+              return allThs[thIdx] ? allThs[thIdx].textContent.trim() : _nutrientKeys[i];
+            });
+          }
+          setLayout(currentLayout);
+          filterBySize(size);
+        });
+      });
+    });
+
+    // Plant size filter — works on both table rows and cards
+    function filterBySize(size) {
+      // Table
+      const table = document.getElementById('table1');
+      if (table) {
+        const maxVeg = size === 'small' ? 4 : size === 'medium' ? 6 : 99;
+        table.querySelectorAll('tbody tr').forEach(row => {
+          const cells = row.querySelectorAll('td');
+          if (cells.length < 4) return;
+          const stage = cells[2].textContent.trim().toLowerCase();
+          const week = parseInt((cells[3].textContent.match(/\d+/) || [])[0]) || 0;
+          row.style.display = (stage === 'vegetative' && week > maxVeg) ? 'none' : '';
+        });
+        if (size === 'auto') {
+          const days = parseInt(document.getElementById('seedToHarvest').value);
+          if (!isNaN(days) && days > 0)
+            Array.from(table.querySelectorAll('tbody tr')).filter(r => r.style.display !== 'none')
+              .forEach((r, i) => { if (i >= days) r.style.display = 'none'; });
+        }
+      }
+      // Cards — re-render with new size
+      if (_scheduleData) renderCards(_scheduleData, _nutrientKeys, _nutrientNames);
+    }
+
+    function setActiveSize(size) {
+      ['small','medium','large','auto'].forEach(s =>
+        document.getElementById(s+'PlantBtn').classList.toggle('active', s === size));
+      document.getElementById('autoOptions').style.display = size === 'auto' ? 'flex' : 'none';
+    }
+    ['small','medium','large','auto'].forEach(size => {
+      document.getElementById(size+'PlantBtn').addEventListener('click', () => {
+        localStorage.setItem('plantSize', size);
+        const growId = localStorage.getItem('currentGrowId');
+        if (growId) localStorage.setItem('plantSize_'+growId, size);
+        setActiveSize(size);
+        filterBySize(size);
+      });
+    });
+    document.getElementById('seedToHarvest').addEventListener('input', () => {
+      if (localStorage.getItem('plantSize') === 'auto') filterBySize('auto');
+    });
+
+    // Options dropdown toggle
+    const optsTrigger = document.getElementById('optsTrigger');
+    const optsPanel = document.getElementById('optsPanel');
+    optsTrigger.addEventListener('click', e => {
+      e.stopPropagation();
+      const open = optsPanel.classList.toggle('open');
+      optsTrigger.classList.toggle('open', open);
+    });
+    document.addEventListener('click', () => {
+      optsPanel.classList.remove('open');
+      optsTrigger.classList.remove('open');
+    });
+    optsPanel.addEventListener('click', e => e.stopPropagation());
+  </script>
+
+</body>
+</html>

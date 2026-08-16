@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X0XEMR28V2');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Yielding Strains 2026 - Bar Chart</title>
+
+  <style>
+    .chart-container {
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 25px;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+    }
+  </style>
+</head>
+<body style="background-color: #1a1a1a; font-family: Poppins, sans-serif;">
+  <div class="chart-container">
+    <canvas id="topYieldChart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <script>
+    const ctx = document.getElementById('topYieldChart').getContext('2d');
+    
+    const topYieldChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Barney’s Farm Pineapple Chunk',
+          'Dutch Passion Heavy Hitters',
+          'Fast Buds Autos (Gorilla Lines)',
+          'Average Strain (Comparison)'
+        ],
+        datasets: [{
+          label: 'Estimated Indoor Yield (g/m²)',
+          data: [650, 620, 580, 450],
+          backgroundColor: ['#04AA6D', '#04AA6D', '#04AA6D', '#6c757d'],
+          borderColor: ['#04AA6D', '#04AA6D', '#04AA6D', '#6c757d'],
+          borderWidth: 2,
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        indexAxis: 'y', // Horizontal bars for long strain names
+        plugins: {
+          title: {
+            display: true,
+            text: 'Top Yielding Strains for 2026',
+            color: '#ffffff',
+            font: {
+              family: 'Poppins',
+              size: 20,
+              weight: '700'
+            },
+            padding: {
+              top: 10,
+              bottom: 25
+            }
+          },
+          legend: {
+            display: false
+          },
+          tooltip: {
+            backgroundColor: '#222',
+            titleFont: { family: 'Poppins', size: 14 },
+            bodyFont: { family: 'Poppins', size: 13 },
+            callbacks: {
+              label: function(context) {
+                return `${context.raw} g/m²`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            max: 700,
+            title: {
+              display: true,
+              text: 'Estimated Yield (grams per m²)',
+              color: '#ffffff',
+              font: {
+                family: 'Poppins',
+                size: 14
+              }
+            },
+            ticks: {
+              color: '#ffffff',
+              font: { family: 'Poppins', size: 12 },
+              stepSize: 50
+            },
+            grid: {
+              color: '#333'
+            }
+          },
+          y: {
+            title: {
+              display: false
+            },
+            ticks: {
+              color: '#ffffff',
+              font: { family: 'Poppins', size: 13 },
+              padding: 10
+            },
+            grid: {
+              display: false
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

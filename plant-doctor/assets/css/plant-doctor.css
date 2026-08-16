@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+# Plant Doctor Specific Styles
+--------------------------------------------------------------*/
+[id$="_head"],
+.Droopingplant,
+.Moldorpowder,
+.Bugsarevisible,
+.Twistedgrowth,
+.Webbing,
+.Budsdying,
+.Budslookodd,
+.Redstems,
+.Bronzeandbrownpatches,
+.Brownandslimyroots,
+.CorCleaves,
+.Brownoryellowleaftips,
+.Holesinleaves,
+.Pinkorpurpleonleaves,
+.Shinyorsmoothleaves,
+.Spotsormarkings,
+.Wiltingleaves,
+.Darkleaves,
+.Yellowingbetweenleafviens,
+.Yellowleaves {
+  display: none;
+}
+
+#newCol {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.listPrint {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Always scroll the disease table — never overflow the page */
+.results-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#table2 {
+  min-width: 600px;
+  white-space: nowrap;
+}
+
+#table2 td.solution {
+  white-space: normal;
+  min-width: 160px;
+}
+
+/* Cap the disease column panel on desktop so it doesn't stretch full viewport */
+@media (min-width: 992px) {
+  #hide-table {
+    max-width: 100%;
+    overflow: hidden;
+  }
+}

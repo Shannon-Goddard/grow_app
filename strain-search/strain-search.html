@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strain Search — 2,800+ Cannabis Strains | GrowApp</title>
+
+  <meta name="description" content="Search and filter 2,800+ cannabis strains by name, type, THC, CBD, and flowering time. Find your perfect strain on GrowApp Cannabis Guide.">
+  <link rel="canonical" href="https://growappcannabis.guide/strain-search/strain-search.html">
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X0XEMR28V2');</script>
+  <style>
+    :root {
+      --bg: #0a0c0e;
+      --surface: #13181d;
+      --surface-2: #1c2329;
+      --border: #2a333d;
+      --text: #e8eaed;
+      --muted: #8b949e;
+      --green: #04AA6D;
+      --green-dim: #038a57;
+      --green-bg: rgba(4,170,109,0.10);
+      --radius: 14px;
+      --radius-sm: 8px;
+      --indica: #7c3aed;
+      --indica-bg: rgba(124,58,237,0.12);
+      --sativa: #d97706;
+      --sativa-bg: rgba(217,119,6,0.12);
+      --hybrid: #0ea5e9;
+      --hybrid-bg: rgba(14,165,233,0.12);
+    }
+    *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(10,12,14,0.95); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 1.5rem; height: 60px;
+    }
+    .nav-logo { font-size: 1.1rem; font-weight: 800; color: #fff; display: flex; align-items: center; gap: .4rem; }
+    .nav-logo i { color: var(--green); }
+    header a.back { color: var(--muted); font-size: .875rem; display: flex; align-items: center; gap: .4rem; transition: color .15s; }
+    header a.back:hover { color: var(--green); }
+
+    /* ── HERO ── */
+    .page-hero {
+      background: linear-gradient(180deg, rgba(4,170,109,0.06) 0%, transparent 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
+    }
+    .page-hero h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; margin-bottom: .5rem; }
+    .page-hero h1 em { color: var(--green); font-style: normal; }
+    .page-hero p { color: var(--muted); font-size: .95rem; max-width: 480px; margin: 0 auto; }
+
+    /* ── SEARCH BAR ── */
+    .search-wrap {
+      max-width: 680px; margin: 2rem auto 0;
+      position: relative;
+    }
+    .search-wrap i {
+      position: absolute; left: 1rem; top: 50%; transform: translateY(-50%);
+      color: var(--muted); font-size: 1rem; pointer-events: none;
+    }
+    #searchInput {
+      width: 100%; padding: .85rem 1rem .85rem 2.75rem;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); color: var(--text); font-size: 1rem;
+      outline: none; transition: border-color .2s;
+    }
+    #searchInput::placeholder { color: var(--muted); }
+    #searchInput:focus { border-color: var(--green); }
+    #clearSearch {
+      position: absolute; right: .75rem; top: 50%; transform: translateY(-50%);
+      background: none; border: none; color: var(--muted); cursor: pointer;
+      font-size: .9rem; padding: .25rem; display: none;
+      transition: color .15s;
+    }
+    #clearSearch:hover { color: var(--text); }
+    #clearSearch.visible { display: block; }
+
+    /* ── FILTER BAR ── */
+    .filter-bar {
+      max-width: 1280px; margin: 1.5rem auto 0;
+      padding: 0 1.5rem;
+      display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;
+    }
+
+    /* Type pills */
+    .type-pills { display: flex; gap: .4rem; flex-wrap: wrap; }
+    .pill {
+      padding: .4rem .9rem; border-radius: 20px; font-size: .8rem; font-weight: 700;
+      border: 1px solid var(--border); background: var(--surface);
+      color: var(--muted); cursor: pointer; transition: all .15s; white-space: nowrap;
+    }
+    .pill:hover { border-color: var(--green); color: var(--text); }
+    .pill.active-all { background: var(--green-bg); border-color: var(--green); color: var(--green); }
+    .pill.active-indica { background: var(--indica-bg); border-color: var(--indica); color: var(--indica); }
+    .pill.active-sativa { background: var(--sativa-bg); border-color: var(--sativa); color: var(--sativa); }
+    .pill.active-hybrid { background: var(--hybrid-bg); border-color: var(--hybrid); color: var(--hybrid); }
+
+    /* THC slider group */
+    .slider-group { display: flex; align-items: center; gap: .6rem; flex-shrink: 0; }
+    .slider-label { font-size: .78rem; color: var(--muted); white-space: nowrap; }
+    .slider-val { font-size: .78rem; font-weight: 700; color: var(--green); min-width: 52px; }
+    input[type=range] {
+      -webkit-appearance: none; appearance: none;
+      width: 120px; height: 4px;
+      background: var(--border); border-radius: 2px; outline: none; cursor: pointer;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none; appearance: none;
+      width: 16px; height: 16px; border-radius: 50%;
+      background: var(--green); cursor: pointer;
+      border: 2px solid var(--bg);
+    }
+    input[type=range]::-moz-range-thumb {
+      width: 16px; height: 16px; border-radius: 50%;
+      background: var(--green); cursor: pointer; border: 2px solid var(--bg);
+    }
+
+    /* CBD toggle */
+    .toggle-wrap { display: flex; align-items: center; gap: .5rem; cursor: pointer; }
+    .toggle-wrap span { font-size: .78rem; color: var(--muted); white-space: nowrap; }
+    .toggle {
+      width: 36px; height: 20px; background: var(--border); border-radius: 10px;
+      position: relative; transition: background .2s; flex-shrink: 0;
+    }
+    .toggle::after {
+      content: ''; position: absolute; top: 2px; left: 2px;
+      width: 16px; height: 16px; border-radius: 50%;
+      background: #fff; transition: transform .2s;
+    }
+    .toggle.on { background: var(--green); }
+    .toggle.on::after { transform: translateX(16px); }
+
+    /* Sort select */
+    .sort-wrap { margin-left: auto; }
+    #sortSelect {
+      background: var(--surface); border: 1px solid var(--border);
+      color: var(--text); font-size: .8rem; padding: .4rem .75rem;
+      border-radius: var(--radius-sm); outline: none; cursor: pointer;
+    }
+    #sortSelect:focus { border-color: var(--green); }
+
+    /* ── RESULTS META ── */
+    .results-meta {
+      max-width: 1280px; margin: 1.25rem auto .5rem;
+      padding: 0 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .results-count { font-size: .82rem; color: var(--muted); }
+    .results-count strong { color: var(--green); }
+
+    /* ── GRID ── */
+    .strain-grid {
+      max-width: 1280px; margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    /* ── CARD ── */
+    .strain-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+      transition: border-color .2s, transform .2s;
+      cursor: pointer; display: flex; flex-direction: column;
+    }
+    .strain-card:hover { border-color: var(--green); transform: translateY(-3px); }
+
+    .card-img {
+      width: 100%; aspect-ratio: 4/3; object-fit: cover;
+      background: var(--surface-2); display: block;
+    }
+    .card-img-placeholder {
+      width: 100%; aspect-ratio: 4/3;
+      background: var(--surface-2);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--border); font-size: 2.5rem;
+    }
+
+    .card-body { padding: .85rem; flex: 1; display: flex; flex-direction: column; gap: .5rem; }
+
+    .card-name { font-size: .92rem; font-weight: 700; line-height: 1.3; }
+
+    .card-type {
+      display: inline-block; font-size: .68rem; font-weight: 700;
+      padding: .18rem .5rem; border-radius: 4px; border: 1px solid;
+      width: fit-content;
+    }
+    .type-indica { background: var(--indica-bg); color: var(--indica); border-color: var(--indica); }
+    .type-sativa { background: var(--sativa-bg); color: var(--sativa); border-color: var(--sativa); }
+    .type-hybrid { background: var(--hybrid-bg); color: var(--hybrid); border-color: var(--hybrid); }
+    .type-unknown { background: var(--surface-2); color: var(--muted); border-color: var(--border); }
+
+    .card-stats {
+      display: flex; gap: .75rem; margin-top: auto;
+    }
+    .stat-item { text-align: center; }
+    .stat-val { font-size: .85rem; font-weight: 800; color: var(--green); }
+    .stat-lbl { font-size: .62rem; color: var(--muted); margin-top: .05rem; }
+
+    /* ── EMPTY STATE ── */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center; padding: 5rem 1rem;
+      color: var(--muted);
+    }
+    .empty-state i { font-size: 3rem; color: var(--border); margin-bottom: 1rem; display: block; }
+    .empty-state h3 { font-size: 1.1rem; color: var(--text); margin-bottom: .5rem; }
+    .empty-state p { font-size: .875rem; }
+
+    /* ── LOAD MORE ── */
+    .load-more-wrap { text-align: center; padding: 0 1.5rem 4rem; }
+    #loadMoreBtn {
+      background: var(--surface); border: 1px solid var(--border);
+      color: var(--text); font-size: .9rem; font-weight: 600;
+      padding: .75rem 2rem; border-radius: var(--radius-sm);
+      cursor: pointer; transition: border-color .2s, color .2s;
+    }
+    #loadMoreBtn:hover { border-color: var(--green); color: var(--green); }
+    #loadMoreBtn:disabled { opacity: .35; cursor: default; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem; text-align: center;
+      font-size: .8rem; color: var(--muted);
+    }
+    footer a { color: var(--green); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 700px) {
+      .filter-bar { gap: .75rem; }
+      .sort-wrap { margin-left: 0; width: 100%; }
+      #sortSelect { width: 100%; }
+      .strain-grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: .75rem; }
+    }
+    @media (max-width: 420px) {
+      .strain-grid { grid-template-columns: repeat(2, 1fr); }
+      .page-hero { padding: 2rem 1rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="../index.html" class="back"><i class="fa-solid fa-arrow-left"></i> Home</a>
+    <a href="../index.html" class="nav-logo">GrowApp <i class="fa-solid fa-leaf"></i></a>
+    <div style="width:60px;"></div>
+  </header>
+
+  <div id="bottom-nav-placeholder" data-depth="1"></div>
+
+  <!-- HERO -->
+  <div class="page-hero">
+    <h1>Find Your <em>Perfect Strain</em></h1>
+    <p>Search and filter 2,800+ strains by name, type, THC, CBD, and flowering time.</p>
+    <div class="search-wrap">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="search" id="searchInput" placeholder="Search strains — Blue Dream, OG Kush, Gelato…" autocomplete="off" spellcheck="false">
+      <button id="clearSearch" aria-label="Clear search"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="type-pills">
+      <button class="pill active-all" data-type="all">All</button>
+      <button class="pill" data-type="indica"><i class="fa-solid fa-moon" style="font-size:.7rem;margin-right:.25rem;"></i>Indica</button>
+      <button class="pill" data-type="hybrid"><i class="fa-solid fa-circle-half-stroke" style="font-size:.7rem;margin-right:.25rem;"></i>Hybrid</button>
+      <button class="pill" data-type="sativa"><i class="fa-solid fa-sun" style="font-size:.7rem;margin-right:.25rem;"></i>Sativa</button>
+    </div>
+
+    <div class="slider-group">
+      <span class="slider-label">THC ≥</span>
+      <input type="range" id="thcSlider" min="0" max="40" value="0" step="1">
+      <span class="slider-val" id="thcVal">0%</span>
+    </div>
+
+    <label class="toggle-wrap" id="cbdToggleWrap">
+      <div class="toggle" id="cbdToggle"></div>
+      <span>High CBD (&gt;5%)</span>
+    </label>
+
+    <div class="sort-wrap">
+      <select id="sortSelect">
+        <option value="az">A → Z</option>
+        <option value="za">Z → A</option>
+        <option value="thc-desc">THC: High → Low</option>
+        <option value="thc-asc">THC: Low → High</option>
+        <option value="flower-asc">Flower: Fast → Slow</option>
+        <option value="flower-desc">Flower: Slow → Fast</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- RESULTS META -->
+  <div class="results-meta">
+    <div class="results-count" id="resultsCount"></div>
+  </div>
+
+  <!-- GRID -->
+  <div class="strain-grid" id="strainGrid"></div>
+
+  <!-- LOAD MORE -->
+  <div class="load-more-wrap" id="loadMoreWrap" style="display:none;">
+    <button id="loadMoreBtn">Load More Strains</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p style="margin-bottom:.5rem;">
+      <a href="../assets/policies/PrivacyPolicy.html">Privacy</a> ·
+      <a href="../assets/policies/TermsOfUse.html">Terms</a> ·
+      <a href="../assets/policies/disclosure.html">Disclosure</a> ·
+      <a href="../assets/policies/contact-us.html">Contact</a>
+    </p>
+    <p>© 2025 <a href="https://loyal9.com">Loyal9 LLC</a> · Built for home growers.</p>
+  </footer>
+
+  <script src="../assets/js/bottom-nav.js"></script>
+  <script src="../medium-feeding/assets/js/data.js"></script>
+  <script>
+  (function () {
+    'use strict';
+
+    /* ── CONFIG ── */
+    const PAGE_SIZE = 60;
+
+    /* ── STATE ── */
+    let filtered = [];
+    let displayed = 0;
+    let cbdOn = false;
+
+    /* ── SLUGIFY (matches generate_strains.py) ── */
+    function slugify(s) {
+      return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    }
+
+    /* ── TYPE DETECTION ── */
+    function getType(s) {
+      if (s.Indica && s.Indica.trim()) return 'indica';
+      if (s.Sativa && s.Sativa.trim()) return 'sativa';
+      if (s.Hybrid && s.Hybrid.trim()) return 'hybrid';
+      return 'unknown';
+    }
+
+    function typeLabel(s) {
+      const t = getType(s);
+      if (t === 'indica') return s.Indica.trim();
+      if (t === 'sativa') return s.Sativa.trim();
+      if (t === 'hybrid') return s.Hybrid.trim();
+      return 'Unknown';
+    }
+
+    /* ── SAFE NUMERIC ── */
+    function num(v) { const n = parseFloat(v); return isNaN(n) ? 0 : n; }
+
+    /* ── CARD HTML ── */
+    function cardHTML(s) {
+      const type = getType(s);
+      const slug = slugify(s.strain);
+      const imgSrc = '../medium-feeding/' + s.logo;
+      const thc = num(s.THC);
+      const cbd = num(s.CBD);
+      const grow = num(s.Grow);
+      const label = typeLabel(s);
+
+      return `<a href="strains/${slug}.html" class="strain-card" title="${s.strain}">
+        <img class="card-img" src="${imgSrc}" alt="${s.strain} cannabis strain"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" loading="lazy">
+        <div class="card-img-placeholder" style="display:none;"><i class="fa-solid fa-cannabis"></i></div>
+        <div class="card-body">
+          <div class="card-name">${s.strain}</div>
+          <span class="card-type type-${type}">${label || type.charAt(0).toUpperCase()+type.slice(1)}</span>
+          <div class="card-stats">
+            <div class="stat-item"><div class="stat-val">${thc > 0 ? thc+'%' : '—'}</div><div class="stat-lbl">THC</div></div>
+            <div class="stat-item"><div class="stat-val">${cbd > 0 ? cbd+'%' : '—'}</div><div class="stat-lbl">CBD</div></div>
+            <div class="stat-item"><div class="stat-val">${grow > 0 ? grow+'wk' : '—'}</div><div class="stat-lbl">Flower</div></div>
+          </div>
+        </div>
+      </a>`;
+    }
+
+    /* ── RENDER ── */
+    function render(reset) {
+      const grid = document.getElementById('strainGrid');
+      if (reset) {
+        grid.innerHTML = '';
+        displayed = 0;
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="empty-state">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h3>No strains found</h3>
+          <p>Try adjusting your search or filters.</p>
+        </div>`;
+        document.getElementById('loadMoreWrap').style.display = 'none';
+        return;
+      }
+
+      const slice = filtered.slice(displayed, displayed + PAGE_SIZE);
+      grid.insertAdjacentHTML('beforeend', slice.map(cardHTML).join(''));
+      displayed += slice.length;
+
+      const wrap = document.getElementById('loadMoreWrap');
+      const btn = document.getElementById('loadMoreBtn');
+      if (displayed < filtered.length) {
+        wrap.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = `Load More Strains (${filtered.length - displayed} remaining)`;
+      } else {
+        wrap.style.display = 'none';
+      }
+    }
+
+    /* ── FILTER + SORT ── */
+    function applyFilters() {
+      const q = document.getElementById('searchInput').value.trim().toLowerCase();
+      const type = document.querySelector('.pill[data-type].active-all, .pill[data-type].active-indica, .pill[data-type].active-sativa, .pill[data-type].active-hybrid');
+      const activeType = type ? type.getAttribute('data-type') : 'all';
+      const thcMin = parseInt(document.getElementById('thcSlider').value, 10);
+      const sort = document.getElementById('sortSelect').value;
+
+      filtered = data.filter(s => {
+        if (q && !s.strain.toLowerCase().includes(q)) return false;
+        if (activeType !== 'all' && getType(s) !== activeType) return false;
+        if (num(s.THC) < thcMin) return false;
+        if (cbdOn && num(s.CBD) <= 5) return false;
+        return true;
+      });
+
+      filtered.sort((a, b) => {
+        if (sort === 'az') return a.strain.localeCompare(b.strain);
+        if (sort === 'za') return b.strain.localeCompare(a.strain);
+        if (sort === 'thc-desc') return num(b.THC) - num(a.THC);
+        if (sort === 'thc-asc') return num(a.THC) - num(b.THC);
+        if (sort === 'flower-asc') return num(a.Grow) - num(b.Grow);
+        if (sort === 'flower-desc') return num(b.Grow) - num(a.Grow);
+        return 0;
+      });
+
+      const count = document.getElementById('resultsCount');
+      count.innerHTML = `Showing <strong>${filtered.length.toLocaleString()}</strong> of <strong>${data.length.toLocaleString()}</strong> strains`;
+
+      render(true);
+    }
+
+    /* ── DEBOUNCE ── */
+    function debounce(fn, ms) {
+      let t; return function(...args) { clearTimeout(t); t = setTimeout(() => fn(...args), ms); };
+    }
+
+    /* ── INIT ── */
+    document.addEventListener('DOMContentLoaded', function () {
+
+      /* Search */
+      const searchInput = document.getElementById('searchInput');
+      const clearBtn = document.getElementById('clearSearch');
+      searchInput.addEventListener('input', debounce(function () {
+        clearBtn.classList.toggle('visible', searchInput.value.length > 0);
+        applyFilters();
+      }, 220));
+      clearBtn.addEventListener('click', function () {
+        searchInput.value = '';
+        clearBtn.classList.remove('visible');
+        applyFilters();
+        searchInput.focus();
+      });
+
+      /* Type pills */
+      document.querySelectorAll('.pill[data-type]').forEach(function (pill) {
+        pill.addEventListener('click', function () {
+          document.querySelectorAll('.pill[data-type]').forEach(p => {
+            p.className = 'pill';
+          });
+          const t = pill.getAttribute('data-type');
+          pill.classList.add('active-' + t);
+          applyFilters();
+        });
+      });
+
+      /* THC slider */
+      const thcSlider = document.getElementById('thcSlider');
+      const thcVal = document.getElementById('thcVal');
+      thcSlider.addEventListener('input', function () {
+        thcVal.textContent = thcSlider.value + '%';
+        applyFilters();
+      });
+
+      /* CBD toggle */
+      document.getElementById('cbdToggleWrap').addEventListener('click', function () {
+        cbdOn = !cbdOn;
+        document.getElementById('cbdToggle').classList.toggle('on', cbdOn);
+        applyFilters();
+      });
+
+      /* Sort */
+      document.getElementById('sortSelect').addEventListener('change', applyFilters);
+
+      /* Load more */
+      document.getElementById('loadMoreBtn').addEventListener('click', function () {
+        render(false);
+      });
+
+      /* Initial render */
+      applyFilters();
+    });
+
+  })();
+  </script>
+
+<script src="../assets/js/age-gate.js"></script>
+</body>
+</html>

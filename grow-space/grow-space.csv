@@ -1,0 +1,10 @@
+﻿img,brand,item,size_l_in,size_w_in,size_h_in,price,last_verified,amazon_affiliate_link,frame_material,inner_material,outer_material_oxford,inline_duct_fan_cfm,light_source_w,clip_fan_in,controller
+grow-space\img\vivosun-3x3-tent-kit.jpg,Vivosun,tent_kit,36,36,72,579.99,8/11/2026,https://amzn.to/4zhz7g0,alloy_steel,mylar,2000,210,200,6,remote
+grow-space\img\vivosun-4x4-tent-kit.jpg,Vivosun,tent_kit,48,48,80,819.99,8/11/2026,https://amzn.to/4gaKOMI,alloy_steel,mylar,2000,388,200|200,6,remote
+grow-space\img\ac-infinity-2x2-tent-kit.jpg,AC Infinity,tent_kit,24,24,72,499,8/11/2026,https://amzn.to/4bKhECI,alloy_steel,mylar,2000,165,100,6,app
+grow-space\img\ac-infinity-3x3-tent-kit.jpg,AC Infinity,tent_kit,36,36,72,699,8/11/2026,https://amzn.to/4cf34Di,alloy_steel,mylar,2000,352,240,6,app
+grow-space\img\ac-infinity-4x4-tent-kit.jpg,AC Infinity,tent_kit,48,48,80,999,8/11/2026,https://amzn.to/4wY9WgS,alloy_steel,mylar,2000,352,400,6|6,app
+grow-space\img\ac-infinity-5x5-pro-tent-kit.jpg,AC Infinity,tent_kit,60,60,80,1599,8/11/2026,https://amzn.to/4wTy43Y,alloy_steel,mylar,2000,402,730,6|6,app
+grow-space\img\mars-hydro-2x2-tent-kit.jpg,Mars Hydro,tent_kit,24,24,55,299.99,8/11/2026,https://amzn.to/3TPorF3,metal,mylar-like,1680,205,100,6,
+grow-space\img\mars-hydro-3x3-tent-kit.jpg,Mars Hydro,tent_kit,32,32,63,399.99,8/11/2026,https://amzn.to/4wiV1MZ,metal,mylar-like,1680,205,150,6,remote
+grow-space\img\mars-hydro-4x4-tent-kit.jpg,Mars Hydro,tent_kit,48,48,80,799.99,8/11/2026,https://amzn.to/4wsaR8e,metal,mylar-like,1680,402,480,6,remote

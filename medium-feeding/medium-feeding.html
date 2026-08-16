@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medium & Feeding — GrowApp Cannabis Guide</title>
+
+  <meta name="description" content="Stop guessing what to feed your plants. Build your personalized daily nutrient schedule in minutes.">
+  <link rel="canonical" href="https://growappcannabis.guide/medium-feeding/medium-feeding.html">
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/strain-search.css">
+  <link rel="stylesheet" href="assets/css/nutrient-selector.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { brand: '#04AA6D', brandDark: '#038a57' } } }
+    }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0XEMR28V2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X0XEMR28V2');
+  </script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0c0e; color: #e8eaed; }
+    .step { display: none; }
+    .step.active { display: block; }
+    .form-input { width: 100%; background: #13181d; border: 1px solid #2a333d; border-radius: 0.5rem; padding: 0.5rem 0.75rem; font-size: 0.875rem; color: #fff; }
+    .form-input:focus { outline: none; border-color: #04AA6D; }
+    /* strain search overrides for dark theme */
+    #strainListContainer { background: #13181d; border: 1px solid #2a333d; border-radius: 0.5rem; max-height: 260px; overflow-y: auto; position: absolute; z-index: 50; width: 100%; }
+    #strainList li { display: flex; align-items: center; gap: 10px; padding: 8px 12px; cursor: pointer; color: #e8eaed; font-size: 0.875rem; }
+    #strainList li:hover, #strainList li.selected { background: #1c2a22; }
+    #strainList li img { width: 36px; height: 36px; border-radius: 6px; object-fit: cover; }
+    #strainList .highlight { color: #04AA6D; font-weight: 700; }
+    .strain-detail-card { background: #13181d; border: 1px solid #2a333d; border-radius: 1rem; padding: 1.25rem; margin-top: 1rem; display: none; }
+    .strain-detail-card.visible { display: flex; gap: 1rem; align-items: flex-start; }
+    .pill-btn { font-size: 0.75rem; font-weight: 600; padding: 0.375rem 0.75rem; border-radius: 0.5rem; border: 1px solid #3f4f5e; background: #1c2329; color: #e8eaed; cursor: pointer; transition: all 0.15s; }
+    .pill-btn.active, .pill-btn:hover { background: #04AA6D; color: #000; border-color: #04AA6D; }
+    /* nutrient checkboxes dark theme */
+    .icon-box { background: #13181d; border: 1px solid #2a333d; border-radius: 0.75rem; padding: 1rem; }
+    .icon-box h3 { color: #04AA6D; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .icon-box img { width: 100%; border-radius: 0.5rem; margin-bottom: 0.5rem; max-height: 80px; object-fit: contain; }
+    .listPrint { list-style: none; padding: 3px 0; color: #c9d1d9; font-size: 0.8rem; display: flex; align-items: center; gap: 8px; }
+    .listPrint input[type="checkbox"] { accent-color: #04AA6D; width: 14px; height: 14px; flex-shrink: 0; }
+    #nutrientGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+    /* step indicator */
+    .step-dot { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; border: 2px solid #2a333d; background: #13181d; color: #8b949e; transition: all 0.2s; }
+    .step-dot.done { background: #04AA6D; border-color: #04AA6D; color: #000; }
+    .step-dot.active { border-color: #04AA6D; color: #04AA6D; }
+    .step-line { flex: 1; height: 2px; background: #2a333d; }
+    .step-line.done { background: #04AA6D; }
+    /* toast */
+    #toast { position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%); background: #1c2329; border: 1px solid #2a333d; color: #e8eaed; padding: 0.6rem 1.2rem; border-radius: 0.75rem; font-size: 0.85rem; z-index: 9999; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+    #toast.show { opacity: 1; }
+    /* add strain modal */
+    #addStrainModal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 1000; align-items: center; justify-content: center; }
+    #addStrainModal.open { display: flex; }
+    .modal-box { background: #13181d; border: 1px solid #2a333d; border-radius: 1rem; padding: 1.5rem; width: 90%; max-width: 440px; }
+    .modal-box h2 { font-size: 1rem; font-weight: 700; margin-bottom: 1rem; }
+    .modal-input { width: 100%; background: #0a0c0e; border: 1px solid #2a333d; border-radius: 0.5rem; padding: 0.45rem 0.7rem; font-size: 0.85rem; color: #e8eaed; margin-top: 0.25rem; }
+    .modal-input:focus { outline: none; border-color: #04AA6D; }
+    .modal-label { font-size: 0.78rem; color: #8b949e; display: block; margin-top: 0.75rem; }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- TOAST -->
+  <div id="toast"></div>
+  <script>
+    window.showToast = function(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3000);
+    };
+  </script>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 backdrop-blur border-b border-zinc-800 flex items-center justify-between px-5 py-4" style="background:#0a0c0ecc;">
+    <a href="../index.html" class="flex items-center gap-2 text-zinc-400 hover:text-brand text-sm transition-colors">
+      <i class="fa-solid fa-arrow-left"></i> Back
+    </a>
+    <div class="font-bold text-base tracking-tight">Build Your Schedule</div>
+    <div class="w-16"></div>
+  </header>
+
+  <!-- HAMBURGER -->
+  <div id="bottom-nav-placeholder" data-depth="1"></div>
+
+  <main class="max-w-3xl mx-auto px-5 pb-24">
+
+    <!-- STEP INDICATOR -->
+    <div class="flex items-center gap-2 pt-8 pb-6 max-w-xs mx-auto">
+      <div class="step-dot active" id="dot-1">1</div>
+      <div class="step-line" id="line-1"></div>
+      <div class="step-dot" id="dot-2">2</div>
+      <div class="step-line" id="line-2"></div>
+      <div class="step-dot" id="dot-3">3</div>
+    </div>
+
+    <!-- ── STEP 1: STRAIN ── -->
+    <section id="step-1" class="step active">
+      <div class="mb-5">
+        <div class="inline-flex items-center gap-2 bg-brand/10 border border-brand/30 text-brand text-xs font-semibold px-3 py-1 rounded-full mb-3">
+          <i class="fa-solid fa-seedling"></i> Step 1 of 3
+        </div>
+        <h1 class="text-2xl font-extrabold mb-1">Select Your Strain</h1>
+        <p class="text-zinc-400 text-sm">Search 2,800+ strains or add a custom one.</p>
+      </div>
+
+      <!-- Grow Name -->
+      <div class="mb-4">
+        <label class="block text-xs text-zinc-400 mb-1">Name Your Grow</label>
+        <input type="text" id="growName" placeholder="e.g. Red Dragon Grow 1" class="form-input">
+      </div>
+
+      <!-- Strain Search -->
+      <div class="mb-4 relative">
+        <label class="block text-xs text-zinc-400 mb-1">Search Strains</label>
+        <input type="text" id="myInput" placeholder="Search for strains..." autocomplete="off" class="form-input">
+        <div id="strainListContainer" style="display:none;">
+          <ul id="strainList"></ul>
+        </div>
+      </div>
+
+      <!-- Not listed button -->
+      <button id="addStrainBtn" style="display:none;" class="text-xs text-brand underline mb-4">
+        Strain not listed? Add a custom strain
+      </button>
+
+      <!-- Strain detail card -->
+      <div class="strain-detail-card" id="strainCard">
+        <img id="image" src="" alt="" style="width:72px;height:72px;border-radius:8px;object-fit:cover;flex-shrink:0;">
+        <div>
+          <div class="font-bold text-base" id="strain"></div>
+          <div class="text-xs text-zinc-400 mt-0.5" id="Grow"></div>
+          <div class="text-xs text-zinc-400" id="weeks"></div>
+          <div class="flex gap-3 mt-1 text-xs text-brand font-semibold">
+            <span id="THC"></span><span id="CBD"></span>
+          </div>
+          <div class="text-xs text-zinc-500 mt-0.5">
+            <span id="Sativa"></span><span id="Indica"></span><span id="Hybrid"></span>
+          </div>
+          <div class="text-xs text-zinc-400 mt-1" id="info"></div>
+          <div class="text-xs text-zinc-500 mt-0.5" id="more"></div>
+        </div>
+      </div>
+
+      <!-- Select Strain CTA -->
+      <button id="taskButton" style="display:none;"
+        class="mt-5 w-full bg-brand hover:bg-brandDark text-black font-bold text-sm py-3 rounded-xl transition-colors">
+        <i class="fa-solid fa-arrow-right mr-2"></i> Select This Strain
+      </button>
+    </section>
+
+    <!-- ADD STRAIN MODAL -->
+    <div id="addStrainModal">
+      <div class="modal-box">
+        <div class="flex justify-between items-center mb-4">
+          <h2>Add Custom Strain</h2>
+          <button class="close text-zinc-400 hover:text-white text-xl leading-none">&times;</button>
+        </div>
+        <form id="addStrainForm">
+          <label class="modal-label">Strain Name
+            <input type="text" id="customStrainName" class="modal-input" required>
+          </label>
+          <label class="modal-label">Strain Type</label>
+          <div class="flex gap-4 mt-1 text-sm text-zinc-300">
+            <label class="flex items-center gap-2"><input type="radio" name="strainType" value="pheno" checked> Photoperiod</label>
+            <label class="flex items-center gap-2"><input type="radio" name="strainType" value="auto"> Auto</label>
+          </div>
+          <div id="phenoFields">
+            <label class="modal-label">Flowering Time (weeks)
+              <input type="number" id="customGrowWeeks" class="modal-input" min="1" max="20" required>
+            </label>
+          </div>
+          <div id="autoFields" style="display:none;">
+            <label class="modal-label">Seed to Harvest (days)
+              <input type="number" id="customSeedToHarvest" class="modal-input" min="1" max="120">
+            </label>
+          </div>
+          <button type="submit" class="mt-4 w-full bg-brand hover:bg-brandDark text-black font-bold text-sm py-2.5 rounded-xl transition-colors">
+            Add Strain
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- ── STEP 2: NUTRIENTS ── -->
+    <section id="step-2" class="step">
+      <div class="mb-5">
+        <div class="inline-flex items-center gap-2 bg-brand/10 border border-brand/30 text-brand text-xs font-semibold px-3 py-1 rounded-full mb-3">
+          <i class="fa-solid fa-flask"></i> Step 2 of 3
+        </div>
+        <h1 class="text-2xl font-extrabold mb-1">Select Your Nutrients</h1>
+        <p class="text-zinc-400 text-sm">Check everything you're using. Mix and match brands.</p>
+      </div>
+
+      <!-- Dynamic custom nutrients injected here by nutrient-selector.js -->
+      <div id="nutrientList" class="mb-4"></div>
+
+      <!-- Predefined nutrient brands -->
+      <div id="nutrientGrid">
+
+        <!-- Advanced Nutrients -->
+        <div class="icon-box">
+          <img src="assets/nutrient-img/advanced-nutrients-quart.png" alt="Advanced Nutrients">
+          <h3>Advanced Nutrients</h3>
+          <ul>
+            <li class="listPrint"><input type="checkbox" id="voodoo-juice" value="voodoo-juice"><label for="voodoo-juice">Voodoo Juice®</label></li>
+            <li class="listPrint"><input type="checkbox" id="tarantula" value="tarantula"><label for="tarantula">Tarantula®</label></li>
+            <li class="listPrint"><input type="checkbox" id="piranha" value="piranha"><label for="piranha">Piranha®</label></li>
+            <li class="listPrint"><input type="checkbox" id="rhino-skin" value="rhino-skin"><label for="rhino-skin">Rhino Skin®</label></li>
+            <li class="listPrint"><input type="checkbox" id="b-52" value="b-52"><label for="b-52">B-52®</label></li>
+            <li class="listPrint"><input type="checkbox" id="sensizym" value="sensizym"><label for="sensizym">Sensizym</label></li>
+            <li class="listPrint"><input type="checkbox" id="bud-candy" value="bud-candy"><label for="bud-candy">Bud Candy®</label></li>
+            <li class="listPrint"><input type="checkbox" id="bud-factor-x" value="bud-factor-x"><label for="bud-factor-x">Bud Factor X®</label></li>
+            <li class="listPrint"><input type="checkbox" id="nirvana" value="nirvana"><label for="nirvana">Nirvana</label></li>
+            <li class="listPrint"><input type="checkbox" id="bud-ignitor" value="bud-ignitor"><label for="bud-ignitor">Bud Ignitor®</label></li>
+            <li class="listPrint"><input type="checkbox" id="big-bud" value="big-bud"><label for="big-bud">Big Bud®</label></li>
+            <li class="listPrint"><input type="checkbox" id="overdrive" value="overdrive"><label for="overdrive">Overdrive®</label></li>
+            <li class="listPrint"><input type="checkbox" id="flawless-finish" value="flawless-finish"><label for="flawless-finish">Flawless Finish®</label></li>
+            <li class="listPrint"><input type="checkbox" id="ph-perfect-grow" value="ph-perfect-grow"><label for="ph-perfect-grow">pH Perfect® Grow</label></li>
+            <li class="listPrint"><input type="checkbox" id="ph-perfect-micro" value="ph-perfect-micro"><label for="ph-perfect-micro">pH Perfect® Micro</label></li>
+            <li class="listPrint"><input type="checkbox" id="ph-perfect-bloom" value="ph-perfect-bloom"><label for="ph-perfect-bloom">pH Perfect® Bloom</label></li>
+          </ul>
+        </div>
+
+        <!-- General Hydroponics -->
+        <div class="icon-box">
+          <img src="assets/nutrient-img/floranova.png" alt="General Hydroponics">
+          <h3>General Hydroponics®</h3>
+          <ul>
+            <li class="listPrint"><input type="checkbox" id="floramicro" value="floramicro"><label for="floramicro">FloraMicro®</label></li>
+            <li class="listPrint"><input type="checkbox" id="floragro" value="floragro"><label for="floragro">FloraGro®</label></li>
+            <li class="listPrint"><input type="checkbox" id="florabloom" value="florabloom"><label for="florabloom">FloraBloom®</label></li>
+            <li class="listPrint"><input type="checkbox" id="floranova-grow" value="floranova-grow"><label for="floranova-grow">FloraNova Grow®</label></li>
+            <li class="listPrint"><input type="checkbox" id="floranova-bloom" value="floranova-bloom"><label for="floranova-bloom">FloraNova Bloom®</label></li>
+            <li class="listPrint"><input type="checkbox" id="calimagic" value="calimagic"><label for="calimagic">CALiMAGic™</label></li>
+            <li class="listPrint"><input type="checkbox" id="floralicious-plus" value="floralicious-plus"><label for="floralicious-plus">Floralicious® Plus</label></li>
+            <li class="listPrint"><input type="checkbox" id="liquid-koolbloom" value="liquid-koolbloom"><label for="liquid-koolbloom">Liquid KoolBloom®</label></li>
+            <li class="listPrint"><input type="checkbox" id="rapidstart" value="rapidstart"><label for="rapidstart">RapidStart®</label></li>
+            <li class="listPrint"><input type="checkbox" id="florakleen" value="florakleen"><label for="florakleen">Flora Kleen®</label></li>
+            <li class="listPrint"><input type="checkbox" id="armor-si" value="armor-si"><label for="armor-si">Armor Si™</label></li>
+            <li class="listPrint"><input type="checkbox" id="diamond-nectar" value="diamond-nectar"><label for="diamond-nectar">Diamond Nectar®</label></li>
+          </ul>
+        </div>
+
+        <!-- FoxFarm -->
+        <div class="icon-box">
+          <img src="assets/nutrient-img/foxfarms.png" alt="FoxFarm">
+          <h3>FoxFarm Dirty Dozen®</h3>
+          <ul>
+            <li class="listPrint"><input type="checkbox" id="open-sesame" value="open-sesame"><label for="open-sesame">Open Sesame®</label></li>
+            <li class="listPrint"><input type="checkbox" id="beastie-bloomz" value="beastie-bloomz"><label for="beastie-bloomz">Beastie Bloomz®</label></li>
+            <li class="listPrint"><input type="checkbox" id="cha-ching" value="cha-ching"><label for="cha-ching">Cha Ching®</label></li>
+            <li class="listPrint"><input type="checkbox" id="big-bloom" value="big-bloom"><label for="big-bloom">Big Bloom®</label></li>
+            <li class="listPrint"><input type="checkbox" id="boomerang" value="boomerang"><label for="boomerang">Boomerang®</label></li>
+            <li class="listPrint"><input type="checkbox" id="bembe" value="bembe"><label for="bembe">Bembé®</label></li>
+            <li class="listPrint"><input type="checkbox" id="grow-big" value="grow-big"><label for="grow-big">Grow Big®</label></li>
+            <li class="listPrint"><input type="checkbox" id="tiger-bloom" value="tiger-bloom"><label for="tiger-bloom">Tiger Bloom®</label></li>
+            <li class="listPrint"><input type="checkbox" id="kangaroots" value="kangaroots"><label for="kangaroots">Kangaroots®</label></li>
+            <li class="listPrint"><input type="checkbox" id="microbe-brew" value="microbe-brew"><label for="microbe-brew">Microbe Brew®</label></li>
+            <li class="listPrint"><input type="checkbox" id="wholly-mackerel" value="wholly-mackerel"><label for="wholly-mackerel">Wholly Mackerel®</label></li>
+            <li class="listPrint"><input type="checkbox" id="kelp-me-kelp-you" value="kelp-me-kelp-you"><label for="kelp-me-kelp-you">Kelp Me Kelp You®</label></li>
+          </ul>
+        </div>
+
+        <!-- BioBizz -->
+        <div class="icon-box">
+          <img src="assets/nutrient-img/biobizz.png" alt="BioBizz">
+          <h3>BioBizz™</h3>
+          <ul>
+            <li class="listPrint"><input type="checkbox" id="root-juice" value="root-juice"><label for="root-juice">Root·Juice™</label></li>
+            <li class="listPrint"><input type="checkbox" id="bio-grow" value="bio-grow"><label for="bio-grow">Bio·Grow™</label></li>
+            <li class="listPrint"><input type="checkbox" id="fish-mix" value="fish-mix"><label for="fish-mix">Fish·Mix™</label></li>
+            <li class="listPrint"><input type="checkbox" id="bio-bloom" value="bio-bloom"><label for="bio-bloom">Bio·Bloom™</label></li>
+            <li class="listPrint"><input type="checkbox" id="top-max" value="top-max"><label for="top-max">Top·Max™</label></li>
+            <li class="listPrint"><input type="checkbox" id="bio-heaven" value="bio-heaven"><label for="bio-heaven">Bio·Heaven™</label></li>
+            <li class="listPrint"><input type="checkbox" id="acti-vera" value="acti-vera"><label for="acti-vera">Acti·Vera™</label></li>
+            <li class="listPrint"><input type="checkbox" id="microbes" value="microbes"><label for="microbes">BioBizz Microbes</label></li>
+            <li class="listPrint"><input type="checkbox" id="calmag" value="calmag"><label for="calmag">BioBizz Calmag</label></li>
+          </ul>
+        </div>
+
+        <!-- CANNA -->
+        <div class="icon-box">
+          <img src="assets/nutrient-img/canna.png" alt="CANNA">
+          <h3>CANNA</h3>
+          <ul>
+            <li class="listPrint"><input type="checkbox" id="substra-vega" value="substra-vega"><label for="substra-vega">Substra Vega</label></li>
+            <li class="listPrint"><input type="checkbox" id="substra-flores" value="substra-flores"><label for="substra-flores">Substra Flores</label></li>
+            <li class="listPrint"><input type="checkbox" id="rhizotonic" value="rhizotonic"><label for="rhizotonic">RHIZOTONIC</label></li>
+            <li class="listPrint"><input type="checkbox" id="cannazym" value="cannazym"><label for="cannazym">CANNAZYM</label></li>
+            <li class="listPrint"><input type="checkbox" id="cannaboost" value="cannaboost"><label for="cannaboost">CANNABOOST</label></li>
+            <li class="listPrint"><input type="checkbox" id="pk-13-14" value="pk-13-14"><label for="pk-13-14">PK 13/14</label></li>
+            <li class="listPrint"><input type="checkbox" id="coco" value="coco"><label for="coco">CANNA Coco</label></li>
+            <li class="listPrint"><input type="checkbox" id="terra-flores" value="terra-flores"><label for="terra-flores">Terra Flores</label></li>
+          </ul>
+        </div>
+
+        <!-- House & Garden -->
+        <div class="icon-box">
+          <img src="assets/nutrient-img/house-garden.png" alt="House &amp; Garden">
+          <h3>House &amp; Garden</h3>
+          <ul>
+            <li class="listPrint"><input type="checkbox" id="aqua-flakes" value="aqua-flakes"><label for="aqua-flakes">Aqua Flakes A&amp;B</label></li>
+            <li class="listPrint"><input type="checkbox" id="cocos" value="cocos"><label for="cocos">Cocos A&amp;B</label></li>
+            <li class="listPrint"><input type="checkbox" id="drip-clean" value="drip-clean"><label for="drip-clean">Drip Clean</label></li>
+            <li class="listPrint"><input type="checkbox" id="roots-excelurator" value="roots-excelurator"><label for="roots-excelurator">Roots Excelurator</label></li>
+            <li class="listPrint"><input type="checkbox" id="amino-treatment" value="amino-treatment"><label for="amino-treatment">Amino Treatment</label></li>
+            <li class="listPrint"><input type="checkbox" id="multi-zen" value="multi-zen"><label for="multi-zen">Multi Zyme</label></li>
+            <li class="listPrint"><input type="checkbox" id="algen-extract" value="algen-extract"><label for="algen-extract">Algen Extract</label></li>
+            <li class="listPrint"><input type="checkbox" id="bud-xl" value="bud-xl"><label for="bud-xl">Bud-XL</label></li>
+            <li class="listPrint"><input type="checkbox" id="top-booster" value="top-booster"><label for="top-booster">Top Booster</label></li>
+            <li class="listPrint"><input type="checkbox" id="shooting-powder" value="shooting-powder"><label for="shooting-powder">Shooting Powder</label></li>
+          </ul>
+        </div>
+
+        <!-- Emerald Harvest -->
+        <div class="icon-box">
+          <img src="assets/nutrient-img/emerald-harvest.png" alt="Emerald Harvest">
+          <h3>Emerald Harvest</h3>
+          <ul>
+            <li class="listPrint"><input type="checkbox" id="cali-pro-grow-a" value="cali-pro-grow-a"><label for="cali-pro-grow-a">Cali Pro Grow A</label></li>
+            <li class="listPrint"><input type="checkbox" id="cali-pro-grow-b" value="cali-pro-grow-b"><label for="cali-pro-grow-b">Cali Pro Grow B</label></li>
+            <li class="listPrint"><input type="checkbox" id="cali-pro-bloom-a" value="cali-pro-bloom-a"><label for="cali-pro-bloom-a">Cali Pro Bloom A</label></li>
+            <li class="listPrint"><input type="checkbox" id="cali-pro-bloom-b" value="cali-pro-bloom-b"><label for="cali-pro-bloom-b">Cali Pro Bloom B</label></li>
+            <li class="listPrint"><input type="checkbox" id="emerald-goddess" value="emerald-goddess"><label for="emerald-goddess">Emerald Goddess</label></li>
+            <li class="listPrint"><input type="checkbox" id="king-kola" value="king-kola"><label for="king-kola">King Kola</label></li>
+            <li class="listPrint"><input type="checkbox" id="honey-chome" value="honey-chome"><label for="honey-chome">Honey Chome</label></li>
+            <li class="listPrint"><input type="checkbox" id="root-wizard" value="root-wizard"><label for="root-wizard">Root Wizard</label></li>
+          </ul>
+        </div>
+
+        <!-- Athena -->
+        <div class="icon-box">
+          <img src="assets/nutrient-img/athena.png" alt="Athena">
+          <h3>Athena</h3>
+          <ul>
+            <li class="listPrint"><input type="checkbox" id="pro-grow" value="pro-grow"><label for="pro-grow">Pro Grow</label></li>
+            <li class="listPrint"><input type="checkbox" id="pro-bloom" value="pro-bloom"><label for="pro-bloom">Pro Bloom</label></li>
+            <li class="listPrint"><input type="checkbox" id="pro-core" value="pro-core"><label for="pro-core">Pro Core</label></li>
+            <li class="listPrint"><input type="checkbox" id="fade" value="fade"><label for="fade">Fade</label></li>
+            <li class="listPrint"><input type="checkbox" id="cleanse" value="cleanse"><label for="cleanse">Cleanse</label></li>
+            <li class="listPrint"><input type="checkbox" id="pk" value="pk"><label for="pk">PK</label></li>
+            <li class="listPrint"><input type="checkbox" id="camg" value="camg"><label for="camg">CaMg</label></li>
+          </ul>
+        </div>
+
+        <!-- Botanicare -->
+        <div class="icon-box">
+          <img src="assets/nutrient-img/botanicare.png" alt="Botanicare">
+          <h3>Botanicare</h3>
+          <ul>
+            <li class="listPrint"><input type="checkbox" id="cns17-grow" value="cns17-grow"><label for="cns17-grow">CNS17® Grow</label></li>
+            <li class="listPrint"><input type="checkbox" id="cns17-bloom" value="cns17-bloom"><label for="cns17-bloom">CNS17® Bloom</label></li>
+            <li class="listPrint"><input type="checkbox" id="cns17-ripe" value="cns17-ripe"><label for="cns17-ripe">CNS17® Ripe</label></li>
+            <li class="listPrint"><input type="checkbox" id="rhiza-blast" value="rhiza-blast"><label for="rhiza-blast">Rhizo Blast®</label></li>
+            <li class="listPrint"><input type="checkbox" id="pure-blend-tea" value="pure-blend-tea"><label for="pure-blend-tea">Pure Blend Tea</label></li>
+            <li class="listPrint"><input type="checkbox" id="silica-blast" value="silica-blast"><label for="silica-blast">Silica Blast®</label></li>
+            <li class="listPrint"><input type="checkbox" id="hydroguard" value="hydroguard"><label for="hydroguard">Hydroguard®</label></li>
+            <li class="listPrint"><input type="checkbox" id="cal-mag-plus" value="cal-mag-plus"><label for="cal-mag-plus">Cal-Mag® Plus</label></li>
+            <li class="listPrint"><input type="checkbox" id="sweet" value="sweet"><label for="sweet">Sweet® Raw</label></li>
+            <li class="listPrint"><input type="checkbox" id="hydroplex" value="hydroplex"><label for="hydroplex">Hydroplex®</label></li>
+          </ul>
+        </div>
+
+        <!-- Gaia Green -->
+        <div class="icon-box">
+          <img src="assets/nutrient-img/gaia-green.png" alt="Gaia Green">
+          <h3>Gaia Green Organics</h3>
+          <ul>
+            <li class="listPrint"><input type="checkbox" id="worm-castings" value="worm-castings"><label for="worm-castings">Worm Castings</label></li>
+            <li class="listPrint"><input type="checkbox" id="all-purpose" value="all-purpose"><label for="all-purpose">All Purpose 4-4-4</label></li>
+            <li class="listPrint"><input type="checkbox" id="power-bloom" value="power-bloom"><label for="power-bloom">Power Bloom 2-8-4</label></li>
+            <li class="listPrint"><input type="checkbox" id="glacier-rock-dust" value="glacier-rock-dust"><label for="glacier-rock-dust">Glacial Rock Dust</label></li>
+            <li class="listPrint"><input type="checkbox" id="super-fly" value="super-fly"><label for="super-fly">Super Fly Insect Frass</label></li>
+            <li class="listPrint"><input type="checkbox" id="greensand" value="greensand"><label for="greensand">Greensand</label></li>
+            <li class="listPrint"><input type="checkbox" id="feather-meal" value="feather-meal"><label for="feather-meal">Feather Meal</label></li>
+            <li class="listPrint"><input type="checkbox" id="mineralized-phosphate" value="mineralized-phosphate"><label for="mineralized-phosphate">Mineralized Phosphate</label></li>
+            <li class="listPrint"><input type="checkbox" id="soluble-seaweed-extract" value="soluble-seaweed-extract"><label for="soluble-seaweed-extract">Soluble Seaweed Extract</label></li>
+          </ul>
+        </div>
+
+        <!-- Plagron -->
+        <div class="icon-box">
+          <img src="assets/nutrient-img/plagron.png" alt="Plagron">
+          <h3>Plagron</h3>
+          <ul>
+            <li class="listPrint"><input type="checkbox" id="alga-grow" value="alga-grow"><label for="alga-grow">Alga Grow</label></li>
+            <li class="listPrint"><input type="checkbox" id="alga-bloom" value="alga-bloom"><label for="alga-bloom">Alga Bloom</label></li>
+            <li class="listPrint"><input type="checkbox" id="power-roots" value="power-roots"><label for="power-roots">Power Roots</label></li>
+            <li class="listPrint"><input type="checkbox" id="pure-zym" value="pure-zym"><label for="pure-zym">Pure Zym</label></li>
+            <li class="listPrint"><input type="checkbox" id="green-sensation" value="green-sensation"><label for="green-sensation">Green Sensation</label></li>
+            <li class="listPrint"><input type="checkbox" id="sugar-royal" value="sugar-royal"><label for="sugar-royal">Sugar Royal</label></li>
+            <li class="listPrint"><input type="checkbox" id="vita-race" value="vita-race"><label for="vita-race">Vita Race</label></li>
+          </ul>
+        </div>
+
+        <!-- Add Custom Nutrient -->
+        <div class="icon-box">
+          <h3>Add Your Own Nutrient</h3>
+          <form id="customNutrientForm">
+            <label class="modal-label">Nutrient Name
+              <input type="text" id="nutrient-name" class="modal-input" required>
+            </label>
+            <label class="modal-label">Unit
+              <select id="unit" class="modal-input">
+                <option value="mL">mL</option>
+                <option value="g">g</option>
+              </select>
+            </label>
+            <label class="modal-label">Seedling (per L)<input type="number" id="seedling-amount" class="modal-input" min="0" step="0.1"></label>
+            <label class="modal-label">Veg (per L)<input type="number" id="veg-amount" class="modal-input" min="0" step="0.1"></label>
+            <label class="modal-label">Late Veg (per L)<input type="number" id="late-veg-amount" class="modal-input" min="0" step="0.1"></label>
+            <label class="modal-label">Pre-Flower (per L)<input type="number" id="pre-flower-amount" class="modal-input" min="0" step="0.1"></label>
+            <label class="modal-label">Flower (per L)<input type="number" id="flower-amount" class="modal-input" min="0" step="0.1"></label>
+            <label class="modal-label">Late Flower (per L)<input type="number" id="late-flower-amount" class="modal-input" min="0" step="0.1"></label>
+            <button type="button" id="add-nutrient-btn"
+              class="mt-3 w-full bg-zinc-700 hover:bg-zinc-600 text-white text-xs font-semibold py-2 rounded-lg transition-colors">
+              Add to List
+            </button>
+            <div id="custom-nutrient-list" class="mt-2">
+              <ul id="nutrient-checkboxes" class="space-y-1"></ul>
+            </div>
+          </form>
+        </div>
+
+      </div><!-- end nutrientGrid -->
+
+      <!-- Nutrients CTA -->
+      <button id="nutrientTaskButton" style="display:none;"
+        class="mt-6 w-full bg-brand hover:bg-brandDark text-black font-bold text-sm py-3 rounded-xl transition-colors">
+        <i class="fa-solid fa-arrow-right mr-2"></i> Use These Nutrients
+      </button>
+    </section>
+
+
+    <!-- ── STEP 3: DATE ── -->
+    <section id="step-3" class="step">
+      <div class="mb-5">
+        <div class="inline-flex items-center gap-2 bg-brand/10 border border-brand/30 text-brand text-xs font-semibold px-3 py-1 rounded-full mb-3">
+          <i class="fa-solid fa-calendar"></i> Step 3 of 3
+        </div>
+        <h1 class="text-2xl font-extrabold mb-1">When Did You Start?</h1>
+        <p class="text-zinc-400 text-sm">Pick your germination or sprout date and we'll build your full day-by-day schedule.</p>
+      </div>
+
+      <!-- Strain image preview -->
+      <div class="flex justify-center mb-5">
+        <img id="step3-image" src="" alt="" style="display:none;width:120px;height:120px;border-radius:12px;object-fit:cover;">
+      </div>
+
+      <div class="mb-5">
+        <label class="block text-xs text-zinc-400 mb-1">Start Date</label>
+        <input type="date" id="start" class="form-input" style="color-scheme:dark;">
+      </div>
+
+      <button id="dateTaskButton" style="display:none;"
+        class="w-full bg-brand hover:bg-brandDark text-black font-bold text-sm py-3 rounded-xl transition-colors">
+        <i class="fa-solid fa-seedling mr-2"></i> Save &amp; Build My Schedule
+      </button>
+    </section>
+
+    <!-- ── SUCCESS ── -->
+    <section id="step-success" class="step text-center py-8">
+      <div class="text-6xl mb-4">🌱</div>
+      <h2 class="text-2xl font-extrabold mb-2">Your schedule is ready.</h2>
+      <p class="text-zinc-400 text-sm mb-6">Every day of your grow — what to feed, when to flush, when to flip, when to harvest.</p>
+      <a id="viewScheduleBtn" href="#"
+         class="inline-block bg-brand hover:bg-brandDark text-black font-bold px-8 py-3 rounded-xl transition-colors text-sm">
+        <i class="fa-solid fa-table mr-2"></i> See My Schedule
+      </a>
+      <button id="reset-btn" class="block mx-auto mt-4 text-xs text-zinc-500 hover:text-zinc-300 transition-colors">
+        Start over
+      </button>
+    </section>
+
+  </main>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+  <script src="../assets/js/bottom-nav.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script type="module" src="assets/js/strain-selector.js"></script>
+  <script type="module" src="assets/js/nutrient-selector.js"></script>
+
+  <script>
+  // ── Step navigation ──
+  function showStep(n) {
+    document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+    document.getElementById('step-' + n).classList.add('active');
+    // update dots
+    [1,2,3].forEach(i => {
+      const dot = document.getElementById('dot-' + i);
+      const line = document.getElementById('line-' + i);
+      dot.classList.remove('active','done');
+      if (line) line.classList.remove('done');
+      if (i < n) { dot.classList.add('done'); if (line) line.classList.add('done'); }
+      else if (i === n) dot.classList.add('active');
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ── strainSelected → go to step 2 ──
+  window.addEventListener('strainSelected', () => showStep(2));
+
+  // ── nutrientsSelected → go to step 3 ──
+  window.addEventListener('nutrientsSelected', () => {
+    // re-init schedule-builder image for step 3
+    const growId = localStorage.getItem('currentGrowId');
+    const logo = localStorage.getItem('plantLogo_' + growId) || '';
+    const img = document.getElementById('step3-image');
+    if (img && logo) {
+      const filename = logo.split('/').pop();
+      img.src = 'assets/strain-img/' + filename;
+      img.style.display = 'block';
+      img.onerror = () => { img.src = 'assets/strain-img/default.jpg'; };
+    }
+    showStep(3);
+  });
+
+  // ── scheduleReady → show success ──
+  window.addEventListener('scheduleReady', () => {
+    const growId = localStorage.getItem('currentGrowId');
+    document.getElementById('viewScheduleBtn').href =
+      'schedule-viewer.html?growId=' + encodeURIComponent(growId);
+    document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+    document.getElementById('step-success').classList.add('active');
+    [1,2,3].forEach(i => {
+      document.getElementById('dot-' + i).classList.remove('active');
+      document.getElementById('dot-' + i).classList.add('done');
+      const line = document.getElementById('line-' + i);
+      if (line) line.classList.add('done');
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // ── Nutrient checkbox → show CTA ──
+  document.addEventListener('change', e => {
+    if (e.target.matches('.listPrint input[type="checkbox"]')) {
+      const any = document.querySelectorAll('.listPrint input[type="checkbox"]:checked').length > 0;
+      document.getElementById('nutrientTaskButton').style.display = any ? 'block' : 'none';
+    }
+  });
+
+  // ── Nutrient CTA click → save + dispatch ──
+  document.getElementById('nutrientTaskButton').addEventListener('click', async () => {
+    const growId = localStorage.getItem('currentGrowId');
+    if (!growId) { window.showToast('Please select a strain first.'); return; }
+    const checkboxes = document.querySelectorAll('.listPrint input[type="checkbox"]:checked');
+    const selected = Array.from(checkboxes).map(cb => cb.value || cb.id.replace('custom-',''));
+    localStorage.setItem('nutrients_' + growId, JSON.stringify(selected));
+    // also save to IDB selectedNutrients store
+    try {
+      const { IndexedDBService } = await import('./assets/js/indexedDBService.js');
+      const db = await IndexedDBService.initDB();
+      const tx = db.transaction('selectedNutrients', 'readwrite');
+      tx.objectStore('selectedNutrients').put({ id: growId, nutrients: selected });
+      await new Promise((res, rej) => { tx.oncomplete = res; tx.onerror = rej; });
+    } catch(e) { console.warn('IDB nutrient save failed', e); }
+    window.dispatchEvent(new CustomEvent('nutrientsSelected'));
+  });
+
+  // ── Date input → show CTA ──
+  document.getElementById('start').addEventListener('change', function() {
+    document.getElementById('dateTaskButton').style.display = this.value ? 'block' : 'none';
+  });
+
+  // ── Date CTA → build and save schedule ──
+  document.getElementById('dateTaskButton').addEventListener('click', async () => {
+    const startVal = document.getElementById('start').value;
+    if (!startVal) { window.showToast('Please select a start date.'); return; }
+    const growId = localStorage.getItem('currentGrowId');
+    if (!growId) { window.showToast('No grow found. Please start over.'); return; }
+    const [year, month, day] = startVal.split('-');
+    const startDate = new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
+    startDate.setHours(0, 0, 0, 0);
+    const plantGrow = JSON.parse(localStorage.getItem('plantGrow_' + growId) || '{"floweringWeeks":8}');
+    const isAuto = localStorage.getItem('plantSize_' + growId) === 'auto';
+    const seedToHarvestDays = isAuto ? parseInt(localStorage.getItem('seedToHarvest_' + growId)) || null : null;
+    const plantSize = localStorage.getItem('plantSize_' + growId) || 'large';
+    const vegWeeks = isAuto ? 4 : plantSize === 'small' ? 4 : plantSize === 'large' ? 8 : 6;
+    localStorage.setItem('startDate', startDate.toISOString());
+    document.getElementById('dateTaskButton').disabled = true;
+    document.getElementById('dateTaskButton').textContent = 'Building...';
+    try {
+      const { saveScheduleToIndexedDB } = await import('./assets/js/schedule-generator.js');
+      const result = await saveScheduleToIndexedDB(growId, startDate, isAuto, seedToHarvestDays, vegWeeks);
+      if (result) {
+        window.dispatchEvent(new CustomEvent('scheduleReady'));
+      } else {
+        window.showToast('Failed to save schedule.');
+        document.getElementById('dateTaskButton').disabled = false;
+        document.getElementById('dateTaskButton').textContent = 'Save & Build My Schedule';
+      }
+    } catch(err) {
+      console.error('Schedule build error:', err);
+      window.showToast('Error building schedule.');
+      document.getElementById('dateTaskButton').disabled = false;
+      document.getElementById('dateTaskButton').textContent = 'Save & Build My Schedule';
+    }
+  });
+
+  // ── Add Strain Modal ──
+  document.getElementById('addStrainBtn').addEventListener('click', () => {
+    document.getElementById('addStrainModal').classList.add('open');
+  });
+  document.querySelector('#addStrainModal .close').addEventListener('click', () => {
+    document.getElementById('addStrainModal').classList.remove('open');
+  });
+  document.getElementById('addStrainModal').addEventListener('click', e => {
+    if (e.target === document.getElementById('addStrainModal'))
+      document.getElementById('addStrainModal').classList.remove('open');
+  });
+  document.querySelectorAll('input[name="strainType"]').forEach(r => {
+    r.addEventListener('change', function() {
+      document.getElementById('phenoFields').style.display = this.value === 'pheno' ? '' : 'none';
+      document.getElementById('autoFields').style.display  = this.value === 'auto'  ? '' : 'none';
+    });
+  });
+
+  // ── Reset ──
+  document.getElementById('reset-btn').addEventListener('click', () => {
+    document.getElementById('growName').value = '';
+    document.getElementById('myInput').value = '';
+    document.getElementById('strainCard').classList.remove('visible');
+    document.getElementById('taskButton').style.display = 'none';
+    document.getElementById('start').value = '';
+    document.getElementById('dateTaskButton').style.display = 'none';
+    document.querySelectorAll('.listPrint input[type="checkbox"]').forEach(cb => cb.checked = false);
+    document.getElementById('nutrientTaskButton').style.display = 'none';
+    showStep(1);
+  });
+
+  // ── schedule-builder.js uses #taskButton for its click handler ──
+  // We keep a hidden #taskButton in step-3 that schedule-builder.js can bind to.
+  // The visible dateTaskButton proxies clicks to it above.
+  </script>
+
+
+</body>
+</html>
