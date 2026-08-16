@@ -223,9 +223,11 @@
     document.getElementById('save-btn').addEventListener('click', () => {
       const growName = localStorage.getItem(`growName_${localStorage.getItem('currentGrowId')}`) || 'grow';
       const filename = `${growName}-diary-${new Date().toISOString().slice(0,10)}.png`;
+      const controls = document.querySelector('.photo-controls');
+      controls.style.display = 'none';
       html2canvas(document.getElementById('data-container'), { useCORS: true, allowTaint: true })
-        .then(canvas => saveImage(canvas.toDataURL('image/png'), filename))
-        .catch(() => saveImage(document.getElementById('captured-photo').src, filename));
+        .then(canvas => { controls.style.display = 'block'; saveImage(canvas.toDataURL('image/png'), filename); })
+        .catch(() => { controls.style.display = 'block'; saveImage(document.getElementById('captured-photo').src, filename); });
     });
 
     function saveImage(dataUrl, filename) {
