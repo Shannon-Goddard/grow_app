@@ -17,8 +17,8 @@ let model, maxPredictions;
 
 // Initialize the model when the page loads
 async function setup() {
-    const modelUrl = 'https://loyal9.app/harvest-window/assets/js/model.json';
-    const metadataUrl = 'https://loyal9.app/harvest-window/assets/js/metadata.json';
+    const modelUrl = 'assets/js/model.json';
+    const metadataUrl = 'assets/js/metadata.json';
     model = await tmImage.load(modelUrl, metadataUrl);
     maxPredictions = model.getTotalClasses();
 }
