@@ -30,8 +30,6 @@ shipBtns.forEach(btn => btn.addEventListener('click', () => {
 // Typer — resumes after scroll/tab switch via visibilitychange
 (function () {
   var slogans = [
-    "",
-    "",
     "America runs on growin'",
     "Betcha can't grow just one.",
     "Like a good neighbor, seeds are here.",
@@ -60,20 +58,26 @@ shipBtns.forEach(btn => btn.addEventListener('click', () => {
   var i = 0, j = 0, deleting = false, timer = null;
 
   function type() {
-    if (document.hidden) return; // pause when tab/app is hidden
+    if (document.hidden) return;
     var s = slogans[i];
     if (!deleting) {
-      el.textContent = s.substring(0, ++j);
-      if (j === s.length) { deleting = true; timer = setTimeout(type, 2200); return; }
+      j++;
+      el.textContent = s.substring(0, j);
+      if (j >= s.length) { deleting = true; timer = setTimeout(type, 2200); return; }
       timer = setTimeout(type, 55 + Math.random() * 35);
     } else {
-      el.textContent = s.substring(0, --j);
-      if (j === 0) { deleting = false; i = (i + 1) % slogans.length; timer = setTimeout(type, 800); return; }
+      j--;
+      el.textContent = s.substring(0, j);
+      if (j <= 0) {
+        j = 0; deleting = false;
+        i = (i + 1) % slogans.length;
+        timer = setTimeout(type, 800);
+        return;
+      }
       timer = setTimeout(type, 28);
     }
   }
 
-  // Resume when page becomes visible again
   document.addEventListener('visibilitychange', function () {
     if (!document.hidden) { clearTimeout(timer); type(); }
   });
