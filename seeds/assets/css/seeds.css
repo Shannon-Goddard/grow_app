@@ -27,7 +27,7 @@ header{display:none;}
 .filter-btn input,.ship-btn input{display:none;}
 
 /* PARTNER CARDS */
-.partner-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem;}
+.partner-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:1rem;}
 .partner-row{position:relative;border-radius:12px;overflow:hidden;border:1px solid #2a333d;transition:border-color .2s,transform .2s;background:#13181d;}
 .partner-row:hover{border-color:#04AA6D;transform:translateY(-2px);}
 .partner-background{position:absolute;inset:0;background-size:cover;background-position:center;background-repeat:no-repeat;opacity:.06;pointer-events:none;}
